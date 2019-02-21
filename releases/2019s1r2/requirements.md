@@ -1,6 +1,6 @@
 # PO requirements for release 2019S1R2
 
-Scheduled for release on TBD 2018
+Scheduled for release on TBD 2019
 
 ### Relevant user stories
 [T913](http://web.giraf.cs.aau.dk/T913) and [T922](http://web.giraf.cs.aau.dk/T922).
