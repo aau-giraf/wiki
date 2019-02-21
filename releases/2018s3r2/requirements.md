@@ -3,7 +3,7 @@
 Scheduled for releases on Tuesday 8th of May 2018
 
 **Relevant user stories**
-[T1236](http://web.giraf.cs.aau.dk/T1236), [T1237](http://web.giraf.cs.aau.dk/T1237), [T1239](http://web.giraf.cs.aau.dk/T1239), [T1240](http://web.giraf.cs.aau.dk/T1240), [T1241](http://web.giraf.cs.aau.dk/T1241), [T1242](http://web.giraf.cs.aau.dk/T1242), [T1243](http://web.giraf.cs.aau.dk/T1243), [T1261](http://web.giraf.cs.aau.dk/T1261)
+[T1236](http://web.giraf.cs.aau.dk/T1236), [T1237](http://web.giraf.cs.aau.dk/T1237), [T1239](http://web.giraf.cs.aau.dk/T1239), [T1240](http://web.giraf.cs.aau.dk/T1240), [T1241](http://web.giraf.cs.aau.dk/T1241), [T1242](http://web.giraf.cs.aau.dk/T1242), [T1243](http://web.giraf.cs.aau.dk/T1243) and [T1261](http://web.giraf.cs.aau.dk/T1261)
 
 **Requirements**
 
