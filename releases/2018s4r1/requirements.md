@@ -2,7 +2,7 @@
 
 Scheduled for release on Tuesday 15th of May 2018
 ### Relevant user stories
-[T921](http://web.giraf.cs.aau.dk/T921), [T1005](http://web.giraf.cs.aau.dk/T1005), [T1219](http://web.giraf.cs.aau.dk/T1219), [T1226](http://web.giraf.cs.aau.dk/T1226), [T1238](http://web.giraf.cs.aau.dk/T1238), [T1244](http://web.giraf.cs.aau.dk/T1244), [T1268](http://web.giraf.cs.aau.dk/T1269).
+[T921](http://web.giraf.cs.aau.dk/T921), [T1005](http://web.giraf.cs.aau.dk/T1005), [T1219](http://web.giraf.cs.aau.dk/T1219), [T1226](http://web.giraf.cs.aau.dk/T1226), [T1238](http://web.giraf.cs.aau.dk/T1238), [T1244](http://web.giraf.cs.aau.dk/T1244) and [T1268](http://web.giraf.cs.aau.dk/T1269).
 
 ## Requirements
 This release focusses on the quality of life features for the guardians. The overall idea is to implement functionality that makes it faster and easier for guardians to modify or create schedules.
