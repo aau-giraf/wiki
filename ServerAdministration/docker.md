@@ -1,3 +1,4 @@
+# Docker
 [Docker](https://en.wikipedia.org/wiki/Docker_\(software\) "wikilink")
 is a tool for managing software containers. A container is used to
 isolate software from the system it runs on. It encapsulates some
