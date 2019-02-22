@@ -44,7 +44,8 @@ Notice that the *node00* doesn't have a domain, this is because it's a node in t
 | Production                | 5000 |
 | Development            | 5050 |
 | Current release          | 5100 |
-| Release number two  | 5150*|
+| Release number two  | 5150*|  
+
 *not currently oppened
 
 ## READ: After logging in on the server the first time, you should create a new user and generate a key pair for it!
