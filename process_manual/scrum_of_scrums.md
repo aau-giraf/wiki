@@ -125,7 +125,7 @@ is up to the individual skill groups. The meetings should be used for
 unifying the coding standards in the area that the skill group
 represent.  
 To see the definition of skill groups, please read section
-[Skill Groups](#https://github.com/aau-giraf/wiki/process_manual/scrum_of_scrums.md) in organization overview.
+[Skill Groups](organization_overview.md#skill-groups) in organization overview.
 
 # Release Preparation
 

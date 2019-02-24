@@ -1,12 +1,3 @@
-
-Try pandoc!
-
-pandoc --from latex --to gfm
-
-  from
-
-to
-
 # Organization Overview
 
 We will describe the overall structure and development process of the

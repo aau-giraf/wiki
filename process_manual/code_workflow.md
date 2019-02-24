@@ -99,7 +99,7 @@ their responsibility, and the communication between them.
 This section is used to cover the Git Workflow design used in this
 project. For version control we use GitHub. For the Git Workflow design
 we use GitFlow Workflow. The essentials parts are covered below, the
-entire documentation is seen in [the GitHub guides](https://help.github.com/en/articles/creating-issue-templates-for-your-repository). We **highly recommend** that
+entire documentation is seen in [the following guide](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow). We **highly recommend** that
 everyone reads the cited article as it explains GitFlow in a short and
 concise manner.
 
