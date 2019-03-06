@@ -29,7 +29,7 @@ You may want to see an [elaboration on how to set AppSettings.json](./Connection
 - [Users and Authorisation](./Authorization.md)
 - [Giraf Service](./GirafService.md)
 - [Backend arkitektur](./BackendArkitektur.md)
-- [Naming conventions](./NamingConvetions.md)
+- [Naming conventions](./NamingConventions.md)
 - [Controllers and endpoints](./ControllersAndEndpoints.md)
 - [Swagger](./Swagger.md)
 - [Unit testing](./UnitTesting.md)
