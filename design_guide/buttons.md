@@ -18,5 +18,5 @@ Text should be used to describe it instead if an icon is not sufficient for expl
 An icon together with text should be used in cases where the icon helps to understand the text.
 
 ## Contextual ordering
-When a collection of buttons are shown in the same context, the buttons should be ordered by negative and positive actions.
-Leftmost buttons should cause negative actions and the rightmost should cause positive actions.
+When a collection of buttons are shown in the same context, the buttons should be ordered by whether or not the button represents an action to confirm a change.
+The leftmost buttons should cause the action to not occur, such as cancelling the deletion, and the rightmost buttons should confirm the action, such as saying yes to a deletion.
