@@ -5,6 +5,4 @@ The wikipedia including all information about the Giraf project!
 [List of Giraf releases (starting from 2018)](releases/releases.md)
 
 
-### Design guide
-
-[Icons](Icons.md)
+[Design guide](design_guide/design_guide.md)
