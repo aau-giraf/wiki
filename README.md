@@ -7,4 +7,4 @@ The wikipedia including all information about the Giraf project!
 
 ### Design guide
 
-[Design guide](design_guide/Icons.md)
+[Icons](Icons.md)
