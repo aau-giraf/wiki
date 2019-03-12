@@ -7,9 +7,9 @@ The background of a default button should have a orange/yellow (See color guide)
 When a button is pressed the background should become darker alongside a darker border. 
 When a button is disabled the background and the border should be identical to the default button however this button should be 65% opaque.
 
-![ButtonDefault](./images/ButtonDefault.png "ButtonDefault")
-![ButtonPressed](./images/ButtonPressed.png "ButtonPressed")
-![ButtonDisabled](./images/ButtonDisabled.png "ButtonDisabled")
+| ![ButtonDefault](./images/ButtonDefault.png) | ![ButtonPressed](./images/ButtonPressed.png "ButtonPressed") | ![ButtonDisabled](./images/ButtonDisabled.png "ButtonDisabled") |
+|:--:| :--: | :--: |
+| *Default button* | *Pressed button* | *Disabled button* |
 
 ## Content
 Buttons can either contain text, and icon or both. 
