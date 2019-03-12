@@ -7,4 +7,4 @@ The wikipedia including all information about the Giraf project!
 
 ### Design guide
 
-[Design guide](https://github.com/aau-giraf/wiki/tree/master/design_guide/Icons.md)
+[Design guide](design_guide/Icons.md)
