@@ -1,5 +1,5 @@
 ## Loading indicators
-The system should show loading indicators whenever the system is doing an action that might take a while to process.
+The system should show loading indicators whenever it is performing an action that might take a while to process.
 
 There are two kinds of loading indicators:
 
