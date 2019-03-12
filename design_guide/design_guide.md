@@ -1,7 +1,7 @@
 # Design guide
 
 This is the design guide of the GIRAF project.
-Developers in the GIRAF project should conform to this guide when designing the visual elements in the GIRAF project.ø
+Developers in the GIRAF project should conform to this guide when designing the visual elements in the GIRAF project.
 
 ## Table of contents
 1. [Application structure](application_structure.md)
