@@ -45,12 +45,12 @@ These colors must be used whenever a certain weekday is referenced. Note that th
 
 |Usage|Color|
 |---|---|
-| Monday | `#007700` ![#007700](https://placehold.it/15/007700/000000?text=+) 
-| Tuesday | `#800080` ![#800080](https://placehold.it/15/800080/000000?text=+) 
-| Wednesday | `#FF8500` ![#FF8500](https://placehold.it/15/FF8500/000000?text=+) 
-| Thursday | `#0000FF` ![#0000FF](https://placehold.it/15/0000FF/000000?text=+) 
-| Friday | `#FFDD00` ![#FFDD00](https://placehold.it/15/FFDD00/000000?text=+) 
-| Saturday | `#FF0000` ![#FF0000](https://placehold.it/15/FF0000/000000?text=+) 
+| Monday | `#08A045` ![#08A045](https://placehold.it/15/08A045/000000?text=+) 
+| Tuesday | `#540D6E` ![#540D6E](https://placehold.it/15/540D6E/000000?text=+) 
+| Wednesday | `#F77F00` ![#F77F00](https://placehold.it/15/F77F00/000000?text=+) 
+| Thursday | `#004777` ![#004777](https://placehold.it/15/004777/000000?text=+) 
+| Friday | `#F9C80E` ![#F9C80E](https://placehold.it/15/F9C80E/000000?text=+) 
+| Saturday | `#DB2B39` ![#DB2B39](https://placehold.it/15/DB2B39/000000?text=+) 
 | Sunday | `#FFFFFF` ![#FFFFFF](https://placehold.it/15/FFFFFF/000000?text=+) 
 
 
