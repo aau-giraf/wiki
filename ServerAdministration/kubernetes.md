@@ -228,9 +228,9 @@ investigated:
 
 * Cloud implementation: Large cloud providers such as Microsoft, Amazon and Google provide Ingress controllers specific to their clouds. These Ingress controllers are not usable in self-hosted Kubernetes clusters.
 * Nginx implementation: This Ingress controller implementation is part of the official Kubernetes git repositories. It uses the Nginx reverse proxy capabilities to direct incoming traffic. Nginx is lightweight and has  a rich dsl, but it requires additional configuration to work with Kubernetes. When using ssl encryption service kube-lego can be used to automatically update ssl certificates.
-* Træfik implementation: Træfik is a reverse proxy that integrates with several different container orchestration technology such as Swarm, Mesos and Kubernetes. It provides a web interface to display and configure its configuration. It is well integrated into Kubernetes, so Ingress rules works without additional configuration. Træfik also provides fully automated administration of ssl encryption. In the picture below it is illustrated how Træfik works. The blue arrows represent HTTP request to various domains, the green arrows represent how Træfik redirects the request to services and the red arrow shows that Træfik is controlled the cloud orchestration technology.
+* Trï¿½fik implementation: Trï¿½fik is a reverse proxy that integrates with several different container orchestration technology such as Swarm, Mesos and Kubernetes. It provides a web interface to display and configure its configuration. It is well integrated into Kubernetes, so Ingress rules works without additional configuration. Trï¿½fik also provides fully automated administration of ssl encryption. In the picture below it is illustrated how Trï¿½fik works. The blue arrows represent HTTP request to various domains, the green arrows represent how Trï¿½fik redirects the request to services and the red arrow shows that Trï¿½fik is controlled the cloud orchestration technology.
 
-![Billede mangler](./images/preview-TraefikArchitecture.png "Træfik Architecture")
+![Billede mangler](./images/preview-TraefikArchitecture.png "Trï¿½fik Architecture")
 
 #### Persistent Storage
 
