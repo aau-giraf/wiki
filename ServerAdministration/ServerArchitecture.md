@@ -46,3 +46,74 @@ To access the servers from any network including most AAU network the AAU ssh ga
 ```bash
 ssh -t sshgw.aau.dk -l <USERNAME>@student.aau.dk  ssh 172.19.10.<ip>
 ```
+
+### The docker network
+
+```bash
+[
+    {
+        "Name": "ingress",
+        "Id": "esq3c70wonolez79eifsqeqhc",
+        "Created": "2019-03-15T09:32:18.169968631+01:00",
+        "Scope": "swarm",
+        "Driver": "overlay",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": [
+                {
+                    "Subnet": "10.255.0.0/16",
+                    "Gateway": "10.255.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": true,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {
+            "ingress-sbox": {
+                "Name": "ingress-endpoint",
+                "EndpointID": "f8f1417b758bc994a9c77aeda536b0a9e4294226baf29117382913e88bac8702",
+                "MacAddress": "02:42:0a:ff:00:02",
+                "IPv4Address": "10.255.0.2/16",
+                "IPv6Address": ""
+            }
+        },
+        "Options": {
+            "com.docker.network.driver.overlay.vxlanid_list": "4096"
+        },
+        "Labels": {},
+        "Peers": [
+            {
+                "Name": "b6a2fb9fd60e",
+                "IP": "172.19.10.29"
+            },
+            {
+                "Name": "e17ba5bebf00",
+                "IP": "172.19.10.31"
+            },
+            {
+                "Name": "8a720eeaec16",
+                "IP": "172.19.10.32"
+            },
+            {
+                "Name": "9a1a09913233",
+                "IP": "172.19.10.34"
+            },
+            {
+                "Name": "b38a3e1ca567",
+                "IP": "172.19.10.33"
+            },
+            {
+                "Name": "943610ab56f5",
+                "IP": "172.19.10.30"
+            }
+        ]
+    }
+]
+```
