@@ -14,4 +14,4 @@ This wikipedia includes all information about the GIRAF project!
 - [Process Manual](./process_manual/process_manual.md)
 
 
-- [REST_API Development](./REST_API_Development/introduction.md)
+- [REST_API Development](./REST_API_Development/Introduction.md)
