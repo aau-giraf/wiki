@@ -22,7 +22,6 @@ You may want to see an [elaboration on how to set AppSettings.json](./Connection
 
 ## Content
 
-- [Introduction](./Introduction.md)
 - [Database](./Database.md)
 - [Entity Framework](./EntityFramework.md)
 - [Models & DTOś](./ModelsAndDTOs.md)
