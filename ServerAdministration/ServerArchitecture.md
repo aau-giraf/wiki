@@ -13,6 +13,7 @@ In the following the server archiceture for the giraf project will be explained.
 | GitLab | 192.38.56.136 | 4 GB RAM 2xCPU Disk: 46 GB OS: CentOS Linux release 7.5.1804 (Core) |
 | web01 | 192.38.56.38 | 2 GB RAM 1xCPU Disk: 22 GB OS: CentOS Linux release 7.4.1708 (Core)|
 | Backup01 | 172.19.0.235 | 4 GB RAM 2xCPU Disk: 10 GB OS: CentOS Linux release 7.2.1511 (Core)|
+
 Only user on theise servers are root and each serve has everything open to the internet and is hence under heavy attack from malicious users trying to bruteforce the passwords.
 
 
@@ -47,7 +48,20 @@ To access the servers from any network including most AAU network the AAU ssh ga
 ssh -t sshgw.aau.dk -l <USERNAME>@student.aau.dk  ssh 172.19.10.<ip>
 ```
 
-### The docker network
+### The docker setup
+
+#### Nodes
+
+| ID                           | HOSTNAME                   | STATUS             | AVAILABILITY       | MANAGER STATUS     | ENGINE VERSION |
+|:-----------------------------|:---------------------------|:-------------------|:-------------------|:-------------------|:---------------|
+| yny9ky6b6zczqrjzxd7sl71k6 *  | giraf-master00.srv.aau.dk  | Ready              | Active             | Leader             | 18.09.3        |
+| 2n08r588w9p8xazc5cm8r6o9o    | giraf-master01.srv.aau.dk  | Ready              | Active             | Reachable          | 18.09.3        |
+| wrr68nqt116tk1rszwvdv1nmk    | giraf-node00.srv.aau.dk    | Ready              | Active             |                    | 18.09.3        |
+| bhh5mitvwzdhzbky1cjne9ffg    | giraf-node01.srv.aau.dk    | Ready              | Active             |                    | 18.09.3        |
+| as7n375y2gwcj5vf4h73h9ron    | giraf-node02.srv.aau.dk    | Ready              | Active             |                    | 18.09.3        |
+| koclcs8nxt0y6qu4ho511la0m    | giraf-node03.srv.aau.dk    | Ready              | Active             |                    | 18.09.3        |
+
+#### Network
 
 ```bash
 [
