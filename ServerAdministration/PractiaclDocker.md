@@ -4,7 +4,7 @@ In the following the installation and setup process of DockerCE and Docker Swarm
 
 ## Installation of Docker 
 
-To install DockerCE on a node in the Swarm the following command can be used to setup the local Docker envionment:
+To install DockerCE on a node in the Swarm the following command can be used to set up the local Docker environment:
 
 ```bash
 curl -fsSL https://get.docker.com -o get-docker.sh | sh get-docker.sh
