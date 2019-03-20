@@ -14,7 +14,7 @@ In the following, the server architecture for the giraf project will be explaine
 | web01 | 192.38.56.38 | 2 GB RAM 1xCPU Disk: 22 GB OS: CentOS Linux release 7.4.1708 (Core)|
 | Backup01 | 172.19.0.235 | 4 GB RAM 2xCPU Disk: 10 GB OS: CentOS Linux release 7.2.1511 (Core)|
 
-Only user on theise servers are root and each serve has everything open to the internet and is hence under heavy attack from malicious users trying to bruteforce the passwords.
+The only user on these servers are root, and each server has everything open to the internet and is hence under heavy attack from malicious users trying to brute-force the passwords.
 
 
 ## New servers
