@@ -1,6 +1,6 @@
 # Practical Docker in a swarm
 
-In the following the installation and setup process of DockerCE and Docker Swarm is described and at the end some examples on how to use Docker Services is given.
+In the following the installation and setup process of DockerCE and Docker Swarm is described and at the end, some examples on how to use Docker Services is given.
 
 ## Installation of Docker 
 
