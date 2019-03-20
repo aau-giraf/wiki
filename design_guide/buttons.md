@@ -11,9 +11,6 @@ The background and the border should be identical to the default button when a b
 |:--:| :--: | :--: |
 | *Default button* | *Pressed button* | *Disabled button* |
 
-## Shadows
-Buttons should have a shadow 
-
 ## Content
 Buttons can either contain text, an icon or both.
 If the action of the button can be symbolized easily with an icon that the users are familiar with, only an icon should be used for the button.
