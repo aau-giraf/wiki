@@ -92,7 +92,7 @@ The output should look like this:
 
 ## Examples of using a service
 
-Once the Docker Swarm has been set up it can be used to serve the different parts of the project. In the following we will give some examples on how to work with the Swarm.
+Once the Docker Swarm has been set up, it can be used to serve the different parts of the project. In the following, we will give some examples of how to work with the Swarm.
 
 ### Example nginx
 
