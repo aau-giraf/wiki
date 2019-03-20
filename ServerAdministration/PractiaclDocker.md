@@ -68,7 +68,7 @@ To add a worker to the Swarm first run the following command on one of the manag
 docker swarm join-token worker
 ```
 
-The output should be run on the serveres intended to be workers in the Swarm.
+The output should be run on the servers intended to be workers in the Swarm.
 
 Now the Docker Swarm has been created and is ready to serve.
 
