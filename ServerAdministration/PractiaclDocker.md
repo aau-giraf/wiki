@@ -16,7 +16,7 @@ Once the Docker engine has been installed it is recommended that the user is add
 sudo usermod -aG docker <USERNAME>@student.aau.dk
 ```
 
-If the Docker installation is going to be used in a Docker Swarm at AAU the following changes is need since the AAU network is running on the default Docker subnet.
+If the Docker installation is going to be used in a Docker Swarm at AAU, the following changes are needed since the AAU network is running on the default Docker subnet.
 
 For local installations use the following.
 
