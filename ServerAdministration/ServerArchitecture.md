@@ -31,7 +31,7 @@ The only user on these servers are root, and each server has everything open to 
 The two public IP's for the project only has port 80 and port 443 open.
 Each node has been configured to use the ```10.14.0.0/16``` subnet for the local docker daemon. For the swarm overlay network, the ```10.10.0.0/16``` subnet is used.
 
-On the servers the following users has been added as administrators:
+On the servers the following users have been added as administrators:
 bwenne16@student.aau.dk
 tlha16@student.aau.dk
 tivers16@student.aau.dk
