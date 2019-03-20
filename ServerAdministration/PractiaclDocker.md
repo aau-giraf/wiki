@@ -128,7 +128,7 @@ The outpus should look like this:
 | :------------------|:-------------------|:-------------------|:---------------------------|:-------------------|:------------------------|:-------------------|:-----|
 | iksklc50ttxt       | nginx-giraf-proxy.1| nginx:latest       | giraf-master01.srv.aau.dk  | Running            | Running 29 minutes ago  |                    ||
 
-Note that the ports exposed is not listed in this view since it is served throug the service and can be seen then running the following command:
+Note that the ports exposed are not listed in this view since it is served through the service and can be seen then running the following command:
 
 ```bash
 docker service ls
