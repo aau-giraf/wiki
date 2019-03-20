@@ -10,7 +10,7 @@ To install DockerCE on a node in the Swarm the following command can be used to 
 curl -fsSL https://get.docker.com -o get-docker.sh | sh get-docker.sh
 ```
 
-Once the Docker engine has been installed it is recomended that the user is added to the Docker group so every Docker command is not run as root, use the following command to do so:
+Once the Docker engine has been installed it is recommended that the user is added to the Docker group so that every Docker command is not run as root, use the following command to do so:
 
 ```bash
 sudo usermod -aG docker <USERNAME>@student.aau.dk
