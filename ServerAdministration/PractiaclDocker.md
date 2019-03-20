@@ -1,6 +1,6 @@
 # Practical Docker in a swarm
 
-In the following the installation and setup process of DockerCE and Docker Swarm is described and at the end, some examples on how to use Docker Services is given.
+In the following, the installation and setup process of DockerCE and Docker Swarm is described, and at the end, some examples on how to use Docker Services is given.
 
 ## Installation of Docker 
 
@@ -10,7 +10,7 @@ To install DockerCE on a node in the Swarm the following command can be used to 
 curl -fsSL https://get.docker.com -o get-docker.sh | sh get-docker.sh
 ```
 
-Once the Docker engine has been installed it is recommended that the user is added to the Docker group so that every Docker command is not run as root, use the following command to do so:
+Once the Docker engine has been installed, it is recommended that the user is added to the Docker group so that every Docker command is not run as root. The following command ensures that your user is added to the Docker group:
 
 ```bash
 sudo usermod -aG docker <USERNAME>@student.aau.dk
@@ -53,7 +53,7 @@ docker swarm init
 REMEMBER TO CREATE THE NETWORK FIRST
 Once the Docker Swarm is initialized used the following command on the first master server to get the join token for the swarm:
 
-```basj
+```bash
 docker swarm join-token --manager
 ```
 
@@ -70,7 +70,7 @@ docker swarm join-token worker
 
 The output should be run on the servers intended to be workers in the Swarm.
 
-Now the Docker Swarm has been created and is ready to serve.
+Now that the Docker Swarm has been created and is ready to serve.
 
 Use the following command to verify the Swarm setup:
 
@@ -96,21 +96,21 @@ Once the Docker Swarm has been set up, it can be used to serve the different par
 
 ### Example nginx
 
-To create a new service use the following:
+To create a new service, use the following:
 
 ```bash
 docker service create --name nginx-giraf-proxy --replicas 2 -p 80:80 -p 443:443 nginx:1.15
 ```
 
-Be running this command an service with two containers will be stated and the containers will have port 80 and 443 exposed to the internet and can be accessed on the Swarms public IP's. The two containers will be running the nginx version 1.15.
+By running this command, a service with two containers will be stated and the containers will have port 80 and 443 exposed to the internet and can be accessed on the Swarms public IP's. The two containers will be running the nginx version 1.15.
 
-To upgrade the version that a service uses run the following to downgrade or upgrade the service:
+To upgrade the version that a service uses, run the following to downgrade or upgrade the service:
 
 ```bash
 docker service update --image nginx:1.12 nginx-giraf-proxy
 ```
 
-To encrease the number of contaners a service creates use the following command:
+To increase the number of containers a service creates, use the following command:
 
 ```bash
 docker service scale nginx-giraf-proxy=5
@@ -122,7 +122,7 @@ To verify the service use the following command:
 docker service ps nginx-giraf-proxy
 ```
 
-The outpus should look like this:
+The outputs should look like this:
 
 | ID                 | NAME               | IMAGE              | NODE                       | DESIRED STATE      | CURRENT STATE           | ERROR              | PORTS |
 | :------------------|:-------------------|:-------------------|:---------------------------|:-------------------|:------------------------|:-------------------|:-----|
