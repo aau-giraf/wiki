@@ -1,6 +1,6 @@
 # Server architecture
 
-In the following the server archiceture for the giraf project will be explained.
+In the following, the server architecture for the giraf project will be explained.
 
 ## Old servers
 
