@@ -19,9 +19,7 @@ Gradients deﬁned below are from top to bottom. Also note that the colors for t
 | Regular button stroke/border | `138,110,0` |`#8A6E00`| ![#8A6E00](https://placehold.it/15/8A6E00/000000?text=+) |
 | Pressed button background|`212,173,47`<br> `255,157,0`| `#D4AD2F` <br> `#FF9D00` |  ![#D4AD2F](https://placehold.it/15/D4AD2F/000000?text=+) <br>![#FF9D00](https://placehold.it/15/FF9D00/000000?text=+)
 | Pressed button stroke/border | `#493700` |`73,55,0`|![#493700](https://placehold.it/15/493700/000000?text=+)
-| Focused button background |`255,157,0`<br> `255,89,0`|  `#FF9D00` <br> `#FF5900` |![#FF9D00](https://placehold.it/15/FF9D00/000000?text=+) <br> ![#FF5900](https://placehold.it/15/FF5900/000000?text=+)
-| Focused button stroke/border |`138,110,0` | `#8A6E00` |![#8A6E00](https://placehold.it/15/8A6E00/000000?text=+)
-| Focused button background |`250,211,85` <br> `254,190,64`|  `#FAD355` <br> `#FEBE40` |![#FAD355](https://placehold.it/15/FAD355/000000?text=+) <br>![#FEBE40](https://placehold.it/15/FEBE40/000000?text=+)
+
 
 ## Images
 |Usage|RGB|HEX|Color|
