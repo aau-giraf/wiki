@@ -1,10 +1,10 @@
 # Proxy
 
-For the Giraf project we only have two public IP's that both has an DNS A name to srv.giraf.cs.aau.dk. The firewall settings for those ips are that only port ```80``` and port ```443``` are allowed through and since the different parts of the system uses other ports such as port ```5000``` and ```3306``` we need an reverse proxy to pass the traffic intended for those port into our Docker Swarm. In the following the configuration of the proxy will be elaborated upon.
+For the Giraf project we only have two public IPs that both have a DNS name to srv.giraf.cs.aau.dk. The firewall settings for those IPs are that only port ```80``` and port ```443``` are allowed through and since the different parts of the system uses other ports such as port ```5000``` and ```3306``` we need a reverse proxy to pass the traffic intended for those port into the Docker Swarm. In the following, the configuration of the proxy will be elaborated upon.
 
-## docker-stack.yml
+## docker-compose.yml
 
-Then using the ocker stack command for deploying to an production environment the stack file by convention has the name ```docker-stack.yml```.
+Then using the Docker Stack command for deploying to a production environment an ```.yml``` file has to be passed to the command.
 The file contains at least the following:
 
 ```yml
@@ -18,25 +18,26 @@ and can be elaborated with many more options. The file for the proxy is as follo
 version: '3'
 
 services:
-    proxy:
+    PROXY:
         image: nginx:1.15 # this will use the latest version of 1.15.x
         ports:
-            - '80:80'       # expose 80 on the host and sents it to 80 in the container
-            - '443:443'     # expose 443 on the host and sents it to 443 in the container
-        volumes:            # mounts the nginx config folder inside the container as readonly
+            - '80:80'       # expose 80 on the host and sent it to 80 in the container
+            - '443:443'     # expose 443 on the host and sent it to 443 in the container
+        volumes:            # mounts the nginx config folder inside the container
             - ./nginx/:/etc/nginx/
-        networks:           # uses the frontend network to pass trafic into the containers
+        networks:           # uses the frontend network to pass traffic into the containers
             - frontend
 
 networks:
     frontend:               # creates a new network for frontend traffic
+    backend:                # creates a new network for backend traffic
 ```
 
-The code specifies a service called proxy that uses the nginx version 1.15.x and that exposes the port 80 and 443 to the network. It has a volume attached where the nginx config folder is mapped into the container. It is attached to a network called frontend witch is used to exchange information between the proxy and the API. There will also be an network for backend communication between the API and the Database server.
+The code specifies a service called proxy that uses the nginx version 1.15.x and that exposes the port 80 and 443 to the network. It has a volume attached where the nginx config folder is mapped into the container. The networks is elaborated in the [section about network](./Network.md).
 
 ## nginx.conf
 
-The NGINX can be used for many different purposes and one of them is as an proxy. The following config is a standard config for a reverse proxy that will enable all sites in the ```/etc/nginx/sites-enabled/``` folder. 
+The NGINX can be used for many different purposes and one of them is as a proxy. The following config is a standard config for a reverse proxy that will enable all sites in the ```/etc/nginx/sites-enabled/``` folder.
 
 ```bash
 worker_processes  1;
@@ -44,7 +45,6 @@ worker_processes  1;
 events {
     worker_connections  1024;
 }
-
 
 http {
     upstream srv.giraf.cs.aau.dk {
@@ -61,7 +61,7 @@ http {
 
 ## API
 
-The API is file under ```/etc/nginx/sites-enabled/``` specifies where the traffic for the API is supposed to go once the NGINX server receives it. We can use the ```proxy_pass http://API``` since docker uses static DNS names inside its network all traffic for the API will be directed into the API container.
+The API is file under ```/etc/nginx/sites-enabled/API``` specifies where the traffic for the API is supposed to go once the NGINX server receives it. We can use the ```proxy_pass http://API/``` since docker uses static DNS names inside its network all traffic for the API will be directed into the API container. This means that the API can be accessed though http://srv.giraf.cs.aau.dk/API/ on both port ```80``` and port ```443```.
 
 ```bash
 server {
@@ -69,15 +69,14 @@ server {
   listen 443;
 
   server_name srv.giraf.cs.aau.dk;
-    location / {
+    location /API/ {
       proxy_buffer_size   128k;
       proxy_buffers   4 256k;
       proxy_busy_buffers_size   256k;
-      proxy_pass http://API;
+      proxy_pass http://API/;
       proxy_set_header X-Real-IP $remote_addr;
       proxy_set_header Host $host;
       proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
     }
 }
 ```
-
