@@ -3,6 +3,7 @@ This chapter shows which colors should be used for the different components in t
 Throughout this a single color in each entry will denote a solid color, while two colors in an entry will denote a gradient between the two colors.
 
 ## Text and background
+
 |Usage|RGB | HEX| Color |
 |---|---|---|---|
 | Regular text-color | `0,0,0` | `#000000`|![#000000](https://placehold.it/15/000000/000000?text=+) |
@@ -22,6 +23,7 @@ Gradients deﬁned below are from top to bottom. Also note that the colors for t
 
 
 ## Images
+
 |Usage|RGB|HEX|Color|
 |---|---|---|---|
 | Image background-color|`255,255,255`| `#FFFFFF`| ![#FFFFFF](https://placehold.it/15/FFFFFF/000000?text=+) 
@@ -29,6 +31,7 @@ Gradients deﬁned below are from top to bottom. Also note that the colors for t
 |Image marking-color |`254,215,108`| `#FED76C`| ![#FED76C](https://placehold.it/15/FED76C/000000?text=+) 
 
 ## Bars
+
 |Usage|RGB|HEX|Color|
 |---|---|---|---|
 | Background of any bar|`253,187,85` <br>`254,215,108`| `#FDBB55`<br> `#FED76C` | ![#FDBB55](https://placehold.it/15/FDBB55/000000?text=+) <br> ![#FED76C](https://placehold.it/15/FED76C/000000?text=+) 
