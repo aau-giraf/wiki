@@ -11,6 +11,7 @@ Throughout this a single color in each entry will denote a solid color, while tw
 | Background-color for any applications window background | `0,0,0`|`#000000` | ![#000000](https://placehold.it/15/000000/000000?text=+)|
 | Background-color for any activity | `233,233,233`|`#E9E9E9` | ![#E9E9E9](https://placehold.it/15/E9E9E9/000000?text=+)|
 | Showcase help text-color |`255,255,255` |  `#FFFFFF` |![#FFFFFF](https://placehold.it/15/FFFFFF/000000?text=+)|
+
 ## Buttons
 Gradients deﬁned below are from top to bottom. Also note that the colors for the disabled button must be slightly transparent (65%).
 
