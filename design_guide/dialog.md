@@ -14,13 +14,6 @@ it looks here
 
 ![NotifyDialog](./images/NotifyDialog.png "NotifyDialog")
 
-
-## Waiting dialog
-In cases where the system needs to perform some action that takes a long time to execute, 
-to indicate that the system is not frozen, the waiting dialog, as it looks here, can be used. 
-
-![WaitingDialog](./images/WaitingDialog.png "WaitingDialog")
-
 Long running tasks should generally not block the GUI. Any task that can potentially take a long
 time should be done on a background thread and NOT on the main GUI thread.
 
