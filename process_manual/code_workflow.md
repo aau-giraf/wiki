@@ -156,7 +156,7 @@ Before making the pull request, make sure that the code:
 Fully tested means that if any piece of the functionality is removed, a
 test should fail.
 
-Go to the relevant repository, click on pull requests and click the
+To create the pull request, you should go to the relevant repository, click on pull requests and click the
 green "New Pull Request" button. The base branch should be "develop" and
 the compare branch should be your feature branch, with the code that you
 want to add to the develop branch. Then click the green "Create pull
