@@ -2,7 +2,7 @@
 This document provides some advice for the future process groups of the Giraf project. This advice is compiled by the process group of the 2019 Giraf project.
 
 ## Do Use Full-Stack Teams
-During the Giraf 2019 project we chose to use a full-stack approach instead of the commonly used specialist approach. With the specialist approach each group is assigned a specific part of the system that they work on as a sole focus. E.g. two groups could be server groups, one could be back end etc. With this approach each feature (user story) is potentially developed by many groups as they each work on different parts of the system to solve the issue. <br>
+During the Giraf 2019 project we chose to use a full-stack approach instead of the commonly used specialist approach. With the specialist approach each group is assigned a specific part of the system that they work on as a sole focus. E.g. two groups could be server groups, one could be back end, etc. With this approach each feature (user story) is potentially developed by many groups as they each work on different parts of the system to solve the issue. <br>
 With the full-stack approach each group develops full features (user stories) from top to bottom. This approach has many benefits such as:
 
 * Every group gets to see more of the code because they implement full features.
