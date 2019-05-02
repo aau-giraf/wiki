@@ -9,7 +9,7 @@ With the full-stack approach each group develops full features (user stories) fr
 * Less pipelining is needed as features are not made in parts by different groups.
 * People are motivated to finish their tasks because they can see their implementations immediately in the application.
 
-After having used the full stack approach for this year's Giraf project we believe that it is a good fit for this kind of semester project. We would therefore urge future groups to keep on using this approach and not go back to the specialist approach.<p>
+After having used the full stack approach for this year's Giraf project we believe that it is a good fit for this kind of semester project. We would therefore urge future process groups to keep using this approach and not go back to the specialist approach.<p>
 This approach does have downsides that need to be managed still. However, they are not really intrinsic to the approach itself.<br>
 Be careful to consider the following points when you think out the process for your own project:
 
