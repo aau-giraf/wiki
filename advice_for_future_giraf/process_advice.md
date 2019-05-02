@@ -20,7 +20,7 @@ Be careful to consider the following points when you think out the process for y
 We found that handling dependencies needs constant work with our process. It is quickly forgotten by individual groups that their work might affect others or that others might depend on one user story to implement their own if people are not made aware of this constantly.
 
 ## Do Mention Everything Explicitly
-Throughout the 2019 Giraf project we found that the only way to make sure that every group followed the process correctly was to tell them every part of it (sometimes repeatedly). While this might sound trivial, there are a lot of small things that can be seen as implicit to some people and if the process group finds something to be self-evident they might not mention it. However small any part of the process might be, it should always be mentioned explicitly to everyone in the project.<br>
+Throughout the 2019 Giraf project we found that the only way to make sure that every group followed the process correctly was to tell them every part of it (sometimes repeatedly). While this might sound trivial, there are a lot of small things that can be seen as implicit to some people and if the process group finds something to be self-evident, they might not mention it. However small any part of the process might be, it should always be mentioned explicitly to everyone in the project.<br>
 If you decide to use some form of frequent meetings (e.g. daily Scrum of Scrums stand up meetings), this is a good place to remind people of small things related to process. Even if it might be redundant at the end, at least you know that people are on the same page.
 
 ## Do Plan All Meetings of a Sprint at the Beginning of it
