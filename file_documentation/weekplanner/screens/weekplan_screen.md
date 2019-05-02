@@ -65,7 +65,8 @@ The _day function returns a Column with a ListView in it. The ListView contains 
 
 The _pictogramIconStack is used to add the accept icon once an activity is done as seen on Thursday in the layout section.
 
+Two functions allow for the moving of images, _dragTargetPlaceholder and _dragTargetPictogram
+
 The _getPictograms is used to load the image of a specific image id.
 
 The _translateWeekDay is used to translate an enum type to a textstring. 
-
