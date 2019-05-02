@@ -12,19 +12,60 @@ The weekplan screen also uses the giraf_appbar which also adds functionality
 
 ## Layout 
 The weekplan screen is displayed as seen here:
-![Layout of screen](../pictures/weekPlannerScreen.PNG)
+![Layout of screen](../pictures/weekPlannerScreen.PNG) 
+The activity on Thursday is an activty marked as done, whereas the one on Wednesday is not done yet.
 
 ## Buttons
 The buttons used in the weekplan screen are the addactivity buttons. One button is placed at the bottom of each day. 
-Tapping an ad activity button open a new screen the pictogram_search_screen in which the user can search for pictogram to add. 
+Tapping an addactivity button opens a new screen the pictogram_search_screen in which the user can search for a pictogram to add to that day. 
 
 
 ## Code
+The weekplan_screen is a widget, thus it have to implement the build function, as seen here:
+```dart
+@override
+  Widget build(BuildContext context) {
+    return StreamBuilder<WeekplanMode>(
+        stream: authBloc.mode,
+        builder: (BuildContext context,
+            AsyncSnapshot<WeekplanMode> weekModeSnapshot) {
+          return Scaffold(
+            appBar: GirafAppBar(
+                title: 'Ugeplan',
+                appBarIcons: (weekModeSnapshot.data == WeekplanMode.guardian)
+                    ? <AppBarIcon>[
+                        AppBarIcon.changeToCitizen,
+                        AppBarIcon.settings,
+                        AppBarIcon.logout,
+                      ]
+                    : <AppBarIcon>[AppBarIcon.changeToGuardian]),
+            body: StreamBuilder<UserWeekModel>(
+              stream: weekplanBloc.userWeek,
+              initialData: null,
+              builder: (BuildContext context,
+                  AsyncSnapshot<UserWeekModel> snapshot) {
+                if (snapshot.hasData) {
+                  return _buildWeeks(snapshot.data.week, context);
+                } else {
+                  return const Center(
+                    child: CircularProgressIndicator(),
+                  );
+                }
+              },
+            ),
+          );
+        });
+  }
+```
+The build method returns a streambuilder which uses the authBloc.mode. authBloc.mode tells wheter a guardian or citizen uses the app. The layout of the screen is dependant on this. Inside the Scaffold another streambuilder is used, the stream is set to weekplanBloc.userWeek. The stream emits the userweek to be shown. If there is data in the stream _buildweeks is called. Otherwise a CircularProgressIndicator is shown. 
 
-Each day is a column with a ListView, the ListView is 
-scrollable. Thus when enough activities are added to a day. You can scroll (finger upwards) to see
-the next activies. The activities are added by pushing the button with a plus button, located at the
-bottom of the column. The button for add activity are located inside the day column but outside of the listview and thus they don't follow the scrolling.<br>
+The _buildweeks method is one of multiple help functions to build the layout. _buildweek creates all the different days of the week, it does so by return a Row for each day.
 
+The _day function return a Column with a ListView in it. The ListView contains all the activies for a day. Besides the _day function also calls _dragTargetPlaceholder() to display grey placeholders, when an activity is to be moved. The _day function also build the addactivity buttons in the bottom of each day.
 
-## How is the screen built
+The _pictogramIconStack is used to add the accept icon once an activity is done as seen on Thursday in the layout section.
+
+The _getPictograms is used to load the image of a specific image id.
+
+The _translateWeekDay is used to translate an enum type to a textstring. 
+
