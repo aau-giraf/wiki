@@ -5,7 +5,7 @@ This file documents the choose_citizen_screen.dart file.
 The choose_citizen_screen is the screen in the Week Planner App that shows the citizens associated with the guardian that is currently logged in. This screen is the first screen that is shown when a guardian logs on to the app.
 
 ## Layout of the screen
-
+This is the layout of the choose citizen screen<br>
 ![Layout of the screen](../pictures/ChooseCitizenScreen.PNG)
 
 The blue square is the headline "Vælg borger". It helps the user figure out what they are supposed to do when they are in that screen.
