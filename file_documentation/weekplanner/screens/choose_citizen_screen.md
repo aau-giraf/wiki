@@ -50,3 +50,4 @@ class ChooseCitizenScreen extends StatelessWidget {
 }
 ```
 Like most screens the ChooseCitizenScreen class extends the StatelessWidget class. It also overrides the build method. The build method builds up the screen. It checks the size and orientation of the screen to figure out how to place all the buttons in the screen.  
+
