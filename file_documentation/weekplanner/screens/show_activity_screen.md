@@ -15,4 +15,7 @@ The primary functionality of the screen is implemented in the functions *buildAc
 
 The *buildButtonBar* function also uses a streambuilder with the same stream as *buildActivity*. The reason for this is to be able to check if the loaded activity is already marked as done, or not. The icon of the button also has to change depending on the situation, either it should be a check mark as seen in the picture shown in the layout section or an arrow, indicating a revert. 
 
+## Structure
+The structure of *show_activity_screen* is shown in this UML diagram
+![Screen used to show an activity](../pictures/showActivityScreen.png)
 
