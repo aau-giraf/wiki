@@ -16,7 +16,7 @@ The blue square marks the password text field. The user is supposed to write the
 
 The red square marks the login button.
 
-The purple square marks the auto-login button.
+The purple square marks the auto-login button and is only visible in debug mode.
 ## Button
 When the user clicks this button the system checks whether the username and password are valid, and either leads the user to the choose citizen screen, or gives the user a message saying that either the username or the password was wrong.<br>
 ![error message](../pictures/LoginScreenErrorMessage.png)
