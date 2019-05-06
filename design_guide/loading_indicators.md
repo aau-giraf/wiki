@@ -13,3 +13,4 @@ If there is no reliable way of calculating the actual progress of a running task
 
 ![Loading spinner](./images/loadingSpinner.png "LoadingSpinner")
 
+A method that shows the the loading spinner widget has been created in the weekplanner repo which should be used for loading spinners throughout the weekplanner app.
