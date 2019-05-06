@@ -5,7 +5,7 @@ This files contains the documentaion of the giraf_app_bar_widget.dart file from 
 This widget is representing the appbar at the top of many screens. The displayed icons are chosen dynamically and depends on the current screen and usermode. The icons as well as their functionality are provided by toolbar_bloc.dart. 
 
 ## Layout
-The Giraf appbar is displayed as seen here:
+The Giraf appbar is displayed as seen here, when located on the weekplan screen (weekplan_screen.dart):
 
 ![Layout of Giraf app bar](../pictures/GirafAppbar.PNG)
 
