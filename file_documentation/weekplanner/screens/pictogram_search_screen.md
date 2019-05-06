@@ -12,3 +12,7 @@ All the results from the search are clickable, pressing one of the results will 
 
 ## Code
 The build function contains all the code for the layout, A coloumn with a textfield to enter the query. Whenever the input field is changed the search is performed through the _bloc.search stream. The column also contains another streambuilder. This streambuilder is used to check for the result of the search. If the result of the search has an error, the error message is displayed. Otherwise, while searching a circular progress indicator is displayed. 
+
+## Structure
+The diagram shows the structure of *pictogram_search_screen*.
+![The UML diagram](../pictures/pictogram_search_screen_UML.PNG)
