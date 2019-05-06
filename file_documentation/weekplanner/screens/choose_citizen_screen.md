@@ -1,6 +1,10 @@
 # choose_citizen_screen documentation
 This file documents the choose_citizen_screen.dart file.
 
+## Class Diagram
+This is the class diagram.<br>
+![class diagram](../pictures/ChooseCitizenScreenDiagram.PNG)
+
 ## Functionality
 The choose_citizen_screen is the screen in the Week Planner App that shows the citizens associated with the guardian that is currently logged in. This screen is the first screen that is shown when a guardian logs on to the app.
 
@@ -50,4 +54,3 @@ class ChooseCitizenScreen extends StatelessWidget {
 }
 ```
 Like most screens the ChooseCitizenScreen class extends the StatelessWidget class. It also overrides the build method. The build method builds up the screen. It checks the size and orientation of the screen to figure out how to place all the buttons in the screen.  
-

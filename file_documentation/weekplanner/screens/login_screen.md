@@ -1,6 +1,10 @@
 # Login Screen
 This file documents the login_screen.dart file.
 
+## Class Diagram
+This is the class diagram for this class.<br>
+![class diagram](../pictures/LoginScreenDiagram.png)
+
 ## Functionality
 This screen is the first screen that the user sees when they open the app. It is needed to only let guardians use the app.
 
