@@ -70,3 +70,7 @@ Two functions allow for the moving of images, *_dragTargetPlaceholder* and *_dra
 The *_getPictograms* is used to load the image of a specific image id.
 
 The *_translateWeekDay* is used to translate an enum type to a textstring. 
+
+## Structure
+The UML diagram shows the structure of *weekplan_screen*.
+![The structure of](../pictures/WeekPlanScreen.png)
