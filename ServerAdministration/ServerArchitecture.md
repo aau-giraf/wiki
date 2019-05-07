@@ -9,7 +9,7 @@ In the following, the server architecture for the giraf project will be explaine
 | Master00  | 192.38.56.37  | 2 GB RAM 2xCPU Disk: 22 GB OS: CentOS Linux release 7.5.1804 (Core) |
 | Node01    | 172.19.0.244  | 2 GB RAM 1xCPU Disk: 22 GB OS: CentOS Linux release 7.5.1804 (Core) |
 | Node02    | 172.19.0.245  | 2 GB RAM 1xCPU Disk: 22 GB OS: CentOS Linux release 7.5.1804 (Core) |
-| Node03    | 192.38.56.36  | 2 GB RAM 1xCPU Disk: 22 GB OS: CentOS Linux release 7.5.1804 (Core)  |
+| Node03    | 192.38.56.36  | 2 GB RAM 1xCPU Disk: 22 GB OS: CentOS Linux release 7.5.1804 (Core) |
 | GitLab    | 192.38.56.136 | 4 GB RAM 2xCPU Disk: 46 GB OS: CentOS Linux release 7.5.1804 (Core) |
 | web01     | 192.38.56.38  | 2 GB RAM 1xCPU Disk: 22 GB OS: CentOS Linux release 7.4.1708 (Core) |
 | Backup01  | 172.19.0.235  | 4 GB RAM 2xCPU Disk: 10 GB OS: CentOS Linux release 7.2.1511 (Core) |
@@ -23,10 +23,10 @@ The only user on these servers are root, and each server has everything open to 
 |:---- | :---------- | :--------- | :-----|
 | giraf-master00.srv.aau.dk | 172.19.10.29 | 192.38.56.151 | Ram: 4 GB 2xCPU Disk: 24 GB OS: Ubuntu Server 18.04.2 |
 | giraf-master01.srv.aau.dk | 172.19.10.30 | 192.38.56.153 | Ram: 4 GB 2xCPU Disk: 24 GB OS: Ubuntu Server 18.04.2 |
-| giraf-node00.srv.aau.dk | 172.19.10.31 | N/A | Ram: 2 GB 1xCPU Disk: 24 GB OS: Ubuntu Server 18.04.2 |
-| giraf-node01.srv.aau.dk | 172.19.10.32 | N/A | Ram: 2 GB 1xCPU Disk: 24 GB OS: Ubuntu Server 18.04.2 |
-| giraf-node02.srv.aau.dk | 172.19.10.33 | N/A | Ram: 2 GB 1xCPU Disk: 24 GB OS: Ubuntu Server 18.04.2 |
-| giraf-node03.srv.aau.dk | 172.19.10.34 | N/A | Ram: 2 GB 1xCPU Disk: 24 GB OS: Ubuntu Server 18.04.2 |
+| giraf-node00.srv.aau.dk   | 172.19.10.31 | N/A | Ram: 2 GB 1xCPU Disk: 24 GB OS: Ubuntu Server 18.04.2             |
+| giraf-node01.srv.aau.dk   | 172.19.10.32 | N/A | Ram: 2 GB 1xCPU Disk: 24 GB OS: Ubuntu Server 18.04.2             |
+| giraf-node02.srv.aau.dk   | 172.19.10.33 | N/A | Ram: 2 GB 1xCPU Disk: 24 GB OS: Ubuntu Server 18.04.2             |
+| giraf-node03.srv.aau.dk   | 172.19.10.34 | N/A | Ram: 2 GB 1xCPU Disk: 24 GB OS: Ubuntu Server 18.04.2             |
 
 The two public IP's for the project only has port 80 and port 443 open.
 Each node has been configured to use the ```10.14.0.0/16``` subnet for the local docker daemon. For the swarm overlay network, the ```10.10.0.0/16``` subnet is used.
