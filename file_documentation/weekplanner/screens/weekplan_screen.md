@@ -17,7 +17,6 @@ The activity on Thursday is an activty marked as done, whereas the one on Wednes
 
 ## Buttons
 The buttons used in the weekplan screen are the addactivity buttons. One button is placed at the bottom of each day. 
-Tapping an addactivity button opens a new screen the pictogram_search_screen in which the user can search for a pictogram to add to that day. 
 
 
 ## Code
