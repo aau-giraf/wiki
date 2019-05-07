@@ -3,7 +3,7 @@
 ## Functionality
 The pictogram search screen is the one used to find a suitable pictogram when adding an activity. The screen has an input field which is used to type in a search query. The search screen will return 10 images no matter what the input query is. Thus it will match as many charcters as possible and return the images with the titles that fit the best. The search is executed whenever changes happen to the input field.
 
-The screen has the `giraf_app_bar`, thus from the screen you can access the settings screen or logout.
+The screen has the `giraf_app_bar` [(documented here)](../widgets/giraf_app_bar_widget.md).
 ## Layout
 ![The pictogram search screen](../pictures/pictogram_search_screen.PNG)
 
