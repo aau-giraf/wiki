@@ -1,10 +1,6 @@
 # Login Screen
 This file documents the login_screen.dart file.
 
-## Class Diagram
-This is the class diagram for this class.<br>
-![class diagram](../pictures/LoginScreenDiagram.png)
-
 ## Functionality
 This screen is the first screen that the user sees when they open the app. It is needed to only let guardians use the app.
 
@@ -29,3 +25,7 @@ When the user clicks this button. The content of the user name text field is cha
 
 ## Code
 The screen uses an AuthBLoC to keep track of which user is logged in. When the user clicks the login button, the loginAction method is called, which logs in the user if the username and password is correct. This is checked with the AuthBLoC's authenticate method. The error message is shown through the showNotifyDialog method.
+
+## Structure
+This is the class diagram for this class.<br>
+![class diagram](../pictures/LoginScreenDiagram.png)
