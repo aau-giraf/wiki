@@ -11,7 +11,7 @@ The screen's layout
 ![The layout of the screen](../pictures/new_weekplan_screen.PNG)
 
 ## Buttons
-As of now, only one button of the two seen in the layout, is clickable. The disabled button "Vælg skabelon" can be implemented later, and should allow or a guardian to user a predefined template. The enabled button "Gem ugeplan" is used to save he weekplan.
+As of now, only one button of the two seen in the layout, is clickable. The disabled button "Vælg skabelon" can be implemented later, and should allow a guardian to use a predefined template. The enabled button "Gem ugeplan" is used to save he weekplan.
 
 ## Code
 The screen is most interesting funcion is the `build` function. The function returns a `scaffold` containing a `listview` with three streambuilders.
