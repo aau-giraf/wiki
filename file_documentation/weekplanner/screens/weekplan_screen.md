@@ -17,7 +17,7 @@ The `weekplan_screen` is displayed as seen here:
 The activity on Thursday is an activity marked as done, whereas the one on Wednesday is not marked as done yet.
 
 ## Buttons
-The buttons used in the weekplan screen are the addactivity buttons. One button is placed at the bottom of each day. 
+The buttons seen at the bottom of the `weekplan_screen` screen are the _add activity_ buttons. Tapping an _add activity_ button opens a new screen, namely the `pictogram_search_screen`, which the user can search for a pictogram to add to that day. 
 
 
 ## Code
