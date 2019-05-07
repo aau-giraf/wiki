@@ -22,10 +22,10 @@ The servers are on the following IP's:
 |:----|:---|
 | giraf-master00.srv.aau.dk | 172.19.10.29 |
 | giraf-master01.srv.aau.dk | 172.19.10.30 |
-| giraf-node00.srv.aau.dk | 172.19.10.31 |
-| giraf-node01.srv.aau.dk | 172.19.10.32 |
-| giraf-node02.srv.aau.dk | 172.19.10.33 |
-| giraf-node03.srv.aau.dk | 172.19.10.34 |
+| giraf-node00.srv.aau.dk   | 172.19.10.31 |
+| giraf-node01.srv.aau.dk   | 172.19.10.32 |
+| giraf-node02.srv.aau.dk   | 172.19.10.33 |
+| giraf-node03.srv.aau.dk   | 172.19.10.34 |
 
 The entire project has two public IPs and with has a DNS A record to srv.giraf.cs.aau.dk.
 
