@@ -11,7 +11,7 @@ etc. The essential parts are covered in this section but the full
 documentation is stated in both [naming convention](<https://github.com/ktaranov/naming-convention/blob/master/C%23%20Coding%20Standards%20and%20Naming%20Conventions.md>) and [microsoft docs](<https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions>) where the latter weighs
 the most if any conflicts occur.
 
-### Comments in the code
+## Comments in the code
 
 C\# facilitates functionality to easily add a description to a function,
 class, etc., as seen below:
@@ -36,7 +36,7 @@ class, etc., as seen below:
       }
 ```
 
-### Naming Conventions
+## Naming Conventions
 
 For the purpose of C\# programming, we recommend this naming scheme.
 
@@ -72,7 +72,7 @@ For the purpose of C\# programming, we recommend this naming scheme.
         }
     }
 
-### Other Aspects
+## Other Aspects
 
   - variable, class, and method names should be self-explanatory.
 
