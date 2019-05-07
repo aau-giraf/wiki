@@ -58,7 +58,7 @@ The `weekplan_screen` is a widget must, therefore, implement the build method, a
   }
 ```
 
-The build method returns a `StreamBuilder` which uses the `AuthBloc`'s `mode` stream. The `AuthBloc`'s `mode` stream tells whether a guardian or citizen uses the app. The layout of the screen is dependant on this. The `StreamBuilder` inside the `Scaffold` uses the stream of `WeekplanBloc.userWeek`. This stream emits the active `UserWeek`. We call *_buildWeeks* if there is data in the stream, and a `CircularProgressIndicator` is shown otherwise.
+The *build* method returns a `StreamBuilder` which uses the `AuthBloc`'s `mode` stream. The `AuthBloc`'s `mode` stream tells whether a guardian or citizen uses the app. The layout of the screen is dependant on this. The `StreamBuilder` inside the `Scaffold` uses the stream of `WeekplanBloc.userWeek`. This stream emits the active `UserWeek`. We call *_buildWeeks* if there is data in the stream, and a `CircularProgressIndicator` is shown otherwise.
 
 The *_buildWeeks* method is one of the multiple help functions used to build the layout. *_buildWeek* creates all the different days of the week. The *_buildWeek* method does so by returning a `Row` for each day.
 
