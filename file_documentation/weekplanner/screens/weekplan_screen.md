@@ -14,7 +14,7 @@ The `weekplan_screen` also uses the `giraf_appbar` which also adds some function
 The `weekplan_screen` is displayed as seen here:
 
 ![Layout of the screen](../pictures/weekPlannerScreen.PNG) 
-The activity on Thursday is an activty marked as done, whereas the one on Wednesday is not done yet.
+The activity on Thursday is an activity marked as done, whereas the one on Wednesday is not marked as done yet.
 
 ## Buttons
 The buttons used in the weekplan screen are the addactivity buttons. One button is placed at the bottom of each day. 
