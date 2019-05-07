@@ -8,7 +8,7 @@ The screen is the one responsible for showing all the days of the week. Each day
 * Accessing an activity
 * Moving activities
 
-The weekplan screen also uses the giraf_appbar which also adds functionality
+The `weekplan_screen` also uses the `giraf_appbar` which also adds some functionality.
 
 ## Layout 
 The weekplan screen is displayed as seen here:
