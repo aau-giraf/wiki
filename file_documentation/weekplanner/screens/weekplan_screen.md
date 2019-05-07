@@ -12,7 +12,7 @@ The `weekplan_screen` also uses the `giraf_appbar` which also adds some function
 
 ## Layout 
 The weekplan screen is displayed as seen here:
-![Layout of screen](../pictures/weekPlannerScreen.PNG) 
+![Layout of the screen](../pictures/weekPlannerScreen.PNG) 
 The activity on Thursday is an activty marked as done, whereas the one on Wednesday is not done yet.
 
 ## Buttons
