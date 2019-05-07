@@ -20,7 +20,8 @@ The buttons used in the weekplan screen are the addactivity buttons. One button 
 
 
 ## Code
-The weekplan_screen is a widget, thus it have to implement the build function, as seen here:
+The `weekplan_screen` is a widget must, therefore, implement the build method, as seen here:
+
 ```dart
 @override
   Widget build(BuildContext context) {
