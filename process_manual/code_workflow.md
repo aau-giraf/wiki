@@ -160,7 +160,7 @@ To create the pull request, you should go to the relevant repository, click on p
 green "New Pull Request" button. The base branch should be "develop" and
 the compare branch should be your feature branch, with the code that you
 want to add to the develop branch. Then click the green "Create pull
-request" button-
+request" button.
 
 Next, include pictures of all the screens that you added, in the text
 field, so someone from the product owner group can verify that the
@@ -169,8 +169,8 @@ screens follow the design manual.
 Remember to include the text "fixes \#YourIssueID". This will
 automatically close the issue when the pull request is merged.
 
-Now, all that is left is for you to inform the process group, and ask
-them to assign reviewers. They will assign reviewers, who will review
+Now all that is left is for you to inform the process group, and ask
+them to assign reviewers. They will assign reviewers who will review
 your pull request.
 
 ## How To: Review a Pull Request
@@ -199,7 +199,7 @@ first two actions *might* introduce problems to the codebase, the author
 of the pull request should always do these things, as that person will
 be best suited to handle potential problems.
 
-Are you reviewing a complex piece of code, or a particularly problematic
+If you are reviewing a complex piece of code, or a particularly problematic
 piece of code, it is highly advisable that you locate the author of the
 pull request, and walk through the code with them, side by side, in
 order to clarify any misunderstandings efficiently and effectively.
@@ -209,7 +209,7 @@ order to clarify any misunderstandings efficiently and effectively.
 **Code Design**
 - [ ] Is the code in the right place? (Both in terms of folder structure and class structure)
 - [ ] Could this code, to the best of your knowledge, have reused existing code?
-- [ ] Is the code over-engineered? Examples of over-engineering: Implemented behavior for future problems
+- [ ] Is the code over-engineered? Example of over-engineering: Implemented behavior for future problems
 - [ ] Does it introduce functionality that is not necessary for solving the problem?
 
 **Code Readability and Maintainability**

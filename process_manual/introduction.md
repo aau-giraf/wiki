@@ -8,24 +8,24 @@ Best of luck.
 ## How to read this guide
 This guide is intended to be read partly as a cover-to-cover guide of the process that we developed during the semester.
 The primary focus, however, is for it to be a guide that you can go and look at, every time you are in doubt about the meaning of something.
-Are you a process group member you will probably benefit from reading it almost cover-to-cover or keeping it very close to you in the first few weeks.
-Are you part of a development group, you will benefit greatly from the last sections, that describes how the code lifecycle works.
+If you are a process group member, you will probably benefit from reading it almost cover-to-cover or keeping it very close to you in the first few weeks.
+If you are part of a development group, you will benefit greatly from the last sections that describe how the code lifecycle works.
 Other than that, you might be able to use the rest of the sections for reference in your report.
 
 ## Introduction for the next process group
 You have been chosen as the process group of this semester. It might be against your will, but nonetheless it's an important job that needs to be done.
-If this is at the very start of the semester we recommend that you read the following sections:
+If this is at the very beginning of the semester, we recommend that you read the following sections:
 1. [General development in Process group information](process_group_information.md#general-development)
 2. [Project meetings](project_meetings.md#project-meetings)
    1. Especially sprint intro and cross-group standups
 3. [How to handle roles in Process group information](process_group_information.md#how-to-handle-roles)
 4. [Changing the process](changing_the_process.md)
 
-Your responsibility is to define how project groups do everything: from writing proper code, to meetings, and releasing the code.
+Your responsibility is to define how project groups do everything: from writing proper code to meetings and releasing the code.
 Just remember: especially in the beginning it's a good idea to just take quick decisions and correct errors later. 30-40 people wait just for you to get started, so any plan is better than no plan.
 We do of course recommend our plan. That's still better than no plan.
 
 To avoid micromanaging we don't care for how groups do things internally.
 We only care about things that affect other groups as well.
-So if one groups wants to work hardcore SCRUM, and another don't want any formal process, let them.
+So if one groups wants to work hardcore Scrum, and another don't want any formal process, let them.
 Just make sure that they participate in the common activites that you define, and make sure that you can reach them in normal work hours.
