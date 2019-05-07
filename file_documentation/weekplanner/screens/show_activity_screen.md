@@ -8,7 +8,7 @@ The `show_activity_screen` is the screen used to display a chosen activity. From
 
 
 ## Buttons
-pressing the check mark either marks the activity as done or unmarks it depending on the initial state of the activity.
+Pressing the check mark either marks the activity as done or unmarks it depending on the initial state of the activity.
 
 ## Code
 The primary functionality of the screen is implemented in the functions *buildActivity* and *buildButtonBar*. The *buildActivity* function uses a `streambuilder` with the *_activityBloc.activityModelStream* to get the tapped activity. The *buildActivity* function also uses a `stack` to place a check mark on top of the pictogram.
