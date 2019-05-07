@@ -200,9 +200,10 @@ of the pull request should always do these things, as that person will
 be best suited to handle potential problems.
 
 Are you reviewing a complex piece of code, or a particularly problematic
-piece of code, it is highly advisable that you locate the author of the
-pull request, and walk through the code with them, side by side, in
-order to clarify any misunderstandings efficiently and effectively.
+piece of code, it is highly advisable that you sit besides the author of the
+pull request. 
+Walking through the code with them, side by side, in
+order to clarify any misunderstandings efficiently and effectively really helps the understanding.
 
 ## Code Review Checklist
 

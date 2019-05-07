@@ -69,7 +69,7 @@ Following the practice, or simply developing new features / document the existin
 ### Skill groups
 These groups have a representative from each development group, and have a single responsibility area, i.e. the frontend, backend, or server.  
 They will do work that is not directly related to an issue, but is more related to general maintenance and management of the three areas.
-We recommend that major changes or decisions related to one of the areas are discussed in these groups.  
+We recommend that major changes or decisions related to one of the areas are discussed in these groups, as they will be the most qualified at making these decisions.
 The development groups should also be able to consult their representative when they have specific questions to one of the areas.
 
 We did not have a lot to do with these groups, other than setting the time and place for the first meeting, and introducing the idea to them.
@@ -135,7 +135,7 @@ We also enforce squash merges from feature branches into the develop branch, so 
 This is our adaptation, but please read the entire section, as there might be better ways to do it.
 
 For the [release preparation](project_meetings.md#release-preparation), the process group creates a release branch, which is merged out from the master branch.
-Then commits are chosen from the develop branch.
+Then commits are chosen from the develop branch by the PO-group.
 Only commits actually relevant for the upcoming release are added.
 This is called cherry picking commits.
 In the release preparation, developers will add bug-fixes to the release branch.
@@ -151,7 +151,9 @@ As it is currently, the develop branch allows sub-features to be pushed, which a
 As such you might have a "login" button, but not the "create user" button.
 This renders the login button useless, but it can still be included in the develop branch right now.
 
-If this work was done in feature branches that merged into a "user handling" feature branch, which is then merged into the develop branch when everything about user handling is done, the entire develop branch can be merged into a release branch, and then that release branch can be merged into the master branch, which can then be merged into the develop branch - called backmerging.
+An example of how to properly handle this, could be to create a feature branch where all login related functionality could be added.
+Different issues could be merged into this feature branch.
+When everything login related has been fixed and merged to the feature branch, this feature branch can be merged into the develop branch.
 
 ## Assigning reviewers
 Assigning reviewers is done in an excel document.
@@ -162,7 +164,7 @@ This sheet will keep track of the number of PRs a group read, and the size of th
 We reset it once in a while, when the numbers become too big.
 
 It helps to gain an overview of which group to assign for review.
-Every PR needs two groups, who are not the author, as reviewers.
+Every PR needs two groups, who are not the author, as reviewers, as well as an approving review from a PO-group member.
 When groups have been chosen, you should assign a representative from the group as a reviewer on the PR.
 
 We provide a checklist to the reviewers, depending on if the PR is made to a [code repository](review_checklist_code.md) or the [wiki repository](review_checklist_wiki.md).

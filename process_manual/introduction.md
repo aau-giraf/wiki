@@ -1,7 +1,7 @@
 # Introduction
 The following will describe the process used in the 2019 project of the Giraf project.
 It was updated at the very end of the project, to include all adaptations of processes, to help the year of 2020 get a headstart on the project.
-Most decisions will be described to explain the circumstances and arguments that made it the right decision at the time.
+Most decisions will be described to explain the circumstances and arguments that made it the preferable decision at the time.
 We recommend that the year of 2020 try to replicate this process, and change it to match inevitable changes to your circumstances.
 Best of luck.
 
