@@ -11,7 +11,8 @@ The screen is the one responsible for showing all the days of the week. The `wee
 The `weekplan_screen` also uses the `giraf_appbar` which also adds some functionality.
 
 ## Layout 
-The weekplan screen is displayed as seen here:
+The `weekplan_screen` is displayed as seen here:
+
 ![Layout of the screen](../pictures/weekPlannerScreen.PNG) 
 The activity on Thursday is an activty marked as done, whereas the one on Wednesday is not done yet.
 
