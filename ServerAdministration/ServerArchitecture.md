@@ -5,7 +5,7 @@ In the following, the server architecture for the giraf project will be explaine
 ## Old servers (DISCONTINUED)
 
 | Name      | IP            | Specs |
-| :---      | :---          | :--- |
+| :---      | :---          | :---  |
 | Master00  | 192.38.56.37  | 2 GB RAM 2xCPU Disk: 22 GB OS: CentOS Linux release 7.5.1804 (Core) |
 | Node01    | 172.19.0.244  | 2 GB RAM 1xCPU Disk: 22 GB OS: CentOS Linux release 7.5.1804 (Core) |
 | Node02    | 172.19.0.245  | 2 GB RAM 1xCPU Disk: 22 GB OS: CentOS Linux release 7.5.1804 (Core) |
