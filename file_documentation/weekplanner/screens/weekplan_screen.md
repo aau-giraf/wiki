@@ -58,7 +58,7 @@ The weekplan_screen is a widget, thus it have to implement the build function, a
 ```
 The build method returns a streambuilder which uses the authBloc.mode. authBloc.mode tells whether a guardian or citizen uses the app. The layout of the screen is dependant on this. Inside the Scaffold another streambuilder is used, the stream is set to weekplanBloc.userWeek. The stream emits the userweek to be shown. If there is data in the stream *_buildweeks* is called. Otherwise a CircularProgressIndicator is shown. 
 
-The *_buildweeks* method is one of multiple help functions to build the layout. *_buildweek* creates all the different days of the week, it does so by returning a Row for each day.
+The *_buildWeeks* method is one of the multiple help functions used to build the layout. *_buildWeek* creates all the different days of the week. The *_buildWeek* method does so by returning a `Row` for each day.
 
 The *_day* function returns a Column with a ListView in it. The ListView contains all the activities for a day. Besides this, the *_day* function also calls *_dragTargetPlaceholder()* to display grey placeholders, when an activity is to be moved. The *_day* function also builds the addactivity buttons in the bottom of each day.
 
