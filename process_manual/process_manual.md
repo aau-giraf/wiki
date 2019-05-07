@@ -9,12 +9,11 @@
   - How to handle roles
     - Development groups
     - Skill groups
-    - PO group
+    - Product owner group
   - Your role and relevant info for you
     - Communication (Slack)
     - General about meetings - also skill group meetings
     - Our adaptation of GitFlow
-    - Your collaboration with the PO group
     - Assigning reviewers
     - Gatekeepers of good code practice
       - Definition of done
