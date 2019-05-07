@@ -60,7 +60,7 @@ The build method returns a streambuilder which uses the authBloc.mode. authBloc.
 
 The *_buildWeeks* method is one of the multiple help functions used to build the layout. *_buildWeek* creates all the different days of the week. The *_buildWeek* method does so by returning a `Row` for each day.
 
-The *_day* function returns a Column with a ListView in it. The ListView contains all the activities for a day. Besides this, the *_day* function also calls *_dragTargetPlaceholder()* to display grey placeholders, when an activity is to be moved. The *_day* function also builds the addactivity buttons in the bottom of each day.
+The *_day* function returns a `Column` with a `ListView` in it. The `ListView` contains all the activities for a day. The *_day* function also calls *_dragTargetPlaceholder()* to display grey placeholders, when an activity is to be moved. The *_day* function also builds the `addActivity` buttons in the bottom of each day.
 
 The *_pictogramIconStack* is used to add the accept icon once an activity is done as seen on Thursday in the layout section.
 
