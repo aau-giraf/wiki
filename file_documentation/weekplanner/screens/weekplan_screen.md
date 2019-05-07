@@ -2,7 +2,7 @@
 This file documents the `weekplan_screen.dart` file in the Weekplanner project.
 
 ## Functionality
-The screen is the one responsible for showing all the days of the week. Each day in the weekplan_screen is displayed with all the planned activities for that single day. The colors of the days are a standard to help autistic children. From the Weekplan screen different functionality can be accessed:
+The screen is the one responsible for showing all the days of the week. The `weekplan_screen` displays each day with all its planned activities. The colors of the days are a standard to help autistic children. From the Weekplan screen different functionality can be accessed:
 
 * Adding activities
 * Accessing an activity
