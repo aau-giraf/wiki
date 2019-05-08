@@ -5,21 +5,21 @@ It might be used for development groups for the sake of documenting the process 
 ## General development
 This is a short section that outlines how a single sprint went.
 If you want more in-depth information, you should check the [Project Meetings section](project_meetings.md).
-We started by using the Scrum of Scrums framework, where each group would send at representative to attend one or two standup meetings per week.  
+We started by using the Scrum of Scrums framework, where each group would send a representative to attend one or two standup meetings per week.  
 We would also do both poker planning where each group did poker planning until they had filled out their points, and we would be doing review and retrospective.
 
 After talking to Carsten Ruseng, as well as realizing how inefficient poker planning is when you start out, we would skip poker planning.
 We did this because we experienced that most estimates were off by quite a margin, and this meant that if groups took two high-priority tasks and were delayed on their first, the second would be blocked while other groups worked on different things.
 
-Instead a sprint went something like this:
+Instead, a sprint went something like this:
 At the very first day of the sprint a [sprint intro](project_meetings.md#sprint-intro) is held.
 At this event the PO group will present the product vision and the sprint goal for all developers.  
-The process group will present any changes that they have come up with during the retrospective.  
+The process group will present any changes that they have come up with during the previous retrospective.  
 At the end of the meeting each group will be assigned their first issue to work with.  
 This is done by the PO group who have ranked the issues as lowest, low, medium, high, or highest priority.
 
 Then ordinary development ensues.
-At some point of time a PR will be created, and the process group will be responsible for [finding reviewers](#assigning-reviewers).
+When a development group feels that they are done with a user story, a PR will be created, and the process group will be responsible for [finding reviewers](#assigning-reviewers).
 
 During the week you should have some [cross-group standups](project_meetings.md#cross-group-standups).
 In the beginning when you still follow lectures we recommend a single standup a week.
@@ -28,7 +28,7 @@ For an example, if you have no lectures monday and tuesday, but full schemes the
 
 When you no longer have any lectures we found 2 standups to be beneficial.
 
-At the end of the sprint the process group should host a [release preparation](project-meetings.md#release-preparation) where you take everything that was developed during the sprint and test it thorougly to polish the small details.
+At the end of the sprint the process group should host a [release preparation](project-meetings.md#release-preparation), where you take everything that was developed during the sprint and test it thoroughly to polish the little details.
 
 The release preparation ends with a [release party](project-meetings.md#release-party) where each group is given the opportunity to showcase the work they did during the sprint.
 This aims to help other developers gain an overview of the project, as well as instill a feeling of teamwork.
@@ -36,10 +36,10 @@ This aims to help other developers gain an overview of the project, as well as i
 ## Fullstack teams
 In the previous years, groups worked with a horizontal slice of the arcitechture, i.e. some groups only worked on the database, some groups only worked on frontend, etc.  
 This meant that features were developed like on an assembly line.
-Instead, we were suggested to create fullstack groups, where you implement an issue from server, through backend, to frontend.
+Instead, we were suggested to create fullstack groups, where groups independently implement an issue from server, through backend, to frontend.
 
 We were recommended to drop this practice for several reasons:
-1. Groups will only know what the state of the app is for the particular area that they work with. Frontend won't know if the backend is good, and the server group will most likely never compile the frontend.
+1. Groups will only know what the state of the app is for the particular area that they work with. Frontend won't know how the backend works, and the server group will most likely never compile the frontend.
 2. Groups will be more isolated and not have as many developers to ask for help.
 3. You have been working as a fullstack team in previous years anyway.
 4. It is harder to assign reviewers, as there are fewer people who understand the area in which you work.
@@ -50,10 +50,10 @@ You will be interacting with most of the other students during the semester, and
 This section will try to describe and prepare you for handling the different roles that exist in the project.
 
 ### Development groups
-The development groups are simply the groups that you write the report in.
+The development groups are simply the groups in which you write the report.
 Every single group of students are a development group - even the PR group, and the PO group.
 
-The PR group's role will mostly be to listen to these groups' concerns during the semester.
+The process group's role will mostly be to listen to these groups' concerns during the semester.
 They usually bring questions about the process, [how to create pull requests](for_development_groups.md#how-to-create-a-pull-request), who to ask for issues and such.
 We recommend that for most issue-related questions you simply refer to the PO group, and let them handle that.
 You should of course help by remembering and recommending good practices, e.g. creating one issue per bug/feature, creating one pull request per issue.
@@ -62,8 +62,8 @@ If the questions are related to pull requests, collaboration, testing, or anythi
 Remember that even though it is always recommended to follow all best code-practices, this is sometimes impossible as you have a limited amount of time available.
 Try to get an overview of the kind of best practices we followed.
 We recommend that you follow these.  
-For anything else, see the developers time as a scarce ressource.
-What will the project, and next year's students, benefit the most from?
+For anything else, see the developers' time as a scarce resource.
+What will the project and next year's students benefit from the most?
 Following the practice, or simply developing new features / document the existing ones?
 
 ### Skill groups
@@ -74,11 +74,11 @@ The development groups should also be able to consult their representative when 
 
 We did not have a lot to do with these groups, other than setting the time and place for the first meeting, and introducing the idea to them.
 From this point they figured out how they could gain an overview of the area, and continue work.
-They also organized their own meetings from here on.
+They also organized their own meetings from then on.
 
 ### Product owner group
 The product owner group, also called the PO group, is the group responsible for the issues in the project.
-According to regular SCRUM, that we started with an intention to follow, product owner is a bit of a misleading name.
+According to regular Scrum, that we started with an intention to follow, product owner is a bit of a misleading name.
 But the responsible that they were assigned by us, was to handle the issues.
 When a feature suggestion was provided, the PO group would make it an issue, prioritize it, add prototypes to it, and assign it when development groups came and asked for new issues.
 They would also prune overlapping issues, and approve the design of all pull requests, to ensure that they are consistent with the prototypes.
@@ -107,7 +107,7 @@ Other than that, he had the following channels:
 - Announcements - only used for very important information that all should receive.
 - General - mostly used for relevant discussions and talks about the project, or for asking everyone for help.
 - Github_watch - github bot so you can follow all the sweet progress.
-- Flutter - general ressources and questions about Flutter.
+- Flutter - general resources and questions about Flutter.
 - Random - to keep everything meme-related away from the other channels
 
 We very strongly recommend that you add the setting that [displays people's full name instead of their obscure username](https://get.slack.help/hc/en-us/articles/115004686586-Show-members-full-names-in-your-workspace#show-full-names-1).
@@ -118,14 +118,14 @@ They change that by going to <https://github.com/settings/profile> and changing 
 ## General about meetings
 You will be responsible for planning most meetings.
 We created a Giraf Google Calendar that we shared with people, where we asked them to add all meetings all groups are welcome - that included skill group meetings and the general process meetings.
-When people add this calender to theirs, it wasn't necessary for us to promote the meeting on Slack, saving a lot of messages.
+When people add this calendar to theirs, it wasn't necessary for us to promote the meeting on Slack, saving a lot of messages.
 If you choose to do the same, remember to add location to the meetings.
 
 We generally planned a retrospective on monday morning and sprint intro on tuesday morning, so you have time to review any changes to the process.
 This also gives the PO group time to organize their issues, and the development groups a bit of short time to catch up on their reports.
 
 Release preparation would usually be two full days.
-If the sprint ends on a friday, we held a release preparation from tuesday morning until friday at 13 o'clock. From 13 to 14 we held the release preparation.
+If the sprint ends on a Friday, we held a release preparation from Thursday morning until Friday at 13 o'clock. From 13 to 14 we held the release preparation.
 We had the release preparation early in the day, so as many as possible would attend it.
 
 ## Our adaptation of GitFlow
@@ -136,7 +136,7 @@ This is our adaptation, but please read the entire section, as there might be be
 
 For the [release preparation](project_meetings.md#release-preparation), the process group creates a release branch, which is merged out from the master branch.
 Then commits are chosen from the develop branch by the PO-group.
-Only commits actually relevant for the upcoming release are added.
+Only commits that are actually relevant for the upcoming release are added.
 This is called cherry picking commits.
 In the release preparation, developers will add bug-fixes to the release branch.
 When the release preparation ends, the release branch is merged into the master branch, which is then merged into the develop branch.
@@ -160,7 +160,7 @@ Assigning reviewers is done in an excel document.
 
 ![Google Sheets Review Assignment](https://i.imgur.com/WBkdycF.png)
 
-This sheet will keep track of the number of PRs a group read, and the size of these.
+This sheet will keep track of the number of PRs a group reviewed and the size of these.
 We reset it once in a while, when the numbers become too big.
 
 It helps to gain an overview of which group to assign for review.
@@ -172,7 +172,7 @@ This is provided as a comment on the PR on GitHub.
 
 ## Gatekeepers of good code practice
 You, the process group, will be mostly responsible for maintaining a good code practice.
-Some developers will not be informed about the best practices, others will not cares, and others yet again will fail to see the reasons for good code practice.
+Some developers will not be informed about the best practices, others will not care, and others yet again will fail to see the reasons for good code practice.
 
 As such you will be responsible for sustaining a good code practice.
 You should actively seek out more information, and ensure that you thorougly research pros and cons of both existing practices and new practices.
@@ -193,7 +193,7 @@ For the second case, tell them that it is a shortcoming of the issue, and when t
 Functionality isn't worth much, if it isn't finished, and as such shouldn't be included in the develop branch.
 
 ### Issue reporting
-Once in a while someone will attend you and tell you about something that the program should have, or something that doesn't work.
+Once in a while someone will approach you and tell you about something that the program should have, or something that doesn't work.
 You should be responsible for one of the two things:
 1. Creating an issue describing it.
 2. Making sure the student creates an issue describing it.
@@ -208,6 +208,6 @@ Know for sure that other students will, at least.
 We really hope that you encourage people to spend the time on the reviews.
 It will save you so much time in the long run, as you will catch a lot of errors and bad practices before they even emerge.
 
-The students will also get a lot of insight into other people's way of writing code, as well as the insight of learning how other parts of the codebase was developed.
+The students will also get a lot of insight into other people's way of writing code, as well as the insight of learning how other parts of the codebase were developed.
 
 The time spent is well invested and will benefit you and the coming years in the long run, as the code will be much more aligned, and developers will increase their knowledge a lot.
