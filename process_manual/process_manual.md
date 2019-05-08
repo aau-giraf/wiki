@@ -1,9 +1,52 @@
-# Process Manual
-
-This is the process manual used in the GIRAF project 2019.
-
-## Table of contents
-1. [Organization Overview](./organization_overview.md)
-2. [Conflicts](./conflicts.md)
-3. [Scrum of Scrums](./scrum_of_scrums.md)
-4. [Code Workflow](./code_workflow.md)
+# Process manual
+- How to read this guide
+- Introduction for the next process group
+	- How to be a process group, and what to read from this guide.
+- Process group information
+  - General development
+    - In the grand scheme of things, how does it work?
+  - Fullstack teams
+  - How to handle roles
+    - Development groups
+    - Skill groups
+    - Product owner group
+  - Your role and relevant info for you
+    - Communication (Slack)
+    - General about meetings - also skill group meetings
+    - Our adaptation of GitFlow
+    - Assigning reviewers
+    - Gatekeepers of good code practice
+      - Definition of done
+      - Issue reporting - make sure people create issues
+      - Reviews - make sure people make proper reviews
+- Project meetings
+  - Sprint intro
+  - Cross-group standups
+  - Release preparation
+  - Release party
+  - Sprint retrospective
+- Changing the process
+  - Why do we work like we do?
+    - Carsten Ruseng Jacobsen
+    - A more plan-driven approach
+    - Scrum takes time to refine
+    - In scrum, estimation takes quite a while, and takes time to calibrate.
+  - Social gatherings
+    - Haven't had the greatest of successes with pure social - F-klub does that
+    - Had okay success with social/technical events
+  - Development process
+    - Language
+      - Please, don't
+    - GitHub
+      - Please, don't
+    - Azure
+      - Free, multithread, iOS build
+    - Server
+      - Relief effort
+- For development groups
+  - How to: Get an issue to work on
+  - How to: Write code
+  - How to: Create a pull request
+  - How to: Get code in review
+  - How to: Review code
+  - How to: Create an isuse
