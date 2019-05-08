@@ -16,7 +16,7 @@ The weekplan screen is displayed as seen here:
 The activity on Thursday is an activty marked as done, whereas the one on Wednesday is not done yet.
 
 ## Buttons
-The buttons used in the weekplan screen are the addactivity buttons. One button is placed at the bottom of each day. 
+The buttons used in the weekplan screen are the addActivity buttons. One button is placed at the bottom of each day. 
 
 
 ## Code
