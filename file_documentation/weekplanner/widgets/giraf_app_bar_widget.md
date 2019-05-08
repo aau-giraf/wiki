@@ -38,4 +38,7 @@ Giraf appbar is a stateless widget, thus it contains the build function which "d
   ```
 The Giraf appbar consists of an appbar that has buttons that are the buttons emitted from the stream called `toolbarBloc.visibleButtons`. That stream is populated with buttons by the method `toolbarBloc.updateIcons` which is the reason it is called as the first method.
 
+## Structure
+The UML diagram shows the structure of `giraf_app_bar_widget` and its relations:
+
 
