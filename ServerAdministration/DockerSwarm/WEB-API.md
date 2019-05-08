@@ -6,6 +6,7 @@ Before the WEB API could be migrated from the old servers to the new one, the Do
 
 To make these changes, only the Dockerfile needed to be changed. The two different versions of the file can be seen below.
 
+### Old Dockerfile
 
 ```yml
 # base image from dockerhub
@@ -36,8 +37,8 @@ RUN dotnet build
 EXPOSE 5000
 ENTRYPOINT ["dotnet", "run", "--list"]
 ```
-### Old Dockerfile
 
+### New Dockerfile
 
 ```yml
 # Using microsoft dotnet software development kit as 
@@ -74,7 +75,6 @@ EXPOSE 5000
 # Start running the app.
 ENTRYPOINT ["dotnet", "GirafRest.dll", "--list"]
 ```
-### New Dockerfile
 
 The changes resulted in a Docker Image that has decreased in size form `2.24Gb` to `339Mb` and where the `appsettings` file is only needed during compilation and is later removed before the image is pushed to Docker Hub.
 
