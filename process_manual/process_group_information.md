@@ -24,7 +24,7 @@ When a development group feels that they are done with a user story, a PR will b
 During the week you should have some [cross-group standups](project_meetings.md#cross-group-standups).
 In the beginning when you still follow lectures we recommend a single standup a week.
 It's also a good idea to place the standup between the two days with the most time for your project.  
-For an example, if you have no lectures monday and tuesday, but full schemes the rest of the week, then place the standup somewhere at the end of monday or start of tuesday.
+For an example, if you have no lectures Monday and Tuesday, but full schemes the rest of the week, then place the standup somewhere at the end of Monday or start of Tuesday.
 
 When you no longer have any lectures we found 2 standups to be beneficial.
 
@@ -51,7 +51,7 @@ This section will try to describe and prepare you for handling the different rol
 
 ### Development groups
 The development groups are simply the groups in which you write the report.
-Every single group of students are a development group - even the PR group, and the PO group.
+Every single group of students are a development group - even the process group, and the PO group.
 
 The process group's role will mostly be to listen to these groups' concerns during the semester.
 They usually bring questions about the process, [how to create pull requests](for_development_groups.md#how-to-create-a-pull-request), who to ask for issues and such.
@@ -125,8 +125,8 @@ We generally planned a retrospective on monday morning and sprint intro on tuesd
 This also gives the PO group time to organize their issues, and the development groups a bit of short time to catch up on their reports.
 
 Release preparation would usually be two full days.
-If the sprint ends on a Friday, we held a release preparation from Thursday morning until Friday at 13 o'clock. From 13 to 14 we held the release preparation.
-We had the release preparation early in the day, so as many as possible would attend it.
+If the sprint ends on a Friday, we would hold a release preparation from Thursday morning until Friday at 13 o'clock. From 13 to 14 we would hold the release party.
+We had the release party early in the day, so as many as possible would attend it.
 
 ## Our adaptation of GitFlow
 We used the [GitFlow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) as the branching strategy in the Giraf project.
@@ -196,7 +196,7 @@ Functionality isn't worth much, if it isn't finished, and as such shouldn't be i
 Once in a while someone will approach you and tell you about something that the program should have, or something that doesn't work.
 You should be responsible for one of the two things:
 1. Creating an issue describing it.
-2. Making sure the student creates an issue describing it.
+2. Making sure the developer creates an issue describing it.
 
 If you don't do it, you probably won't remember it.
 
