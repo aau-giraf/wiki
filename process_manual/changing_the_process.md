@@ -8,7 +8,7 @@ We have had multiple influences for the process that we follow.
 This section will try to describe some of them, so your foundation for making informed decisions will be stronger and close to the insights that we had.
 
 ## Carsten Ruseng Jacobsen
-We had a meeting with Carsten, the Software Engineering lecturer.
+We had a meeting with Carsten Ruseng Jakobsen, the Software Engineering lecturer.
 We can only suggest that you do the same.
 Carsten can bring a lot of insight into the changes that you probably want to do, and can help you understand if different approaches are a good idea or not.
 
@@ -36,7 +36,7 @@ When a group finished splitting up an issue and estimating it, they would take a
 
 This posed a few problems, the first being that it was still time-consuming.
 Other than that, we experienced that some groups quickly split up and estimated issues, while others were slower.
-This meant that some groups would take 4-5 high-priority issues, while another group only managed to take 1 or 2, and lower priority tasks as the rest.
+This meant that some groups would take 4-5 high-priority issues, while another group only managed to take one or two, and lower priority tasks as the rest.
 
 As such, the first group would spend the entire sprint clearing the high-priority tasks, and the other group would spend half their sprint working on tasks with lower priority.
 Since the Scrum process isn't refined, this happened a lot, meaning that a lot of high-priority tasks were locked and delayed for several weeks.
@@ -49,7 +49,7 @@ Note that when a group creates a pull request, they will often have time to take
 
 ## Social gatherings
 We haven't had the greatest success with social gatherings.
-At least not when they are purely social.
+This is true for events that are purely social.
 F-klubben provides plenty of these.
 
 Events that combine both social and professional events had greater success, but we did not necessarily have great success with them.
@@ -60,7 +60,7 @@ Examples of this could be a hackathon for Flutter, testing, or the BLoC pattern.
 ## Development process
 This section will describe different thoughts about the process relating to the development.
 Generally we tried to choose as popular technologies as possible, or technologies that seem to have emerging popularity.
-This increases the likelihood that current and future students are familiar with the technologies.
+This increases the likelihood of current and future students being familiar with the technologies.
 
 ### Language
 We have chosen the Flutter language.
@@ -77,7 +77,7 @@ Xamarin is owned by Microsoft.
 Microsoft does not support Linux products.
 Alas, Xamarin cannot officially be compiled on Linux.
 
-Compiling Xamarin on Linux was doable, but it took a lot of effort to setup, and a lot of effort to actually compile the code.
+Compiling Xamarin on Linux was manageable, but it took a lot of effort to set up, and a lot of effort tocompile the code.
 Even when finding an efficient way of doing the compilation, it will depend on unofficial ways of doing it.
 
 We had 11 developers running Linux.
@@ -114,12 +114,12 @@ GitLab was hosted on one of AAU's servers, but we choose to let GitHub host the 
 We did this for two reasons:
 
 **Self-hosting gives you the responsibility**  
-If the GitLab solution was kept, where we had to self-host, we, as students, would be responsible for server maintenance on this part.
+If the GitLab solution which we had to self-host was kept, we would be responsible for server maintenance on this part.
 This does not make any sense.
 There exists plenty of alternative solutions (read: GitHub) that relieves all of the pain of hosting.
-And frankly: we trust GitHub more in terms of up-time, than we trust ourselves and the AAU servers.
+And frankly; we trust GitHub more in terms of up-time than we trust ourselves and the AAU servers.
 
-Also: in the very beginning of the project, the servers crashed.
+Also, in the very beginning of the project the servers crashed.
 Since all information about the servers were hosted on the servers, it took us two weeks to get them back online.
 We essentially wasted the first two weeks of the semester, because the servers depended on us for maintenance.
 
@@ -132,7 +132,7 @@ That won't happen on GitHub.
 GitHub is much more popular, meaning that it is much more likely that people will have worked with GitHub instead of GitLab.
 Since there exists such a familiar option, it is a no-brainer to choose that.
 
-There is a much higher probability that your current semester, and the following semesters will have more people that are familiar with GitHub.
+There is a much higher probability that your current semester and the following semesters will have more people that are familiar with GitHub.
 So even if that is not the case on your semester, or you have a few people who claim to be GitLab experts, please refrain from choosing it!
 It will mess up future semester who will be bound to go your route.
 
