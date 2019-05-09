@@ -83,7 +83,7 @@ An illustration of the behavior of a ReplaySubject
 
 The ReplaySubject behaves similar to the BehaviorSubject, but instead of only capturing the latest item, it captures all items and emits them whenever a new observer subscribes [4]. Unlike the BehaviorSubject, the ReplaySubject can not be seeded with an initial value. The behaviour of a ReplaySubject across time is shown in the above figure.
  
-# Bibliography
+## Bibliography
 1. Asynchronous Programming: Streams. Dart Lang. URL: https://www.dartlang.org/tutorials/language/streams
 2. BehaviorSubject<T> class. rxDart Package. URL: https://pub.dartlang.org/documentation/rxdart/latest/rx/BehaviorSubject-class.html
 3. PublishSubject<T> class. rxDart Package. URL: https://pub.dartlang.org/documentation/rxdart/latest/rx/PublishSubject-class.html
