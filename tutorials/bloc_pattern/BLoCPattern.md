@@ -81,7 +81,7 @@ An illustration of the behavior of a BehaviorSubject
 The BehaviorSubject behaves similar to the PublishSubject, but with one exception, it captures the latest item that has been added to the subject and emits that as the first item every time a new observer subscribes [2]. The BehaviorSubject can also be seeded with an initial item, that will be the first item emitted in case no items have been added to the subject yet. The behaviour of a BehaviorSubject across time is shown in the above figure.
 
 ### ReplaySubject
-![ReplaySubject](ReplaySubject "Replay Subject")
+![ReplaySubject](ReplaySubject.png "Replay Subject")
 An illustration of the behavior of a ReplaySubject
 
 The ReplaySubject behaves similar to the BehaviorSubject, but instead of only capturing the latest item, it captures all items and emits them whenever a new observer subscribes [4]. Unlike the BehaviorSubject, the ReplaySubject can not be seeded with an initial value. The behaviour of a ReplaySubject across time is shown in the above figure.
