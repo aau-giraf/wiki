@@ -22,23 +22,17 @@ An illustration of the BLoC pattern.
 
 The BLoC pattern can be boiled down to some rules and one practice. The practice is that the business and UI logic should be clearly separated, with all the business logic inside a specific BLoC. An application should have multiple BLoCs. The decision of how to divide the business logic into multiple BLoCs is a judgment call. When a component is complex enough it should have its own BLoC [6]. The rules of the BLoC pattern are as follows: [6].
 
-There are some rules for the design of BLoC that has to be upheld when the BLoC pattern is used.
+There are some rules for the design of BLoC that has to be upheld when the BLoC pattern is used:
+- The first rule states that any communication between the UI and a BLoC must be through Sinks and Streams, so when the UI should send data to the BLoC it should use a sink, and when a BLoC sends data to the UI it should use a stream.
+- The second rule states that all dependencies of a BLoC must be injectable; this is crucial for platform independence since it makes it possible to inject the correct dependencies for each platforms.
+- The third rule states that it is not allowed to branch depending on the platform, meaning the business logic should be completely independent of the platform. What the rule is effectively stating is that inside a BLoC there should not be e.g. an if-statement checking if the platform is iOS and do some computation on behalf of that.
+- The last rule states that the BLoC pattern can be implemented however the developer finds appropriate, as long as the other rules are upheld. Therefore the pattern is flexible and can be used in many different cases.
 
--The first rule states that any communication between the UI and a BLoC must be through Sinks and Streams, so when the UI should send data to the BLoC it should use a sink, and when a BLoC sends data to the UI it should use a stream.
-
--The second rule states that all dependencies of a BLoC must be injectable; this is crucial for platform independence since it makes it possible to inject the correct dependencies for each platforms.
-
--The third rule states that it is not allowed to branch depending on the platform, meaning the business logic should be completely independent of the platform. What the rule is effectively stating is that inside a BLoC there should not be e.g. an if-statement checking if the platform is iOS and do some computation on behalf of that.
-
--The last rule states that the BLoC pattern can be implemented however the developer finds appropriate, as long as the other rules are upheld. Therefore the pattern is flexible and can be used in many different cases.
-
--The first rule states that if the UI component is complex enough it should have its own BLoC, thereby also stating that UI components should share BLoC if they are non-complex.
-
--The second rule states that if the UI needs to send data to the BLoC, i.e. User inputs, the UI component is not allowed to do any computation on the inputs before sending it to the BLoC; this is a step to ensure decoupling between the UI and Business logic.
-
--The third rule is much like the second but concerns output instead of input. The output from a BLoC should not be changed inside the UI component, this again is to ensure that all business logic stays inside the BLoC.
-
--The fourth rule states that all business logic dependent if-statements inside the UI component should only depend on one boolean stream from the BLoC, this again is to decouple the UI component from the business logic, since branching on business logic in the UI most likely would hard couple UI and business logic.
+The following rules should be followed during the design of the UI:
+- The first rule states that if the UI component is complex enough it should have its own BLoC, thereby also stating that UI components should share BLoC if they are non-complex.
+- The second rule states that if the UI needs to send data to the BLoC, i.e. User inputs, the UI component is not allowed to do any computation on the inputs before sending it to the BLoC; this is a step to ensure decoupling between the UI and Business logic.
+- The third rule is much like the second but concerns output instead of input. The output from a BLoC should not be changed inside the UI component, this again is to ensure that all business logic stays inside the BLoC.
+- The fourth rule states that all business logic dependent if-statements inside the UI component should only depend on one boolean stream from the BLoC, this again is to decouple the UI component from the business logic, since branching on business logic in the UI most likely would hard couple UI and business logic.
 
 ## BLoC Implementation in the Giraf Project
 The Flutter framework is not opinionated towards which architecture should be used so we had to decide for ourselves. We chose the BLoC pattern after considering other patterns like MVVM and MVC. In order to compare the different patterns, we made some goals we wanted the pattern to fulfill. This enabled us to compare the different patterns to each other and find the one that fit our needs the best. The goals were:
