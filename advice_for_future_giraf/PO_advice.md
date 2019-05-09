@@ -62,6 +62,8 @@ Instead, we opted to use Adobe XD which reduced repetitive work and let us impor
 Doing meetings with the customers you should show them the prototypes you have made since the last time you spoke.
 It is a very good idea to get customer feedback so that you know you are headed in the right direction in relation to their expectations.
 It is also helpful if developers have a creative way to interpret a user story, as it allows you to show them how it should be with certainty.
+The prototypes can be found in both pdf and Adobe XD format [here](https://github.com/aau-giraf/wiki/tree/master/design_guide/prototypes).
+Remember to update the files whenever you change the prototypes, so that the development team are up to date.
 
 ## Distribution of user stories
 In the beginning of a new sprint you should present the goals of the sprint to all the other groups.
