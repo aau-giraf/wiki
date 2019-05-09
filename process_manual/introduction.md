@@ -28,4 +28,4 @@ We do of course recommend our plan. That's still better than no plan.
 To avoid micromanaging we don't care for how groups do things internally.
 We only care about things that affect other groups as well.
 So if one groups wants to work hardcore Scrum, and another don't want any formal process, let them.
-Just make sure that they participate in the common activites that you define, and make sure that you can reach them in normal work hours.
+Just make sure that they participate in the common activities that you define, and make sure that you can reach them in normal work hours.

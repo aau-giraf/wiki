@@ -7,7 +7,7 @@ And please, please, please, make informed decisions that have a very high possib
 We have had multiple influences for the process that we follow.
 This section will try to describe some of them, so your foundation for making informed decisions will be stronger and close to the insights that we had.
 
-## Carsten Ruseng Jacobsen
+## Carsten Ruseng Jakobsen
 We had a meeting with Carsten Ruseng Jakobsen, the Software Engineering lecturer.
 We can only suggest that you do the same.
 Carsten can bring a lot of insight into the changes that you probably want to do, and can help you understand if different approaches are a good idea or not.
@@ -77,7 +77,7 @@ Xamarin is owned by Microsoft.
 Microsoft does not support Linux products.
 Alas, Xamarin cannot officially be compiled on Linux.
 
-Compiling Xamarin on Linux was manageable, but it took a lot of effort to set up, and a lot of effort tocompile the code.
+Compiling Xamarin on Linux was manageable, but it took a lot of effort to set up, and a lot of effort to compile the code.
 Even when finding an efficient way of doing the compilation, it will depend on unofficial ways of doing it.
 
 We had 11 developers running Linux.

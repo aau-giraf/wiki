@@ -34,7 +34,7 @@ The release preparation ends with a [release party](project-meetings.md#release-
 This aims to help other developers gain an overview of the project, as well as instill a feeling of teamwork.
 
 ## Fullstack teams
-In the previous years, groups worked with a horizontal slice of the arcitechture, i.e. some groups only worked on the database, some groups only worked on frontend, etc.  
+In the previous years, groups worked with a horizontal slice of the architecture, i.e. some groups only worked on the database, some groups only worked on frontend, etc.  
 This meant that features were developed like on an assembly line.
 Instead, we were suggested to create fullstack groups, where groups independently implement an issue from server, through backend, to frontend.
 
@@ -58,7 +58,7 @@ They usually bring questions about the process, [how to create pull requests](fo
 We recommend that for most issue-related questions you simply refer to the PO group, and let them handle that.
 You should of course help by remembering and recommending good practices, e.g. creating one issue per bug/feature, creating one pull request per issue.
 
-If the questions are related to pull requests, collaboration, testing, or anything else, we recommend that you, if you haven't already, discuss the issue in your grup and try to reach the agreement that benefits the project the most.
+If the questions are related to pull requests, collaboration, testing, or anything else, we recommend that you, if you haven't already, discuss the issue in your group and try to reach the agreement that benefits the project the most.
 Remember that even though it is always recommended to follow all best code-practices, this is sometimes impossible as you have a limited amount of time available.
 Try to get an overview of the kind of best practices we followed.
 We recommend that you follow these.  
@@ -106,7 +106,7 @@ Each skill group also had their own channel.
 Other than that, he had the following channels:
 - Announcements - only used for very important information that all should receive.
 - General - mostly used for relevant discussions and talks about the project, or for asking everyone for help.
-- Github_watch - github bot so you can follow all the sweet progress.
+- github_watch - GitHub bot so you can follow all the sweet progress.
 - Flutter - general resources and questions about Flutter.
 - Random - to keep everything meme-related away from the other channels
 
@@ -121,7 +121,7 @@ We created a Giraf Google Calendar that we shared with people, where we asked th
 When people add this calendar to theirs, it wasn't necessary for us to promote the meeting on Slack, saving a lot of messages.
 If you choose to do the same, remember to add location to the meetings.
 
-We generally planned a retrospective on monday morning and sprint intro on tuesday morning, so you have time to review any changes to the process.
+We generally planned a retrospective on Monday morning and sprint intro on Tuesday morning, so you have time to review any changes to the process.
 This also gives the PO group time to organize their issues, and the development groups a bit of short time to catch up on their reports.
 
 Release preparation would usually be two full days.
@@ -146,7 +146,7 @@ One problem with this approach is the manual part with the creation of the featu
 If you forget a commit, or miss it, you risk having critical functionality that was never added to the master branch, but will be present on the develop branch.
 You will never get a complete and automatic addition of the changes from the develop branch, and as such you cannot guarantee that everything was added to the master branch.
 
-To accomodate this problem, one solution would be to make even stricter rules for the develop branch.
+To accommodate this problem, one solution would be to make even stricter rules for the develop branch.
 As it is currently, the develop branch allows sub-features to be pushed, which are parts of bigger features.
 As such you might have a "login" button, but not the "create user" button.
 This renders the login button useless, but it can still be included in the develop branch right now.
@@ -175,7 +175,7 @@ You, the process group, will be mostly responsible for maintaining a good code p
 Some developers will not be informed about the best practices, others will not care, and others yet again will fail to see the reasons for good code practice.
 
 As such you will be responsible for sustaining a good code practice.
-You should actively seek out more information, and ensure that you thorougly research pros and cons of both existing practices and new practices.
+You should actively seek out more information, and ensure that you thoroughly research pros and cons of both existing practices and new practices.
 
 ### Definition of done
 For an issue, we have defined the following definition of done:

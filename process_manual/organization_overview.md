@@ -6,7 +6,7 @@ GIRAF multi-project 2019. This manual is written by the Scrum group
 
 ## Development Approach
 
-The multi project process will use full stack teams. In this guide a
+The multi-project process will use full stack teams. In this guide a
 full stack team will be referred to as a development group. The
 development groups are responsible for the completion of user stories.
 Thus there are no specialized groups or teams. Designated members of the

@@ -49,4 +49,4 @@
   - How to: Create a pull request
   - How to: Get code in review
   - How to: Review code
-  - How to: Create an isuse
+  - How to: Create an issue

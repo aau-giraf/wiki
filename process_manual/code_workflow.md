@@ -111,7 +111,7 @@ In GitFlow there exists five types of branches:
 
   - Develop branch: A branch from master. Each commit corresponds to a
     finished user story. See section
-    [Defintion Of Done](#defintion-of-done) for when a user
+    [Definition Of Done](#defintion-of-done) for when a user
     story is considered done.
 
   - Feature branch: A branch from develop. Made when a user story is
