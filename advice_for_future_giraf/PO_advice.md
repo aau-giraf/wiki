@@ -8,7 +8,7 @@ In the following sections we provide an in-depth description of how we advice cu
 ## Customer contact
 In the start of the semester Ulrik will most likely schedule some meetings with the customers which everyone should attend.
 These serve to get the developers up to speed with what exactly the GIRAF project is and how the program is supposed to help people diagnosed with autism.
-Before these meetings it is a good idea to contact the customers to try and arrange a time for a more secluded meeting where you, as the PO group, can ask more specific questions regarding functionality and design of the program.
+Before these meetings it is a good idea to contact the customers to try and arrange a time for a meeting just for you, the PO group, where you can ask more specific questions regarding functionality and design of the program.
 The other groups should not be present for these meetings as it is your responsibility to relay this information to the other groups.
 We arranged a meeting with Emil from Egebakken right after his initial presentation. 
 A transcription of this interview can be seen in the PO report of 2019.
@@ -62,7 +62,7 @@ PO groups from previous years had been using PowerPoint to create prototypes, bu
 Instead, we opted to use Adobe XD which reduced repetitive work and let us import the exact icons we used throughout the design guide, making the prototypes much more consistent.
 Doing meetings with the customers you should show them the prototypes you have made since the last time you spoke.
 It is a very good idea to get customer feedback so that you know you are headed in the right direction in relation to their expectations.
-It is also helpful if developers have a creative way to interpret a user story, as ut allows you to show them how it should be with certainty.
+It is also helpful if developers have a creative way to interpret a user story, as it allows you to show them how it should be with certainty.
 
 ## Distribution of user stories
 In the beginning of a new sprint you should present the goals of the sprint to all the other groups.
