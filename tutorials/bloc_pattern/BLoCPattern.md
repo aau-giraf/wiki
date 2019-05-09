@@ -42,9 +42,18 @@ The Flutter framework is not opinionated towards which architecture should be us
 * UI components should be reactive, i.e. if data changes in one component then the change should automatically be reflected in all other components relying on the same data.
 * The pattern should allow for an intuitive file structure.
 
-Doing some empirical experiments in building with the different patterns and reading different developers experience with the different patterns we came to the conclusion that the BLoC pattern offered the most freedom while still isolating the business logic and UI logic. The BLoC pattern also allow for all the other goals. 
+Doing some empirical experiments in building with the different patterns and reading different developers experience with the different patterns we came to the conclusion that the BLoC pattern offered the most freedom while still isolating the business logic and UI logic. The BLoC pattern also allow for all the other goals.
 
-Because there is a large degree of freedom, we had to find out how we should use the pattern in the project. We did some research on how people in the BLoC community used it. We found that rxDart was a favourite library for BLoC implementation. In our experience it can be a good idea to follow the community since there exists many great resources on how to use it, and popular libraries are less likely to be abandoned. Therefore we decided to use this library.
+## BLoC Design Guidelines for the Giraf Project
+The Giraf Project have altered the rules of the BLoC pattern a bit. The reason for this is that in the Giraf Project we are not using the code on other platforms than the Flutter Framework. Therefore to make the use of BLoC a bit more intuitive and flexible for the developers, we have constructed the following design guideline:
+
+* Rather many small non-complex BLoCs than few large complex BLoCs
+* Start by creating a BLoC per UI Screen, then after implementing the functionality consider to refactor to shared BLoC
+* Inputs to BLoCs should be either Sinks or function calls with parameters
+* BLoCs should be instantiated via the dependency injector/ Thereby all dependencies should also be injectable
+* BLoCs are to be implemented using the rxDart library
+
+We found that rxDart was a favourite library for BLoC implementation. In our experience it can be a good idea to follow the community since there exists many great resources on how to use it, and popular libraries are less likely to be abandoned.
 
 ## rxDart
 "RxDart is a reactive functional programming library for Google Dart, based on ReactiveX." [5]. The Dart Language has a decent stream support, rxDart uses this to add the ReactiveX functionality on top of the native stream API [5]. To better understand how it helps in implementing the BLoC pattern we will provide a short explanation of what ReactiveX is, and describe the key features from the rxDart library that are used in the Giraf Project.
@@ -73,15 +82,6 @@ The BehaviorSubject behaves similar to the PublishSubject, but with one exceptio
 An illustration of the behavior of a ReplaySubject
 
 The ReplaySubject behaves similar to the BehaviorSubject, but instead of only capturing the latest item, it captures all items and emits them whenever a new observer subscribes [4]. Unlike the BehaviorSubject, the ReplaySubject can not be seeded with an initial value. The behaviour of a ReplaySubject across time is shown in the above figure.
-
-## BLoC Design Guidelines of the Giraf Project
-The Giraf Project have altered the rules of the BLoC pattern a bit. The reason for this is that in the Giraf Project we are not using the code on other platforms than the Flutter Framework. Therefore to make the use of BLoC a bit more intuitive and flexible for the developers, we have constructed the following design guideline:
-
-* Rather many small non-complex BLoCs than few large complex BLoCs
-* Start by creating a BLoC per UI Screen, then after implementing the functionality consider to refactor to shared BLoC
-* Inputs to BLoCs should be either Sinks or function calls with parameters
-* BLoCs should be instantiated via the dependency injector/ Thereby all dependencies should also be injectable
-* BLoCs are to be implemented using the rxDart library
  
 # Bibliography
 1. Asynchronous Programming: Streams. Dart Lang. URL: https://www.dartlang.org/tutorials/language/streams
