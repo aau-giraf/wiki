@@ -28,9 +28,9 @@
 - Changing the process
   - Why do we work like we do?
     - Carsten Ruseng Jacobsen
-    - A more plan-driven approach
-    - Scrum takes time to refine
-    - In scrum, estimation takes quite a while, and takes time to calibrate.
+      - A more plan-driven approach
+      - Scrum takes time to refine
+      - In scrum, estimation takes quite a while, and takes time to calibrate.
   - Social gatherings
     - Haven't had the greatest of successes with pure social - F-klub does that
     - Had okay success with social/technical events
