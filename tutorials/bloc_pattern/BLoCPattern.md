@@ -99,10 +99,10 @@ The Giraf Project have altered the rules of the BLoC pattern a bit. The reason f
 * BLoCs are to be implemented using the rxDart library
  
 # Bibliography
-1. __Asynchronous Programming: Streams__. Dart Lang. URL: https://www.dartlang.org/tutorials/language/streams
-2. __BehaviorSubject<T> class.__ rxDart Package. URL: https://pub.dartlang.org/documentation/rxdart/latest/rx/BehaviorSubject-class.html
-3. __PublishSubject<T> class.__ rxDart Package. URL: https://pub.dartlang.org/documentation/rxdart/latest/rx/PublishSubject-class.html
-4. __ReplaySubject<T> class.__ rxDart Package. URL: https://pub.dartlang.org/documentation/rxdart/latest/rx/ReplaySubject-class.html
-5. __RxDart Github Repository.__ ReactiveX. URL: https://github.com/ReactiveX/rxdart
-6. __Paolo Soares. Flutter / AngularDart – Code sharing, better together (DartConf 2018).__ Google Developers. 2018. URL: https://www.youtube.com/watch?v=PLHln7wHgPE.
-7. __The ReactiveX website. 2019__. URL: http://reactivex.io/
+1. Asynchronous Programming: Streams. Dart Lang. URL: https://www.dartlang.org/tutorials/language/streams
+2. BehaviorSubject<T> class. rxDart Package. URL: https://pub.dartlang.org/documentation/rxdart/latest/rx/BehaviorSubject-class.html
+3. PublishSubject<T> class. rxDart Package. URL: https://pub.dartlang.org/documentation/rxdart/latest/rx/PublishSubject-class.html
+4. ReplaySubject<T> class. rxDart Package. URL: https://pub.dartlang.org/documentation/rxdart/latest/rx/ReplaySubject-class.html
+5. RxDart Github Repository. ReactiveX. URL: https://github.com/ReactiveX/rxdart
+6. Paolo Soares. Flutter / AngularDart – Code sharing, better together (DartConf 2018). Google Developers. 2018. URL: https://www.youtube.com/watch?v=PLHln7wHgPE.
+7. The ReactiveX website. 2019. URL: http://reactivex.io/
