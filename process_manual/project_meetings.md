@@ -67,7 +67,7 @@ Then, while enjoying a sip of your beer, every group should, in turns, come to t
 Encourage people to show what they have done.
 Do this by connecting a tablet to the projector.
 
-This will give an overview of the state of the product, and will help peoples feeling of involvement in the project.
+This will give an overview of the state of the product, and will help people's feeling of involvement in the project.
 
 After this, we had no more activities planned.
 We encouraged people to stay and drink a beer, but most would go home - possibly from a lack of things to do.
