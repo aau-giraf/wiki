@@ -70,4 +70,4 @@ This will give an overview of the state of the product, and will help peoples fe
 
 After this, we had no more activities planned.
 We encouraged people to stay and drink a beer, but most would go home - possibly from a lack of things to do.
-It could be a good idea to encourage people to play CurveFever, Scribble, or anything like it.
+It could be a good idea to encourage people to play CurveFever Pro, Scribble, or anything like it.
