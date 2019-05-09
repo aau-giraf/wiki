@@ -1,12 +1,11 @@
 # PO advice for next year's PO group
-
 This document serves as a list of advice for the next PO group based on the experience we gathered throughout the semester.
 The PO group's main responsibility is to communicate with the customers of the GIRAF project and document this interaction.
 It is important that the customers' reactions, opinions and wishes for the program are written down, as these are the foundation for all the decisions that you, as the PO group, will take.
 In the following sections we provide an in-depth description of how we advice customer contact to be handled, and how the information gathered should be used.
 
 ## Customer contact
-In the start of the semester Ulrik will most likely schedule some meetings with the customers which everyone should attend.
+In the start of the semester Ulrik will most likely schedule some meetings with the customers which everyone on the GIRAF project should attend.
 These serve to get the developers up to speed with what exactly the GIRAF project is and how the program is supposed to help people diagnosed with autism.
 Before these meetings it is a good idea to contact the customers to try and arrange a time for a meeting just for you, the PO group, where you can ask more specific questions regarding functionality and design of the program.
 The other groups should not be present for these meetings as it is your responsibility to relay this information to the other groups.
@@ -26,7 +25,7 @@ We did this by calling them on their phones or by calling their workplaces.
 It is very important to take notes and document all meetings with customers.
 You will receive a lot of questions from the different developer groups about how functionality should be made and how it should look.
 Therefore, it is always better to have written down exactly what the customers want so that you do not have to guess and then refactor later if you guessed wrong.
-An issue we faced was that we thought it would be sufficient for a guardian to copy activities one day at a time, but when we showed prototypes to the guardians they were very adamant on having the functionality be able to copy to multiple days at once.
+For example, an issue we faced was that we thought it would be sufficient for a guardian to copy activities one day at a time, but when we showed prototypes to the guardians they were very adamant on having the functionality be able to copy to multiple days at once.
 Another reason to document as much as possible, is that the users' feedback is the basis of all the user stories you are going to create.
 
 ## Creating user stories
@@ -36,9 +35,9 @@ We structured user stories in the following way:
 - As a ... I would like ..., so that ...
 
 When creating a user story you should consider the amount of work that is needed for it to be completed, and whether or not it should be split up into multiple smaller user stories.
-We created user stories in the weekplanner repository on our GitHub page under the issue tab.
+We created user stories in the appropriate repositories on our GitHub page under the issue tab.
 This made it easy to organize as user stories are uniquely numbered and can be put into milestones.
-When creating a pull request it is easy to tag the user story so that it will be automatically closed when the pull request has been merged.
+When creating a pull request it is easy to tag the user story so that it will be automatically closed when the pull request has been merged by adding "Fixes #xx" to the comment, where xx is the ID of the issue in the repository.
 It also allowed us to assign them with tags such as "feature", and give them different priorities ranging from lowest to highest.
 A user story should, if needed, contain a prototype that ideally has been approved by a customer and a further description of the problem.
 We also had great success having one of the more experienced Flutter developers write a short technical comment explaining how they would structure the solution for the user story.
