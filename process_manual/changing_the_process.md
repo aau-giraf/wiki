@@ -23,7 +23,7 @@ One of the major points that Carsten presented, and that we experienced in the f
 Assembling a new team of developers, or even introducing new developers to an existing team, will throw the method off course for while.
 
 This also means that all estimation and poker planning will be off for most of the teams in the beginning.
-Committing to tasks would deny others, ahead of schedule, the opportunity to clear high-priority tasks.
+If one team assigns themselves to a lot of high-priority tasks, other teams ahead of schedule can't help clear these, because they are already taken.
 
 Carsten estimates that for a team to be up and running smoothly, they should expect about a year's time.
 You only have around 4 months.
@@ -164,7 +164,7 @@ Everything that we can create stable automation from, we have.
 
 We have done this due to a very simply philosophy:
 
-> "Maintaining our own servers is like writing an app in C, without libraries."
+> Maintaining our own servers is like writing an app in C, without libraries.
 
 It is possible to write an app in C without libraries.
 But it is a really stupid idea to insist on handling every responsibility yourself - especially when free services exist that will make it not-harder, better, faster, stronger.

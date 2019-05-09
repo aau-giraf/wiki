@@ -6,14 +6,15 @@ This meeting is used to introduce and mark the beginning of the sprint.
 All developers should be present in the same room, and the PO group will start out by presenting the following things:
 1. The project vision
    - What do we want to accomplish in the entire project?
+   - Did this change since last meeting? (if not, just give a recap, so people remember)
 2. The sprint vision
    - What do we want to accomplish until the next release?
 3. New and important issues in this sprint
    - Typically based on usability tests with the customer.
 
-This is followed by a presentation from the process group, where changes to the process, based on the [sprint retrospectice](#sprint-retrospective), are presented.
+This is followed by a presentation from the process group, where changes to the process, based on the [sprint retrospective](#sprint-retrospective), are presented.
 
-The very first sprint intro will probably be the longest, as the proccess group should present the major parts of the process.
+The very first sprint intro will probably be the longest, as the process group should present the major parts of the process.
 
 All following sprint intros will probably be very short meetings, lasting no more than 15 - 20 minutes.
 
