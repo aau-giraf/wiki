@@ -17,6 +17,7 @@ This uncovers a requirement of the UI component, which is state management. The 
 
 ## Rules of BLoC Pattern
 ![BlocPattern](BLoCPattern.png "BLoC pattern")
+
 An illustration of the BLoC pattern.
 
 The BLoC pattern can be boiled down to some rules and one practice. The practice is that the business and UI logic should be clearly separated, with all the business logic inside a specific BLoC. An application should have multiple BLoCs. The decision of how to divide the business logic into multiple BLoCs is a judgment call. When a component is complex enough it should have its own BLoC [6, 24 min 15 sec]. The rules of the BLoC pattern are as follows: [6, 22 min 25 sec].
