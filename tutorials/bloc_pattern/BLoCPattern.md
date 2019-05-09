@@ -13,14 +13,14 @@ A BLoC can only communicate via sinks or streams. Both sinks and streams work as
 
 A stream is an asynchronous sequence of data, similar to an asynchronous Iterable, but instead of the subscriber requesting the next item, the stream will emit as soon as a new item is ready [1]. This means that a BLoC receives data from the UI via a sink and emits data via the stream, both asynchronous. Both the UI component and the BLoC will react instantaneously whenever new data is received.
 
-This uncovers a requirement of the UI component, which is state management. The UI should not be required to rely on state building, since the BLoC streams are asynchronous, which is why the UI components has to be able to handle streams [6, 4 min 40 sec \& 14min 00 sec].
+This uncovers a requirement of the UI component, which is state management. The UI should not be required to rely on state building, since the BLoC streams are asynchronous, which is why the UI components has to be able to handle streams [6].
 
 ## Rules of BLoC Pattern
 ![BlocPattern](BLoCPattern.png "BLoC pattern")
 
 An illustration of the BLoC pattern.
 
-The BLoC pattern can be boiled down to some rules and one practice. The practice is that the business and UI logic should be clearly separated, with all the business logic inside a specific BLoC. An application should have multiple BLoCs. The decision of how to divide the business logic into multiple BLoCs is a judgment call. When a component is complex enough it should have its own BLoC [6, 24 min 15 sec]. The rules of the BLoC pattern are as follows: [6, 22 min 25 sec].
+The BLoC pattern can be boiled down to some rules and one practice. The practice is that the business and UI logic should be clearly separated, with all the business logic inside a specific BLoC. An application should have multiple BLoCs. The decision of how to divide the business logic into multiple BLoCs is a judgment call. When a component is complex enough it should have its own BLoC [6]. The rules of the BLoC pattern are as follows: [6].
 
 There are some rules for the design of BLoC that has to be upheld when the BLoC pattern is used.
 1. Inputs and outputs are simple Streams/Sinks only
