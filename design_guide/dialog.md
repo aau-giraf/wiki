@@ -8,11 +8,16 @@ used as it looks here
 
 ![ConfirmDialog](./images/ConfirmDialog.png "ConfirmDialog")
 
+A widget called GirafConfirmDialog has been created in the weekplanner repo which should be used for confirm dialogs in the weekplanner app.
+
 ## Notify dialog
 When a user needs to be notified that some action has happened, the notify dialog should be used as
 it looks here
 
 ![NotifyDialog](./images/NotifyDialog.png "NotifyDialog")
+
+
+A widget called GirafNotifyDialog has been created in the weekplanner repo which should be used for notification dialogs in the weekplanner app.
 
 Long running tasks should generally not block the GUI. Any task that can potentially take a long
 time should be done on a background thread and NOT on the main GUI thread.

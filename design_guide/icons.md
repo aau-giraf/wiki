@@ -29,7 +29,8 @@ If a new icon is added, it should be added to this table.
 | Search             | ![search](./images/Icons%20GIRAF/35x35px/search.png)                     | Indicates that it is possible to search for something              |
 | Settings           | ![Settings](./images/Icons%20GIRAF/35x35px/settings.png)                 | Accesses the settings menu                                         |
 | Start              | ![start](./images/Icons%20GIRAF/35x35px/start.png)                       | Starts the timer                                                   |
-| Stop               | ![stop](./images/Icons%20GIRAF/35x35px/start.png)                        | Stops the timer                                                    |
+| Stop               | ![stop](./images/Icons%20GIRAF/35x35px/stop.png)                        | Stops and resets the timer                                                    |
+| Pause               | ![pause](./images/Icons%20GIRAF/35x35px/pause.png)                        | Pauses the timer                                                    |
 | Synced             | TBD                                                                      | Indicates that the current object is syncronized                   |
 | Undo               | ![undo](./images/Icons%20GIRAF/35x35px/undo.png)                         | Reverts latest action                                              |
 
