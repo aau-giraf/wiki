@@ -48,7 +48,7 @@ Doing some empirical experiments in building with the different patterns and rea
 The Giraf Project have altered the rules of the BLoC pattern a bit. The reason for this is that in the Giraf Project we are not using the code on other platforms than the Flutter Framework. Therefore to make the use of BLoC a bit more intuitive and flexible for the developers, we have constructed the following design guideline:
 
 * Rather many small non-complex BLoCs than few large complex BLoCs
-* Start by creating a BLoC per UI Screen, then after implementing the functionality consider to refactor to shared BLoC
+* Start by creating a BLoC per UI Screen, then after implementing the functionality consider to refactor to shared BLoCs
 * Inputs to BLoCs should be either Sinks or function calls with parameters
 * BLoCs should be instantiated via the dependency injector/ Thereby all dependencies should also be injectable
 * BLoCs are to be implemented using the rxDart library
