@@ -3,7 +3,7 @@ When we moved the weekplanner application to Flutter, we chose to structure the 
 
 The name BLoC is used for two things, the BLoC pattern and classes called BLoC. To avoid confusion we always write BLoC pattern when we refer to the pattern. In all other cases we refer to the classes.
 
-The BLoC pattern is a pattern that aims to isolate all business logic from UI code in order to be able to re-use the business logic [6]. The business logic has to be platform independent, meaning usable on both the web-application and the mobile-application without any modifications [6].
+The BLoC pattern is a pattern that aims to isolate all business logic from UI code in order to be able to re-use the business logic [6]. The business logic has to be platform independent, meaning usable on any platform[6].
 
 ## What is BLoC
 To understand the BLoC pattern one first needs to understand what a BLoC is. A BLoC is a simple class that only takes sinks as input and exposes streams as output [6]. All business logic should be inside a BLoC. The intuition is that BLoCs are the building blocks of the application [6]. Another key requirement of a BLoC is that all dependencies should be injected [6], so if an API is needed it should be injected in the constructor of the BLoC. This allows the web-platform to use a JSON-API and the mobile-platform to use a BINARY-API and other similar situations, while all platforms still uses the same BLoC without any modifications. An application thereby consist of many BLoCs with different responsibilities. The BLoC can then be used by the UI components of all platforms.
