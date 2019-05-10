@@ -2,7 +2,7 @@
 This file is intended for helping developers understand their role in the process.
 
 ## How to: Get an issue to work on
-If you have enough time to work on another issue after finishing your previous ones you should.
+If you have enough time to work on another issue after finishing your previous ones you should get another.
 Try to aim for no more than two or three issues, as you shouldn't take on another issue before you can actually work on it.
 There's no need for you to be assigned to an issue that you can't work on right now, as it might block others progress.
 
