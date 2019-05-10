@@ -1,22 +1,62 @@
+Beskriv DI clear
+Husk at forklare done function i async 
+
+Hvad skal testes?!?
+Der skal ikke bruges done() ved async i widget
+Beskriv completer
+Beskriv pump
+
 # Test in Flutter
 
-The Process manual states that code should be proporly tested before a user story is done. This guide describes how you test in Flutter, and what the test criteria is in both blocs and screens/ widgets. 
+The Process manual states that code should be properly tested before a user story is done. This guide describes how you test in Flutter, and what the test criteria is in both blocs and screens/ widgets. 
 
 ## Test location
-All tests have to be located in the "test" project. All Weekplanner files should have a corresponding file in the test folder where all tests related to the file are located. 
-
-## What should be tested
-Within a bloc or...
+All tests have to be located in the "test" folder. All Weekplanner files should have a corresponding file in the test folder where all tests related to the file are located. The test files should be in the folder that corresponds to the content of the file. For example, screen testes should be in the screen folder.
 
 ## Test basics
-The main body of the test file is written:
+A test file always contain a main function. The main function is placed directly into the file, and not in any type of class, and all tests are written in the main function.
+
+### Setup
+When several tests are run, they often share the same setup. You can automate the setup by creating a setUp() function in the main function. The setup function is then called every time a new test is run. The main function could look like this:
 
 ``` Dart
 void main() {
-    
+    SomeClass a;
+    SomeOtherClass b;
+    BlocType bloc;
+
+    setUp((){
+        a = <Some value>;
+        b = <Some other value>;
+        bloc = bloc(some API);
+    });
+
+    //The tests go here
 }
 ```
-The main function is placed directly into the file, and not in any type of class, and all tests are written in the main function. 
+
+The variables you use in the setUp() function should be declared in the beginning of the main function, right before the setUp() function. 
+
+### Expect
+When you run a test you need to compare values to see if the test is successful. In Flutter this is done with an expect function. This is written:
+``` Dart
+    expect(value, expected_value);
+```
+
+There can be several expects inside the same test. Aside from an actual value, you can use a lot of different find predicate. The most commonly used is the following:
+``` Dart
+expect(<variable>, isTrue);
+expect(<variable>, isFalse);
+expect(<variable>, equals(<value>));
+expect(<variable>, findsNothing);
+expect(<variable>, findsNWidgets(<number>));
+expect(<variable>, findsWidgets);
+expect(<variable>, findsOneWidget);
+expect(<variable>, find);
+expect(<variable>, false);
+expect(<variable>, true);
+```
+## Writing tests
 
 There are a significant difference between a widget/screen test and a standard class like a bloc. The tests for these two are explained separately. 
 
@@ -35,12 +75,7 @@ If the code does not run in sequence you should use a async test, that looks thi
 ```
 In the normal test, the test will finish when all the code are executed, while a async test will finish when the done() function is called. If you do an async test, you should always remember to call the done() function. 
 
-We use an expect function to test values. There can be several of these in one test. This is written:
-``` Dart
-    expect(value, expected_value);
-```
 
-When several tests are run they often share setup. You can automate the setup by creating a setUp() function in the main function. The setup function is then called every time a new test is run. The variables you use in the setUp() function should be declared in the beginning of the main function, right before the setUp() function. A test file could look like this:
 ``` Dart
 import 'package:<All the different imports>';
 
