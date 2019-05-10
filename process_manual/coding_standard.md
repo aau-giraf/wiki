@@ -2,7 +2,7 @@
 
 This section is used to cover comments in the code, naming convention,
 etc. The essential parts are covered in this section but the full
-documentation is stated in both [naming convention](<https://github.com/ktaranov/naming-convention/blob/master/C%23%20Coding%20Standards%20and%20Naming%20Conventions.md>) and [microsoft docs](<https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions>) where the latter weighs
+documentation is stated in both [naming convention](<https://github.com/ktaranov/naming-convention/blob/master/C%23%20Coding%20Standards%20and%20Naming%20Conventions.md>) and [Microsoft Docs](<https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions>) where the latter weighs
 the most if any conflicts occur.
 
 ## Comments in the code

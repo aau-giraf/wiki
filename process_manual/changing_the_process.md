@@ -48,14 +48,14 @@ Hogging issues is strongly discouraged.
 Note that when a group creates a pull request, they will often have time to take a new issue - so even though the pull request isn't merged, they should be allowed to take a new one.
 
 ## Social gatherings
-We haven't had the greatest success with social gatherings.
+We haven't had great success with social gatherings.
 This is true for events that are purely social.
 F-klubben provides plenty of these.
-
 Events that combine both social and professional events had greater success, but we did not necessarily have great success with them.
 
 The most popular events were hackathons, where students with particular insight into different subjects shared their knowledge.
 Examples of this could be a hackathon for Flutter, testing, or the BLoC pattern.
+It may be beneficial to try to arrange something extraordinary, such as trying to get someone from the Google Developer Group Aalborg to come around and give an introduction to Flutter, as it may increase the likelihood that people will participate. 
 
 ## Development process
 This section will describe different thoughts about the process relating to the development.
@@ -63,21 +63,17 @@ Generally we tried to choose as popular technologies as possible, or technologie
 This increases the likelihood of current and future students being familiar with the technologies.
 
 ### Language
-We have chosen the Flutter language.
-We changed from Xamarin to Flutter.
-There is a multitude of reasons for choosing flutter.
+We have chosen to work with the Flutter framework, which uses the Dart language - rather than Xamarin, which was previously used.
+There is a multitude of reasons for choosing Flutter.
 
 **It is cross-platform**  
-When you develop something in flutter, it can run on both Android and iOS.
+When you develop something in Flutter, it can run on both Android and iOS.
 Some of the users have iPads, and others have Android tablets.
-Instead of developing two apps that look exactly the same, you write the code in one language (Flutter), and run it on both platforms.
+Instead of developing two apps that look exactly the same, you write the code in one language (Dart), and run it on both platforms.
 
 **It allows cross-compilation**  
-Xamarin is owned by Microsoft.
-Microsoft does not support Linux products.
-Alas, Xamarin cannot officially be compiled on Linux.
-
-Compiling Xamarin on Linux was manageable, but it took a lot of effort to set up, and a lot of effort to compile the code.
+Xamarin is owned by Microsoft, and does not support Linux products - meaning that Xamarin cannot officially be compiled on Linux.
+However, compiling Xamarin on Linux was possible, but it took a lot of effort to set up, and a lot of effort to compile the code.
 Even when finding an efficient way of doing the compilation, it will depend on unofficial ways of doing it.
 
 We had 11 developers running Linux.
@@ -97,8 +93,8 @@ And it feels that fast.
 
 **Bias of experience**  
 Previous years mentioned changing to another language because "that's what the developers felt most comfortable with."
-No one from this year had any previous experience with Flutter.
-We have no guarantee that you know anything about Flutter, and you don't know if next year will.
+No one from this year had any previous experience with neither Dart nor Flutter.
+We have no guarantee that you know anything about Dart and Flutter, and you don't know if next year will.
 
 As such, this argument should be dismissed entirely.
 Considering experience is only relevant in a very short term.
@@ -141,7 +137,7 @@ We run everything related to continuous integration (CI) on an Azure server.
 We did this for a few reasons.
 
 **10 free and parallel build threads**  
-Since the Giraf project is an open source project, Azure allows for 10 free and parallel build threads.
+Since the GIRAF project is an open source project, Azure allows for 10 free and parallel build threads.
 This means that 10 developers can have the CI checks run at once, instead of waiting for them to finish one after another.
 This is really nice for release preparation where a lot of small changes are often submitted at the same time.
 
