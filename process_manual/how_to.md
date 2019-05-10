@@ -85,12 +85,14 @@ As a reviewer you should never commit to the branch with the pull request, merge
 Are you reviewing a complex piece of code, or a particularly problematic piece of code, it is highly advisable that you locate the author of the pull request, and walk through the code with them, side by side, in order to clarify any misunderstandings efficiently and effectively.
 
 ## How to: Create an issue
-While the PO-group is the one responsible for creating user stories, there might be times where other groups feel the need to create issues on GitHub.<br>
+While the PO-group is the one responsible for creating user stories, there might be times where other groups feel the need to create issues on GitHub.  
 With the Weekplanner repository as the example, people can either create a *Task Creation Request* or a *Bug Report*. To do this you go to the Weekplanner repository on GitHub and select the Issues tab. On the right side of the page, right above the list of issues you should see a green button labeled *New issue*. Clicking on this button takes you to a page where you can select to create either a *Bug Report* or a *Task Creation Request*. If you are in doubt as to which one to choose the the following can be of help:
 
 * If you want to report unexpected behavior in already existing functionality of the application, you should choose *Bug Report*.
-* If you feel that the application needs functionality that is out of your current scope and that you do not feel is being represented in other suer stories, then you should choose *Task Creation Request*.
+* If you feel that the application needs functionality that is out of your current scope and that you do not feel is being represented in other user stories, then you should choose *Task Creation Request*.
 
-Once you choose one of the two options and click the respective button you should see a page with a form that asks you for a title and that has a field in which you can write a description of what you want to report on.<br>
-Note that the field where you can write a description is already filled out with suggestions on how to structure your own description.<br>
+Once you choose one of the two options and click the respective button you should see a page with a form that asks you for a title and that has a field in which you can write a description of what you want to report on.  
+Note that the field where you can write a description is already filled out with suggestions on how to structure your own description.  
 Once you have created a good title and written a description of the issue you click on the green *Submit new issue* button at the bottom of the form. With this you have created your issue.
+
+It can be a good idea to inform the PO group, so they can assign and refine the issue.
