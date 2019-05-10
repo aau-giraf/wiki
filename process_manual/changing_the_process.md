@@ -63,7 +63,7 @@ Generally we tried to choose as popular technologies as possible, or technologie
 This increases the likelihood of current and future students being familiar with the technologies.
 
 ### Language
-We have chosen to work with the Flutter framework, which uses the Dart language - rather Xamarin, which was previously used.
+We have chosen to work with the Flutter framework, which uses the Dart language - rather than Xamarin, which was previously used.
 There is a multitude of reasons for choosing Flutter.
 
 **It is cross-platform**  
