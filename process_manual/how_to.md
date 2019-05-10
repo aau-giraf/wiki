@@ -69,7 +69,17 @@ Now all that is left is for you to inform the process group, and ask
 them to assign reviewers. They will assign reviewers who will review
 your pull request.
 
-## How to: Get code in review
+## How To: Get Code in Review
+In order to get code into review, you firstly have to make sure that the tests you wrote all pass, and that they cover the relevant parts of the written code. The way you make a pull request (PR) starts by visiting github.com. You navigate to the repository in which you've done your work. Go to the pull requests tab, click the "new pull request" button. Then you select the correct base and compare branch, and then your create a pull request.
+
+Otherwise, if you have recently pushed commits github will actually suggest if you want to create a pull requests, this eases the process. 
+
+When a pull request have been created, you have to notify the process group, write them or talk to them. The process group is responsible for delegating the two reviews which are needed to merge the pull request.
+The review will be performed by others than the group who wrote the code, thus we use external review.
+Once the pull request is in the review phase, you should be able to in the meantime work on other user stories, or simply write about the user story in your report.
+When other groups review you PR, they most likely have some form of feedback, comments, or some things they do not understand.
+Thus it is to prefer if both the reviewers and the ones responsible for the pull request are quickly to respond to comments on github.
+Once the reviewers have approved the pull request is able to merged.
 
 ## How To: Review a Pull Request
 When reviewing a pull request it is absolutely important that you consider the goal of the review: Value should be added to the project, and the developers involved should gain knowledge and improve.
@@ -85,13 +95,15 @@ If you are reviewing a complex piece of code, or a particularly problematic piec
 
 ## How to: Create an issue
 While the PO group are the ones responsible for creating user stories, there might be times where other groups feel the need to create issues on GitHub.
-
 With the Weekplanner repository as the example, people can either create a *Task Creation Request* or a *Bug Report*. To do this you go to the Weekplanner repository on GitHub and select the Issues tab. On the right side of the page, right above the list of issues you should see a green button labeled *New issue*. Clicking on this button takes you to a page where you can select to create either a *Bug Report* or a *Task Creation Request*. If you are in doubt as to which one to choose the the following can be of help:
 
 * If you want to report unexpected behavior in already existing functionality of the application, you should choose *Bug Report*.
 * If you feel that the application needs functionality that is out of your current scope and that you do not feel is being represented in other user stories, then you should choose *Task Creation Request*.
 
-Once you choose one of the two options and click the respective button, you should see a page with a form that asks you for a title and that has a field in which you can write a description of what you want to report on.<br>
-Note that the field where you can write a description is already filled out with suggestions on how to structure your own description.<br>
-Once you have created a good title and written a description of the issue you click on the green *Submit new issue* button at the bottom of the form. 
+Once you choose one of the two options and click the respective button you should see a page with a form that asks you for a title and that has a field in which you can write a description of what you want to report on.  
+Note that the field where you can write a description is already filled out with suggestions on how to structure your own description.  
+Once you have created a good title and written a description of the issue you click on the green *Submit new issue* button at the bottom of the form. With this you have created your issue.
+
+It can be a good idea to inform the PO group, so they can assign and refine the issue.
+
 You have now created your issue, congratulations!
