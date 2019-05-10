@@ -1,5 +1,7 @@
 # Project meetings
 This section will go through all the different meetings, and describe the agenda and purpose of each meeting.
+Generally you should try to waste as little time as possible with the meetings.
+Having everyone attend all meetings is a bad strategy, so only invite the necessary students.
 
 ## Sprint intro
 This meeting is used to introduce and mark the beginning of the sprint.
