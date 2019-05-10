@@ -70,7 +70,17 @@ Now all that is left is for you to inform the process group, and ask
 them to assign reviewers. They will assign reviewers who will review
 your pull request.
 
-## How to: Get code in review
+## How To: Get Code in Review
+In order to get code into review, you firstly have to make sure that the tests you wrote all pass, and that they cover the relevant parts of the written code. The way you make a pull request (PR) starts by visiting github.com. You navigate to the repository in which you've done your work. Go to the pull requests tab, click the "new pull request" button. Then you select the correct base and compare branch, and then your create a pull request.
+
+Otherwise, if you have recently pushed commits github will actually suggest if you want to create a pull requests, this eases the process. 
+
+When a pull request have been created, you have to notify the process group, write them or talk to them. The process group is responsible for delegating the two reviews which are needed to merge the pull request.
+The review will be performed by others than the group who wrote the code, thus we use external review.
+Once the pull request is in the review phase, you should be able to in the meantime work on other user stories, or simply write about the user story in your report.
+When other groups review you PR, they most likely have some form of feedback, comments, or some things they do not understand.
+Thus it is to prefer if both the reviewers and the ones responsible for the pull request are quickly to respond to comments on github.
+Once the reviewers have approved the pull request is able to merged.
 
 ## How To: Review a Pull Request
 When reviewing a pull request it is absolutely important that you consider the goal of the review: Value should be added to the project, and the developers involved should gain knowledge and improve.
