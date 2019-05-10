@@ -24,7 +24,7 @@ All following sprint intros will probably be very short meetings, lasting no mor
 This meeting should be held once or twice a week.
 When you still have lectures, once a week should be sufficient, and when you don't twice a week will be better.
 
-The purpose of the cross-group standups is to coordinate the events of the project.
+The purpose of the cross-group standups is to coordinate the events of the project, and to minimize the amount of merge conflicts caused by having multiple groups work in the same files.
 
 ## Release preparation
 The last two work-days before a sprint ends should be spent actively hunting for, and fixing bugs.
@@ -43,7 +43,7 @@ A new issue should be created on GitHub if 'no' is the answer to any of the foll
 If a bug is discovered, an issue should be created in the relevant repository, describing the bug.
 The label called ReleaseFix should be added to the issue.
 
-The PO-group will assign the bug-fixing issues.
+The PO group will assign the bug-fixing issues.
 When groups solve an issue, they should write a test to verify that that the bug was solved, i.e. the test should fail before solving the bug, and pass after.
 
 Most of the time, there will only be a few bugs left, and most developers will have some extra time with nothing to do.
