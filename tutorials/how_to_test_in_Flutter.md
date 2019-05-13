@@ -1,11 +1,3 @@
-Beskriv DI clear
-Husk at forklare done function i async 
-
-Hvad skal testes?!?
-Der skal ikke bruges done() ved async i widget
-Beskriv completer
-Beskriv pump
-
 # Test in Flutter
 
 The Process manual states that code should be properly tested before a user story is done. This guide describes how you test in Flutter, and what the test criteria is in both blocs and screens/ widgets. 
@@ -73,8 +65,7 @@ If the code does not run in sequence you should use a async test, that looks thi
      done();
  }));
 ```
-In the normal test, the test will finish when all the code are executed, while a async test will finish when the done() function is called. If you do an async test, you should always remember to call the done() function. 
-
+In the normal test, the test will finish when all the code are executed, while an async test on a standard class will finish when the done() function is called. If you do an async test, you should always remember to call the done() function in standard classes, because else test will continue until timeout and then fail. 
 
 ``` Dart
 import 'package:<All the different imports>';
@@ -112,10 +103,25 @@ In the async test, the listen function is defined first. When the set function o
 The widget and screen tests separate from the class tests. All tests are still in the main() function and you can still use a setup function, but instead of the normal tests you use test widgets. 
 ``` Dart
     testWidgets('Name',(WidgetTester tester) async {
-        await <Something to wait for>;
+        await tester.<Something to wait for>;
     });
 ```
-This is the basics of a testWidget. The await is used primarily before the testWidget, and the testWidget interacts with widgets and the test environment. This can be used to set up the tests. 
+Inside the testWidget you use a WidgetTester. This is used to interact with widgets in the test environment. When you use the WidgetTester for actions, you should use the await key word before. 
+
+In standard classes you use the done() function when running an async test. This is not done in testWidgets. However, if you use a listener in your expect, you use something called a completer.
+``` Dart
+    testWidgets('Name',(WidgetTester tester) async {
+        final Completer<datatypeA> done = Completer<datatypeA>();
+
+        bloc.someBloc.listen((datatypeA) async{
+            await tester.pump();
+            expect(success, true);
+            done.complete();
+        });
+        await done.future;
+    });
+```
+
 There are some basic functions we use a lot on the WidgetTester.
 
 The first is pumpWidget. This acts by setting up a screen. You can write it like this:
@@ -124,25 +130,30 @@ await tester.pumpWidget(MaterialApp(home:SomeScreen()));
 ```
 This set up the SomeScreen screen.
 
-Another important function is the pump() function. This can be used to trigger the frame after some duration of time. 
+Another important function is the pump() function. This is used to execute actions, by rendering the screen.
 
 You can also use the tester.enterText widget. This looks like this:
 ``` Dart
 await tester.enterText(find.byType(TextField,query));
 ```
-This also shows the find.byType function, that searches in the widgets the tester contains and finds, by a certain type, here TextField, a widget with a name matching the query. The query is a string and could for example be 'cat'.
+This also shows the find.byType function, that searches in the widgets in the tester and finds by a certain type, here TextField, a widget with a name matching the query. The query is a string and could for example be 'cat'.
 
-The WidgetTester have many other functions you should explore when needed. The key thing is to understand that a WidgetTester "contains" a screen with widgets and blocs of a certain state. This environment can be changes and widgets extracted as needed. 
+The WidgetTester have many other functions you should explore when needed. The key thing is to understand that a WidgetTester interacts with widgets in the test environment. The environment can be updated with the WidgetTester, and widgets extracted with "find".
 
-The expect in the testWidget can look like this:
+The expect is similar to the standard class expect, but in the actual part you can use "find" to choose the widgets you test on.
+
+Examples of TestWidget expects are:
+
 ```
     expect(find.byWidgetPredicate((Widget widget) =>widget is WidgetType), <FINDINGS>);
     expect(find.byType(WidgetType),<FINDINGS>);
 ```
-The FINDINGS can be things like "findsOneWidget", "findsNothing" or "findsNWidgets(someInteger)". 
 
-## Mock screen 
-When you test a non screen widget you can use to have a MockScreen to contain it. This is written in the test document, outside the main() function and can look like this:
+## Mocking
+When you write tests, you will often need to mock certain objects. This section describes the different mocking often used in GIRAF testing. 
+
+### Mock screen 
+When you test a non screen widget you can use to have a MockScreen as a container. This is written in the test document, outside the main() function and can look like this:
 ``` Dart
 class MockScreen extends StatelessWidget {
     @override 
@@ -152,9 +163,20 @@ class MockScreen extends StatelessWidget {
 }
 ```
 You can fill the MockScreen with all the content you find necessary to do the tests.
-## Mock Api
-All Weekplanner testing should be independent of the current state of the database. When a database is needed for a test, we create a mock database.
 
+### Dependency injection 
+All dependency injections are automatically set up in the bootStrap.dart file. If you need to change a dependency in for a test, you can do it directly on the dependency injector. This can look like this:
+```` Dart
+newDependencyBloc = SomeBloc();
+di.clearAll();
+di.registerDependency<SomeBloc>((_)=> newDependencyBloc);
+di.registerDependency<Bloc1>((_)=> StandardBloc1());
+di.registerDependency<Bloc2>((_)=> StandardBloc2());
+```` 
+The newDependencyBloc is the bloc that you want to replace the original dependency with. Before you add a new dependency, you have to clear all dependencies. This means that if you need dependencies that are otherwise there as a standard, you have to add them agin. I dependencies are not relevant, you should not add them. 
+
+### Mock Api
+All Weekplanner testing should be independent of the current state of the database. If you need database access for your test, you create a mock Api.
 If we for example wanted to use an Api class called "SomeApi", we would write it like:
 ``` Dart
 class MockSomeApi extends Mock implements SomeApi {}
@@ -183,6 +205,7 @@ void main() {
 Here, the "some" field in the api corresponds to the api of the SomeApi type in the class. Now you can use your bloc like normal, you just have to add the needed information to the someApi.
 
 If you need the Api to do something when it is updated, you can write a setupApiCalls() function before the setUp() function. This function should be called inside the setUp function, so it is called every time the api is updated inside the tests. The function could look like the following:
+
 ``` Dart
 void setupApiCalls() {
     when(someApi.update())
