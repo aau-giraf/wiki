@@ -65,7 +65,7 @@ If the code does not run in sequence you should use a async test, that looks thi
      done();
  }));
 ```
-In the normal test, the test will finish when all the code are executed, while an async test on a standard class will finish when the done() function is called. If you do an async test, you should always remember to call the done() function in standard classes, because else test will continue until timeout and then fail. 
+In the normal test, the test will finish when all the code are executed, while an async test on a standard class will finish when the done() function is called. If you do an async test, you should always remember to call the done() function in standard classes, because else test will continue until timeout and then fail. The done() function always have to be in inside the async function, not outside.
 
 ``` Dart
 import 'package:<All the different imports>';
