@@ -6,16 +6,16 @@ There are many different repositories in the GIRAF project, but most of them are
 These repositories are those that as of 2019 are in actively used in the Giraf project. 
 
 ### web-api
-The backend Restfull API for the Giraf Project. The API is a .net-core project written in C#.
+The backend Restfull API for the Giraf Project. The API is a .net-core project written in C#. The wiki should be updated so it always reflect the current status of the other repositories as well as other relevant artifacts. 
 
 ### wiki 
 The wiki repository containing information about the GIRAF project, including information for people starting out with GIRAF.
 
 ### api_client
-API client for Flutter to communicate with the web-api (2019: Only weekplanner uses flutter). This is a Dart package that can be used to implement communication with the web-api in any flutter project.
+API client for Flutter to communicate with the web-api (2019: Only weekplanner uses flutter). This is a Dart package that can be used to implement communication with the web-api in any flutter project. Earlier the api_client was located in the weekplanner repository, but it is now used as a package so it can be used in other applications. 
 
 ### weekplanner
-The Weekplanner is an application to create and maintain a week schedule of a citizen. This schedule shows a plan of the activities due for the day/week of a citizen and is essentially an important tool. It is a digitalisation of an already existing week plan that the guardians maintain on a pin-up board at the instituions. 
+The Weekplanner is an application to create and maintain a week schedule of a citizen. This schedule shows a plan of the activities due for the day/week of a citizen and is essentially an important tool. It is a digitalisation of an already existing week plan that the guardians maintain on a pin-up board at the instituions. The weekplanner repository contains the Flutter Weekplanner application that is used to compile to both iOS and Android devices.
 
 ### web-api-dotnetcore-build 
 Docker containers for the development branch of the webAPI (2019).
