@@ -3,7 +3,7 @@
 There are many different repositories in the GIRAF project, but most of them are archived as of 2019. This section  describes first all active repositories and then the archived so it is easy to see what the repositories contain.
 
 ## Active repositories
-These repositories are those that as of 2019 are in actively used in the Giraf project. 
+These repositories are those that as of 2019 are active in the Giraf project. 
 
 ### web-api
 The backend Restfull API for the Giraf Project. The API is a .net-core project written in C#. The wiki should be updated so it always reflect the current status of the other repositories as well as other relevant artifacts. 
