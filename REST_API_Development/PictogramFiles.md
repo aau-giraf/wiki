@@ -1,8 +1,8 @@
 # Pictogram files
 
-As of May of 2019, the `web-api` has no pictograms stored in the repository. Some pictograms have been stored in the [DBInitializer](https://github.com/aau-giraf/web-api/blob/develop/GirafRest/Data/DBInitializer.cs) class but have since been removed, because storing images in a database is generally considered harmful. 
+As of May 2019, the [web-api](https://github.com/aau-giraf/web-api) has no pictograms stored in the repository. Some pictograms have been stored in the [DBInitializer](https://github.com/aau-giraf/web-api/blob/develop/GirafRest/Data/DBInitializer.cs) class but have since been removed, because storing images in a database is generally considered harmful. 
 
-As there no longer are any pictograms stored in the repository, it can be difficult to run a local version of the `web-api`. We have therefore created a script which generates sample pictograms. This script is found in `/scripts/pictogen.py`. The point of this script is to generate lots of pictograms and put them in the location where the `web-api` would normally look for them.
+As there no longer are any pictograms stored in the repository, it can be difficult to run a local version of the `web-api`. We have therefore created a script which generates sample pictograms. This script is found in [/scripts/pictogen.py](https://github.com/aau-giraf/web-api/blob/develop/scripts/pictogen.py). The point of this script is to generate lots of pictograms and put them in the location where the `web-api` would normally look for them.
 
 ## Prerequisites
 
@@ -10,7 +10,7 @@ To run the script, we first need to ensure that we have Python 3, and Pillow (an
 
 * [macOS](https://evansdianga.com/install-pip-osx/)
 * [Windows](https://vgkits.org/blog/pip3-windows-howto/)
-* Ubuntu just run `sudo apt install python3-pip`.
+* Ubuntu run `sudo apt install python3-pip`.
 
 Afterward, run:
 
