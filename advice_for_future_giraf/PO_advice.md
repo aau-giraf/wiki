@@ -120,6 +120,8 @@ This worked decently, but was a bit hard to coordinate because all the communica
 At the second release we chose, in collaboration with the process group, to host a hackathon for release fixing where all the groups sat together.
 This made it much easier to communicate between all the groups and we felt that the process was much smoother because of this.
 
+It is a good idea to document the releases as they are happening. This makes it much easier for you as the PO group to write about them in the report as well as in the wiki. Keep track of which issues were included in the release and which groups worked on these issues.
+
 ## Usability testing
 At the end of each sprint, a usability test should be conducted to get feedback on the features that have been developed in the sprint, and on potential new prototypes.
 We recommend that you arrange the usability tests shortly after the sprint has ended, so that you have time to translate the results into user stories.
