@@ -6,7 +6,7 @@ The activity bloc is responsible for handling all the functionality that activit
 Activities are the things which citizens have to do according to their week plan.
 
 ## Code
-The `Load` function is used when accessing a week plan and all the activities needs to be loaded.
+The `Load` function is used when accessing a week plan and all the activities need to be loaded.
 
 The `Complete activity` and `Cancel activity` functions both change the state of an activity.
 They change it to completed and canceled respectively.
