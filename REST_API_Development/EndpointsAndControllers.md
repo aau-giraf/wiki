@@ -10,6 +10,10 @@ For documentation of endpoints and examples of how to use the endpoints, see: [S
 
 The account controller contains all the endpoints related to authenticating users e.g. log in, log out, register and reset password.
 
+### ActivityController
+
+The activity controller contains CRUD endpoints related to activities. It has been created to avoid having to update the whole weekplan when changes are made to a single activity.
+
 ### UserController
 
 While ```AccountController``` concerns itself with authentication, this controller handles [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) actions and other actions which can be taken on a user, as well as the user's data.
