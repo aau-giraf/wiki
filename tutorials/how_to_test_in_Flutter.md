@@ -50,22 +50,22 @@ expect(<variable>, true);
 ```
 ## Writing tests
 
-There are a significant difference between a widget/screen test and a standard class like a bloc. The tests for these two are explained separately. 
+There are a significant difference between a widget/screen test and a bloc test. The tests for these two are explained separately. 
 
-### Standard classes
-A test for a standard class looks like this:
+### Blocs
+A test for a bloc looks like this:
 ``` Dart
  test('Test desctription',(){
 
  });
 ```
-If the code does not run in sequence you should use a async test, that looks this way:
+If the code does not run in sequence you should use an async test, that looks this way:
 ``` Dart
  test('Test description', async((DoneFn done){
      done();
  }));
 ```
-In the normal test, the test will finish when all the code are executed, while an async test on a standard class will finish when the done() function is called. If you do an async test, you should always remember to call the done() function in standard classes, because else test will continue until timeout and then fail. The done() function always have to be in inside the async function, not outside.
+A standard bloc test will finish when all the code are executed while an async bloc test will finish when the done() function is called. If you make an async test, you should always remember to call the done() function in bloc, otherwise the test will continue until it times out, and then fail. The done() function is placed inside the async function.
 
 ``` Dart
 import 'package:<All the different imports>';
@@ -83,21 +83,21 @@ void main() {
     
     test('This is a standard test',(){
         a.someMethod(b);
-        expect(b.something, 2);
-        expect(a.something, 3);
+        expect(b.someFunction, 2);
+        expect(a.someFunction, 3);
     });
 
     test('This is an async test',async((DoneFn done){
-        bloc.something.skip(1).listen((SomeModel model){
+        bloc.steamA.skip(1).listen((SomeModel model){
             expect(model.content, value);
             expect(model.otherContent, otherValue);
             done();
         });
-        bloc.setSomething(value);
+        bloc.setA(value);
     });
 }
 ```
-In the async test, the listen function is defined first. When the set function on Something is called, the listen function is notified and all the expect functions are called. 
+In the async test, the listen function is defined first. In the async test a listen and listen function is set up on a steam in the bloc. When a set function on the behavior subject of the stream is called, the listen function is called, and in here the expect() and done() functions. 
 
 ## Widgets and screens
 The widget and screen tests separate from the class tests. All tests are still in the main() function and you can still use a setup function, but instead of the normal tests you use test widgets. 
@@ -106,9 +106,9 @@ The widget and screen tests separate from the class tests. All tests are still i
         await tester.<Something to wait for>;
     });
 ```
-Inside the testWidget you use a WidgetTester. This is used to interact with widgets in the test environment. When you use the WidgetTester for actions, you should use the await key word before. 
+Inside the testWidget you use a WidgetTester. This is used to interact with widgets in the test environment. When you use the WidgetTester for actions, you should use the await keyword before. 
 
-In standard classes you use the done() function when running an async test. This is not done in testWidgets. However, if you use a listener in your expect, you use something called a completer.
+In blocs you use the done() function when running an async test. This is not done in testWidgets. However, if you use a listener in your expect, you use something called a completer.
 ``` Dart
     testWidgets('Name',(WidgetTester tester) async {
         final Completer<datatypeA> done = Completer<datatypeA>();
@@ -124,13 +124,15 @@ In standard classes you use the done() function when running an async test. This
 
 There are some basic functions we use a lot on the WidgetTester.
 
-The first is pumpWidget. This acts by setting up a screen. You can write it like this:
+The first is pumpWidget. This acts by setting up a screen in your test environment. This makes it possible to test on the screen, fx if the right elements are present. You can write it like this:
 ``` Dart
 await tester.pumpWidget(MaterialApp(home:SomeScreen()));
 ```
 This set up the SomeScreen screen.
 
-Another important function is the pump() function. This is used to execute actions, by rendering the screen.
+Another important function is the pump() function. This is used to execute actions, by rendering the screen. If you want to wait for a durration of time, you can note this as an attribute.
+
+If you want to test more actions in sequence, you should use pumpAndSettle(). This is fx if you want to push a button that makes something else happen, and test if that happens. 
 
 You can also use the tester.enterText widget. This looks like this:
 ``` Dart
@@ -138,9 +140,9 @@ await tester.enterText(find.byType(TextField,query));
 ```
 This also shows the find.byType function, that searches in the widgets in the tester and finds by a certain type, here TextField, a widget with a name matching the query. The query is a string and could for example be 'cat'.
 
-The WidgetTester have many other functions you should explore when needed. The key thing is to understand that a WidgetTester interacts with widgets in the test environment. The environment can be updated with the WidgetTester, and widgets extracted with "find".
+The WidgetTester has many other functions you should explore when needed. The key thing is to understand that a WidgetTester interacts with widgets in the test environment. The environment can be updated with the WidgetTester, and widgets extracted with "find".
 
-The expect is similar to the standard class expect, but in the actual part you can use "find" to choose the widgets you test on.
+The expect is similar to the bloc expect, but in the actual part you can use "find" to choose the widgets you test on.
 
 Examples of TestWidget expects are:
 
@@ -214,4 +216,26 @@ setUp((){
     setUpApiCalls
 })
 ```
+### Override
+In mock classes you can override elements to change functionality when needed. 
 
+An example of this is in a mock api, where you can override a function that should give you some specific data from the database. 
+``` Dart
+class MockSomeApi extends Mock implements SomeApi
+@override
+Observable<ARelevantModel> SomeApiMethod() {
+    return Observable<AReleventModel>.just(ARelevantModel(
+        id: '1',
+        info1: 'Cat'
+        info2: 3
+    ))
+}
+```
+This is a good way to mock information in the database that you need to test.
+
+When you mock a bloc, you can also do it the same way. The difference is that you override observables instead of api calls. An example of this is:
+```
+@override
+Observable<bool> get someStream => 
+    observable<bool>.just(input);
+```
