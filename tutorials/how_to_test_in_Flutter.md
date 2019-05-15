@@ -222,13 +222,13 @@ In mock classes you can override elements to change functionality when needed.
 An example of this is in a mock api, where you can override a function that should give you some specific data from the database. 
 ``` Dart
 class MockSomeApi extends Mock implements SomeApi
-@override
-Observable<ARelevantModel> SomeApiMethod() {
-    return Observable<AReleventModel>.just(ARelevantModel(
-        id: '1',
-        info1: 'Cat'
-        info2: 3
-    ))
+    @override
+    Observable<ARelevantModel> SomeApiMethod() {
+        return Observable<AReleventModel>.just(ARelevantModel(
+            id: '1',
+            info1: 'Cat'
+            info2: 3
+        ));
 }
 ```
 This is a good way to mock information in the database that you need to test.
