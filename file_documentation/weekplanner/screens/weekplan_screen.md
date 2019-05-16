@@ -21,7 +21,7 @@ The buttons seen at the bottom of the `weekplan_screen` screen are the _add acti
 
 
 ## Code
-The `weekplan_screen` is a widget must, therefore, implement the build method, as seen here:
+Since the weekplan_screen is a widget, it must therefore, implement the build method, as seen here:
 
 ```dart
 @override
@@ -33,7 +33,8 @@ The `weekplan_screen` is a widget must, therefore, implement the build method, a
           return Scaffold(
             appBar: GirafAppBar(
                 title: 'Ugeplan',
-                appBarIcons: (weekModeSnapshot.data == WeekplanMode.guardian)
+                appBarIcons: (weekModeSnapshot.data == 
+                              WeekplanMode.guardian)
                     ? <AppBarIcon>[
                         AppBarIcon.changeToCitizen,
                         AppBarIcon.settings,
@@ -69,10 +70,11 @@ The `_pictogramIconStack` is used to add the accept icon once an activity is don
 
 Two functions allow for the moving of images, `_dragTargetPlaceholder` and `_dragTargetPictogram`
 
-The `_getPictograms` is used to load the image of a specific image id.
+The `_getPictograms` is used to load the image of a specific image ID.
 
 The `_translateWeekDay` is used to translate an enum type to a textstring. 
 
 ## Structure
-The UML diagram shows the structure of `weekplan_screen`.
+The UML diagram shows the structure of `weekplan_screen`:
+
 ![The structure of](../pictures/WeekPlanScreen.png)
