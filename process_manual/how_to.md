@@ -35,7 +35,7 @@ Remember that all functionality related to an issue should be implemented before
 
 In the [How to review section](#how-to-review-a-pull-request) you can read more about how that will happen.
 Make sure that you plan for the pull request to go through as fast as possible.
-And if you are in doubt and stuck, just go ask another group for help - there's a lot of clever people on the GIRAF project, and they usually love to help.
+And if you are in doubt and stuck, just go ask another group for help - there are a lot of clever people on the GIRAF project, and they usually love to help.
 
 ## How to: Create a pull request
 When development of a piece of software is done, and it is deemed that
@@ -63,7 +63,7 @@ screens follow the design manual.
 
 Remember to include the text "fixes \#YourIssueID". This will
 automatically close the issue when the pull request is merged.
-When then PR is closed, check your issue to make sure that it has been closed too.
+When the PR is closed, check your issue to make sure that it has been closed too.
 
 Now all that is left is for you to inform the process group, and ask
 them to assign reviewers. They will assign reviewers who will review
@@ -85,7 +85,7 @@ Once the reviewers have approved the pull request is able to merged.
 When reviewing a pull request it is absolutely important that you consider the goal of the review: Value should be added to the project, and the developers involved should gain knowledge and improve.
 As such, it is important to keep a light and educational tone when involved with the pull requests.
 
-When reviewing a pull request you should check for the following points:
+When reviewing a pull request, you should check for the following points:
 
 In case a point is not fulfilled you should leave a comment that points out the problem, why it is a problem, and, if possible, how to develop a solution. When reviewing the code, you can click on the "Files Changed" tab, in which you will be able to see all changes to the code. If you click on the left side of the code, right besides the line numbers, there will be a small, blue plus button available, which will let you leave a comment to this specific line of the code. If possible, you should always leave a comment on the line of the code that is problematic.
 

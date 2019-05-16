@@ -24,7 +24,7 @@ When a development group feels that they are done with a user story, a PR will b
 During the week you should have some [cross-group standups](project_meetings.md#cross-group-standups).
 In the beginning when you still follow lectures we recommend a single standup a week.
 It's also a good idea to organize the standup between the two days with the most time for your project.  
-For an example, if you have no lectures Monday and Tuesday, but full schemes the rest of the week, then place the standup somewhere at the end of Monday or start of Tuesday.
+For example, if you have no lectures Monday and Tuesday, but full schemes the rest of the week, then place the standup somewhere at the end of Monday or start of Tuesday.
 
 When you no longer have any lectures we found 2 standups to be beneficial.
 
