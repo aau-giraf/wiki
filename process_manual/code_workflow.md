@@ -11,7 +11,7 @@ etc. The essential parts are covered in this section but the full
 documentation is stated in both [naming convention](<https://github.com/ktaranov/naming-convention/blob/master/C%23%20Coding%20Standards%20and%20Naming%20Conventions.md>) and [microsoft docs](<https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions>) where the latter weighs
 the most if any conflicts occur.
 
-### Comments in the code
+## Comments in the code
 
 C\# facilitates functionality to easily add a description to a function,
 class, etc., as seen below:
@@ -36,7 +36,7 @@ class, etc., as seen below:
       }
 ```
 
-### Naming Conventions
+## Naming Conventions
 
 For the purpose of C\# programming, we recommend this naming scheme.
 
@@ -72,7 +72,7 @@ For the purpose of C\# programming, we recommend this naming scheme.
         }
     }
 
-### Other Aspects
+## Other Aspects
 
   - variable, class, and method names should be self-explanatory.
 
@@ -140,71 +140,98 @@ Furthermore, there is no need for pull request when merging a hotfix
 branch into master and develop. Hotfixes should however be limited.  
 Only a chosen set of people are allowed to merge from a release branch into master.
 
-# Code Review
+## How To: Create a Pull Request
 
-Code review is done externally i.e. reviewing code written by group X is
-done by two people from two different groups Y and Z. The two people are
-responsible for the review, but the two people are allowed to delegate
-the work to their group members. A review should be of **high priority**
-since it may be the only thing preventing a feature from being deployed.
-Code review is done through pull-requests, and the Scrum Master group
-assigns reviewers to different pull requests. Each group should expect
-to provide a minimum of two reviews for each pull request the group
-creates. Who does the review is determined internally in the group.
+When development of a piece of software is done, and it is deemed that
+the code solves the assigned issue, a pull request should be made.
 
-A code review should go through the following checklist in order to
-ensure a proper code quality.
+Before making the pull request, make sure that the code:
+
+  - only relates to a single issue.
+
+  - is fully tested.
+
+  - is reachable when opening the application.
+
+Fully tested means that if any piece of the functionality is removed, a
+test should fail.
+
+To create the pull request, you should go to the relevant repository, click on pull requests and click the
+green "New Pull Request" button. The base branch should be "develop" and
+the compare branch should be your feature branch, with the code that you
+want to add to the develop branch. Then click the green "Create pull
+request" button.
+
+Next, include pictures of all the screens that you added, in the text
+field, so someone from the product owner group can verify that the
+screens follow the design manual.
+
+Remember to include the text "fixes \#YourIssueID". This will
+automatically close the issue when the pull request is merged.
+
+Now all that is left is for you to inform the process group, and ask
+them to assign reviewers. They will assign reviewers who will review
+your pull request.
+
+## How To: Review a Pull Request
+
+When reviewing a pull request it is absolutely important that you
+consider the goal of the review: Value should be added to the project,
+and the developers involved should gain knowledge and improve. As such,
+it is important to keep a light and educational tone when involved with
+the pull requests.
+
+When reviewing a pull request you should check for the points in the [Code Review Checklist](#code-review-checklist).
+
+In case a point is not fulfilled you should leave a comment that points
+out the problem, why it is a problem, and, if possible, how to develop a
+solution. When reviewing the code, you can click on the "Files Changed"
+tab, in which you will be able to see all changes to the code. If you
+click on the left side of the code, right besides the line numbers,
+there will be a small, blue plus button available, which will let you
+leave a comment to this specific line of the code. If possible, you
+should always leave a comment on the line of the code that is
+problematic.
+
+As a reviewer you should never commit to the branch with the pull
+request, merge the pull request, or delete the pull request. Since the
+first two actions *might* introduce problems to the codebase, the author
+of the pull request should always do these things, as that person will
+be best suited to handle potential problems.
+
+Are you reviewing a complex piece of code, or a particularly problematic
+piece of code, it is highly advisable that you sit besides the author of the
+pull request. 
+Walking through the code with them, side by side, in order to clarify any misunderstandings efficiently and effectively really helps the understanding.
 
 ## Code Review Checklist
 
-### Code Design
+**Code Design**
+- [ ] Is the code in the right place? (Both in terms of folder structure and class structure)
+- [ ] Could this code, to the best of your knowledge, have reused existing code?
+- [ ] Is the code over-engineered? Example of over-engineering: Implemented behavior for future problems
+- [ ] Does it introduce functionality that is not necessary for solving the problem?
 
-  - Is the code in the right place? (Both in terms of folder structure
-    and class structure)
+**Code Readability and Maintainability**
+- [ ] Are names meaningful and self-documenting?
+- [ ] Is it understandable, by reading the code, what it does?
+- [ ] Is the code simple and readable? i.e. it contains no “hack”, or obscure solution.
+- [ ] Is it understandable, by reading the tests, what they do?
+- [ ] Do the tests cover sensible cases? Both happy paths and exception paths?
+- [ ] Do the tests cover the full functionality? i.e., will the tests fail if some of the requested functionality is missing?
+- [ ] Are error messages in the code understandable?
+- [ ] Are confusing sections of code covered by comments?
 
-  - Could this code, to the best of your knowledge, have reused existing
-    code?
+**Functionality**
+For this part, open the app, and test:
+- [ ] Are the features that the code claims to implement, actually implemented?
+- [ ] Does it look like the code has bugs?
+- [ ] Are all new screens reachable through in-app navigation?
 
-  - Is the code over-engineered?
-    
-      - Examples of over-engineering: Implemented behavior for future
-        problems
-
-  - Does it introduce functionality that is not necessary for solving
-    the problem?
-
-### Code Readability and Maintainability
-
-  - Are names meaningful and self-documenting?
-
-  - Is it understandable, by reading the code, what it does?
-
-  - Does the code contain a "hack" instead of simple, readable code?
-
-  - Is it understandable, by reading the tests, what they do?
-
-  - Do the tests cover sensible cases? Both happy paths and exception
-    paths?
-
-  - Are error messages in the code understandable?
-
-  - Are confusing sections of code covered by comments?
-
-### Functionality
-
-  - Is the features that the code claims to implement, actually
-    implemented?
-
-  - Does it look like the code has bugs?
-
-### Points for Discussion and Reflection
-
-  - Are UI messages, that the user might meet, actually helpful?
-
-  - Are there errors that are bad practice? Like, hard-coding a test
-    database connection?
-
-  - Is there well written code in this? Remember to tell the developer\!
+**Points for Discussion and Reflection**
+- [ ] Are UI messages, that the user might meet, actually helpful?
+- [ ] Are there errors that are bad practice? Like, hard-coding a test database connection?
+- [ ] Is there well written code in this? Remember to tell the developer!
 
 # Definition Of Done
 
