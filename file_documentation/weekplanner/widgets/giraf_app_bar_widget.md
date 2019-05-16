@@ -20,7 +20,7 @@ Giraf appbar is a stateless widget, thus it contains the build function which "d
   Widget build(BuildContext context) {
     toolbarBloc.updateIcons(appBarIcons, context);
     return AppBar(
-        title: Text(title),
+        title: Text(title, overflow: TextOverflow.clip),
         flexibleSpace: const GirafTitleHeader(),
         actions: <Widget>[
           StreamBuilder<List<IconButton>>(
@@ -33,7 +33,9 @@ Giraf appbar is a stateless widget, thus it contains the build function which "d
                   children: snapshot.data
                 );
               }),
-        ]);
+        ],
+        automaticallyImplyLeading: isGuardian,
+    );
   }
   ```
-The Giraf appbar consists of an appbar that has buttons that are the buttons emitted from the stream called `toolbarBloc.visibleButtons`. That stream is populated with buttons by the method `toolbarBloc.updateIcons` which is the reason it is called as the first method.
+The Giraf appbar consists of an appbar with buttons which are emitted from the stream called `toolbarBloc.visibleButtons`. That stream is populated with buttons by the method `toolbarBloc.updateIcons` which is the reason it is called as the first method.
