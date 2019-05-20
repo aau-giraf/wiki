@@ -9,7 +9,7 @@
     - [Development groups](process_group_information.md#development-groups)
     - [Skill groups](process_group_information.md#skill-groups)
     - [Product owner group](process_group_information.md#product-owner-groups)
-  - [Your role and relevant info for you](your-role-and-relevant-information-for-you)
+  - [Your role and relevant info for you](process_group_information.md#your-role-and-relevant-information-for-you)
     - [Communication (Slack)](process_group_information.md#communication)
     - [General about meetings - also skill group meetings](process_group_information.md#general-about-meetings)
     - [Our adaptation of GitFlow](process_group_information.md#our-adaptation-of-gitflow)
