@@ -16,10 +16,10 @@ Other than that, you might be able to use the rest of the sections for reference
 ## Introduction for the next process group
 You have been chosen as the process group of this semester. It might be against your will, but nonetheless it's an important job that needs to be done.
 If this is at the very beginning of the semester, we recommend that you read the following sections:
-1. [General development in Process group information](process_group_information.md#general-development)
+1. [General development](process_group_information.md#general-development) in Process group information
 2. [Project meetings](project_meetings.md#project-meetings)
    1. Especially sprint intro and cross-group standups
-3. [How to handle roles in Process group information](process_group_information.md#how-to-handle-roles)
+3. [How to handle roles](process_group_information.md#how-to-handle-roles) in Process group information
 4. [Changing the process](changing_the_process.md)
 
 Your responsibility is to define how project groups do everything: from writing proper code to meetings and releasing the code.
