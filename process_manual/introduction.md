@@ -30,3 +30,5 @@ To avoid micromanaging we don't care for how groups do things internally.
 We only care about things that affect other groups as well.
 So if one groups wants to work hardcore Scrum, and another don't want any formal process, let them.
 Just make sure that they participate in the common activities that you define, and make sure that you can reach them in normal work hours (preferably in person.)
+
+Last but not least: Good luck, and remember that agile approaches (especially scrum) is not the answer! Both us and numerous groups before us experienced this!
