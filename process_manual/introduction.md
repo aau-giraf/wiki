@@ -1,8 +1,9 @@
 # Introduction
-The following will describe the process used in the 2019 project of the Giraf project.
+The following will describe the process used in the 2019 project of the GIRAF project.
 It was updated at the very end of the project, to include all adaptations of processes, to help the year of 2020 get a headstart on the project.
 Most decisions will be described to explain the circumstances and arguments that made it the preferable decision at the time.
 We recommend that the year of 2020 try to replicate this process, and change it to match inevitable changes to your circumstances.
+
 Best of luck.
 
 ## How to read this guide
@@ -28,4 +29,4 @@ We do of course recommend our plan. That's still better than no plan.
 To avoid micromanaging we don't care for how groups do things internally.
 We only care about things that affect other groups as well.
 So if one groups wants to work hardcore Scrum, and another don't want any formal process, let them.
-Just make sure that they participate in the common activites that you define, and make sure that you can reach them in normal work hours.
+Just make sure that they participate in the common activities that you define, and make sure that you can reach them in normal work hours (preferably in person.)
