@@ -13,7 +13,7 @@ The Giraf appbar is displayed as seen here, when located on the weekplan screen 
 The appbar can contain many different buttons. To name a few: settings, logout, change to guardian, and change to citizen, all the icons can bee seen in `toolbar_bloc.dart`.
 
 ## Code
-Giraf appbar is a stateless widget, thus it contains the build function which "describes" how the appbar should look:
+Giraf app bar is a stateless widget, thus it contains the build function which "describes" how the app bar should look:
 
 ```dart
  @override
