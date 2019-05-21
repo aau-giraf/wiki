@@ -2,7 +2,7 @@
 This files contains the documentaion of the `giraf_app_bar_widget.dart` file from the weekplanner project.
 
 ## Functionality
-This widget is the appbar at the top of many screens in the weekplanner application. The displayed icons are chosen dynamically and depends on the current screen and user mode. The icons as well as their functionality are provided by `toolbar_bloc.dart`. 
+This widget is the app bar at the top of many screens in the weekplanner application. The displayed icons are chosen dynamically and depend on the current screen and user mode. The icons as well as their functionality are provided by `toolbar_bloc.dart`. 
 
 ## Layout
 The Giraf appbar is displayed as seen here, when located on the weekplan screen (`weekplan_screen.dart`):
