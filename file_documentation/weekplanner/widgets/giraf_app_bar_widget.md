@@ -7,7 +7,7 @@ This widget is the app bar at the top of many screens in the weekplanner applica
 ## Layout
 The Giraf appbar is displayed as seen here, when located on the weekplan screen (`weekplan_screen.dart`):
 
-![Layout of Giraf app bar](../pictures/GirafAppbar.PNG)
+![Layout of Giraf app bar](../pictures/GirafAppbar.png)
 
 ## Buttons
 The app bar can contain many different buttons. To name a few: settings, logout, change to guardian, and change to citizen. All the icons can be seen in `toolbar_bloc.dart`.
