@@ -26,6 +26,25 @@ When you still have lectures, once a week should be sufficient, and when you don
 
 The purpose of the cross-group standups is to coordinate the events of the project, and to minimize the amount of merge conflicts caused by having multiple groups work in the same files.
 
+The agenda for a cross-group standup is as follows:
+You book a room with the secretaries, and announce the meeting in the calendar and on Slack.
+At the meeting, which should only take a maximum of 15 minutes, everyone should be standing around a table.
+Make sure that you have found the issues for each group. You can typically search for assignees and simply use the representatives username from each group.
+
+They should answer the following questions:
+
+- For each user story
+   - What issue number is it?
+   - What is it about?
+   - How do they solve it?
+   - When do they create a PR for it?
+
+Then you should remind everyone that:
+
+- They should contact the author of a PR when they have reviewed it
+- They should contact the reviewers when the author responded to all comments
+- They should ask the PO group if they have any questions about issues
+
 ## Release preparation
 The last two work-days before a sprint ends should be spent actively hunting for, and fixing bugs.
 We strongly recommend that all groups are present in the same rooms.
