@@ -1,5 +1,6 @@
 @aau-giraf/team you have been assigned this. Here's your checklist. I marked @user as the reviewer, but you might change it as you like.
 Please use the following checklist. Feel free to check it off as you go along.
+
 **Code Design**
 - [ ] Is the code in the right place? (Both in terms of folder structure and class structure)
 - [ ] Could this code, to the best of your knowledge, have reused existing code?
