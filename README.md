@@ -11,7 +11,7 @@ This wikipedia includes all information about the GIRAF project!
 - [Server Administration](./ServerAdministration/Server_Administration.md)
 
 
-- [Process Manual](./process_manual/process_manual.md)
+- [Process Manual](./process_manual/)
 
 
 - [REST_API Development](./REST_API_Development/Introduction.md)
