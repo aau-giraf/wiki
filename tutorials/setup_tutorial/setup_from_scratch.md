@@ -9,7 +9,7 @@
   - [Verify Setup](#verify-setup)
 - [Compiling and Running](#compiling-and-running)
   - [IntelliJ and Android Studio](#intellij-and-android-studio)
- - [Visual Studio Code](#visual-studio-code-1)
+  - [Visual Studio Code](#visual-studio-code-1)
 - [Notes](#notes)
 ## Downloading and Installing Flutter
 1. Go to [flutter.dev](https://flutter.dev/docs/get-started/install) and select your operating system.
