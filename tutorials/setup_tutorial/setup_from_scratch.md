@@ -52,7 +52,7 @@ sudo gem install cocoapods
 pod setup
 ```
 ### Personal Apple Developer Account
-To get a personal Apple Developer account, you need to follow these steps
+To get a personal Apple Developer account, you need to follow the following steps.
 1. Launch Xcode.
 2. Invoke __Xcode > Preferences__ (<kbd>⌘+,</kbd>).
 3. Go to Accounts, and add one by clicking the __+__ icon. Sign in with your Apple ID.
@@ -66,17 +66,16 @@ Now you need to add yourself as a developer to the Flutter project. To do this, 
 3. Here you need to add yourself as the team. You also need a unique Bundle Identifier, so just write some string that is unique.
 
 If you want to deploy to a physical iOS device, you need to first accept your computer (when connecting to a device), and then accept yourself on the device as a developer.
-After building the project in Xcode to your device, you should go to:
-__Settings > General > Device Management__  and add yourself as a trusted developer.
+After building the project in Xcode to your device, you should go to __Settings > General > Device Management__ and add yourself as a trusted developer.
 
-Note that __Device Management__ option only appears after the project is build. There you need to select and trust yourself as developer.
+Note that __Device Management__ option only appears after the project is build. There, you need to select and trust yourself as a developer.
 
 ## Setup Your IDE
 ### IntelliJ and Android Studio
 1. Start IntelliJ/Android Studio.
 2. Open plugin preferences.
-    - Windows/Linux: __File > Settings (<kbd>Ctrl+Alt+S</kbd>) > Plugins__
-    - MacOS: __IntelliJ IDEA > Preferences (<kbd>⌘+,</kbd>) > Plugins__
+    - Windows/Linux: __File > Settings (<kbd>Ctrl+Alt+S</kbd>) > Plugins__.
+    - MacOS: __IntelliJ IDEA > Preferences (<kbd>⌘+,</kbd>) > Plugins__.
 3. Select __Marketplace__, find the Flutter plugin and click __Install__.
 4. Click __Yes__ when prompted to install the Dart plugin.
 5. Click __Restart__ when prompted.
@@ -88,7 +87,7 @@ Note that __Device Management__ option only appears after the project is build. 
 4. Type "flutter" in the extensions search field, select Flutter in the list, and click Install. This also installs the required Dart plugin.
 
 ### Verify Setup
-1. Run `flutter doctor` to verify that everything is setup properly
+1. Run `flutter doctor` to verify that everything is setup properly:
 ![flutter doctor](https://i.imgur.com/0XC906V.png "flutter doctor")
   <sub>Note: You only need checkmarks for the IDE that you use for Flutter.</sub>
 
@@ -108,12 +107,12 @@ Note that __Device Management__ option only appears after the project is build. 
 1. Invoke __File > Open Folder__ (<kbd>Ctrl+K Ctrl+O</kbd>), and select the root folder of the project.
 2. Invoke __View > Command Palette__ (<kbd>Ctrl+Shift+P</kbd>/<kbd>⌘+Shift+P</kbd>).
 3. Type "Flutter" and click on `Flutter: Packages Get`.
-4. Locate the VS Code status bar (the blue bar at the bottom of the window):
+4. Locate the VS Code status bar:
     ![Status bar](https://i.imgur.com/5NxR84J.png?3 "Status bar")
 5. Select a device.
-    - If no devices are available and you want to use a virtual device, click on __No Devices__ and select an emulator.
-    - Otherwise, make sure that your device is connected and setup properly.
-6. Go to the __Debug and Run__ menu (<img src="https://i.imgur.com/NR1E5TQ.png" alt="D&R" width="20px" align="top">)
+    - If no devices are available and you want to use a virtual device, click on __No Devices__ and select a virtual device to start.
+    - Otherwise, make sure that your physical device is connected and setup properly.
+6. Go to the __Debug and Run__ menu (<img src="https://i.imgur.com/NR1E5TQ.png" alt="D&R" width="20px" align="top">).
 7. Press __Create a launch.json file__.
 8. Invoke __Debug > Start Debugging__ or __Debug > Run without debugging__ as normal.
 9. While the app is running, save files or press <img src="https://i.imgur.com/JjoCWDm.png" alt="Hot reload" width="20px" align="top"> to apply the changes instantly.
