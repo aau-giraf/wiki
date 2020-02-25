@@ -62,8 +62,8 @@ You now have an Apple Developer certificate. You may need to add new ones once i
 Now you need to add yourself as a developer to the Flutter project. To do this, you need to open the project in Xcode.
 
 1. Open a new project in Xcode with __File > Open__ (<kbd>⌘+O</kbd>) and locate the `ios` folder. This is the one you should open. 
-2. Now you should be able to see two folders `Runner` and `Pods` in the left column. Double click on `Runner` and click on __Signing & Capabilities__. 
-3. Here you need to add yourself as the team. You also need a unique Bundle Identifier, just write some string that is unique.
+2. Now you should be able to see the two folders `Runner` and `Pods` in the left column. Double click on `Runner` and click on __Signing & Capabilities__. 
+3. Here you need to add yourself as the team. You also need a unique Bundle Identifier, so just write some string that is unique.
 
 If you want to deploy to a physical iOS device, you need to first accept your computer (when connecting to a device), and then accept yourself on the device as a developer.
 After building the project in Xcode to your device, you should go to:
