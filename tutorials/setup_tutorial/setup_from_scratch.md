@@ -1,5 +1,17 @@
 # Setting Up Flutter Projects
-
+- [Setting Up Flutter Projects](#setting-up-flutter-projects)
+  - [Downloading and Installing Flutter](#downloading-and-installing-flutter)
+  - [Android Setup](#android-setup)
+  - [iOS and iPadOS Setup - ONLY FOR MAC USERS](#ios-and-ipados-setup---only-for-mac-users)
+    - [Personal Apple Developer Account](#personal-apple-developer-account)
+  - [Setup Your IDE](#setup-your-ide)
+    - [IntelliJ and Android Studio](#intellij-and-android-studio)
+    - [Visual Studio Code](#visual-studio-code)
+    - [Verify Setup](#verify-setup)
+  - [Compiling and Running](#compiling-and-running)
+    - [IntelliJ and Android Studio](#intellij-and-android-studio)
+    - [Visual Studio Code](#visual-studio-code-1)
+  - [Notes](#notes)
 ## Downloading and Installing Flutter
 1. Go to [flutter.dev](https://flutter.dev/docs/get-started/install) and select your operating system.
     - Make sure you have Git installed.
@@ -16,7 +28,7 @@
 4. Run `flutter devices` and check that the emulator and, if applicable, the Android device is listed.
     - If not, try running `flutter doctor` to see if there are problems with the Android toolchain.
     
-## iOS/iPadOS Setup (ONLY FOR MAC USERS)
+## iOS and iPadOS Setup - ONLY FOR MAC USERS
 1. Download the latest version of Xcode from the App Store.
 2. Setup the command line tools, to use the new version of Xcode you just installed:
 ```bash
@@ -61,7 +73,7 @@ __Settings > General > Device Management (Administration af enhed)__  and add yo
 Note that __Device Management__ option only appears after the project is build. There you need to select and trust yourself as developer.
 
 ## Setup Your IDE
-### IntelliJ/Android Studio
+### IntelliJ and Android Studio
 1. Start IntelliJ/Android Studio.
 2. Open plugin preferences.
     - Windows/Linux: __File > Settings > Plugins__
@@ -81,7 +93,7 @@ Note that __Device Management__ option only appears after the project is build. 
 ![flutter doctor](https://i.imgur.com/0XC906V.png "flutter doctor")
 
 ## Compiling and Running
-### IntelliJ/Android Studio
+### IntelliJ and Android Studio
 1. Select an Android/iOS virtual device or the Android/iOS device in the toolbar.  
     ![toolbar](https://i.imgur.com/7RE2qan.png "Android Studio/IntelliJ Toolbar")
     -  If the virtual device doesn't show up in the IDE toolbar, and the "Open Android Emulator: …" option is not shown, use `flutter emulators` to list available emulators and then run `flutter emulators --launch <emulator id>` to launch it. It should then appear in the toolbar.
