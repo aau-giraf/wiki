@@ -54,14 +54,14 @@ pod setup
 ### Personal Apple Developer Account
 To get a personal Apple Developer account, you need to follow these steps
 1. Launch Xcode.
-2. Invoke __Xcode > Preferences__ (<kbd>⌘ + ,</kbd>).
+2. Invoke __Xcode > Preferences__ (<kbd>⌘+,</kbd>).
 3. Go to Accounts, and add one by clicking the __+__ icon. Sign in with your Apple ID.
 4. Select your account and click __Manage Certificates__ and then click the __+__ icon.
 You now have an Apple Developer certificate. You may need to add new ones once in a while, but just follow steps 1, 2 and 4.
 
 Now you need to add yourself as a developer to the Flutter project. To do this, you need to open the project in Xcode.
 
-1. Open a new project in Xcode (<kbd>⌘ + O</kbd>) and locate the `ios` folder. This is the one you should open. 
+1. Open a new project in Xcode with __File > Open__ (<kbd>⌘+O</kbd>) and locate the `ios` folder. This is the one you should open. 
 2. Now you should be able to see two folders `Runner` and `Pods` in the left column. Double click on `Runner` and click on __Signing & Capabilities__. 
 3. Here you need to add yourself as the team. You also need a unique Bundle Identifier, just write some string that is unique.
 
@@ -75,15 +75,15 @@ Note that __Device Management__ option only appears after the project is build. 
 ### IntelliJ and Android Studio
 1. Start IntelliJ/Android Studio.
 2. Open plugin preferences.
-    - Windows/Linux: __File > Settings > Plugins__
-    - MacOS: __Preferences > Plugins__
+    - Windows/Linux: __File > Settings (<kbd>Ctrl+Alt+S</kbd>) > Plugins__
+    - MacOS: __IntelliJ IDEA > Preferences (<kbd>⌘+,</kbd>) > Plugins__
 3. Select __Marketplace__, find the Flutter plugin and click __Install__.
 4. Click __Yes__ when prompted to install the Dart plugin.
 5. Click __Restart__ when prompted.
 
 ### Visual Studio Code
 1. Start VS Code.
-2. Invoke __View > Command Palette__ (<kbd>Ctrl/⌘ + Shift + P</kbd>).
+2. Invoke __View > Command Palette__ (<kbd>Ctrl+Shift+P</kbd>/<kbd>⌘+Shift+P</kbd>).
 3. Type "install" and click on `Extensions: Install Extensions`.
 4. Type "flutter" in the extensions search field, select Flutter in the list, and click Install. This also installs the required Dart plugin.
 
@@ -106,7 +106,7 @@ Note that __Device Management__ option only appears after the project is build. 
 
 ### Visual Studio Code 
 1. Invoke __File > Open Folder__ (<kbd>Ctrl+K Ctrl+O</kbd>), and select the root folder of the project.
-2. Invoke __View > Command Palette__ (<kbd>Ctrl + Shift + P</kbd>/<kbd>⌘ + Shift + P</kbd>).
+2. Invoke __View > Command Palette__ (<kbd>Ctrl+Shift+P</kbd>/<kbd>⌘+Shift+P</kbd>).
 3. Type "Flutter" and click on `Flutter: Packages Get`.
 4. Locate the VS Code status bar (the blue bar at the bottom of the window):
     ![Status bar](https://i.imgur.com/5NxR84J.png?3 "Status bar")
