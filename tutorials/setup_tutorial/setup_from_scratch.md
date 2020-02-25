@@ -106,7 +106,7 @@ Note that __Device Management__ option only appears after the project is build. 
 
 ### Visual Studio Code 
 1. Invoke __File > Open Folder__ (<kbd>Ctrl+K Ctrl+O</kbd>), and select the root folder of the project.
-2. Invoke __View > Command Palette__ (<kbd>Ctrl/⌘ + Shift + P</kbd>).
+2. Invoke __View > Command Palette__ (<kbd>Ctrl + Shift + P</kbd>/<kbd>⌘ + Shift + P</kbd>).
 3. Type "Flutter" and click on `Flutter: Packages Get`.
 4. Locate the VS Code status bar (the blue bar at the bottom of the window):
     ![Status bar](https://i.imgur.com/5NxR84J.png?3 "Status bar")
