@@ -1,6 +1,6 @@
 # Test in Flutter
 
-The Process manual states that code should be properly tested before a user story is done. This guide describes how you test in Flutter, and what the test criteria is in both blocs and screens/ widgets. 
+The Process manual states that code should be properly tested before a user story is done. This guide describes how you test in Flutter, and what the test criteria is in both blocs and screens/widgets. 
 
 ## Test location
 All tests have to be located in the "test" folder. All Weekplanner files should have a corresponding file in the test folder where all tests related to the file are located. The test files should be in the folder that corresponds to the content of the file. For example, screen testes should be in the screen folder.
@@ -9,7 +9,7 @@ All tests have to be located in the "test" folder. All Weekplanner files should 
 A test file always contain a main function. The main function is placed directly into the file, and not in any type of class, and all tests are written in the main function.
 
 ### Setup
-When several tests are run, they often share the same setup. You can automate the setup by creating a setUp() function in the main function. The setup function is then called every time a new test is run. The main function could look like this:
+When several tests are run, they often share the same setup. You can automate the setup by creating a `setUp()` function in the main function. The setup function is then called every time a new test is run. The main function could look like this:
 
 ``` Dart
 void main() {
@@ -27,9 +27,10 @@ void main() {
 }
 ```
 
-The variables you use in the setUp() function should be declared in the beginning of the main function, right before the setUp() function. 
+The variables you use in the `setUp()` function should be declared in the beginning of the main function, right before the `setUp()` function. 
 
 ### Expect
+
 When you run a test you need to compare values to see if the test is successful. In Flutter this is done with an expect function. This is written:
 ``` Dart
     expect(value, expected_value);
@@ -97,7 +98,7 @@ void main() {
     });
 }
 ```
-In the async test, the listen function is defined first. In the async test a listen and listen function is set up on a steam in the bloc. When a set function on the behavior subject of the stream is called, the listen function is called, and in here the expect() and done() functions. 
+In the async test, the listen function is defined first. In the async test a listen and listen function is set up on a steam in the bloc. When a set function on the behaviour subject of the stream is called, the listen function is called, and in here the expect() and done() functions. 
 
 ## Widgets and screens
 The widget and screen tests separate from the class tests. All tests are still in the main() function and you can still use a setup function, but instead of the normal tests you use test widgets. 
@@ -106,9 +107,9 @@ The widget and screen tests separate from the class tests. All tests are still i
         await tester.<Something to wait for>;
     });
 ```
-Inside the testWidget you use a WidgetTester. This is used to interact with widgets in the test environment. When you use the WidgetTester for actions, you should use the await keyword before. 
+Inside the `testWidget()` you use a `WidgetTester` object. This is used to interact with widgets in the test environment. When you use the `WidgetTester` object for actions, you should use the await keyword before. 
 
-In blocs you use the done() function when running an async test. This is not done in testWidgets. However, if you use a listener in your expect, you use something called a completer.
+In blocs you use the done() function when running an async test. This is not done in `testWidgets()`. However, if you use a listener in your expect, you use something called a completer.
 ``` Dart
     testWidgets('Name',(WidgetTester tester) async {
         final Completer<datatypeA> done = Completer<datatypeA>();
@@ -122,29 +123,29 @@ In blocs you use the done() function when running an async test. This is not don
     });
 ```
 
-There are some basic functions we use a lot on the WidgetTester.
+There are some basic functions we use a lot on the `WidgetTester` object.
 
-The first is pumpWidget. This acts by setting up a screen in your test environment. This makes it possible to test on the screen, fx if the right elements are present. You can write it like this:
+The first is `pumpWidget()`. This acts by setting up a screen in your test environment. This makes it possible to test on the screen, for example if the right elements are present. You can write it like this:
 ``` Dart
 await tester.pumpWidget(MaterialApp(home:SomeScreen()));
 ```
-This set up the SomeScreen screen.
+This set up the `SomeScreen()` screen.
 
-Another important function is the pump() function. This is used to execute actions, by rendering the screen. If you want to wait for a durration of time, you can note this as an attribute.
+Another important function is the `pump()` function. This is used to execute actions, by rendering the screen. If you want to wait for a duration of time, you can note this as an attribute.
 
-If you want to test more actions in sequence, you should use pumpAndSettle(). This is fx if you want to push a button that makes something else happen, and test if that happens. 
+If you want to test more actions in sequence, you should use `pumpAndSettle()`. This is for example if you want to push a button that makes something else happen, and test if that happens. 
 
-You can also use the tester.enterText widget. This looks like this:
+You can also use the `tester.enterText()` widget. This looks like this:
 ``` Dart
 await tester.enterText(find.byType(TextField,query));
 ```
-This also shows the find.byType function, that searches in the widgets in the tester and finds by a certain type, here TextField, a widget with a name matching the query. The query is a string and could for example be 'cat'.
+This also shows the `find.byType()` function, that searches in the widgets in the tester and finds by a certain type, here `TextField`, a widget with a name matching the query. The query is a string and could for example be 'cat'.
 
-The WidgetTester has many other functions you should explore when needed. The key thing is to understand that a WidgetTester interacts with widgets in the test environment. The environment can be updated with the WidgetTester, and widgets extracted with "find".
+The `WidgetTester` has many other functions you should explore when needed. The key thing is to understand that a `WidgetTester` interacts with widgets in the test environment. The environment can be updated with the `WidgetTester`, and widgets extracted with "find".
 
 The expect is similar to the bloc expect, but in the actual part you can use "find" to choose the widgets you test on.
 
-Examples of TestWidget expects are:
+Examples of `TestWidget` expects are:
 
 ```
     expect(find.byWidgetPredicate((Widget widget) =>widget is WidgetType), <FINDINGS>);
@@ -155,7 +156,7 @@ Examples of TestWidget expects are:
 When you write tests, you will often need to mock certain objects. This section describes the different mocking often used in GIRAF testing. 
 
 ### Mock screen 
-When you test a non screen widget you can use to have a MockScreen as a container. This is written in the test document, outside the main() function and can look like this:
+When you test a non screen widget you can use to have a `MockScreen` as a container. This is written in the test document, outside the `main()` function and can look like this:
 ``` Dart
 class MockScreen extends StatelessWidget {
     @override 
@@ -164,66 +165,68 @@ class MockScreen extends StatelessWidget {
     }
 }
 ```
-You can fill the MockScreen with all the content you find necessary to do the tests.
+You can fill the `MockScreen` with all the content you find necessary to do the tests.
 
 ### Dependency injection 
-All dependency injections are automatically set up in the bootStrap.dart file. If you need to change a dependency in for a test, you can do it directly on the dependency injector. This can look like this:
+All dependency injections are automatically set up in the `bootStrap.dart` file. If you need to change a dependency in for a test, you can do it directly on the dependency injector. This can look like this:
 ```` Dart
 newDependencyBloc = SomeBloc();
 di.clearAll();
 di.registerDependency<SomeBloc>((_)=> newDependencyBloc);
 di.registerDependency<Bloc1>((_)=> StandardBloc1());
 di.registerDependency<Bloc2>((_)=> StandardBloc2());
-```` 
-The newDependencyBloc is the bloc that you want to replace the original dependency with. Before you add a new dependency, you have to clear all dependencies. This means that if you need dependencies that are otherwise there as a standard, you have to add them agin. I dependencies are not relevant, you should not add them. 
+````
+The `newDependencyBloc` is the bloc that you want to replace the original dependency with. Before you add a new dependency, you have to clear all dependencies. This means that if you need dependencies that are otherwise there as a standard, you have to add them again. I dependencies are not relevant, you should not add them. 
 
-### Mock Api
-All Weekplanner testing should be independent of the current state of the database. If you need database access for your test, you create a mock Api.
-If we for example wanted to use an Api class called "SomeApi", we would write it like:
+### Mock API
+
+All Weekplanner testing should be independent of the current state of the database. If you need database access for your test, you create a mock API.
+If we for example wanted to use an API class called `SomeAPI`, we would write it like:
+
 ``` Dart
-class MockSomeApi extends Mock implements SomeApi {}
+class MockSomeAPI extends Mock implements SomeAPI {}
 ```
-This is done outside the main() function in the test file.
+This is done outside the `main()` function in the test file.
 
-If you need to use the mock api in a bloc you can do it like the following:
+If you need to use the mock API in a bloc you can do it like the following:
 ```` Dart
 import 'package:<needed packages>';
 
-class MockSomeApi extends Mock implements SomeApi {}
+class MockSomeAPI extends Mock implements SomeAPI {}
 
 void main() {
     BlocClass bloc;
-    Api api; 
-    MockSomeApi someApi;
+    API api; 
+    MockSomeAPI someAPI;
 
     setUp((){
-        api = Api('Write anything');
-        someApi = MockSomeApi();
-        api.some = someApi();
-        bloc = BlocClass(api);
+        api = API('Write anything');
+        someAPI = MockSomeAPI();
+        api.some = someAPI();
+        bloc = BlocClass(API);
     });
 }
 ````
-Here, the "some" field in the api corresponds to the api of the SomeApi type in the class. Now you can use your bloc like normal, you just have to add the needed information to the someApi.
+Here, the `api.some` field in the API corresponds to the API of the `someAPI` type in the class. Now you can use your bloc like normal, you just have to add the needed information to the `someAPI`.
 
-If you need the Api to do something when it is updated, you can write a setupApiCalls() function before the setUp() function. This function should be called inside the setUp function, so it is called every time the api is updated inside the tests. The function could look like the following:
+If you need the API to do something when it is updated, you can write a `setupAPICalls()` function before the `setUp()` function. This function should be called inside the `setUp()` function, so it is called every time the API is updated inside the tests. The function could look like the following:
 
 ``` Dart
-void setupApiCalls() {
-    when(someApi.update())
+void setupAPICalls() {
+    when(someAPI.update())
 }
 setUp((){
-    setUpApiCalls
+    setUpAPICalls
 })
 ```
 ### Override
 In mock classes you can override elements to change functionality when needed. 
 
-An example of this is in a mock api, where you can override a function that should give you some specific data from the database. 
+An example of this is in a mock API, where you can override a function that should give you some specific data from the database. 
 ``` Dart
-class MockSomeApi extends Mock implements SomeApi
+class MockSomeAPI extends Mock implements SomeAPI
     @override
-    Observable<ARelevantModel> SomeApiMethod() {
+    Observable<ARelevantModel> SomeAPIMethod() {
         return Observable<AReleventModel>.just(ARelevantModel(
             id: '1',
             info1: 'Cat'
@@ -233,7 +236,7 @@ class MockSomeApi extends Mock implements SomeApi
 ```
 This is a good way to mock information in the database that you need to test.
 
-When you mock a bloc, you can also do it the same way. The difference is that you override observables instead of api calls. An example of this is:
+When you mock a bloc, you can also do it the same way. The difference is that you override Observable objects instead of API calls. An example of this is:
 ```
 @override
 Observable<bool> get someStream => 
