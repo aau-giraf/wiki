@@ -55,8 +55,8 @@ pod setup
 To get a personal Apple Developer account, you need to follow these steps
 1. Launch Xcode.
 2. Invoke __Xcode > Preferences__ (<kbd>⌘ + ,</kbd>).
-3. Go to Accounts, and add one by clicking the '+' icon. Sign in with your Apple ID.
-4. Select your account and click "Manage Certificates" and then click the '+' icon.
+3. Go to Accounts, and add one by clicking the __+__ icon. Sign in with your Apple ID.
+4. Select your account and click __Manage Certificates__ and then click the __+__ icon.
 You now have an Apple Developer certificate. You may need to add new ones once in a while, but just follow steps 1, 2 and 4.
 
 Now you need to add yourself as a developer to the Flutter project. To do this, you need to open the project in Xcode.
@@ -83,34 +83,40 @@ Note that __Device Management__ option only appears after the project is build. 
 
 ### Visual Studio Code
 1. Start VS Code.
-2. Invoke __View > Command Palette__.
-3. Type "install", and select `Extensions: Install Extensions`.
+2. Invoke __View > Command Palette__ (<kbd>Ctrl/⌘ + Shift + P</kbd>).
+3. Type "install" and click on `Extensions: Install Extensions`.
 4. Type "flutter" in the extensions search field, select Flutter in the list, and click Install. This also installs the required Dart plugin.
 
 ### Verify Setup
-1. Run `flutter doctor` to verify that everything is setup properly.
+1. Run `flutter doctor` to verify that everything is setup properly
 ![flutter doctor](https://i.imgur.com/0XC906V.png "flutter doctor")
+  <sub>Note: You only need checkmarks for the IDE that you use for Flutter.</sub>
 
 ## Compiling and Running
 ### IntelliJ and Android Studio
-1. Select an Android/iOS virtual device or the Android/iOS device in the toolbar.  
+1. Invoke __File > Open__ and select the root folder of the project.
+2. Open `/pubspec.yaml` and press __Packages get__.
+3. Select an Android/iOS virtual device or the Android/iOS device in the toolbar.  
     ![toolbar](https://i.imgur.com/7RE2qan.png "Android Studio/IntelliJ Toolbar")
     -  If the virtual device doesn't show up in the IDE toolbar, and the "Open Android Emulator: …" option is not shown, use `flutter emulators` to list available emulators and then run `flutter emulators --launch <emulator id>` to launch it. It should then appear in the toolbar.
-2. Make sure that `main.dart` is selected as the run configuration.
-3. Press <img src="https://i.imgur.com/BEvXOqT.png" alt="Run" width="20px" align="top"> to run without debugging or <img src="https://i.imgur.com/Lhng0Hq.png" alt="Debug" width="20px" align="top"> to debug.
-4. While the app is running, save files or press <img src="https://i.imgur.com/bP2pSIS.png" alt="Hot reload" width="20px" align="top"> to apply the changes instantly.
+4. Make sure that `main.dart` is selected as the run configuration.
+5. Press <img src="https://i.imgur.com/BEvXOqT.png" alt="Run" width="20px" align="top"> to run without debugging or <img src="https://i.imgur.com/Lhng0Hq.png" alt="Debug" width="20px" align="top"> to debug.
+6. While the app is running, save files or press <img src="https://i.imgur.com/bP2pSIS.png" alt="Hot reload" width="20px" align="top"> to apply the changes instantly.
     - Some changes requires using hot restart (<img src="https://i.imgur.com/yCvF97E.png" alt="Hot restart" width="20px" align="top">). See [docs](https://flutter.dev/docs/development/tools/hot-reload) for more information.
 
 ### Visual Studio Code 
-1. Locate the VS Code status bar (the blue bar at the bottom of the window):
+1. Invoke __File > Open Folder__ (<kbd>Ctrl+K Ctrl+O</kbd>), and select the root folder of the project.
+2. Invoke __View > Command Palette__ (<kbd>Ctrl/⌘ + Shift + P</kbd>).
+3. Type "Flutter" and click on `Flutter: Packages Get`.
+4. Locate the VS Code status bar (the blue bar at the bottom of the window):
     ![Status bar](https://i.imgur.com/5NxR84J.png?3 "Status bar")
-2. Select a device from the __Device Selector__ area.
-    - If no device is available and you want to use a device simulator, click "No Devices" and select an emulator.
+5. Select a device.
+    - If no devices are available and you want to use a virtual device, click on __No Devices__ and select an emulator.
     - Otherwise, make sure that your device is connected and setup properly.
-3. Go to the __Debug and Run__ menu (<img src="https://i.imgur.com/NR1E5TQ.png" alt="D&R" width="20px" align="top">)
-4. Press __Create a launch.json file__.
-5. Invoke __Debug > Start Debugging__ or __Debug > Run without debugging__ as normal.
-6. While the app is running, save files or press <img src="https://i.imgur.com/JjoCWDm.png" alt="Hot reload" width="20px" align="top"> to apply the changes instantly.
+6. Go to the __Debug and Run__ menu (<img src="https://i.imgur.com/NR1E5TQ.png" alt="D&R" width="20px" align="top">)
+7. Press __Create a launch.json file__.
+8. Invoke __Debug > Start Debugging__ or __Debug > Run without debugging__ as normal.
+9. While the app is running, save files or press <img src="https://i.imgur.com/JjoCWDm.png" alt="Hot reload" width="20px" align="top"> to apply the changes instantly.
     - Some changes requires using hot restart (<img src="https://i.imgur.com/X8NIyyF.png" alt="Hot restart" width="20px" align="top">). See [docs](https://flutter.dev/docs/development/tools/hot-reload) for more information.
 
 ###### NOTES
