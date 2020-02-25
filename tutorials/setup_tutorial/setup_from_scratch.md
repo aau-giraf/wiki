@@ -67,7 +67,7 @@ Now you need to add yourself as a developer to the Flutter project. To do this, 
 
 If you want to deploy to a physical iOS device, you need to first accept your computer (when connecting to a device), and then accept yourself on the device as a developer.
 After building the project in Xcode to your device, you should go to:
-__Settings > General > Device Management (Administration af enhed)__  and add yourself as a trusted developer.
+__Settings > General > Device Management__  and add yourself as a trusted developer.
 
 Note that __Device Management__ option only appears after the project is build. There you need to select and trust yourself as developer.
 
