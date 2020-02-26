@@ -104,7 +104,7 @@ Note that __Device Management__ option only appears after the project is build. 
     - Some changes requires using hot restart (<img src="https://i.imgur.com/yCvF97E.png" alt="Hot restart" width="20px" align="top">). See [docs](https://flutter.dev/docs/development/tools/hot-reload) for more information.
 
 ### Visual Studio Code 
-1. Invoke __File > Open Folder__ (<kbd>Ctrl+K Ctrl+O</kbd>), and select the root folder of the project.
+1. Invoke __File > Open Folder__ (<kbd>Ctrl+K Ctrl+O</kbd>/<kbd>⌘+O</kbd>), and select the root folder of the project.
 2. Invoke __View > Command Palette__ (<kbd>Ctrl+Shift+P</kbd>/<kbd>⌘+Shift+P</kbd>).
 3. Type "Flutter" and click on `Flutter: Packages Get`.
 4. Locate the VS Code status bar:  
