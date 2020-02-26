@@ -44,5 +44,5 @@ By convention the ErrorController is linked to whenever there is an illegal requ
 
 ### Next
 
-A quick aside on [Naming Conventions](./NamingConcentions.md) or
+A quick aside on [Naming Conventions](./NamingConventions.md) or
 Description of the [Swagger](./Swagger.md) endpoint linked in the top of the article.
