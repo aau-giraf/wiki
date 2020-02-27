@@ -5,7 +5,7 @@ The app bar should be present in every screen of the app so that the user can ea
 The app bar that should always be used is the GirafAppBar, which is a widget that is implemented in the weekplanner flutter project.
 This widget includes all the buttons that should be present on the app bar.
 
-| ![AppBarWidget](./images/AppBar.png)
+| ![AppBarWidget](./images/AppBar.PNG)
 
 
 ## Bottom bar
