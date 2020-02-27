@@ -21,7 +21,7 @@ The Weekplanner is an application to create and maintain a week schedule of a ci
 Docker containers for the development branch of the webAPI (2019).
 
 ### giraf-production-swarm
-Repository for the production docker swarm for the entire GIRAF project. (2019)
+Repository for the production docker swarm for the entire GIRAF project. This repository consists mainly of a configuration file, which is repsonsible for telling docker how to initialize a docker stack. This repository is used when the stack needs to be deployed on to the servers.
 
 ## Archived Repositories
 These repositories are all archived as of 2019. We keep them as a reference point for future development.
