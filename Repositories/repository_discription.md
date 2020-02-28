@@ -15,7 +15,13 @@ The wiki repository containing information about the GIRAF project, including in
 API client for Flutter to communicate with the web-api (2019: Only weekplanner uses flutter). This is a Dart package that can be used to implement communication with the web-api in any flutter project. Earlier the api_client was located in the weekplanner repository, but it is now used as a package so it can be used in other applications. 
 
 ### weekplanner
-The Weekplanner is an application to create and maintain a week schedule of a citizen. This schedule shows a plan of the activities due for the day/week of a citizen and is essentially an important tool. It is a digitalisation of an already existing week plan that the guardians maintain on a pin-up board at the instituions. The weekplanner repository contains the Flutter Weekplanner application that is used to compile to both iOS and Android devices.
+
+The weekplanner repository can be found [here](https://github.com/aau-giraf/weekplanner).
+
+The Weekplanner is an application to create and maintain a week schedule of a citizen. This schedule shows a plan of the activities due for the day/week of a citizen and is essentially an important tool. 
+It is a digitalisation of an already existing week plan that the guardians maintain on a pin-up board at the instituions. The weekplanner repository contains the Flutter Weekplanner application that is used to compile to both iOS and Android devices.
+
+The weekplanner repository is dependent on the [api_client](#api_client) repository, which it uses to communicate with the server.
 
 ### web-api-dotnetcore-build 
 Docker containers for the development branch of the webAPI (2019).
