@@ -19,7 +19,8 @@ API client for Flutter to communicate with the web-api (2019: Only weekplanner u
 The weekplanner repository can be found [here](https://github.com/aau-giraf/weekplanner).
 
 The Weekplanner is an application to create and maintain a week schedule of a citizen. This schedule shows a plan of the activities due for the day/week of a citizen and is essentially an important tool. 
-It is a digitalisation of an already existing week plan that the guardians maintain on a pin-up board at the instituions. The weekplanner repository contains the Flutter Weekplanner application that is used to compile to both iOS and Android devices.
+It is a digitalisation of an already existing week plan that the guardians maintain on a pin-up board at the instituions. 
+The weekplanner repository contains the Flutter Weekplanner application that is used to compile to both iOS and Android devices.
 
 The weekplanner repository is dependent on the [api_client](#api_client) repository, which it uses to communicate with the server.
 
