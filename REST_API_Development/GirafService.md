@@ -26,4 +26,4 @@ var usr = await _giraf.LoadUserWithResources(HttpContext.User);
 
 ## Next
 
-The full [Backend Architexture](./BackendArkitektur.md).
+Introduction to the purpose of the web-api repository and service: [Web-api purpose](./WebApiPurpose.md).
