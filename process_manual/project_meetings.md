@@ -29,7 +29,7 @@ The metting is then over and the representative meets with his group and does th
 4. Give the list to the PO-group who officialy assigns issues to the groups
 	-It's better to have few issues then to many for a sprint, since it's always possible to get new issues by contacting the PO group
 
-The very first sprint intro will probably be the longest, as the process group should present the major parts of the process.
+The first sprint planning will probably be the longest, as the process group should present the major parts of the process.
 
 All following sprint intros will probably be shorter meetings, lasting no more than xx - xx minutes.
 
