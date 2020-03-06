@@ -59,7 +59,7 @@ the compare branch should be your feature branch, with the code that you
 want to add to the develop branch. Then click the green "Create pull
 request" button.
 
-Name the pull reguest the same as your branch. To the right there is a tab called projects. Add the reguest to the current giraf project. For the first sprint you would add it to the project called "2020 1. sprint", for the second sprint "2020 2. sprint" and so on.   
+Name the pull request the same as your branch. To the right there is a tab called projects. Add the request to the current giraf project. For the first sprint you would add it to the project called "2020 1. sprint", for the second sprint "2020 2. sprint" and so on.   
 
 Next, include pictures (or a gif/video) of all the screens that you added, in the text field, so someone from the product owner group can verify that the
 screens follow the design manual.
@@ -101,8 +101,8 @@ With the Weekplanner repository as the example, people can either create a *Task
 * If you feel that the application needs functionality that is out of your current scope and that you do not feel is being represented in other user stories, then you should choose *Task Creation Request*.
 
 Once you choose one of the two options and click the respective button you should see a page with a form that asks you for a title.
-The title for the *Task Creation Request* should tell what functionality you would like added using the shown form "As a developer I would like the docker config file to automatically update because it takes time to manullay update the configt file". 
-Instead of the task being for the developer guardian or user is also frequently used.
+The title for the *Task Creation Request* should tell what functionality you would like added using the shown form "As a developer I would like the docker config file to automatically update so that I don´t have to manullay update the config file". 
+Instead of the task being for the developer, guardian or user is also frequently used.
 For the bug the title should be the problem at hand, not the solution. F.eks "A error message pops up whenever the app is open".
   
 There is a field underneath the title in which you write a description of what you want to report on.  
