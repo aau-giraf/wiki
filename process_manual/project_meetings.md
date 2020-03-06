@@ -16,17 +16,17 @@ Thereafter the PO group will present the following things:
    - Typically based on usability tests with the customer.
 
 Thereafter the representative will do the following:
-1. Gets into teams of 3-4
+1. Get into teams of 3-4
 2. Get some issues from the PO group
 3. Refine the issues into smaller sub-issues so the task gets manageable for one or more developer groups to work with
 3. The teams gather and quickly runs through the issues and sub-issues
 	- If two issues have the same sub-issue it will be discussed which issue should handle that sub-issue  
 	
 The metting is then over and the representative meets with his group and does the following:
-1. Goes through the issues for the sprint
-2. Does a time estimate of the issues(Planning poker could be a way of doing it)
-3. Makes a list with the issues and time estimate in a prioritized order after what issues the group wants to work with
-4. Give the list to the PO-group in room 1.212 who officialy assigns issues to the groups
+1. Go through the issues for the sprint
+2. Do a time estimate of the issues(Planning poker could be a way of doing it)
+3. Make a list with the issues and time estimate in a prioritized order after what issues the group wants to work with
+4. Give the list to the PO-group who officialy assigns issues to the groups
 	-It's better to have few issues then to many for a sprint, since it's always possible to get new issues by contacting the PO group
 
 The very first sprint intro will probably be the longest, as the process group should present the major parts of the process.
