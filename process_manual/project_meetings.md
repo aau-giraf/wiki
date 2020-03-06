@@ -3,9 +3,10 @@ This section will go through all the different meetings, and describe the agenda
 Generally you should try to waste as little time as possible with the meetings.
 Having everyone attend all meetings is a bad strategy, so only invite the necessary students.
 
-## Sprint intro
+## Sprint planning
 This meeting is used to introduce and mark the beginning of the sprint.
-All developers should be present in the same room, and the PO group will start out by presenting the following things:
+All developer groups should have a representative present in the same room, and the process group will start by presenting changes to the process, based on the [sprint retrospective](#sprint-retrospective).
+Thereafter the PO group will present the following things:
 1. The project vision
    - What do we want to accomplish in the entire project?
    - Did this change since last meeting? (if not, just give a recap, so people remember)
@@ -14,11 +15,24 @@ All developers should be present in the same room, and the PO group will start o
 3. New and important issues in this sprint
    - Typically based on usability tests with the customer.
 
-This is followed by a presentation from the process group, where changes to the process, based on the [sprint retrospective](#sprint-retrospective), are presented.
+Thereafter the representative will do the following:
+1. Gets into teams of 3-4
+2. Get some issues from the PO group
+3. Refine the issues into smaller sub-issues so the task gets manageable for one or more developer groups to work with
+3. The teams gather and quickly runs through the issues and sub-issues
+	- If two issues have the same sub-issue it will be discussed which issue should handle that sub-issue  
+	
+The metting is then over and the representative meets with his group and does the following:
+1. Goes through the issues for the sprint
+2. Does a time estimate of the issues(Planning poker could be a way of doing it)
+3. Makes a list with the issues and time estimate in a prioritized order after what issues the group wants to work with
+4. Give the list to the PO-group in room 1.212 who officialy assigns issues to the groups
+	-It's better to have few issues then to many for a sprint, since it's always possible to get new issues by contacting the PO group
 
 The very first sprint intro will probably be the longest, as the process group should present the major parts of the process.
 
-All following sprint intros will probably be very short meetings, lasting no more than 15 - 20 minutes.
+All following sprint intros will probably be shorter meetings, lasting no more than xx - xx minutes.
+
 
 ## Cross-group standups
 This meeting should be held once or twice a week.
@@ -133,3 +147,20 @@ The following, generic, options were given:
 This meant that every developer had to give their opinion on every problem or solution, and it revealed some controversial topics.
 
 We, the process group, spent the rest of the day discussing changes to the process, and presented it the next day to the sprint intro.
+
+## Sprint intro
+This meeting is used to introduce and mark the beginning of the sprint. It was used by the 2019 GIRAF group, but sprint planning is used instead by the 2020 GIRAF group.  
+All developers should be present in the same room, and the PO group will start out by presenting the following things:
+1. The project vision
+   - What do we want to accomplish in the entire project?
+   - Did this change since last meeting? (if not, just give a recap, so people remember)
+2. The sprint vision
+   - What do we want to accomplish until the next release?
+3. New and important issues in this sprint
+   - Typically based on usability tests with the customer.
+
+This is followed by a presentation from the process group, where changes to the process, based on the [sprint retrospective](#sprint-retrospective), are presented.
+
+The very first sprint intro will probably be the longest, as the process group should present the major parts of the process.
+
+All following sprint intros will probably be very short meetings, lasting no more than 15 - 20 minutes.
