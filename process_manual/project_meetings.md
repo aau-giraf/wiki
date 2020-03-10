@@ -27,7 +27,7 @@ The meeting is then over and the representative meets with his group and does th
 2. Do a time estimate of the issues (Planning poker could be a way of doing it)
 3. Make a list with the issues and time estimate in a prioritized order after what issues the group wants to work with
 4. Give the list to the PO-group who officialy assigns issues to the groups
-	-It's better to have few issues then to many for a sprint, since 
+	-It's better to have few issues than to many for a sprint, since 
 	 it's always possible to get new issues by contacting the PO group
 
 The first sprint planning will probably be the longest, as the process group should present the major parts of the process.
