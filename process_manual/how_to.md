@@ -15,7 +15,8 @@ You go to the issues tab of one of the repositories, e.g. github.com/aau-giraf/w
 Then, when you have located the issue, you note the number.
 That is denoted by the # and a number.
 
-Remember the number and go to the product owner (PO) group, and ask if you can work on this issue.
+Remember the number and do a time estamation of the issue.
+Thereafter go to the product owner (PO) group, and ask if you can work on this issue.
 The PO group might say no for various reasons.
 Just remember: they have the overview of the project and probably have good reasons for saying as they do.
 There is usually a greater chance of getting a yes if the issue you've picked is either *highest* or *high* priority.
@@ -27,11 +28,13 @@ Go ask the PO group to be assigned the most pressing issue, as they have a good 
 To get started writing code, you should first setup the project.
 This is described in the [Setup from scratch tutorial](../tutorials/setup_tutorial/setup_from_scratch.md).
 
-Then, after setting up the code, you should be ready to go.
+Then, after setting up the code, you should make a branch for the feature you are going to implement.
+Name the branch fixes_ISSUENUMBER, where the ISSUENUMBER is the number of the issue you are implementing.
+
 Follow the coding standards that you can find, for reference in [C# coding standards](coding_standard.md).
 For Flutter the linter should catch most things that go out of style.
 If in doubt, try to find other places in the code that does similar things to what you want, and follow that standard.
-Remember that all functionality related to an issue should be implemented before an issue is considered done.
+Remember that all functionality related to an issue should be implemented with unit tests before an issue is considered done.
 
 In the [How to review section](#how-to-review-a-pull-request) you can read more about how that will happen.
 Make sure that you plan for the pull request to go through as fast as possible.
@@ -49,25 +52,22 @@ Before making the pull request, make sure that the code:
 
   - is reachable when opening the application.
 
-Fully tested means that if any piece of the functionality is removed, a
-test should fail.
+**Fully tested means that if any piece of the functionality is removed, a test should fail.**
 
-To create the pull request, you should go to the relevant repository, click on pull requests and click the
-green "New Pull Request" button. The base branch should be "develop" and
+To create the pull request, you should go to the relevant repository, click on pull requests and click the green "New Pull Request" button. The base branch should be "develop" and
 the compare branch should be your feature branch, with the code that you
 want to add to the develop branch. Then click the green "Create pull
 request" button.
 
+Name the pull request the same as your branch. To the right there is a tab called projects. Add the request to the current giraf project. For the first sprint you would add it to the project called "2020 1. sprint", for the second sprint "2020 2. sprint" and so on.   
+
 Next, include pictures (or a gif/video) of all the screens that you added, in the text field, so someone from the product owner group can verify that the
 screens follow the design manual.
 
-Remember to include the text "fixes \#YourIssueID". This will
-automatically close the issue when the pull request is merged.
+Remember to include the text "fixes \#YourIssueID". This will automatically close the issue when the pull request is merged.
 When the PR is closed, check your issue to make sure that it has been closed too.
 
-Now all that is left is for you to inform the process group, and ask
-them to assign reviewers. They will assign reviewers who will review
-your pull request.
+Now all that is left is for you to inform the process group, and ask them to assign reviewers. They will assign reviewers who will review your pull request.
 
 ## How To: Get Code in Review
 In order to get code into review, you firstly have to make sure that the tests you wrote all pass, and that they cover the relevant parts of the written code. The way you make a pull request (PR) starts by visiting github.com. You navigate to the repository in which you've done your work. Go to the pull requests tab, click the "new pull request" button. Then you select the correct base and compare branch, and then your create a pull request.
@@ -100,8 +100,13 @@ With the Weekplanner repository as the example, people can either create a *Task
 * If you want to report unexpected behavior in already existing functionality of the application, you should choose *Bug Report*.
 * If you feel that the application needs functionality that is out of your current scope and that you do not feel is being represented in other user stories, then you should choose *Task Creation Request*.
 
-Once you choose one of the two options and click the respective button you should see a page with a form that asks you for a title and that has a field in which you can write a description of what you want to report on.  
-Note that the field where you can write a description is already filled out with suggestions on how to structure your own description.  
+Once you choose one of the two options and click the respective button you should see a page with a form that asks you for a title.
+The title for the *Task Creation Request* should tell what functionality you would like added using the shown form "As a developer I would like the docker config file to automatically update so that I don´t have to manullay update the config file". 
+Instead of the task being for the developer, guardian or user is also frequently used.
+For the bug the title should be the problem at hand, not the solution. F.eks "A error message pops up whenever the app is open".
+  
+There is a field underneath the title in which you write a description of what you want to report on.  
+Note that the field where you can write a description is already filled out with a template on how to structure your own description. 
 Once you have created a good title and written a description of the issue you click on the green *Submit new issue* button at the bottom of the form. With this you have created your issue.
 
 It can be a good idea to inform the PO group, so they can assign and refine the issue.
