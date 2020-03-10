@@ -24,9 +24,9 @@ Thereafter the representative will do the following:
 	
 The meeting is then over and the representative meets with his group and does the following:
 1. Go through the issues for the sprint
-2. Do a time estimate of the issues (Planning poker could be a way of doing it)
-3. Make a list with the issues and time estimate in a prioritized order after what issues the group wants to work with
-4. Give the list to the PO-group who officialy assigns issues to the groups
+2. Make a list with at least 10 issues in a prioritized order after what issues the group wants to work with
+3 Do a time estimate of the issues(Planning poker could be a way of doing it)
+4. Give the list with issues and time estimation to the PO-group who officialy assigns issues to the groups
 	-It's better to have few issues than to many for a sprint, since 
 	 it's always possible to get new issues by contacting the PO group
 
