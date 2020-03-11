@@ -32,7 +32,7 @@ The meeting is then over and the representative meets with his group and does th
 
 The first sprint planning will probably be the longest, as the process group should present the major parts of the process.
 
-All following sprint plannigs will probably be shorter meetings, lasting no more than a hour.
+All following sprint plannings will probably be shorter meetings, lasting no more than a hour.
 
 
 ## Cross-group standups
