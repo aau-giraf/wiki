@@ -8,7 +8,7 @@ A Web API is an application programming interface located on a web-server. It ma
 
 The web-API repository is the backend of the [GIRAF Project](https://github.com/aau-giraf/web-api), and it is programmed in C# and uses .NET Core 2.2. More specifically the Web API is responsible for the handling of all communication coming from and to the API-Client as shown Figure 7.16. If it is a valid request this leads to an [endpoint](./EndpointsAndControllers.md) and if not then an error response is returned. Most request would require the web-API to communicate with the [database](./Database.md) that stores all the data related to the GIRAF Project, which allows several of components to be communicating information to the common database.
 
-![Web-API in System Overview](./images/Fig-7-16.png)
+![Web-API in System Overview](./images/api_request_to_response_structure.png)
 
 ## Endpoints and Controllers
 
@@ -24,7 +24,7 @@ An endpoint is one end of a communication channel, used to interact with other s
 - StatusController
 - ErrorController
 
-![Web-API Controllers](./images/Fig-7-15.png)
+![Web-API Controllers](./images/api_structure.png)
 
 # Related Artifacts
 

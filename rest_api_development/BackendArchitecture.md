@@ -2,7 +2,7 @@
 
 ## Code Base
 
-![APIStructure](./images/preview-api_structure.png "API Structure")
+![APIStructure](./images/api_structure.png "API Structure")
 
 This figure gives an general overview of the API structure. In the illustration an arrow indicate that a component pointed by is dependent of the component that is pointed to. The dashed line from Entity Framework to the database indicates that Entity Framework is responsible for executing queries on the database.
 
@@ -12,7 +12,7 @@ To extract and store data through Entity Framework the ```Controllers``` use the
 
 ## Making a Request
 
-![ResponseToBackend](./images/preview-responseTobackend.png "Response to Backend")
+![ResponseToBackend](./images/api_request_to_response_structure.png "Response to Backend")
 
 This figure shows how a request from the user is translated into a JSON response given the current architecture of the backend.
 
@@ -41,7 +41,7 @@ whose attribute matches the ```GET``` verb and the last part of the URI, ```/2/i
 
 ## The Database
 
-![DatabaseStructure](./images/preview-database_structure.png "Database Structure")
+![DatabaseStructure](./images/database_structure.png "Database Structure")
 
 As the figure illustrates, we use the ASP.NET Identity membership system to manage ```Users```. Each user has a relation to a ```Settings``` entity which defines configurations specific to a ```User``` which can be set in the WeekPlanner application. Furthermore an ```User``` has a reference to private ```Pictograms``` through the ```UserResources``` which is the pivot table for describing a many-to-many relationship between ```Users``` and ```Pictograms```.
 
