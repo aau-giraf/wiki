@@ -6,6 +6,11 @@ site_author: '@aau-giraf'
 repo_name: 'aau-giraf/wiki'
 repo_url: 'https://github.com/aau-giraf/wiki'
 
+extra_css: 
+  - 'extra/extra.css'
+
+sidebar: true
+
 # Theme settings
 theme:
   name: 'material'
@@ -18,8 +23,11 @@ theme:
   logo: 'extra/giraf.png'
   feature:
       tabs: true
-  extra_css:
-  - 'extra/style.css'
+
+# Plugins
+plugins:
+    - search
+    - awesome-pages
 
 # Markdown extensions
 markdown_extensions:
