@@ -38,9 +38,10 @@ It must be on the form:
 ```
 
 Fill in the following:
+
 | Field | Description |
 | :-----|:------------|
 |```<jwt-key>``` | This is the skeleton key used to generate other keys. Secrecy only important for production. Use any string longer than 40 characters, e.g. this text field.|
 | ```<jwt-issuer>``` | Name that will be displayed as the issuer of the key. Avoid using anything official-sounding, but perhaps write in a joke.|
 
-## [Back](./Introduction.md)
+## [Back](index.md)

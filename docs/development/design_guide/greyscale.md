@@ -5,5 +5,5 @@ The citizen should have the option to change the whole page to greyscale, or jus
 
 These examples are shown on the prototypes below:
 
-<img src="./images/GreyscaleOrangeBar.png" alt="orange" width="250">
-<img src="./images/GreyscaleGreyBar.png" alt="orange" width="250">
+<img src="images/GreyscaleOrangeBar.png" alt="orange" width="250">
+<img src="images/GreyscaleGreyBar.png" alt="orange" width="250">

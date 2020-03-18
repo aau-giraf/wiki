@@ -6,4 +6,4 @@ This wikipedia includes all information about the GIRAF project!
 - [Design guide](./design_guide/design_guide.md)
 - [Server Administration](./ServerAdministration/Server_Administration.md)
 - [Process Manual](./process_manual/)
-- [REST_API Development](./REST_API_Development/Introduction.md)
+- [REST_API Development](./REST_API_Development/)
