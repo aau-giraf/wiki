@@ -27,7 +27,8 @@ for deploying Jenkins. (Please note, that as of 2018, the Jenkins CI
 server has been replaced by the GitLab CI server, and as such the
 following example is only used in this article.)
 
-```docker FROM jenkins:latest RUN /usr/local/bin/install-plugins.sh google-oauth-plugin android-emulator android-lint oauth-credentials
+```docker 
+FROM jenkins:latest RUN /usr/local/bin/install-plugins.sh google-oauth-plugin android-emulator android-lint oauth-credentials
 git-client artifactory cas-plugin checkstyle git
 google-play-android-publisher postbuild-task gradle javadoc junit
 repository
@@ -109,29 +110,29 @@ overwrite.
 ## Deploying Images
 
 When a Dockerfile has been made, you can build an image from it by
-running "*docker build ./*". This assumes the Dockerfile is called
-*Dockerfile*. For instance our Jenkins Dockerfile was built by using
-*"docker build -t jenkins\_giraf ./"*. The *-t* parameter is used
+running ``docker build ./``. This assumes the Dockerfile is called
+``Dockerfile``. For instance our Jenkins Dockerfile was built by using
+``docker build -t jenkins\_giraf ./``. The ``-t`` parameter is used
 for tagging an image, so in this case we are giving the image the tag
-*jenkins\_giraf*.
+``jenkins\_giraf``.
 
 When an image has been created, it's possible to deploy an instance of
-it with the *docker run* command. The *docker run* command needs
+it with the ``docker run`` command. The ``docker run`` command needs
 atleast one parameter which is the tag of the image that should be run.
 For example if we wanted to deploy our Jenkins image, we would execute
-*docker run jenkins\_giraf*. This only creates a Jenkins container, it
+``docker run jenkins\_giraf``. This only creates a Jenkins container, it
 cannot communicate with the outside system yet.
 
-It's possible to pass a *-p* parameter that takes a port route, which
-means the command could look like *docker run -p 80:8080
-jenkins\_giraf*. Here the port the container listens on, the exposed
-port, is port 8080. By using the parameter *-p 80:8080* we tell Docker
+It's possible to pass a ``-p`` parameter that takes a port route, which
+means the command could look like ``docker run -p 80:8080 jenkins\_giraf``. 
+Here the port the container listens on, the exposed
+port, is port 8080. By using the parameter ``-p 80:8080`` we tell Docker
 that the host should be redirected from port 80 to the exposed port
-8080. The picture below illustrates how this
+1.    The picture below illustrates how this
 works:
 
 ![DockerPortEx](./images/DockerPortEx.png "DockerPortEx")
 
-we illustrate how the *-v* parameter works. This parameter is used to mount a host folder into a folder in the container. For instance this could be used when we want to populate a folder in our container with pre-existing data. The parameter is used as *-p /hostfolder:/persistent/folder* where *hostfolder* is the folder on the host system and */persistent/folder* is an arbitrary path to an existing folder inside a container. The picture below illustrates how this works:
+we illustrate how the ``-v`` parameter works. This parameter is used to mount a host folder into a folder in the container. For instance this could be used when we want to populate a folder in our container with pre-existing data. The parameter is used as ``-p /hostfolder:/persistent/folder`` where ``hostfolder`` is the folder on the host system and ``/persistent/folder`` is an arbitrary path to an existing folder inside a container. The picture below illustrates how this works:
 
 ![DockerVolumeEx](./images/DockerVolumeEx.png "DockerVolumeEx")

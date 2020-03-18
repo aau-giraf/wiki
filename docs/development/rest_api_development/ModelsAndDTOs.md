@@ -3,6 +3,7 @@
 ## Models
 
 The models of the REST API is a collection of classes, which is used throughout the application. A list of these classes can be found below.
+
 |Model name | Usage|
 |:----------|:-----|
 |```AccessLevel``` | Used to define access level for pictograms. It has three values, PUBLIC for pictograms that are accessible to all users, PROTECTED for pictograms that are only accessible to users in a given department and PRIVATE for pictograms that are accessible only for a given user. |

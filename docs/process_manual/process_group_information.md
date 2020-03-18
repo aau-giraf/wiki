@@ -94,11 +94,11 @@ You should remind the PO group of the different meetings, and what they should d
 For the sprint intro, the PO group should bring the product vision and the sprint vision.
 For the release preparation, please refer to the [release preparation section](project_meetings.md#release-preparation) as this requires some work from both of you.
 
-# Your role and relevant information for you
+## Your role and relevant information for you
 This section includes information directly related to your role as the process group.
 It is meant as a work of reference that you can consult when in doubt about the different tasks that you should perform during the semester.
 
-## Communication
+### Communication
 We created a Slack channel that we used for communication in the project.
 All groups had their own channel that could be used for getting a hold of the group.
 Each skill group also had their own channel.
@@ -115,7 +115,7 @@ Likewise, it is beneficial if people put their group in the *What I do* field, s
 We also recommended that you ask people to add their real name to GitHub, so you can search for that when assigning them, instead of having to deal with their GitHub usernames.
 They change that by going to <https://github.com/settings/profile> and changing their name to their real name.
 
-## General about meetings
+### General about meetings
 You will be responsible for planning most meetings.
 We created a GIRAF Google Calendar that we shared with people, where we asked them to add all meetings all groups are welcome - that included skill group meetings and the general process meetings.
 When people add this calendar to theirs, it wasn't necessary for us to promote the meeting on Slack, saving a lot of messages.
@@ -128,7 +128,7 @@ Release preparation would usually be two full days.
 If the sprint ends on a Friday, we would hold a release preparation from Thursday morning until Friday at 13 o'clock. From 13 to 14 we would hold the release party.
 We had the release party early in the day, so as many as possible would attend it.
 
-## Our adaptation of GitFlow
+### Our adaptation of GitFlow
 We used the [GitFlow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) as the branching strategy in the GIRAF project.
 We also enforce squash merges from feature branches into the develop branch, so each feature will be in a single commit.
 
@@ -155,7 +155,7 @@ An example of how to properly handle this, could be to create a feature branch w
 Different issues could be merged into this feature branch.
 When everything login related has been fixed and merged to the feature branch, this feature branch can be merged into the develop branch.
 
-## Assigning reviewers
+### Assigning reviewers
 Assigning reviewers is done in an excel document.
 
 ![Google Sheets Review Assignment](https://i.imgur.com/WBkdycF.png)
@@ -170,14 +170,14 @@ When groups have been chosen, you should assign a representative from the group 
 We provide a checklist to the reviewers, depending on if the PR is made to a [code repository](review_checklists/review_checklist_code.md) or the [wiki repository](review_checklists/review_checklist_wiki.md).
 This is provided as a comment on the PR on GitHub.
 
-## Gatekeepers of good code practice
+### Gatekeepers of good code practice
 You, the process group, will be mostly responsible for maintaining a good code practice.
 Some developers will not be informed about the best practices, others will not care, and others yet again will fail to see the reasons for good code practice.
 
 As such you will be responsible for sustaining a good code practice.
 You should actively seek out more information, and ensure that you thoroughly research pros and cons of both existing practices and new practices.
 
-### Definition of done
+#### Definition of done
 For an issue, we have defined the following definition of done:
 
 >An issue and its associated tasks are considered done when the feature branch has been successfully merged into the development branch by a single pull request and the feature documentation has been updated in the GIRAF wiki.
@@ -192,7 +192,7 @@ Some groups will add several pieces of functionality in a single PR, and others 
 For the second case, tell them that it is a shortcoming of the issue, and when they discovered this they should have taken immediate contact to the PO group and asked for it to be included in the issue.
 Functionality isn't worth much, if it isn't finished, and as such shouldn't be included in the develop branch.
 
-### Issue reporting
+#### Issue reporting
 Once in a while, someone will approach you and tell you about something that the program should have, or something that doesn't work.
 You should be responsible for one of the two things:
 1. Creating an issue describing it.
@@ -200,7 +200,7 @@ You should be responsible for one of the two things:
 
 If you don't do it, you probably won't remember it.
 
-### Reviews
+#### Reviews
 It will be so easy to cut corners with this.
 A lot of your time will be spent doing reviews, and you will probably be tempted to cut down on the time spent on reviews.
 Know for sure that other students will, at least.
