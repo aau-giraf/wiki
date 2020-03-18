@@ -1,3 +1,5 @@
 arrange:
     - index.md
     - getting_started
+    - ...
+    - releases

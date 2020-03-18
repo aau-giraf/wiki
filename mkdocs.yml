@@ -29,6 +29,7 @@ plugins:
     - search
     - awesome-pages
 
+    
 # Markdown extensions
 markdown_extensions:
   - admonition
