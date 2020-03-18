@@ -18,9 +18,6 @@ The models of the REST API is a collection of classes, which is used throughout 
 | ```Week``` | Used to define a users schedule for a week at a certain year and week-number. |
 | ```WeekTemplate``` | Used to define a generic template that can be used as a base when a new week is being planned.|
 
-An UML diagram showing the relations of these classes can be found below.
-There should be an image here, but ```./images/preview-database.png``` does not exist.
-
 ## Data Transfer Objects
 
 Data Transfer Objects (DTOs) are used to communicate data in the controllers both as input and output for the methods, while containing only the essential from each model. All models have a corresponding DTO with the exception of AccessLevel and GirafRole, as they are not used directly in any controllers currently. In addition to those there are also six DTOs related to account/user management.
