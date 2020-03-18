@@ -18,5 +18,5 @@ The `buildButtonBar` function also uses a `streambuilder` with the same stream a
 ## Structure
 The structure of `show_activity_screen` is shown in this UML diagram:
 
-![Screen used to show an activity](../pictures/showActivityScreen.png)
+![Screen used to show an activity](../pictures/ShowActivityScreen.png)
 

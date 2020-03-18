@@ -16,4 +16,4 @@ The *build* function contains all the code for the layout, A `coloumn` with a te
 ## Structure
 The diagram shows the structure of *pictogram_search_screen*.
 
-![The UML diagram](../pictures/pictogram_search_screen_UML.PNG)
+![The UML diagram](../pictures/pictogram_search_screen_uml.PNG)

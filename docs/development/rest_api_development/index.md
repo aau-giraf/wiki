@@ -30,7 +30,7 @@ You may want to see an [elaboration on how to set AppSettings.json](./Connection
 - [Web-api purpose](./WebApiPurpose.md)
 - [Backend architecture](./BackendArchitecture.md)
 - [Naming conventions](./NamingConventions.md)
-- [Controllers and endpoints](./ControllersAndEndpoints.md)
+- [Endpoints and Controllers](./EndpointsAndControllers.md)
 - [Swagger](./Swagger.md)
 - [Unit testing](./UnitTesting.md)
 - [Integration test](./IntegrationTest.md)

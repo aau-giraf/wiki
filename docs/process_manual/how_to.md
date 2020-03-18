@@ -26,12 +26,12 @@ Go ask the PO group to be assigned the most pressing issue, as they have a good 
 
 ## How to: Write code
 To get started writing code, you should first setup the project.
-This is described in the [Setup from scratch tutorial](/getting_started/tutorials/setup_tutorial/setup_from_scratch.md).
+This is described in the [Setup from scratch tutorial](../getting_started/tutorials/setup_from_scratch.md).
 
 Then, after setting up the code, you should make a branch for the feature you are going to implement.
 Name the branch fixes_ISSUENUMBER, where the ISSUENUMBER is the number of the issue you are implementing.
 
-Follow the coding standards that you can find, for reference in [C# coding standards](coding_standard.md).
+Follow the coding standards that you can find, for reference in [C# coding standards](../development/coding_standard.md).
 For Flutter the linter should catch most things that go out of style.
 If in doubt, try to find other places in the code that does similar things to what you want, and follow that standard.
 Remember that all functionality related to an issue should be implemented with unit tests before an issue is considered done.

@@ -28,9 +28,9 @@ For example, if you have no lectures Monday and Tuesday, but full schemes the re
 
 When you no longer have any lectures we found 2 standups to be beneficial.
 
-At the end of the sprint the process group should host a [release preparation](project-meetings.md#release-preparation), where you take everything that was developed during the sprint and test it thoroughly to polish the little details.
+At the end of the sprint the process group should host a [release preparation](project_meetings.md#release-preparation), where you take everything that was developed during the sprint and test it thoroughly to polish the little details.
 
-The release preparation ends with a [release party](project-meetings.md#release-party) where each group is given the opportunity to showcase the work they did during the sprint.
+The release preparation ends with a [release party](project_meetings.md#release-party) where each group is given the opportunity to showcase the work they did during the sprint.
 This aims to help other developers gain an overview of the project, as well as instill a feeling of teamwork.
 
 ## Fullstack teams
@@ -54,7 +54,7 @@ The development groups are simply the groups in which you write the report.
 Every single group of students are a development group - even the process group, and the PO group.
 
 The process group's role will mostly be to listen to these groups' concerns during the semester.
-They usually bring questions about the process, [how to create pull requests](for_development_groups.md#how-to-create-a-pull-request), who to ask for issues and such.
+They usually bring questions about the process, [how to create pull requests](how_to.md#how-to-create-a-pull-request), who to ask for issues and such.
 We recommend that for issue related questions you refer to the PO group, and let them handle that, to ensure that they can keep an overview of what is happening in the project.
 You should of course help by remembering and recommending good practices, e.g. creating one issue per bug/feature, creating one pull request per issue.
 

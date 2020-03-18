@@ -18,7 +18,7 @@ The models of the REST API is a collection of classes, which is used throughout 
 | ```WeekTemplate``` | Used to define a generic template that can be used as a base when a new week is being planned.|
 
 An UML diagram showing the relations of these classes can be found below.
-![DatabaseER](./images/preview-database.png "DatabaseER")
+There should be an image here, but ```./images/preview-database.png``` does not exist.
 
 ## Data Transfer Objects
 

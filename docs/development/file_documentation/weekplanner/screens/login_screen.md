@@ -28,4 +28,5 @@ The screen uses an AuthBLoC to keep track of which user is logged in. When the u
 
 ## Structure
 This is the class diagram for this class.<br>
-![class diagram](../pictures/LoginScreenDiagram.png)
+![class diagram](../pictures/LoginScreenDiagram.PNG)
+

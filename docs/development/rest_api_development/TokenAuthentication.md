@@ -1,6 +1,6 @@
 # Token Authentication
 
-For authenticating users we [JWT token authentication](jwt.io), meaning that the user of the REST API must send a bearer token in the header whenever making requests to endpoints that require authentication.
+For authenticating users we [JWT token authentication](https://jwt.io), meaning that the user of the REST API must send a bearer token in the header whenever making requests to endpoints that require authentication.
 
 For instance consider a login request:
 

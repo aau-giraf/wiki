@@ -26,4 +26,4 @@ The settings screen class has a few methods for building the UI for the screen, 
 
 ## Structure
 This is the class diagram for the settings screen. <br>
-![class diagram](../pictures/SettingScreenDiagram.png)
+![class diagram](../pictures/SettingScreenDiagram.PNG)

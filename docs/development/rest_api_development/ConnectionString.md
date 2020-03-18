@@ -26,7 +26,7 @@ Fill in the following:
 
 # JWT information
 
-This information is required for creating the [JWT](jwt.io) keys which will be used for authorisation on the server.
+This information is required for creating the [JWT](https://jwt.io/) keys which will be used for authorisation on the server.
 
 It must be on the form:
 ```javascript

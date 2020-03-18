@@ -1,9 +1,9 @@
 # Wiki
 This wiki includes all information about the GIRAF project!
 
-- [Project Setup Guide](./tutorials/setup_tutorial/setup_from_scratch.md)
-- [List of GIRAF releases (starting from 2018)](./releases/releases.md)
-- [Design guide](./design_guide/design_guide.md)
-- [Server Administration](./ServerAdministration/Server_Administration.md)
-- [Process Manual](./process_manual/)
-- [REST_API Development](./REST_API_Development/)
+- [Project Setup Guide](./getting_started/tutorials/setup_from_scratch.md)
+- [List of GIRAF releases (starting from 2018)](./releases/index.md)
+- [Design guide](./development/design_guide/index.md)
+- [Server Administration](./development/server_administration/index.md)
+- [Process Manual](./process_manual/introduction.md)
+- [REST_API Development](./development/rest_api_development/index.md)

@@ -10,7 +10,6 @@ edit_uri: ""
 extra_css: 
   - 'extra/extra.css'
 
-sidebar: true
 
 # Theme settings
 theme:

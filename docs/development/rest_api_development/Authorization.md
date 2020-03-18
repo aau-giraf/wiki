@@ -2,7 +2,7 @@
 
 [Identity](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity?view=aspnetcore-2.1&tabs=visual-studio) is a membership management system present in the ASP.NET Core framework. It can be used to manage all user related actions e.g. login, register, authorization.
 
-Identity is used in combination with [JSON Web Tokens](jwt.io) to authenticate users, as described in the [Token authentication](./TokenAuthentication.md) page.
+Identity is used in combination with [JSON Web Tokens](https://jwt.io/) to authenticate users, as described in the [Token authentication](./TokenAuthentication.md) page.
 
 ## Users
 
