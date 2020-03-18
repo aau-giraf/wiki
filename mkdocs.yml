@@ -5,6 +5,7 @@ site_name: GIRAF Wiki
 site_author: '@aau-giraf'
 repo_name: 'aau-giraf/wiki'
 repo_url: 'https://github.com/aau-giraf/wiki'
+edit_uri: ""
 
 extra_css: 
   - 'extra/extra.css'
@@ -40,3 +41,4 @@ markdown_extensions:
       permalink: true
   - pymdownx.arithmatex
   - pymdownx.emoji
+  - pymdownx.tilde
