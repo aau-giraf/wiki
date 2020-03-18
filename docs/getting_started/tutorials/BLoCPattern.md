@@ -16,7 +16,7 @@ A stream is an asynchronous sequence of data, similar to an asynchronous Iterabl
 This uncovers a requirement of the UI component, which is state management. The UI should not be required to rely on state building, since the BLoC streams are asynchronous, which is why the UI components has to be able to handle streams [6].
 
 ## Rules of BLoC Pattern
-![BlocPattern](BLoCPattern.png "BLoC pattern")
+![BlocPattern](block_pattern/BLoCPattern.png "BLoC pattern")
 
 An illustration of the BLoC pattern.
 
@@ -63,21 +63,21 @@ ReactiveX is a library in which one can use observable sequences to create async
 The main features used from the rxDart library are three different stream behaviours, which are PublishSubject, BehaviorSubject and ReplaySubject. With these three stream behaviours, or subjects as rxDart refers to them, it is possible to implement any desired functionality.
 
 ### PublishSubject
-![PublishSubject](PublishSubject.png "Public Subject")
+![PublishSubject](block_pattern/PublishSubject.png "Public Subject")
 
 An illustration of the behavior of a PublishSubject
 
 The PublishSubject behaves like the Dart language's native StreamController, but with one exception, which is; a PublishSubject returns an Observable, where a StreamController returns a stream [3]. This means that the PublishSubject upholds the ReactiveX Subject contract and there by allow for all the ReactiveX operations [3]. The behaviour of a PublishSubject across time is shown in the above figure.
 
 ### BehaviorSubject
-![BehaviorSubject](BehaviorSubject.png "Behavior Subject")
+![BehaviorSubject](block_pattern/BehaviorSubject.png "Behavior Subject")
 
 An illustration of the behavior of a BehaviorSubject
 
 The BehaviorSubject behaves similar to the PublishSubject, but with one exception, it captures the latest item that has been added to the subject and emits that as the first item every time a new observer subscribes [2]. The BehaviorSubject can also be seeded with an initial item, that will be the first item emitted in case no items have been added to the subject yet. The behaviour of a BehaviorSubject across time is shown in the above figure.
 
 ### ReplaySubject
-![ReplaySubject](ReplaySubject.png "Replay Subject")
+![ReplaySubject](block_pattern/ReplaySubject.png "Replay Subject")
 
 An illustration of the behavior of a ReplaySubject
 

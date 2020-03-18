@@ -1,5 +1,5 @@
 # Wiki
-This wikipedia includes all information about the GIRAF project!
+This wiki includes all information about the GIRAF project!
 
 - [Project Setup Guide](./tutorials/setup_tutorial/setup_from_scratch.md)
 - [List of GIRAF releases (starting from 2018)](./releases/releases.md)
