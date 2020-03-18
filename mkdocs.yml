@@ -19,8 +19,8 @@ theme:
     text: 'Open Sans'
     code: 'Roboto Mono'
   palette:
-    primary: 'blue-grey'
-    accent: 'indigo'
+    primary: 'yellow'
+    accent: 'deep orange'
   logo: 'extra/giraf.png'
   feature:
       tabs: true
@@ -29,7 +29,7 @@ theme:
 plugins:
     - search
     - awesome-pages
-
+    - git-revision-date-localized
     
 # Markdown extensions
 markdown_extensions:
@@ -42,3 +42,4 @@ markdown_extensions:
   - pymdownx.arithmatex
   - pymdownx.emoji
   - pymdownx.tilde
+  - pymdownx.tasklist

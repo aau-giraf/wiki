@@ -26,7 +26,7 @@ Go ask the PO group to be assigned the most pressing issue, as they have a good 
 
 ## How to: Write code
 To get started writing code, you should first setup the project.
-This is described in the [Setup from scratch tutorial](../tutorials/setup_tutorial/setup_from_scratch.md).
+This is described in the [Setup from scratch tutorial](/getting_started/tutorials/setup_tutorial/setup_from_scratch.md).
 
 Then, after setting up the code, you should make a branch for the feature you are going to implement.
 Name the branch fixes_ISSUENUMBER, where the ISSUENUMBER is the number of the issue you are implementing.
@@ -85,7 +85,7 @@ Once the reviewers have approved the pull request is able to merged.
 When reviewing a pull request it is absolutely important that you consider the goal of the review: Value should be added to the project, and the developers involved should gain knowledge and improve.
 As such, it is important to keep a light and educational tone when involved with the pull requests.
 
-When reviewing a pull request, you should check for points in the [Code Review Checklist](review_checklist_code.md)
+When reviewing a pull request, you should check for points in the [Code Review Checklist](./review_checklists/review_checklist_code.md)
 
 In case a point is not fulfilled you should leave a comment that points out the problem, why it is a problem, and, if possible, how to develop a solution. When reviewing the code, you can click on the "Files Changed" tab, in which you will be able to see all changes to the code. If you click on the left side of the code, right besides the line numbers, there will be a small, blue plus button available, which will let you leave a comment to this specific line of the code. If possible, you should always leave a comment on the line of the code that is problematic.
 
