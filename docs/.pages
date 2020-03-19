@@ -1,5 +1,7 @@
 arrange:
     - index.md
-    - getting_started
     - ...
+    - getting_started
+    - development
+    - process_manual
     - releases
