@@ -1,0 +1,11 @@
+html {
+    overflow-y: scroll;
+}
+
+.md-tabs__item {
+    text-transform: capitalize;
+}
+
+.md-nav__title {
+    text-transform: capitalize;
+}
