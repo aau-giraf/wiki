@@ -16,6 +16,7 @@ If a new icon is added, it should be added to this table.
 | Copy               | ![copy](./images/Icons%20GIRAF/35x35px/copy.png)                         | Indicates that an instance of some object can be copied            |
 | Delete             | ![delete](./images/Icons%20GIRAF/35x35px/delete.png)                     | Deletes selected instances of an object                            |
 | Edit               | ![edit](./images/Icons%20GIRAF/35x35px/edit.png)                         | Edits the given object                                             |
+| FallbackImage      | ![FallbackImage](./images/Icons%20GIRAF/35x35px/FallbackImage.png)       | Shows that a image was not loaded correctly                        |
 | Gallery            | ![gallery](./images/Icons%20GIRAF/35x35px/gallery.png)                   | Opens the gallery of device                                        |
 | Help               | ![help](./images/Icons%20GIRAF/35x35px/help.png)                         | Opens a help menu                                                  |
 | Home               | ![home](./images/Icons%20GIRAF/35x35px/home.png)                         | Returns user to the overview of the weekplan                       |
