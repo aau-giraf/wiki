@@ -19,9 +19,9 @@ Codename:	bionic
 |giraf-node02.srv.aau.dk    |172.19.10.33   |N/A           |
 |giraf-node03.srv.aau.dk    |172.19.10.34   |N/A           |
 
-|Web (Nginx)            |Git                                        |                             
-|---                    |---                                        |                                
-| API Proxies           | [Github](https://github.com/aau-giraf)    | 
+|Web (Nginx)            |Git                                        |
+|---                    |---                                        |
+| API Proxies           | [Github](https://github.com/aau-giraf)    |
 
 An illustration of the current server architecture can be seen in [Server Structure](ServerArchitecture.md)
 
@@ -32,7 +32,7 @@ ITS is responsible for the NFS that is mounted on all the nodes and masters in `
 ## Accessing the Server
 
 To access the server you need to SSH to the AAU gateway.
-This is required since all SSH ports to the servers are closed and can only be accessed from inside the AAU network. 
+This is required since all SSH ports to the servers are closed and can only be accessed from inside the AAU network.
 
 `ssh -t sshgw.aau.dk -l <USERNAME>@student.aau.dk  ssh 172.19.10.<ip>`
 
@@ -46,10 +46,10 @@ This is required since all SSH ports to the servers are closed and can only be a
 |giraf-node03.srv.aau.dk    |172.19.10.34   |N/A           |
 
 
-## Web-API 
+## Web-API
 
 The WEB API runs in a docker container, which is routed by NGINX.
-The WEB API is only available on port 80 and 443 on the URLs shown below. 
+The WEB API is only available on port 80 and 443 on the URLs shown below.
 
 | Stage               | URL                                 |
 |---                  |---                                  |
@@ -57,6 +57,36 @@ The WEB API is only available on port 80 and 443 on the URLs shown below.
 | Development         | http://srv.giraf.cs.aau.dk/DEV/API  |
 | Legacy              | http://srv.giraf.cs.aau.dk/API      |
 | Test                | http://srv.giraf.cs.aau.dk/TEST/API |
+
+## Networking Drives and specific server-setups
+As mentioned above, ITS will attach a network drive at `/swarm-nfs/`, which should include the following:
+
+ - api/
+    - appsettings.Develop.json
+    - appsettings.Production.json
+    - appsettings.Testing.json
+ - backup/
+ - cdn/
+    - dev/
+      - pictograms/
+    - test/
+      - pictograms/
+    - prod/
+      - pictograms/
+ - certbot/
+ - mysql/
+ - nginx/
+    - certs/
+    - sites-enabled/
+    - nginx.conf
+
+Furthermore, the master00 server, should execute the following cronjob:
+
+```bash
+certbot renew --dry-run --webroot -w /swarm-nfs/certbot/ -d srv.giraf.cs.aau.dk --post-hook "cp -RL /etc/letsencrypt/live/srv.giraf.cs.aau.dk/. /swarm-nfs/nginx/certs/"
+```
+
+This is done to ensure a single point of certificate-authority; Being the first masterserver, that after renewing the certificate, moves it into the /swarm-nfs/nginx/certs, thus making it available to all of the servers, and as the nginx Giraf_PROXY service mounts this folder, it becomes available to all of the proxy servers.
 
 ## READ: Access to the server
 Access to the server is granted to all students, sudo rights are ONLY given to members of the Server Meta Group.
