@@ -20,14 +20,17 @@ If more plugins are downloaded with pip, remember to add them to ``requirements.
 
 ### Running locally
 
-The wiki can be run locally by doing the following:
+The wiki can be run locally by doing the following in a terminal:
 
-* Install python 3
-    * check that pip is using python3 with ``pip -V``
+1. Install Python 3.
+2. Check that pip is using python3 with ``pip -V``.
     * if not, check ``pip3 -V``
-* ``pip install -r requirements.txt`` (if pip is using python3)
+3. Install plugins with ``pip install -r requirements.txt`` (if pip is using python3)
     * else ``pip3 install -r requirements.txt``
-* ``mkdocs serve``
+4. Start local server with ``mkdocs serve``
+
+You should now be able to access the wiki at [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
+Step 1 to 3 only has to be done the first time, unless new plugins have been added (if so do steop 3 again).
 
 
 
