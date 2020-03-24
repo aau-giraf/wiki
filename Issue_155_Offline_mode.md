@@ -20,23 +20,23 @@ For Giraf it might makes sense to limit the local database to a single user. For
 # Issues / considerations
 Before even starting to implement the features on the prioritized list, it is needed to be able to login on an offline device. 
 One solution could be a setting, where when you are logged in you can allow the current device to be used in offline mode and the user is saved locally, so it is possible to login with no internet connection. 
-Here is the prioritized list for the offline features
-Citizen features: Limited to current week.  
+Here is the prioritized list for the offline features  
+  
+1. Citizen features: Limited to current week.  
  1.1 View weekplan.  
  1.2 View activity.  
  1.3 Mark activity as completed.  
  1.4 Timer functionality.  
-Guardian features: Limited to current week.
- 2.1 View weekplan.
- 2.2 View activity.
- 2.3 Cancel activity.
- 2.4 Timer functionality.
- 2.5 Edit weekplan.
-Guardian features:
- 3.1 Take picture as pictogram.
- 3.2 Create/delete weekplans.
- 3.3 All functions from point 2 just not limited to the current week.
-
+2. Guardian features: Limited to current week.  
+ 2.1 View weekplan.  
+ 2.2 View activity.  
+ 2.3 Cancel activity.  
+ 2.4 Timer functionality.  
+ 2.5 Edit weekplan.  
+3. Guardian features:  
+ 3.1 Take picture as pictogram.  
+ 3.2 Create/delete weekplans.  
+ 3.3 All functions from point 2 just not limited to the current week.  
 
 To store the data (activities, timers) locally on the device the SQLite DB can be used. SQLite is a database that is running on the phone/tablet already. It has a plugin for Flutter (sqflite) that supports both iOS and Android. 
 Syncing the local database to match the online database: 
