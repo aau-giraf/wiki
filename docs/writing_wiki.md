@@ -25,9 +25,14 @@ The wiki can be run locally by doing the following in a terminal:
 1. Install Python 3.
 2. Check that pip is using python3 with ``pip -V``.
     * if not, check ``pip3 -V``
-3. Install plugins with ``pip install -r requirements.txt`` (if pip is using python3)
+3. Set up a virtual environment (steps assume that your current dir is project root) 
+      1. run ``python3 -m venv venv``
+      2. source the virtual environment
+            * Linux:    ``source venv/bin/activate`` 
+            * Windows:  ``.\venv\Scripts\activate.bat``
+4. Install plugins with ``pip install -r requirements.txt`` (if pip is using python3)
     * else ``pip3 install -r requirements.txt``
-4. Start local server with ``mkdocs serve``
+5. Start local server with ``mkdocs serve``
 
 You should now be able to access the wiki at [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
 Step 1 to 3 only has to be done the first time, unless new plugins have been added (if so do steop 3 again).
