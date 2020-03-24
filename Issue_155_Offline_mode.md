@@ -21,11 +21,11 @@ For Giraf it might makes sense to limit the local database to a single user. For
 Before even starting to implement the features on the prioritized list, it is needed to be able to login on an offline device. 
 One solution could be a setting, where when you are logged in you can allow the current device to be used in offline mode and the user is saved locally, so it is possible to login with no internet connection. 
 Here is the prioritized list for the offline features
-Citizen features: Limited to current week.
- 1.1 View weekplan.
- 1.2 View activity.
- 1.3 Mark activity as completed.
- 1.4 Timer functionality.
+Citizen features: Limited to current week.  
+ 1.1 View weekplan.  
+ 1.2 View activity.  
+ 1.3 Mark activity as completed.  
+ 1.4 Timer functionality.  
 Guardian features: Limited to current week.
  2.1 View weekplan.
  2.2 View activity.
