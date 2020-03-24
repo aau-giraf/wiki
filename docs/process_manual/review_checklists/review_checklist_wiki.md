@@ -1,5 +1,5 @@
 @aau-giraf/team you have been assigned this. Here's your checklist. I marked @user as the reviewer, but you might change it as you like.
-You can run MkDocs locally by following [this guide](../../writing_wiki.md#running-locally)
+
 Please use the following checklist:
 
 **Code Documentation Only**
@@ -13,3 +13,5 @@ Please use the following checklist:
 - [ ] Are there any dead links or references?
 - [ ] Does the markdown render correctly in MkDocs?
 - [ ] Is the content placed in the correct page/folder/section?
+
+You can run MkDocs locally by following [this guide](../../writing_wiki.md#running-locally)
