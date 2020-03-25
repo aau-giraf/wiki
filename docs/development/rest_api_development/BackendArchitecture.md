@@ -43,7 +43,7 @@ whose attribute matches the ```GET``` verb and the last part of the URI, ```/2/i
 
 ![DatabaseStructure](./images/database_structure.png "Database Structure")
 
-As the figure illustrates, we use the ASP.NET Identity membership system to manage ```Users```. Each user has a relation to a ```Settings``` entity which defines configurations specific to a ```User``` which can be set in the WeekPlanner application. Furthermore an ```User``` has a reference to private ```Pictograms``` through the ```UserResources``` which is the pivot table for describing a many-to-many relationship between ```Users``` and ```Pictograms```.
+As the figure illustrates, we use the ASP.NET Identity membership system to manage ```Users```. Each user with the citizen role, has a relation to a ```Settings``` entity which defines configurations specific to a ```User``` which can be set in the WeekPlanner application. Furthermore a ```User``` has a reference to private ```Pictograms``` through the ```UserResources``` which is the pivot table for describing a many-to-many relationship between ```Users``` and ```Pictograms```.
 
 A ```User``` is also part of a ```Department``` and has a list of weekschedules which is modelled with the ```Weeks``` entity. A ```Week``` has a reference to up to seven ```Weekdays``` where each day contains an ```Activity``` which has a reference to a ```Pictogram```, an order, and a state. An ```Activity``` is thus a ```Pictogram``` that is related to a specific ```WeekDay``` in a ```Week``` and has an order which indicates the index of the ```Activity``` in the ```Week``` and a state which for instance can take the values "checked" and "current".
 
