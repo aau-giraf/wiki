@@ -83,7 +83,7 @@ As mentioned above, ITS will attach a network drive at `/swarm-nfs/`, which shou
 Furthermore, the master00 server, should execute the following cronjob:
 
 ```bash
-certbot renew --dry-run --webroot -w /swarm-nfs/certbot/ -d srv.giraf.cs.aau.dk --post-hook "cp -RL /etc/letsencrypt/live/srv.giraf.cs.aau.dk/. /swarm-nfs/nginx/certs/"
+certbot renew --webroot -w /swarm-nfs/certbot/ -d srv.giraf.cs.aau.dk --post-hook "cp -RL /etc/letsencrypt/live/srv.giraf.cs.aau.dk/. /swarm-nfs/nginx/certs/"
 ```
 
 This is done to ensure a single point of certificate-authority; Being the first masterserver, that after renewing the certificate, moves it into the /swarm-nfs/nginx/certs, thus making it available to all of the servers, and as the nginx Giraf_PROXY service mounts this folder, it becomes available to all of the proxy servers.
