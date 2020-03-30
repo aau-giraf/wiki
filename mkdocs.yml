@@ -1,0 +1,45 @@
+# This file contains the configuration for mkdocs
+
+# Site settings
+site_name: GIRAF Wiki
+site_author: '@aau-giraf'
+repo_name: 'aau-giraf/wiki'
+repo_url: 'https://github.com/aau-giraf/wiki'
+edit_uri: "" # Is empty to remove 'edit' buttons on pages
+
+extra_css: 
+  - 'extra/extra.css'
+
+
+# Theme settings
+theme:
+  name: 'material'
+  font: 
+    text: 'Open Sans'
+    code: 'Roboto Mono'
+  palette:
+    primary: 'yellow'
+    accent: 'deep orange'
+  logo: 'extra/giraf.png'
+  feature:
+      tabs: true
+
+# Plugins
+plugins:
+    - search                        # Adds search functionality
+    - awesome-pages                 # Used to arrange tabs and pages manually
+    - git-revision-date-localized   # Adds the "Last update: x" on the bottom of pages
+    
+# Markdown extensions
+# See list of extensions at https://squidfunk.github.io/mkdocs-material/extensions/admonition/
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: true
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.emoji
+  - pymdownx.tilde
+  - pymdownx.tasklist
