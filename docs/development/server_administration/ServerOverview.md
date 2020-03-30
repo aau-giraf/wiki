@@ -86,7 +86,7 @@ Furthermore, the master00 server, should execute the following cronjob:
 certbot renew --webroot -w /swarm-nfs/certbot/ -d srv.giraf.cs.aau.dk --post-hook "cp -RL /etc/letsencrypt/live/srv.giraf.cs.aau.dk/. /swarm-nfs/nginx/certs/"
 ```
 
-This is done to ensure a single point of certificate-authority; Being the first masterserver, that after renewing the certificate, moves it into the /swarm-nfs/nginx/certs, thus making it available to all of the servers, and as the nginx Giraf_PROXY service mounts this folder, it becomes available to all of the proxy servers.
+This is done to ensure a single point of certificate-authority on the first masterserver, that after renewing the certificate, moves it into the /swarm-nfs/nginx/certs. This is done to ensure that the certificate is available on all of the servers, and that the nginx Giraf_PROXY service mounts this folder and the certificate.
 
 ## READ: Access to the server
 Access to the server is granted to all students, sudo rights are ONLY given to members of the Server Meta Group.
