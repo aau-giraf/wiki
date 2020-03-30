@@ -14,4 +14,4 @@ Please use the following checklist:
 - [ ] Does the markdown render correctly in MkDocs?
 - [ ] Is the content placed in the correct page/folder/section?
 
-You can run MkDocs locally by following [this guide](../../writing_wiki.md#running-locally)
+You can run MkDocs locally by following [this guide](https://aau-giraf.github.io/wiki/writing_wiki/#running-locally)
