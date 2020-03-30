@@ -98,5 +98,5 @@ More can be found in [Server Ownership](./ServerOwnership.md)
 
 If you are at home, and cannot access the AAU SSH gateway, simply use [AAU VPN](https://www.its.aau.dk/vejledninger/vpn/)
 
-## VIDEO: short video on how to connect 
+## VIDEO: Short video on how to connect
 https://youtu.be/KZYsAJDHlxo
