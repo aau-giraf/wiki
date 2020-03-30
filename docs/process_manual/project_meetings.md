@@ -53,11 +53,12 @@ We recommend that each issue is handed out to two groups, none of them being the
 Each group will then be responsible for testing the issue according to the following checklist:
 
 A new issue should be created on GitHub if 'no' is the answer to any of the following questions:
-- Can the screen be reached through navigation in the application?
-- Can you perform all the functionality defined in the issue?
-- Can it be used without crashing?
-- Does it run without bugs?
-- Does all of the above still look acceptable if you change to a new device or change orientation?
+
+- [ ] Can the screen be reached through navigation in the application?
+- [ ] Can you perform all the functionality defined in the issue?
+- [ ] Can it be used without crashing?
+- [ ] Does it run without bugs?
+- [ ] Does all of the above still look acceptable if you change to a new device or change orientation?
 
 If a bug is discovered, an issue should be created in the relevant repository, describing the bug.
 The label called ReleaseFix should be added to the issue.
