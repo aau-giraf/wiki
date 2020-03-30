@@ -1,16 +1,22 @@
 # GDPR Regulation
 
+## Sources
+* [gdpr.dk](https://gdpr.dk/)
+* [datatilsynet.dk](https://www.datatilsynet.dk/generelt-om-databeskyttelse/lovgivning/)
+* [en.wikipedia.com](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation)
+
+
 ## What is the GDPR regulation?
 GDPR stands for General Protection Regulation and it is a collection of laws on data protection and privacy introduced in the European Union (EU), that applies to every entity that collects and processes information on any subject within the EU. An entity might be any organization, either public or private, and a subject might be a citizen of any of the member countries of the EU. The law is in place to protect people's fundamental right and freedom, namely their right to protect their personal information.  
 
 The GDPR laws requires careful consideration with regards to information technology (IT) systems, which oftentimes revolves around user information. The GIRAF project is no exception to this, and it is therefore required to take into account what data is collected, stored and how it is used. The GDPR is concerned with data that is categorised as personal information.
 
 ### Definitions and concepts
-Personal data: is information that identifies an individual.
-Processing: any one or set of operations which is performed on personal data, whether or not by automated means.
-Data subject: is a person based in the EU.
-Data controller: is a natural, legal person, organization, public authority, agency or other body, which determines the purposes and means of the processing of personal data, and should be able to prove it.
-Processor: natural or legal person (such as an organization), public authority, agency or other body, which processes data on behalf of a data controller.
+* Personal data: is information that identifies an individual.
+* Processing: any one or set of operations which is performed on personal data, whether or not by automated means.
+* Data subject: is a person based in the EU.
+* Data controller: is a natural, legal person, organization, public authority, agency or other body, which determines the purposes and means of the processing of personal data, and should be able to prove it.
+* Processor: natural or legal person (such as an organization), public authority, agency or other body, which processes data on behalf of a data controller.
 
 ### Types of personal information
 
@@ -36,7 +42,7 @@ Application |
 CV |
 Work |
   
-### The essential principles
+### The essential principles 
 * Processing of person information is processed in a legal, fair and transparent way. 
 * Only sufficient, relevant and limited to what is necessary in relation to the purpose to which they are addressed (‘data minimization’).
 Be correct. There needs to be taken reasonable steps to make sure that the personal information processed is correct information, that is, it is required that the data controller ensures the correctness of the data with regards to the purpose it is processed in relation to and any incorrect information should be corrected or deleted.
