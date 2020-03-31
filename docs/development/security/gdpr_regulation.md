@@ -45,6 +45,7 @@ CV |
 Work |
   
 ### The essential principles 
+
 * Processing of personal information should be performed in a legal, fair and transparent way. 
 * Only sufficient, relevant and limited to what is necessary in relation to the purpose to which they are addressed (‘data minimization’).
 * Be correct. There needs to be taken reasonable steps to make sure that the personal information processed is correct information, that is, it is required that the data controller ensures the correctness of the data with regards to the purpose it is processed in relation to and any incorrect information should be corrected or deleted.
@@ -54,6 +55,7 @@ Work |
 ### Legal processing
 
 There has to be legal basis, to process personal information. Lawful purposes for doing so, are as follows:
+
 * If the data subject has given consent to the processing of his or her personal data
 * To fulfill contractual obligations with a data subject, or for tasks at the request of a data subject who is in the process of entering into a contract
 * To comply with a data controller's legal obligations
@@ -107,6 +109,7 @@ The examination of the GDPR regulation, provides a basis for analysing it in the
 
 ### Organisational Structure and Definitions
 Initially a set of definitions has to be established. The purpose of the GIRAF project is to provide a tablet environment, including a set of tools, to assist autistic children with little or no verbal communication. The system developed, is based on a client-server architecture, meaning that for the system to work properly, an application, in this setup termed the client, has to be installed on a tablet, which communicates with a service installed on a server. The system is built such that the client in itself does not store information, but instead delegates data storage to the service on the server, thereby resembling a thin client, and which further establishes that whatever entity provides the service(s) on one or more servers is in control of the data. Depending on the particular circumstances under which the GIRAF system is deployed, including the specific business model and organisational structure, there might be a couple different ways to define the data controller and processor:
+
 * As the GIRAF project is developed by open-source means, one choice would be for an institution wishing to provide this for its citizens, to acquire the necessary system files and deploy it on their own servers along with the applications on their tablets. This would not change the requirements of the institution to uphold the GDPR regulation to its citizens, but it would possibly be the easiest business model, as the institution would be able to internally to determine the budget allocated to uphold any IT-services, and it would further not require any professional dependencies or expenses with regards to the development of the system, thereby contrasting with the following alternatives.
 * Another choice would be to establish an organisation with commercial intent, whether for-profit or non-profit, which would then provide the GIRAF system services, and thereby operate it as a Software-as-a-Service (SaaS). Those involved in such an organisation, could be anyone knowledgeable about the GIRAF system, such as a subset of developers. The reason for this to be required if GIRAF was to be provided as a SaaS, is two-fold; firstly, to operate a SaaS, an entity must take the responsibility as the data controller and processor, along with any professional obligations, such as dealing with expenses. Secondly, it is unlikely that Giraf is allowed to use the current AAU ITS servers for commercial purposes, and/or delegating the responsibilities of GDPR regulation to that department.
 
@@ -121,6 +124,7 @@ The personal information processed in the system is data such as the name of the
 The GDPR  regulation states several essential principles, by which every data controller should ensure their business processes operate. Based on the previous discussion of definitions, the primary responsibilities fall upon the institutions adopting the GIRAF system, but in order for any organisation to be willing to do so, the GIRAF system must be designed and implemented with the regulation in mind, which is therefore the responsibility of the development team.
 
 The principles are summarised to the following list of tasks for the GIRAF project:
+
 * Determine what data is sufficient to fulfill the purpose of the purpose of the GIRAF system, and document both the details of the data, how and when it is collected and for which purpose
 * Determine or define how the correctness of the data is ensured, and document it
 * Define reasonable step to take, to ensure the integrity, confidentiality and security of the personal data, which applies both to organisational and technical levels
@@ -129,6 +133,7 @@ The principles are summarised to the following list of tasks for the GIRAF proje
 ### Legal Processing
 
 For any processing of personal data to be legal, there has to be appropriate lawful purpose to do so. There are a number of lawful purposes for processing personal data, one of which is the use of consent from the data subject, by means of a consent contract for example. The GDPR regulation defines several stipulations, regarding obtaining consent from the data subject, such as requiring high privacy and data protection by default, and any request for data collection to have a specific purpose and be of opt-in nature. Further, any processing of data regarding children, requires consent of the parent or guardian of the child. These requirements should be considered in the tasks regarding the GIRAF project.
+
 * Determine the lawful basis on which personal data is to be processed in the GIRAF system, and based on this, determine the most appropriate means of obtaining such lawful basis, such as seeking to establish a consent contract with the data subject. Should the data subject be a child, it shoul be determined how the consent should be obtained from the parents or guardian.
 
 ### Legal Rights of the Data Subject
