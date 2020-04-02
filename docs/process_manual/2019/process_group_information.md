@@ -167,7 +167,7 @@ It helps to gain an overview of which group to assign for review.
 Every PR needs two groups, who are not the author, as reviewers, as well as an approving review from a PO group member if it contains anything GUI related.
 When groups have been chosen, you should assign a representative from the group as a reviewer on the PR.
 
-We provide a checklist to the reviewers, depending on if the PR is made to a [code repository](review_checklists/review_checklist_code.md) or the [wiki repository](review_checklists/review_checklist_wiki.md).
+We provide a checklist to the reviewers, depending on if the PR is made to a [code repository](../review_checklists/review_checklist_code.md) or the [wiki repository](../review_checklists/review_checklist_wiki.md).
 This is provided as a comment on the PR on GitHub.
 
 ### Gatekeepers of good code practice

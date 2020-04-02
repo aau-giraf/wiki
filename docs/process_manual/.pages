@@ -1,8 +1,5 @@
 arrange:
-    - introduction.md
-    - process_group_information.md
-    - project_meetings.md
-    - changing_the_process.md
-    - how_to.md
+    - "2020"
+    - "2019"
     - ...
     - review_checklists
