@@ -8,7 +8,8 @@ but changed some of the events to fit the GIRAF project better.
 - [Cross-group Standups](#cross-group-standups)
 - [Sprint Release Preparation](#sprint-release-preparation)
 - [Release Party](#release-party)
-- [Sprint Review + Retrospective](#sprint-review--retrospective)
+- [Sprint Review](#sprint-review)
+- [Sprint Retrospective](#sprint-retrospective)
 
 ## Sprint Planning
 
@@ -20,6 +21,7 @@ Before the sprint planning, the PO group has planned a sprint goal for the sprin
 The purpose of the sprint planning is to plan the next sprint by giving all groups a number of issues to start working on.
 
 ### Practice
+
 * All members of the development teams should be present in the same room.
 * The meeting follows the structure presented below
 
@@ -44,23 +46,28 @@ The purpose of the sprint planning is to plan the next sprint by giving all grou
     * Some crossgroups might only be assigned a single issue, which they then have to split into smaller issues and then time estimate.
 
 ##### Planning Poker Rules
+
 * The Fibonacci numbers are used as weights
     * 0, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144 and ∞
 * 5 is equal to a single person's workload for a full day
     * A full day's workload is 8 hours
 * If no cards are available, the participants think of a number and say them one by one
-    * Cards are the most optimal solution
+    * Cards are the most optimal solution.
     * If the participants have to say their estimations aloud, it is benneficial to start with a different person each time.
 * If the participants are not in agreement, the person with the lowest and highest estimation presents their arguments for their estimation. The "game" is then played again.
     * If there are still disagreements, it can be beneficial to have an open discussion.
-* When an estimation has been decided upon, the issue should be assigned as a label to the issue on GitHub.
+* When an estimation has been decided upon, it should be added as a label to the issue on GitHub.
 
 #### Groups Choose Issues
+
 When all crossgroups are done with their estimation, the development teams should meet again and decide which issues they would like to work with.
 
-1. Each development team creates a prioritized list of issues they would like to work with
-    * The list should also include the estimatios found on GitHub
+1. Each development team creates a prioritized list of issues they would like to work with.
+    * The list should also include the estimatios found on GitHub.
+2. The list is sent to the PO group along with the total number of estimated work.
+    * Remember 5 points is equal to one day.
 
+When all development teams have sent their list to the PO group, they will distribute the issues and send the final assigments on Discord.
 
 ## Cross-group Standups
 
