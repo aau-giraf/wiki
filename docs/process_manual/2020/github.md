@@ -1,4 +1,4 @@
-# Use of Github in GIRAF
+# Use of GitHub in GIRAF
 
 As explained in [the process manual of 2019](../2019/changing_the_process.md#github), they changed from GitLab to GitHub.
 
@@ -20,10 +20,23 @@ If you have time to work on a new issue, you can get a new one by following thes
 
 1. Find an issue you want to work on
 2. Ask the PO group if you can work on that issue
-    - The PO group might say no for various reasons.
+    - The PO group might say no for various reasons and they have the final say, as they have a better overview.
     - There is usually a greater chance of getting a yes if the issue you've picked is either _highest_ or _high_ priority.
 
-If you don't have a preferred issue you can ask the PO group to be assigned the most pressing issue, as they have a good overview of the project, they will most likely have some issues that they would love to have you work on.
+If you don't have a preferred issue you can ask the PO group to be assigned the most pressing issue, as they have a good overview of the project and they will most likely have some issues that they would like you to work with.
+
+### Creating an Issue
+
+If you find a bug, or have a task creation request you can create an issue:
+
+1. Go the the "Issues" tab of the relevant repository (E.g. <https://github.com/aau-giraf/weekplanner/issues>)
+2. Press the green "New issue" button
+3. Choose whether to submit a bug report or task creation request, and press "Get started"
+4. Create a title and description for the issue. Please follow the template, and don't delete the headers!
+    * The title for the *Task Creation Request* should tell what functionality you would like added using the shown form "As a developer I would like the docker config file to automatically update so that I don´t have to manullay update the config file". 
+    Instead of the task being for the developer, guardian or user is also frequently used.
+5. Label the issue with appropriate labels
+6. It can be a good idea to inform the PO group when you are done, so they can assign and refine the issue.
 
 ## Branches and Pull Requests
 
@@ -39,9 +52,9 @@ When the [Release Preparation](./giraf_events.md#release-preparation) phase begi
 a release branch is created from the `develop` branch.
 This branch is now used **instead** of `develop` until the sprint is over.
 
-The **naming conventio**n for release branches is `release/YYYYsXrZ` where `YYYY` is replaced by year, `X` with the sprint number and `Z` with the release number.
+The **naming convention** for release branches is `release/YYYYsXrZ` where `YYYY` is replaced by year, `X` with the sprint number and `Z` with the release number.
 
-E.g. `2020s1r1` for 2020, sprint 1, release 1.
+E.g. `release/2020s1r1` for 2020, sprint 1, release 1.
 
 ### Creating a Branch
 
@@ -84,7 +97,15 @@ Or from GitHub using the same procedure as above, **but** with the release branc
 When you have finished your issue, it is time to create a pull request.
 A pull request is a request to merge your branch into another branch.
 
-Creating a pull request on GitHub:
+Before making the pull request, make sure that the code:
+
+  * only relates to a single issue. (One PR per user story)
+  * is fully tested.
+  * is reachable when opening the application.
+
+**Fully tested means that if any piece of the functionality is removed, a test should fail.**
+
+**Creating a pull request on GitHub:**
 
 1. Open the "Pull requests" tab in the repository (e.g. <https://github.com/aau-giraf/weekplanner/pulls>)
 2. Press "New pull request"
@@ -110,8 +131,8 @@ Start at <https://github.com/aau-giraf/>
 3. Choose a open pull request from the list.
 4. Click on the **Files Changed Tab**. All the changes can be seen in these files.
    ![Files changed tab!](./images/files-changed.png "The code you should review is here")
-    1. Make a comment or suggestion on a single line or multiple lines by pressing the blue + icon. 
-    The red circle marks the selection icon which can be used to suggest code that replaces the line(s).
+    1. Make a comment or suggestion on a single line or multiple lines by pressing the blue + icon (move the cursor to a line). 
+    The red square marks the selection icon which can be used to suggest code that replaces the line(s).
       ![Write suggestions!](./images/write-suggestion.png "Try dragging the blue icon across multiple lines")
     You can view what the author will see by clicking **Preview**.
     ![Preview suggestions!](./images/preview_example.PNG "Comment and suggestion")
