@@ -8,7 +8,7 @@ This wiki includes all information about the GIRAF project! It is split into 5 c
   - Information useful to new developers starting development on GIRAF.
 - [Development](./development/index.md)
   - Documents how most of the GIRAF project is implemented and how to use it.
-- [Process Manual](./process_manual/index.md)
+- [Process Manual](./process_manual/2020/index.md)
   - Describe the process used in previous GIRAF projects.
 - [GIRAF Releases](./releases/index.md)
   - A list of GIRAF releases from 2018-current

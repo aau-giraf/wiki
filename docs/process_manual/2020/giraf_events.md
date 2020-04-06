@@ -11,6 +11,15 @@ but changed some of the events to fit the GIRAF project better.
 - [Sprint Review](#sprint-review)
 - [Sprint Retrospective](#sprint-retrospective)
 
+The semester consists of several 3-4 week sprints. 
+
+* Before each sprint we hold the [sprint planning](#sprint-planning).
+* During the sprints, we do 1-2 [cross-group standups](#cross-group-standups) every week.
+* In the last 2-3 days, we do [sprint release preparation](#sprint-release-preparation).
+* At the end of the sprint we hold a [release party](#release-party), followed by [sprint Review](#sprint-review) and [sprint retrospective](#sprint-retrospective) the day after.
+
+Sometimes we hold release party after review and retrospective, to have it on a friday.
+
 ## Sprint Planning
 
 The sprint planning happens before the start of every sprint.
@@ -173,7 +182,7 @@ All developers meets and discuss problems they have experienced while fixing the
     * Noteworthy changes that needs to be mentioned to all the developers.
 * PO presents the status on the product backlog. 
 
-Remember to __ask questions__ to other developers if you are confused or would more information about their solutions!
+Remember to __ask questions__ to other developers if you are confused or would like more information about their solutions!
 
 
 ## Sprint Retrospective

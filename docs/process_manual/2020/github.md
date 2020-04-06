@@ -44,7 +44,7 @@ We follow the [GitFlow Workflow](https://www.atlassian.com/git/tutorials/compari
 
 During the sprints, all development is done in feature branches, branching out from the `develop` branch.
 
-![GitFlow diagram](https://via.placeholder.com/150 "Gitflow diagram")
+![GitFlow diagram](./images/gitflow.png "Gitflow diagram")
 
 The **naming convention** for feature branches is `feature/xx` where `xx` is replaced by the issue number.
 
@@ -128,7 +128,7 @@ Start at <https://github.com/aau-giraf/>
 
 1. Choose repository eg. weekplanner.
 2. Click on the **Pull Request** tab.
-3. Choose a open pull request from the list.
+3. Choose an open pull request from the list.
 4. Click on the **Files Changed Tab**. All the changes can be seen in these files.
    ![Files changed tab!](./images/files-changed.png "The code you should review is here")
     1. Make a comment or suggestion on a single line or multiple lines by pressing the blue + icon (move the cursor to a line). 
