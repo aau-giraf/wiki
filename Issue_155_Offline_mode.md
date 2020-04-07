@@ -2,7 +2,9 @@
 
 **Flutter resources:**    
 https://github.com/tekartik/sqflite/blob/master/sqflite/README.md  
-https://pub.dev/packages/connectivity  
+https://pub.dev/packages/connectivity   
+https://flutter.dev/docs/cookbook/images/cached-images   
+https://pub.dev/packages/cached_network_image
 
 ## Our solution suggestion
 We propose what is called an offline first approach because if Giraf wants to be a widely used app on different app markets, it is expected to be highly functional without internet connection. Offline first also consumes less battery and data - where especially long battery time is important for institutions and families going on trips.
@@ -15,7 +17,7 @@ Whenever the UI needs data it first communicates with the bloc, where the bloc t
 
 The only thing missing the current implementation is for the local database to be implemented with appropriate model adapters. This setup would allow you to read from the local database when offline, however in order to edit, delete or put you would need to store a record of these actions such that you can execute them when online again. To check whether the client is currently in an offline or online state and listen for changes between those states the connectivity package can be used. The local database could be implemented either as part of the week planner app or the api client. For the database we propose the SQFLite flutter package, since it is the most suggested. 
 
-For Giraf it might makes sense to limit the local database to a single user. For the pictograms you would also have to figure out some system where only the most used ones are saved.
+For Giraf it might makes sense to limit the local database to a single user. For the pictograms you would also have to figure out some system where only the most used ones are saved. For these pictograms it is possible to use Flutter's ImageCache, which would allow images to be accessed offline. at the moment a selfmade cache is used to store the images. The implementation of this cache be found [here](https://github.com/aau-giraf/weekplanner/blob/604f6f8973821f65a07a51efd5dec309788f3585/lib/blocs/pictogram_image_bloc.dart). It could be an option to make it userdefined how much storage the cache is allowed to use on a device, but if only the most used pictograms are saved, then this should not be a problem. 
 
 ### Issues / considerations
 Before even starting to implement the features on the prioritized list, it is needed to be able to login on an offline device.   
