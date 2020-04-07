@@ -3,8 +3,8 @@
 # Site settings
 site_name: GIRAF Wiki
 site_author: '@aau-giraf'
-repo_name: 'aau-giraf/wiki'
-repo_url: 'https://github.com/aau-giraf/wiki'
+repo_name: 'aau-giraf'
+repo_url: 'https://github.com/aau-giraf'
 edit_uri: "" # Is empty to remove 'edit' buttons on pages
 
 extra_css: 

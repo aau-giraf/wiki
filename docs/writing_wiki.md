@@ -47,7 +47,7 @@ Step 1 to 3 only has to be done the first time, unless new plugins have been add
 │   └── workflows
 │       └── page-build.yml      # GH Actions configuration
 ├── docs                        # Contains all wiki files
-│   └── extra                   # Contains extra css as well as the logo
+│   └── extra                   # Contains extra css as well as the logo. NO Markdown files here!
 ├── mkdocs.yml                  # MkDocs configuration file
 └── requirements.txt            # Contains python dependencies
 ```
