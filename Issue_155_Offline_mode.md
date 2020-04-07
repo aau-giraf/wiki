@@ -17,7 +17,7 @@ Whenever the UI needs data it first communicates with the bloc, where the bloc t
 
 The only thing missing the current implementation is for the local database to be implemented with appropriate model adapters. This setup would allow you to read from the local database when offline, however in order to edit, delete or put you would need to store a record of these actions such that you can execute them when online again. To check whether the client is currently in an offline or online state and listen for changes between those states the connectivity package can be used. The local database could be implemented either as part of the week planner app or the api client. For the database we propose the SQFLite flutter package, since it is the most suggested. 
 
-For Giraf it might makes sense to limit the local database to a single user. For the pictograms you would also have to figure out some system where only the most used ones are saved. For these pictograms it is possible to use Flutter's ImageCache, which would allow images to be accessed offline. at the moment a selfmade cache is used to store the images. The implementation of this cache be found [here](https://github.com/aau-giraf/weekplanner/blob/604f6f8973821f65a07a51efd5dec309788f3585/lib/blocs/pictogram_image_bloc.dart). It could be an option to make it userdefined how much storage the cache is allowed to use on a device, but if only the most used pictograms are saved, then this should not be a problem. 
+For Giraf it might makes sense to limit the local database to a single user. For the pictograms you would also have to figure out some system where only the most used ones are saved. For these pictograms it is possible to use Flutter's ImageCache, which would allow images to be accessed offline. At the moment a selfmade cache is used to store the images. The implementation of this cache can be found [here](https://github.com/aau-giraf/weekplanner/blob/604f6f8973821f65a07a51efd5dec309788f3585/lib/blocs/pictogram_image_bloc.dart). It could be an option to make it userdefined how much storage the cache is allowed to use on a device, but if only the most used pictograms are saved, then this should not be a problem. 
 
 ### Issues / considerations
 Before even starting to implement the features on the prioritized list, it is needed to be able to login on an offline device.   
@@ -46,6 +46,15 @@ To store the data (activities, timers) locally on the device the SQLite DB can b
 **Syncing the local database to match the online database:**  
 A consideration could be if some data is more important to sync than other and then make different sync cycles or prioritization, in case the user only has connection for a short period of time. It could also be considered if all data needs to be updated all the time or some data just need daily, weekly or monthly updates. Features that are seen as not important could also be disabled in offline mode in order to make the amount of offline data as small as possible and keep the complexity of the synchronization down (at least in the beginning).
 
+Cache invalidation scenario:   
+1. Citizen 1 logs in on their device and downloads their weekplans from the server.
+2. Guardian logs in on another device and changes Citizen 1's weekplan for a week.
+3. Citizen 1 looks at this weekplan on their device, but this is not the updated version since there is a version in the cache.
+
+Possible solutions is to e.g. use a timestamp to check if there is changes in the online version. This timestamp would be downloaded and checked whenever a weekplan is opened on a device with an internet connection. Then this timestamp is compared with the local version.   
+Another solution would be to automatically check for changes every e.g. 30 seconds to avoid having to reopen weekplans to update them. A guardian could also have a "Refresh" button for the citizens, that would download the new changes.    
+Time stamps could also solve the update conflicts since it is possible to compare to versions and save the newest. 
+
 **Editing weekplans**  
 In order to edit the weekplan offline the amount of pictograms have to be limited since all pictograms cannot be stored locally on the phone. An implementation could be saving xx recently/most used pictograms for each citizen.
 Take picture as pictogram would have to be limited to a certain amount just like the amount of available pictograms when editing weekplans offline - because it would take too much space on the device if they took 1000 pictures.  
@@ -54,4 +63,4 @@ Take picture as pictogram would have to be limited to a certain amount just like
 The main problem is deciding what changes should be saved and what changes should be discarded.
 Solutions: First write wins, last write wins, not allow the same account offline on multiple devices or other solutions. Evt. discuss with the customer what would fit the Giraf best?  
   
-To accommodate this there might need to add more attributes in the offline and online databases in order to deal with and keep track of the synchronization. Examples could be “last_updated_on”, “created_on”, “deleted_on”, “edited_offline” which are timestamps used to see if data should be synched or not and the “edited_offline” could be a boolean. 
+To accommodate this there might need to add more attributes in the offline and online databases in order to deal with and keep track of the synchronization. Examples could be “last_updated_on”, “created_on”, “deleted_on”, “edited_offline” which are timestamps used to see if data should be synched or not and the “edited_offline” could be a boolean. It is also an option to use UUID with/instead of timestamps to make the synchronization have an unique id. 
