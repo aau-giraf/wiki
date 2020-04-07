@@ -8,4 +8,4 @@ It contains:
 * [Git and Github](github.md): How to use GitHub correctly for GIRAF.
 
 We have tried to keep it as concise as possible.
-All the sections are relevant for everyone involved in the project, as every individual should be aware of hte processes.
+All the sections are relevant for everyone involved in the project, as every individual should be aware of the processes.
