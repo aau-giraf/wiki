@@ -1,4 +1,4 @@
-#How to Implement Offline Capabilities
+# How to Implement Offline Capabilities
 
 **Flutter resources:**    
 https://github.com/tekartik/sqflite/blob/master/sqflite/README.md  
