@@ -69,6 +69,8 @@ Take picture as pictogram would have to be limited to a certain amount just like
   
 **A MAJOR issue is if offline changes for the same e.g. activity is made on two different devices - which of the changes should be saved in the online database, when they both come online.**  
 The main problem is deciding what changes should be saved and what changes should be discarded.
-Solutions: First write wins, last write wins, not allow the same account offline on multiple devices or other solutions. Evt. discuss with the customer what would fit the Giraf best?  
-  
+
+<ins>Solution: PO-group has talked to the customer and they want "last write wins".</ins>  
+
+   
 To accommodate this there might need to add more attributes in the offline and online databases in order to deal with and keep track of the synchronization. Examples could be “last_updated_on”, “created_on”, “deleted_on”, “edited_offline” which are timestamps used to see if data should be synched or not and the “edited_offline” could be a boolean. It is also an option to use UUID with/instead of timestamps to make the synchronization have an unique id. 
