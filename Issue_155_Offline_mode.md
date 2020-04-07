@@ -46,7 +46,7 @@ To store the data (activities, timers) locally on the device the SQLite DB can b
 **Syncing the local database to match the online database:**  
 A consideration could be if some data is more important to sync than other and then make different sync cycles or prioritization, in case the user only has connection for a short period of time. It could also be considered if all data needs to be updated all the time or some data just need daily, weekly or monthly updates. Features that are seen as not important could also be disabled in offline mode in order to make the amount of offline data as small as possible and keep the complexity of the synchronization down (at least in the beginning).
 
-__Cache invalidation scenario:__   
+*Cache invalidation scenario:*   
 1. Citizen 1 logs in on their device and downloads their weekplans from the server.
 2. Guardian logs in on another device and changes Citizen 1's weekplan for a week.
 3. Citizen 1 looks at this weekplan on their device, but this is not the updated version since there is a version in the cache.
@@ -55,7 +55,7 @@ Possible solutions is to e.g. use a timestamp to check if there is changes in th
 Another solution would be to automatically check for changes every e.g. 30 seconds to avoid having to reopen weekplans to update them. A guardian could also have a "Refresh" button for the citizens, that would download the new changes.    
 Time stamps could also solve the update conflicts since it is possible to compare to versions and save the newest.   
    
-__Synchronizing offline changes scenario:__
+*Synchronizing offline changes scenario:*
 1. Citizens table is offline.   
 2. Guardians logs in and changes the citizens settings.
 3. The citizen logs in and can see the local updates.
