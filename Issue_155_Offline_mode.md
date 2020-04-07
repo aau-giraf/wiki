@@ -46,14 +46,22 @@ To store the data (activities, timers) locally on the device the SQLite DB can b
 **Syncing the local database to match the online database:**  
 A consideration could be if some data is more important to sync than other and then make different sync cycles or prioritization, in case the user only has connection for a short period of time. It could also be considered if all data needs to be updated all the time or some data just need daily, weekly or monthly updates. Features that are seen as not important could also be disabled in offline mode in order to make the amount of offline data as small as possible and keep the complexity of the synchronization down (at least in the beginning).
 
-Cache invalidation scenario:   
+__Cache invalidation scenario:__   
 1. Citizen 1 logs in on their device and downloads their weekplans from the server.
 2. Guardian logs in on another device and changes Citizen 1's weekplan for a week.
 3. Citizen 1 looks at this weekplan on their device, but this is not the updated version since there is a version in the cache.
 
 Possible solutions is to e.g. use a timestamp to check if there is changes in the online version. This timestamp would be downloaded and checked whenever a weekplan is opened on a device with an internet connection. Then this timestamp is compared with the local version.   
 Another solution would be to automatically check for changes every e.g. 30 seconds to avoid having to reopen weekplans to update them. A guardian could also have a "Refresh" button for the citizens, that would download the new changes.    
-Time stamps could also solve the update conflicts since it is possible to compare to versions and save the newest. 
+Time stamps could also solve the update conflicts since it is possible to compare to versions and save the newest.   
+   
+__Synchronizing offline changes scenario:__
+1. Citizens table is offline.   
+2. Guardians logs in and changes the citizens settings.
+3. The citizen logs in and can see the local updates.
+4. The citizens device gets internet connection and now the changes has to be synced with the database. But now the guardian is not logged in anymore and the citizen do not have the permission to update their changes through the web-api.
+   
+Possible solution would be to give a citizen more permissions in the wep-api to make changes
 
 **Editing weekplans**  
 In order to edit the weekplan offline the amount of pictograms have to be limited since all pictograms cannot be stored locally on the phone. An implementation could be saving xx recently/most used pictograms for each citizen.
