@@ -9,7 +9,7 @@ https://pub.dev/packages/cached_network_image
 ## Our solution suggestion
 We propose what is called an offline first approach because if Giraf wants to be a widely used app on different app markets, it is expected to be highly functional without internet connection. Offline first also consumes less battery and data - where especially long battery time is important for institutions and families going on trips.
 
-![image](https://cdn.discordapp.com/attachments/674940529124966402/697354984668397608/unknown.png)
+![image](https://cdn.discordapp.com/attachments/674940529124966402/697357885830594580/unknown.png)
 
 This model describes how offline first can be done with the bloc pattern. 
 
