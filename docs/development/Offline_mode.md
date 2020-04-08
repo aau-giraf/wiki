@@ -62,7 +62,8 @@ Time stamps could also solve the update conflicts since it is possible to compar
 4. The citizen's device gets internet connection and now the changes has to be synced with the database. But the guardian is not logged in anymore and the citizen does not have permission to update their changes through the web-api.
 
    
-Possible solution would be to give a citizen more permissions in the wep-api to make changes
+A possible solution would be to give a citizen permissions in the wep-api to make changes.
+
 
 **Editing weekplans**  
 In order to edit the weekplan offline the amount of pictograms have to be limited since all pictograms cannot be stored locally on the phone. An implementation could be saving xx recently/most used pictograms for each citizen.
