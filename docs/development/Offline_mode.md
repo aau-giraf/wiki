@@ -56,7 +56,7 @@ Another solution would be to automatically check for changes every e.g. 30 secon
 Time stamps could also solve the update conflicts since it is possible to compare to versions and save the newest.   
    
 *Synchronizing offline changes scenario:*
-1. Citizens table is offline.   
+1. Citizen's tablet is offline.   
 2. Guardians logs in and changes the citizens settings.
 3. The citizen logs in and can see the local updates.
 4. The citizens device gets internet connection and now the changes has to be synced with the database. But now the guardian is not logged in anymore and the citizen do not have the permission to update their changes through the web-api.
