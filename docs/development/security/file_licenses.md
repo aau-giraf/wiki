@@ -4,8 +4,11 @@
 All licenses for pictograms should be here... 
 
 ## Sound Licenses
-License for the DingSound.mp3 used for the timer in the Weekplanner-application: [Soundsnap License](https://www.soundsnap.com/licence)
+DingSound.mp3 file used for the timer in the Weekplanner-application: <br>
+- Download from [Soundsnap](https://www.soundsnap.com/8bit_status_point_39_wav) <br>
+- License available at [Soundsnap License](https://www.soundsnap.com/licence) <br>
 
 ## Other Licenses
-License for the Quicksand-font used in the Weekplanner-application: 
-[SIL Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
+Quicksand-font used in the Weekplanner-application: <br>
+- Download from [Google Fonts](https://fonts.google.com/specimen/Quicksand) <br>
+- License available at [SIL Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL) <br>
