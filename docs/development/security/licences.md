@@ -1,4 +1,4 @@
-# File Licenses
+# Licenses
 
 ## Pictogram Licenses
 All licenses for pictograms should be here... 
