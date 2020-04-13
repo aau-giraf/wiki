@@ -5,6 +5,7 @@ If a new icon is added, it should be added to this table.
 | **Name**           | **Icon**                                                                 | **Description**                                                    |
 |--------------------|--------------------------------------------------------------------------|--------------------------------------------------------------------|
 | Add                | ![add](./images/Icons%20GIRAF/35x35px/add.png)                           | Adds a new instance of an object                                   |
+| AddFolder          | ![addFolder](./images/Icons%20GIRAF/35x35px/addFolder.png)               | Create a new folder                                                |
 | AddTimer           | ![addTimer](./images/Icons%20GIRAF/35x35px/addTimer.png)                 | Adds a new timer to object                                         |
 | Back               | ![Back](./images/Icons%20GIRAF/35x35px/back.png)                         | Returns the user to the previous page                              |
 | BurgerMenu         | ![burgerMenu](./images/Icons%20GIRAF/35x35px/burgermenu.png)             | Opens the side menu                                                |
@@ -16,6 +17,7 @@ If a new icon is added, it should be added to this table.
 | Copy               | ![copy](./images/Icons%20GIRAF/35x35px/copy.png)                         | Indicates that an instance of some object can be copied            |
 | Delete             | ![delete](./images/Icons%20GIRAF/35x35px/delete.png)                     | Deletes selected instances of an object                            |
 | Edit               | ![edit](./images/Icons%20GIRAF/35x35px/edit.png)                         | Edits the given object                                             |
+| Folder             | ![folder](./images/Icons%20GIRAF/35x35px/folder.png)                     | Used for categorizing citizens                                     |
 | Gallery            | ![gallery](./images/Icons%20GIRAF/35x35px/gallery.png)                   | Opens the gallery of device                                        |
 | Help               | ![help](./images/Icons%20GIRAF/35x35px/help.png)                         | Opens a help menu                                                  |
 | Home               | ![home](./images/Icons%20GIRAF/35x35px/home.png)                         | Returns user to the overview of the weekplan                       |
@@ -34,4 +36,3 @@ If a new icon is added, it should be added to this table.
 | Pause              | ![pause](./images/Icons%20GIRAF/35x35px/pause.png)                       | Pauses the timer                                                   |
 | Synced             | TBD                                                                      | Indicates that the current object is syncronized                   |
 | Undo               | ![undo](./images/Icons%20GIRAF/35x35px/undo.png)                         | Reverts latest action                                              |
-| Folder             | ![folder](./images/Icons%20GIRAF/35x35px/folder.png)                     | Used for categorizing citizens                                     |
