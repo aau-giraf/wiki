@@ -1,7 +1,10 @@
 # Licenses
+In this section of the Wiki you will find the licenses used to build the applications in the GIRAF platform. 
 
 ## Pictogram Licenses
-All licenses for pictograms should be here... 
+All pictograms used within the Weekplanner application are from the ARAASAC symbol collection. This collection has been translated to Danish by the communication centre at Hilleroed Kommune. <br>
+- Download from [Picto Selector](https://www.kc-hil.dk/viden-og-udvikling-mega/paedagogisk-materiale/picto-selector) <br>
+- License available at [Creative Common's License](https://creativecommons.org/licenses/?lang=da) <br>
 
 ## Sound Licenses
 DingSound.mp3 file used for the timer in the Weekplanner-application: <br>
