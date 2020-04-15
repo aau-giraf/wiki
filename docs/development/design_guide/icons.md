@@ -5,6 +5,7 @@ If a new icon is added, it should be added to this table.
 | **Name**           | **Icon**                                                                 | **Description**                                                    |
 |--------------------|--------------------------------------------------------------------------|--------------------------------------------------------------------|
 | Add                | ![add](./images/Icons%20GIRAF/35x35px/add.png)                           | Adds a new instance of an object                                   |
+| AddFolder          | ![addFolder](./images/Icons%20GIRAF/35x35px/addFolder.png)               | Creates a new Folder                                                  |
 | AddTimer           | ![addTimer](./images/Icons%20GIRAF/35x35px/addTimer.png)                 | Adds a new timer to object                                         |
 | Back               | ![Back](./images/Icons%20GIRAF/35x35px/back.png)                         | Returns the user to the previous page                              |
 | BurgerMenu         | ![burgerMenu](./images/Icons%20GIRAF/35x35px/burgermenu.png)             | Opens the side menu                                                |
@@ -17,6 +18,7 @@ If a new icon is added, it should be added to this table.
 | Delete             | ![delete](./images/Icons%20GIRAF/35x35px/delete.png)                     | Deletes selected instances of an object                            |
 | Edit               | ![edit](./images/Icons%20GIRAF/35x35px/edit.png)                         | Edits the given object                                             |
 | FallbackImage      | ![fallbackImage](./images/Icons%20GIRAF/35x35px/fallbackImage.png)       | Shows that a image was not loaded correctly                        |
+| Folder             | ![folder](./images/Icons%20GIRAF/35x35px/folder.png)                     | Folder for categorizing (e.g. citizens)                            |
 | Gallery            | ![gallery](./images/Icons%20GIRAF/35x35px/gallery.png)                   | Opens the gallery of device                                        |
 | Help               | ![help](./images/Icons%20GIRAF/35x35px/help.png)                         | Opens a help menu                                                  |
 | Home               | ![home](./images/Icons%20GIRAF/35x35px/home.png)                         | Returns user to the overview of the weekplan                       |
@@ -36,4 +38,3 @@ If a new icon is added, it should be added to this table.
 | Synced             | TBD                                                                      | Indicates that the current object is syncronized                   |
 | Undo               | ![undo](./images/Icons%20GIRAF/35x35px/undo.png)                         | Reverts latest action                                              |
 | AddCitizen         | ![AddCitizen](./images/Icons%20GIRAF/35x35px/addCitizen.png)             | Adds a new instance of a citizen                                   |
-
