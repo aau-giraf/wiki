@@ -13,8 +13,8 @@ DingSound.mp3 file used for the timer in the Weekplanner-application: <br>
 
 ## Icon Licenses 
 FallBackImage icon used in the Weekplanner-application (available in the Wiki-repository under GIRAF-icons): <br>
-- Download from [Font Awesome](https://fontawesome.com/icons/image?style=regular) <br>
-- License available at [Font Awesome Free License](https://fontawesome.com/license/free) <br>
+- Download from [Font Awesome](https://fontawesome.com/icons/image?style=regular) (accessed at 20/04/2020) <br>
+- License available at [Font Awesome Free License](https://fontawesome.com/license/free) (accessed at 20/04/2020) <br>
 
 Folder icon (folder.svg) and AddFolder icon (addFolder.svg): <br>
 - Developed by a development group in 2020S1 <br>
@@ -22,8 +22,8 @@ Folder icon (folder.svg) and AddFolder icon (addFolder.svg): <br>
 
 According to the report "Product Owner of Giraf" written by group SW610F19 in the GIRAF 2019 project all icons are from Font Awesome with exception of the icons changeToCitizen and changeToGuardian which are developed by themselves. <br>
 - See p. 36 l. 1 in the report <br>
-- Download from [Font Awesome](https://fontawesome.com) by searching the icons file-name with the exceptions of gallery.png (search for "images"), cancel.png ("close") and addUser ("user") <br>
-- License available at [Font Awesome Free License](https://fontawesome.com/license/free) <br>
+- Download from [Font Awesome](https://fontawesome.com) by searching the icons file-name with the exceptions of gallery.png (search for "images"), cancel.png ("close") and addUser ("user") (accessed at 20/04/2020) <br>
+- License available at [Font Awesome Free License](https://fontawesome.com/license/free) (accessed at 17/04/2020) <br>
 
 ## Other Licenses
 Quicksand-font used in the Weekplanner-application: <br>
