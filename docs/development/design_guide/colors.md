@@ -13,7 +13,7 @@ Throughout this a single color in each entry will denote a solid color, while tw
 | Showcase help text-color |`255,255,255` |  `#FFFFFF` |![#FFFFFF](https://placehold.it/15/FFFFFF/000000?text=+)|
 
 ## Buttons
-Gradients deﬁned below are from top to bottom. Also note that the colors for the disabled button must be slightly transparent (65%).
+Gradients deﬁned below are from top to bottom. Also note that the colors for the disabled button must be transparent (40%).
 
 |Usage|RGB|HEX|Color|
 |---|---|---|---|

@@ -32,7 +32,7 @@ The buttons used for it should comply with the design guides for buttons.
 ## Customized dialog
 
 Some uses of dialogs might be more specialized than the already existing ones. If one wants to add input fields or a custom view
-one should use the dialog shown here. This example shows theusecase when a user needs to edit a category.
+one should use the dialog shown here. This example shows the usecase when a user needs to edit a category.
 
 ![CustomDialog](./images/CustomDialog.png "CustomDialog")
 
