@@ -1,7 +1,7 @@
 # Processing Activity Record Information
 
 ## Overview
-As per the General Data Protection Regulation (GDPR) [Article 30](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e3265-1-1), it is required of a data processor to maintain a record of processing activities, which should be available for the national supervisory authority, Datatilsynet in Denmark, upon request. The purpose of this document is therefore to give an overview of the contents of the record, along with the requirements of maintaining it. The actual record is linked at the bottom (TODO: Is this the correct way to do this??), and it is based on the example of a processing activity record provided by the supervisory authority Datatilsynet.
+As per the General Data Protection Regulation (GDPR) [Article 30](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e3265-1-1), it is required of a data processor to maintain a record of processing activities, which should be available for the national supervisory authority, Datatilsynet in Denmark, upon request. The purpose of this document is therefore to give an overview of the contents of the record, along with the requirements of maintaining it. The actual record is linked at the bottom, and it is based on the example of a processing activity record provided by the supervisory authority Datatilsynet.
 
 ## Requirements and maintainence
 There are several requirements by which such a record should comply, primarily including that the record should contain the following information.
