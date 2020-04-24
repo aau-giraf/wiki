@@ -16,7 +16,5 @@ Purpose of processing
 
 Further, it is required that this record is continuously updated to reflect current state of both the project, such as the system, and the entities responsible for it, such as the data controller and processer. Examples of when it would be appropriate to update the record, would be if either the processing activities changed, which could be due to an update to the system to add functionality, or if the parties detailed in the record has changed, which could be due to possible organisational changes or the acquirement of 3rd party assistance that might grant access to the described personal information, e.g. cloud provider tools, logging tools or technical support tools.
 
-TODO:
-
 ## The processing activity record
 The record itself is provided in a seperate [document](./processing_activity_record.md).
