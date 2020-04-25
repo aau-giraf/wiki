@@ -1,4 +1,4 @@
-# Samtykkeerklæring 
+# Samtykkeerklæring
 
 Anmodning om samtykke til indsamling af almindelig personlig information. Hvis data subjektet er under 18 år, er det vigtigt at samtykkeerklæring indhentes fra den pågældendes værge.
 
