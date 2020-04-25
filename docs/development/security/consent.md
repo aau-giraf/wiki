@@ -22,7 +22,7 @@ Vi behandler dine personoplysninger til følgende formål:
 
 * Legitime interesser, der forfølges med behandlingen.
 
-Som nævnt ovenfor sker vores behandling af dine personoplysninger ((delvist)) på baggrund af interesseafvejningsreglen i databeskyttelsesforordningens artikel 6, stk. 1, litra f. De legitime interesser, der begrunder behandlingen, er at hjælpe autistiske børn med at kommunikere og skabe struktur i hverdagen gennem et kommunikationsværktøj.
+Som nævnt ovenfor sker vores behandling af dine personoplysninger på baggrund af interesseafvejningsreglen i databeskyttelsesforordningens artikel 6, stk. 1, litra f. De legitime interesser, der begrunder behandlingen, er at hjælpe autistiske børn med at kommunikere og skabe struktur i hverdagen gennem et kommunikationsværktøj.
 
 ## 3. Kategorier af personoplysninger
 
@@ -64,6 +64,6 @@ Du har efter databeskyttelsesforordningen en række rettigheder i forhold til vo
 
 Du kan læse mere om dine rettigheder i Datatilsynets vejledning om de registreredes rettigheder, som du finder på [www.datatilsynet.dk](www.datatilsynet.dk).
 
-## 8. Klage til Datatilsynet ((hvis Domstolsstyrelsen er rette klagemyndighed, skal du tilrette afsnit 12))
+## 8. Klage til Datatilsynet
 
 Du har ret til at indgive en klage til Datatilsynet, hvis du er utilfreds med den måde, vi behandler dine personoplysninger på. Du finder Datatilsynets kontaktoplysninger på [www.datatilsynet.dk](www.datatilsynet.dk).
