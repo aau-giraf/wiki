@@ -7,6 +7,7 @@ Oplysninger om vores behandling af dine personoplysninger mv.
 ## 1. Vi er den dataansvarlige – hvordan kontakter du os?
 
 Girafs Venner er dataansvarlig for behandlingen af de personoplysninger, som vi har modtaget om dig. Du finder vores kontaktoplysninger nedenfor.
+
 * Navn: Girafs Venner
 * Adresse: Selma Lagerløfs vej 300, 9220 Aalborg Øst
 * CVR-nr.: 40519025
@@ -27,6 +28,7 @@ Som nævnt ovenfor sker vores behandling af dine personoplysninger ((delvist)) p
 
 Vi behandler følgende kategorier af personoplysninger om dig: 
 Identifikationsoplysninger:
+
 * Almindelige personoplysninger
 
 ## 4. Hvor dine personoplysninger stammer fra
