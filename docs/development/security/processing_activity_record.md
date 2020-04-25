@@ -7,11 +7,11 @@
 |  | **The data controller's representationand his contact info(address, website, phone-number and email)** (Public authorities are not covered by Article 27 PCS. 2 (b) |  |
 |  | **Authority / corporate data protection consultantas well as his/her contact information** (address, website, phone-number and email) | Not assigned. |
 | **Purpose(s)** | **Treatment or treatment purpose**(a unified, logical consistent purpose of the treatment or a variety of treatments actions, indicated herein as one purpose out of all combined purpose of the data controller) | The purpose of the treatment of personal information, is solely to provide a communication tool for the autistic children and the guardians of an institution. The processing of information is related to being able to personalize the interaction with the system for the individual child, by means of having a system user. |
-| **The categories of registrants and the categories of personal data** | **Category of registrants people** (e.g. citizen / customers, party representatives current or former employees, other companies companies, other authorities etc. | Citizens: the children with autism enrolled in an institution. <br> Guardians: the guardians at the institution, such as caretaker or teacher. <br> Department: a department user <br> SuperUser: an administrator ensuring maintenance of the system |
+| **The categories of registrants and the categories of personal data** | **Category of registrants people** (e.g. citizen / customers, party representatives current or former employees, other companies companies, other authorities etc. | Citizens: the children with autism enrolled in an institution. <br> Guardians: the guardians at the institution, such as caretaker or teacher. <br> Department: is the role of a manager, administrating guardians in a department. <br> SuperUser: an administrator ensuring maintenance of the system. |
 |  | **Information that is being processed about the registered persons** (check and describe the types of clearances covered by action activities) | Information included in the specific treatment. Describe: |
 |  |  | &#9745; **Identifying information** |
 |  |  | &#9744; Information concerning the employment relationship to need administration, including position and service nesting place, pay ratio, information of relevance for payroll deduction, staff papers, educational illness and absenteeism. |
-|  |  |  &#9744; Race or ethnic origin |
+|  |  | &#9744; Race or ethnic origin |
 |  |  | &#9744; Political, religious or philosophical conviction |
 |  |  | &#9744; Trade unionism affiliation |
 |  |  | &#9744; Health information including genetic data |
