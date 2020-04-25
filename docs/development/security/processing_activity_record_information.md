@@ -7,7 +7,7 @@ As per the General Data Protection Regulation (GDPR) [Article 30](https://eur-le
 There are several requirements by which such a record should comply, primarily including that the record should contain the following information.
 
 * Name and contact information about the data responsible, and a representative and data protection consultant if relevant. 
-Purpose of processing
+* Purpose of processing
 * A description of categories of registered and categories of personal information
 * The categories of recipients to whom the information is or will be disclosed, including recipients in third countries and international organizations
 * Where applicable information on transfers to third countries or international organization(s) and documentation of appropriate guarantees when transfers are made on the basis of Article 49 (2) of the Regulation 1, second paragraph
