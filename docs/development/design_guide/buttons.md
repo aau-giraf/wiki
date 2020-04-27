@@ -5,7 +5,7 @@ This section describes the design guides for using buttons in GIRAF.
 A button should have three states: default, pressed and disabled. 
 The background of a default button should have a yellow/orange (see color guide) gradient background with a darker border.
 When a button is pressed, the background should become darker alongside an even darker border.
-The background and the border should be identical to the default button when a button is disabled, however this button should have an opacity of 65%.
+The background and the border should be identical to the default button when a button is disabled, however this button should have an opacity of 40%.
 
 | ![ButtonDefault](./images/ButtonDefault.png) | ![ButtonPressed](./images/ButtonPressed.png "ButtonPressed") | ![ButtonDisabled](./images/ButtonDisabled.png "ButtonDisabled") |
 |:--:| :--: | :--: |
