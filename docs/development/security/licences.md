@@ -18,7 +18,7 @@ FallBackImage icon used in the Weekplanner-application (available in the Wiki-re
 
 Folder icon (folder.svg) and AddFolder icon (addFolder.svg): <br>
 - Developed by a development group in 2020S1 <br>
-- Released under GPLv3 <br>
+- Released under Public Domain <br>
 
 According to the report "Product Owner of Giraf" written by group SW610F19 in the GIRAF 2019 project all icons are from Font Awesome with exception of the icons changeToCitizen and changeToGuardian which are developed by themselves. <br>
 - See p. 36 l. 1 in the report <br>
