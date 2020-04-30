@@ -83,11 +83,11 @@ Or from GitHub:
 
 #### During Release Preparation
 
-When you start working on a release fix, you create a branch from `release/*` called `releaseFix/xx` where `xx` is the issue number.
+When you start working on a release fix, you create a branch from `release/*` called `releasefix/xx` where `xx` is the issue number.
 
 ```bash
 git checkout release/*
-git checkout -b releaseFix/xx
+git checkout -b releasefix/xx
 ```
 
 Or from GitHub using the same procedure as above, **but** with the release branch as base instead, and with the release fix naming convention.
