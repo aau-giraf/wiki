@@ -7,9 +7,9 @@ All pictograms used within the Weekplanner application are from the ARAASAC symb
 - License available at [Creative Common's License](https://creativecommons.org/licenses/?lang=da) (accessed at 17/04/2020) <br>
 
 ## Sound Licenses
-DingSound.mp3 file used for the timer in the Weekplanner-application: <br>
-- Download from [Soundsnap](https://www.soundsnap.com/8bit_status_point_39_wav) (accessed at 17/04/2020) <br>
-- License available at [Soundsnap License](https://www.soundsnap.com/licence) (accessed at 17/04/2020) <br>
+dingSound.wav file used for the timer in the Weekplanner-application: <br>
+- Download from [MediaFire](https://www.mediafire.com/file/ajhp232aey6uesf/Ding_-_Sound_Effects_YouTube.wav/file) (accessed at 30/04/2020) <br>
+- License available at [MediaFire License](https://www.mediafire.com/policies/terms_of_service.php) (accessed at 30/04/2020) <br>
 
 ## Icon Licenses 
 FallBackImage icon used in the Weekplanner-application (available in the Wiki-repository under GIRAF-icons): <br>
