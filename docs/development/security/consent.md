@@ -26,7 +26,7 @@ Som nævnt ovenfor sker vores behandling af dine personoplysninger på baggrund 
 
 ## 3. Kategorier af personoplysninger
 
-Vi behandler følgende kategorier af personoplysninger om dig:
+Vi behandler følgende kategorier af personoplysninger om dig: <br>
 Identifikationsoplysninger:
 
 * Almindelige personoplysninger
