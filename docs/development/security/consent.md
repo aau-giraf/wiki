@@ -26,7 +26,7 @@ Som nævnt ovenfor sker vores behandling af dine personoplysninger på baggrund 
 
 ## 3. Kategorier af personoplysninger
 
-Vi behandler følgende kategorier af personoplysninger om dig: 
+Vi behandler følgende kategorier af personoplysninger om dig: <br>
 Identifikationsoplysninger:
 
 * Almindelige personoplysninger
@@ -62,8 +62,8 @@ Du har efter databeskyttelsesforordningen en række rettigheder i forhold til vo
 
 * Ret til at transmittere oplysninger (dataportabilitet). Du har i visse tilfælde ret til at modtage dine personoplysninger i et struktureret, almindeligt anvendt og maskinlæsbart format samt at få overført disse personoplysninger fra én dataansvarlig til en anden uden hindring.
 
-Du kan læse mere om dine rettigheder i Datatilsynets vejledning om de registreredes rettigheder, som du finder på [www.datatilsynet.dk](www.datatilsynet.dk).
+Du kan læse mere om dine rettigheder i Datatilsynets vejledning om de registreredes rettigheder, som du finder på [www.datatilsynet.dk](https://www.datatilsynet.dk).
 
 ## 8. Klage til Datatilsynet
 
-Du har ret til at indgive en klage til Datatilsynet, hvis du er utilfreds med den måde, vi behandler dine personoplysninger på. Du finder Datatilsynets kontaktoplysninger på [www.datatilsynet.dk](www.datatilsynet.dk).
+Du har ret til at indgive en klage til Datatilsynet, hvis du er utilfreds med den måde, vi behandler dine personoplysninger på. Du finder Datatilsynets kontaktoplysninger på [www.datatilsynet.dk](https://www.datatilsynet.dk).
