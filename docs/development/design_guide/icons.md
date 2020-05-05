@@ -22,6 +22,7 @@ If a new icon is added, it should be added to this table.
 | Gallery            | ![gallery](./images/Icons%20GIRAF/35x35px/gallery.png)                   | Opens the gallery of device                                        |
 | Help               | ![help](./images/Icons%20GIRAF/35x35px/help.png)                         | Opens a help menu                                                  |
 | Home               | ![home](./images/Icons%20GIRAF/35x35px/home.png)                         | Returns user to the overview of the weekplan                       |
+| Information        | ![information](./images/Icons%20GIRAF/35x35px/information.png)           | Opens a screen with information like the users legal rights                                                  |
 | Log in             | TBD                                                                      | Logs in the given user, if credentials are correct                 |
 | Log out            | ![LogOut](./images/Icons%20GIRAF/35x35px/logout.png)                     | Signs out the current user and sign into another account           |
 | Pause              | ![Pause](./images/Icons%20GIRAF/35x35px/pause.png)                       | Pauses the timer                                                   |

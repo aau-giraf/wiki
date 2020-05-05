@@ -16,6 +16,10 @@ FallBackImage icon used in the Weekplanner-application (available in the Wiki-re
 - Download from [Font Awesome](https://fontawesome.com/icons/image?style=regular) (accessed at 20/04/2020) <br>
 - License available at [Font Awesome Free License](https://fontawesome.com/license/free) (accessed at 20/04/2020) <br>
 
+Information icon used in the Weekplanner-application (available in the Wiki-repository under GIRAF-icons): <br>
+- Download from [Font Awesome](https://fontawesome.com/icons/info-circle?style=solid) (accessed at 05/05/2020) <br>
+- License available at [Font Awesome Free License](https://fontawesome.com/license/free) (accessed at 05/05/2020) <br>
+
 Folder icon (folder.svg) and AddFolder icon (addFolder.svg): <br>
 - Developed by a development group in 2020S1 <br>
 - Released under Public Domain <br>
