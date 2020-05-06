@@ -55,7 +55,6 @@ The WEB API is only available on port 80 and 443 on the URLs shown below.
 |---                  |---                                  |
 | Production          | http://srv.giraf.cs.aau.dk/PROD/API |
 | Development         | http://srv.giraf.cs.aau.dk/DEV/API  |
-| Legacy              | http://srv.giraf.cs.aau.dk/API      |
 | Test                | http://srv.giraf.cs.aau.dk/TEST/API |
 
 ## Networking Drives and specific server-setups
