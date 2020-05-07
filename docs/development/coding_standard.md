@@ -13,58 +13,60 @@ the most if any conflicts occur.
 C\# facilitates functionality to easily add a description to a function,
 class, etc., as seen below:
 
-```c#
+```Csharp
+/// <summary>
+/// Description of a class e.g its functionality
+/// </summary>
+public class CodeConventionExample
+{
     /// <summary>
-    /// Description of a class e.g its functionality
+    /// Description of the method that describes the behaviour
+    /// of the method?
+    ///(e.g. sum method: adds two numbers together)
     /// </summary>
-    public class CodeConventionExample
+    /// <param name="exampleParameter">Some parameter
+    ///(e.g. sum method: first operand)</param>
+    public void ExampleFunction(int exampleParameter)
     {
-        /// <summary>
-        /// Description of the method that describes the behaviour
-        /// of the method?
-        ///(e.g. sum method: adds two numbers together)
-        /// </summary>
-        /// <param name="exampleParameter">Some parameter
-        ///(e.g. sum method: first operand)</param>
-        public void ExampleFunction(int exampleParameter)
-        {
-            //Insert code here
-        }
-      }
+        //Insert code here
+    }
+}
 ```
 
 ## Naming Conventions
 
 For the purpose of C\# programming, we recommend this naming scheme.
 
-    //Namespace name                       Interface name
-    namespace Path.CodeConventionExample : IExample
+```c#
+//        Namespace name               Interface name
+namespace Path.CodeConventionExample : IExample
+{
+    // Class name
+    public class CodeConventionExample
     {
-        //Class name
-        public class CodeConventionExample
-        {
-            //Delegate name
-            delegate void MyDelegate(int parameterName);
+        // Delegate name
+        delegate void MyDelegate(int parameterName);
 
-            //Event name
-            event MyDelegate MyEvent;
+        // Event name
+        event MyDelegate MyEvent;
 
-            //Constant variable
-            const string ShipType = "DropShip";
+        // Constant variable
+        const string ShipType = "DropShip";
 
-            //Local variable
-            public int myTurn;
+        // Local variable
+        public int myTurn;
 
-            //Field name (Class field)
-            private int _myVar;
+        // Field name (Class field)
+        private int _myVar;
 
-            //Property name
-            public int MyProperty { get; set; }
+        // Property name
+        public int MyProperty { get; set; }
 
-            //Constructor name
-            public CodeConventionExample() {}
+        // Constructor name
+        public CodeConventionExample() {}
 
-            //Method name
-            public void ExampleFunction(int exampleParameter) {}
-        }
+        // Method name
+        public void ExampleFunction(int exampleParameter) {}
     }
+}
+```
