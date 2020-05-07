@@ -6,7 +6,7 @@ This document will describe how the next generation of GIRAF developers can get 
 
 For at få adgang til github skal medlemer gøres til administrator af organisationen. 
 
-## GIRAF passwords
+## GIRAF Passwords
 
 Kontakt Ulrik for at få fat på KeePass hvor alle passwords til alt relevant er.
 
