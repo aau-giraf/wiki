@@ -4,11 +4,16 @@ This tutorial is created to help developers understand and create new controller
 <!-- HENLO AM DROGO -->
 
 ## Controllers
+Each controller is responsible for a limited area of the server/API and contains the endpoints related to said area
 
 ## Endpoints
+Endpoints are used for communicating with other systems. Communication handled using 'requests' and 'responses'.
 
 ## How to Make
+A quick example of how to make a controller and an endpoint. 
 
 ### Controller
+<example stuff>
 
 ### Endpoint
+<example stuff>
