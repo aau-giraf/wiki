@@ -8,14 +8,14 @@ To make these changes, only the Dockerfile needed to be changed. The two differe
 
 ### Old Dockerfile
 
-```yml
+```dockerfile
 # base image from dockerhub
 FROM microsoft/aspnetcore-build:2
 # execute command to setup environment
 # RUN apt-get update && apt-get -y install sqlite3 && rm -rf /var/lib/apt/lists/*
 
 # copy local files to container
-COPY . /srv/ 
+COPY . /srv/
 
 # copy appsettings from script_stuff
 
@@ -40,8 +40,8 @@ ENTRYPOINT ["dotnet", "run", "--list"]
 
 ### New Dockerfile
 
-```yml
-# Using microsoft dotnet software development kit as 
+```dockerfile
+# Using microsoft dotnet software development kit as
 # the build envionment.
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2 AS build-env
 WORKDIR /app
@@ -65,7 +65,7 @@ WORKDIR /srv
 # COPY from build envionment into local container.
 COPY --from=build-env /app/out .
 
-# Remove the appsettings files from the container 
+# Remove the appsettings files from the container
 # so no passwords are pushed to docker hub
 RUN rm appsettings*
 
@@ -79,4 +79,3 @@ ENTRYPOINT ["dotnet", "GirafRest.dll", "--list"]
 The changes resulted in a Docker Image that has decreased in size form `2.24Gb` to `339Mb` and where the `appsettings` file is only needed during compilation and is later removed before the image is pushed to Docker Hub.
 
 The repository can be found her: [https://hub.docker.com/r/giraf/web-api](https://hub.docker.com/r/giraf/web-api)
-

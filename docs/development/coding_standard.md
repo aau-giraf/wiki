@@ -13,7 +13,7 @@ the most if any conflicts occur.
 C\# facilitates functionality to easily add a description to a function,
 class, etc., as seen below:
 
-``` 
+```c#
     /// <summary>
     /// Description of a class e.g its functionality
     /// </summary>
@@ -45,25 +45,25 @@ For the purpose of C\# programming, we recommend this naming scheme.
         {
             //Delegate name
             delegate void MyDelegate(int parameterName);
-    
+
             //Event name
             event MyDelegate MyEvent;
-    
+
             //Constant variable
             const string ShipType = "DropShip";
-    
+
             //Local variable
             public int myTurn;
-    
+
             //Field name (Class field)
             private int _myVar;
-    
+
             //Property name
             public int MyProperty { get; set; }
-            
+
             //Constructor name
-            public CodeConventionExample() {}        
-            
+            public CodeConventionExample() {}
+
             //Method name
             public void ExampleFunction(int exampleParameter) {}
         }

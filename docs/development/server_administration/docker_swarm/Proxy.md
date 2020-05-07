@@ -7,14 +7,14 @@ For the Giraf project we only have two public IPs that both have a DNS name to s
 Using the Docker Stack command for deploying to a production environment, a ```.yml``` file has to be passed to the command.
 The file contains at least the following:
 
-```yml
+```yaml
 version: '3'
 services:
 ```
 
 and can be elaborated with many more options. The file for the proxy is as follows:
 
-```yml
+```yaml
 version: '3'
 
 services:

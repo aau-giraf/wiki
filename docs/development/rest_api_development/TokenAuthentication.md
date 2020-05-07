@@ -4,7 +4,7 @@ For authenticating users we [JWT token authentication](https://jwt.io), meaning 
 
 For instance consider a login request:
 
-```Bash
+```bash
 curl -X POST "http://localhost:5000/v1/Account/login" -H "accept: text/plain" -H "Content-Type: application/json-patch+json" -d "{ \"username\": \"<yourUserName>\", \"password\": \"<youPassword>\"}"
 ```
 This login request will return a token.

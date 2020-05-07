@@ -2,7 +2,7 @@
 
 In the following, the installation and setup process of DockerCE and Docker Swarm is described, and at the end, some examples on how to use Docker Services is given.
 
-## Installation of Docker 
+## Installation of Docker
 
 To install DockerCE on a node in the Swarm the following command can be used to set up the local Docker environment:
 
@@ -36,7 +36,7 @@ and insert the following:
 For the Swarm overlay network first create the network manualy with the following command:
 
 ```bash
-docker network create --subnet 10.10.0.0/16 -o com.docker.network.bridge.enable_icc=false -o com.docker.network.bridge.name=docker_gwbridge 
+docker network create --subnet 10.10.0.0/16 -o com.docker.network.bridge.enable_icc=false -o com.docker.network.bridge.name=docker_gwbridge
 ```
 
 ## Initializing the Swarm
@@ -107,7 +107,7 @@ By running this command, a service with two containers will be stated and the co
 To upgrade the version that a service uses, run the following to downgrade or upgrade the service:
 
 ```bash
-docker service update --image nginx:1.12 nginx-giraf-proxy
+docker service update --image nginx:1.15 nginx-giraf-proxy
 ```
 
 To increase the number of containers a service creates, use the following command:

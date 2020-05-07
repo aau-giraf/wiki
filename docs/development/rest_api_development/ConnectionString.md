@@ -9,7 +9,7 @@ Before building, you must copy ```⋯/GirafRest/appsettings.template.json``` to 
 A [ConnectionString](https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-strings) is needed, which tells Entity Core Framework how to connect to a database. In this example the ConnectionString connects to a the giraf-dev database, which is the development database. In contrast, giraf-prod should be used for production.
 
 It must be on the form:
-```
+```json
 "ConnectionStrings": {
     "DefaultConnection": "server=<db-host>;port=<db-port>;userid=<db-user>;password=<db-password>;database=<db-db>;Allow User Variables=True"
 }
@@ -29,7 +29,7 @@ Fill in the following:
 This information is required for creating the [JWT](https://jwt.io/) keys which will be used for authorisation on the server.
 
 It must be on the form:
-```javascript
+```json
 "Jwt": {
     "JwtKey": "<jwt-key>",
     "JwtIssuer": "<jwt-issuer>",
