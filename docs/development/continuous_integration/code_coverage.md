@@ -8,7 +8,7 @@ The Codecov page for GIRAF is: <https://codecov.io/gh/aau-giraf>.
 ## Configuration
 
 The codecov integration is configured in the `codecov.yml` file in the respective repositories. 
-Document for the config file can be seen at <https://docs.codecov.io/docs/codecov-yaml>.
+Documentation for the config file can be seen at <https://docs.codecov.io/docs/codecov-yaml>.
 
 ## Affected Repositories
 
