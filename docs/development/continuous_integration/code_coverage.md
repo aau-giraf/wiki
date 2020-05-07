@@ -15,3 +15,4 @@ Document for the config file can be seen at <https://docs.codecov.io/docs/codeco
 Right now codecov is used in:
 
 * [weekplanner](https://github.com/aau-giraf/weekplanner)
+* [api_client](https://github.com/aau-giraf/api_client)
