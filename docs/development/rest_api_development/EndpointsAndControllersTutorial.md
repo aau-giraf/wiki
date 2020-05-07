@@ -6,12 +6,7 @@ It is this point the API uses to access resources needed to fulfill a request.
 
 A controller is a collection of endpoints.
 Each controller is responsible for a limited area of the server/API and contains the endpoints related to said area.
-
-## Controllers
-Each controller is responsible for a limited area of the server/API and contains the endpoints related to said area.
-
-## Endpoints
-Endpoints are used for communicating with other systems. Communication handled using 'requests' and 'responses'.
+All communication is done through 'requests' and 'responses'.
 
 ## How to Make
 A quick example of how to make a controller and an endpoint. 
