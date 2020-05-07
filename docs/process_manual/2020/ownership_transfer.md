@@ -27,7 +27,7 @@ https://aau-giraf.github.io/wiki/development/server_administration/ServerOwnersh
 
 ### dockerhub
 
-En tidligere admin skal tilføje alle de relevante personers dockerHub username. husk alle usernames er med småt
+En tidligere admin skal tilføje alle de relevante personers dockerHub username. husk alle usernames er med småt.
 
 https://hub.docker.com/orgs/giraf
 
