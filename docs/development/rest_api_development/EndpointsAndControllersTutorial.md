@@ -10,10 +10,7 @@ A controller is a collection of endpoints.
 Each controller is responsible for a limited area of the server/API and contains the endpoints related to said area.
 All communication is done through 'requests' and 'responses'.
 
-## How to Make
-A quick example of how to make a controller and an endpoint. 
-
-### Controller
+## Controller
 When creating a new controller, you start by creating a new class deriving from the `Controller` class.
 The `Controller` class provides useful responses that are used when sending responses to the API.\
 Here is an example of a controller
@@ -32,9 +29,9 @@ Additionally you can define what roles the logged in user needs to get access li
 Typically, you would only want to use `[Authorize]` for the controller as specifying the role prevents you from specifying that some endpoints can only be used specific roles.
 
 The `[Route("v1/[controller]")]` argument modifies the URL for endpoints to include the pre-fix define in the quotation marks.
-The `[controller]` uses the name of the controller excluding `Controller` in this case it would be `v1/Example`.
+The `[controller]` uses the name of the controller excluding `Controller` in this case it would be `/v1/Example`.
 
-### Endpoint
+## Endpoint
 Endpoints are essencially methods in a controller. 
 Like the controller, an endpoint has some special arguments. 
 Here is an example of an endpoint
@@ -49,7 +46,14 @@ public Task<ActionResult> ExampleEndpoint()
 }
 ```
 
-The `[HttpPost("ExampleEndpoint")]` does two thing, it defines the endpoint's URL with `"ExampleEndpoint"` and the endpoint's operation.
+The `[HttpPost("ExampleEndpoint")]` does two thing, it defines the endpoint's URL with `"/ExampleEndpoint"` and describes what type of operation this endpoint executes.
+In this case, if the endpoint was a part of `ExampleController` from before, the full URL would be `/v1/Example/ExampleEndpoint`.
+If you have an endpoint where you do not want to use the URL defined by the controller, you can start with a `/` to ignore the URL defined in `[Route]`, using `[HttpPost("/NoRoute/ExampleEndpoint")]` would give the URL `/NoRoute/ExampleEndpoint`. 
+`[HttpPost]` describes what type of operation the endpoint does. 
+There are 4 types of operation, `[HttpPost]`, `[HttpGet]`, `[HttpPut]`, `[HttpDelete]`.
+These operations follows [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete).
+For more information on how the `api_client` and the `web-api` communicates see [Backend Architecture](https://github.com/aau-giraf/wiki/blob/feature_188/docs/development/rest_api_development/BackendArchitecture.md#making-a-request).
+
 
 
 Endpoint is a fuinction/method  
