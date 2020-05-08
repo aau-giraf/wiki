@@ -19,7 +19,7 @@ Here is an example of a controller
 [Route("v1/[controller]")]
 public class ExampleController : Controller
 {
-    ...
+    //Endpoints goes here
 }
 ```
 Before the class declaration are two arguments `[Authorize]` and `[Route("v1/[controller]")]`.
@@ -42,7 +42,7 @@ Here is an example of an endpoint
 [ProducesResponseType(StatusCodes.Status200OK)]
 public Task<ActionResult> ExampleEndpoint()
 {
-    ...
+    //Does stuff
 }
 ```
 
@@ -56,8 +56,6 @@ For more information on how the `api_client` and the `web-api` communicates see 
 
 
 
-Endpoint is a fuinction/method  
-What is Http...  
 What is authorize/allowAnonymous  
 What is ProducesResponseType  
 Describe how to document an endpoint
