@@ -25,7 +25,7 @@ public class ExampleController : Controller
     ...
 }
 ```
-Before the class declaration are two arguments `[Authorize]` and `[Route]`.
+Before the class declaration are two arguments `[Authorize]` and `[Route("v1/[controller]")]`.
 The `[Authorize]` argument dictates who has access to the controller and the endpoints. 
 If there is no `[Authorize]`, anyone can access the controller and its endpoints, while if there is a `[Authorize]` you have to be logged in to access the controller and the endpoints. 
 Additionally you can define what roles the logged in user needs to get access like this `[Authorize(Roles = GirafRole.Guardian)]` or if you want more roles to have access `[Authorize(Roles = GirafRole.SuperUser + "," + GirafRole.Department + "," + GirafRole.Guardian)]`.
@@ -37,6 +37,7 @@ The `[controller]` uses the name of the controller excluding `Controller` in thi
 ### Endpoint
 Endpoints are essencially methods in a controller. 
 Like the controller, an endpoint has some special arguments. 
+Here is an example of an endpoint
 
 ```C#
 [HttpPost("ExampleEndpoint")]
@@ -48,11 +49,28 @@ public Task<ActionResult> ExampleEndpoint()
 }
 ```
 
+The `[HttpPost("ExampleEndpoint")]` does two thing, it defines the endpoint's URL with `"ExampleEndpoint"` and the endpoint's operation.
 
 
 Endpoint is a fuinction/method  
 What is Http...  
-What is authorize/allowAnonimous  
+What is authorize/allowAnonymous  
 What is ProducesResponseType  
 Describe how to document an endpoint
 Can make help functions when required  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
