@@ -13,7 +13,14 @@ All communication is done through 'requests' and 'responses'.
 A quick example of how to make a controller and an endpoint. 
 
 ### Controller
-<example stuff>
+Controller is a class
+What is Routes 
+What is authorize
+Can make help functions when required
+
 
 ### Endpoint
-<example stuff>
+Endpoint is a fuinction/method
+What is Http...
+What is authorize/allowAnonimous
+What is ProducesResponseType
