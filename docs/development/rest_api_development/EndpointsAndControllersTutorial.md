@@ -3,6 +3,7 @@ This tutorial is created to help developers understand and create new controller
 
 An endpoint is basically the end of a communication channel.
 It is this point the API uses to access resources needed to fulfill a request.
+Any time the API wants to access the database, it happens through endpoints.
 
 A controller is a collection of endpoints.
 Each controller is responsible for a limited area of the server/API and contains the endpoints related to said area.
