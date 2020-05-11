@@ -70,9 +70,9 @@ public Task<ActionResult> ExampleEndpoint()
 }
 ```
 
-The `[ProducesResponseType(StatusCodes.Status200OK)]` is a respons the endpoint can give.
+The `[ProducesResponseType(StatusCodes.Status200OK)]` is a response the endpoint can give.
 This particular respons is for success.
-Typically you would like more than this to accomondate multiple outcomes.
+Typically you would like more than this to accommodate multiple outcomes.
 For instance when a user is not found like in the example below.
 For a more detailed list of responses please see [this link](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
 
