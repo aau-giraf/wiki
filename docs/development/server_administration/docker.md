@@ -21,13 +21,13 @@ should contain.
 
 ## Dockerfiles
 
-Docker uses its own scripting language for creating Dockerfiles, running 
+Docker uses its own scripting language for creating Dockerfiles, running
 commands from top to bottom. Below we show our example of a Dockerfile
 for deploying Jenkins. (Please note, that as of 2018, the Jenkins CI
 server has been replaced by the GitLab CI server, and as such the
 following example is only used in this article.)
 
-```docker 
+```dockerfile
 FROM jenkins:latest RUN /usr/local/bin/install-plugins.sh google-oauth-plugin android-emulator android-lint oauth-credentials
 git-client artifactory cas-plugin checkstyle git
 google-play-android-publisher postbuild-task gradle javadoc junit
@@ -61,14 +61,14 @@ follows:
 
 - **FROM** indicates which existing Dockerfile we want to use and
 extend. Our Dockerfile extends the official Dockerfile for Jenkins
-through this command. 
+through this command.
 - **ENV** sets an enviroment variable. For
 instance in this case //ANDROID\_SDK\_URL// is set to the location for
 the Android SDK. Setting these enviroment variables improves the
-readability, like using variables in other software. 
+readability, like using variables in other software.
 - **USER** sets
 the user being used to run the commands following it. That user is used
-until it's changed by another //USER// command. 
+until it's changed by another //USER// command.
 - **RUN** executes
 shell commands inside the container. For instance in this case it's
 being used to download the Android SDK, and later execute the Android
@@ -89,18 +89,18 @@ follows:
 containers. It takes one parameter which is the absolute path inside a
 container that should be persisted even if the container is deleted.
 This is necessary if data needs to be persisted as Docker doesn't do it
-by default. 
+by default.
 - **EXPOSE** is used to expose ports internally in a
 container, as the application running in the container can only
 communicate through an exposed port to the outside. This command takes a
 list of ports that should be exposed. How this can be used is explained
-further below. 
+further below.
 - **ENTRYPOINT** is used to specify what command
 should be used when deploying the Docker container from an image. It
 takes an array of strings where each string is a part of the complete
 shell command being executed when deployed. The entrypoint commands can
 never be overwritten when deploying, so it is used for executing the
-minimum required commands to deploy. 
+minimum required commands to deploy.
 - **CMD** is also used to
 specify what command or parameters that should be used when deploying.
 But contrary to the entrypoint, this command can be overwritten. So this
@@ -124,7 +124,7 @@ For example if we wanted to deploy our Jenkins image, we would execute
 cannot communicate with the outside system yet.
 
 It's possible to pass a ``-p`` parameter that takes a port route, which
-means the command could look like ``docker run -p 80:8080 jenkins\_giraf``. 
+means the command could look like ``docker run -p 80:8080 jenkins\_giraf``.
 Here the port the container listens on, the exposed
 port, is port 8080. By using the parameter ``-p 80:8080`` we tell Docker
 that the host should be redirected from port 80 to the exposed port

@@ -7,14 +7,14 @@ repo_name: 'aau-giraf'
 repo_url: 'https://github.com/aau-giraf'
 edit_uri: "" # Is empty to remove 'edit' buttons on pages
 
-extra_css: 
+extra_css:
   - 'extra/extra.css'
 
 
 # Theme settings
 theme:
   name: 'material'
-  font: 
+  font:
     text: 'Open Sans'
     code: 'Roboto Mono'
   palette:
@@ -26,10 +26,10 @@ theme:
 
 # Plugins
 plugins:
-    - search                        # Adds search functionality
-    - awesome-pages                 # Used to arrange tabs and pages manually
-    - git-revision-date-localized   # Adds the "Last update: x" on the bottom of pages
-    
+  - search                        # Adds search functionality
+  - awesome-pages                 # Used to arrange tabs and pages manually
+  - git-revision-date-localized   # Adds the "Last update: x" on the bottom of pages
+
 # Markdown extensions
 # See list of extensions at https://squidfunk.github.io/mkdocs-material/extensions/admonition/
 markdown_extensions:

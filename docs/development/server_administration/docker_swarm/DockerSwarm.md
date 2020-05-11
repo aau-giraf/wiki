@@ -3,17 +3,18 @@
 The Docker Swarm is manged via the `docker-compose.yml` file that can be found in [GitHub](https://github.com/aau-giraf/giraf-production-swarm).
 
 The `docker-compose.yml` file consists of the following:
-```yml
+```yaml
 version: '3.7'
 
 services:
     PROXY:                       # NGINX proxy service for the swarm
         image: nginx:1.15        # This will use the latest version of 1.15.x
         ports:                   # Exposes for 80 and 443 from the service to the swarm network(public)
-            - '80:80'            
-            - '443:443'          
+            - '80:80'
+            - '443:443'
         volumes:                 # Mounts the nginx config folder inside the container as read only
             - /swarm-nfs/nginx/:/etc/nginx/:r
+            - /swarm-nfs/certbot/:/var/www/html/
         networks:                # Attaches the network
             - frontend
         deploy:                  # Deploy options
@@ -25,7 +26,7 @@ services:
             retries: 3
 
     API_PROD:                    # API service used for production
-        image: giraf/web-api:1   # This will use version 1 of the API hosted on hub.docker.com                                                             
+        image: giraf/web-api:1   # This will use version 1 of the API hosted on hub.docker.com
         networks:                # Attaches the network
             - frontend
             - backend
@@ -37,13 +38,13 @@ services:
             - /swarm-nfs/cdn/pictograms/:/pictograms
             - /swarm-nfs/api/appsettings.Develop.json:/srv/appsettings.json
         healthcheck:             # Docker healthcheck restart of it fails three times in a row, service may be out for a maximum of 30 seconds
-            test: ["CMD-SHELL", "curl --fail http://localhost:5000 || exit 1"]
+            test: ["CMD-SHELL", "curl --fail http://localhost:5000/v1/Status || exit 1"]
             interval: 10s
             timeout: 10s
             retries: 3
 
     API_DEV:                     # API service used for development
-        image: giraf/web-api:1   # This will use version 1 of the API hosted on hub.docker.com                                                             
+        image: giraf/web-api:1   # This will use version 1 of the API hosted on hub.docker.com
         networks:                # Attaches the network
             - frontend
             - backend
@@ -55,7 +56,7 @@ services:
             - /swarm-nfs/cdn/pictograms/:/pictograms
             - /swarm-nfs/api/appsettings.Develop.json:/srv/appsettings.json
         healthcheck:             # Docker healthcheck restart of it fails three times in a row, service may be out for a maximum of 30 seconds
-            test: ["CMD-SHELL", "curl --fail http://localhost:5000 || exit 1"]
+            test: ["CMD-SHELL", "curl --fail http://localhost:5000/v1/Status || exit 1"]
             interval: 10s
             timeout: 10s
             retries: 3
@@ -73,13 +74,13 @@ services:
             - /swarm-nfs/cdn/pictograms/:/pictograms
             - /swarm-nfs/api/appsettings.Develop.json:/srv/appsettings.json
         healthcheck:             # Docker healthcheck restart of it fails three times in a row, service may be out for a maximum of 30 seconds
-            test: ["CMD-SHELL", "curl --fail http://localhost:5000 || exit 1"]
+            test: ["CMD-SHELL", "curl --fail http://localhost:5000/v1/Status || exit 1"]
             interval: 10s
             timeout: 10s
             retries: 3
 
     DB:                          # The DB service will be changed to use the production database later once it has been migrated. The httpd image is only for testing.
-        image: mysql:5.7.11
+        image: mysql:8.0.19
         command: --default-authentication-plugin=mysql_native_password
         volumes:                 # Mounts the mysql files from the NFS to the container
             - /swarm-nfs/mysql/:/var/lib/mysql/
