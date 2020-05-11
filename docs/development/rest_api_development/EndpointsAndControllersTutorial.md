@@ -96,12 +96,6 @@ You can also use `StatusCode(StatusCodes.Status200OK, objectToReturn)` for givin
 The first argument is a static class containing http status codes and the second argument is the object to return. 
 
 
-What is authorize/allowAnonymous  
-What is ProducesResponseType  
-Describe how to document an endpoint
-Can make help functions when required  
-
-
 
 
 
