@@ -2,7 +2,7 @@
 The currently used Continuous Integration Pipeline is GitHub Actions, which provides 2.000 minutes free per month, running on either Ubuntu, MacOS or Windows, allowing us to test multiple platforms from our CI-Platform without cost.
 
 ## Weekplanner
-The weekplanner built in 4 jobs from the same workflow: [main.yml](https://github.com/aau-giraf/weekplanner/blob/develop/.github/workflows/main.yml)
+The weekplanner is built in 4 jobs from the same workflow: [main.yml](https://github.com/aau-giraf/weekplanner/blob/develop/.github/workflows/main.yml)
 
  - `build-and-test-android`
  - `build-and-test-ios`
@@ -15,7 +15,7 @@ Given these jobs, the `build-and-test-android` job runs `flutter test` and `flut
 This bundle is ready for upload to Google Play Store, in the `deploy-to-playstore`-task that only runs on master.
 
 ### iOS
-Builds to iOS requires Xcode to build depedency, so the task `build-and-test-ios` only runs on MacOS, and produces an `app.ipa`-file, iOS App Store Package.
+Builds to iOS requires Xcode to build dependency, so the task `build-and-test-ios` only runs on MacOS, and produces an `app.ipa`-file, iOS App Store Package.
 
 This file is then prepared for `deploy-to-appstore`, that uploads the build to our App Store Connect-account, which can be pushed to internal test, or into release state.
 This task also runs only on `master`-branch.
