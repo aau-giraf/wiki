@@ -9,5 +9,6 @@ The following pages in this section describes the overall changes made for each 
 | [2019s1r1](2019s1r1.md)    |        N/A       |    
 | [2019S2R1](2019s2r1.md)    | Friday 05-04-2019|
 | [2019S3R1](2019s3r1.md)    | Friday 26-04-2019|
+| [2020S1R1](2020s1r1.md)    | Friday 03-04-2020|
+| [2020S2R1](2020s2r1.md)    | Friday 01-05-2020|
 
-The prototype for some of the current release, as well as the two releases prepared for 2019 can be found here: [F1743](http://web.giraf.cs.aau.dk/F1743)
