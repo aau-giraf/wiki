@@ -19,11 +19,11 @@ This command will dump the database `giraf-dev` to a local file giraf-dev-dump w
 
 ## New setup
 
-Based on the old setup the same version of MySql was used inside the Docker Swarm. The Docker Compose files was updated with the following:
+The Docker Compose files was updated with the following:
 
 ```yml
 DB:                     # Database service
-    image: mysql:5.7.11 # Database version
+    image: mysql:8.0.19 # Database version
     command: --default-authentication-plugin=mysql_native_password
     volumes:            # Mount the mysql folder from NFS to container
         - /swarm-nfs/mysql/:/var/lib/mysql/
