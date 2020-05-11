@@ -4,7 +4,6 @@ This document will describe how the next generation of GIRAF developers can get 
 
 ## GitHub
 
-For at få adgang til github skal medlemer gøres til administrator af organisationen. 
 To get access to the GitHub repositories, an [owner](https://github.com/orgs/aau-giraf/people?query=role%3Aowner) of the previous GIRAF generation needs to add the new memmbers. Alternatively, a new owner can be added and then he can add all relevant members.
 
 <https://github.com/aau-giraf>
@@ -44,8 +43,8 @@ The list should be sent to [support@its.aau.dk](mailto:support.its.aau.dk) after
 
 ### dockerhub
 
-A current admin needs to add all the relevant persons (server-meta) manually. 
-Compile a list with the dockerhub usernames (all lowercase) and send it ``kshn16@student.aau.dk`` or another relevant server-meta group member of GIRAF 2020.
+A current admin needs to add all the relevant people (server-meta) manually. 
+Compile a list with the dockerhub usernames (all lowercase) and send it to ``kshn16@student.aau.dk`` or another relevant server-meta group member of GIRAF 2020.
 
 <https://hub.docker.com/orgs/giraf>
 
