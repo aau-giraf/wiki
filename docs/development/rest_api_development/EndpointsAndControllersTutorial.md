@@ -83,7 +83,7 @@ public async Task<ActionResult> GetById(int id)
         return NotFound(new ErrorResponse(ErrorCode.UserNotFound, "User not found"));
     }
     
-    return Ok(new SuccessResponse(result));
+    return Ok(new SuccessResponse<Object>(result));
 }
 ```
 
