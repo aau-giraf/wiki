@@ -79,7 +79,7 @@ services:
             retries: 3
 
     DB:                          # The DB service will be changed to use the production database later once it has been migrated. The httpd image is only for testing.
-        image: mysql:5.7.11
+        image: mysql:8.0.19
         command: --default-authentication-plugin=mysql_native_password
         volumes:                 # Mounts the mysql files from the NFS to the container
             - /swarm-nfs/mysql/:/var/lib/mysql/
