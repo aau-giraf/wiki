@@ -17,7 +17,7 @@ This bundle is ready for upload to Google Play Store, in the `deploy-to-playstor
 ### iOS
 Builds to iOS requires Xcode to build dependency, so the task `build-and-test-ios` only runs on MacOS, and produces an `app.ipa`-file, iOS App Store Package.
 
-This file is then prepared for `deploy-to-appstore`, that uploads the build to our App Store Connect-account, which can be pushed to internal test, or into release state.
+This file is then prepared for `deploy-to-appstore`, which uploads the build to our App Store Connect-account, which can be pushed to internal test, or into release state.
 This task also runs only on `master`-branch.
 
 ## api_client
