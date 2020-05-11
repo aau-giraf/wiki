@@ -94,19 +94,3 @@ public async Task<ActionResult> GetById(int id)
 ```
 You can also use `StatusCode(StatusCodes.Status200OK, objectToReturn)` for giving status codes to a response. 
 The first argument is a static class containing http status codes and the second argument is the object to return. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
