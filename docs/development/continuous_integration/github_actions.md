@@ -1,5 +1,5 @@
 # GitHub Actions
-The currently used Continous Integration Pipeline is GitHub Action, which provides 2.000 minutes free per month, running on either Ubuntu, MacOS or Windows, allowing us to test multiple platforms from our CI-Platform without cost.
+The currently used Continuous Integration Pipeline is GitHub Actions, which provides 2.000 minutes free per month, running on either Ubuntu, MacOS or Windows, allowing us to test multiple platforms from our CI-Platform without cost.
 
 ## Weekplanner
 The weekplanner built in 4 jobs from the same workflow: [main.yml](https://github.com/aau-giraf/weekplanner/blob/develop/.github/workflows/main.yml)
@@ -36,11 +36,11 @@ In addition to running unit tests in GitHub Actions, when pushed to `develop`- o
  - develop-1-aspnet
  - master-1-aspnet
 
-When deploying into the [production swarm](../../server_administration/PractiaclDocker), these images are pulled into DEV and PROD environments accordingly.
+When deploying into the [production swarm](../../server_administration/PracticalDocker), these images are pulled into DEV and PROD environments accordingly.
 
 ## wiki
 This job is built in one task: [page-build.yml](https://github.com/aau-giraf/wiki/blob/master/.github/workflows/page-build.yml)
 
-As the wiki is currently built using MKDocs, this repository is setup with a GitHub Actions script to build the source-files, markdown, into a static HTML page, and push this into the GitHub Pages-environment, allowing it to be reachable at [http://giraf-aau.github.io/wiki](giraf-aau.github.io/wiki).
+As the wiki is currently built using MKDocs, this repository is set up with a GitHub Actions script to build the source files, markdown, into a static HTML page, and push this into the GitHub Pages-environment, allowing it to be reachable at [http://giraf-aau.github.io/wiki](giraf-aau.github.io/wiki).
 
 This is run using an existing GitHub Action, [mhausenblas/mkdocs-deploy-gh-pages](https://github.com/mhausenblas/mkdocs-deploy-gh-pages), thus being the simplest of the builds.
