@@ -54,7 +54,11 @@ There are 4 types of operation, `[HttpPost]`, `[HttpGet]`, `[HttpPut]`, `[HttpDe
 These operations follows [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete).
 For more information on how the `api_client` and the `web-api` communicates see [Backend Architecture](https://github.com/aau-giraf/wiki/blob/feature_188/docs/development/rest_api_development/BackendArchitecture.md#making-a-request).
 
-
+The `[Authorize]` option works in the same way as the `[Authorize]` in controllers.
+The main difference is that this only affects this single endpoint.
+So if the controller is set to `[Authorize]`, but an endpoint needs access from non-authorized users, this option is given the value `[AllowAnonymous]`.
+This overwrites the `[Authorize]` option provided by the controller.
+If the opposite is the case, and the endpoint needs restricted authorization, the option can be set to `[Authorize]` or something more specific like `[Authorize(Roles = GirafRole.SuperUser + "," + GirafRole.Department + "," + GirafRole.Guardian)]`.
 
 What is authorize/allowAnonymous  
 What is ProducesResponseType  
