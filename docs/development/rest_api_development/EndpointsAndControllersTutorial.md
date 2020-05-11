@@ -75,7 +75,7 @@ This particular respons is for success.
 Typically you would like more than this to accommodate multiple outcomes.
 For instance when a user is not found like in the example below.
 For a more detailed list of responses please see [this link](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
-
+Bellow is an example of how to use `[ProducesResponseType()]`.
 ```C#
 [HttpGet("{id}")]
 [ProducesResponseType(StatusCodes.Status200OK)]
@@ -92,6 +92,8 @@ public async Task<ActionResult> GetById(int id)
     return Ok(new SuccessResponse<Object>(result));
 }
 ```
+You can also use `StatusCode(StatusCodes.Status200OK, objectToReturn)` for giving status codes to a response. 
+The first argument is a static class containing http status codes and the second argument is the object to return. 
 
 
 What is authorize/allowAnonymous  
