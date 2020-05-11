@@ -70,6 +70,21 @@ public Task<ActionResult> ExampleEndpoint()
 }
 ```
 
+```
+[HttpGet("{id}")]
+[ProducesResponseType(StatusCodes.Status200OK)]
+[ProducesResponseType(StatusCodes.Status404NotFound)]
+public async Task<ActionResult> GetById(int id)
+{
+    if (noIdMatch)
+    {
+        return NotFound();
+    }
+    return Ok(product);
+}
+```
+
+
 What is authorize/allowAnonymous  
 What is ProducesResponseType  
 Describe how to document an endpoint
