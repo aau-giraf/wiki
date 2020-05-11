@@ -26,7 +26,7 @@ Before the class declaration are two arguments `[Authorize]` and `[Route("v1/[co
 The `[Authorize]` argument dictates who has access to the controller and the endpoints. 
 If there is no `[Authorize]`, anyone can access the controller and its endpoints, while if there is a `[Authorize]` you have to be logged in to access the controller and the endpoints. 
 Additionally you can define what roles the logged in user needs to get access like this `[Authorize(Roles = GirafRole.Guardian)]` or if you want more roles to have access `[Authorize(Roles = GirafRole.SuperUser + "," + GirafRole.Department + "," + GirafRole.Guardian)]`.
-Typically, you would only want to use `[Authorize]` for the controller as specifying the role prevents you from specifying that some endpoints can only be used specific roles.
+Typically, you would only use `[Authorize]` for controllers as specifying what roles have access to the controller, like with `[Authorize(Roles = GirafRole.SuperUser)]`, locks all endpoints to the same access level, meaning you can't make some endpoints accessible only to a guardian while another is accessible only to a superuser. 
 
 The `[Route("v1/[controller]")]` argument modifies the URL for endpoints to include the pre-fix define in the quotation marks.
 The `[controller]` uses the name of the controller excluding `Controller` in this case it would be `/v1/Example`.
