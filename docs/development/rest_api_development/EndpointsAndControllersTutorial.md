@@ -78,9 +78,12 @@ public async Task<ActionResult> GetById(int id)
 {
     if (noIdMatch)
     {
-        return NotFound();
+        return NotFound(new ErrorResponse(ErrorCode.UserNotFound, "User not found"));
     }
-    return Ok(product);
+    
+    ...
+    
+    return Ok(new SuccessResponse(result));
 }
 ```
 
