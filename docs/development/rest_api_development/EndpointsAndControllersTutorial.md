@@ -76,12 +76,12 @@ public Task<ActionResult> ExampleEndpoint()
 [ProducesResponseType(StatusCodes.Status404NotFound)]
 public async Task<ActionResult> GetById(int id)
 {
+    // Code for finding a user
+    
     if (noIdMatch)
     {
         return NotFound(new ErrorResponse(ErrorCode.UserNotFound, "User not found"));
     }
-    
-    ...
     
     return Ok(new SuccessResponse(result));
 }
