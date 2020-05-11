@@ -4,7 +4,7 @@ In order for the new Docker Swarm to serve the Giraf project, the database from 
 
 ## Old setup
 
-The old server was configured to use MySQL 8.0.19 as can be seen on the picture below.
+The old server was configured to use MySQL 5.7.11 as can be seen on the picture below.
 
 ![MySQL Version](../images/OldMysql.png "MySQL Version")
 
