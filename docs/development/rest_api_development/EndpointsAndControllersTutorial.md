@@ -56,9 +56,19 @@ For more information on how the `api_client` and the `web-api` communicates see 
 
 The `[Authorize]` option works in the same way as the `[Authorize]` in controllers.
 The main difference is that this only affects this single endpoint.
-So if the controller is set to `[Authorize]`, but an endpoint needs access from non-authorized users, this option is given the value `[AllowAnonymous]`.
+So if the controller is set to `[Authorize]`, but an endpoint needs access from non-authorized users, this option is given the value `[AllowAnonymous]` as seen in the example below.
 This overwrites the `[Authorize]` option provided by the controller.
 If the opposite is the case, and the endpoint needs restricted authorization, the option can be set to `[Authorize]` or something more specific like `[Authorize(Roles = GirafRole.SuperUser + "," + GirafRole.Department + "," + GirafRole.Guardian)]`.
+
+```C#
+[HttpPost("ExampleEndpoint")]
+[AllowAnonymous]
+[ProducesResponseType(StatusCodes.Status200OK)]
+public Task<ActionResult> ExampleEndpoint()
+{
+    //Does stuff
+}
+```
 
 What is authorize/allowAnonymous  
 What is ProducesResponseType  
