@@ -70,7 +70,7 @@ public Task<ActionResult> ExampleEndpoint()
 }
 ```
 
-```
+```C#
 [HttpGet("{id}")]
 [ProducesResponseType(StatusCodes.Status200OK)]
 [ProducesResponseType(StatusCodes.Status404NotFound)]
