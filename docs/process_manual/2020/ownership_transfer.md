@@ -45,14 +45,6 @@ The list should be sent to [support@its.aau.dk](mailto:support.its.aau.dk) after
 
 More information can be found [here](https://aau-giraf.github.io/wiki/development/server_administration/ServerOwnership/#ownership-transfer)
 
-### dockerhub
-
-A current admin needs to add all the relevant people (server-meta) manually. 
-Compile a list with the dockerhub usernames (all lowercase) and send it to ``kshn16@student.aau.dk`` or another relevant server-meta group member of GIRAF 2020.
-
-<https://hub.docker.com/orgs/giraf>
-
-
 ### Portainer Access
 
 Portainer allows the visualization of the structure for the docker images. 
