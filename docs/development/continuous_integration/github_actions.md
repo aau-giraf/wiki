@@ -33,9 +33,9 @@ Similar to the api_client, the web-api suite runs by building a dotnet system in
 ### GitHub Packages
 In addition to running unit tests in GitHub Actions, when pushed to any branch GitHub Actions starts another job, and starts a build of the embedded Dockerfile, and tags this accordingly as either:
 
- - **master**: latest
- - **develop**: develop
- - **other**: other
+ - **master**: aau-giraf/web-api/web-api:latest
+ - **develop**: aau-giraf/web-api/web-api:develop
+ - **issue/123**: aau-giraf/web-api/web-api:issue-123
 
 When deploying into the [production swarm](../../server_administration/PracticalDocker), these images are pulled into DEV and PROD environments accordingly.
 
