@@ -2,7 +2,9 @@
 
 ## EndPoints and [Swagger](./Swagger.md)
 
-For documentation of endpoints and examples of how to use the endpoints, see: [Swagger UI(master)](http://web.giraf.cs.aau.dk:5000/swagger/)
+For documentation on how endpoints and controllers are used in Giraf, see: [Endpoints and Controllers Tutorial](./EndpointsAndControllersTutorial.md)
+
+To see all controllers and endpoints used by the Giraf project, see: [Swagger UI(master)](http://web.giraf.cs.aau.dk:5000/swagger/)
 
 ## Description of Controllers
 
