@@ -20,7 +20,7 @@ Use the following credentials to login and add all the relevant members.
 
 Username: ``giraf@lists.aau.dk``
 
-Password: see KeePass
+Password: see [KeePass](#giraf-passwords)
 
 
 ## Google Play Store
@@ -28,7 +28,7 @@ To access the Google Play Store use the following credentials.
 
 Email: ``aaugiraf@gmail.com``
 
-Password: see KeePass
+Password: see [KeePass](#giraf-passwords)
 
 ## App Store
 
@@ -36,14 +36,14 @@ To access the App Store use the following credentials.
 
 Email: ``giraf@lists.aau.dk``
 
-Password: see KeePass
+Password: see [KeePass](#giraf-passwords)
 
 ## Server Access
 
 The server-meta group must compile a list of student emails who needs sudo acess to the server. 
 The list should be sent to [support@its.aau.dk](mailto:support.its.aau.dk) after Semester Coordinater Ulrik Nyman ([ulrik@cs.aau.dk](mailto:ulrik@cs.aau.dk)) has **approved** the list. 
 
-More information can be found [here](https://aau-giraf.github.io/wiki/development/server_administration/ServerOwnership/#ownership-transfer)
+More information can be found [here](../../development/server_administration/ServerOwnership.md#ownership-transfer)
 
 ### Portainer Access
 
@@ -55,4 +55,4 @@ URL: ```192.38.56.151:9000```
 
 Username: ``admin``
 
-Password: see KeePass
+Password: see [KeePass](#giraf-passwords)
