@@ -26,15 +26,16 @@ This job is built in one task: [lint-and-test.yml](https://github.com/aau-giraf/
 The testing-suite for the api_client is a bit more simple, it runs `flutter analyze`, and `flutter test`, to ensure tests and linting is passing.
 
 ## web-api
-This job is built in one task: [dotnettest.yml](https://github.com/aau-giraf/web-api/blob/develop/.github/workflows/dotnettest.yml)
+This job is built in two tasks: [dotnettest.yml](https://github.com/aau-giraf/web-api/blob/develop/.github/workflows/dotnettest.yml) and [dockerimage.yml](https://github.com/aau-giraf/web-api/blob/develop/.github/workflows/dockerimage.yml)
 
 Similar to the api_client, the web-api suite runs by building a dotnet system in Release mode, to ensure deployability, and then runs `dotnet test`, to run the embedded GirafRest.Test project and the unit tests contained.
 
-### Docker Hub
-In addition to running unit tests in GitHub Actions, when pushed to `develop`- or `master`-branches Docker Hub picks up a webhook, and starts a build of the embedded Dockerfile, and tags this accordingly as either:
+### GitHub Packages
+In addition to running unit tests in GitHub Actions, when pushed to any branch GitHub Actions starts another job, and starts a build of the embedded Dockerfile, and tags this accordingly as either:
 
- - develop-1-aspnet
- - master-1-aspnet
+ - **master**: latest
+ - **develop**: develop
+ - **other**: other
 
 When deploying into the [production swarm](../../server_administration/PracticalDocker), these images are pulled into DEV and PROD environments accordingly.
 
