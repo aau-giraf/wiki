@@ -16,12 +16,13 @@ In addition to these layers ASP.NET Core requires a number of classes that defin
 
 ## Build and run the repository
 
-Information on dependencies as well how to build and run is available in the ```README``` in the [web-api repository](https://github.com/aau-giraf/web-api) itself.
+Information on dependencies as well how to build and run is available in the [Build and run the web-api locally](./BuildAndRunLocally.md)-section of the wiki.
 
-You may want to see an [elaboration on how to set AppSettings.json](./ConnectionString.md) or some notes on [NuGet](./NugetWithDotnetCore.md)
+You may want to see an [elaboration on how to set AppSettings.json](./ConnectionString.md) or some notes on [NuGet](./NugetWithDotnetCore.md).
 
 ## Content
 
+- [Build and run the web-api locally](./BuildAndRunLocally.md)
 - [Database](./Database.md)
 - [Entity Framework](./EntityFramework.md)
 - [Models & DTOś](./ModelsAndDTOs.md)
