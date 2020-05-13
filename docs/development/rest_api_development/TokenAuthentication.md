@@ -2,6 +2,8 @@
 
 For authenticating users we [JWT token authentication](https://jwt.io), meaning that the user of the REST API must send a bearer token in the header whenever making requests to endpoints that require authentication.
 
+## Example of Use
+
 For instance consider a login request:
 
 ```bash
@@ -11,7 +13,41 @@ This login request will return a token.
 
 One can then set the token in the authentication header: ```Authorization: Bearer <token>```
 
+And thus a request to get all department names would look like this:
+
+```bash
+curl -X GET "http://localhost:5000/v1/Department" -H "accept: text/plain" -H "Authorization: Bearer <token>"
+```
+
 For examples of how to do this in swagger see the README file at the [web-api repository](https://github.com/aau-giraf/web-api).
+
+## How is JWT configured in GIRAF
+
+The configuration is loaded in the `Startup.cs` class:
+
+```csharp
+public void ConfigureServices(IServiceCollection services)
+{
+    //commented out for brevity...
+    services.Configure<JwtConfig>(Configuration.GetSection("Jwt"));
+    //commented out for brevity...
+}
+```
+
+Thus the settings are configured in `appsettings.json` in the section called `Jwt`:
+
+```json
+{
+    ...
+    "Jwt": {
+        "JwtKey": "<30 symbol jwtkey>",
+        "JwtIssuer": "AAU",
+        "JwtExpireDays": 30
+    }
+    ...
+}
+```
+
 
 ## What is a JWT?
 
