@@ -128,7 +128,7 @@ Assume that the `to_json()` and `from_json()` is bijective and all objects conta
 1. Create all database tables at runtime (when you go offline) from the models `to_json` or `from_json` method
 2. Populate the database with the desired data
 
-To accommodate relations, you **may** need to assume that all relations are a many-to-many relation. It depends on how the web-api provides the data.
+To accommodate relations, you **may** need to assume that all relations are many-to-many relations. It depends on how the web-api provides the data.
 
 #### Example
 
