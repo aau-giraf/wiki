@@ -145,7 +145,7 @@ class User
         // maps all fields to json values
 ```
 
-You could expect some json output from `to_json()` to be
+You could expect some JSON output from `to_json()` to be
 
 ```
 {
