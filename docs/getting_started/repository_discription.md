@@ -37,7 +37,7 @@ This repository does not interact with any other reposistories, it is merely use
 
 The pictogram repository can be found [here](https://github.com/aau-giraf/pictogram-reader).
 
-The pictogram-reader should be an application that allows citizens to communicate with the use of pictograms. The app should read the pictograms out loud. For inspiration take a look at the archived repository Pictoreader. This should not be implemented before the weekplanner is done, but the PO group could start working on prototypes, widges and making issues.
+The pictogram-reader should be an application that allows citizens to communicate with the use of pictograms. The app should read the pictograms out loud. For inspiration take a look at the archived repository Pictoreader. This should not be implemented before the weekplanner is done, but the PO group could start working on prototypes, widgets and making issues.
 
 This application should be written in Flutter.
 
@@ -103,6 +103,5 @@ Image for compiling WeekPlanner Android project.
 ### sequence
 A tool for creating, and viewing, sequences of pictograms. A sequence is a
 set of pictograms, defining a sequence of actions for citizens. (SW613F15_Pictosearch.pdf)
-
 
 
