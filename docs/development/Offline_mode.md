@@ -118,7 +118,7 @@ And do not forget that this will require 4 pull requests to 4 different projects
 
 Our next approach tries to avoid this problem.
 
-### A better json storage solution
+### A better JSON storage solution
 From our point of view, a more complex form of "json"-storage is needed. This is our recommendation:
 
 *This is an abstract description and will not describe how to actual implement it*.
