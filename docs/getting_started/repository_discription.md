@@ -33,6 +33,14 @@ Docker containers for the development branch of the webAPI (2019).
 Repository for the production docker swarm for the entire GIRAF project. This repository consists mainly of a configuration file, which is repsonsible for telling docker how to initialize a docker stack. The stack contains the proxy service, the API's and the database and runs them in docker containers. The stack is deployed and run on the servers inside a docker swarm. When changes need to be made to the stack, the configuration file needs to be changed accordingly. 
 This repository does not interact with any other reposistories, it is merely used to correctly deploy everything onto the servers. More info can be found in README.md in the [swarm repository](https://github.com/aau-giraf/giraf-production-swarm).
 
+### pictogram-reader
+
+The pictogram repository can be found [here](https://github.com/aau-giraf/pictogram-reader).
+
+The pictogram-reader should be an application that allows citizens to communicate with the use of pictograms. The app should read the pictograms out loud. For inspiration take a look at the archived repository Pictoreader. This should not be implemented before the weekplanner is done, but the PO group could start working on prototypes, widgets and making issues.
+
+This application should be written in Flutter.
+
 ## Archived Repositories
 These repositories are all archived as of 2019. We keep them as a reference point for future development.
 
@@ -95,6 +103,5 @@ Image for compiling WeekPlanner Android project.
 ### sequence
 A tool for creating, and viewing, sequences of pictograms. A sequence is a
 set of pictograms, defining a sequence of actions for citizens. (SW613F15_Pictosearch.pdf)
-
 
 
