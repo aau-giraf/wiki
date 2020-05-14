@@ -76,3 +76,133 @@ The main problem is deciding what changes should be saved and what changes shoul
 
    
 To accommodate this there might need to add more attributes in the offline and online databases in order to deal with and keep track of the synchronization. Examples could be “last_updated_on”, “created_on”, “deleted_on”, “edited_offline” which are timestamps used to see if data should be synched or not and the “edited_offline” could be a boolean. It is also an option to use UUID with/instead of timestamps to make the synchronization have an unique id. 
+
+
+## Approaches of how to (and not to) implement the offline repository
+
+The [api_client](https://github.com/aau-giraf/api_client) maps json output from the [web-api](https://github.com/aau-giraf/web-api) into models in which the [weekplanner](https://github.com/aau-giraf/weekplanner) uses for displaying data models. Thus, it would be essential to implement the offline repository feature in the api_client. Every model in the api_client implements an abstract class called `Model` which provides a `from_json()` and `to_json()` method for the models to interact with the web-api. 
+
+### NoSQL / Storing plain JSON
+Our first approach was to store the string value of `to_json()` of each model in a local database. With this, you could get all models back from the database with their `from_json()` method. However, this raises a lot of errors when dealing with relational models. Consider this example:
+
+A model `A` has a one-to-many with the model `B`. If an instance of `B`, related to an instance `A`, was to be altered, it would not be altered on `A`.
+
+Thus, storing the plain `to_json()` string values from models is not a valid solution on related models.
+
+
+### In-memory design
+Since mobile devices has become more powerfull and reliable, an in-memory approach is strongly considerable. All models needed for the repository is provided by the api_client making the solution slightly straight forward and performance-efficient (https://en.wikipedia.org/wiki/In-memory_database). 
+
+However, this solution depends on the use case. If the app crashes, closes or the device is turned off obviously all data is lost.
+
+### The 1-1 approach
+Another very straight forward solution is a 1-1 relational database design with the web-api. This requires the offline repository to have the exact same rows, columns and tables as the web-api.
+
+Be careful with this solution. It seems benefiting, but do you really want to implement yet another thing for future students to maintain? If something is to be changed in the model layer, this will be your workload:
+
+1. Alter the modellayer in the web-api
+2. Migrate the database
+3. Customize the unittests
+4. Customize the integration tests
+5. Alter the models in the api_client
+6. Customize the unittests
+7. Integration test between web_api and api_client
+8. Alter the offline repository
+9. Alter the unittests
+10. Integration test between the offline repository and the api_client
+11. Integration test between the offline repository and the web-api
+12. Alter the weekplanner to use the new feature
+13. Integration test between weekplanner and the offline repository
+
+And do not forget that this will require 4 pull requests to 4 different projects. How will you convince your code reviewers that it works?
+
+Our next approach tries to avoid this problem.
+
+### A better json storage solution
+From our point of view, a more complex form of "json"-storage is needed. This is our recommendation:
+
+*This is an abstract description and will not describe how to actual implement it*.
+
+Assume that the `to_json()` and `from_json()` is bijective and all objects contains something unique (the identifier from the web-api would be essential), then you could:
+
+1. Create all database tables at runtime (when you go offline) from the models `to_json` or `from_json` method
+2. Populate the database with the desired data
+
+To accommodate relations, you **may** need to assume that all relations are a many-to-many relation. It depends on how the web-api provides the data.
+
+#### Example
+
+For the class below
+
+```
+class User
+    int id;
+    string first_name;
+    string last_name;
+    Settings settings;
+    ...
+    Map to_json():
+        // maps all fields to json values
+```
+
+You could expect some json output from `to_json()` to be
+
+```
+{
+    "id": "",
+    "first_name": "",
+    "last_name": "",
+    "settings": {
+        "id": "",
+        "theme": "",
+        ...
+    }
+}
+```
+
+This is enough information to build
+
+`user_table`
+
+| Field      | Type       | Key | Extra          |
+|------------|------------|-----|----------------|
+| Id         | bigint(20) | PRI | auto_increment |
+| first_name | varchar    |     |                |
+| last_name  | varchar    |     |                |
+
+`user_settings_table`
+
+| Field       | Type       | Key         | Extra          |
+|-------------|------------|-------------|----------------|
+| Id          | bigint(20) | PRI         | auto_increment |
+| user_id     | int(11)    | FOREIGN KEY |                |
+| settings_id | int(11)    | FOREIGN KEY |                |
+
+`settings_table`
+
+| Field | Type       | Key | Extra          |
+|-------|------------|-----|----------------|
+| Id    | bigint(20) | PRI | auto_increment |
+| theme | varchar    |     |                |
+| ...   | ...        | ... |                |
+
+Or you could use a json database. There are plenty of json2jsonschema converters out there. (https://jsonschema.net/home) (https://json-schema.org) 
+
+And of course, you will encounter collisions on related models already being inserted but this will only affect performance.
+
+
+### Alternative approaches
+
+There are many alternatives for this cause, whereto two of these approaches are SQLite and Realm.
+
+#### SQLite
+
+Another approach could be to use an [SQLite](https://flutter.dev/docs/cookbook/persistence/sqlite) database for storing the data. This database can be stored locally, which can be utilised offline. This approach is quite slow and should therefore only be used for storing small amounts of data.
+
+
+#### Realm
+
+An alternative to SQLite is [Realm](https://realm.io/products/realm-database/). A Flutter [plugin](https://pub.dev/packages/flutter_realm) for Realm is available, but the plugin is still under development so some features might not be ready yet.
+
+
+
