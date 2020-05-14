@@ -145,6 +145,7 @@ After an issue has been created, contact the PO group, who will then assign the 
 #### Fixing Release Bugs
 
 1. You get a *releaseFix* issues from the PO group.
+2. Make a new branch named ``releasefix/#IssueNumber``, branched out from the release branch.
 2. Write a regression test
     * A regression test should fail before solving the issue and pass after
 
