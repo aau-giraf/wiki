@@ -80,7 +80,8 @@ To accommodate this there might need to add more attributes in the offline and o
 
 ## Approaches of how to (and not to) implement the offline repository
 
-The [api_client](https://github.com/aau-giraf/api_client) maps json output from the [web-api](https://github.com/aau-giraf/web-api) into models in which the [weekplanner](https://github.com/aau-giraf/weekplanner) uses for displaying data models. Thus, it would be essential to implement the offline repository feature in the api_client. Every model in the api_client implements an abstract class called `Model` which provides a `from_json()` and `to_json()` method for the models to interact with the web-api. 
+The [api_client](https://github.com/aau-giraf/api_client) maps JSON output from the [web-api](https://github.com/aau-giraf/web-api) into models which the [weekplanner](https://github.com/aau-giraf/weekplanner) uses for displaying data models. Thus, it would be essential to implement the offline repository feature in the api_client. Every model in the api_client implements an abstract class called `Model` which provides a `from_json()` and `to_json()` method for the models to interact with the web-api. 
+
 
 ### NoSQL / Storing plain JSON
 Our first approach was to store the string value of `to_json()` of each model in a local database. With this, you could get all models back from the database with their `from_json()` method. However, this raises a lot of errors when dealing with relational models. Consider this example:
