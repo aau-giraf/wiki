@@ -25,6 +25,7 @@ repositories = (
 )
 
 # The webhook for discord/slack. We used this for discord, the script might have to be changed a bit to work with slack.
+# Leave this empty to not send discord message
 WEBHOOK_URI = ""
 
 # ==== TEAMS ====
@@ -83,7 +84,8 @@ def main():
             os.system('cls' if os.name == 'nt' else 'clear')
             break
 
-        sendMessageInDiscordReviewChannel(repo, pr, teams)
+        if WEBHOOK_URI:
+            sendMessageInDiscordReviewChannel(repo, pr, teams)
 
         url = createURL(PR_REVIEWS_TEMPLATE, repo, pr)
         request_review_url = createURL(PR_REVIEW_REQUEST_TEMPLATE, repo, pr)
