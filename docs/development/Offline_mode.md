@@ -203,6 +203,3 @@ Another approach could be to use an [SQLite](https://flutter.dev/docs/cookbook/p
 #### Realm
 
 An alternative to SQLite is [Realm](https://realm.io/products/realm-database/). A Flutter [plugin](https://pub.dev/packages/flutter_realm) for Realm is available, but the plugin is still under development so some features might not be ready yet.
-
-
-
