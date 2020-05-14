@@ -193,7 +193,7 @@ And of course, you will encounter collisions on related models already being ins
 
 ### Alternative approaches
 
-There are many alternatives for this cause, whereto two of these approaches are SQLite and Realm.
+There are many alternative approaches, and two of these are SQLite and Realm.
 
 #### SQLite
 
