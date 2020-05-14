@@ -125,7 +125,10 @@ From our point of view, a more complex form of "JSON"-storage is needed. This is
 
 *This is an abstract description and will not describe how to actual implement it*.
 
-Assume that the `to_json()` and `from_json()` is bijective and all objects contain something unique (the identifier from the web-api would be essential), then you could populate the database with the desired data.
+Assume that the `to_json()` and `from_json()` is bijective and all objects contain something unique (the identifier from the web-api would be essential), then you could:
+
+ 1. Create all database tables from the models `to_json` or `from_json` method
+ 2. Populate the database with the desired data
 
 To accomandate relations, the web-api may need to provide data on how the models are related to each other, since it is not always possible to see how models are related based on a JSON-format. Another way is to consider every relation as a many-to-many relation, since every one-to-many relation can be modelled as a many-to-many relation.
 
