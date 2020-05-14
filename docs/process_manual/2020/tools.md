@@ -35,3 +35,13 @@ When it is setup, it can be used to:
 All in one run.
 
 The [review script can be found here](./assets/review.py)
+
+## GitHub Webhooks
+
+In order to keep track of what happens in the GitHub repositories, 
+we created webhooks to send a message on our Discord server in a `#github` channel.
+This can also be done with Slack.
+
+We recommend making the channel opt-in (in Discord by using a role), in order to not spam the members.
+A webhook can be on GitHub for each relevant repository. 
+For example, for the weekplanner at: <https://github.com/aau-giraf/weekplanner/settings/hooks>
