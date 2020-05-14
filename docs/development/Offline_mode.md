@@ -186,7 +186,7 @@ This is enough information to build
 | theme | varchar    |     |                |
 | ...   | ...        | ... |                |
 
-Or you could use a json database. There are plenty of json2jsonschema converters out there. (https://jsonschema.net/home) (https://json-schema.org) 
+Or you could use a JSON database. There are plenty of json2jsonschema converters out there. (https://jsonschema.net/home) (https://json-schema.org) 
 
 And of course, you will encounter collisions on related models already being inserted but this will only affect performance.
 
