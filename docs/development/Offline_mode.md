@@ -92,7 +92,8 @@ Thus, storing the plain `to_json()` string values from models is not a valid sol
 
 
 ### In-memory design
-Since mobile devices has become more powerfull and reliable, an in-memory approach is strongly considerable. All models needed for the repository is provided by the api_client making the solution slightly straight forward and performance-efficient (https://en.wikipedia.org/wiki/In-memory_database). 
+Since mobile devices have become more powerful and reliable, an in-memory approach should be considered. All models needed for the repository are provided by the api_client, making the solution slightly straight forward and performance-efficient (https://en.wikipedia.org/wiki/In-memory_database). 
+
 
 However, this solution depends on the use case. If the app crashes, closes or the device is turned off, obviously all data is lost.
 
