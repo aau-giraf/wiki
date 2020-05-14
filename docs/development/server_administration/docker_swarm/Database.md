@@ -4,9 +4,9 @@ In order for the new Docker Swarm to serve the Giraf project, the database from 
 
 ## Old setup
 
-The old server was configured to use MySql 5.7.11 as can be seen on the picture below.
+The old server was configured to use MySQL 5.7.11 as can be seen on the picture below.
 
-![Mysql Version](../images/OldMysql.png "Mysql Version")
+![MySQL Version](../images/OldMysql.png "MySQL Version")
 
 In order to migrate the database without changing the database schema the same version of MySql.
 Using standard Myql commands the database was dumped into a sql file using the following command:
@@ -18,10 +18,9 @@ mysqldump -u root -p giraf-dev > giraf-dev-dump.sql
 This command will dump the database `giraf-dev` to a local file giraf-dev-dump which can be exported to the new server and imported as to a new database.
 
 ## New setup
-
 The Docker Compose files was updated with the following:
 
-```yml
+```yaml
 DB:                     # Database service
     image: mysql:8.0.19 # Database version
     command: --default-authentication-plugin=mysql_native_password

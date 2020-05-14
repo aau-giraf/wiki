@@ -4,11 +4,20 @@
 
 We use [MySQL](https://en.wikipedia.org/wiki/MySQL) on the server, because it works with Entity Framework and supports all migrations, which SQLite for instance does not. Furthermore MySQL is cross-platform and can be set up on both windows, mac and linux distributions.
 
-## Migration
+## Migrations (Only for developers of the API)
+If changes has been made to the model classes of the web-api then a new migration should be added to be able to update the database with new entities without losing data:  
 
-Information on how handle migrations is available in the ```README``` in the [web-api repository](https://github.com/aau-giraf/web-api) itself.
-
-Unless you make changes to the model layer, it is enough to know that ```dotnet ef database update``` creates the tables in the database, while ```dotnet ef database drop``` drops the entire database.
+  - In a shell, navigate to: `.../web-api/GirafRest`  
+  - `dotnet ef migrations add NameOfMigrationDescribingTheChange`  
+  - `dotnet ef database update`  
+  - If an exception is thrown then adjust the migration Up method in the file `Migrations/...NameOfMigrationDescribingTheChange.cs` to include the change of the model without triggering any MySQL exceptions. It may be good to inspect the file in any case, to see that it will function as expected.
+  - When the database is updated confirm that the migration `NameOfMigrationDescribingTheChange` is added to the table `__efmigrationshistory` in the giraf database.  
+  - Now check that the Down method in the migration is also working properly. Determine the name of the last migration before yours, looking at the date and time prefixes in `ls Migrations/MySQL`. If it is `20180409123114_PreviousMigration.cs`, then you must run `dotnet ef database update PreviousMigration`.  
+  - If an exception is thrown then adjust the migration Down method in the file `Migrations/...NameOfMigrationDescribingTheChange.cs` to include the change of the model without triggering any MySQL exceptions.  
+  - When the database is updated to the previous migration confirm that `NameOfMigrationDescribingTheChange` is no longer in the table `__efmigrationshistory` in the giraf database.  
+  - Finally update the database to the newly added migration again using `dotnet ef database update`.  
+  - If an exception is thrown adjust the Up method of the migration again to fix the issue.  
+  - Make sure that the entire web-api repository has no syntax errors before migrating, as this can also cause the migrations to fail. 
 
 ## Many-to-many
 
