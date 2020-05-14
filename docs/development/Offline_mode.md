@@ -125,7 +125,7 @@ From our point of view, a more complex form of "JSON"-storage is needed. This is
 
 *This is an abstract description and will not describe how to actual implement it*.
 
-Assume that the `to_json()` and `from_json()` is bijective and all objects contains something unique (the identifier from the web-api would be essential), then you could:
+Assume that the `to_json()` and `from_json()` is bijective and all objects contain something unique (the identifier from the web-api would be essential), then you could:
 
 1. Create all database tables at runtime (when you go offline) from the models `to_json` or `from_json` method
 2. Populate the database with the desired data
