@@ -1,7 +1,7 @@
 # Advice for Future Process Groups
 
 This section will describe our views and experiences, and what we found out that worked. 
-Previous advice can be found [here](../../getting_started/advice_for_future_giraf/process_advice.md).
+Previous advice can be found [here](../../getting_started/from_2019/advice_for_future_giraf/process_advice.md).
 
 ## The Process in General
 
