@@ -17,6 +17,7 @@ This is to avoid confusion about what to do.
 ## Communication
 
 * Use Discord or Slack as the communication medium. Use it to broadcast event start times and deadlines.
+    * Have a channel dedicated to *announcements* to make sure it does not get lost in the general chat.
 * Events should be held at a physical or remote location with all developers present.
     * Start the meeting with the agenda. Remind people what the purpose is. Do this **every** time.
     * Take short breaks between the different activities to keep the groups focused.
@@ -33,6 +34,6 @@ This is to avoid confusion about what to do.
 
 * Create a calendar available for all the groups in the project. Fill the calendar with all dates and times planned from the start.
 * Decide where all your documents should be stored and be sure to be transparent with the other developer teams with the documents.
-* Find an effective to monitor and handle pull requests and reviews. We used Google Sheets and GitHub's API to automate it. 
-* Clean up branches every sprint. Delete those that werent deleted when merging and make sure every branch has a purpose. 
-* Decide if you want META-groups, which are groups focused on different aspects of the project such as front-end, back-end, server and security.
+* Find an effective way to monitor and handle pull requests and reviews. We used Google Sheets and GitHub's API to automate it. 
+* Clean up branches after every sprint. Delete those that weren't deleted when merging and make sure every branch has a purpose. 
+* Decide if you want META-groups, which are groups focused on different aspects of the project such as front-end, back-end, server, and security.
