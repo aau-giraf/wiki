@@ -52,7 +52,7 @@ Thus the settings are configured in `appsettings.json` in the section called `Jw
 
 ## What is a JWT?
 
-JSON Web Token is an authentication token, which actually contains user information, as opposed to API keys.Traditionally api keys can be a GUID or a nonsense string, which is really a primarykey in a database, when supplied in the header of an HTTP request, the backend will then make an appropriate lookup across tables or with its authentication service to ascertain the rights of the user in question, if any. A JWT works differently: It actually contains serialized information about the user, and their access rights, this has the advantage of saving the service from database lookups, to obtain the information. It also contains a timstamp, by which the service can determine whether it is still valid.
+JSON Web Token is an authentication token, which actually contains user information, as opposed to API keys. Traditionally api keys can be a GUID or a nonsense string, which is really a primary key in a database, when supplied in the header of an HTTP request, the backend will then make an appropriate lookup across tables or with its authentication service to ascertain the rights of the user in question, if any. A JWT works differently: It actually contains serialized information about the user, and their access rights, this has the advantage of saving the service from database lookups, to obtain the information. It also contains a timestamp, by which the service can determine whether it is still valid.
 
 #### Comparison between classic API Key usage, and JWT
 <div style="display:flex;">
