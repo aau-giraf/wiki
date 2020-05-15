@@ -18,8 +18,7 @@ mysqldump -u root -p giraf-dev > giraf-dev-dump.sql
 This command will dump the database `giraf-dev` to a local file giraf-dev-dump which can be exported to the new server and imported as to a new database.
 
 ## New setup
-
-Based on the old setup the same version of MySQL was used inside the Docker Swarm. The Docker Compose files was updated with the following:
+The Docker Compose files was updated with the following:
 
 ```yaml
 DB:                     # Database service
