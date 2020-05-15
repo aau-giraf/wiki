@@ -64,6 +64,22 @@ JSON Web Token is an authentication token, which actually contains user informat
     </a>
 </div>
 
+| API Key Flow | JWT Flow |
+|-|-|
+|**Login Request** |
+| (not necessary for a classic API key) | 1. Login request is made by the client |
+| | 2. The Server retrieves the users permissions from the database|
+| | 3. The Server generates a JSON object containing the users permissions signs it and serializes it|
+| | 4. The client receives the token
+|**General Requests**|
+| 1. The client makes a request, supplying the key in its header | 1. The client makes a request, supplying the JWT in the header |
+| 2. The server looks up the key in the database and checks the permissions| 2. The server performs the request |
+| 3. The server performs the requested action | 3. The client receives the response |
+| 4. The client receives the response | |
+
+So while it requires an initial login to use the JWT, we can see that it saves the server a database query every time it generally performs requests, and since database access is one of the more expensive and time consuming things on the server side, this is quite useful.
+
+
 ### How does JWT work?
 
 If a JWT contains user information, or information about access rights, it may seem insecure. But this is not the case, in fact, it works much in the same way as RSA certificates, and can in fact use RSA or an algoritm called HMAC. On an abstract level it works like this:
