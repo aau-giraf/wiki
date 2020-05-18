@@ -52,7 +52,9 @@ A consideration could be if some data is more important to sync than other and t
 
 *Cache invalidation scenario:*   
 1. Citizen 1 logs in on their device and downloads their weekplans from the server.
+
 2. Guardian logs in on another device and changes Citizen 1's weekplan for a week.
+
 3. Citizen 1 looks at this weekplan on their device, but this is not the updated version since there is a version in the cache.
 
 Possible solutions is to e.g. use a timestamp to check if there is changes in the online version. This timestamp would be downloaded and checked whenever a weekplan is opened on a device with an internet connection. Then this timestamp is compared with the local version.   
@@ -60,9 +62,12 @@ Another solution would be to automatically check for changes every e.g. 30 secon
 Time stamps could also solve the update conflicts since it is possible to compare to versions and save the newest.   
    
 *Synchronizing offline changes scenario:*
-1. Citizen's tablet is offline.   
+1. Citizen's tablet is offline.  
+
 2. A guardian logs in on the same (offline) tablet and changes the citizen's settings.
+
 3. The citizen logs in and can see the local updates.
+
 4. The citizen's device gets internet connection and now the changes has to be synced with the database. But the guardian is not logged in anymore and the citizen does not have permission to update their changes through the web-api.
 
    
