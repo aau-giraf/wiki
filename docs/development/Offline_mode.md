@@ -1,10 +1,14 @@
 # How to Implement Offline Capabilities
 
-**Flutter resources:**    
-https://github.com/tekartik/sqflite/blob/master/sqflite/README.md  
-https://pub.dev/packages/connectivity   
-https://flutter.dev/docs/cookbook/images/cached-images   
-https://pub.dev/packages/cached_network_image
+**Flutter resources:**
+
+[SQFlite](https://github.com/tekartik/sqflite/blob/master/sqflite/README.md)  
+
+[connectivity](https://pub.dev/packages/connectivity)
+
+[Cached Images](https://flutter.dev/docs/cookbook/images/cached-images)
+
+[cached_network_image](https://pub.dev/packages/cached_network_image)
 
 ## Our solution suggestion
 We propose what is called an offline first approach because if Giraf wants to be a widely used app on different app markets, it is expected to be highly functional without internet connection. Offline first also consumes less battery and data - where especially long battery time is important for institutions and families going on trips.
@@ -95,7 +99,7 @@ Thus, storing the plain `to_json()` string values from models is not a valid sol
 
 
 ### In-memory design
-Since mobile devices have become more powerful and reliable, an in-memory approach should be considered. All models needed for the repository are provided by the api_client, making the solution slightly straight forward and performance-efficient (https://en.wikipedia.org/wiki/In-memory_database). 
+Since mobile devices have become more powerful and reliable, an in-memory approach should be considered. All models needed for the repository are provided by the api_client, making the solution slightly straight forward and performance-efficient ([In-memory database](https://en.wikipedia.org/wiki/In-memory_database)). 
 
 
 However, this solution depends on the use case. If the app crashes, closes or the device is turned off, obviously all data is lost.
