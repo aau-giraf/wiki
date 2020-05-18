@@ -27,14 +27,12 @@ The wiki can be run locally by doing the following in a terminal:
     * if not, check ``pip3 -V``
 3. Set up a virtual environment (steps assume that your current dir is project root) 
       1. Install virtualenv with ``pip install virtualenv``
-         <ul><li>else ``pip3 install virtualenv``</li></ul>
+        * else ``pip3 install virtualenv``
       2. run ``python -m venv venv``
-	      <ul><li>else ``python3 -m venv venv``</li></ul>
-      3. source the virtual environment
-	      <ul>
-	         <li>Linux:    ``source venv/bin/activate``</li>
-            <li>Windows:  ``.\venv\Scripts\activate.bat``</li>
-         </ul>
+        * else ``python3 -m venv venv``
+      1. source the virtual environment
+        * Linux:    ``source venv/bin/activate``
+        * Windows:  ``.\venv\Scripts\activate.bat``
 4. Install plugins with ``pip install -r requirements.txt`` (if pip is using python3)
     * else ``pip3 install -r requirements.txt``
 5. Start local server with ``mkdocs serve``
