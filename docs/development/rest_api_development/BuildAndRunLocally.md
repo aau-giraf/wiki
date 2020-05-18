@@ -6,13 +6,13 @@ To run the project locally with a MySQL database first do the following:
   - Download and install .NET Core 3.1 SDK or a version backwardly compatible with it (https://dotnet.microsoft.com/download/dotnet-core/3.1).
   - Download MySQL installer (https://dev.mysql.com/downloads/installer/).
     * Install MySQL server 8.0, under the setup, create a root account with password `password`, and add a user with username `user` with password `password`.
-    * (Optional) Install Workbench.
+    * (Optional) Install Workbench.  
   - Setup a giraf database/schema named `giraf` on the MySQL Server (can be done from Workbench or via cli).
     * (Through Workbench) Start MySQL Workbench. There should be a Local instance running under MySQL Connections, log in using the created root password `password`, create a new schema named `giraf`.
     * (Through cli) Open MySQL 8.0 Command Line Client (installed program) and login using the created root password `password`. Create a new database named `giraf` by typing the following command `CREATE DATABASE giraf;`  
-  - For Linux users:
+  - For Linux users:  
       * Run `apt install libc6-dev` and `apt install libgdiplus` to install dependencies required by `System.Drawing.Common`.
-  - For Mac users:
+  - For Mac users:  
       * Run `brew install mono-libgdiplus` to install dependencies required by `System.Drawing.Common`.
     
 ### 1. Clone the web_api repository from GitHub.
