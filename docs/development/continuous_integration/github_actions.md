@@ -1,5 +1,5 @@
 # GitHub Actions
-The currently used Continuous Integration Pipeline is GitHub Actions, which provides 2.000 minutes free per month, running on either Ubuntu, MacOS or Windows, allowing us to test multiple platforms from our CI-Platform without cost.
+The currently used Continuous Integration Pipeline is GitHub Actions, which provides 2.000 minutes free per month. It can run on either Ubuntu, MacOS, or Windows, allowing us to test multiple platforms from our CI-Platform without cost.
 
 ## Weekplanner
 The weekplanner is built in 4 jobs from the same workflow: [main.yml](https://github.com/aau-giraf/weekplanner/blob/develop/.github/workflows/main.yml)
@@ -31,7 +31,7 @@ This job is built in two tasks: [dotnettest.yml](https://github.com/aau-giraf/we
 Similar to the api_client, the web-api suite runs by building a dotnet system in Release mode, to ensure deployability, and then runs `dotnet test`, to run the embedded GirafRest.Test project and the unit tests contained.
 
 ### GitHub Packages
-In addition to running unit tests in GitHub Actions, when pushed to any branch GitHub Actions starts another job, and starts a build of the embedded Dockerfile, and tags this accordingly as either:
+In addition to running unit tests, when pushed to any branch GitHub Actions starts another job, starts a build of the embedded Dockerfile, and tags this accordingly as either:
 
  - **master**: aau-giraf/web-api/web-api:latest
  - **develop**: aau-giraf/web-api/web-api:develop
