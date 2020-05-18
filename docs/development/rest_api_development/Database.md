@@ -2,7 +2,7 @@
 
 ## MySQL
 
-We use [MySQL](https://en.wikipedia.org/wiki/MySQL) on the server, because it works with Entity Framework and supports all migrations, which SQLite for instance does not. Furthermore MySQL is cross-platform and can be set up on both windows, mac and linux distributions.
+We use [MySQL](https://en.wikipedia.org/wiki/MySQL) on the server, because it works with Entity Framework and supports all migrations, which SQLite for instance does not. Furthermore MySQL is cross-platform and can be set up on both Windows, Mac and Linux distributions.
 
 ## Migrations (Only for developers of the API)
 If changes has been made to the model classes of the web-api then a new migration should be added to be able to update the database with new entities without losing data:  
