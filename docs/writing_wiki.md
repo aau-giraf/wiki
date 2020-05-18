@@ -27,9 +27,9 @@ The wiki can be run locally by doing the following in a terminal:
     * if not, check ``pip3 -V``
 3. Set up a virtual environment (steps assume that your current dir is project root) 
       1. Install virtualenv with ``pip install virtualenv``
-            1. else ``pip3 install virtualenv``
+        * else ``pip3 install virtualenv``
       2. run ``python -m venv venv``
-            1. else ``python3 -m venv venv``
+        * else ``python3 -m venv venv``
       3. source the virtual environment
             1. Linux:    ``source venv/bin/activate`` 
             2. Windows:  ``.\venv\Scripts\activate.bat``
