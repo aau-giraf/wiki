@@ -13,7 +13,7 @@ All communication is done through 'requests' and 'responses'.
 ## Controller
 When creating a new controller, you start by creating a new class deriving from the `Controller` class.
 The `Controller` class provides useful responses that are used when sending responses to the API.<br/>
-Here is an example of a controller
+Here is an example of a controller:
 ```C# 
 [Authorize]
 [Route("v1/[controller]")]
