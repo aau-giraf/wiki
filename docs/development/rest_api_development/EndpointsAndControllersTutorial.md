@@ -12,8 +12,8 @@ All communication is done through 'requests' and 'responses'.
 
 ## Controller
 When creating a new controller, you start by creating a new class deriving from the `Controller` class.
-The `Controller` class provides useful responses that are used when sending responses to the API.\
-Here is an example of a controller
+The `Controller` class provides useful responses that are used when sending responses to the API.<br/>
+Here is an example of a controller:
 ```C# 
 [Authorize]
 [Route("v1/[controller]")]
@@ -22,18 +22,18 @@ public class ExampleController : Controller
     //Endpoints goes here
 }
 ```
-Before the class declaration are two arguments `[Authorize]` and `[Route("v1/[controller]")]`.
-The `[Authorize]` argument dictates who has access to the controller and the endpoints. 
+Before the class declaration are two [attributes](https://www.tutorialspoint.com/csharp/csharp_attributes.htm) `[Authorize]` and `[Route("v1/[controller]")]`.
+The `[Authorize]` attribute dictates who has access to the controller and the endpoints. 
 If there is no `[Authorize]`, anyone can access the controller and its endpoints, while if there is a `[Authorize]` you have to be logged in to access the controller and the endpoints. 
 Additionally you can define what roles the logged in user needs to get access like this `[Authorize(Roles = GirafRole.Guardian)]` or if you want more roles to have access `[Authorize(Roles = GirafRole.SuperUser + "," + GirafRole.Department + "," + GirafRole.Guardian)]`.
 Typically, you would only use `[Authorize]` for controllers as specifying what roles have access to the controller, like with `[Authorize(Roles = GirafRole.SuperUser)]`, locks all endpoints to the same access level, meaning you can't make some endpoints accessible only to a guardian while another is accessible only to a superuser. 
 
-The `[Route("v1/[controller]")]` argument modifies the URL for endpoints to include the pre-fix define in the quotation marks.
+The `[Route("v1/[controller]")]` attribute modifies the URL for endpoints to include the pre-fix define in the quotation marks.
 The `[controller]` uses the name of the controller excluding `Controller` in this case it would be `/v1/Example`.
 
 ## Endpoint
 Endpoints are essencially methods in a controller. 
-Like the controller, an endpoint has some special arguments. 
+Like the controller, an endpoint has some special attributes. 
 Here is an example of an endpoint
 
 ```C#
@@ -93,4 +93,4 @@ public async Task<ActionResult> GetById(int id)
 }
 ```
 You can also use `StatusCode(StatusCodes.Status200OK, objectToReturn)` for giving status codes to a response. 
-The first argument is a static class containing http status codes and the second argument is the object to return. 
+The first attribute is a static class containing http status codes and the second attribute is the object to return. 
