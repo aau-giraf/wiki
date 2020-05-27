@@ -1,10 +1,14 @@
 # How to Implement Offline Capabilities
 
-**Flutter resources:**    
-https://github.com/tekartik/sqflite/blob/master/sqflite/README.md  
-https://pub.dev/packages/connectivity   
-https://flutter.dev/docs/cookbook/images/cached-images   
-https://pub.dev/packages/cached_network_image
+**Flutter resources:**
+
+[SQFlite](https://github.com/tekartik/sqflite/blob/master/sqflite/README.md)  
+
+[connectivity](https://pub.dev/packages/connectivity)
+
+[Cached Images](https://flutter.dev/docs/cookbook/images/cached-images)
+
+[cached_network_image](https://pub.dev/packages/cached_network_image)
 
 ## Our solution suggestion
 We propose what is called an offline first approach because if Giraf wants to be a widely used app on different app markets, it is expected to be highly functional without internet connection. Offline first also consumes less battery and data - where especially long battery time is important for institutions and families going on trips.
@@ -46,9 +50,12 @@ To store the data (activities, timers) locally on the device the SQLite DB can b
 **Syncing the local database to match the online database:**  
 A consideration could be if some data is more important to sync than other and then make different sync cycles or prioritization, in case the user only has connection for a short period of time. It could also be considered if all data needs to be updated all the time or some data just need daily, weekly or monthly updates. Features that are seen as not important could also be disabled in offline mode in order to make the amount of offline data as small as possible and keep the complexity of the synchronization down (at least in the beginning).
 
-*Cache invalidation scenario:*   
+*Cache invalidation scenario:*
+
 1. Citizen 1 logs in on their device and downloads their weekplans from the server.
+
 2. Guardian logs in on another device and changes Citizen 1's weekplan for a week.
+
 3. Citizen 1 looks at this weekplan on their device, but this is not the updated version since there is a version in the cache.
 
 Possible solutions is to e.g. use a timestamp to check if there is changes in the online version. This timestamp would be downloaded and checked whenever a weekplan is opened on a device with an internet connection. Then this timestamp is compared with the local version.   
@@ -56,9 +63,13 @@ Another solution would be to automatically check for changes every e.g. 30 secon
 Time stamps could also solve the update conflicts since it is possible to compare to versions and save the newest.   
    
 *Synchronizing offline changes scenario:*
+
 1. Citizen's tablet is offline.   
+
 2. A guardian logs in on the same (offline) tablet and changes the citizen's settings.
+
 3. The citizen logs in and can see the local updates.
+
 4. The citizen's device gets internet connection and now the changes has to be synced with the database. But the guardian is not logged in anymore and the citizen does not have permission to update their changes through the web-api.
 
    
@@ -83,7 +94,9 @@ To accommodate this there might need to add more attributes in the offline and o
 The [api_client](https://github.com/aau-giraf/api_client) maps JSON output from the [web-api](https://github.com/aau-giraf/web-api) into models which the [weekplanner](https://github.com/aau-giraf/weekplanner) uses for displaying data models. Thus, it would be essential to implement the offline repository feature in the api_client. Every model in the api_client implements an abstract class called `Model` which provides a `from_json()` and `to_json()` method for the models to interact with the web-api. 
 
 These approaches do not consider:
+
 * How much data to store in the repository
+
 * How the offline repository should synchronise with the web-api
 
 ### NoSQL / Storing plain JSON
@@ -95,7 +108,7 @@ Thus, storing the plain `to_json()` string values from models is not a valid sol
 
 
 ### In-memory design
-Since mobile devices have become more powerful and reliable, an in-memory approach should be considered. All models needed for the repository are provided by the api_client, making the solution slightly straight forward and performance-efficient (https://en.wikipedia.org/wiki/In-memory_database). 
+Since mobile devices have become more powerful and reliable, an in-memory approach should be considered. All models needed for the repository are provided by the api_client, making the solution slightly straight forward and performance-efficient ([In-memory database](https://en.wikipedia.org/wiki/In-memory_database)). 
 
 
 However, this solution depends on the use case. If the app crashes, closes or the device is turned off, obviously all data is lost.

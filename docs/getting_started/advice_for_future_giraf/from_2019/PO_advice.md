@@ -54,6 +54,13 @@ Another approach to creating user stories is when developer groups create featur
 In most cases these need to be rewritten into user stories if the problem they are describing has not been formulated correctly or adequately.
 When creating user stories, take special care to ensure that your user stories are not written ambiguously and, if so, that you have the precise functionality that the users wanted explained within them.
 
+## Prioritizing user stories and issues
+The figure below shows a guide for how to prioritize user stories:
+
+![Prioritization Convention](images/PrioritizationConvention.svg)
+
+The figure is available in .svg format [here](images/PrioritizationConvention.svg) and can be edited in tools like [draw.io](https://www.draw.io/) if updates are needed.
+
 ## Prototypes
 One of the important tasks of the PO group is to create and maintain prototypes.
 Prototypes should conform to the design guide which can be found on the Github Wiki-page.
