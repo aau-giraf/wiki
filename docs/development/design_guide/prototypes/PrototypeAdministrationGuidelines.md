@@ -3,7 +3,11 @@ The system described here was defined by the PO group of the spring semester 202
 
 ## Workspace Organisation
 
-The workspace in Adobe XD has been divided to categorize prototypes based on their state. The different states of a prototype and how it transisions between them are described in the figure below:
+The workspace in Adobe XD has been divided to categorize prototypes based on their state as shown by the image below:
+
+![AdobeXDWorkspace](./images/AdobeXDWorkspace.png)
+
+The figure below describes how the prototype transistions between the states:
 
 ![PrototypeStates](./images/PrototypeStates.png)
 
@@ -31,7 +35,7 @@ The table below describes each part of the name:
 | ContextID | An integer that is unique for the semester and represents the context of the prototypes. E.g. if four prototypes have been created to illustrate the feature of deleting pictograms, they should have the same *ContextID*. |
 | CompareID | If some prototypes illustrate one way to implement a feature while others illustrate a different way to implement the same feature (they should share *ContextID*) and they are being compared at the customer review, they should be given a letter (*A*, *B*, *C* etc.). |
 | ViewID    | Either *GUA* or *CIT* depending whether the prototype illustrates guardians view or citizen's view. Should always be included. |
-| RelateID  | One or more integers (if there are more they should be seperated by hyphens) that describe how prototypes with the same *yyyyx*, *ContextID*, "CompareID" and *ViewID* are related. If the name is already unique without *RelateID* it should be exluded |
+| RelateID  | One or more integers (if there are more they should be seperated by hyphens) that describe how prototypes with the same *yyyyx*, *ContextID*, *CompareID* and *ViewID* are related. If the name is already unique without *RelateID* it should be exluded |
 | GitID     | The GitHub issue that the prototype is related to. Use abbreviations so WP273 = weekplanner#273 and PR12 = pictogram-reader#12 |
 
 The naming convention is illustrated by the figure below:
