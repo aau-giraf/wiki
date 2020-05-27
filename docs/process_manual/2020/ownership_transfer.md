@@ -44,7 +44,7 @@ To access the Google Drive use the same credentials as for the [Google Play Stor
 
 Email: ``aaugiraf@gmail.com``
 
-Password: see KeePass
+Password: see [KeePass](#giraf-passwords)
 
 The Drive contains, among other things of interest, a dump of the Google Drive used by GIRAF 2020F
 
