@@ -38,6 +38,16 @@ Email: ``giraf@lists.aau.dk``
 
 Password: see KeePass
 
+## Google Drive
+
+To access the Google Drive use the same credentials as for the [Google Play Store](#google-play-store).
+
+Email: ``aaugiraf@gmail.com``
+
+Password: see KeePass
+
+The Drive contains, among other things of interest, a dump of the Google Drive used by GIRAF 2020F
+
 ## Server Access
 
 The server-meta group must compile a list of student emails who needs sudo acess to the server. 
