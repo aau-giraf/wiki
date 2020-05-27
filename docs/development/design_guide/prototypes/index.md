@@ -1,6 +1,6 @@
 # Prototypes
+These are the prototypes of the GIRAF project.
 
-| **Year** | **Semester** | **.xd**                                  | **.pdf**                                   |
-|----------|--------------|------------------------------------------|--------------------------------------------|
-| 2019     | Spring       | [prototypes2019.xd](prototypes2019.xd)   | [prototypes2019.pdf](prototypes2019.pdf)   |
-| 2020     | Spring       | [Prototypes2020F.xd](Prototypes2020F.xd) | [Prototypes2020F.pdf](Prototypes2020F.pdf) |
+## Table of Contents
+1. [Prototype Administration Guidelines](PrototypeAdministrationGuidelines.md)
+2. [Prototype Overview](PrototypeOverview.md)
