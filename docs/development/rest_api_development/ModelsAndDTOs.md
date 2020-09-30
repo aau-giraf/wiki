@@ -13,7 +13,7 @@ The models of the REST API is a collection of classes, which is used throughout 
 |```Pictogram``` | Used for storing the image of a pictogram as well as meta-information such as its name.|
 | ```Setting``` | Used to specify the settings particular to a user. This includes number of days shown at a time, and the colour theme. |
 | ```WeekdayColor``` | Used to represent a field in settings that specifies the background colour to use when displaying a particular week day.|
-| ```Weekday``` | Used to represent a citizen's day with a number of activities each represented as a pictogram.| 
+| ```Weekday``` | Used to represent a citizen's day with a number of activities each represented as a pictogram.|
 | ```WeekBase``` | The base class from which Week and WeekTemplate inherits. Contains an ID, a name, a thumbnail and up to 7 days. |
 | ```Week``` | Used to define a users schedule for a week at a certain year and week-number. |
 | ```WeekTemplate``` | Used to define a generic template that can be used as a base when a new week is being planned.|
