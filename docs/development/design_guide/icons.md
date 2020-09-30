@@ -1,4 +1,5 @@
 # Icon guide
+
 These, and only these, icons should be used within the GIRAF project to ensure that no icon is undescribed or has multiple meanings.
 If a new icon is added, it should be added to this table.
 
