@@ -14,7 +14,8 @@ The account controller contains all the endpoints related to authenticating user
 
 ### ActivityController
 
-The activity controller contains CRUD endpoints related to activities. It has been created to avoid having to update the whole weekplan when changes are made to a single activity.
+The activity controller contains CRUD endpoints related to activities.
+It has been created to avoid having to update the whole weekplan when changes are made to a single activity.
 
 ### UserController
 
@@ -30,11 +31,13 @@ This controller contains CRUD endpoints for managing pictograms, including their
 
 ### WeekController
 
-In the WeekPlanner application, a citizen has different week schedules which contains information about all of the citizen's activities for a given week. This controller contains the CRUD methods for that week entity.
+In the WeekPlanner application, a citizen has different week schedules which contains information about all of the citizen's activities for a given week.
+This controller contains the CRUD methods for that week entity.
 
 ### WeekTemplateController
 
-Week templates may be used by guardians in the WeekPlanner app when creating a new week for a citizen. This controller contains CRUD endpoints for managing week templates.
+Week templates may be used by guardians in the WeekPlanner app when creating a new week for a citizen.
+This controller contains CRUD endpoints for managing week templates.
 
 ### StatusController
 
@@ -42,7 +45,8 @@ The status controller purely used by the server groups to check the status of th
 
 ### ErrorController
 
-By convention the ErrorController is linked to whenever there is an illegal request such as a 404 request. The controller will always send back an ```ErrorResponse```.
+By convention the ErrorController is linked to whenever there is an illegal request such as a 404 request.
+The controller will always send back an ```ErrorResponse```.
 
 ### Next
 

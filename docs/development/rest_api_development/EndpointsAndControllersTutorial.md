@@ -4,7 +4,7 @@ This tutorial is created to help developers understand and create new controller
 An endpoint is basically the end of a communication channel.
 It is this point the API uses to access resources needed to fulfill a request.
 Any time the API wants to access the database, it happens through endpoints.
-Each endpoint has its own URL that the API uses when it wants a specific action. 
+Each endpoint has its own URL that the API uses when it wants a specific action.
 
 A controller is a collection of endpoints.
 Each controller is responsible for a limited area of the server/API and contains the endpoints related to said area.
@@ -14,7 +14,7 @@ All communication is done through 'requests' and 'responses'.
 When creating a new controller, you start by creating a new class deriving from the `Controller` class.
 The `Controller` class provides useful responses that are used when sending responses to the API.<br/>
 Here is an example of a controller:
-```C# 
+```C#
 [Authorize]
 [Route("v1/[controller]")]
 public class ExampleController : Controller
@@ -23,16 +23,16 @@ public class ExampleController : Controller
 }
 ```
 Before the class declaration are two [attributes](https://www.tutorialspoint.com/csharp/csharp_attributes.htm) `[Authorize]` and `[Route("v1/[controller]")]`.
-The `[Authorize]` attribute dictates who has access to the controller and the endpoints. 
-If there is no `[Authorize]`, anyone can access the controller and its endpoints, while if there is a `[Authorize]` you have to be logged in to access the controller and the endpoints. 
+The `[Authorize]` attribute dictates who has access to the controller and the endpoints.
+If there is no `[Authorize]`, anyone can access the controller and its endpoints, while if there is a `[Authorize]` you have to be logged in to access the controller and the endpoints.
 Additionally you can define what roles the logged in user needs to get access like this `[Authorize(Roles = GirafRole.Guardian)]` or if you want more roles to have access `[Authorize(Roles = GirafRole.SuperUser + "," + GirafRole.Department + "," + GirafRole.Guardian)]`.
-Typically, you would only use `[Authorize]` for controllers as specifying what roles have access to the controller, like with `[Authorize(Roles = GirafRole.SuperUser)]`, locks all endpoints to the same access level, meaning you can't make some endpoints accessible only to a guardian while another is accessible only to a superuser. 
+Typically, you would only use `[Authorize]` for controllers as specifying what roles have access to the controller, like with `[Authorize(Roles = GirafRole.SuperUser)]`, locks all endpoints to the same access level, meaning you can't make some endpoints accessible only to a guardian while another is accessible only to a superuser.
 
 The `[Route("v1/[controller]")]` attribute modifies the URL for endpoints to include the pre-fix define in the quotation marks.
 The `[controller]` uses the name of the controller excluding `Controller` in this case it would be `/v1/Example`.
 
 ## Endpoint
-Endpoints are essencially methods in a controller. 
+Endpoints are essencially methods in a controller.
 Like the controller, an endpoint has some special attributes. 
 Here is an example of an endpoint
 

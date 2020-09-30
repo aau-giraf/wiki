@@ -6,7 +6,8 @@ Before building, you must copy ```⋯/GirafRest/appsettings.template.json``` to 
 
 ## Connection String
 
-A [ConnectionString](https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-strings) is needed, which tells Entity Core Framework how to connect to a database. In this example the ConnectionString connects to a the giraf-dev database, which is the development database. In contrast, giraf-prod should be used for production.
+A [ConnectionString](https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-strings) is needed, which tells Entity Core Framework how to connect to a database.
+In this example the ConnectionString connects to a the giraf-dev database, which is the development database. In contrast, giraf-prod should be used for production.
 
 It must be on the form:
 
@@ -18,15 +19,15 @@ It must be on the form:
 
 Fill in the following:
 
-| Field | Description |
-|:---|:---|
-| ```<db-host>``` | DB server's address. Set this to localhost |
-| ```<db-port>``` |	The port to use for communication with the server.| Default is 3306 so set it to this unless you specified otherwise during installation. |
-| ```<db-user>``` | Name of the DB server's root user, or another user with the right priviliges. |
-| ```<db-password>``` | Password of same. |
-| ```<db-db>``` | Name of the schema that will be created. Set this to giraf if you have no reason to do otherwise.|
+| Field | Description | Default |
+|:---|:---|:---|
+| ```<db-host>``` | DB server's address. Set this to localhost | |
+| ```<db-port>``` | The port to use for communication with the server. | 3306, unless you specified otherwise during installation. |
+| ```<db-user>``` | Name of the DB server's root user, or another user with the right privileges. | |
+| ```<db-password>``` | Password of same. | |
+| ```<db-db>``` | Name of the schema that will be created. Set this to giraf if you have no reason to do otherwise.| |
 
-# JWT information
+## JWT information
 
 This information is required for creating the [JWT](https://jwt.io/) keys which will be used for authorisation on the server.
 
