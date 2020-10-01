@@ -1,6 +1,7 @@
 # Entity Framework
 
-The Entity Framework is a database framework for .NET. It allows using LINQ (Language Integrated Query) statements to query the database, adding a layer of abstraction from the SQL queries to the database.
+The Entity Framework is a database framework for .NET.
+It allows using LINQ (Language Integrated Query) statements to query the database, adding a layer of abstraction from the SQL queries to the database.
 
 The link between the REST API and the database is the ```GirafDbContext``` class, which declares a number of ```DbSet```s. Each ```DbSet``` represents a table in the database, and thus a LINQ on any of these ```DbSet``` s is the same as a SQL query with the given table in the FROM-clause (see example below):
 
@@ -19,7 +20,9 @@ LIMIT 1;
 
 ## Includes
 
-When EF fetches data for you in the database, it is always as lazy as possible and will not include related data per default. If we consider the same ```User```-class example as presented before, EF will not load the user's department when only queried for a user, and the field will thus be null. In order to cause EF to load the data, you must use an ```Include``` on the LINQ. In this case we would have to write:
+When EF fetches data for you in the database, it is always as lazy as possible and will not include related data per default.
+If we consider the same ```User```-class example as presented before, EF will not load the user's department when only queried for a user, and the field will thus be null.
+In order to cause EF to load the data, you must use an ```Include``` on the LINQ. In this case we would have to write:
 
 ```Csharp
 context.Users.Where(u => u.Id == 1).Include(u => u.Department).FirstOrDefaultAsync();
