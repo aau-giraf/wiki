@@ -1,1 +1,1 @@
-mdl docs/process_manual -s markdownlint/.mdl_style.rb
+mdl docs\writing_wiki.md -s markdownlint/lib/mdl/styles/relaxed.rb"
