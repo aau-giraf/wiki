@@ -39,5 +39,5 @@ Tests that pass will be marked with green and any that fails will be marked with
 #### Package Manager Console
 
 Visual Studio's Package Manager Console may be used to apply migrations.
-For information on this, please see https://docs.microsoft.com/en-us/nuget/tools/package-manager-console
- and https://docs.microsoft.com/en-us/ef/core/miscellaneous/cli/powershell
+For information on this, please see `https://docs.microsoft.com/en-us/nuget/tools/package-manager-console`
+ and `https://docs.microsoft.com/en-us/ef/core/miscellaneous/cli/powershell`

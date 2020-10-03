@@ -1,13 +1,17 @@
 # Filling in the Appsettings.json file
 
-The backend must have a [configuration enviroment](https://docs.microsoft.com/da-dk/aspnet/core/fundamentals/configuration/index?view=aspnetcore-2.2) set up in order to be able to run.
+The backend must have a [configuration enviroment](https://docs.microsoft.com/da-dk/aspnet/core/fundamentals/configuration/index?view=aspnetcore-2.2)
+set up in order to be able to run.
 
-Before building, you must copy ```⋯/GirafRest/appsettings.template.json``` to ```⋯/GirafRest/appsettings.Development.json``` and fill in the ```<>```s.
+Before building, you must copy ```⋯/GirafRest/appsettings.template.json```
+to ```⋯/GirafRest/appsettings.Development.json``` and fill in the ```<>```s.
 
 ## Connection String
 
-A [ConnectionString](https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-strings) is needed, which tells Entity Core Framework how to connect to a database.
-In this example the ConnectionString connects to a the giraf-dev database, which is the development database. In contrast, giraf-prod should be used for production.
+A [ConnectionString](https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-strings)
+is needed, which tells Entity Core Framework how to connect to a database.
+In this example the ConnectionString connects to a the giraf-dev database, which
+is the development database. In contrast, giraf-prod should be used for production.
 
 It must be on the form:
 
@@ -29,7 +33,8 @@ Fill in the following:
 
 ## JWT information
 
-This information is required for creating the [JWT](https://jwt.io/) keys which will be used for authorisation on the server.
+This information is required for creating the [JWT](https://jwt.io/) keys which
+will be used for authorisation on the server.
 
 It must be on the form:
 

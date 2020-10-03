@@ -2,7 +2,8 @@
 
 ## Models
 
-The models of the REST API is a collection of classes, which is used throughout the application. A list of these classes can be found below.
+The models of the REST API is a collection of classes, which is used throughout
+the application. A list of these classes can be found below.
 
 |Model name | Usage|
 |:----------|:-----|
@@ -20,11 +21,16 @@ The models of the REST API is a collection of classes, which is used throughout 
 
 ## Data Transfer Objects
 
-Data Transfer Objects (DTOs) are used to communicate data in the controllers both as input and output for the methods, while containing only the essential from each model. All models have a corresponding DTO with the exception of AccessLevel and GirafRole, as they are not used directly in any controllers currently. In addition to those there are also six DTOs related to account/user management.
+Data Transfer Objects (DTOs) are used to communicate data in the controllers both
+as input and output for the methods, while containing only the essential from each
+model. All models have a corresponding DTO with the exception of AccessLevel and
+GirafRole, as they are not used directly in any controllers currently. In addition
+to those there are also six DTOs related to account/user management.
 
 NOTE: An object should never leave the server unless it has been packed in a corresponding DTO.
 
-NOTE: All DTOs must have parameterless constructors, because it is required by Newtonsoft when deserializing incomming requests.
+NOTE: All DTOs must have parameterless constructors, because it is required by Newtonsoft
+when deserializing incomming requests.
 
 ## Next
 

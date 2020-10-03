@@ -11,8 +11,8 @@ This section shortly explains how to use Codecov
 
 ### Codecov.io
 
-On the [Codecov site](https://codecov.io/gh/aau-giraf), the GIRAF repositories using Codecov can be seen.
-In the different repositores, multiple things can be seen.
+On the [Codecov site](https://codecov.io/gh/aau-giraf), the GIRAF repositories using
+Codecov can be seen. In the different repositories, multiple things can be seen.
 For example, the code coverage, and changes in code coverage for every commit.
 
 ### Pull Request Comments
@@ -29,8 +29,9 @@ This comment is updated when new commits are added to the pull request.
 
 #### Flutter Repositories
 
-In Flutter repositories, the `--coverage` argument is added to the `flutter test` step in the workflow.
-This generates a coverage file, which is then uploaded by the next step:
+In Flutter repositories, the `--coverage` argument is added to the `flutter test`
+step in the workflow. This generates a coverage file, which is then uploaded by
+the next step:
 
 ```yaml
 ...
@@ -43,8 +44,8 @@ This generates a coverage file, which is then uploaded by the next step:
 
 #### .NET Repositories
 
-In the .NET repositories, the package `coverlet.msbuild` is used to generate code coverage reports.
-The package is installed with in `GirafRest.Test`.
+In the .NET repositories, the package `coverlet.msbuild` is used to generate code
+coverage reports. The package is installed with in `GirafRest.Test`.
 
 Then in the workflow, in the test step, some arguments are added.
 
@@ -66,8 +67,8 @@ Beneath is an explanation of the arguments:
 
 ### Config
 
-The codecov integration is configured in the `codecov.yml` file in the respective repositories.
-Documentation for the config file can be seen at <https://docs.codecov.io/docs/codecov-yaml>.
+The codecov integration is configured in the `codecov.yml` file in the respective
+repositories. Documentation for the config file can be seen at <https://docs.codecov.io/docs/codecov-yaml>.
 
 ## Affected Repositories
 

@@ -1,7 +1,8 @@
 # Colors
 
-This chapter shows which colors should be used for the different components in the application.
-Throughout this a single color in each entry will denote a solid color, while two colors in an entry will denote a gradient between the two colors.
+This chapter shows which colors should be used for the different components in
+the application. Throughout this a single color in each entry will denote a solid
+color, while two colors in an entry will denote a gradient between the two colors.
 
 ## Text and background
 
@@ -15,7 +16,8 @@ Throughout this a single color in each entry will denote a solid color, while tw
 
 ## Buttons
 
-Gradients deﬁned below are from top to bottom. Also note that the colors for the disabled button must be transparent (40% opacity).
+Gradients deﬁned below are from top to bottom. Also note that the colors for the
+disabled button must be transparent (40% opacity).
 
 |Usage|RGB|HEX|Color|
 |---|---|---|---|
@@ -45,7 +47,9 @@ Gradients deﬁned below are from top to bottom. Also note that the colors for t
 
 ## Week indicators
 
-These colors must be used whenever a certain weekday is referenced. Note that these colors are primarily used to increase the usability for citizens because they are already familiar with this color scheme.
+These colors must be used whenever a certain weekday is referenced. Note that these
+colors are primarily used to increase the usability for citizens because they are
+already familiar with this color scheme.
 
 |Usage|RGB|HEX|Color|
 |---|---|---|---|

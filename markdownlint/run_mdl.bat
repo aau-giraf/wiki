@@ -1,1 +1,1 @@
-mdl docs/process_manual -s markdownlint/.mdl_style.rb
+mdl docs/development/file_documentation/weekplanner/tests -s markdownlint/.mdl_style.rb

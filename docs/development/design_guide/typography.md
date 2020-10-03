@@ -9,7 +9,9 @@ In case the text refers to an inactive element, the grey text color should be us
 
 ## Font family
 
-The font should always be the [Quicksand font](https://fonts.google.com/specimen/Quicksand), as the customers prefer that the font is similar to how the citizens learn to write, especially in relation to the letter a.
+The font should always be the [Quicksand font](https://fonts.google.com/specimen/Quicksand),
+as the customers prefer that the font is similar to how the citizens learn to write,
+especially in relation to the letter a.
 
 ## Font size
 
@@ -17,4 +19,5 @@ The font size should follow the sizes in file FontSizes(Placeholder).
 
 ## Bold, italic and underlined text
 
-The text should never be bold, italic or underlined in order to maintain a consistent design.
+The text should never be bold, italic or underlined in order to maintain a consistent
+design.
