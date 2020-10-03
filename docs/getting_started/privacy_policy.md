@@ -3,6 +3,7 @@ title: "Privacy Policy"
 ---
 
 # Privacy Policy
+
 Last updated: 08/03/2017
 
 We develop GIRAF and its associated apps. This page informs you of our policies

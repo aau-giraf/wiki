@@ -133,6 +133,11 @@ works:
 
 ![DockerPortEx](./images/DockerPortEx.png "DockerPortEx")
 
-we illustrate how the ``-v`` parameter works. This parameter is used to mount a host folder into a folder in the container. For instance this could be used when we want to populate a folder in our container with pre-existing data. The parameter is used as ``-p /hostfolder:/persistent/folder`` where ``hostfolder`` is the folder on the host system and ``/persistent/folder`` is an arbitrary path to an existing folder inside a container. The picture below illustrates how this works:
+we illustrate how the ``-v`` parameter works. This parameter is used to mount a
+host folder into a folder in the container. For instance this could be used when
+we want to populate a folder in our container with pre-existing data. The parameter
+is used as ``-p /hostfolder:/persistent/folder`` where ``hostfolder`` is the folder
+on the host system and ``/persistent/folder`` is an arbitrary path to an existing
+folder inside a container. The picture below illustrates how this works:
 
 ![DockerVolumeEx](./images/DockerVolumeEx.png "DockerVolumeEx")

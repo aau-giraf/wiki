@@ -1,6 +1,7 @@
 # Application specifications
 
-The different specifications for the weekplanner can be found here. They should be updated regularly so it always matches the versions in the application.
+The different specifications for the weekplanner can be found here. They should
+be updated regularly so it always matches the versions in the application.
 
 
 * Android sdk oldest version supported: 16 (Target is 28) Last updated ?

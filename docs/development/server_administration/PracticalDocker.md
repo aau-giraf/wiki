@@ -1,22 +1,27 @@
 # Practical Docker in a swarm
 
-In the following, the installation and setup process of DockerCE and Docker Swarm is described, and at the end, some examples on how to use Docker Services is given.
+In the following, the installation and setup process of DockerCE and Docker Swarm
+is described, and at the end, some examples on how to use Docker Services is given.
 
 ## Installation of Docker
 
-To install DockerCE on a node in the Swarm the following command can be used to set up the local Docker environment:
+To install DockerCE on a node in the Swarm the following command can be used to
+set up the local Docker environment:
 
 ```bash
 curl -fsSL https://get.docker.com -o get-docker.sh | sh get-docker.sh
 ```
 
-Once the Docker engine has been installed, it is recommended that the user is added to the Docker group so that every Docker command is not run as root. The following command ensures that your user is added to the Docker group:
+Once the Docker engine has been installed, it is recommended that the user is
+added to the Docker group so that every Docker command is not run as root. The
+following command ensures that your user is added to the Docker group:
 
 ```bash
 sudo usermod -aG docker <USERNAME>@student.aau.dk
 ```
 
-If the Docker installation is going to be used in a Docker Swarm at AAU, the following changes are needed since the AAU network is running on the default Docker subnet.
+If the Docker installation is going to be used in a Docker Swarm at AAU, the following
+changes are needed since the AAU network is running on the default Docker subnet.
 
 For local installations use the following.
 
@@ -33,7 +38,8 @@ and insert the following:
 }
 ```
 
-For the Swarm overlay network first create the network manualy with the following command:
+For the Swarm overlay network first create the network manualy with the following
+command:
 
 ```bash
 docker network create --subnet 10.10.0.0/16 -o com.docker.network.bridge.enable_icc=false -o com.docker.network.bridge.name=docker_gwbridge
@@ -51,7 +57,8 @@ docker swarm init
 ### Adding a manager to the Swarm
 
 REMEMBER TO CREATE THE NETWORK FIRST
-Once the Docker Swarm is initialized used the following command on the first master server to get the join token for the swarm:
+Once the Docker Swarm is initialized used the following command on the first master
+server to get the join token for the swarm:
 
 ```bash
 docker swarm join-token --manager
@@ -92,7 +99,9 @@ The output should look like this:
 
 ## Examples of using a service
 
-Once the Docker Swarm has been set up, it can be used to serve the different parts of the project. In the following, we will give some examples of how to work with the Swarm.
+Once the Docker Swarm has been set up, it can be used to serve the different parts
+of the project. In the following, we will give some examples of how to work with
+the Swarm.
 
 ### Example nginx
 
@@ -102,9 +111,12 @@ To create a new service, use the following:
 docker service create --name nginx-giraf-proxy --replicas 2 -p 80:80 -p 443:443 nginx:1.15
 ```
 
-By running this command, a service with two containers will be stated and the containers will have port 80 and 443 exposed to the internet and can be accessed on the Swarms public IP's. The two containers will be running the nginx version 1.15.
+By running this command, a service with two containers will be stated and the
+containers will have port 80 and 443 exposed to the internet and can be accessed
+on the Swarms public IP's. The two containers will be running the nginx version 1.15.
 
-To upgrade the version that a service uses, run the following to downgrade or upgrade the service:
+To upgrade the version that a service uses, run the following to downgrade or upgrade
+the service:
 
 ```bash
 docker service update --image nginx:1.15 nginx-giraf-proxy
@@ -128,7 +140,8 @@ The outputs should look like this:
 | :------------------|:-------------------|:-------------------|:---------------------------|:-------------------|:------------------------|:-------------------|:-----|
 | iksklc50ttxt       | nginx-giraf-proxy.1| nginx:latest       | giraf-master01.srv.aau.dk  | Running            | Running 29 minutes ago  |                    ||
 
-Note that the ports exposed are not listed in this view since it is served through the service and can be seen then running the following command:
+Note that the ports exposed are not listed in this view since it is served through
+the service and can be seen then running the following command:
 
 ```bash
 docker service ls

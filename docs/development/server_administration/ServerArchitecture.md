@@ -14,7 +14,9 @@ In the following, the server architecture for the giraf project will be explaine
 | web01     | 192.38.56.38  | 2 GB RAM 1xCPU Disk: 22 GB OS: CentOS Linux release 7.4.1708 (Core) |
 | Backup01  | 172.19.0.235  | 4 GB RAM 2xCPU Disk: 10 GB OS: CentOS Linux release 7.2.1511 (Core) |
 
-The only user on these servers are root, and each server has everything open to the internet and is hence under heavy attack from malicious users trying to brute-force the passwords.
+The only user on these servers are root, and each server has everything open to
+the internet and is hence under heavy attack from malicious users trying to brute-force
+the passwords.
 
 
 ## New servers
@@ -29,7 +31,8 @@ The only user on these servers are root, and each server has everything open to 
 | giraf-node03.srv.aau.dk   | 172.19.10.34 | N/A | Ram: 2 GB 1xCPU Disk: 24 GB OS: Ubuntu Server 18.04.2             |
 
 The two public IP's for the project only has port 80 and port 443 open.
-Each node has been configured to use the ```10.14.0.0/16``` subnet for the local docker daemon. For the swarm overlay network, the ```10.10.0.0/16``` subnet is used.
+Each node has been configured to use the ```10.14.0.0/16``` subnet for the local
+docker daemon. For the swarm overlay network, the ```10.10.0.0/16``` subnet is used.
 
 On the servers the following users have been added as administrators:
 ```
@@ -43,7 +46,8 @@ jtrand16@student.aau.dk
 ```
 ### To access the servers
 
-To access the servers from any network including most AAU network the AAU ssh gateway must be used as follows:
+To access the servers from any network including most AAU network the AAU ssh gateway
+must be used as follows:
 
 ```bash
 ssh -t sshgw.aau.dk -l <USERNAME>@student.aau.dk  ssh 172.19.10.<ip>
