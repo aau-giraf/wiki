@@ -1,2 +1,4 @@
-SET "REPOSITORY=D:/OneDrive/Projects/Semester/P5 project/wiki"
-mdl "%REPOSITORY%/docs" -s "%REPOSITORY%/.mdl_style.rb"
+@echo off
+SET REPOSITORY=%~dp0
+SET NEW_REPOSITORY=%REPOSITORY:\=/%
+mdl "%NEW_REPOSITORY%docs" -s "%NEW_REPOSITORY%.mdl_style.rb"
