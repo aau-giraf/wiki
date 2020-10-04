@@ -1,1 +1,0 @@
-mdl docs\ -s markdownlint/lib/mdl/styles/relaxed.rb"
