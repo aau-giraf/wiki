@@ -1,0 +1,11 @@
+name: Continuous Integration
+
+on: [push]
+jobs:
+  markdown:
+    runs-on: ubuntu-latest
+    steps:    
+      - name: Check out code
+        uses: actions/checkout@v2
+      - name: Run mdl        
+        uses: actionshub/markdownlint@1.2.0            
