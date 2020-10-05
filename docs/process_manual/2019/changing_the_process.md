@@ -6,7 +6,7 @@ this section.
 And please, please, please, make informed decisions that have a very high
 possibility of being the best decision for many years to come.
 
-## Why do we work as we do?
+## Explanation on our Working Method
 
 We have had multiple influences for the process that we follow.
 This section will try to describe some of them, so your foundation for making
@@ -104,18 +104,18 @@ the technologies.
 ### Language
 
 We have chosen to work with the Flutter framework, which uses the Dart language
-- rather than Xamarin, which was previously used.
+rather than Xamarin, which was previously used.
 There is a multitude of reasons for choosing Flutter.
 
 #### Cross-platform
-  
+
 When you develop something in Flutter, it can run on both Android and iOS.
 Some of the users have iPads, and others have Android tablets.
 Instead of developing two apps that look exactly the same, you write the code
 in one language (Dart), and run it on both platforms.
 
 #### Cross-compilation
-  
+
 Xamarin is owned by Microsoft, and does not support Linux products - meaning
 that Xamarin cannot officially be compiled on Linux.
 However, compiling Xamarin on Linux was possible, but it took a lot of effort to
@@ -129,7 +129,7 @@ Please keep this in mind, if you consider dismissing this point because you
 don't have a lot of Linux users.
 
 #### Compiles to native code
-  
+
 Flutter will compile directly to native iOS and Android code.
 Xamarin runs in a container, meaning it is less efficient, as it has to be
 translated afterwards.
@@ -138,14 +138,14 @@ As Flutter directly compiles to native code it will run much more smoothly and
 much more efficiently.
 
 #### Hot reload
-  
+
 You will love hot reload.
 If you run the app on your phone while developing, every time you hit save, the
 app will be reloaded in a quarter of a second.
 And it feels that fast.
 
 #### Bias of experience
-  
+
 Previous years mentioned changing to another language because "that's what the
 developers felt most comfortable with."
 No one from this year had any previous experience with neither Dart nor Flutter.
@@ -169,7 +169,7 @@ project.
 Below are the reasons.
 
 #### Self-hosting gives you the responsibility
-  
+
 If the GitLab solution which we had to self-host was kept, we would be
 responsible for server maintenance on this part.
 This does not make any sense.
@@ -193,7 +193,7 @@ take half a year for someone to get it back online.
 That won't happen on GitHub.
 
 #### Familiarity
-  
+
 GitHub is much more popular, meaning that it is much more likely that people
 will have worked with GitHub instead of GitLab.
 Since there exists such a familiar option, it is a no-brainer to choose that.
@@ -210,7 +210,7 @@ We run everything related to continuous integration (CI) on an Azure server.
 We did this for a few reasons.
 
 #### 10 free and parallel build threads
-  
+
 Since the GIRAF project is an open source project, Azure allows for 10 free and
 parallel build threads.
 This means that 10 developers can have the CI checks run at once, instead of
@@ -219,7 +219,7 @@ This is really nice for release preparation where a lot of small changes are
 often submitted at the same time.
 
 #### Not self-hosted
-  
+
 Once again, not being self-hosted is a major advantage.
 We trust that Microsoft are much more competent in keeping the servers up and
 running than we are.
@@ -227,7 +227,7 @@ It also allows for the parallel build threads, and we don't have to worry about
 scaling and maintenance.
 
 #### Builds on Mac
-  
+
 The major reason for choosing Azure is the ability to build on a Mac environment.
 Checking if the app actually works on iOS requires a Mac environment.
 This is decided by Apple, as they haven't released any official ways to compile
@@ -247,8 +247,8 @@ We have done this due to a very simply philosophy:
 > Maintaining our own servers is like writing an app in C, without libraries.
 
 It is possible to write an app in C without libraries.
-But it is a really stupid idea to insist on handling every responsibility yourself
-- especially when free services exist that will make it not-harder, better,
+But it is a really stupid idea to insist on handling every responsibility yourself,
+especially when free services exist that will make it not-harder, better,
 faster, stronger.
 
 Earlier both CI and the repositories were hosted on the AAU servers.

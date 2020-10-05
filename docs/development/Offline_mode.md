@@ -11,6 +11,7 @@
 [cached_network_image](https://pub.dev/packages/cached_network_image)
 
 ## Our solution suggestion
+
 We propose what is called an offline first approach because if Giraf wants to be
 a widely used app on different app markets, it is expected to be highly functional
 without internet connection. Offline first also consumes less battery and
@@ -49,35 +50,36 @@ to use on a device, but if only the most used pictograms are saved, then this sh
 not be a problem. 
 
 ### Issues / considerations
+
 Before even starting to implement the features on the prioritized list, it is needed
 to be able to login on an offline device.   
 One solution could be a setting, where when you are logged in you can allow the
 current device to be used in offline mode and the user is saved locally, so it is
 possible to login with no internet connection.  
   
-**Here is the prioritized list for the offline features**  
+#### Here is the prioritized list for the offline features  
   
 1. Citizen features: Limited to current week.  
- 1.1 View weekplan.  
- 1.2 View activity.  
- 1.3 Mark activity as completed.  
- 1.4 Timer functionality.  
+   1.1 View weekplan.  
+   1.2 View activity.  
+   1.3 Mark activity as completed.  
+   1.4 Timer functionality.  
 2. Guardian features: Limited to current week.  
- 2.1 View weekplan.  
- 2.2 View activity.  
- 2.3 Cancel activity.  
- 2.4 Timer functionality.  
- 2.5 Edit weekplan.  
+   2.1 View weekplan.  
+   2.2 View activity.  
+   2.3 Cancel activity.  
+   2.4 Timer functionality.  
+   2.5 Edit weekplan.  
 3. Guardian features:  
- 3.1 Take picture as pictogram.  
- 3.2 Create/delete weekplans.  
- 3.3 All functions from point 2 just not limited to the current week.  
+   3.1 Take picture as pictogram.  
+   3.2 Create/delete weekplans.  
+   3.3 All functions from point 2 just not limited to the current week.  
 
 To store the data (activities, timers) locally on the device the SQLite DB can be
 used. SQLite is a database that is running on the phone/tablet already. It has a
 plugin for Flutter (sqflite) that supports both iOS and Android.  
   
-**Syncing the local database to match the online database:**  
+#### Syncing the local database to match the online database
 A consideration could be if some data is more important to sync than other and then
 make different sync cycles or prioritization, in case the user only has connection
 for a short period of time. It could also be considered if all data needs to be
@@ -89,11 +91,9 @@ the synchronization down (at least in the beginning).
 *Cache invalidation scenario:*
 
 1. Citizen 1 logs in on their device and downloads their weekplans from the server.
-
-2. Guardian logs in on another device and changes Citizen 1's weekplan for a week.
-
-3. Citizen 1 looks at this weekplan on their device, but this is not the updated
-version since there is a version in the cache.
+1. Guardian logs in on another device and changes Citizen 1's weekplan for a week.
+1. Citizen 1 looks at this weekplan on their device, but this is not the updated
+   version since there is a version in the cache.
 
 Possible solutions is to e.g. use a timestamp to check if there is changes in the
 online version. This timestamp would be downloaded and checked whenever a weekplan
@@ -108,21 +108,17 @@ to versions and save the newest.
 *Synchronizing offline changes scenario:*
 
 1. Citizen's tablet is offline.   
-
-2. A guardian logs in on the same (offline) tablet and changes the citizen's settings.
-
-3. The citizen logs in and can see the local updates.
-
-4. The citizen's device gets internet connection and now the changes has to be synced
-with the database. But the guardian is not logged in anymore and the citizen does
-not have permission to update their changes through the web-api.
+1. A guardian logs in on the same (offline) tablet and changes the citizen's settings.
+1. The citizen logs in and can see the local updates.
+1. The citizen's device gets internet connection and now the changes has to be synced
+   with the database. But the guardian is not logged in anymore and the citizen does
+   not have permission to update their changes through the web-api.
 
    
 A possible solution would be to give a citizen permissions in the wep-api to make
 changes.
 
-
-**Editing weekplans**  
+**Editing weekplans**
 In order to edit the weekplan offline the amount of pictograms have to be limited
 since all pictograms cannot be stored locally on the phone. An implementation could
 be saving xx recently/most used pictograms for each citizen.

@@ -1,7 +1,4 @@
----
-title: "C# Coding Standards"
----
-# C\# Coding Standards (backend)
+# C\# Coding Standards
 
 This section is used to cover comments in the code, naming convention,
 etc. The essential parts are covered in this section but the full
