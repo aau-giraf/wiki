@@ -2,6 +2,7 @@ all
 exclude_tag :whitespace
 exclude_tag :line_length
 
+exclude_rule 'MD024'
 exclude_rule 'MD006' # Lists at beginning of line
 rule 'MD007', :indent => 3 # List indentation
 exclude_rule 'MD033' # Inline HTML

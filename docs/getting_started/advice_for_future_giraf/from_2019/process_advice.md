@@ -14,9 +14,9 @@ parts of the system to solve the issue. <br>
 With the full-stack approach each group develops full features (user stories)
 from top to bottom. This approach has many benefits such as:
 
-* Every group gets to see more of the code because they implement full features.
-* Less pipelining is needed as features are not made in parts by different groups.
-* People are motivated to finish their tasks because they can see their implementations
+- Every group gets to see more of the code because they implement full features.
+- Less pipelining is needed as features are not made in parts by different groups.
+- People are motivated to finish their tasks because they can see their implementations
   immediately in the application.
 
 Having used the full stack approach for this year's Giraf project, we believe that
@@ -31,9 +31,9 @@ also be a factor with the specialist approach.<br>
 Be careful to consider the following points when you think out the process for your
 own project:
 
-* How do you find dependencies between user stories? 
-    + How do you handle dependencies once discovered?
-* How do you make sure that one group's work is not made obsolete by another's?
+- How do you find dependencies between user stories? 
+   - How do you handle dependencies once discovered?
+- How do you make sure that one group's work is not made obsolete by another's?
   (Especially when the two groups are working in the same files.)
 
 We found that handling dependencies needs constant work with our process. It is

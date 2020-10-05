@@ -73,6 +73,7 @@ There are a significant difference between a widget/screen test and a bloc test.
 The tests for these two are explained separately.
 
 ### Blocs
+
 A test for a bloc looks like this:
 
 ```dart
@@ -83,7 +84,7 @@ A test for a bloc looks like this:
 
 If the code does not run in sequence you should use an async test, that looks this
  way:
- 
+
 ```dart
  test('Test description', async((DoneFn done){
      done();
@@ -133,6 +134,7 @@ behaviour subject of the stream is called, the listen function is called, and in
 here the expect() and done() functions.
 
 ## Widgets and screens
+
 The widget and screen tests separate from the class tests. All tests are still in
 the main() function and you can still use a setup function, but instead of the norma
 tests you use test widgets.
@@ -215,6 +217,7 @@ When you write tests, you will often need to mock certain objects. This section
 describes the different mocking often used in GIRAF testing.
 
 ### Mock screen
+
 When you test a non screen widget you can use to have a `MockScreen` as a container.
 This is written in the test document, outside the `main()` function and can look
 like this:

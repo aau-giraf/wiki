@@ -40,6 +40,7 @@ UI should not be required to rely on state building, since the BLoC streams are
 asynchronous, which is why the UI components has to be able to handle streams [6].
 
 ## Rules of BLoC Pattern
+
 ![BlocPattern](./bloc_pattern/BLoCPattern.png "BLoC pattern")
 
 An illustration of the BLoC pattern.
@@ -53,6 +54,7 @@ BLoC pattern are as follows: [6].
 
 There are some rules for the design of BLoC that has to be upheld when the BLoC
 pattern is used:
+
 - The first rule states that any communication between the UI and a BLoC must be
   through Sinks and Streams, so when the UI should send data to the BLoC it should
   use a sink, and when a BLoC sends data to the UI it should use a stream.
@@ -69,6 +71,7 @@ pattern is used:
   is flexible and can be used in many different cases.
 
 The following rules should be followed during the design of the UI:
+
 - The first rule states that if the UI component is complex enough it should have
   its own BLoC, thereby also stating that UI components should share BLoC if they
   are non-complex.
@@ -92,12 +95,12 @@ patterns like MVVM and MVC. In order to compare the different patterns, we made
 some goals we wanted the pattern to fulfill. This enabled us to compare the different
 patterns to each other and find the one that fit our needs the best. The goals were:
 
-* Business logic should be re-usable by all widgets
-* There should be a clear separation between UI and business logic.
-* UI components should be reactive, i.e. if data changes in one component then the
+- Business logic should be re-usable by all widgets
+- There should be a clear separation between UI and business logic.
+- UI components should be reactive, i.e. if data changes in one component then the
   change should automatically be reflected in all other components relying on the
   same data.
-* The pattern should allow for an intuitive file structure.
+- The pattern should allow for an intuitive file structure.
 
 Doing some empirical experiments in building with the different patterns and reading
 different developers experience with the different patterns we came to the conclusion
@@ -111,13 +114,13 @@ this is that in the Giraf Project we are not using the code on other platforms t
 the Flutter Framework. Therefore to make the use of BLoC a bit more intuitive and
 flexible for the developers, we have constructed the following design guideline:
 
-* Rather many small non-complex BLoCs than few large complex BLoCs
-* Start by creating a BLoC per UI Screen, then after implementing the functionality
+- Rather many small non-complex BLoCs than few large complex BLoCs
+- Start by creating a BLoC per UI Screen, then after implementing the functionality
   consider to refactor to shared BLoCs
-* Inputs to BLoCs should be either Sinks or function calls with parameters
-* BLoCs should be instantiated via the dependency injector/ Thereby all dependencies
+- Inputs to BLoCs should be either Sinks or function calls with parameters
+- BLoCs should be instantiated via the dependency injector/ Thereby all dependencies
   should also be injectable
-* BLoCs are to be implemented using the rxDart library
+- BLoCs are to be implemented using the rxDart library
 
 We found that rxDart was a favourite library for BLoC implementation. In our experience
 it can be a good idea to follow the community since there exists many great resources
@@ -135,7 +138,7 @@ are used in the Giraf Project.
 ReactiveX is a library in which one can use observable sequences to create asynchronous
 and event-based programs, "It extends the observer pattern to support sequences
 of data and/or events and adds operators that allow you to compose sequences together
-declaratively while abstracting away concerns about things like low-level threading,
+declarative while abstracting away concerns about things like low-level threading,
 synchronization, thread-safety, concurrent data structures, and non-blocking I/O." [7].
 
 The main features used from the rxDart library are three different stream behaviours,
@@ -179,12 +182,13 @@ the latest item, it captures all items and emits them whenever a new observer
 subscribes [4]. Unlike the BehaviorSubject, the ReplaySubject can not be seeded
 with an initial value. The behaviour of a ReplaySubject across time is shown in
 the above figure.
- 
+
 ## Bibliography
+
 1. Asynchronous Programming: Streams. Dart Lang. URL: https://www.dartlang.org/tutorials/language/streams
-2. BehaviorSubject<T> class. rxDart Package. URL: https://pub.dartlang.org/documentation/rxdart/latest/rx/BehaviorSubject-class.html
-3. PublishSubject<T> class. rxDart Package. URL: https://pub.dartlang.org/documentation/rxdart/latest/rx/PublishSubject-class.html
-4. ReplaySubject<T> class. rxDart Package. URL: https://pub.dartlang.org/documentation/rxdart/latest/rx/ReplaySubject-class.html
-5. RxDart Github Repository. ReactiveX. URL: https://github.com/ReactiveX/rxdart
-6. Paolo Soares. Flutter / AngularDart – Code sharing, better together (DartConf 2018). Google Developers. 2018. URL: https://www.youtube.com/watch?v=PLHln7wHgPE.
-7. The ReactiveX website. 2019. URL: http://reactivex.io/
+1. BehaviorSubject<T> class. rxDart Package. URL: https://pub.dartlang.org/documentation/rxdart/latest/rx/BehaviorSubject-class.html
+1. PublishSubject<T> class. rxDart Package. URL: https://pub.dartlang.org/documentation/rxdart/latest/rx/PublishSubject-class.html
+1. ReplaySubject<T> class. rxDart Package. URL: https://pub.dartlang.org/documentation/rxdart/latest/rx/ReplaySubject-class.html
+1. RxDart Github Repository. ReactiveX. URL: https://github.com/ReactiveX/rxdart
+1. Paolo Soares. Flutter / AngularDart – Code sharing, better together (DartConf 2018). Google Developers. 2018. URL: https://www.youtube.com/watch?v=PLHln7wHgPE.
+1. The ReactiveX website. 2019. URL: http://reactivex.io/

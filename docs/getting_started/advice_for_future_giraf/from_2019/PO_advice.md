@@ -51,6 +51,7 @@ the user stories you are going to create.
 As the PO group it is your responsibility to create user stories.
 User stories are created based on requests from the users.
 We structured user stories in the following way:
+
 - As a ... I would like ..., so that ...
 
 When creating a user story you should consider the amount of work that is needed
@@ -163,7 +164,8 @@ by the customer, and be very intuitive for them to use. It is a commonly known f
 that software engineers are not designers and do not always think of user friendliness,
 so remember to keep them in check so the customers can actually figure out how to
 use the system. Some things we have noticed that you should pay special attention
-towards in design related PRs are: 
+towards in design related PRs are:
+
 - Good error messages should be shown to the user
 - Icons are only used for *one* thing
 - The design should be consistent with the design guide
@@ -245,6 +247,7 @@ on the same screens if this can be avoided. This decreases the amount of merge c
 and frustration for the developers.
 
 ## Internal sharing of knowledge
+
 An often overlooked problem for us was to ensure that all members of the PO group
 shared what information was given to groups when they came in for advice on a user
 story. If knowledge is not shared properly within the group, it is very easy to

@@ -17,7 +17,7 @@ with the specific purpose of the backend described in
 [Web-API purpose](../development/rest_api_development/WebApiPurpose.md).
 
 ### wiki
- 
+
 The wiki repository containing information about the GIRAF project, including
 information for people starting out with GIRAF. The wiki should be updated so
 it always reflect the current status of the other repositories as well as other

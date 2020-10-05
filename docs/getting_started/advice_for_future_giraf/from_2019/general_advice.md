@@ -1,7 +1,9 @@
 # General Advice for the Future Giraf Projects
+
 This document contains some general advice for the Giraf project.
 
 ## Do Not Switch From The Flutter Framework in the Weekplaner Application
+
 For the Giraf 2019 project we chose to switch from Xamarin to Flutter to combat
 some issues associated with developing Xamarin applications on Linux. This meant
 that the whole weekplanner application had to be ported over and somewhat rewritten.

@@ -138,14 +138,16 @@ should fail.**
 1. Press "Create pull request" 
 1. Name the pull request `Feature xx` or `Feature xx: A title describing changes`
 1. Write a description
-   - If you write `closes #xx` or `fixes #xx`, issue xx will be linked to the PR and will close when the PR is merged. ([All keywords](https://help.github.com/en/enterprise/2.16/user/github/managing-your-work-on-github/closing-issues-using-keywords#about-issue-references))
+   - If you write `closes #xx` or `fixes #xx`, issue xx will be linked to the PR
+     and will close when the PR is merged. ([All keywords](https://help.github.com/en/enterprise/2.16/user/github/managing-your-work-on-github/closing-issues-using-keywords#about-issue-references))
 
 
 
 ## Code Review
 
 After being assigned a pull request, the group should review the code under the
-_Files changed_ tab. Look for code that may be deprecated, unnecessary, optimizable or has weird formatting. 
+_Files changed_ tab. Look for code that may be deprecated, unnecessary,
+non-optimized or has weird formatting. 
 
 Start at <https://github.com/aau-giraf/>
 
@@ -154,15 +156,17 @@ Start at <https://github.com/aau-giraf/>
 1. Choose an open pull request from the list.
 1. Click on the **Files Changed Tab**. All the changes can be seen in these files.
    ![Files changed tab!](./images/files-changed.png "The code you should review is here")
-   1. Make a comment or suggestion on a single line or multiple lines by pressing the blue + icon (move the cursor to a line). 
-      The red square marks the selection icon which can be used to suggest code that replaces the line(s).
+   1. Make a comment or suggestion on a single line or multiple lines by pressing
+      the blue + icon (move the cursor to a line). 
+      The red square marks the selection icon which can be used to suggest code
+      that replaces the line(s).
       ![Write suggestions!](./images/write-suggestion.png "Try dragging the blue icon across multiple lines")
       You can view what the author will see by clicking **Preview**.
       ![Preview suggestions!](./images/preview_example.PNG "Comment and suggestion")
 1. Having looked over all the files, click **Review changes**.
-   1. If you made comments, make sure the author looks them through by choosing **Request changes** before clicking **Submit review**. If changes are made, you have to re-review the pull request!
+   1. If you made comments, make sure the author looks them through by choosing
+      **Request changes** before clicking **Submit review**. If changes are made,
+      you have to re-review the pull request!
       ![Request changes!](./images/request-changes.png "Request changes. The author cannot merge yet!")
    1. If the changes makes sense, click **Approve**.
       ![Approve changes!](./images/approve-changes.png "Approve changes. The author can merge")
-
-
