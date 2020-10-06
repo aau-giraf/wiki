@@ -4,9 +4,9 @@
 
 1. Go to [flutter.dev](https://flutter.dev/docs/get-started/install) and select
    your operating system.
-   - Make sure you have Git installed.
-   - For Mac: Make sure you have the listed command-line tools available.
-   - For Linux: Make sure you have the listed command-line tools and shared libraries
+    - Make sure you have Git installed.
+    - For Mac: Make sure you have the listed command-line tools available.
+    - For Linux: Make sure you have the listed command-line tools and shared libraries
      available.
 1. Follow the instructions on how to download and unzip Flutter.
 1. Update your path according to the instructions.
@@ -16,48 +16,48 @@
 1. [Download and install Android Studio](https://developer.android.com/studio).
 1. If you have an Android device, [enable USB debugging](https://developer.android.com/studio/debug/dev-options)
    and plug it in to your computer.
-   - For Windows: You might need to install the [Google USB Driver](https://developer.android.com/studio/run/win-usb).
+    - For Windows: You might need to install the [Google USB Driver](https://developer.android.com/studio/run/win-usb).
 1. [Setup the Android emulator](https://flutter.dev/docs/get-started/install/windows#install-android-studio)
    and run it.
 1. Run `flutter devices` and check that the emulator and, if applicable, the Android
    device is listed.
-   - If not, try running `flutter doctor` to see if there are problems with the
-     Android toolchain.
+    - If not, try running `flutter doctor` to see if there are problems with the
+      Android toolchain.
 
 ## iOS and iPadOS Setup - ONLY FOR MAC USERS
 
 1. Download the latest version of Xcode from the App Store.
 1. Setup the command line tools, to use the new version of Xcode you just installed:
 
-   ```bash
-   sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
-   sudo xcodebuild -runFirstLaunch
-   ```
+    ```bash
+    sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
+    sudo xcodebuild -runFirstLaunch
+    ```
 
 1. Also make sure you have accepted the license agreement:
 
-   ```bash
-   sudo xcodebuild -license
-   ```
+    ```bash
+    sudo xcodebuild -license
+    ```
 
 1. You can open the simulator app by finding it with spotlight, or by running:
 
-   ```bash
-   open -a Simulator
-   ```
+    ```bash
+    open -a Simulator
+    ```
 
 1. If you want, run the following command to allow full screen mode:
 
-   ```bash
-   defaults write com.apple.iphonesimulator AllowFullscreenMode -bool YES
-   ```
+    ```bash
+    defaults write com.apple.iphonesimulator AllowFullscreenMode -bool YES
+    ```
 
 1. Install cocoapods:
 
-   ```bash
-   sudo gem install cocoapods
-   pod setup
-   ```
+    ```bash
+    sudo gem install cocoapods
+    pod setup
+    ```
 
 ### Personal Apple Developer Account
 
@@ -97,8 +97,8 @@ There, you need to select and trust yourself as a developer.
 
 1. Start IntelliJ/Android Studio.
 1. Open plugin preferences.
-   - Windows/Linux: __File > Settings (<kbd>Ctrl+Alt+S</kbd>) > Plugins__.
-   - MacOS: __IntelliJ IDEA > Preferences (<kbd>⌘+,</kbd>) > Plugins__.
+    - Windows/Linux: __File > Settings (<kbd>Ctrl+Alt+S</kbd>) > Plugins__.
+    - MacOS: __IntelliJ IDEA > Preferences (<kbd>⌘+,</kbd>) > Plugins__.
 1. Select __Marketplace__, find the Flutter plugin and click __Install__.
 1. Click __Yes__ when prompted to install the Dart plugin.
 1. Click __Restart__ when prompted.
@@ -125,18 +125,18 @@ There, you need to select and trust yourself as a developer.
 1. Open `/pubspec.yaml` and press __Packages get__.
 1. Select an Android/iOS virtual device or the Android/iOS device in the toolbar.  
     ![toolbar](https://i.imgur.com/7RE2qan.png "Android Studio/IntelliJ Toolbar")
-   -  If the virtual device doesn't show up in the IDE toolbar, and the "Open
-      Android Emulator: …" option is not shown, use `flutter emulators` to list
-      available emulators and then run `flutter emulators --launch <emulator id>`
-      to launch it. It should then appear in the toolbar.
+    -  If the virtual device doesn't show up in the IDE toolbar, and the "Open
+       Android Emulator: …" option is not shown, use `flutter emulators` to list
+       available emulators and then run `flutter emulators --launch <emulator id>`
+       to launch it. It should then appear in the toolbar.
 1. Make sure that `main.dart` is selected as the run configuration.
 1. Press <img src="https://i.imgur.com/BEvXOqT.png" alt="Run" width="20px" align="top">
    to run without debugging or <img src="https://i.imgur.com/Lhng0Hq.png" alt="Debug" width="20px" align="top"> to debug.
 1. While the app is running, save files or press <img src="https://i.imgur.com/bP2pSIS.png" alt="Hot reload" width="20px" align="top">
    to apply the changes instantly.
-   - Some changes requires using hot restart (<img src="https://i.imgur.com/yCvF97E.png" alt="Hot restart" width="20px" align="top">).
-     See [docs](https://flutter.dev/docs/development/tools/hot-reload) for more
-     information.
+    - Some changes requires using hot restart (<img src="https://i.imgur.com/yCvF97E.png" alt="Hot restart" width="20px" align="top">).
+      See [docs](https://flutter.dev/docs/development/tools/hot-reload) for more
+      information.
 
 ### Visual Studio Code
 
@@ -147,18 +147,18 @@ There, you need to select and trust yourself as a developer.
 1. Locate the VS Code status bar:  
    ![Status bar](https://i.imgur.com/5NxR84J.png?3 "Status bar")
 1. Select a device.
-   - If no devices are available and you want to use a virtual device,
-     click on __No Device__ and select a virtual device to start.
-   - Otherwise, make sure that your physical device is connected and setup properly.
+    - If no devices are available and you want to use a virtual device,
+      click on __No Device__ and select a virtual device to start.
+    - Otherwise, make sure that your physical device is connected and setup properly.
 1. Go to the __Debug and Run__ menu (<img src="https://i.imgur.com/NR1E5TQ.png" alt="D&R" width="20px" align="top">).
 1. Press __Create a launch.json file__.
 1. Invoke __Debug > Start Debugging__ or __Debug > Run without debugging__ as normal.
 1. While the app is running, save files or press <img src="https://i.imgur.com/JjoCWDm.png" alt="Hot reload" width="20px" align="top">
    to apply the changes instantly.
-   - Some changes requires using hot restart (<img src="https://i.imgur.com/X8NIyyF.png" alt="Hot restart" width="20px" align="top">).
-     See [docs](https://flutter.dev/docs/development/tools/hot-reload) for more information.
+    - Some changes requires using hot restart (<img src="https://i.imgur.com/X8NIyyF.png" alt="Hot restart" width="20px" align="top">).
+      See [docs](https://flutter.dev/docs/development/tools/hot-reload) for more information.
 
 ## NOTES
 
 - [weekplanner](https://github.com/aau-giraf/weekplanner)
-   - Last compiled and verified to work with Flutter 1.12.13+hotfix.8.
+    - Last compiled and verified to work with Flutter 1.12.13+hotfix.8.

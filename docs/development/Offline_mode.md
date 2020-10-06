@@ -60,20 +60,20 @@ possible to login with no internet connection.
 #### Here is the prioritized list for the offline features
 
 1. Citizen features: Limited to current week.
-   1. View weekplan.
-   1. View activity.
-   1. Mark activity as completed.
-   1. Timer functionality.
+    1. View weekplan.
+    1. View activity.
+    1. Mark activity as completed.
+    1. Timer functionality.
 1. Guardian features: Limited to current week.
-   1. View weekplan.
-   1. View activity.
-   1. Cancel activity.
-   1. Timer functionality.  
-   1. Edit weekplan.
+    1. View weekplan.
+    1. View activity.
+    1. Cancel activity.
+    1. Timer functionality.  
+    1. Edit weekplan.
 1. Guardian features:
-   1. Take picture as pictogram.
-   1. Create/delete weekplans.
-   1. All functions from point 2 just not limited to the current week.
+    1. Take picture as pictogram.
+    1. Create/delete weekplans.
+    1. All functions from point 2 just not limited to the current week.
 
 To store the data (activities, timers) locally on the device the SQLite DB can be
 used. SQLite is a database that is running on the phone/tablet already. It has a

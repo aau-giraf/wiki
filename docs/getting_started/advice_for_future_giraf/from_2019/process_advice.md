@@ -32,7 +32,7 @@ Be careful to consider the following points when you think out the process for y
 own project:
 
 - How do you find dependencies between user stories? 
-   - How do you handle dependencies once discovered?
+    - How do you handle dependencies once discovered?
 - How do you make sure that one group's work is not made obsolete by another's?
   (Especially when the two groups are working in the same files.)
 

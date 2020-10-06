@@ -35,7 +35,7 @@ read the following sections:
 1. [General development](process_group_information.md#general-development) in
    Process group information
 1. [Project meetings](project_meetings.md#project-meetings)
-   - Especially sprint intro and cross-group standups
+    1. Especially sprint intro and cross-group standups
 1. [How to handle roles](process_group_information.md#how-to-handle-roles) in
    Process group information
 1. [Changing the process](changing_the_process.md)
