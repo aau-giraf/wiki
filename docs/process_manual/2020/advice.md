@@ -23,30 +23,30 @@ Previous advice can be found [here](../../getting_started/advice_for_future_gira
 
 - Use Discord or Slack as the communication medium. Use it to broadcast event
   start times and deadlines.
-   - Have a channel dedicated to *announcements* to make sure important messages
-     does not get lost in the general chat.
+    - Have a channel dedicated to *announcements* to make sure important messages
+      does not get lost in the general chat.
 - Events should be held at a physical or remote location with all developers
   present.
-   - We **strongly** recommend physical meetings.
-   - Start the meeting with the agenda. Remind people what the purpose is. Do
-     this **every** time.
-   - Take short breaks between the different activities to keep the groups
-     focused.
-   - If you do activities in smaller groups eg. Retrospective, remember to keep
-     the groups small (<8) if you can. This prevents people from hiding behind
-     others who speaks the entire time.
+    - We **strongly** recommend physical meetings.
+    - Start the meeting with the agenda. Remind people what the purpose is. Do
+      this **every** time.
+    - Take short breaks between the different activities to keep the groups
+      focused.
+    - If you do activities in smaller groups eg. Retrospective, remember to keep
+      the groups small (<8) if you can. This prevents people from hiding behind
+      others who speaks the entire time.
 - Keep things transparent. Files should be public and so should the thoughts
   behind process changes.
 - Respond to questions in timely manner. Do not be condescending or hostile in
   your answers. 
-   - You need to repeat a lot of information because people will forget or be
-     confused. 
+    - You need to repeat a lot of information because people will forget or be
+      confused. 
 - Always be clear on what you say. Do not expect people to understand you
   implicitly. 
 - Discuss the responsibilities of the process and PO group with the other
   developers at the start of the project.
-   - Maybe try discussing the responsibilities before choosing who is process
-     and PO group.
+    - Maybe try discussing the responsibilities before choosing who is process
+      and PO group.
 
 ## Keeping an Overview
 

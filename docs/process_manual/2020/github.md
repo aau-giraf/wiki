@@ -23,10 +23,10 @@ these steps:
 
 1. Find an issue you want to work on
 1. Ask the PO group if you can work on that issue
-   - The PO group might say no for various reasons and they have the final say,
-     as they have a better overview.
-   - There is usually a greater chance of getting a yes if the issue you've
-     picked is either _highest_ or _high_ priority.
+    - The PO group might say no for various reasons and they have the final say,
+      as they have a better overview.
+    - There is usually a greater chance of getting a yes if the issue you've
+      picked is either _highest_ or _high_ priority.
 
 If you don't have a preferred issue you can ask the PO group to be assigned the
 most pressing issue, as they have a good overview of the project and they will
@@ -42,12 +42,12 @@ If you find a bug, or have a task creation request you can create an issue:
    "Get started".
 1. Create a title and description for the issue. Please follow the template, and
    don't delete the headers!
-   - The title for the *Task Creation Request* should tell what functionality
-     you would like added using the shown form "As a developer I would like the
-     docker config file to automatically update so that I don´t have to manually
-     update the config file". 
-     Instead of the task being for the developer, guardian or user is also
-     frequently used.
+    - The title for the *Task Creation Request* should tell what functionality
+      you would like added using the shown form "As a developer I would like the
+      docker config file to automatically update so that I don´t have to manually
+      update the config file". 
+      Instead of the task being for the developer, guardian or user is also
+      frequently used.
 1. Label the issue with appropriate labels.
 1. It can be a good idea to inform the PO group when you are done, so they can
    assign and refine the issue.
@@ -132,16 +132,14 @@ should fail.**
 1. Open the "Pull requests" tab in the repository (e.g. <https://github.com/aau-giraf/weekplanner/pulls>)
 1. Press "New pull request"
 1. Select the appropriate branch as base.
-   - `develop` if during sprint
-   - `release/*` if during release preparation
+    - `develop` if during sprint
+    - `release/*` if during release preparation
 1. Select your branch for as compare
 1. Press "Create pull request" 
 1. Name the pull request `Feature xx` or `Feature xx: A title describing changes`
 1. Write a description
-   - If you write `closes #xx` or `fixes #xx`, issue xx will be linked to the PR
-     and will close when the PR is merged. ([All keywords](https://help.github.com/en/enterprise/2.16/user/github/managing-your-work-on-github/closing-issues-using-keywords#about-issue-references))
-
-
+    - If you write `closes #xx` or `fixes #xx`, issue xx will be linked to the PR
+      and will close when the PR is merged. ([All keywords](https://help.github.com/en/enterprise/2.16/user/github/managing-your-work-on-github/closing-issues-using-keywords#about-issue-references))
 
 ## Code Review
 
@@ -155,18 +153,18 @@ Start at <https://github.com/aau-giraf/>
 1. Click on the **Pull Request** tab.
 1. Choose an open pull request from the list.
 1. Click on the **Files Changed Tab**. All the changes can be seen in these files.
-   ![Files changed tab!](./images/files-changed.png "The code you should review is here")
-   1. Make a comment or suggestion on a single line or multiple lines by pressing
-      the blue + icon (move the cursor to a line). 
-      The red square marks the selection icon which can be used to suggest code
-      that replaces the line(s).
-      ![Write suggestions!](./images/write-suggestion.png "Try dragging the blue icon across multiple lines")
-      You can view what the author will see by clicking **Preview**.
-      ![Preview suggestions!](./images/preview_example.PNG "Comment and suggestion")
+    ![Files changed tab!](./images/files-changed.png "The code you should review is here")
+    1. Make a comment or suggestion on a single line or multiple lines by pressing
+        the blue + icon (move the cursor to a line). 
+        The red square marks the selection icon which can be used to suggest code
+        that replaces the line(s).
+        ![Write suggestions!](./images/write-suggestion.png "Try dragging the blue icon across multiple lines")
+        You can view what the author will see by clicking **Preview**.
+        ![Preview suggestions!](./images/preview_example.PNG "Comment and suggestion")
 1. Having looked over all the files, click **Review changes**.
-   1. If you made comments, make sure the author looks them through by choosing
-      **Request changes** before clicking **Submit review**. If changes are made,
-      you have to re-review the pull request!
-      ![Request changes!](./images/request-changes.png "Request changes. The author cannot merge yet!")
-   1. If the changes makes sense, click **Approve**.
-      ![Approve changes!](./images/approve-changes.png "Approve changes. The author can merge")
+    1. If you made comments, make sure the author looks them through by choosing
+        **Request changes** before clicking **Submit review**. If changes are made,
+        you have to re-review the pull request!
+        ![Request changes!](./images/request-changes.png "Request changes. The author cannot merge yet!")
+    1. If the changes makes sense, click **Approve**.
+        ![Approve changes!](./images/approve-changes.png "Approve changes. The author can merge")

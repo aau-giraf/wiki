@@ -43,42 +43,42 @@ groups a number of issues to start working on.
 #### Presentations
 
 1. The process group presents changes made to the process.
-   - The changes are based on the retrospective. 
+    - The changes are based on the retrospective. 
 1. The PO group presents the following:
-   1. The project vision.
-      - What is the overall goal for the project?
-      - Did this change since last meeting? (This will be a recap, if there are
-        no changes)
-   1. The sprint vision.
-      - What do we want to acomplish with this release?
-   1. New and important issues for this sprint.
-      - These are typically based on usability tests made with the customer.
+    1. The project vision.
+        - What is the overall goal for the project?
+        - Did this change since last meeting? (This will be a recap, if there are
+          no changes)
+    1. The sprint vision.
+        - What do we want to acomplish with this release?
+    1. New and important issues for this sprint.
+        - These are typically based on usability tests made with the customer.
 
 #### Time Estimation
 
 1. All development teams are split into crossgroups.
-   - The crossgroups are made at random.
+    - The crossgroups are made at random.
 1. Each crossgroup are assigned a number of issues to time estimate using
    **planning poker**.
-   - Some crossgroups might only be assigned a single issue, which they then
-     have to split into smaller issues and then time estimate.
+    - Some crossgroups might only be assigned a single issue, which they then
+      have to split into smaller issues and then time estimate.
 
 ##### Planning Poker Rules
 
 - The Fibonacci numbers are used as weights
-   - 0, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144 and ∞
+    - 0, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144 and ∞
 - 5 is equal to a single person's workload for a full day
-   - A full day's workload is 8 hours
+    - A full day's workload is 8 hours
 - If no cards are available, the participants think of a number and say them one
   by one
-   - Cards are the most optimal solution.
-   - If the participants have to say their estimations aloud, it is beneficial
-     to start with a different person each time.
+    - Cards are the most optimal solution.
+    - If the participants have to say their estimations aloud, it is beneficial
+      to start with a different person each time.
 - If the participants are not in agreement, the person with the lowest and
   highest estimation presents their arguments for their estimation. The "game"
   is then played again.
-   - If there are still disagreements, it can be beneficial to have an open
-     discussion.
+    - If there are still disagreements, it can be beneficial to have an open
+      discussion.
 - When an estimation has been decided upon, it should be added as a label to the
   issue on GitHub.
 
@@ -89,9 +89,9 @@ should meet again and decide which issues they would like to work with.
 
 1. Each development team creates a prioritized list of issues they would like to
    work with.
-   - The list should also include the estimations found on GitHub.
+    - The list should also include the estimations found on GitHub.
 1. The list is sent to the PO group along with the total number of estimated work.
-   - Remember 5 points is equal to one day.
+    - Remember 5 points is equal to one day.
 
 When all development teams have sent their list to the PO group, they will
 distribute the issues and send the final assignments on Discord.
@@ -110,12 +110,12 @@ that groups have run into.
 ### Practice
 
 - One representative from each group.
-   - The process group might be two: one as develop team, and one as process
-     group.
+    - The process group might be two: one as develop team, and one as process
+      group.
 - Every group goes through:
-   - What have you done since last time?
-   - What will you do until next time?
-   - Do you have any hindrances that stops you from solving a problem?
+    - What have you done since last time?
+    - What will you do until next time?
+    - Do you have any hindrances that stops you from solving a problem?
 
 ## Sprint Release Preparation
 
@@ -162,12 +162,12 @@ following questions:
 If a bug is discovered:
 
 - If it is **related** to the release:
-   - [Create an issue](./github.md#issues) in the relevant repository, using the
-     ![releaseFix](./images/releasefix-label.png) label.
+    - [Create an issue](./github.md#issues) in the relevant repository, using the
+      ![releaseFix](./images/releasefix-label.png) label.
 - If it is **unrelated** to the release, maybe a bug that does not hinder release
   or some badly written code:
-   - [Create an issue](./github.md#issues) in the relavant repository, using the
-     relevant labels.
+    - [Create an issue](./github.md#issues) in the relavant repository, using the
+      relevant labels.
 
 After an issue has been created, contact the PO group, who will then assign the
 *releaseFix* issues.
@@ -178,7 +178,7 @@ After an issue has been created, contact the PO group, who will then assign the
 1. Make a new branch named ``releasefix/#IssueNumber``, branched out from the
    release branch.
 1. Write a regression test
-   - A regression test should fail before solving the issue and pass after
+    - A regression test should fail before solving the issue and pass after
 
 **Remember to help each other out!**
 
@@ -215,10 +215,10 @@ their assigned issues. This event should last a maximum of 4 hours.
 - The process group notes which developer teams are present, and assigns a
   person to write a summary.
 - A person from each developer team starts off with explaining:
-   - Issues: What were they meant to solve, and how did they solve it.
-   - Problems: Which problems did they face in solving the issues, and how did
-     they resolve it.
-   - Noteworthy changes that needs to be mentioned to all the developers.
+    - Issues: What were they meant to solve, and how did they solve it.
+    - Problems: Which problems did they face in solving the issues, and how did
+      they resolve it.
+    - Noteworthy changes that needs to be mentioned to all the developers.
 - PO presents the status on the product backlog. 
 
 Remember to __ask questions__ to other developers if you are confused or would

@@ -13,13 +13,13 @@ All developers should be present in the same room, and the PO group will start
 out by presenting the following things:
 
 1. The project vision
-   - What do we want to accomplish in the entire project?
-   - Did this change since last meeting? (if not, just give a recap, so people
-     remember)
+    - What do we want to accomplish in the entire project?
+    - Did this change since last meeting? (if not, just give a recap, so people
+      remember)
 1. The sprint vision
-   - What do we want to accomplish until the next release?
+    - What do we want to accomplish until the next release?
 1. New and important issues in this sprint
-   - Typically based on usability tests with the customer.
+    - Typically based on usability tests with the customer.
 
 This is followed by a presentation from the process group, where changes to the
 process, based on the [sprint retrospective](#sprint-retrospective), are
@@ -53,10 +53,10 @@ group.
 They should answer the following questions:
 
 - For each user story
-   - What issue number is it?
-   - What is it about?
-   - How do they solve it?
-   - When do they create a PR for it?
+    - What issue number is it?
+    - What is it about?
+    - How do they solve it?
+    - When do they create a PR for it?
 
 Then you should remind everyone that:
 

@@ -189,16 +189,16 @@ Each skill group also had their own channel.
 Other than that, he had the following channels:
 
 - Announcements 
-   - Only used for very important information that all should receive.
+    - Only used for very important information that all should receive.
 - General
-   - Mostly used for relevant discussions and talks about the project, or for
-     asking everyone for help.
+    - Mostly used for relevant discussions and talks about the project, or for
+      asking everyone for help.
 - github_watch
-   - GitHub bot so you can follow all the sweet progress.
+    - GitHub bot so you can follow all the sweet progress.
 - Flutter
-   - General resources and questions about Flutter.
+    - General resources and questions about Flutter.
 - Random
-   - To keep everything meme-related away from the other channels
+    - To keep everything meme-related away from the other channels
 
 We very strongly recommend that you add the setting that
 [displays people's full name instead of their obscure username](https://get.slack.help/hc/en-us/articles/115004686586-Show-members-full-names-in-your-workspace#show-full-names-1).
