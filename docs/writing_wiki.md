@@ -10,9 +10,9 @@ MkDocs is configured in the
 
 The following plugins are used:
 
-* search
-* [awesome-pages](https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin)
-* [git-revision-date-localized](https://github.com/timvink/mkdocs-git-revision-date-localized-plugin)
+- search
+- [awesome-pages](https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin)
+- [git-revision-date-localized](https://github.com/timvink/mkdocs-git-revision-date-localized-plugin)
 
 If more plugins are downloaded with pip, remember to add them to
 ``requirements.txt``
@@ -23,17 +23,17 @@ The wiki can be run locally by doing the following in a terminal:
 
 1. Install Python 3.
 1. Check that pip is using python3 with ``pip -V``.
-   * or ``pip3 -V``
+   - or ``pip3 -V``
 1. Set up a virtual environment (steps assume that your current dir is project root)
    1. Install virtual environment with ``pip install virtualenv``.
-      * or ``pip3 install virtualenv``.
+      - or ``pip3 install virtualenv``.
    1. Run ``python -m venv venv``.
-      * or ``python3 -m venv venv``.
+      - or ``python3 -m venv venv``.
    1. Source the virtual environment.
-      * Linux:    ``source venv/bin/activate``
-      * Windows:  ``.\venv\Scripts\activate.bat``
+      - Linux:    ``source venv/bin/activate``
+      - Windows:  ``.\venv\Scripts\activate.bat``
 1. Install plugins with ``pip install -r requirements.txt``.
-   * Or of pip is using python3, then use ``pip3 install -r requirements.txt``.
+   - Or of pip is using python3, then use ``pip3 install -r requirements.txt``.
 1. Start local server with ``mkdocs serve``.
 
 You should now be able to access the wiki at [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
