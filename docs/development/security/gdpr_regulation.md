@@ -106,23 +106,23 @@ to the data and processing thereof. The data subject must be informed about:
 - Transfer of data to any third-party and/or parties outside the EU
   Automated decision-making, based solely on algorithmic basis
 - Their privacy rights under GDPR, including right to
-   - Revoke consent
-   - Access to view the data, and an overview
-   - Data portability, such as gaining access to a portable copy of the data,
+    - Revoke consent
+    - Access to view the data, and an overview
+    - Data portability, such as gaining access to a portable copy of the data,
      and in some cases to request that personal data be transferred from one data
      controller to another
-   - Be forgotten, i.e. to have personal data deleted and erased, if conditions
+    - Be forgotten, i.e. to have personal data deleted and erased, if conditions
      mentioned in the regulation is fulfilled
-   - Correction of wrong personal information
-   - Restrict the processing of personal data, if a number of conditions is met
-   - Contest being subject to automated decision-making, based solely on automated
+    - Correction of wrong personal information
+    - Restrict the processing of personal data, if a number of conditions is met
+    - Contest being subject to automated decision-making, based solely on automated
      processing, such as profiling
-   - File complaints with a Data Protection Authority (DPA) over processing of
+    - File complaints with a Data Protection Authority (DPA) over processing of
      personal information, with the only exceptions to this right being that:
-      - Legal or official authority is being carried out
-      - ‘Legitimate interest’, where the organisation needs to process data in
-        order to provide the data subject with a service they signed up for
-      - A task being carried out for public interest
+        - Legal or official authority is being carried out
+        - ‘Legitimate interest’, where the organisation needs to process data in
+          order to provide the data subject with a service they signed up for
+        - A task being carried out for public interest
 
 ### Children specific regulations
 
@@ -148,11 +148,11 @@ that the data controller company wishes to use.
   such as: considerations on what information to process; handling insights requests
   and review of breaches of personal data security. This is an internal document
   that data protection agency can request at any time. 
-   - A report ([ENISA on privacy and data protection by design (January 12, 2015)](https://www.enisa.europa.eu/publications/privacy-and-data-protection-by-design))
-     specifies what needs to be done to achieve privacy and data protection by default.
-     For instance, encryption and decryption operations must be carried out locally,
-     and not be a remote service as the keys and data must remain in the power of
-     the data owner.
+    - A report ([ENISA on privacy and data protection by design (January 12, 2015)](https://www.enisa.europa.eu/publications/privacy-and-data-protection-by-design))
+      specifies what needs to be done to achieve privacy and data protection by default.
+      For instance, encryption and decryption operations must be carried out locally,
+      and not be a remote service as the keys and data must remain in the power of
+      the data owner.
 - Data protection impact assessment have to be conducted when specific risks occur
   to the rights and freedoms of data subjects. Prior approval of the data protection
   authorities is required for high risks (Article 35).
@@ -174,12 +174,12 @@ that the data controller company wishes to use.
   to have expert knowledge of data protection law and practices, and should be
   designated to assist the controller in monitoring their internal compliance with
   the regulation.
-   - A designated DPO can be either internal to the organization or external, as
-     long as there is no conflict of interest. Organizations outside of EU, must
-     appoint an EU-based person as representative for their GDPR obligations.
-   - The DPO is further expected to be proficient at managing IT processes, data
-     security including dealing with cyber attacks and other business continuity
-     processes (prevention and recovery) to deal with threats to the organization.
+    - A designated DPO can be either internal to the organization or external, as
+      long as there is no conflict of interest. Organizations outside of EU, must
+      appoint an EU-based person as representative for their GDPR obligations.
+    - The DPO is further expected to be proficient at managing IT processes, data
+      security including dealing with cyber attacks and other business continuity
+      processes (prevention and recovery) to deal with threats to the organization.
 
 ## Meeting the GDPR regulation for the GIRAF project
 
@@ -290,11 +290,11 @@ include:
 
 - Determine when and how the data subject is to be informed about their legal rights.
   The information should include:
-   - What is the extent of the data collection?
-   - Is any data transferred to third-parties and/or parties outside EU?
-   - Is any automated decision-making occurring, at what is the impact?
-   - What is the privacy rights of the data subject? (Details listed in the section
-     about GDPR regulation)
+    - What is the extent of the data collection?
+    - Is any data transferred to third-parties and/or parties outside EU?
+    - Is any automated decision-making occurring, at what is the impact?
+    - What is the privacy rights of the data subject? (Details listed in the section
+      about GDPR regulation)
 - It should further be determined how the privacy rights of the data subject is
   to be enforced, both within the organisation and at the technical level.
 
@@ -308,11 +308,11 @@ measures defined in the regulation. For the GIRAF project this means:
 
 - Determine, or define, the data protection principles and measures that is designed
   into the system, possibly along with any required organisation processes.
-   - If, for example, pseudonymisation is used, then when, where and how?
+    - If, for example, pseudonymisation is used, then when, where and how?
 - Define records of processing activities, including
-   - Purpose of the processing
-   - Categories involved
-   - Envisaged time limits
+    - Purpose of the processing
+    - Categories involved
+    - Envisaged time limits
 - Define processes to be used upon the discovery of an occurred security breach
 
 ### Conclusion

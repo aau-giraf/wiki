@@ -67,23 +67,23 @@ As mentioned above, ITS will attach a network drive at `/swarm-nfs/`, which shou
 include the following:
 
    - api/
-      - appsettings.Develop.json
-      - appsettings.Production.json
-      - appsettings.Testing.json
+       - appsettings.Develop.json
+       - appsettings.Production.json
+       - appsettings.Testing.json
    - backup/
    - cdn/
-      - dev/
-      - pictograms/
-      - test/
-      - pictograms/
-      - prod/
-      - pictograms/
+       - dev/
+       - pictograms/
+       - test/
+       - pictograms/
+       - prod/
+       - pictograms/
    - certbot/
    - mysql/
    - nginx/
-      - certs/
-      - sites-enabled/
-      - nginx.conf
+       - certs/
+       - sites-enabled/
+       - nginx.conf
 
 Furthermore, the master00 server, should execute the following cronjob:
 
