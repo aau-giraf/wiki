@@ -56,7 +56,7 @@ API, such as whether the API is running and if it has access to the database.
 ### ErrorController
 
 By convention the ErrorController is linked to whenever there is an illegal request
-such as a 404 request. The controller will always send back an ```ErrorResponse```.
+such as a 404 request. The controller will always send back an ``ErrorResponse``.
 
 ### Next
 

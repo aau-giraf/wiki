@@ -8,10 +8,10 @@ us to test multiple platforms from our CI-Platform without cost.
 
 The weekplanner is built in 4 jobs from the same workflow: [main.yml](https://github.com/aau-giraf/weekplanner/blob/develop/.github/workflows/main.yml)
 
-    - `build-and-test-android`
-    - `build-and-test-ios`
-    - `deploy-to-playstore`
-    - `deploy-to-appstore`
+   - `build-and-test-android`
+   - `build-and-test-ios`
+   - `deploy-to-playstore`
+   - `deploy-to-appstore`
 
 ### Android
 
@@ -52,9 +52,9 @@ In addition to running unit tests, when pushed to any branch GitHub Actions star
 another job, starts a build of the embedded Dockerfile, and tags this accordingly
 as either:
 
-    - **master**: aau-giraf/web-api/web-api:latest
-    - **develop**: aau-giraf/web-api/web-api:develop
-    - **issue/123**: aau-giraf/web-api/web-api:issue-123
+   - **master**: aau-giraf/web-api/web-api:latest
+   - **develop**: aau-giraf/web-api/web-api:develop
+   - **issue/123**: aau-giraf/web-api/web-api:issue-123
 
 When deploying into the [production swarm](../../server_administration/PracticalDocker),
 these images are pulled into DEV and PROD environments accordingly.

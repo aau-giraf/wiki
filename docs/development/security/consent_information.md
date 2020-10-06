@@ -1,6 +1,7 @@
 # Consent Information
 
 ## Overview
+
 The purpose of this document, is to detail two subjects mentioned in the
 [GDPR Regulation](./gdpr_regulation.md) document, namely the Legal Processing and
 the Legal Rights of the Data Subject. The essence of these two subject, are that
@@ -12,14 +13,15 @@ it is optimal to ensure that both of these are ensured at the same time, such as
 during sign-up.
 
 ## Requirements and maintenance
+
 These requirements can be fulfilled by means of a consent-contract, with information about:
 
-* Contact information about the data-controller
-* Purpose of processing personal information
-* Categories of personal information
-* How personal information is retrieved
-* How long person information is contained in the system and how it is deleted
-* General rights of the data-subject
+- Contact information about the data-controller
+- Purpose of processing personal information
+- Categories of personal information
+- How personal information is retrieved
+- How long person information is contained in the system and how it is deleted
+- General rights of the data-subject
 
 This document is based on a [template](https://www.datatilsynet.dk/media/6567/fortegnelse.pdf)
 provided by Datatilsynet, with intention of being visible to the data-subject at
@@ -33,4 +35,5 @@ would trigger an update, are equivalent to those described in the document
 [Processing Activity Record Information](./processing_activity_record_information.md).
 
 ## The consent document
+
 The consent-contract is provided as a separate [document](./consent.md).

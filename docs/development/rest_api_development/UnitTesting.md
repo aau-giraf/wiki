@@ -14,13 +14,12 @@ to test the following method in the Department Controller:
 
 xUnit is a library specifically designed for testing in .NET.
 
-In order to define a test we put ```[Fact]``` above the method. This way the xUnit
+In order to define a test we put ``[Fact]`` above the method. This way the xUnit
 test runner knows it's a testing method and automatically runs it when invoked.
 
 In order to run the tests you may run either of the two following CLI commands;
 
-```dotnet test``` to run all tests
-```dotnet test --filter DisplayName~department```
+``dotnet test`` to run all tests ``dotnet test --filter DisplayName~department``
 
 to run tests with the name department in it.
 

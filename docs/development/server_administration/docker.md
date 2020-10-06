@@ -1,4 +1,5 @@
 # Docker
+
 [Docker](https://en.wikipedia.org/wiki/Docker_\(software\) "wikilink")
 is a tool for managing software containers. A container is used to
 isolate software from the system it runs on. It encapsulates some
@@ -60,23 +61,23 @@ The Dockerfile commands in our Dockerfile for deploying Jenkins are as
 follows:
 
 - **FROM** indicates which existing Dockerfile we want to use and
-extend. Our Dockerfile extends the official Dockerfile for Jenkins
-through this command.
+  extend. Our Dockerfile extends the official Dockerfile for Jenkins
+  through this command.
 - **ENV** sets an enviroment variable. For
-instance in this case //ANDROID\_SDK\_URL// is set to the location for
-the Android SDK. Setting these enviroment variables improves the
-readability, like using variables in other software.
+  instance in this case //ANDROID\_SDK\_URL// is set to the location for
+  the Android SDK. Setting these enviroment variables improves the
+  readability, like using variables in other software.
 - **USER** sets
-the user being used to run the commands following it. That user is used
-until it's changed by another //USER// command.
+  the user being used to run the commands following it. That user is used
+  until it's changed by another //USER// command.
 - **RUN** executes
-shell commands inside the container. For instance in this case it's
-being used to download the Android SDK, and later execute the Android
-SDK.
+  shell commands inside the container. For instance in this case it's
+  being used to download the Android SDK, and later execute the Android
+  SDK.
 - **COPY** can be used to copy external files into the Docker
-image being created. In this case it's being used to copy a
-configuration file for Jenkins into the image so we are guaranteed to
-always have the same configuration when deploying.
+  image being created. In this case it's being used to copy a
+  configuration file for Jenkins into the image so we are guaranteed to
+  always have the same configuration when deploying.
 
 You may notice that the first command refers to another Dockerfile,
 which our Dockerfile then extends upon (in this case the official
@@ -86,26 +87,26 @@ which we use in other files than the ones shown. Commands are as
 follows:
 
 - **VOLUME** is used to make persistent storage for the Docker
-containers. It takes one parameter which is the absolute path inside a
-container that should be persisted even if the container is deleted.
-This is necessary if data needs to be persisted as Docker doesn't do it
-by default.
+  containers. It takes one parameter which is the absolute path inside a
+  container that should be persisted even if the container is deleted.
+  This is necessary if data needs to be persisted as Docker doesn't do it
+  by default.
 - **EXPOSE** is used to expose ports internally in a
-container, as the application running in the container can only
-communicate through an exposed port to the outside. This command takes a
-list of ports that should be exposed. How this can be used is explained
-further below.
+  container, as the application running in the container can only
+  communicate through an exposed port to the outside. This command takes a
+  list of ports that should be exposed. How this can be used is explained
+  further below.
 - **ENTRYPOINT** is used to specify what command
-should be used when deploying the Docker container from an image. It
-takes an array of strings where each string is a part of the complete
-shell command being executed when deployed. The entrypoint commands can
-never be overwritten when deploying, so it is used for executing the
-minimum required commands to deploy.
+  should be used when deploying the Docker container from an image. It
+  takes an array of strings where each string is a part of the complete
+  shell command being executed when deployed. The entrypoint commands can
+  never be overwritten when deploying, so it is used for executing the
+  minimum required commands to deploy.
 - **CMD** is also used to
-specify what command or parameters that should be used when deploying.
-But contrary to the entrypoint, this command can be overwritten. So this
-command should be used for default parameters that should be possible to
-overwrite.
+  specify what command or parameters that should be used when deploying.
+  But contrary to the entrypoint, this command can be overwritten. So this
+  command should be used for default parameters that should be possible to
+  overwrite.
 
 ## Deploying Images
 
@@ -127,9 +128,8 @@ It's possible to pass a ``-p`` parameter that takes a port route, which
 means the command could look like ``docker run -p 80:8080 jenkins\_giraf``.
 Here the port the container listens on, the exposed
 port, is port 8080. By using the parameter ``-p 80:8080`` we tell Docker
-that the host should be redirected from port 80 to the exposed port
-1.    The picture below illustrates how this
-works:
+that the host should be redirected from port 80 to the exposed port 1. The picture
+below illustrates how this works:
 
 ![DockerPortEx](./images/DockerPortEx.png "DockerPortEx")
 

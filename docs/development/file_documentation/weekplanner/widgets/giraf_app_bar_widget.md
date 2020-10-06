@@ -1,16 +1,18 @@
 # Documentation of giraf_app_bar_widget.dart
 
-This files contains the documentaion of the `giraf_app_bar_widget.dart` file from the weekplanner project.
+This files contains the documentaion of the `giraf_app_bar_widget.dart` file from
+the weekplanner project.
 
 ## Functionality
 
 This widget is the app bar at the top of many screens in the weekplanner application.
-The displayed icons are chosen dynamically and depend on the current screen and user mode.
-The icons as well as their functionality are provided by `toolbar_bloc.dart`.
+The displayed icons are chosen dynamically and depend on the current screen and
+user mode. The icons as well as their functionality are provided by `toolbar_bloc.dart`.
 
 ## Layout
 
-The Giraf appbar is displayed as seen here, when located on the weekplan screen (`weekplan_screen.dart`):
+The Giraf appbar is displayed as seen here, when located on the weekplan screen
+(`weekplan_screen.dart`):
 
 ![Layout of Giraf app bar](../pictures/GirafAppbar.png)
 
@@ -22,7 +24,8 @@ All the icons can be seen in `toolbar_bloc.dart`.
 
 ## Code
 
-Giraf app bar is a stateless widget, thus it contains the build function which "describes" how the app bar should look:
+Giraf app bar is a stateless widget, thus it contains the build function which
+"describes" how the app bar should look:
 
 ```dart
  @override
@@ -48,5 +51,7 @@ Giraf app bar is a stateless widget, thus it contains the build function which "
   }
 ```
 
-The Giraf app bar consists of an app bar with buttons which are emitted from the stream called `toolbarBloc.visibleButtons`.
-That stream is populated with buttons by the method `toolbarBloc.updateIcons` which is the reason it is called as the first method.
+The Giraf app bar consists of an app bar with buttons which are emitted from the
+stream called `toolbarBloc.visibleButtons`. That stream is populated with buttons
+by the method `toolbarBloc.updateIcons` which is the reason it is called as the
+first method.

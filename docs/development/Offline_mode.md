@@ -55,31 +55,32 @@ Before even starting to implement the features on the prioritized list, it is ne
 to be able to login on an offline device.   
 One solution could be a setting, where when you are logged in you can allow the
 current device to be used in offline mode and the user is saved locally, so it is
-possible to login with no internet connection.  
-  
-#### Here is the prioritized list for the offline features  
-  
-1. Citizen features: Limited to current week.  
-   1.1 View weekplan.  
-   1.2 View activity.  
-   1.3 Mark activity as completed.  
-   1.4 Timer functionality.  
-2. Guardian features: Limited to current week.  
-   2.1 View weekplan.  
-   2.2 View activity.  
-   2.3 Cancel activity.  
-   2.4 Timer functionality.  
-   2.5 Edit weekplan.  
-3. Guardian features:  
-   3.1 Take picture as pictogram.  
-   3.2 Create/delete weekplans.  
-   3.3 All functions from point 2 just not limited to the current week.  
+possible to login with no internet connection.
+
+#### Here is the prioritized list for the offline features
+
+1. Citizen features: Limited to current week.
+   1. View weekplan.
+   1. View activity.
+   1. Mark activity as completed.
+   1. Timer functionality.
+1. Guardian features: Limited to current week.
+   1. View weekplan.
+   1. View activity.
+   1. Cancel activity.
+   1. Timer functionality.  
+   1. Edit weekplan.
+1. Guardian features:
+   1. Take picture as pictogram.
+   1. Create/delete weekplans.
+   1. All functions from point 2 just not limited to the current week.
 
 To store the data (activities, timers) locally on the device the SQLite DB can be
 used. SQLite is a database that is running on the phone/tablet already. It has a
 plugin for Flutter (sqflite) that supports both iOS and Android.  
-  
+
 #### Syncing the local database to match the online database
+
 A consideration could be if some data is more important to sync than other and then
 make different sync cycles or prioritization, in case the user only has connection
 for a short period of time. It could also be considered if all data needs to be
@@ -194,18 +195,18 @@ implement yet another thing for future students to maintain? If something is to
 be changed in the model layer, this will be your workload:
 
 1. Alter the modellayer in the web-api
-2. Migrate the database
-3. Customize the unittests
-4. Customize the integration tests
-5. Alter the models in the api_client
-6. Customize the unittests
-7. Integration test between web_api and api_client
-8. Alter the offline repository
-9. Alter the unittests
-10. Integration test between the offline repository and the api_client
-11. Integration test between the offline repository and the web-api
-12. Alter the weekplanner to use the new feature
-13. Integration test between weekplanner and the offline repository
+1. Migrate the database
+1. Customize the unittests
+1. Customize the integration tests
+1. Alter the models in the api_client
+1. Customize the unittests
+1. Integration test between web_api and api_client
+1. Alter the offline repository
+1. Alter the unittests
+1. Integration test between the offline repository and the api_client
+1. Integration test between the offline repository and the web-api
+1. Alter the weekplanner to use the new feature
+1. Integration test between weekplanner and the offline repository
 
 And do not forget that this will require 4 pull requests to 4 different projects.
 How will you convince your code reviewers that it works?
@@ -222,8 +223,8 @@ our recommendation:
 Assume that the `to_json()` and `from_json()` is bijective and all objects contain
 something unique (the identifier from the web-api would be essential), then you could:
 
- 1. Create all database tables from the models `to_json` or `from_json` method
- 2. Populate the database with the desired data
+1. Create all database tables from the models `to_json` or `from_json` method
+1. Populate the database with the desired data
 
 To accommodate relations, the web-api may need to provide data on how the models
 are related to each other, since it is not always possible to see how models are

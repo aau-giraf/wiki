@@ -1,6 +1,7 @@
 # Processing Activity Record Information
 
 ## Overview
+
 As per the General Data Protection Regulation (GDPR) [Article 30](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e3265-1-1),
 it is required of a data processor to maintain a record of processing activities,
 which should be available for the national supervisory authority, Datatilsynet
@@ -10,6 +11,7 @@ it. The actual record is linked at the bottom, and it is based on the example of
 a processing activity record provided by the supervisory authority Datatilsynet.
 
 ## Requirements and maintenance
+
 There are several requirements by which such a record should comply, primarily
 including that the record should contain the following information.
 
@@ -36,4 +38,5 @@ described personal information, e.g. cloud provider tools, logging tools or tech
 support tools.
 
 ## The processing activity record
+
 The record itself is provided in a separate [document](./processing_activity_record.md).

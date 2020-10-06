@@ -12,6 +12,7 @@ For instance consider a login request:
 ```bash
 curl -X POST "http://localhost:5000/v1/Account/login" -H "accept: text/plain" -H "Content-Type: application/json-patch+json" -d "{ \"username\": \"<yourUserName>\", \"password\": \"<youPassword>\"}"
 ```
+
 This login request will return a token.
 
 One can then set the token in the authentication header: ```Authorization: Bearer <token>```
@@ -53,7 +54,7 @@ Thus the settings are configured in `appsettings.json` in the section called `Jw
 ```
 
 
-## What is a JWT?
+## What is a JWT
 
 JSON Web Token is an authentication token, which actually contains user information,
 as opposed to API keys. Traditionally, API keys can be a GUID or a nonsense string,
@@ -65,7 +66,8 @@ the user, and their access rights, this has the advantage of saving the service
 from database lookups, to obtain the information. It also contains a timestamp,
 by which the service can determine whether it is still valid.
 
-#### Comparison between classic API Key usage, and JWT
+### Comparison between classic API Key usage, and JWT
+
 <div style="display:flex;">
     <a href="../images/classic_api_key.png" target="_blank">
         <img alt="A diagram showing a successful request, and a 403 using classic 
@@ -96,7 +98,7 @@ database access is one of the more expensive and time consuming things on the se
 side, this is quite useful.
 
 
-### How does JWT work?
+### How does JWT work
 
 If a JWT contains user information, or information about access rights, it may
 seem insecure. But this is not the case, in fact, it works much in the same way
@@ -107,7 +109,7 @@ abstract level it works like this:
 
   1. A login is attempted at the server, e.g. with username and password
   1. The server verifies the information, and creates a json object containing
-    the relevant information
+     the relevant information
   1. The server then SIGNS the information, and serializes it.
   1. Finally the object is returned to the user.
 
@@ -123,7 +125,7 @@ tries to log back in:
       presented with HTTP 403 or similar, if the client has a gui, the user can
       redirected to a login page, or the credentials are cached, and the token is refreshed.
 
-#### What happens when user rights, etc. are altered?
+#### What happens when user rights, etc. are altered
 
 One of the weaknesses of the JWT is that since it is signed by an authority, the
 information in it is valid until the signature (timestamp etc.) determines it is

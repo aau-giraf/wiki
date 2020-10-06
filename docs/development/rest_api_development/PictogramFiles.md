@@ -20,9 +20,9 @@ To run the script, we first need to ensure that we have Python 3, and Pillow (an
 We found that the easiest way to install Pillow, is through PIP which can be installed
  using the following links:
 
-* [macOS](https://evansdianga.com/install-pip-osx/)
-* [Windows](https://vgkits.org/blog/pip3-windows-howto/)
-* Ubuntu run `sudo apt install python3-pip`.
+- [macOS](https://evansdianga.com/install-pip-osx/)
+- [Windows](https://vgkits.org/blog/pip3-windows-howto/)
+- Ubuntu run `sudo apt install python3-pip`.
 
 Afterward, run:
 
