@@ -24,6 +24,7 @@ This command will dump the database `giraf-dev` to a local file giraf-dev-dump
 which can be exported to the new server and imported as to a new database.
 
 ## New setup
+
 The Docker Compose files was updated with the following:
 
 ```yaml

@@ -35,6 +35,7 @@ Each node has been configured to use the ```10.14.0.0/16``` subnet for the local
 docker daemon. For the swarm overlay network, the ```10.10.0.0/16``` subnet is used.
 
 On the servers the following users have been added as administrators:
+
 ```
 bwenne16@student.aau.dk
 tlha16@student.aau.dk
@@ -44,6 +45,7 @@ mkaaga14@student.aau.dk
 jsande16@student.aau.dk
 jtrand16@student.aau.dk
 ```
+
 ### To access the servers
 
 To access the servers from any network including most AAU network the AAU ssh gateway

@@ -47,9 +47,9 @@ To see the servers goto Menu -> VMs and Templates
 
 The vSphere Client site is only accessible from inside the AAU network and even
 is not guaranteed to be accessible by ITS. To be sure the user must connect via
-VPN to AAU. On Linux Mint the package ```network-manager-openconnect-gnome``` must
+VPN to AAU. On Linux Mint the package ``network-manager-openconnect-gnome`` must
 be installed to allow for access to the Cisco VPN. Once installed add a new VPN
-of type CiscoAnyConnect and specify ```ssl-vpn1.aau.dk``` as the gateway. When trying
+of type CiscoAnyConnect and specify ``ssl-vpn1.aau.dk`` as the gateway. When trying
 to connect the network manager will ask for your username and password, once provided
 an external passcode must be entered. To get this the user must sign up for MSA
 passcode at [https://mfa.aau.dk/](https://mfa.aau.dk/) just use SMS if nothing else

@@ -14,7 +14,7 @@ Docker Image.
 To make these changes, only the Dockerfile needed to be changed. The two different
 versions of the file can be seen below.
 
-### Old Dockerfile
+## Old Dockerfile
 
 ```dockerfile
 # base image from dockerhub
@@ -46,7 +46,7 @@ EXPOSE 5000
 ENTRYPOINT ["dotnet", "run", "--list"]
 ```
 
-### New Dockerfile
+## New Dockerfile
 
 ```dockerfile
 # Using microsoft dotnet software development kit as

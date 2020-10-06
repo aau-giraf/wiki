@@ -4,6 +4,7 @@ In this article we describe what servers there are, what they are running and ho
 to access them.
 
 There are 6 servers available, all running:
+
 ```
 Distributor ID:	Ubuntu
 Description:	Ubuntu 18.04.2 LTS
@@ -61,27 +62,28 @@ The WEB API is only available on port 80 and 443 on the URLs shown below.
 | Test                | http://srv.giraf.cs.aau.dk/TEST/API |
 
 ## Networking Drives and specific server-setups
+
 As mentioned above, ITS will attach a network drive at `/swarm-nfs/`, which should
 include the following:
 
- - api/
-    - appsettings.Develop.json
-    - appsettings.Production.json
-    - appsettings.Testing.json
- - backup/
- - cdn/
-    - dev/
+   - api/
+      - appsettings.Develop.json
+      - appsettings.Production.json
+      - appsettings.Testing.json
+   - backup/
+   - cdn/
+      - dev/
       - pictograms/
-    - test/
+      - test/
       - pictograms/
-    - prod/
+      - prod/
       - pictograms/
- - certbot/
- - mysql/
- - nginx/
-    - certs/
-    - sites-enabled/
-    - nginx.conf
+   - certbot/
+   - mysql/
+   - nginx/
+      - certs/
+      - sites-enabled/
+      - nginx.conf
 
 Furthermore, the master00 server, should execute the following cronjob:
 
@@ -95,6 +97,7 @@ This is done to ensure that the certificate is available on all of the servers,
 and that the nginx Giraf_PROXY service mounts this folder and the certificate.
 
 ## READ: Access to the server
+
 Access to the server is granted to all students, sudo rights are ONLY given to members
 of the Server Meta Group.
 
@@ -106,4 +109,5 @@ More can be found in [Server Ownership](./ServerOwnership.md)
 If you are at home, and cannot access the AAU SSH gateway, simply use [AAU VPN](https://www.its.aau.dk/vejledninger/vpn/)
 
 ## VIDEO: Short video on how to connect
+
 https://youtu.be/KZYsAJDHlxo

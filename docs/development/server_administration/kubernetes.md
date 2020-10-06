@@ -12,7 +12,7 @@ following way: "Kubernetes is an open-source platform for automating
 deployment, scaling, and operations of application containers across
 clusters of hosts, providing container-centric infrastructure"
 
-#### Basic Principles
+## Basic Principles
 
 In this section we describe how to set up a minimum usable Kubernetes
 infrastructure. In this context a minimum usable Kubernetes
@@ -27,17 +27,17 @@ depend on. Physical (hardware) manifestation of Kubernetes setup will be
 explained from the three following
 concepts.
 
-* Cluster: A group of physical and/or virtual machines. A cluster contains at least
+- Cluster: A group of physical and/or virtual machines. A cluster contains at least
   one master and zero or more node servers. In the picture, an example of a cluster
   with a single master and three nodes is shown.
-* Master: A server which manages the nodes running in the cluster. There can be
+- Master: A server which manages the nodes running in the cluster. There can be
   multiple master servers in a cluster, which can give better performance for huge
   clusters and better uptime. The reason this gives better performance is that each
   master server can concentrate on managing one part of a larger system. The reason
   it gives better uptime is because configuration files are also distributed between
   all master servers, so if one master server goes down, all the other master servers
   can take over for it.
-* Node: A server which runs and manages the actual applications. It can be controlled
+- Node: A server which runs and manages the actual applications. It can be controlled
   by a master server through the kubelet service.
 
 ![Billede mangler](./images/preview-KubernetesBasicCluster.png "Kubernetes Basic Cluster")
@@ -50,30 +50,30 @@ to make them accessible.
 The following system services run on
 master:
 
-* API-server: System service that validates and configures request to alter the
+- API-server: System service that validates and configures request to alter the
   state of the cluster. It provides a web API server to perform the requests.
   Part of Kubernetes.
-* Scheduler: System service that schedules how workloads should be distributed
+- Scheduler: System service that schedules how workloads should be distributed
   between nodes. Part of Kubernetes.
-* Controller Manager: System service that attempts to change the current cluster
+- Controller Manager: System service that attempts to change the current cluster
   state towards the desired state. It runs the loop for various controllers, that
   control various areas of the cluster. Part of Kubernetes.
-* Etcd: System service that provides a configuration store that can be distributed
+- Etcd: System service that provides a configuration store that can be distributed
   between multiple servers. Kubernetes stores its configuration in etcd. Third party
   program.
-* Flannel: System service that provides a overlay network for communication between
+- Flannel: System service that provides a overlay network for communication between
   containers on different nodes. Flannel also uses etcd to store its configuration.
   Third party program.
 
 The following system services run on
 node:
 
-* Flannel: System service that is setup to connect to a Flannel network. It fetches
+- Flannel: System service that is setup to connect to a Flannel network. It fetches
   its network configuration from etcd. Third party program.
-* Kubelet: System service that is responsible for the communication between masters
+- Kubelet: System service that is responsible for the communication between masters
   and nodes. It ensures the appropriate containers are started and remain healthy.
   Part of Kubernetes.
-* Proxy: System service that provides a network proxy and load balancer for services
+- Proxy: System service that provides a network proxy and load balancer for services
   on a node. Part of Kubernetes.
 
 As the Kubernetes cluster is a network of servers, it's important to
@@ -87,18 +87,18 @@ first 16 bits of the total 32 bits of the IP-addresses are shared in the
 subnet. The shared part of an IP-address is also called the network
 prefix.
 
-* Cluster Subnet: The subnet for the local network.
-* Flannel Subnet: The subnet for the Flannel overlay network, which allows
+- Cluster Subnet: The subnet for the local network.
+- Flannel Subnet: The subnet for the Flannel overlay network, which allows
   communication between containers on different nodes, without using the node's
   IP-address. This is useful, since the containers don't have to negotiate usage
   of ports on the nodes, as they can get their own IP-address.
-* Service Subnet: The subnet where Kubernetes services get an dedicated IP-address.
-* Kubernetes Service IP: The IP-address on the service subnet, that can be used
+- Service Subnet: The subnet where Kubernetes services get an dedicated IP-address.
+- Kubernetes Service IP: The IP-address on the service subnet, that can be used
   to read and write Kubernetes configuration over the network.
-* DNS Service IP: The IP-address on the service subnet, that points to Kubernetes
+- DNS Service IP: The IP-address on the service subnet, that points to Kubernetes
   DNS server, that creates network hostnames for Kubernetes services.
 
-#### Kubernetes Manifest Files
+## Kubernetes Manifest Files
 
 In this section we explain what manifest files are and how they are used
 to deploy cluster objects. A manifest file is a recipe describing what
@@ -107,7 +107,7 @@ are three important manifest files in a minimal usable Kubernetes set
 up, which are the
 following.
 
-* Pod: A group of one or more containers. Kubernetes abstracts away the container
+- Pod: A group of one or more containers. Kubernetes abstracts away the container
   format. The Docker container format is currently the de facto standard, but this
   could change since many new container formats are emerging. Containers running
   in the same pod share IP-address space, so they can address each other through
@@ -116,11 +116,11 @@ following.
   persistent storage, so when a pod is killed all the data will be removed, for
   this reason persistent volumes are used. This is shown partly in the Deployment
   code.
-* Deployment: A template for defining the deployment of multiple instances of the
+- Deployment: A template for defining the deployment of multiple instances of the
   same type of pod. It makes it easier to deploy and manage a lot of the same pods
   as it makes it possible to attach a common name to the collection of pods. This
   is shown fully in the Deployment code.
-* Service: An abstraction over a collection of the same pod. It's possible to access
+- Service: An abstraction over a collection of the same pod. It's possible to access
   the pods through a service by binding a service to the pods' deployment. The service
   abstracts over the pods, making it look like, to an external observer, that there
   is only a single pod running. Services can also implement load balancing. This
@@ -141,7 +141,7 @@ case one pod would be generated. The template -\> metadata -\> labels
 pods. These pods are based on the innermost spec (lines 11-16) which is
 a definition of a pod.
 
-#### Code: Deployment
+## Code: Deployment
 
 ```yaml
 apiVersion: extensions/v1beta1
@@ -172,7 +172,7 @@ exposes internally, such the Artifactory (which runs in the container)
 can see it. It is connected to the Port port, which can be used to
 access the pod internally in a cluster, and thus Artifactory.
 
-#### Code: Service
+## Code: Service
 
 ```yaml
 apiVersion: v1
@@ -189,14 +189,14 @@ spec:
     targetPort: 8081
 ```
 
-#### Advanced Principles
+## Advanced Principles
 
 In this section we describe how to set up a more advanced Kubernetes
 infrastructure, as the Kubernetes infrastructure described above does
 not restrict access to the API server, cannot be accessed easily from
 outside of the cluster and does not have persistent data storage.
 
-#### Control access to API server
+## Control access to API server
 
 The default access control in Kubernetes allows anyone to perform any
 request on the API server. This is problematic if anyone untrusted is on
@@ -206,9 +206,9 @@ request to the API server, the request runs through several stages that
 control
 access:
 
-* Authentication: Decides the identity of the requester.
-* Authorization: Decides whether the identity has permissions to make the request.
-* Admission control: Decides if the request complies with various rules.
+- Authentication: Decides the identity of the requester.
+- Authorization: Decides whether the identity has permissions to make the request.
+- Admission control: Decides if the request complies with various rules.
 
 Authentication of API requests is divided into two categories by the
 type of the requester, Service Accounts and normal users. Service
@@ -225,52 +225,52 @@ authenticating proxy, or HTTP basic authentication. Authorization of API
 requests can happen in four different
 modes:
 
-* ABAC: Attribute-based access control authorizes using policies that combine
+- ABAC: Attribute-based access control authorizes using policies that combine
   attributes of users and cluster objects into boolean expressions. As of
   Kubernetes 1.6 this mode is considered deprecated as it is difficult to manage
   and understand.
-* RBAC: Role-based access control authorizes using role groups that expand its
+- RBAC: Role-based access control authorizes using role groups that expand its
   members permissions.
-* Webhook: Authorize with HTTP callbacks. This mode is probably deprecated since
+- Webhook: Authorize with HTTP callbacks. This mode is probably deprecated since
   its documentation page is deleted.
-* Custom: Authorize with a custom mode.
+- Custom: Authorize with a custom mode.
 
 Admission control restricts API requests by intercepting the requests in
 various plug-ins. Access for a request is only allowed if all plug-ins
 accept it. Here is a list of commonly used
 plug-ins:
 
-* NamespaceLifecycle: Rejects a request, if it tries to create objects in a terminating
+- NamespaceLifecycle: Rejects a request, if it tries to create objects in a terminating
   Kubernetes namespace. (Kubernetes divides cluster objects into namespaces)
-* NamespaceExists: Rejects a request, if it tries to create cluster objects in
+- NamespaceExists: Rejects a request, if it tries to create cluster objects in
   nonexistent namespaces.*
-* LimitRanger: Rejects a request, if it demands CPU and memory resources for a pod,
+- LimitRanger: Rejects a request, if it demands CPU and memory resources for a pod,
   that is beyond CPU and memory limit policies on a namespace.
-* ResourceQuota: Rejects a request, if it demands CPU and memory resources for a
+- ResourceQuota: Rejects a request, if it demands CPU and memory resources for a
   namespace, that is beyond demand resource quotas for a namespace.
-* SecurityContextDeny: Reject a request, if it attempts to change SecurityContext
+- SecurityContextDeny: Reject a request, if it attempts to change SecurityContext
   fields, that allows privilege escalation.
-* ServiceAccount: Accepts all requests. The plug-in makes sure that a Service Account
+- ServiceAccount: Accepts all requests. The plug-in makes sure that a Service Account
   is always available on pods.
 
 Setting up these controls is done when configuring the API server. The
 following arguments should be included in the configuration file, under
 KUBE\\\_API\\\_ARGS:
 
-* client-ca: This argument ensures that any client presenting a signed certificate
+- client-ca: This argument ensures that any client presenting a signed certificate
   is authenticated as per the CommonName attribute in that certificate. The client-ca-file
   contains a list of authorities that can sign certificates.
-* tls-cert: Points to the certificates used to provide HTTPS serving. If no certificates
+- tls-cert: Points to the certificates used to provide HTTPS serving. If no certificates
   are specified (using --tls-private-key), it generates and uses self-signed ones
   automatically.
-* tls-private-key Specifies the private key used for HTTPS serving, which should
+- tls-private-key Specifies the private key used for HTTPS serving, which should
   match the certificate file (specified using --tls-cert-file).
-* tls-cert-file Specifies the x509 certificate used for HTTPS, which should match
+- tls-cert-file Specifies the x509 certificate used for HTTPS, which should match
   the private key for the same (specified using --tls-private-key).
-* service-account-key Specifies the PEM-encoded x509 RSA or ECDSA private or public
+- service-account-key Specifies the PEM-encoded x509 RSA or ECDSA private or public
   key file, for verifying ServiceAccount tokens.
 
-#### External Access
+## External Access
 
 In this section we explain how it's possible to externally access a
 cluster and routing domains to applications in a cluster. To make a
@@ -285,27 +285,27 @@ people can then write their own implementation.
 The following Ingress controller implementations were
 investigated:
 
-* Cloud implementation: Large cloud providers such as Microsoft, Amazon and Google
+- Cloud implementation: Large cloud providers such as Microsoft, Amazon and Google
   provide Ingress controllers specific to their clouds. These Ingress controllers
   are not usable in self-hosted Kubernetes clusters.
-* Nginx implementation: This Ingress controller implementation is part of the official
+- Nginx implementation: This Ingress controller implementation is part of the official
   Kubernetes git repositories. It uses the Nginx reverse proxy capabilities to direct
   incoming traffic. Nginx is lightweight and has  a rich dsl, but it requires additional
   configuration to work with Kubernetes. When using ssl encryption service kube-lego
   can be used to automatically update ssl certificates.
-* Tr�fik implementation: Tr�fik is a reverse proxy that integrates with several
+- Trafik implementation: Trafik is a reverse proxy that integrates with several
   different container orchestration technology such as Swarm, Mesos and Kubernetes.
   It provides a web interface to display and configure its configuration. It is
   well integrated into Kubernetes, so Ingress rules works without additional
-  configuration. Tr�fik also provides fully automated administration of ssl encryption.
-  In the picture below it is illustrated how Tr�fik works. The blue arrows represent
-  HTTP request to various domains, the green arrows represent how Tr�fik redirects
-  the request to services and the red arrow shows that Tr�fik is controlled the
+  configuration. Trafik also provides fully automated administration of ssl encryption.
+  In the picture below it is illustrated how Trafik works. The blue arrows represent
+  HTTP request to various domains, the green arrows represent how Trafik redirects
+  the request to services and the red arrow shows that Trafik is controlled the
   cloud orchestration technology.
 
 ![Billede mangler](./images/preview-TraefikArchitecture.png "Tr�fik Architecture")
 
-#### Persistent Storage
+## Persistent Storage
 
 In this section we explain how persistent storage is achieved with
 Kubernetes. In Kubernetes there are two concepts when dealing with
@@ -313,13 +313,13 @@ storage, which are described as the following. We have our information
 about storage in Kubernetes from the official
 documentation.
 
-* PersistentVolume: A volume that is persisted throughout a pod's lifespan. It is
+- PersistentVolume: A volume that is persisted throughout a pod's lifespan. It is
   an abstraction over different storage types like nfs, GlusterFS and local hosted
   storage. It is recommended to use network storage with a persistent volume and
   not local hosted storage, as local hosted storage option was only introduced for
   testing a Kubernetes set up. On its own a persistent volume cannot be used by
   a pod, a pod must have a claim for a persistent volume before it can be used.
-* PersistentVolumeClaim: A claim for a persistent volume. If a pod needs to use
+- PersistentVolumeClaim: A claim for a persistent volume. If a pod needs to use
   storage, then it has to use a claim.
 
 ![Billede mangler](./images/preview-KubernetesPV.png "Kubernetes PV")
@@ -343,15 +343,15 @@ accessModes label contains the definition of the cardinality between the
 storage and nodes, which can be the
 following.
 
-* ReadWriteOnce: The volume can be mounted as read-write by a single node.
-* ReadOnlyMany: The volume can be mounted read-only by many nodes.
-* ReadWriteMany: The volume can be mounted as read-write by many nodes.
+- ReadWriteOnce: The volume can be mounted as read-write by a single node.
+- ReadOnlyMany: The volume can be mounted read-only by many nodes.
+- ReadWriteMany: The volume can be mounted as read-write by many nodes.
 
 The last attribute is the nfs attribute. This defines the address of the
 server hosting the nfs storage, the path to the nfs folder on the server
 and whether or not the folder is readonly.
 
-#### Code: PersistentVolume example
+## Code: PersistentVolume example
 
 ```yaml
 apiVersion: v1
@@ -385,7 +385,7 @@ selector is not specified, the PersistentVolumeClaim will be matched
 based on its access mode to any PersistentVolume with sufficient space
 to host the PersistentVolumeClaim.
 
-#### Code: PersistentVolumeClaim example
+## Code: PersistentVolumeClaim example
 
 ```yaml
 apiVersion: v1
@@ -415,7 +415,7 @@ where we want to mount artifactory-vol, the mountPath is where we mount
 our volume inside the container and subPath is the name of the folder,
 in our nfs storage, we want to mount at the mountPath.
 
-#### Code: Deployment example
+## Code: Deployment example
 
 ```yaml
 apiVersion: extensions/v1beta1

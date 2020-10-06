@@ -96,7 +96,6 @@ The output should look like this:
 | as7n375y2gwcj5vf4h73h9ron    | giraf-node02.srv.aau.dk    | Ready              | Active             |                    | 18.09.3        |
 | koclcs8nxt0y6qu4ho511la0m    | giraf-node03.srv.aau.dk    | Ready              | Active             |                    | 18.09.3        |
 
-
 ## Examples of using a service
 
 Once the Docker Swarm has been set up, it can be used to serve the different parts
