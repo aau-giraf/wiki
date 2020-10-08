@@ -1,8 +1,10 @@
 # Docker Swarm configuration
 
-The Docker Swarm is manged via the `docker-compose.yml` file that can be found in [GitHub](https://github.com/aau-giraf/giraf-production-swarm).
+The Docker Swarm is manged via the `docker-compose.yml` file that can be found in
+[GitHub](https://github.com/aau-giraf/giraf-production-swarm).
 
 The `docker-compose.yml` file consists of the following:
+
 ```yaml
 version: '3.7'
 
@@ -99,11 +101,14 @@ networks:                        # Defines networks in the swarm
 
 ## Updating the Docker Swarm
 
-In order to update the running Docker Stack ssh to one of the master servers and execute do the following steps:
+In order to update the running Docker Stack ssh to one of the master servers and
+execute do the following steps:
 
 1. ssh to a master server, see [her](../ServerOwnership.md) for more information.
-2. Clone the [GitHub repository](https://github.com/aau-giraf/giraf-production-swarm) onto the server or pull any new changes to the existing.
-3. Verify the changes in the `docker-compose.yml` file are as expected.
-4. Run `docker stack deploy -c docker-compose.yml Giraf`
-5. Use the `docker service ls` command to verify that all services has started as expected.
-6. Run the following command to logout of the server, `exit`.
+1. Clone the [GitHub repository](https://github.com/aau-giraf/giraf-production-swarm)
+   onto the server or pull any new changes to the existing.
+1. Verify the changes in the `docker-compose.yml` file are as expected.
+1. Run `docker stack deploy -c docker-compose.yml Giraf`
+1. Use the `docker service ls` command to verify that all services has started as
+   expected.
+1. Run the following command to logout of the server, `exit`.

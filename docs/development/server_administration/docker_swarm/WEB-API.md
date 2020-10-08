@@ -1,12 +1,20 @@
 # WEB API
 
-The WEB API is a DotNet Core 2.2 application built as a REST API which serves all request to and from the Giraf Project. The WEB API has previously been served via the software development kit (SDK) via Docker.  This resulted in a huge Docker Image consuming `2.24 GB`. Along with enormous file size, it also included the `appsettings.json` file which contains the database's username and password in plaintext.
+The WEB API is a DotNet Core 2.2 application built as a REST API which serves all
+request to and from the Giraf Project. The WEB API has previously been served via
+the software development kit (SDK) via Docker.  This resulted in a huge Docker Image
+consuming `2.24 GB`. Along with enormous file size, it also included the `appsettings.json`
+file which contains the database's username and password in plaintext.
 
-Before the WEB API could be migrated from the old servers to the new one, the Docker Imaged needed to be made smaller in size, do to the limited disk space in the new servers. And the `appsettings.json` file needed to be removed from the finished Docker Image.
+Before the WEB API could be migrated from the old servers to the new one, the Docker
+Imaged needed to be made smaller in size, do to the limited disk space in the new
+servers. And the `appsettings.json` file needed to be removed from the finished
+Docker Image.
 
-To make these changes, only the Dockerfile needed to be changed. The two different versions of the file can be seen below.
+To make these changes, only the Dockerfile needed to be changed. The two different
+versions of the file can be seen below.
 
-### Old Dockerfile
+## Old Dockerfile
 
 ```dockerfile
 # base image from dockerhub
@@ -38,7 +46,7 @@ EXPOSE 5000
 ENTRYPOINT ["dotnet", "run", "--list"]
 ```
 
-### New Dockerfile
+## New Dockerfile
 
 ```dockerfile
 # Using microsoft dotnet software development kit as
@@ -76,6 +84,8 @@ EXPOSE 5000
 ENTRYPOINT ["dotnet", "GirafRest.dll", "--list"]
 ```
 
-The changes resulted in a Docker Image that has decreased in size form `2.24Gb` to `339Mb` and where the `appsettings` file is only needed during compilation and is later removed before the image is pushed to Docker Hub.
+The changes resulted in a Docker Image that has decreased in size form `2.24Gb`
+to `339Mb` and where the `appsettings` file is only needed during compilation and
+is later removed before the image is pushed to Docker Hub.
 
 The repository can be found her: [https://hub.docker.com/r/giraf/web-api](https://hub.docker.com/r/giraf/web-api)

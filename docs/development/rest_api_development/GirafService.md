@@ -2,7 +2,8 @@
 
 ## Description
 
-A service containing helper methods used by many controllers. Additionally it contains the UserManager, Logger and DbContext.
+A service containing helper methods used by many controllers. Additionally it contains
+the UserManager, Logger and DbContext.
 
 ## Helper methods
 

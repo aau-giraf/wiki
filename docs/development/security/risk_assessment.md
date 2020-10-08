@@ -1,4 +1,5 @@
 # Risk assessment
+
 From [issue 171](https://github.com/aau-giraf/wiki/issues/171).
 
 The risk assessment can be found here: [PDF](risk_assessment.pdf)

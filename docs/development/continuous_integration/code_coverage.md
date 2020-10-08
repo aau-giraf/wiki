@@ -11,9 +11,9 @@ This section shortly explains how to use Codecov
 
 ### Codecov.io
 
-On the [Codecov site](https://codecov.io/gh/aau-giraf), the GIRAF repositories using Codecov can be seen.
-In the different repositores, multiple things can be seen.
-For example, the code coverage, and changes in code coverage for every commit. 
+On the [Codecov site](https://codecov.io/gh/aau-giraf), the GIRAF repositories using
+Codecov can be seen. In the different repositories, multiple things can be seen.
+For example, the code coverage, and changes in code coverage for every commit.
 
 ### Pull Request Comments
 
@@ -29,22 +29,23 @@ This comment is updated when new commits are added to the pull request.
 
 #### Flutter Repositories
 
-In Flutter repositories, the `--coverage` argument is added to the `flutter test` step in the workflow.
-This generates a coverage file, which is then uploaded by the next step:
+In Flutter repositories, the `--coverage` argument is added to the `flutter test`
+step in the workflow. This generates a coverage file, which is then uploaded by
+the next step:
 
 ```yaml
 ...
 - run: flutter test --coverage
   name: Tests
-- name: Upload coverage to Codecov  
+- name: Upload coverage to Codecov
   uses: codecov/codecov-action@v1
 ...
 ```
 
-#### .NET Repositories 
+#### .NET Repositories
 
-In the .NET repositories, the package `coverlet.msbuild` is used to generate code coverage reports.
-The package is installed with in `GirafRest.Test`.
+In the .NET repositories, the package `coverlet.msbuild` is used to generate code
+coverage reports. The package is installed with in `GirafRest.Test`.
 
 Then in the workflow, in the test step, some arguments are added.
 
@@ -64,23 +65,18 @@ Beneath is an explanation of the arguments:
 
 ```
 
-
 ### Config
 
-The codecov integration is configured in the `codecov.yml` file in the respective repositories. 
-Documentation for the config file can be seen at <https://docs.codecov.io/docs/codecov-yaml>.
+The codecov integration is configured in the `codecov.yml` file in the respective
+repositories. Documentation for the config file can be seen at <https://docs.codecov.io/docs/codecov-yaml>.
 
 ## Affected Repositories
 
 Right now codecov is used in:
 
-* [weekplanner](https://github.com/aau-giraf/weekplanner)
-    * [![codecov](https://codecov.io/gh/aau-giraf/weekplanner/branch/develop/graph/badge.svg)](https://codecov.io/gh/aau-giraf/weekplanner)
-* [api_client](https://github.com/aau-giraf/api_client)
-    * [![codecov](https://codecov.io/gh/aau-giraf/api_client/branch/develop/graph/badge.svg)](https://codecov.io/gh/aau-giraf/api_client)
-* [web-api](https://github.com/aau-giraf/web-api)
-    * [![web-api](https://codecov.io/gh/aau-giraf/web-api/branch/develop/graph/badge.svg)](https://codecov.io/gh/aau-giraf/web-api)
-
-
-
-
+- [weekplanner](https://github.com/aau-giraf/weekplanner)
+    - [![codecov](https://codecov.io/gh/aau-giraf/weekplanner/branch/develop/graph/badge.svg)](https://codecov.io/gh/aau-giraf/weekplanner)
+- [api_client](https://github.com/aau-giraf/api_client)
+    - [![codecov](https://codecov.io/gh/aau-giraf/api_client/branch/develop/graph/badge.svg)](https://codecov.io/gh/aau-giraf/api_client)
+- [web-api](https://github.com/aau-giraf/web-api)
+    - [![web-api](https://codecov.io/gh/aau-giraf/web-api/branch/develop/graph/badge.svg)](https://codecov.io/gh/aau-giraf/web-api)
