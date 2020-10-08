@@ -6,7 +6,7 @@ For documentation on how endpoints and controllers are used in Giraf,
 see: [Endpoints and Controllers Tutorial](./EndpointsAndControllersTutorial.md)
 
 To see all controllers and endpoints used by the Giraf project,
-see: [Swagger UI(master)](http://web.giraf.cs.aau.dk:5000/swagger/)
+see: [Swagger UI(master)](https://srv.giraf.cs.aau.dk/PROD/API/swagger)
 
 ## Description of Controllers
 
