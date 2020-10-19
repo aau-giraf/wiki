@@ -2,7 +2,7 @@
 
 ###Get list of week schedules given user id
 
-```/v2/User/{userId}/week```Gets list of GirafRest.Models.DTOs.WeekDTO for all weeks belonging to the user with the provided id, days not are included.
+```/v2/User/{userId}/week```Gets list of GirafRest.Models.DTOs.WeekDTO for all weeks belonging to the user with the provided id, days are not included.
 A User identifier is needed for the GirafRest.Models.GirafUser to get schedules.
 Possible status code responses are 200 Success, 403 Forbidden and 404 Not Found.
 
