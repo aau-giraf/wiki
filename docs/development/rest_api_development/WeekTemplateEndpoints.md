@@ -53,15 +53,18 @@ Responses are 201 Success, 400 Bad Request, 403 Forbidden and 404 Not Found.
 
 ###Get week template for a given user
 ````/v1/WeekTemplate/{id}```` Gets the week template with the specified id. Available to all users.
-An id integer is needed for the week template to fetch.
+* An id integer is needed for the week template to fetch.
+
 Possible responses are 200 Success, 403 Forbidden and 404 Not Found.
 
 ###Update week template for a given user
 ````/v1/WeekTemplate/{id}```` Overwrite the information of a week template. Available to all Supers, and to Departments and Guardians of the same department as the template.
-An id integer is needed for week template to overwrite.
+* An id integer is needed for week template to overwrite.
+
 Possible responses are 200 Success, 400 Bad Request, 401 Unauthorized, 403 Forbidden and 404 Not Found.
 
 ###Delete week template for a given user
 ````/v1/WeekTemplate/{id}```` Deletes the template of the given ID. Available to all Supers, and to Departments and Guardians of the same department as the template.
-An id integer is needed for the week template to delete.
+* An id integer is needed for the week template to delete.
+
 Possible responses are 200 Success, 401 Unauthorized, 403 Forbidden and 404 Not Found.
