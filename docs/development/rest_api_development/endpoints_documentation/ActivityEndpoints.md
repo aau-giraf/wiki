@@ -2,7 +2,13 @@
 
 ## Create activity
 
-````/v2/Activity/{userId}/{weekplanName}/{weekYear}/{weekNumber}/{weekDayNmb}```` Add a new activity to a given weekplan on the given day.
+````
+
+/v2/Activity/{userId}/{weekplanName}/{weekYear}/{weekNumber}/{weekDayNmb}
+
+```` 
+
+Add a new activity to a given weekplan on the given day.
 
 Bulletpoints of parameters for this request:
 * {userId} (string): 
@@ -13,6 +19,7 @@ id of the user that you want to add the activity for.
 * {weekDayNmb} (integer): day of the week that you want to add the activity on (Monday=1, Sunday=7).
 
 Example response body:
+
 ```` 
 
 {
@@ -64,12 +71,14 @@ Possible status code responses are 200 Success, 403 Forbidden, 404 Not Found.
 /v2/Activity/{userId}/{activityId}
 
 ````
+
 Gets a given activity for a given user.
 Bulletpoints of parameters for this request:
 * {userId} (string): id of the user you want to delete an activity for.
 * {activityId} (integer): id of the activity you want to delete.
 
 Example response body:
+
 ````
 
 {
@@ -101,12 +110,13 @@ Possible status code response is 200 Success.
 ```` 
 
 /v2/Activity/{userId}/update 
-
+    
 ```` 
 Updates an activity with a given id.
 * {userId} (string): id of the user you want to delete an activity for.
 
 Request body required for this PATCH request:
+
 ```` 
 
 {
@@ -133,4 +143,5 @@ Request body required for this PATCH request:
 }
 
 ````
+
 Possible status code response are 200 Success, 400 Bad Request, 403 Forbidden and 404 Not Found.
