@@ -11,8 +11,8 @@
 Add a new activity to a given weekplan on the given day.
 
 Bulletpoints of parameters for this request:
-* {userId} (string): 
-id of the user that you want to add the activity for.
+
+* {userId} (string): id of the user that you want to add the activity for.
 * {weekplanName} (string): name of the weekplan that you want to add the activity on.
 * {weekYear} (integer): year of the weekplan that you want to add the activity on.
 * {weekNumber} (integer): week number of the weekplan that you want to add the activity on.
@@ -59,6 +59,7 @@ Possible status code responses are 201 Success, 400 Bad Request, 403 Forbidden a
 
 Delete an activity with a given id.
 Bulletpoints of parameters for this request:
+
 * {userId} (string): id of the user you want to delete an activity for.
 * {activityId} (integer): id of the activity you want to delete.
 
@@ -74,6 +75,7 @@ Possible status code responses are 200 Success, 403 Forbidden, 404 Not Found.
 
 Gets a given activity for a given user.
 Bulletpoints of parameters for this request:
+
 * {userId} (string): id of the user you want to delete an activity for.
 * {activityId} (integer): id of the activity you want to delete.
 
@@ -111,8 +113,10 @@ Possible status code response is 200 Success.
 
 /v2/Activity/{userId}/update 
     
-```` 
+````
+
 Updates an activity with a given id.
+
 * {userId} (string): id of the user you want to delete an activity for.
 
 Request body required for this PATCH request:

@@ -56,11 +56,13 @@ Create a new GirafRest.Models.Pictogram pictogram.
 Request body required for this POST request:
 
 ````
+
 {
   "title": "string",
   "accessLevel": 1,
   "imageHash": "string"
 }
+
 ````
 
 Status response codes are 200 Success, 400 Bad Request and 404 Not Found.
