@@ -8,7 +8,7 @@
 
 ```
 
-This endpoint allows the user to sign in to his/her account by providing valid username and password.\
+This endpoint allows the user to sign in to his/her account by providing valid username and password.
 The request body for the endpoint is a json object that takes a string for a username and a password:
 
 ```
