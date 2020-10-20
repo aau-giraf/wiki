@@ -1,14 +1,31 @@
-#WeekTemplate Endpoints
+# WeekTemplate Endpoints
 
-###Get Week schedule templates for the authenticated user
-````/v1/WeekTemplate```` Gets all schedule templates for the currently authenticated user. Available to all users.
+## Get Week schedule templates for the authenticated user
+
+````
+
+/v1/WeekTemplate
+
+```` 
+
+Gets all schedule templates for the currently authenticated user. Available to all users.
 Possible status code responses are 200 Success, 403 forbidden and 404 Not Found status codes.
 
-###Create week template
-````/v1/WeekTemplate```` Creates new week template in the department of the given user. Available to Supers, Departments and Guardians.
+## Create week template
+
+````
+
+/v1/WeekTemplate
+
+````
+
+Creates new week template in the department of the given user. Available to Supers, Departments and Guardians.
 After successful execution, a new week template will be created.
 An example of a successful week template POST request:
-````{
+
+````
+
+{
       "thumbnail": {
         "id": 0,
         "lastEdit": "2020-10-19T16:44:58.607Z",
@@ -48,23 +65,49 @@ An example of a successful week template POST request:
       ],
       "id": 0
     }
+
 ````
+
 Responses are 201 Success, 400 Bad Request, 403 Forbidden and 404 Not Found.
 
-###Get week template for a given user
-````/v1/WeekTemplate/{id}```` Gets the week template with the specified id. Available to all users.
+## Get week template for a given user
+
+````
+
+/v1/WeekTemplate/{id}
+
+```` 
+
+Gets the week template with the specified id. Available to all users.
+
 * An id integer is needed for the week template to fetch.
 
 Possible responses are 200 Success, 403 Forbidden and 404 Not Found.
 
-###Update week template for a given user
-````/v1/WeekTemplate/{id}```` Overwrite the information of a week template. Available to all Supers, and to Departments and Guardians of the same department as the template.
+## Update week template for a given user
+
+````
+
+/v1/WeekTemplate/{id}
+
+```` 
+
+Overwrite the information of a week template. Available to all Supers, and to Departments and Guardians of the same department as the template.
+
 * An id integer is needed for week template to overwrite.
 
 Possible responses are 200 Success, 400 Bad Request, 401 Unauthorized, 403 Forbidden and 404 Not Found.
 
-###Delete week template for a given user
-````/v1/WeekTemplate/{id}```` Deletes the template of the given ID. Available to all Supers, and to Departments and Guardians of the same department as the template.
+## Delete week template for a given user
+
+````
+
+/v1/WeekTemplate/{id}
+
+```` 
+
+Deletes the template of the given ID. Available to all Supers, and to Departments and Guardians of the same department as the template.
+
 * An id integer is needed for the week template to delete.
 
 Possible responses are 200 Success, 401 Unauthorized, 403 Forbidden and 404 Not Found.

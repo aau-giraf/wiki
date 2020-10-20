@@ -1,9 +1,18 @@
-#Department Endpoints
+# Department Endpoints
 
-###Get department names
-````/v1/Department```` Get request for getting all the department names.
-Example response body:
+## Get department names
+
 ````
+
+/v1/Department
+
+```` 
+
+Get request for getting all the department names.
+Example response body:
+
+````
+
 {
   "data": [
     {
@@ -16,13 +25,24 @@ Example response body:
     }
   ]
 } 
+
 ````
+
 Possible status code responses are 200 Success and 404 Not Found.
 
-###Create a department
-````/v1/Department```` Create a new department. it's only necesary to supply the departments name.
-Request body required for this POST request:
+## Create a department
+
 ````
+
+/v1/Department
+
+```` 
+
+Create a new department. it's only necesary to supply the departments name.
+Request body required for this POST request:
+
+````
+
 {
   "name": "string",
   "members": [
@@ -35,13 +55,24 @@ Request body required for this POST request:
     0
   ]
 } 
+
 ````
+
 Possible status code responses are 200 Success, 400 Bad Request, 403 Forbidden, 404 Not Found and 500 Server Error.
 
-###Get given department
-````/v1/Department/{id}```` Get the department with the specified id.
-Example response body:
+## Get given department
+
+````
+
+/v1/Department/{id}
+
 ```` 
+
+Get the department with the specified id.
+Example response body:
+
+```` 
+
 {
   "data": {
     "id": 2,
@@ -76,13 +107,24 @@ Example response body:
     "resources": []
   }
 }
+
 ````
+
 Possible status code responses are 200 Success, 403 Forbidden and 404 Not Found.
 
-###Get ciziten names
-````/v1/Department/{id}/citizens```` Gets the citizen names.
-Example response body:
+## Get ciziten names
+
+````
+
+/v1/Department/{id}/citizens
+
 ```` 
+
+Gets the citizen names.
+Example response body:
+
+```` 
+
 {
   "data": [
     {
@@ -102,26 +144,53 @@ Example response body:
     }
   ]
 }
+
 ````
+
 Possible status code responses are 200 Success, 403 Forbidden and 404 Not Found.
 
-###Add user to a department
-````/v1/Department/{departmentId}/user/{userId}```` Add an existing user, that does not have a department, to the given department. Requires role Department, Guardian or SuperUser.
+## Add user to a department
+
+````
+
+/v1/Department/{departmentId}/user/{userId}
+
+````
+
+Add an existing user, that does not have a department, to the given department. Requires role Department, Guardian or SuperUser.
 Possible status code responses are 200 Success, 400 Bad Request, 401 Unauthorized, 403 Forbidden and 409 Conflict.
 
-###Change department name
-````/v1/Department/{departmentId}/name```` Handles changing name of a Department.
-Request body required for this PUT request:
+## Change department name
+
+````
+
+/v1/Department/{departmentId}/name
+
 ```` 
+
+Handles changing name of a Department.
+Request body required for this PUT request:
+
+```` 
+
 {
   "id": 0,
   "name": "string"
 }
+
 ````
+
 Possible status code responses are 200 Success, 400 Bad Request, 403 Forbidden and 404 Not Found.
 
-###Delete department
-````/v1/Department/{departmentId}```` Endpoint for deleting the GirafRest.Models.Department with the given id.
+## Delete department
+
+````
+
+/v1/Department/{departmentId}
+
+```` 
+
+Endpoint for deleting the GirafRest.Models.Department with the given id.
 Possible status code responses are 200 Success, 403 Forbidden and 404 Not Found.
 
 
