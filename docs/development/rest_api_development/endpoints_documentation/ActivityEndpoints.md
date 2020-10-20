@@ -1,6 +1,6 @@
-#Acitivity Endpoints
-
-###
+#Activity Endpoints
+##
+###Create activity
 ````/v2/Activity/{userId}/{weekplanName}/{weekYear}/{weekNumber}/{weekDayNmb}```` Add a new activity to a given weekplan on the given day.
 
 Bulletpoints of parameters for this request:
