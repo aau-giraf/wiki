@@ -8,12 +8,13 @@ see: [Endpoints and Controllers Tutorial](./EndpointsAndControllersTutorial.md)
 To see all controllers and endpoints used by the Giraf project,
 see: [Swagger UI(master)](https://srv.giraf.cs.aau.dk/PROD/API/swagger)
 
-## Description of Controllers
+## Description of Controllers and their endpoints
 
 ### AccountController
 
 The account controller contains all the endpoints related to authenticating users
 e.g. log in, log out, register and reset password.
+
 
 ### ActivityController
 
