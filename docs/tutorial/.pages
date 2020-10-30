@@ -1,6 +1,5 @@
 arrange:
     - "index.md"
-    - "advice_for_future_giraf"
     - "repository_description.md"
     - ...
     - "tutorials"

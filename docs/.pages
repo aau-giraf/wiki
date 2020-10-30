@@ -1,7 +1,8 @@
 arrange:
     - index.md
     - ...
-    - getting_started
+    - tutorial
     - development
-    - process_manual
+    - archive
     - releases
+    - about

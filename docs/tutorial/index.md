@@ -7,4 +7,4 @@ It is recommended to read the latest years' advice first, since it builds upon t
 previous years.
 
 Another important section to read is the advice from the previous year (F2020).
-It can be found in the [process manual](..\process_manual\2020\advice.md).
+It can be found in the [Archive](..\archive\2020\advice.md).
