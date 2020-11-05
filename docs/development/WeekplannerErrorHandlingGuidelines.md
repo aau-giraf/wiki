@@ -8,16 +8,15 @@ when the exception is caught.
 * Add a case with the requested ErrorCode in the switch statement within getErrorMessage method
 
 ## How to use a stream
-In order to be able to get values from a stream you need do something referred to as subscribing or listening.
+In order to be able to get values from a stream you need to do something referred to as subscribing or listening.
 When you subscribe to a stream you will only get the values that are emitted (put onto the stream)
 after the subscription. You subscribe to the stream by calling the listen function and supplying it with a method to 
 call back to when there's a new value available, commonly referred to as a callback method, or just a callback.
 
-### Catching an api error from a stream in the weekplanner
+### Catching an API error from a stream in the weekplanner
 The listen call returns a ````StreamSubscription```` with the type of the stream. With a stream subscription
 it is possible to use the onError function, which takes and error object and the stack trace as parameters.
-An example of onError usage on a listen call from new_citizen_screen.dart on the weekplanner, 
-can be seen below.
+An example of onError usage on a listen call from new_citizen_screen.dart on the weekplanner can be seen below.
 
 ````
 
