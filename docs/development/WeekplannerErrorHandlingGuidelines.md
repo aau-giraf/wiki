@@ -1,4 +1,5 @@
 # Guidelines for error handling in the weekplanner from the wep-api
+
 This section will cover guidelines on how to catch exception in the weekplanner from the web-api and what should happen 
 when the exception is caught.
 
@@ -36,7 +37,11 @@ onPressed: () {
 
 _translator is the referenced ApiErrorTranslater class that holds the catchApiError method.
 This class is found in errorcode_translater.dart. Referring to this class is done by instantiating the class:
-```` final ApiErrorTranslater _translator = ApiErrorTranslater(); ````
+```` 
+
+final ApiErrorTranslater _translator = ApiErrorTranslater(); 
+
+````
 The class ApiErrorTranslater holds two methods: catchApiError and getErrorMessage.
 
 #### Catching API errors method
