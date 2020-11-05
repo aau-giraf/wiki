@@ -36,12 +36,8 @@ onPressed: () {
 ````
 
 _translator is the referenced ApiErrorTranslater class that holds the catchApiError method.
-This class is found in errorcode_translater.dart. Referring to this class is done by instantiating the class:
-```` 
-
-final ApiErrorTranslater _translator = ApiErrorTranslater(); 
-
-````
+This class is found in errorcode_translater.dart. Referring to this class is done by instantiating the class: ```
+final ApiErrorTranslater _translator = ApiErrorTranslater();  ```
 The class ApiErrorTranslater holds two methods: catchApiError and getErrorMessage.
 
 #### Catching API errors method
@@ -70,6 +66,7 @@ void catchApiError(Object error, BuildContext context) {
 #### Creating new error message method
 
 In this method you will need to add a new case for a specific ErrorKey with a return call on an error message string.
+
 ````
 
 ///Get apropriate error message based on error code
