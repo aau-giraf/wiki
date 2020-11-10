@@ -1,7 +1,7 @@
 # Home
 
 This wiki includes all information about the GIRAF project! The information is split
-into 6 categories:
+into 5 categories:
 
    - [Home](./index.md)
        - An overview of the wiki.

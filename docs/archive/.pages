@@ -3,5 +3,5 @@ arrange:
     - "2020F"
     - "2019"
     - ...
-    - review_checklists
-    - prototypes
+    - "review_checklists"
+    - "prototypes"
