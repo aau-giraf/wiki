@@ -1,4 +1,4 @@
-# Setting Up Flutter Projects
+# Setup Flutter Projects
 
 ## Downloading and Installing Flutter
 

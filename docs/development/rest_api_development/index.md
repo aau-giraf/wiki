@@ -26,7 +26,7 @@ how to setup the program. In summary these classes are:
 ## Build and run the repository
 
 Information on dependencies as well how to build and run is available in the
-[Build and run the web-api locally](/docs/tutorial/BuildAndRunLocally.md)-section of the wiki.
+[Build and run the web-api locally](./BuildAndRunLocally.md)-section of the wiki.
 
 You may want to see an [elaboration on how to set AppSettings.json](./ConnectionString.md)
 or some notes on [NuGet](./NugetWithDotnetCore.md).

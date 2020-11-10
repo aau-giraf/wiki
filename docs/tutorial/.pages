@@ -2,4 +2,4 @@ arrange:
     - "index.md"
     - "repository_description.md"
     - ...
-    - "tutorials"
+    - "flutter"
