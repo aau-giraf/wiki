@@ -30,6 +30,3 @@ The different parts of the URL are as follows:
 - identifier: Denotes some identifier like for instance username
 - sub-resource and sub-identifier means that you can nest like for instance localhost:5000/user/username/guardian/id
 
-## Next
-
-Now on to [Swagger](./Swagger.md).

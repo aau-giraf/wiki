@@ -16,6 +16,3 @@ Open your GirafRest.csproj file and you should find a PackageReference to the ne
 package now run:
 
 ```dotnet restore```
-
-Simple as that! Next chapter is about databases where MySQL will be looked at, but
-also how migrations are made and why they're needed. [Head on over here](./Database.md).

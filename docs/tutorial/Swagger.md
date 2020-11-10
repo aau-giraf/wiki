@@ -31,7 +31,3 @@ java -jar modules/swagger-codegen-cli/target/swagger-codegen-cli.jar generate -i
 ```
 
 This will produce a set of request methods and DTOs.
-
-## Next
-
-Then comes [Unit Tests](./UnitTesting.md).

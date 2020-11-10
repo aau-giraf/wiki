@@ -85,6 +85,3 @@ it belongs to a ```Department```.
 ```Departments``` like ```Users``` can also own ```Pictograms``` which is modelled
 through the ```DepartmentResources``` entity.
 
-## Next
-
-We end the development stuff with [A List of the Controller Classes](./EndpointsAndControllers.md).

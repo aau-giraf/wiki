@@ -1,6 +1,6 @@
 # Endpoints and Controllers
 
-## EndPoints and [Swagger](./Swagger.md)
+## EndPoints and [Swagger](/docs/tutorial/Swagger.md)
 
 For documentation on how endpoints and controllers are used in Giraf,
 see: [Endpoints and Controllers Tutorial](./EndpointsAndControllersTutorial.md)
@@ -58,7 +58,3 @@ API, such as whether the API is running and if it has access to the database.
 By convention the ErrorController is linked to whenever there is an illegal request
 such as a 404 request. The controller will always send back an ``ErrorResponse``.
 
-### Next
-
-A quick aside on [Naming Conventions](./NamingConventions.md) or
-Description of the [Swagger](./Swagger.md) endpoint linked in the top of the article.

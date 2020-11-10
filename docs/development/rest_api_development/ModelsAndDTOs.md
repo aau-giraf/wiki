@@ -32,6 +32,4 @@ NOTE: An object should never leave the server unless it has been packed in a cor
 NOTE: All DTOs must have parameterless constructors, because it is required by Newtonsoft
 when deserializing incomming requests.
 
-## Next
 
-How [Authorisation](./Authorization.md) is handled.

@@ -26,24 +26,8 @@ how to setup the program. In summary these classes are:
 ## Build and run the repository
 
 Information on dependencies as well how to build and run is available in the
-[Build and run the web-api locally](./BuildAndRunLocally.md)-section of the wiki.
+[Build and run the web-api locally](/docs/tutorial/BuildAndRunLocally.md)-section of the wiki.
 
 You may want to see an [elaboration on how to set AppSettings.json](./ConnectionString.md)
 or some notes on [NuGet](./NugetWithDotnetCore.md).
 
-## Content
-
-- [Build and run the web-api locally](./BuildAndRunLocally.md)
-- [Database](./Database.md)
-- [Entity Framework](./EntityFramework.md)
-- [Models & DTOś](./ModelsAndDTOs.md)
-- [Users and Authorisation](./Authorization.md)
-- [Giraf Service](./GirafService.md)
-- [Web-api purpose](./WebApiPurpose.md)
-- [Backend architecture](./BackendArchitecture.md)
-- [Naming conventions](./NamingConventions.md)
-- [Endpoints and Controllers](./EndpointsAndControllers.md)
-- [Swagger](./Swagger.md)
-- [Unit testing](./UnitTesting.md)
-- [Integration test](./IntegrationTest.md)
-- [Future work](/docs/archive/FutureWork.md)

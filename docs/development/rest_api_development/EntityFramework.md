@@ -82,7 +82,3 @@ case ```[ForeignKey("DepartmentId")]```.
 
 NOTE: When creating a many relation, i.e. an ICollection-field on a class, it should
 always be virtual, as this allows us to use Moq to mock each entity.
-
-## Next
-
-[Models and Data Transfer Objects](./ModelsAndDTOs.md).

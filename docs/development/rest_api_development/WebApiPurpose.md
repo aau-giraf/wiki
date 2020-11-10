@@ -14,7 +14,7 @@ and it is programmed in C# and uses .NET Core 2.2. More specifically the Web API
 is responsible for the handling of all communication coming from and to the API-Client
 as shown Figure 7.16. If it is a valid request this leads to an [endpoint](./EndpointsAndControllers.md)
 and if not then an error response is returned. Most request would require the web-API
-to communicate with the [database](./Database.md) that stores all the data related
+to communicate with the [database](/docs/tutorial/Database.md) that stores all the data related
 to the GIRAF Project, which allows several of components to be communicating information
 to the common database.
 
@@ -59,7 +59,3 @@ in several applications, the web-API, a common api-client project has been initi
 Formally it is a Dart package that can be used to implement communication with the
 web-api in any front-end framework Flutter project, which is currently useful for
 the WeekPlanner project, that is implemented in Flutter.
-
-## Next
-
-The full [Backend Architecture](./BackendArchitecture.md).

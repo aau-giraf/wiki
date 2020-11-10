@@ -194,7 +194,3 @@ On errors and failures, a stacktrace will be printed to the terminal, including
 any local variables and their values for debugging purposes.
 
 The tests will continue running despite an error or failure.
-
-## Next
-
-That's all folks. All there's left is to start looking at [Future Work on the Backend](/docs/archive/FutureWork.md).

@@ -70,6 +70,3 @@ builder.Entity<DepartmentResource>()
 
 Using this syntax will create the defined relation.
 
-## Next
-
-[Using Entity Framework in the project](./EntityFramework.md).

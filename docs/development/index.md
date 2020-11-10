@@ -1,4 +1,4 @@
 # Overview
 
-This section of pages documents how most of the GIRAF project is implemented and
-how to use it.
+This section contains information on standards and conventions used in the GIRAF
+project.

@@ -24,7 +24,3 @@ When retrieving a user in a controller method it is done with HttpContext.User a
 ```Csharp
 var usr = await _giraf.LoadUserWithResources(HttpContext.User);
 ```
-
-## Next
-
-Introduction to the purpose of the web-api repository and service: [Web-api purpose](./WebApiPurpose.md).

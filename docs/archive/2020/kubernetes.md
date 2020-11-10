@@ -1,4 +1,6 @@
-# Kubernetes
+# Kubernetes 
+
+This is outdated, but is kept to give a view of the former GIRAF project (3/11-2020) 
 
 In this article we describe what Kubernetes is, how it works and how to
 use it. First we describe the basic principles of getting a minimum
