@@ -1,7 +1,7 @@
 arrange:
     - index.md
     - ...
-    - development
-    - archive
+    - Development
+    - Archive
     - Releases
-    - about
+    - About

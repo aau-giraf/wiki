@@ -5,11 +5,11 @@ into 5 categories:
 
    - [Home](./index.md)
        - An overview of the wiki.
-   - [Development](./development/index.md)
+   - [Development](./Development/index.md)
        - Documents how most of the GIRAF project is implemented and how to use it.
-   - [Archive](./archive/2020F/index.md)
+   - [Archive](./Archive/2020F/index.md)
        - Describe the process used in previous GIRAF projects.
    - [GIRAF Releases](./Releases/index.md)
        - A list of GIRAF releases from 2018-current.
-   - [About](./about/index.md)
+   - [About](./About/index.md)
        - Info on the GIRAF project.

@@ -2,7 +2,7 @@
 
 This section will describe our views and experiences, and what we found out that
 worked. 
-Previous advice can be found [here](../../archive/2019/from_2019/process_advice.md).
+Previous advice can be found [here](../../Archive/2019/from_2019/process_advice.md).
 
 ## The Process in General
 
