@@ -1,5 +1,6 @@
 arrange:
-    - "2020"
+    - "index.md"
+    - "2020F"
     - "2019"
     - ...
     - review_checklists

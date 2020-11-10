@@ -42,7 +42,7 @@ love to have you work on.
 ## How to: Write code
 
 To get started writing code, you should first setup the project.
-This is described in the [Setup from scratch tutorial](../../tutorial/flutter/setup_from_scratch.md).
+This is described in the [Setup from scratch tutorial](../../development/Flutter/setup_from_scratch.md).
 
 Then, after setting up the code, you should make a branch for the feature you
 are going to implement.
