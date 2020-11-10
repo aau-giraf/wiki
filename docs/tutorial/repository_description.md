@@ -12,9 +12,9 @@ These repositories are those that as of 2019 are active in the GIRAF project.
 
 The repository contains the backend for the GIRAF Project, namely a RESTful API
 using .NET Core and written in C#. The contents of the repository is further
-detailed in [REST API Introduction](../development/rest_api_development/BackendArchitecture.md),
+detailed in [REST API Introduction](../development/web-api/BackendArchitecture.md),
 with the specific purpose of the backend described in
-[Web-API purpose](../development/rest_api_development/WebApiPurpose.md).
+[Web-API purpose](../development/web-api/WebApiPurpose.md).
 
 ### wiki
 

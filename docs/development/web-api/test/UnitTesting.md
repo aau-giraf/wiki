@@ -23,10 +23,6 @@ In order to run the tests you may run either of the two following CLI commands;
 
 to run tests with the name department in it.
 
-However, we recommend using Visual Studio or Project Rider (see [REST IDE](./RESTIDE.md))
-for this, as you can create playlists for tests and easily through a GUI interface
-choose specific tests.
-
 ### Moq
 
 [Moq](https://github.com/Moq/moq4/wiki/Quickstart). is used for creating mockups
@@ -85,10 +81,3 @@ by calling the ```InitializeTest()``` method.
 
 The context(which user is logged in) and the arguments are prepared. Then the controller
 method is executed by calling it directly, and the result returned is then checked.
-
-## Next
-
-If the POST method returns the newly created object, then this can be examined in
-the unit-test, but it is not possible to see whether the data was written correctly
-to the database this way. This is because no database is running. For that, [integration tests](./IntegrationTest.md)
-are required.

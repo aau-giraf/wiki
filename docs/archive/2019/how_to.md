@@ -49,7 +49,7 @@ are going to implement.
 Name the branch fixes_ISSUENUMBER, where the ISSUENUMBER is the number of the
 issue you are implementing.
 
-Follow the coding standards that you can find, for reference in [C# coding standards](../../development/coding_standard.md).
+Follow the coding standards that you can find, for reference in [C# coding standards](../../development/coding_standards/coding_standard.md).
 For Flutter the linter should catch most things that go out of style.
 If in doubt, try to find other places in the code that does similar things to
 what you want, and follow that standard.
