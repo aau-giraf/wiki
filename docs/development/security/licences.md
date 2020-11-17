@@ -47,6 +47,7 @@ Folder icon (folder.svg) and AddFolder icon (addFolder.svg):
 - Released under Public Domain
 
 LoadingSpinner icon (loadingSpinner.svg):
+
 - Created by the PO group in 2020e
 
 According to the report "Product Owner of Giraf" written by group SW610F19 in the
