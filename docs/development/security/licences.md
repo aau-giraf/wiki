@@ -44,9 +44,10 @@ under GIRAF-icons):
 Folder icon (folder.svg) and AddFolder icon (addFolder.svg):
 
 - Developed by a development group in 2020S1
-
+  n
 - Released under Public Domain
-  
+  n
+
 
 LoadingSpinner icon (loadingSpinner.svg):
 - Created by the PO group in 2020e
