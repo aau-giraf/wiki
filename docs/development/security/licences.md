@@ -1,7 +1,7 @@
 # Licenses
 
 In this section of the Wiki you will find the licenses used to build the applications
-in the GIRAF platform. 
+in the GIRAF platform.
 
 ## Pictogram Licenses
 
@@ -45,6 +45,9 @@ Folder icon (folder.svg) and AddFolder icon (addFolder.svg):
 
 - Developed by a development group in 2020S1
 - Released under Public Domain
+
+LoadingSpinner icon (loadingSpinner.svg):
+- Created by the PO group in 2020e
 
 According to the report "Product Owner of Giraf" written by group SW610F19 in the
 GIRAF 2019 project all icons are from Font Awesome with exception of the icons
