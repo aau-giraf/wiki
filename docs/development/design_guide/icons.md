@@ -7,7 +7,7 @@ be added to this table.
 | **Name**           | **Icon**                                                                 | **Description**                                                    |
 |--------------------|--------------------------------------------------------------------------|--------------------------------------------------------------------|
 | Add                | ![add](./images/Icons%20GIRAF/35x35px/add.png)                           | Adds a new instance of an object                                   |
-| AddFolder          | ![addFolder](./images/Icons%20GIRAF/35x35px/addFolder.png)               | Creates a new Folder                                                  |
+| AddFolder          | ![addFolder](./images/Icons%20GIRAF/35x35px/addFolder.png)               | Creates a new Folder                                               |
 | AddTimer           | ![addTimer](./images/Icons%20GIRAF/35x35px/addTimer.png)                 | Adds a new timer to object                                         |
 | Back               | ![Back](./images/Icons%20GIRAF/35x35px/back.png)                         | Returns the user to the previous page                              |
 | BurgerMenu         | ![burgerMenu](./images/Icons%20GIRAF/35x35px/burgermenu.png)             | Opens the side menu                                                |
@@ -41,3 +41,4 @@ be added to this table.
 | Synced             | TBD                                                                      | Indicates that the current object is syncronized                   |
 | Undo               | ![undo](./images/Icons%20GIRAF/35x35px/undo.png)                         | Reverts latest action                                              |
 | AddCitizen         | ![AddCitizen](./images/Icons%20GIRAF/35x35px/addCitizen.png)             | Adds a new instance of a citizen                                   |
+| LoadingSpinner     | ![LoadingSpinner](./images/Icons%20GIRAF/35x35px/loadingSpinner.png)     | Shown when something needs to be loaded                            |
