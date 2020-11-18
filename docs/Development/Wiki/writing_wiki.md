@@ -1,4 +1,4 @@
-# Editing the Wiki
+# Using the Wiki
 
 ## MkDocs
 

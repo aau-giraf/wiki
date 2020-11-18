@@ -1,0 +1,6 @@
+arrange:
+    - "index.md"
+    - ...
+    - "repository_description.md"
+    - "using_github.md"
+    - "Continuous_Integration"

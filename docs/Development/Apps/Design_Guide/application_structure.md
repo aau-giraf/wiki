@@ -7,7 +7,7 @@ navigate around in the app. The app bar that should always be used is the GirafA
 which is a widget that is implemented in the weekplanner flutter project.
 This widget includes all the buttons that should be present on the app bar.
 
-![AppTopBarWidget](./images/AppBar.PNG)
+![AppTopBarWidget](images/AppBar.PNG)
 
 ## Bottom bar
 
@@ -15,7 +15,7 @@ Bottom bars must be entirely contextual and depend on the content displayed in t
 current activity. The bottom bar should always be styled similarly to the app bar
 with the same color.
 
-![AppBottomBarWidget](./images/AppBottomBar.PNG)
+![AppBottomBarWidget](images/AppBottomBar.PNG)
 
 ## Content
 

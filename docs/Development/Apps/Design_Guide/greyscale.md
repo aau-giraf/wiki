@@ -8,8 +8,8 @@ the weekplan such that the top bar color still remains.
 
 These examples are shown on the prototypes below:
 
-![orange](./images/GreyscaleGreyBar.png)
-![orange](./images/GreyscaleOrangeBar.png)
+![orange](images/GreyscaleGreyBar.png)
+![orange](images/GreyscaleOrangeBar.png)
 
 <!-- <img src="./images/GreyscaleOrangeBar.png" alt="orange" width="250"> -->
 <!-- <img src="./images/GreyscaleGreyBar.png" alt="orange" width="250"> -->

@@ -11,7 +11,7 @@ should become darker alongside an even darker border. The background and the bor
 should be identical to the default button when a button is disabled, however this
 button should have an opacity of 40%.
 
-| ![ButtonDefault](./images/ButtonDefault.png) | ![ButtonPressed](./images/ButtonPressed.png "ButtonPressed") | ![ButtonDisabled](./images/ButtonDisabled.png "ButtonDisabled") |
+| ![ButtonDefault](images/ButtonDefault.png) | ![ButtonPressed](images/ButtonPressed.png "ButtonPressed") | ![ButtonDisabled](images/ButtonDisabled.png "ButtonDisabled") |
 |:--:| :--: | :--: |
 | *Default button* | *Pressed button* | *Disabled button* |
 

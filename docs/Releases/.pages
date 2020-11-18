@@ -1,6 +1,7 @@
 ﻿arrange:
     - "index.md"
     - ...
+    - "release_guide.md"
     - "2020F"
     - "2019"
     - "2018"
