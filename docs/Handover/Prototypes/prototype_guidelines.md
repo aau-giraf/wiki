@@ -1,4 +1,4 @@
-# Prototype Administration System
+# Guidelines
 
 The system described here was defined by the PO group of the spring semester 2020.
 A more detailed description is available in their report. The prototype administration
