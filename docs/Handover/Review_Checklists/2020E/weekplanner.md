@@ -1,4 +1,5 @@
 **Assets**
+
 - [ ] The ``environments.json`` file has the following default values:
 ```
 {
@@ -42,6 +43,7 @@ Only check these if the functionality needs to be covered by tests:
 **Functionality**
 
 For this part, open the app, and test:
+
 - [ ] The features that the code claims to implement, are actually implemented
 - [ ] The code does not look like it has bugs
 - [ ] All the new screens are reachable through in-app navigation

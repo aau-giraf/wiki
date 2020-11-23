@@ -1,6 +1,6 @@
 nav:
     - index.md
-    - weekplanner.md
-    - Web-API: web-api.md
-    - api_client.md
-    - wiki.md
+    - weekplanner: weekplanner.md
+    - web-api: web-api.md
+    - api_client: api_client.md
+    - wiki: wiki.md
