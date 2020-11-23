@@ -83,7 +83,7 @@ Each issue is only estimated by one group. For every issue follow these steps:
         - The following is done, if there is no agreement after **3 times**:
             - The median or the number closest to the median is noted e.g. with
               the numbers 3, 3, 5, 8 the median is 4 but 5 is noted since that
-              is closest fibonacci number.   
+              is the closest fibonacci number.   
 
 ## After Sprint Planning
 
