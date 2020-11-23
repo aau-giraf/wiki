@@ -294,8 +294,8 @@ When groups have been chosen, you should assign a representative from the group
 as a reviewer on the PR.
 
 We provide a checklist to the reviewers, depending on if the PR is made to a
-[code repository](../Review_Checklists/review_checklist_code.md) or the
-[wiki repository](../Review_Checklists/review_checklist_wiki.md).
+[code repository](../Review_Checklists/2020F/review_checklist_code.md) or the
+[wiki repository](../Review_Checklists/2020F/review_checklist_wiki.md).
 This is provided as a comment on the PR on GitHub.
 
 ### Gatekeepers of good code practice

@@ -1,0 +1,7 @@
+arrange:
+    - "index.md"
+    - ...
+    - "weekplanner.md"
+    - "web-api.md"
+    - "api_client.md"
+    - "wiki.md"

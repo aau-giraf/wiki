@@ -134,7 +134,7 @@ As such, it is important to keep a light and educational tone when involved with
 the pull requests.
 
 When reviewing a pull request, you should check for points in the
-[Code Review Checklist](../Review_Checklists/review_checklist_code.md).
+[Code Review Checklist](../Review_Checklists/2020F/review_checklist_code.md).
 
 In case a point is not fulfilled you should leave a comment that points out the
 problem, why it is a problem, and, if possible, how to develop a solution. When
