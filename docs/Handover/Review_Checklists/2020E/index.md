@@ -1,3 +1,4 @@
 # Overview
+
 These checklists were used for the GitHub repositories that their names correspond to.
-They are used by the script described in LINK.
+They were used by the script described in INDSÆT_LINK_TIL_REVIEW_SCRIPT_HER.

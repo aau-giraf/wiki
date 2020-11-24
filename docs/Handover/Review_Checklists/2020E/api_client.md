@@ -1,17 +1,19 @@
-**Code Design** 
+# api_client
+
+## Code Design
 
 - [ ] The code is in the right place? (Both in terms of folder structure and class structure)
 - [ ] The code is not over-engineered. Examples of over-engineering: Implemented behavior for future problems     
 - [ ] This code could not, to the best of my knowledge, have reused existing code
 - [ ] The code does not introduce functionality that is unnecessary for solving the problem
 
-**Code Readability** 
+## Code Readability
 
 - [ ] Names are meaningful and self-documenting
 - [ ] It is understandable, by reading the code, what it does
 - [ ] The code is simple and readable. i.e. it contains no \"hack\", or obscure solution   
 
-**Code Maintainability**
+## Code Maintainability
 
 - [ ] Has all the added code been properly commented
 
