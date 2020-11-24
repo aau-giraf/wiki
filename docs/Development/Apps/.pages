@@ -2,6 +2,6 @@ arrange:
     - "index.md"
     - ...
     - "environment_setup.md"
-    - "Offline_mode.md"
+    - "offline_mode.md"
     - "Design_Guide"
     - "Test"
