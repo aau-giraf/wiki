@@ -1,1 +1,9 @@
 # Handover
+
+Experience and information from previous semesters can found in the section [Handover](../Handover/index.md).
+It includes things such as:
+
+- Description of roles in used in a semester.
+- Information about the sprint events used in a semester.
+- Description of tools that has been used e.g. scripts, Slack etc.
+- Design prototypes for the GIRAF apps.  

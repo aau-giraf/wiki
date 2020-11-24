@@ -1,4 +1,7 @@
-# Setup Flutter Projects
+# Environment Setup
+
+Apps in GIRAF are developed using Flutter. The setup of the development
+environment is described below. It can be used by both Mac and Windows users.
 
 ## Downloading and Installing Flutter
 
@@ -24,7 +27,7 @@
     - If not, try running `flutter doctor` to see if there are problems with the
       Android toolchain.
 
-## iOS and iPadOS Setup - ONLY FOR MAC USERS
+## iOS and iPadOS Setup - MAC ONLY
 
 1. Download the latest version of Xcode from the App Store.
 1. Setup the command line tools, to use the new version of Xcode you just installed:

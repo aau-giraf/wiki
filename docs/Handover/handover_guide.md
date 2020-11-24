@@ -23,7 +23,7 @@ Handover
 │   ├── Role Structure            #    
 │   ├── Sprint Events             #
 │   └── Tools                     #      
-│       ├── Process Group Tools   #  
+│       ├── Process Group         #  
 │       └── Other Tools           #  
 ├── ...
 ├── 2020E
@@ -39,6 +39,17 @@ and Autumn (E) semester.
 
 ## Updated Sections
 
+Here is a description of the sections that needs to be updated.
+
 ### Prototypes
 
+The PO group should add links for the new prototype files.
+
+```bash
+Handover
+└── Prototypes
+    └── Overview    # File to update       
+```
+
+The newest entry should be the top most in the table shown in the overview. 
 

@@ -1,8 +1,7 @@
-# Test in Flutter
+# Unit Testing
 
-The Process manual states that code should be properly tested before a user story
-is done. This guide describes how you test in Flutter, and what the test criteria
-is in both blocs and screens/widgets.
+This guide describes how you test in Flutter, and what the test criteria 
+is in both blocs and screens/widgets.  
 
 ## Test location
 

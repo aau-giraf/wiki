@@ -33,11 +33,14 @@ from the local database when offline, however in order to edit, delete or put, y
 would need to store a record of these actions such that you can execute them when
 online again. To check whether the client is currently in an offline or online state
 and listen for changes between those states the connectivity package can be used.
-# CONECTEVITY PACKAGE DOES NOT WORK - BRUG CHECK CONNECTIVITY FUNKTION DER KALDER WEB API
+
+(CONECTEVITY PACKAGE DOES NOT WORK - BRUG CHECK CONNECTIVITY FUNKTION DER KALDER WEB API)
+
 The local database could be implemented either as part of the week planner app or
 the api client. For the database we propose the SQFLite flutter package, since it
-is the most suggested. 
-# BEDRE GRUND END MOST SUGGESTED
+is the most suggested.
+ 
+(BEDRE GRUND END MOST SUGGESTED)
 
 For Giraf it might makes sense to limit the local database to a single user. For
 the pictograms you would also have to figure out some system where only the most
@@ -46,8 +49,9 @@ which would allow images to be accessed offline. At the moment a selfmade cache
 is used to store the images. The implementation of this cache can be found [here](https://github.com/aau-giraf/weekplanner/blob/604f6f8973821f65a07a51efd5dec309788f3585/lib/blocs/pictogram_image_bloc.dart).
 It could be an option to make it userdefined how much storage the cache is allowed
 to use on a device, but if only the most used pictograms are saved, then this should
-not be a problem. 
-# SNAK OM AT DER ER FLERE MÅDER BILLEDERNE BLIVER GEMT PÅ LIGE NU, BED OM AT NÆSTE HOLD VÆLGER EN AF DEM. CACHE FORSVINDER HVIS DEVICE SLUKKER
+not be a problem.
+ 
+(SNAK OM AT DER ER FLERE MÅDER BILLEDERNE BLIVER GEMT PÅ LIGE NU, BED OM AT NÆSTE HOLD VÆLGER EN AF DEM. CACHE FORSVINDER HVIS DEVICE SLUKKER)
 
 In order to edit the weekplan offline the amount of pictograms have to be limited
 since all pictograms cannot be stored locally on the phone. An implementation could
@@ -55,7 +59,8 @@ be saving xx recently/most used pictograms for each citizen.
 Take picture as pictogram would have to be limited to a certain amount just like
 the amount of available pictograms when editing weekplans offline - because it would
 take too much space on the device if they took 1000 pictures.
-# SKRIV DET HER SAMMEN MED DET LIGE OVER
+
+(SKRIV DET HER SAMMEN MED DET LIGE OVER)
 
 ### Issues / considerations
 
@@ -67,7 +72,8 @@ possible to login with no internet connection.
 
 #### Here is the prioritized list for the offline features
 
-# TILFØJ ISSUE NUMRE HER
+(TILFØJ ISSUE NUMRE HER)
+
 1. Citizen features: Limited to current week.
     1. View weekplan.
     1. View activity.
@@ -125,8 +131,9 @@ to versions and save the newest.
    not have permission to update their changes through the web-api.
   
 A possible solution would be to give a citizen permissions in the wep-api to make
-changes. 
-# EVT SEND NOGET MED FOR AT SIGE DET KOMMER FRA EN OFFLINE DB SÅ DET FÅR PERMISSION
+changes.
+ 
+(EVT SEND NOGET MED FOR AT SIGE DET KOMMER FRA EN OFFLINE DB SÅ DET FÅR PERMISSION)
 
 **A MAJOR issue is if offline changes for the same e.g. activity is made on two
 different devices - which of the changes should be saved in the online database,
@@ -144,6 +151,7 @@ could be a boolean. It is also an option to use UUID with/instead of timestamps
 to make the synchronization have an unique id. 
 
 ### What is there currently
+
 Currently an initial class for communication with an offline database exists in the 
 [api_client](https://github.com/aau-giraf/api_client) repository in branch [feature/72](https://github.com/aau-giraf/api_client/tree/feature/72).
 
@@ -161,24 +169,7 @@ These approaches do not consider:
 
 * How the offline repository should synchronise with the web-api
 
-
-
 _____________________________________________________________________________________
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ### The 1-1 approach
 
@@ -207,8 +198,6 @@ be changed in the model layer, this will be your workload:
 And do not forget that this will require 4 pull requests to 4 different projects.
 How will you convince your code reviewers that it works?
 
-
 #### SQLite
+
 [SQLite](https://flutter.dev/docs/cookbook/persistence/sqlite)
-
-
