@@ -4,15 +4,15 @@
 
 [SQFlite](https://github.com/tekartik/sqflite/blob/master/sqflite/README.md)  
 
-## Our solution suggestion
-
 The customers asked for the ability to use the application when they were offline. 
 This could for example be when they are on a trip in the forest, where Wi-Fi is not 
 an option and cell service might be really bad. 
 
+## Current solution
+
 We have chosen an offline first approach because if Giraf wants to be
 a widely used app on different app markets, it is expected to be highly functional
-without internet connection. 
+without internet connection and offline first generally seems to be the way to do this. 
 
 ![image](../../resources/offline_overview.png)
 
@@ -20,7 +20,7 @@ This model describes how offline first can be done with the bloc pattern.
 
 Whenever the UI needs data it first communicates with the bloc, where the bloc
 then sends a query to get data. If the data is already in memory we can just get
-the data, if it is not we try to find it in our local database. If it is not in
+the data. if it is not we try to find it in our local database. If it is not in
 the local database either we look in the online database where it will be found.
 When you get data from the online database you also save it in the local database
 and in memory, such that you can have fast retrieval and also have data available 
@@ -33,25 +33,21 @@ from the local database when offline, however in order to edit, delete or put, y
 would need to store a record of these actions such that you can execute them when
 online again. To check whether the client is currently in an offline or online state
 and listen for changes between those states the connectivity package can be used.
-
-(CONECTEVITY PACKAGE DOES NOT WORK - BRUG CHECK CONNECTIVITY FUNKTION DER KALDER WEB API)
-
+( TODO CONECTEVITY PACKAGE DOES NOT WORK - BRUG CHECK CONNECTIVITY FUNKTION DER KALDER WEB API)
 The local database could be implemented either as part of the week planner app or
 the api client. For the database we propose the SQFLite flutter package, since it
-is the most suggested.
- 
-(BEDRE GRUND END MOST SUGGESTED)
+is the most suggested. 
+( TODO BEDRE GRUND END MOST SUGGESTED)
 
-For Giraf it might makes sense to limit the local database to a single user. For
+For Giraf it might make sense to limit the local database to a single user. For
 the pictograms you would also have to figure out some system where only the most
 used ones are saved. For these pictograms it is possible to use Flutter's ImageCache,
 which would allow images to be accessed offline. At the moment a selfmade cache
 is used to store the images. The implementation of this cache can be found [here](https://github.com/aau-giraf/weekplanner/blob/604f6f8973821f65a07a51efd5dec309788f3585/lib/blocs/pictogram_image_bloc.dart).
 It could be an option to make it userdefined how much storage the cache is allowed
 to use on a device, but if only the most used pictograms are saved, then this should
-not be a problem.
- 
-(SNAK OM AT DER ER FLERE MÅDER BILLEDERNE BLIVER GEMT PÅ LIGE NU, BED OM AT NÆSTE HOLD VÆLGER EN AF DEM. CACHE FORSVINDER HVIS DEVICE SLUKKER)
+not be a problem. 
+(TODO SNAK OM AT DER ER FLERE MÅDER BILLEDERNE BLIVER GEMT PÅ LIGE NU, BED OM AT NÆSTE HOLD VÆLGER EN AF DEM. CACHE FORSVINDER HVIS DEVICE SLUKKER)
 
 In order to edit the weekplan offline the amount of pictograms have to be limited
 since all pictograms cannot be stored locally on the phone. An implementation could
@@ -59,8 +55,7 @@ be saving xx recently/most used pictograms for each citizen.
 Take picture as pictogram would have to be limited to a certain amount just like
 the amount of available pictograms when editing weekplans offline - because it would
 take too much space on the device if they took 1000 pictures.
-
-(SKRIV DET HER SAMMEN MED DET LIGE OVER)
+( TODO SKRIV DET HER SAMMEN MED DET LIGE OVER)
 
 ### Issues / considerations
 
@@ -72,7 +67,7 @@ possible to login with no internet connection.
 
 #### Here is the prioritized list for the offline features
 
-(TILFØJ ISSUE NUMRE HER)
+( TODO TILFØJ ISSUE NUMRE HER)
 
 1. Citizen features: Limited to current week.
     1. View weekplan.
@@ -131,9 +126,8 @@ to versions and save the newest.
    not have permission to update their changes through the web-api.
   
 A possible solution would be to give a citizen permissions in the wep-api to make
-changes.
- 
-(EVT SEND NOGET MED FOR AT SIGE DET KOMMER FRA EN OFFLINE DB SÅ DET FÅR PERMISSION)
+changes. 
+(TODO EVT SEND NOGET MED FOR AT SIGE DET KOMMER FRA EN OFFLINE DB SÅ DET FÅR PERMISSION)
 
 **A MAJOR issue is if offline changes for the same e.g. activity is made on two
 different devices - which of the changes should be saved in the online database,
@@ -163,23 +157,13 @@ in the api_client. Every model in the api_client implements an abstract class ca
 `Model` which provides a `from_json()` and `to_json()` method for the models to
 interact with the web-api. 
 
-These approaches do not consider:
+#### The 1-1 approach
 
-* How much data to store in the repository
+The solution chosen for the database design is a 1-1 relational database with
+the web-api. For this aproach the online database scheme was cloned to a sqlite scheme creation file. From this file, most of the sql was copied into the [dbhandler](https://github.com/aau-giraf/api_client/blob/feature/72/lib/offline_database/offline_db_handler.dart) in the `createTables` method. Some of the tables and rows were though not imported, as they were either not used, or unneceseary for the app to be able to run offline. If more tables or columns are needed  they can simply be added to the table creation function.
+( TODO OMSKRIV)
 
-* How the offline repository should synchronise with the web-api
-
-_____________________________________________________________________________________
-
-### The 1-1 approach
-
-Another very straight forward solution is a 1-1 relational database design with
-the web-api. This requires the offline repository to have the exact same rows,
-columns and tables as the web-api.
-
-Be careful with this solution. It seems benefiting, but do you really want to
-implement yet another thing for future students to maintain? If something is to
-be changed in the model layer, this will be your workload:
+If something is to be changed in the model layer, this will be your workload:
 
 1. Alter the modellayer in the web-api
 1. Migrate the database
@@ -195,9 +179,16 @@ be changed in the model layer, this will be your workload:
 1. Alter the weekplanner to use the new feature
 1. Integration test between weekplanner and the offline repository
 
-And do not forget that this will require 4 pull requests to 4 different projects.
+( TODO REMOVE REDUNDANT POINTS)
+
+And do not forget that this will require 2 pull requests to 2 different projects.
 How will you convince your code reviewers that it works?
+
+( TODO beskriv sqflite )
+[SQFlite ffi](https://pub.dev/packages/sqflite_common_ffi)
 
 #### SQLite
 
 [SQLite](https://flutter.dev/docs/cookbook/persistence/sqlite)
+
+
