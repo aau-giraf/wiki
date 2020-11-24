@@ -4,19 +4,15 @@
 
 [SQFlite](https://github.com/tekartik/sqflite/blob/master/sqflite/README.md)  
 
-[connectivity](https://pub.dev/packages/connectivity)
-
-[Cached Images](https://flutter.dev/docs/cookbook/images/cached-images)
-
-[cached_network_image](https://pub.dev/packages/cached_network_image)
-
 ## Our solution suggestion
 
-We propose what is called an offline first approach because if Giraf wants to be
+The customers asked for the ability to use the application when they were offline. 
+This could for example be when they are on a trip in the forest, where Wi-Fi is not 
+an option and cell service might be really bad. 
+
+We have chosen an offline first approach because if Giraf wants to be
 a widely used app on different app markets, it is expected to be highly functional
-without internet connection. Offline first also consumes less battery and
-data - where especially long battery time is important for institutions and families
-going on trips.
+without internet connection. 
 
 ![image](../../resources/offline_overview.png)
 
@@ -27,18 +23,21 @@ then sends a query to get data. If the data is already in memory we can just get
 the data, if it is not we try to find it in our local database. If it is not in
 the local database either we look in the online database where it will be found.
 When you get data from the online database you also save it in the local database
-and in memory, such you can have fast retrieval and also data available if you are
-offline.   
+and in memory, such that you can have fast retrieval and also have data available 
+if you are offline.   
+
 
 The only thing missing the current implementation is for the local database to be
 implemented with appropriate model adapters. This setup would allow you to read
-from the local database when offline, however in order to edit, delete or put you
+from the local database when offline, however in order to edit, delete or put, you
 would need to store a record of these actions such that you can execute them when
 online again. To check whether the client is currently in an offline or online state
 and listen for changes between those states the connectivity package can be used.
+# CONECTEVITY PACKAGE DOES NOT WORK - BRUG CHECK CONNECTIVITY FUNKTION DER KALDER WEB API
 The local database could be implemented either as part of the week planner app or
 the api client. For the database we propose the SQFLite flutter package, since it
 is the most suggested. 
+# BEDRE GRUND END MOST SUGGESTED
 
 For Giraf it might makes sense to limit the local database to a single user. For
 the pictograms you would also have to figure out some system where only the most
@@ -48,6 +47,15 @@ is used to store the images. The implementation of this cache can be found [here
 It could be an option to make it userdefined how much storage the cache is allowed
 to use on a device, but if only the most used pictograms are saved, then this should
 not be a problem. 
+# SNAK OM AT DER ER FLERE MÅDER BILLEDERNE BLIVER GEMT PÅ LIGE NU, BED OM AT NÆSTE HOLD VÆLGER EN AF DEM. CACHE FORSVINDER HVIS DEVICE SLUKKER
+
+In order to edit the weekplan offline the amount of pictograms have to be limited
+since all pictograms cannot be stored locally on the phone. An implementation could
+be saving xx recently/most used pictograms for each citizen.
+Take picture as pictogram would have to be limited to a certain amount just like
+the amount of available pictograms when editing weekplans offline - because it would
+take too much space on the device if they took 1000 pictures.
+# SKRIV DET HER SAMMEN MED DET LIGE OVER
 
 ### Issues / considerations
 
@@ -59,6 +67,7 @@ possible to login with no internet connection.
 
 #### Here is the prioritized list for the offline features
 
+# TILFØJ ISSUE NUMRE HER
 1. Citizen features: Limited to current week.
     1. View weekplan.
     1. View activity.
@@ -75,9 +84,9 @@ possible to login with no internet connection.
     1. Create/delete weekplans.
     1. All functions from point 2 just not limited to the current week.
 
-To store the data (activities, timers) locally on the device the SQLite DB can be
-used. SQLite is a database that is running on the phone/tablet already. It has a
-plugin for Flutter (sqflite) that supports both iOS and Android.  
+To store the data (activities, timers) locally on the device an SQLite DB is
+used. SQLite is a database that is already running on the phone/tablet. It has a
+plugin for Flutter (sqflite) which supports both iOS and Android.  
 
 #### Syncing the local database to match the online database
 
@@ -114,19 +123,11 @@ to versions and save the newest.
 1. The citizen's device gets internet connection and now the changes has to be synced
    with the database. But the guardian is not logged in anymore and the citizen does
    not have permission to update their changes through the web-api.
-
-   
-A possible solution would be to give a citizen permissions in the wep-api to make
-changes.
-
-**Editing weekplans**
-In order to edit the weekplan offline the amount of pictograms have to be limited
-since all pictograms cannot be stored locally on the phone. An implementation could
-be saving xx recently/most used pictograms for each citizen.
-Take picture as pictogram would have to be limited to a certain amount just like
-the amount of available pictograms when editing weekplans offline - because it would
-take too much space on the device if they took 1000 pictures.  
   
+A possible solution would be to give a citizen permissions in the wep-api to make
+changes. 
+# EVT SEND NOGET MED FOR AT SIGE DET KOMMER FRA EN OFFLINE DB SÅ DET FÅR PERMISSION
+
 **A MAJOR issue is if offline changes for the same e.g. activity is made on two
 different devices - which of the changes should be saved in the online database,
 when they both come online.**  
@@ -134,7 +135,6 @@ The main problem is deciding what changes should be saved and what changes shoul
 be discarded.
 
 <ins>Solution: PO-group has talked to the customer and they want "last write wins".</ins>  
-
    
 To accommodate this there might need to add more attributes in the offline and
 online databases in order to deal with and keep track of the synchronization.
@@ -143,8 +143,9 @@ which are timestamps used to see if data should be synched or not and the “edi
 could be a boolean. It is also an option to use UUID with/instead of timestamps
 to make the synchronization have an unique id. 
 
-
-## Approaches of how to (and not to) implement the offline repository
+### What is there currently
+Currently an initial class for communication with an offline database exists in the 
+[api_client](https://github.com/aau-giraf/api_client) repository in branch [feature/72](https://github.com/aau-giraf/api_client/tree/feature/72).
 
 The [api_client](https://github.com/aau-giraf/api_client) maps JSON output from
 the [web-api](https://github.com/aau-giraf/web-api) into models which the
@@ -160,29 +161,24 @@ These approaches do not consider:
 
 * How the offline repository should synchronise with the web-api
 
-### NoSQL / Storing plain JSON
-
-Our first approach was to store the string value of `to_json()` of each model in
-a local database. With this, you could get all models back from the database with
-their `from_json()` method. However, this raises a lot of errors when dealing with
-relational models. Consider this example:
-
-A model `A` has a one-to-many with the model `B`. If an instance of `B`, related
-to an instance `A`, was to be altered, it would not be altered on `A`.
-
-Thus, storing the plain `to_json()` string values from models is not a valid solution
-on related models.
 
 
-### In-memory design
-
-Since mobile devices have become more powerful and reliable, an in-memory approach
-should be considered. All models needed for the repository are provided by the api_client,
-making the solution slightly straight forward and performance-efficient ([In-memory database](https://en.wikipedia.org/wiki/In-memory_database)). 
+_____________________________________________________________________________________
 
 
-However, this solution depends on the use case. If the app crashes, closes or the
-device is turned off, obviously all data is lost.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### The 1-1 approach
 
@@ -211,105 +207,8 @@ be changed in the model layer, this will be your workload:
 And do not forget that this will require 4 pull requests to 4 different projects.
 How will you convince your code reviewers that it works?
 
-Our next approach tries to avoid this problem.
-
-### A better JSON storage solution
-
-From our point of view, a more complex form of "JSON"-storage is needed. This is
-our recommendation:
-
-*This is an abstract description and will not describe how to actual implement it*.
-
-Assume that the `to_json()` and `from_json()` is bijective and all objects contain
-something unique (the identifier from the web-api would be essential), then you could:
-
-1. Create all database tables from the models `to_json` or `from_json` method
-1. Populate the database with the desired data
-
-To accommodate relations, the web-api may need to provide data on how the models
-are related to each other, since it is not always possible to see how models are
-related based on a JSON-format. Another way is to consider every relation as a
-many-to-many relation, since every one-to-many relation can be modelled as a
-many-to-many relation.
-
-
-#### Example
-
-For the class below
-
-```
-class User
-    int id;
-    string first_name;
-    string last_name;
-    Settings settings;
-    ...
-    Map to_json():
-        // maps all fields to json values
-```
-
-You could expect some JSON output from `to_json()` to be
-
-```
-{
-    "id": "",
-    "first_name": "",
-    "last_name": "",
-    "settings": {
-        "id": "",
-        "theme": "",
-        ...
-    }
-}
-```
-
-This is enough information to build
-
-`user_table`
-
-| Field      | Type       | Key | Extra          |
-|------------|------------|-----|----------------|
-| Id         | bigint(20) | PRI | auto_increment |
-| first_name | varchar    |     |                |
-| last_name  | varchar    |     |                |
-
-`user_settings_table`
-
-| Field       | Type       | Key         | Extra          |
-|-------------|------------|-------------|----------------|
-| Id          | bigint(20) | PRI         | auto_increment |
-| user_id     | int(11)    | FOREIGN KEY |                |
-| settings_id | int(11)    | FOREIGN KEY |                |
-
-`settings_table`
-
-| Field | Type       | Key | Extra          |
-|-------|------------|-----|----------------|
-| Id    | bigint(20) | PRI | auto_increment |
-| theme | varchar    |     |                |
-| ...   | ...        | ... |                |
-
-Or you could use a JSON database. There are plenty of json2jsonschema converters
-out there. (https://jsonschema.net/home) (https://json-schema.org) 
-
-And of course, you will encounter collisions on related models already being inserted
-but this will only affect performance.
-
-
-### Alternative approaches
-
-There are many alternative approaches, and two of these are SQLite and Realm.
 
 #### SQLite
-
-Another approach could be to use an [SQLite](https://flutter.dev/docs/cookbook/persistence/sqlite)
-database for storing the data. This database can be stored locally, which can be
-utilised offline. This approach is quite slow and should therefore only be used
-for storing small amounts of data.
+[SQLite](https://flutter.dev/docs/cookbook/persistence/sqlite)
 
 
-#### Realm
-
-An alternative to SQLite is [Realm](https://realm.io/products/realm-database/).
-A Flutter [plugin](https://pub.dev/packages/flutter_realm) for Realm is available,
-but the plugin is still under development so some features might not be ready yet.
