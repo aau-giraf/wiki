@@ -57,5 +57,9 @@ For every open issue:
   talk about the prepared notes, one issue at a time.
     - The Development team makes it clear which issues they are talking and type
       of issue it is and its status.
-    - When a Development team explains their issues, **everyone else  
-  
+    - When a Development team explains their issues, **everyone else** may raise
+      their hand to ask a question about the issue.
+    - The moderator picks the next Development team to go through the issues
+      they worked on.
+    - At the end of the meeting, the PO group will present the next sprint goal
+      and answer questions about the Product Backlog from the Development teams. 
