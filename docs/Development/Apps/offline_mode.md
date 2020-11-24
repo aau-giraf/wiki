@@ -16,32 +16,39 @@ without internet connection and offline first generally seems to be the way to d
 
 ![image](../../resources/offline_overview.png)
 
-This model describes how offline first can be done with the bloc pattern. 
+This model describes how offline first can be done with the BLoC pattern. 
 
-Whenever the UI needs data it first communicates with the bloc, where the bloc
-then sends a query to get data. If the data is already in memory we can just get
+Whenever the UI needs data it first communicates with the BLoC, where the BLoC
+then sends a query to get the data. If the data is already in memory we can just get
 the data. if it is not we try to find it in our local database. If it is not in
-the local database either we look in the online database where it will be found.
+the local database either we look in the online database where it should exist.
 When you get data from the online database you also save it in the local database
 and in memory, such that you can have fast retrieval and also have data available 
-if you are offline.   
+if you are offline. Currently, the in memory part has not been the focus of any 
+kind of development, and the plan is to simply get the offline mode to work with
+an offline database
+
+This setup allows reading from the local database when offline, however in order to
+edit, delete or put, without synchronization issues a record of which of these actions
+were performed offline will need to be kept such that you can execute them when online again.
+To do this will also require regular checks of whether a connection to the database is available.
+To best retain the BLoC pattern, and make the offline database and its functionality available
+to potential future apps, the offline database is implemented in the api_client.
+The offline database is an SQLite database. The reason for this is that mobile devices
+already have an SQLite database running in memory for apps to use, and since the online
+database uses a MySQL database the mapping between them is relatively easy. Flutter also
+provides a package for using SQLite easing the process.
 
 
-The only thing missing the current implementation is for the local database to be
-implemented with appropriate model adapters. This setup would allow you to read
-from the local database when offline, however in order to edit, delete or put, you
-would need to store a record of these actions such that you can execute them when
-online again. To check whether the client is currently in an offline or online state
-and listen for changes between those states the connectivity package can be used.
-( TODO CONECTEVITY PACKAGE DOES NOT WORK - BRUG CHECK CONNECTIVITY FUNKTION DER KALDER WEB API)
-The local database could be implemented either as part of the week planner app or
-the api client. For the database we propose the SQFLite flutter package, since it
-is the most suggested. 
-( TODO BEDRE GRUND END MOST SUGGESTED)
+### Issues / considerations
 
-For Giraf it might make sense to limit the local database to a single user. For
-the pictograms you would also have to figure out some system where only the most
-used ones are saved. For these pictograms it is possible to use Flutter's ImageCache,
+As part of the design a way to handle how and which uses are able to login to the 
+offline database is needed. This could possibly be achieved by making it so that only
+the most recently logged in user is able to use the device online.
+
+For the pictograms you would also have to figure out some system for determining which
+pictograms should be saved locally, since saving every single pictogram might be problematic. 
+For these pictograms it is possible to use Flutter's ImageCache,
 which would allow images to be accessed offline. At the moment a selfmade cache
 is used to store the images. The implementation of this cache can be found [here](https://github.com/aau-giraf/weekplanner/blob/604f6f8973821f65a07a51efd5dec309788f3585/lib/blocs/pictogram_image_bloc.dart).
 It could be an option to make it userdefined how much storage the cache is allowed
@@ -56,8 +63,6 @@ Take picture as pictogram would have to be limited to a certain amount just like
 the amount of available pictograms when editing weekplans offline - because it would
 take too much space on the device if they took 1000 pictures.
 ( TODO SKRIV DET HER SAMMEN MED DET LIGE OVER)
-
-### Issues / considerations
 
 Before even starting to implement the features on the prioritized list, it is needed
 to be able to login on an offline device.   
@@ -161,30 +166,24 @@ interact with the web-api.
 
 The solution chosen for the database design is a 1-1 relational database with
 the web-api. For this aproach the online database scheme was cloned to a sqlite scheme creation file. From this file, most of the sql was copied into the [dbhandler](https://github.com/aau-giraf/api_client/blob/feature/72/lib/offline_database/offline_db_handler.dart) in the `createTables` method. Some of the tables and rows were though not imported, as they were either not used, or unneceseary for the app to be able to run offline. If more tables or columns are needed  they can simply be added to the table creation function.
-( TODO OMSKRIV)
-
 If something is to be changed in the model layer, this will be your workload:
 
 1. Alter the modellayer in the web-api
-1. Migrate the database
+1. Migrate the database 
 1. Customize the unittests
 1. Customize the integration tests
 1. Alter the models in the api_client
 1. Customize the unittests
 1. Integration test between web_api and api_client
-1. Alter the offline repository
 1. Alter the unittests
-1. Integration test between the offline repository and the api_client
-1. Integration test between the offline repository and the web-api
 1. Alter the weekplanner to use the new feature
 1. Integration test between weekplanner and the offline repository
 
-( TODO REMOVE REDUNDANT POINTS)
+Whenever a major change is made to the online database, it is important to also remember to change the offline database to match it, such that everything is saved correctly.
 
-And do not forget that this will require 2 pull requests to 2 different projects.
-How will you convince your code reviewers that it works?
+#### Unit tests
 
-( TODO beskriv sqflite )
+In order to test
 [SQFlite ffi](https://pub.dev/packages/sqflite_common_ffi)
 
 #### SQLite
