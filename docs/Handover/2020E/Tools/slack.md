@@ -1,4 +1,4 @@
-#Slack
+# Slack
 
 Slack was used as the main communication tool, as it allows for
 the creation of channels wherein each individual message can be threaded
