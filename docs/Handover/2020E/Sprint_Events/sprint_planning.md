@@ -1,7 +1,7 @@
 # Sprint Planning
 
 Everyone on the GIRAF Scrum team (PO, Process and Development teams) attend this
-event at the start of a sprint.
+event that marks the start of a sprint.
 
 ## Expected Duration
 
