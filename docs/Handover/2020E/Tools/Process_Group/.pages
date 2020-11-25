@@ -1,5 +1,6 @@
 arrange:
     - "index.md"
     - ...
+    - "sheet_used_for_sprint_planning.md"
     - "pull_requests_overview.md"
     - "individual_pull_request.md"
