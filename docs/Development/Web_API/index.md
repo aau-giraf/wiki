@@ -21,6 +21,16 @@ to communicate with the [database](Backend/database.md) that stores all the data
 to the GIRAF Project, which allows several of components to be communicating information
 to the common database.
 
+## How it the Web API called
+
+The Web API is called through the [api_client](https://github.com/aau-giraf/api_client). 
+The GIRAF project spans several applications, and where each may be required to
+communicate with the Web API. To alleviate the requirement of implementing
+communication with the GIRAF backend in several applications, the Web API, a
+common api-client project has been initiated. Formally it is a Dart package that
+can be used to implement communication with the Web API in any front-end framework
+Flutter project e.g. the Weekplanner application.
+
 ## Architecture
 
 The architecture of the Web API is explained [here](architecture.md).
@@ -35,7 +45,7 @@ A description of these can be found [here](./Backend/index.md).
 Information about the endpoints and controllers in the Web API can be found
 [here](./Endpoints_and_Controllers/index.md). 
 
-## Build and Run the Web API
+## Run the Web API Locally
 
 A guide on how to build and run the Web API locally can be found [here](run_locally.md).
 
@@ -46,16 +56,5 @@ Information on the settings that can be set in the Web API can be found [here](s
 ## Testing the Web API
 
 An overview of the Web API testing projects can be found [here](./Test/index.md):
-
-## How it the Web API called
-
-The Web API is called through the [api_client](https://github.com/aau-giraf/api_client). 
-The GIRAF project spans several applications, and where each may be required to
-communicate with the Web API. To alleviate the requirement of implementing
-communication with the GIRAF backend in several applications, the Web API, a
-common api-client project has been initiated. Formally it is a Dart package that
-can be used to implement communication with the Web API in any front-end framework
-Flutter project e.g. the Weekplanner application.
-
 
 

@@ -1,8 +1,9 @@
 arrange:
     - "index.md"
     - ...
+    - "architecture.md"
+    - "Backend"
+    - "Endpoints_and_Controllers"
     - "run_locally.md"
     - "settings.md"
-    - "Endpoints_and_Controllers"
-    - "Backend"
     - "Test"
