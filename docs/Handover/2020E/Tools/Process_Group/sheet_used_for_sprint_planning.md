@@ -12,7 +12,7 @@ and accompanying Google Scripts. The sheets involved are:
 ## Purpose
 
 This tool is meant to assist the Process group during the Sprint Planning event.
-The tool generates Sprint planning cross groups, and assign them the issues labeled 
+The tool generates Sprint planning cross groups, and assigns them the issues labeled 
 with the current Sprint milestone and _time estimation needed_.
 In the _Issue overview_ sheet, time estimations of an issue can be set and which group is assigned
 each issue can be set.
@@ -28,7 +28,7 @@ The _Group tags_ sheet must be updated with the current GIRAF teams group tags.
 
 The _Milestones_ sheet must be updated with the current set of milestones used in GitHub.
 
-The _google Script_ can be found at `Tools>Script Editor` in the menus bar.
+The _Google Script_ can be found at `Tools>Script Editor` in the menus bar.
 In the `API.gs` file found with the script editor, the `ACCESS_TOKEN` needs to be updated with a GitHub 
 access token from one of the team members.
 An access token can be generated [here](https://github.com/settings/tokens).
