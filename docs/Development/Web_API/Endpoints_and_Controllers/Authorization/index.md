@@ -3,7 +3,7 @@
 In this section there are information about the authorization system that has been
 used in the Web API.
 
-# Authorization
+## Authorization
 
 [Identity](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity?view=aspnetcore-2.1&tabs=visual-studio)
 is a membership management system present in the ASP.NET Core framework.

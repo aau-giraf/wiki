@@ -8,14 +8,14 @@ This section describes how the Web API is setup on a developer's local machine.
 
 - Download and install .NET Core 3.1 SDK or a version backwardly compatible with
   it `(https://dotnet.microsoft.com/download/dotnet-core/3.1)`.
-  
-### MySQL Database  
+
+### MySQL Database
 
 - Download MySQL installer `(https://dev.mysql.com/downloads/installer/)`.
     - Install MySQL server 8.0, under the setup, create a root account with password
      `password`, and add a user with username `user` with password `password`.
     - (Optional) Install Workbench.
-    
+
 ### System.Drawing.Common (Only Linux and Max Users)
 
 - For Linux users:
