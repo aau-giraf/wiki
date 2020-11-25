@@ -28,6 +28,10 @@ This data can be filled in with the _Update_ button at the top of the sheet.
 The _Unavailable reviewers_ sheet must contain the GitHub account names of any members who are currently unavailable.
 They will be exempt from being assigned as reviewers as long as they are listed here.
 
+In the `API.gs` file found with the script editor, the `SEMESTER_START_DATE` needs to be updated to the start date of the current GIRAF teams semester.
+In the same file, the `ACCESS_TOKEN` needs to be updated with a GitHub access token from one of the team members.
+An access token can be generated [here](https://github.com/settings/tokens).
+
 ## Usage
 
 The tool is used with the two buttons in the _Pull request overview_ sheet.
