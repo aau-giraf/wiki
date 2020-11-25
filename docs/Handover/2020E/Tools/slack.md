@@ -4,8 +4,7 @@ Slack was used as the main communication tool, as it allows for
 the creation of channels wherein each individual message can be threaded
 with more messages. 
 
-The names and descriptions of what the different channels are used for
-can be seen underneath.
+The names and descriptions for each of the channels can be seen underneath.
 
 | Channel name | Description |
 |--------------|-------------|

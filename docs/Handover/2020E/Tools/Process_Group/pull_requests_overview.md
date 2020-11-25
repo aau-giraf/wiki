@@ -45,5 +45,7 @@ It has the `getPullRequestsOverview` script assigned to it, which is found in th
 `PullRequestOverview.gs` file.
 
 The _Add Reviewers_ button adds reviewers to the pull requests that currently have
-no reviewers assigned. It has the `addReviewersToPullRequests` function assigned
+no reviewers assigned. It has the `addReviewersToPullRequests` script assigned
 to it, which is found in the `PullRequestOverview.gs` file.
+
+![](../../resources/pull_request_overview.png "Pull Requests Overview")

@@ -31,3 +31,5 @@ script assigned to it, which is found in the `IndividualPullRequest.gs` file.
 The selection can then be cleared by pressing the _Clear_ button which has the
 `clearIndividualPullRequestSheet` script assigned to it, which is found in the
 `IndividualPullRequest.gs` file.
+
+![](../../resources/individual_review_sheet.png "Individual Pull Request")
