@@ -24,6 +24,6 @@ An access token can be generated [here](https://github.com/settings/tokens).
 ## Usage
 
 The tool is used with the _Issues overview_ sheet. 
-First, the milestone must be set to to any from the dropdown.
+First, the milestone must be set with the dropdown.
 Then the sheet is updated with information about the isuses by pressing the _Update_ button. 
 This button has the `getIssuesOverview` script assigned, which can be found in the `IssuesOverview.gs` file.
