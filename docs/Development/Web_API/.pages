@@ -1,0 +1,8 @@
+arrange:
+    - "index.md"
+    - ...
+    - "run_locally.md"
+    - "settings.md"
+    - "Endpoints_and_Controllers"
+    - "Backend"
+    - "Test"

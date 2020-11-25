@@ -1,7 +1,8 @@
 arrange:
     - "index.md"
     - ...
-    - "environment_setup.md"
+    - "development_environment_setup.md"
     - "offline_mode.md"
+    - "connect_to_web_api.md"
     - "Design_Guide"
     - "Test"

@@ -1,4 +1,5 @@
 ﻿arrange:
-    - "UnitTesting.md"
+    - "index.md"
     - ...
-    - "IntegrationTest.md"
+    - "unit_testing.md"
+    - "integration_testing.md"
