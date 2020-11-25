@@ -1,4 +1,4 @@
-## Models
+# Models
 
 The models in the Web API is a collection of classes, which is used throughout
 the application. A list of these classes can be found below.

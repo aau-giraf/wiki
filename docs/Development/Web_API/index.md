@@ -21,10 +21,10 @@ to communicate with the [database](Backend/database.md) that stores all the data
 to the GIRAF Project, which allows several of components to be communicating information
 to the common database.
 
-## How it the Web API called
+## How is the Web API called
 
 The Web API is called through the [api_client](https://github.com/aau-giraf/api_client). 
-The GIRAF project spans several applications, and where each may be required to
+The GIRAF project spans several applications, where each may be required to
 communicate with the Web API. To alleviate the requirement of implementing
 communication with the GIRAF backend in several applications, the Web API, a
 common api-client project has been initiated. Formally it is a Dart package that
