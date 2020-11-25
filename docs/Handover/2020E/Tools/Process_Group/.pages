@@ -2,3 +2,4 @@ arrange:
     - "index.md"
     - ...
     - "pull_requests_overview.md"
+    - "individual_pull_request.md"
