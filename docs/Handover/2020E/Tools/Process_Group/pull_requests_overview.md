@@ -4,7 +4,6 @@ This tool consists of a [Google Sheets file](https://docs.google.com/spreadsheet
 
 - _Pull requests overview_
 - _GitHub teams_
-- _Milestones_
 - _Reviewers_
 - _Unavailable reviewers_
 
@@ -19,8 +18,6 @@ The tool needs to be setup with data about the current GIRAF team in order to fu
 The data is entered into some of the sheets, and the Google Scripts found at `Tools>Script Editor` in the menus bar.
 
 The _GitHub teams_ sheet must contain data about the current GIRAF team groups and their roles regarding process and PO.
-
-The _Milestones_ sheet must contain any milestones used for issues by the GIRAF team on GitHub.
 
 The _Reviewers_ sheet must contain the GitHub account names of all members of the current GIRAF team.
 This data can be filled in with the _Update_ button at the top of the sheet.
