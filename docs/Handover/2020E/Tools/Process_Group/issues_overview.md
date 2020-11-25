@@ -29,4 +29,6 @@ An access token can be generated [here](https://github.com/settings/tokens).
 The tool is used with the _Issues overview_ sheet. 
 First, the milestone must be set with the dropdown.
 Then the sheet is updated with information about the isuses by pressing the _Update_ button. 
-This button has the `getIssuesOverview` function assigned, which can be found in the `IssuesOverview.gs` file.
+This button has the `getIssuesOverview` script assigned, which can be found in the `IssuesOverview.gs` file.
+
+![](../../resources/issues_overview.PNG)
