@@ -1,7 +1,7 @@
 # Google Calender
 
-In order to keep everyone on the GIRAF team updated on when and where 
-the different Sprint events takes place there was made a shared 
+In order to keep everyone on the GIRAF team updated on 
+different events there was made a shared 
 Google Calender for the whole GIRAF team.
 
 This calender was used to track:
