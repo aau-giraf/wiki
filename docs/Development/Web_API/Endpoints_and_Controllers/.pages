@@ -1,0 +1,7 @@
+arrange:
+    - "index.md"
+    - ...
+    - "guidelines.md"
+    - "controller_descriptions.md"
+    - "Authorization"
+    - "swagger.md"
