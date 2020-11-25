@@ -20,7 +20,7 @@ The data is entered into some of the sheets, and the Google Scripts found at `To
 
 The _GitHub teams_ sheet must contain data about the current GIRAF team groups and their roles regarding process and PO.
 
-The _Milestones_ sheet must contain any milestones used for by the GIRAF team on GitHub.
+The _Milestones_ sheet must contain any milestones used for issues by the GIRAF team on GitHub.
 
 The _Reviewers_ sheet must contain the GitHub account names of all members of the current GIRAF team.
 This data can be filled in with the _Update_ button at the top of the sheet.
