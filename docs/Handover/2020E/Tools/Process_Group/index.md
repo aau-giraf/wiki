@@ -8,3 +8,4 @@ An overview of the different tools can be seen below:
 - [Individual pull request tool](individual_pull_request_tool.md)
 - [Issues overview tool](issues_overview_tool.md)
 - [Sprint points overview tool](sprint_points_overview_tool.md)
+- [Sprint retrospective tool](sprint_retrospective_tool.md)
