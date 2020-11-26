@@ -1,4 +1,4 @@
-# Sheet used for Sprint Planning
+# Sprint Planning Tool
 
 This tool consists of a [Google Sheets file](https://docs.google.com/spreadsheets/d/1HfL2-R5popW-aW9GkHG4HtbAxiU_wpno_mMRBVL5FQs/edit?usp=sharing),
 and accompanying Google Scripts. The sheets involved are:
