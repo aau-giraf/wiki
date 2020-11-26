@@ -1,4 +1,4 @@
-# Google Calender
+# Google Calendar
 
 In order to keep everyone on the GIRAF team updated on when and where 
 the different Sprint events took place there was made a shared 
