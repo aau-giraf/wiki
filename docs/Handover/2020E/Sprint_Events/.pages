@@ -6,3 +6,4 @@ arrange:
     - "cross_stand_up_meetings.md"
     - "sprint_review.md"
     - "sprint_retrospective.md"
+    - "release_preparation.md"
