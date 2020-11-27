@@ -29,9 +29,9 @@ Then, follow these steps (these steps are only necessary when running MkDocs **f
         - or `pip3 install virtualenv`.
     1. Run `python -m venv venv`
         - or `python3 -m venv venv`.
-    1. Source the virtual environment by running either of the following:
-        - Windows: `.\venv\Scripts\activate.bat`.
-        - Linux/Mac: `source venv/bin/activate`.
+    1. Depending on OS, source the virtual environment by running either:
+        - Windows: `.\venv\Scripts\activate.bat`
+        - Linux/Mac: `source venv/bin/activate`
 1. Install MkDocs plugins by running `pip install -r requirements.txt`
     - or `pip3 install -r requirements.txt`.
 
@@ -39,13 +39,13 @@ Finally, the wiki can be hosted locally by running `mkdocs serve`.
 The local server can then be accessed at [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
 
 After following these steps, the wiki can always be hosted by running `mkdocs serve` in the root of the project.
-However, if any changes have been made to the `requirements.txt` file (Added or updated plugins) step 3 must be done
+However, if any changes have been made to the `requirements.txt` file (added or updated plugins) step 3 must be done
 again.
 
 ## markdownlint
 
-During the semester of 2020E, a GitHub Action workflow using [markdownlint](https://github.com/DavidAnson/markdownlint)
-was set up for the wiki repository. 
+During the semester of 2020E, a GitHub Action workflow using
+[markdownlint](https://github.com/markdownlint/markdownlint) was set up for the wiki repository. 
 This workflow serves as continuous integration for the repository, and is set up in the
 [`ci.yml`](https://github.com/aau-giraf/wiki/blob/master/.github/workflows/ci.yml) file.
 
@@ -61,27 +61,25 @@ First, install the newest version of [Ruby](https://www.ruby-lang.org/en/downloa
 Second, install markdownlint by opening a terminal and running `gem install mdl`.
 
 **IF**, `gem install mdl` will not work, clone the
-[markdownlint repository](https://github.com/DavidAnson/markdownlint) and then follow these steps:
+[markdownlint repository](https://github.com/markdownlint/markdownlint) and then follow these steps:
+
 1. Open a terminal in the root of the cloned markdownlint repository, or navigate to the root in the terminal, and run
 the following:
     1. `gem install rake`
     1. `gem install bundler`
     1. `rake install`
+    
+If either `gem` or `mdl` are not recognized, make sure that the `.\bin` of either is in the `PATH` environment variable. 
 
 Finally, markdownlint can be run locally by following these steps:
+
 1. Open a terminal in the root of the wiki project, or navigate to the root in the terminal.
 1. Depending on OS, run either:
-    - Windows: `run_mdl.bat`.
-    - Mac/Linux: `mdl docs/`.
+    - Windows: `run_mdl.bat`
+    - Mac/Linux: `mdl docs/`
 
 After running it, markdownlint will report any Markdown issues, or it will report nothing indicating that all of the 
 `.md` files follow the rules.
-
-Second, clone the  and add the
-`.\markdownlint\bin` to the `PATH` environment variable.
-
-
-
 
 ## Important Files and Directories
 
