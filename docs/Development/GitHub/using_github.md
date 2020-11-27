@@ -4,28 +4,12 @@ Below there will be explain how GitHub is used in the 2020E GIRAF project.
 
 ## Issues
 
-Issues are created by the Development teams as well as the PO group.
+Issues can be created by anyone in the GIRAF team.
 An issue can be a bug report or a task creation request.
 
 The list of issues can be seen at each repository, eg. <https://github.com/aau-giraf/weekplanner/issues>
 , or a [complete list](https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+user%3Aaau-giraf)
 for the whole organization.
-
-### Getting an Issue to Work on
-
-If you have time to work on a new issue, you can get a new one by following
-these steps:
-
-1. Find an issue you want to work on
-1. Ask the PO group if you can work on that issue
-    - The PO group might say no for various reasons and they have the final say,
-      as they have a better overview.
-    - There is usually a greater chance of getting a yes if the issue you've
-      picked is either _highest_ or _high_ priority.
-
-If you don't have a preferred issue you can ask the PO group to be assigned the
-most pressing issue, as they have a good overview of the project and they will
-most likely have some issues that they would like you to work with.
 
 ### Creating an Issue
 
@@ -36,7 +20,7 @@ If you find a bug, or have a task creation request you can create an issue:
 1. Choose whether to submit a bug report or task creation request, and press
    "Get started".
 1. Create a title and description for the issue. Please follow the template, and
-   don't delete the headers!
+   do not delete the headers!
     - The title for the *Task Creation Request* should tell what functionality
       you would like added using the shown form "As a developer I would like the
       docker config file to automatically update so that I don´t have to manually
@@ -50,50 +34,66 @@ If you find a bug, or have a task creation request you can create an issue:
 ## Branches and Pull Requests
 
 In GIRAF there is used the branching strategy called [GitFlow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
-for all the repositories.
-
-During a sprint, all development is done in feature branches, that branch out
-from the `develop` branch.
+for all the repositories. A visual representation can be seen underneath.
 
 ![GitFlow diagram](../../resources/gitflow.png "Gitflow diagram")
 
-The **naming convention** for feature branches is `feature/xx` where `xx` is
+### Working on an Issue
+
+When you want to work on an issue you need to create a feature branch from the
+`develop` branch.
+
+The naming convention for feature branches is `feature/xx` where `xx` is
 replaced by the issue number.
 
-When the Release Preparation phase
-begins, a release branch is created from the `develop` branch.
-This branch is now used **instead** of `develop` until the sprint is over.
+### Release Preparation
 
-The **naming convention** for release branches is `release/YYYYsXrZ` where `YYYY`
-is replaced by year, `X` with the sprint number and `Z` with the release number.
+When a Release Preparation phase begins, a release branch is created from the
+`develop` branch.
+This branch is now used **instead** of `develop` until the release is finished.
 
-E.g. `release/2020s1r1` for 2020, sprint 1, release 1.
+The **naming convention** for release branches is `release/<semester name>s<sprint no.>r<release no.>`:
+
+- `<semester name>` is name of a semester e.g. 2020E, 2019 etc.
+- `<sprint no.>` the number of the sprint where the release is created
+- `<release no.>` the release number. The number starts from 1 and is reset when
+  starting on a new sprint.
+
+E.g. `release/2020Es1r1` for semester 2020E, sprint 1, release 1.
+
+#### Release fix
+
+When you start working on a release fix, you create a branch from a release branch
+e.g `release/2020Es1r1`.
+The naming convention for branch is `releasefix/xx` where `xx` is the issue number.  
 
 ### Creating a Branch
+
+From the terminal:
+
+```bash
+git checkout develop        # The parent branch
+git checkout -b feature/xx  # The new branch
+```
+
+Or from GitHub:
+
+1. Make sure the right parent branch is selected, in this instance `develop`.
+
+    ![Selecting develop branch](../../resources/github-branch-develop-selected.png)
+          
+2. Input the name of the new branch (e.g. `feature/400`).
+
+    ![Create new branch](../../resources/github-create-branch.png)
+    
+3. Press "Create branch: <name of branch> from '<name of parent branch>'"
 
 #### During Sprints
 
 When you start working on an issue, you create a branch from `develop` called
 `feature/xx` where `xx` is the issue number.
 
-From the terminal:
 
-```bash
-git checkout develop
-git checkout -b feature/xx
-```
-
-Or from GitHub:
-
-1. Make sure `develop` is selected.
-
-   ![Selecting develop branch](../../resources/github-branch-develop-selected.png)
-   
-1. Input the name of the branch (e.g. for feature 400).
-
-   ![Create new branch](../../resources/github-create-branch.png)
-
-1. Press "Create branch: feature/xx from 'develop'"
 
 #### During Release Preparation
 
