@@ -13,12 +13,12 @@ A prioritized list of issues for each Development team to work on during the spr
 
 ## Before the Sprint Planning
 
-Prior to Sprint Planning the Process group and the PO group have decided which new
+Prior to Sprint Planning the Process group and the PO group have decided which
 issues to include in the Sprint Backlog. Only those issues will be time estimated and
 prioritized during Sprint Planning. Minor adjustments may be made afterwards
-based on the outcome of Sprint Planning.
+based on the outcome of the Sprint Planning.
 
-Next everyone is divided into Sprint Planning Cross-groups. 
+Next, everyone is divided into Sprint Planning Cross-groups. 
 
 - Each Sprint Planning Cross-group has at least one Process group member and one
   PO group member. This means that the number of Sprint Planning Cross-groups

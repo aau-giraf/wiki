@@ -11,7 +11,7 @@ been given by the Process group after the Sprint Planning.
 If a Development team need more issues to work on, they have to contact the Process
 group.
 
-## Review Code
+## Code Review
 
 As a developer in the GIRAF team you will have to review code made by other
 developers. This should always be the main priority to further the development
