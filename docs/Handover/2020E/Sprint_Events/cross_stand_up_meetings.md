@@ -6,11 +6,11 @@ represented by two members.
 
 ## Expected Duration
 
-**Max** 15 minutes
+**Max** 15 minutes.
 
 ## Roles
 
-- One Process group member acts as moderator
+- One Process group member acts as moderator.
 - One Process group takes makes a summary of the meeting. 
 
 ## Agenda

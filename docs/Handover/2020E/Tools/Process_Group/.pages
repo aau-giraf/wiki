@@ -1,6 +1,9 @@
 arrange:
     - "index.md"
     - ...
-    - "sheet_used_for_sprint_planning.md"
-    - "pull_requests_overview.md"
-    - "individual_pull_request.md"
+    - "sprint_planning_tool.md"
+    - "pull_requests_overview_tool.md"
+    - "individual_pull_request_tool.md"
+    - "issues_overview_tool.md"
+    - "sprint_points_overview_tool.md"
+    - "sprint_retrospective_tool.md"

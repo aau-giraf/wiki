@@ -1,4 +1,4 @@
-# Individual Pull Request
+# Individual Pull Request Tool
 
 This tool consists of a [Google Sheets file](https://docs.google.com/spreadsheets/d/1-sXJVpQ2t_tSH6aG8B6KGxP1lkA2jufn4xXiq2vq_og/edit?usp=sharing),
 and accompanying Google Scripts. The sheets involved are:

@@ -1,15 +1,15 @@
-# Issues Overview
+# Sprint Points Tool
 
 This tool consists of a [Google Sheets file](https://docs.google.com/spreadsheets/d/1-sXJVpQ2t_tSH6aG8B6KGxP1lkA2jufn4xXiq2vq_og/edit?usp=sharing),
 and accompanying Google Scripts. The sheets involved are:
 
-- _Issues overview_
+- _Sprint points_
 - _Milestones_
 
 ## Purpose
 
-This tool is meant to give an overview of all issues in the current sprint.
-It finds the issues by looking for a specific milestone, and it includes both open and closed issues.
+This tool is meant to give a quick overlook over how many story points have been completed during a sprint.
+The sprint is represented by a milestone, and start and end dates.
 
 ## Setup
 
@@ -26,9 +26,8 @@ An access token can be generated [here](https://github.com/settings/tokens).
 
 ## Usage
 
-The tool is used with the _Issues overview_ sheet. 
-First, the milestone must be set with the dropdown.
-Then the sheet is updated with information about the isuses by pressing the _Update_ button. 
-This button has the `getIssuesOverview` script assigned, which can be found in the `IssuesOverview.gs` file.
+The tool is used with the _Sprint points_ sheet, where the information about point completion is also shown.
+The milestone, start, and end dates are input, and then the Update button is pressed to fill in the sheet.
+The Update button has the `getIssuesSprintConclusion` function assigned, which can be found in the `SprintPoints.gs` file.
 
-![](../../resources/issues_overview.PNG)
+![](../../resources/sprint_points.PNG)
