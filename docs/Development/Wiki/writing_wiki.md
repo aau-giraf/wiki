@@ -1,4 +1,4 @@
-# Using the Wiki
+# Running the wiki locally
 
 ## MkDocs
 
@@ -35,9 +35,10 @@ Then, follow these steps (these steps are only necessary when running MkDocs **f
 Finally, the wiki can be hosted locally by running `mkdocs serve`.
 The local server can then be accessed at [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
 
-After following these steps, the wiki can always be hosted by running `mkdocs serve` in the root of the project.
+After following these steps, the wiki can always be hosted by sourcing `venv` again and then running `mkdocs serve` in
+the root of the project.
 However, if any changes have been made to the `requirements.txt` file (added or updated plugins) step 3 must be done
-again.
+again after sourcing `venv`.
 
 ## markdownlint
 
