@@ -42,7 +42,7 @@ networks:
 The code specifies a service called proxy that uses the nginx version 1.15.x and
 that exposes the port 80 and 443 to the network. It has a volume attached where
 the nginx config folder is mapped into the container. The networks are elaborated
-in the [section about network](./Network.md).
+in the [section about network](network.md).
 
 ## nginx.conf
 

@@ -1,8 +1,19 @@
-# Server Administration
+# Overview
 
-This section describes how the servers for the GIRAF project are administrated.
+This section gives an overview of the servers in GIRAF project.
 
-## Table of contents
+## Architecture
 
-1. [Server Overview](./ServerOverview.md)
-1. [Docker](./docker.md)
+A description of the server architecture can be found [here](./architecture.md).
+
+## Overview
+
+An overview of the servers can be found [here](./overview.md).
+
+## Access
+
+An description on how to access the servers can be found [here](access.md) 
+
+## Docker
+
+The servers in GIRAF are using Docker. More information can be found [here](./Docker/index.md).

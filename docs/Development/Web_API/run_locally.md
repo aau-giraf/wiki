@@ -29,7 +29,7 @@ This section describes how the Web API is setup on a developer's local machine.
 1. Clone the web_api repository from GitHub.
 1. Setup the connection to the local MySQL server.
     1. In the `…\web-api\GirafRest` create a copy of the file `appsettings.template.json`
-      and name it `appsettings.Development.json`.
+       and name it `appsettings.Development.json`.
     1. Open the created file `appsettings.Development.json` file with a text editor.
     1. Change the following (Remember to remove the "<" and ">"):
         - The DefaultConnection on line 3 making it use the previously setup database

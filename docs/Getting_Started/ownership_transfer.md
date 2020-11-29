@@ -61,7 +61,7 @@ The list should be sent to [support@its.aau.dk](mailto:support.its.aau.dk) after
 Semester Coordinator Ulrik Nyman ([ulrik@cs.aau.dk](mailto:ulrik@cs.aau.dk)) has
 **approved** the list. 
 
-More information can be found [here](../Development/Server/ServerOwnership.md#ownership-transfer)
+More information can be found [here](../Development/Server/access.md#ownership-transfer)
 
 ### Portainer Access
 

@@ -1,6 +1,6 @@
 # Using GitHub in GIRAF
 
-Below there will be explain how GitHub is used in the 2020E GIRAF project.
+This section describes how to use GitHub when you a part of GIRAF.
 
 ## Issues
 
@@ -44,7 +44,7 @@ When you want to work on an issue you need to create a feature branch from the
 `develop` branch.
 
 The naming convention for feature branches is `feature/xx` where `xx` is
-replaced by the issue number.
+replaced by an issue number.
 
 ### Release Preparation
 
@@ -52,7 +52,7 @@ When a Release Preparation phase begins, a release branch is created from the
 `develop` branch.
 This branch is now used **instead** of `develop` until the release is finished.
 
-The **naming convention** for release branches is `release/<semester name>s<sprint no.>r<release no.>`:
+The naming convention for release branches is `release/<semester name>s<sprint no.>r<release no.>`:
 
 - `<semester name>` is name of a semester e.g. 2020E, 2019 etc.
 - `<sprint no.>` the number of the sprint where the release is created
@@ -65,7 +65,7 @@ E.g. `release/2020Es1r1` for semester 2020E, sprint 1, release 1.
 
 When you start working on a release fix, you create a branch from a release branch
 e.g `release/2020Es1r1`.
-The naming convention for branch is `releasefix/xx` where `xx` is the issue number.  
+The naming convention for the branch is `releasefix/xx` where `xx` is an issue number.  
 
 ### Creating a Branch
 
@@ -78,7 +78,7 @@ git checkout -b feature/xx  # The new branch
 
 Or from GitHub:
 
-1. Make sure the right parent branch is selected, in this instance `develop`.
+1. Make sure the right parent branch is selected (e.g. `develop`).
 
     ![Selecting develop branch](../../resources/github-branch-develop-selected.png)
           
@@ -88,78 +88,94 @@ Or from GitHub:
     
 3. Press "Create branch: <name of branch> from '<name of parent branch>'"
 
-#### During Sprints
-
-When you start working on an issue, you create a branch from `develop` called
-`feature/xx` where `xx` is the issue number.
-
-
-
-#### During Release Preparation
-
-When you start working on a release fix, you create a branch from `release/*`
-called `releasefix/xx` where `xx` is the issue number.
-
-```bash
-git checkout release/*
-git checkout -b releasefix/xx
-```
-
-Or from GitHub using the same procedure as above, **but** with the release
-branch as base instead, and with the release fix naming convention.
-
 ### Creating a Pull Request
 
 When you have finished your issue, it is time to create a pull request.
 A pull request is a request to merge your branch into another branch.
 
-Before making the pull request, make sure that the code:
+Before making the pull request, make sure that the code complies with the checklist
+for given repository (e.g. 2020E semester [checklists](https://drive.google.com/drive/folders/1PmTdIWJnxRu6Sna63DGSgiIuGB5egfiw?usp=sharing)).
 
-- Only relates to a single issue. (One PR per user story)
-- Is fully tested.
-- Is reachable when opening the application.
-
-**Fully tested means that if any piece of the functionality is removed, a test
-should fail.**
-
-**Creating a pull request on GitHub:**
+From GitHub:
 
 1. Open the "Pull requests" tab in the repository (e.g. <https://github.com/aau-giraf/weekplanner/pulls>)
 1. Press "New pull request"
-1. Select the appropriate branch as base.
-    - `develop` if during sprint
-    - `release/*` if during release preparation
-1. Select your branch for as compare
+1. Select the appropriate parent branch as base.
+    - `develop` in the Development Phase
+    - `release/*` in the Release Preparation
+1. Select your branch.
 1. Press "Create pull request" 
 1. Name the pull request `Feature xx` or `Feature xx: A title describing changes`
 1. Write a description
-    - If you write `closes #xx` or `fixes #xx`, issue xx will be linked to the PR
-      and will close when the PR is merged. ([All keywords](https://help.github.com/en/enterprise/2.16/user/github/managing-your-work-on-github/closing-issues-using-keywords#about-issue-references))
+    - If you write `closes #xx` or `fixes #xx`, issue xx will be linked to the PR.
+      The linked issues will then be closed the PR is merged. (All keywords can
+      be seen [here](https://help.github.com/en/enterprise/2.16/user/github/managing-your-work-on-github/closing-issues-using-keywords#about-issue-references))      
 
 ## Code Review
 
-After being assigned a pull request, the group should review the code under the
-_Files changed_ tab. Look for code that may be deprecated, unnecessary,
-non-optimized or has weird formatting. 
+You can find the pull requests you have been requested to review [here](https://github.com/pulls/review-requested).
 
-Start at <https://github.com/aau-giraf/>
+### Checklist
 
-1. Choose repository eg. weekplanner.
-1. Click on the **Pull Request** tab.
-1. Choose an open pull request from the list.
-1. Click on the **Files Changed Tab**. All the changes can be seen in these files.
-    ![Files changed tab!](../../resources/files-changed.png "The code you should review is here")
-    1. Make a comment or suggestion on a single line or multiple lines by pressing
-        the blue + icon (move the cursor to a line). 
-        The red square marks the selection icon which can be used to suggest code
-        that replaces the line(s).
-        ![Write suggestions!](../../resources/write-suggestion.png "Try dragging the blue icon across multiple lines")
-        You can view what the author will see by clicking **Preview**.
-        ![Preview suggestions!](../../resources/preview_example.PNG "Comment and suggestion")
-1. Having looked over all the files, click **Review changes**.
-    1. If you made comments, make sure the author looks them through by choosing
-        **Request changes** before clicking **Submit review**. If changes are made,
-        you have to re-review the pull request!
-        ![Request changes!](../../resources/request-changes.png "Request changes. The author cannot merge yet!")
-    1. If the changes makes sense, click **Approve**.
-        ![Approve changes!](../../resources/approve-changes.png "Approve changes. The author can merge")
+While reviewing the changes you should use the checklist for a given repository.
+It is usually given as a comment on the pull request as seen below.
+
+![Files changed tab!](../../resources/pull_request_checklist_comment.png "The code you should review is here")
+
+If it is not, you can insert it yourself (e.g. 2020E semester [checklists](https://drive.google.com/drive/folders/1PmTdIWJnxRu6Sna63DGSgiIuGB5egfiw?usp=sharing)).
+
+Remember to tag yourself with **@GitHub username**, so everyone can see who the
+checklist belongs to.
+
+### Changed Files
+
+All the changes associated with a pull request can be found under the
+**Files changed** tab as shown underneath.
+
+![Files changed tab!](../../resources/files-changed.png "The code you should review is here")
+
+While reviewing the code you can make comments or suggestions for a single line
+or multiple lines by pressing the blue + icon (move the cursor to a line). 
+The red square marks the selection icon which can be used to suggest code that
+replaces the line(s).
+        
+![Write suggestions!](../../resources/write-suggestion.png "Try dragging the blue icon across multiple lines")
+        
+You can view what the author will see by clicking **Preview**.
+        
+![Preview suggestions!](../../resources/preview_example.PNG "Comment and suggestion") 
+
+### Give a Review
+
+When you are ready to give your review you press the **Review changes** button. 
+Afterwards you are given 3 choices:
+
+- **Comment**
+    - If you have comments or questions to the changes in the pull request you
+      select this option. However, comments can also be made directly
+      to a pull request without giving a review.
+- **Approve**
+    - If everything is ok, then select this option.
+    
+    ![Approve changes!](../../resources/approve-changes.png "Approve changes. The author can merge")
+    
+- **Request changes**
+    - You select this, if you have made comments to lines in the code or if
+      something should be made different. 
+      
+    ![Request changes!](../../resources/request-changes.png "Request changes. The author cannot merge yet!") 
+    
+When you think your review is done select **Submit review**.
+
+### Re-review
+
+If you have given a review and the author of the pull request makes a new commit,
+then you have to re-review the code.       
+    
+      
+        
+        
+        
+    
+    
+        

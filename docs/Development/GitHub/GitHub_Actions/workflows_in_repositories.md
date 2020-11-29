@@ -1,10 +1,10 @@
-# GitHub Actions
+# Workflows in the Repositories
 
 The currently used Continuous Integration Pipeline is GitHub Actions, which provides
 2.000 minutes free per month. It can run on either Ubuntu, MacOS, or Windows, allowing
 us to test multiple platforms from our CI-Platform without cost.
 
-## Weekplanner
+## weekplanner
 
 The weekplanner is built in 4 jobs from the same workflow: [main.yml](https://github.com/aau-giraf/weekplanner/blob/develop/.github/workflows/main.yml)
 

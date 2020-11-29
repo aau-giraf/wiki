@@ -1,15 +1,9 @@
 # Development
 
-Here is a brief overview things of things to know when starting development on GIRAF. 
+Here is overview of things to know when starting development on GIRAF. 
 
-## GitHub
-
-A guide on how to use GitHub can be found [here]()
-
-## Working on Apps
-
-## Web API
-
-## Wiki
-
-## Server
+- [GitHub](../Development/GitHub/index.md)
+- [Working on apps](../Development/Apps/index.md)
+- [Web API](../Development/Web_API/index.md)
+- [Wiki](../Development/Web_API/index.md) (REMEMBER TO CHANGE LINK)
+- [Server](../Development/Server/index.md)

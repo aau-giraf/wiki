@@ -1,0 +1,5 @@
+arrange:
+    - "index.md"
+    - ...
+    - "workflows_in_repositories.md"
+    - "code_coverage.md"

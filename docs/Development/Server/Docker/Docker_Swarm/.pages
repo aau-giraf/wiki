@@ -1,0 +1,9 @@
+arrange:
+    - "index.md"
+    - ...
+    - "practical_information.md"
+    - "configuration.md"
+    - "network.md"
+    - "proxy.md"
+    - "web_api.md"
+    - "database.md"

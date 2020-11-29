@@ -1,4 +1,4 @@
-# Docker
+# General Information
 
 [Docker](https://en.wikipedia.org/wiki/Docker_\(software\) "wikilink")
 is a tool for managing software containers. A container is used to
@@ -131,7 +131,7 @@ port, is port 8080. By using the parameter ``-p 80:8080`` we tell Docker
 that the host should be redirected from port 80 to the exposed port 1. The picture
 below illustrates how this works:
 
-![DockerPortEx](./images/DockerPortEx.png "DockerPortEx")
+![DockerPortEx](../images/DockerPortEx.png "DockerPortEx")
 
 we illustrate how the ``-v`` parameter works. This parameter is used to mount a
 host folder into a folder in the container. For instance this could be used when
@@ -140,4 +140,4 @@ is used as ``-p /hostfolder:/persistent/folder`` where ``hostfolder`` is the fol
 on the host system and ``/persistent/folder`` is an arbitrary path to an existing
 folder inside a container. The picture below illustrates how this works:
 
-![DockerVolumeEx](./images/DockerVolumeEx.png "DockerVolumeEx")
+![DockerVolumeEx](../images/DockerVolumeEx.png "DockerVolumeEx")

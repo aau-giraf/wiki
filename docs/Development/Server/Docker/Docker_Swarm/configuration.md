@@ -1,4 +1,4 @@
-# Docker Swarm configuration
+# Configuration
 
 The Docker Swarm is manged via the `docker-compose.yml` file that can be found in
 [GitHub](https://github.com/aau-giraf/giraf-production-swarm).
@@ -104,7 +104,7 @@ networks:                        # Defines networks in the swarm
 In order to update the running Docker Stack ssh to one of the master servers and
 execute do the following steps:
 
-1. ssh to a master server, see [her](../ServerOwnership.md) for more information.
+1. ssh to a master server, see [her](../../access.md) for more information.
 1. Clone the [GitHub repository](https://github.com/aau-giraf/giraf-production-swarm)
    onto the server or pull any new changes to the existing.
 1. Verify the changes in the `docker-compose.yml` file are as expected.
