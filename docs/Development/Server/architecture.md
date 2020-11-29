@@ -2,7 +2,7 @@
 
 In the following, the server architecture for the giraf project will be explained.
 
-## Old servers (DISCONTINUED)
+## Old Servers (DISCONTINUED)
 
 | Name      | IP            | Specs |
 | :---      | :---          | :---  |
@@ -18,7 +18,7 @@ The only user on these servers are root, and each server has everything open to
 the internet and is hence under heavy attack from malicious users trying to brute-force
 the passwords.
 
-## New servers
+## New Servers
 
 | Name | Internal IP | External IP| Specs |
 |:---- | :---------- | :--------- | :-----|
@@ -33,16 +33,58 @@ The two public IP's for the project only has port 80 and port 443 open.
 Each node has been configured to use the ```10.14.0.0/16``` subnet for the local
 docker daemon. For the swarm overlay network, the ```10.10.0.0/16``` subnet is used.
 
-### To access the servers
+### Web-API
 
-To access the servers from any network including most AAU network the AAU ssh gateway
-must be used as follows:
+The WEB API runs in a docker container, which is routed by NGINX.
+The WEB API is only available on port 80 and 443 on the URLs shown below.
+
+| Stage               | URL                                 |
+|---                  |---                                  |
+| Production          | http://srv.giraf.cs.aau.dk/PROD/API |
+| Development         | http://srv.giraf.cs.aau.dk/DEV/API  |
+| Test                | http://srv.giraf.cs.aau.dk/TEST/API |
+
+### Network Drives
+
+ITS is responsible for the NFS that is mounted on all the nodes and masters in
+`/swarm-nfs/`.
+
+As mentioned above, ITS will attach a network drive at `/swarm-nfs/`, which should
+include the following:
+
+   - api/
+       - appsettings.Develop.json
+       - appsettings.Production.json
+       - appsettings.Testing.json
+   - backup/
+   - cdn/
+       - dev/
+       - pictograms/
+       - test/
+       - pictograms/
+       - prod/
+       - pictograms/
+   - certbot/
+   - mysql/
+   - nginx/
+       - certs/
+       - sites-enabled/
+       - nginx.conf
+
+Furthermore, the master00 server, should execute the following cronjob:
 
 ```bash
-ssh -t sshgw.aau.dk -l <USERNAME>@student.aau.dk  ssh 172.19.10.<ip>
+certbot renew --webroot -w /swarm-nfs/certbot/ -d srv.giraf.cs.aau.dk --post-hook "cp -RL /etc/letsencrypt/live/srv.giraf.cs.aau.dk/. /swarm-nfs/nginx/certs/"
 ```
 
-### The docker setup
+This is done to ensure a single point of certificate-authority on the first masterserver,
+that after renewing the certificate, moves it into the /swarm-nfs/nginx/certs.
+This is done to ensure that the certificate is available on all of the servers,
+and that the nginx Giraf_PROXY service mounts this folder and the certificate.
+
+### The Docker Setup
+
+More information on Docker can found [here](./Docker/index.md).
 
 #### Nodes
 

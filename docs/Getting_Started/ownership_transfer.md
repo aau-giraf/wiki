@@ -74,3 +74,7 @@ URL: `192.38.56.151:9000`
 Username: `admin`
 
 Password: see [KeePass](#giraf-passwords)
+
+#### Short Video on How to Access Portainer
+
+https://youtu.be/KZYsAJDHlxo

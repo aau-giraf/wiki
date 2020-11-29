@@ -23,14 +23,14 @@ ssh -t sshgw.aau.dk -l <USERNAME>@student.aau.dk  ssh 172.19.10.<IP>
 
 The servers are on the following IP's:
 
-|Name | IP |
-|:----|:---|
-| giraf-master00.srv.aau.dk | 172.19.10.29 |
-| giraf-master01.srv.aau.dk | 172.19.10.30 |
-| giraf-node00.srv.aau.dk   | 172.19.10.31 |
-| giraf-node01.srv.aau.dk   | 172.19.10.32 |
-| giraf-node02.srv.aau.dk   | 172.19.10.33 |
-| giraf-node03.srv.aau.dk   | 172.19.10.34 |
+|Name                       |Internal IP    |External IP   |
+|---                        |---            |---           |
+|giraf-master00.srv.aau.dk  |172.19.10.29   |192.38.56.151 |
+|giraf-master01.srv.aau.dk  |172.19.10.30   |192.38.56.153 |
+|giraf-node00.srv.aau.dk    |172.19.10.31   |N/A           |
+|giraf-node01.srv.aau.dk    |172.19.10.32   |N/A           |
+|giraf-node02.srv.aau.dk    |172.19.10.33   |N/A           |
+|giraf-node03.srv.aau.dk    |172.19.10.34   |N/A           |
 
 The entire project has two public IPs and with has a DNS A record to srv.giraf.cs.aau.dk.
 
