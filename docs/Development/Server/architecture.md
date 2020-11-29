@@ -1,4 +1,4 @@
-# Server architecture
+# Server Architecture
 
 In the following, the server architecture for the giraf project will be explained.
 
@@ -18,7 +18,6 @@ The only user on these servers are root, and each server has everything open to
 the internet and is hence under heavy attack from malicious users trying to brute-force
 the passwords.
 
-
 ## New servers
 
 | Name | Internal IP | External IP| Specs |
@@ -33,18 +32,6 @@ the passwords.
 The two public IP's for the project only has port 80 and port 443 open.
 Each node has been configured to use the ```10.14.0.0/16``` subnet for the local
 docker daemon. For the swarm overlay network, the ```10.10.0.0/16``` subnet is used.
-
-On the servers the following users have been added as administrators:
-
-```
-bwenne16@student.aau.dk
-tlha16@student.aau.dk
-tivers16@student.aau.dk
-lransh16@student.aau.dk
-mkaaga14@student.aau.dk
-jsande16@student.aau.dk
-jtrand16@student.aau.dk
-```
 
 ### To access the servers
 

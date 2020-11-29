@@ -25,9 +25,9 @@ Codename:	bionic
 |---                    |---                                        |
 | API Proxies           | [Github](https://github.com/aau-giraf)    |
 
-An illustration of the current server architecture can be seen in [Server Structure](ServerArchitecture.md)
+An illustration of the current server architecture can be seen in [Server Structure](architecture.md)
 
-The structure of how docker works can also be read about in [Docker Structure](docker.md)
+The structure of how docker works can also be read about in [Docker Structure](Docker/general_information.md)
 
 ITS is responsible for the NFS that is mounted on all the nodes and masters in
 `/swarm-nfs/`.
@@ -102,7 +102,7 @@ Access to the server is granted to all students, sudo rights are ONLY given to m
 of the Server Meta Group.
 
 The Server Meta Group has to contact ITS to get sudo.
-More can be found in [Server Ownership](./ServerOwnership.md)
+More can be found in [Server Ownership](access.md)
 
 ## NOTICE: Network access workaround
 

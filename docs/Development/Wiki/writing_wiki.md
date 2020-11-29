@@ -23,14 +23,15 @@ First, install the newest version of [Python](https://www.python.org/downloads/)
 
 Then, follow these steps (these steps are only necessary when running MkDocs **for the first time**):
 
-1. Open a terminal in the root of the wiki project, or navigate to the root in the terminal.
-1. Set up a virtual environment:
-    1. Install virtual environment by running `pip install virtualenv`.
-    1. Run `python -m venv venv`.
-    1. Depending on OS, source the virtual environment by running either:
-        - Windows: `.\venv\Scripts\activate.bat`
-        - Linux/Mac: `source venv/bin/activate`
-1. Install MkDocs plugins by running `pip install -r requirements.txt`.
+1. Open a terminal in the root of the wiki project, or navigate to the root in the
+   terminal.
+1. Set up a virtual environment
+    1. Install virtual environment with ``pip install virtualenv``.
+    1. Run ``python -m venv venv``.
+    1. Source the virtual environment.
+        1. Linux:    ``source venv/bin/activate``
+        1. Windows:  ``.\venv\Scripts\activate.bat``
+1. Install MkDocs plugins by running ``pip install -r requirements.txt``.
 
 Finally, the wiki can be hosted locally by running `mkdocs serve`.
 The local server can then be accessed at [http://127.0.0.1:8000/](http://127.0.0.1:8000/).

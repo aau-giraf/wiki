@@ -9,7 +9,7 @@ setup will be elaborated and the new setup will be explained.
 The old server was configured to use MySQL 5.7.11 as can be seen on the picture
 below.
 
-![MySQL Version](../images/OldMysql.png "MySQL Version")
+![MySQL Version](../../images/OldMysql.png "MySQL Version")
 
 In order to migrate the database without changing the database schema the same
 version of MySql.
