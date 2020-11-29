@@ -1,4 +1,4 @@
-# Server Overview
+# Overview
 
 In this article we describe what servers there are, what they are running and how
 to access them.

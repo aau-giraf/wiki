@@ -1,4 +1,4 @@
-# Server Access
+# Access
 
 In the following we will describe how to take ownership of the Giraf Servers for
 the Giraf Project. We will also describe how to access the servers once ownership

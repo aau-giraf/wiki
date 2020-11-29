@@ -1,4 +1,4 @@
-# Server Architecture
+# Architecture
 
 In the following, the server architecture for the giraf project will be explained.
 
