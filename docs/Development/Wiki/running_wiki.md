@@ -1,4 +1,4 @@
-# Running the Wiki locally
+# Running the Wiki Locally
 
 This page describes how to run the wiki in order to properly edit it.
 It also decribes how to use the markdown linter locally, in order to catch any potential issues before the GitHub
@@ -57,7 +57,7 @@ The rules used by the linter can be found
 Any exceptions to these rules are found or set up in the
 [`.mdl_style.rb`](https://github.com/aau-giraf/wiki/blob/master/.mdl_style.rb) file. 
 
-### Running Markdownlint locally
+### Running Markdownlint Locally
 
 First, install the newest version of [Ruby](https://www.ruby-lang.org/en/downloads/).
 
