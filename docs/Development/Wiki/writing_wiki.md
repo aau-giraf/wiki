@@ -47,7 +47,7 @@ This also means that headers should be proceded by blank lines before content.
 
 ```markdown
 Some text
-* List item
+- List item
 ...
 ```
 
@@ -56,7 +56,7 @@ Some text
 ```markdown
 Some text
 
-* List item
+- List item
 ...
 ```
 
@@ -67,16 +67,16 @@ MkDocs requires lists to use 4 spaces for indentation.
 <p style="color: darkred; font-weight: bold;">Wrong:</p>
 
 ```markdown
-* List item
-  * List subitem
+- List item
+  - List subitem
 ...
 ```
 
 <p style="color: green; font-weight: bold;">Correct:</p>
 
 ```markdown
-* List item
-    * List subitem
+- List item
+    - List subitem
 ```
 
 ### Custom Title

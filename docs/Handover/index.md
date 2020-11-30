@@ -1,7 +1,7 @@
 ﻿# Overview
 
 This handover is a compilation of materials used by prior GIRAF teams. 
-The handover from the  semesters are organized in sections named after the semesters year.
+The handover from the semesters are organized in sections named after the semesters year. 
 
 ## Handover Guide
 
