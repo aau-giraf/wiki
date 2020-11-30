@@ -1,7 +1,7 @@
 # Handover Guide
 
-This guide explains, which sections that should be added or updated in the Wiki
-whenever a GIRAF team is done on a semester.
+This guide explains which sections that should be added or updated in the Wiki
+whenever a GIRAF team is finished with a semester.
 
 ## New Sections
 
@@ -34,7 +34,7 @@ Handover
 
 **Semester name** is the year a semester is held e.g. 2020.
  
-2020 is followed by E or F because GIRAF team was worked on in both the Spring (F)
+2020 is followed by E or F because GIRAF was worked on in both the Spring (F)
 and Autumn (E) semester.
 
 ## Updated Sections

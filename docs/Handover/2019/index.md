@@ -1,4 +1,4 @@
-# Introduction
+# Overview
 
 The following will describe the process used in the 2019 project of the GIRAF
 project.
