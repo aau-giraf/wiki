@@ -1,16 +1,17 @@
 # [https://aau-giraf.github.io/wiki/](https://aau-giraf.github.io/wiki/)
 
-
 # Home
-This wiki includes all information about the GIRAF project! It is split into 5 categories:
 
-- [Home](./docs/index.md)
-    - Information about the wiki itself
-- [Getting Started](./docs/getting_started/index.md)
-    - Information useful to new developers starting development on GIRAF. 
-- [Development](./docs/development/index.md)
+This wiki includes all information about the GIRAF project! The information is split
+into 5 categories:
+   
+- [Getting Started](./Getting_Started/index.md)
+    - Gives an introduction to GIRAF for students on a new semester.
+- [Development](./Development/index.md)
     - Documents how most of the GIRAF project is implemented and how to use it.
-- [Process Manual](./docs/process_manual/introduction.md)
-    - Describe the process used in previous GIRAF projects.
-- [GIRAF Releases](./docs/releases/index.md)
-    - A list of GIRAF releases from 2018-current
+- [Handover](./Handover/index.md)
+    - Handover from previous GIRAF projects.
+- [GIRAF Releases](./Releases/index.md)
+    - A list of GIRAF releases from 2018-current.
+- [About](./About/index.md)
+    - Info on the GIRAF project.

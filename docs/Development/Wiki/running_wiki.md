@@ -1,4 +1,4 @@
-# Running the wiki locally
+# Running the Wiki locally
 
 This page describes how to run the wiki in order to properly edit it.
 It also decribes how to use the markdown linter locally, in order to catch any potential issues before the GitHub
@@ -21,7 +21,7 @@ The following plugins are used:
 If more plugins are downloaded with pip, remember to add them to the `requirements.txt` file.
 If any plugins need to be updated, change the version number for the plugin in the `requirements.txt` file.
 
-### Running the wiki with MkDocs
+### Running the Wiki with MkDocs
 
 First, install the newest version of [Python](https://www.python.org/downloads/).
 
@@ -45,10 +45,10 @@ the root of the project.
 However, if any changes have been made to the `requirements.txt` file (added or updated plugins) step 3 must be done
 again after sourcing `venv`.
 
-## markdownlint
+## Markdownlint
 
 During the semester of 2020E, a GitHub Action workflow using
-[markdownlint](https://github.com/markdownlint/markdownlint) was set up for the wiki repository. 
+[Markdownlint](https://github.com/markdownlint/markdownlint) was set up for the wiki repository. 
 This workflow serves as continuous integration for the repository, and is set up in the
 [`ci.yml`](https://github.com/aau-giraf/wiki/blob/master/.github/workflows/ci.yml) file.
 
@@ -57,16 +57,16 @@ The rules used by the linter can be found
 Any exceptions to these rules are found or set up in the
 [`.mdl_style.rb`](https://github.com/aau-giraf/wiki/blob/master/.mdl_style.rb) file. 
 
-### Running markdownlint locally
+### Running Markdownlint locally
 
 First, install the newest version of [Ruby](https://www.ruby-lang.org/en/downloads/).
 
-Second, install markdownlint by opening a terminal and running `gem install mdl`.
+Second, install Markdownlint by opening a terminal and running `gem install mdl`.
 
 **IF**, `gem install mdl` will not work, clone the
-[markdownlint repository](https://github.com/markdownlint/markdownlint) and then follow these steps:
+[Markdownlint repository](https://github.com/markdownlint/markdownlint) and then follow these steps:
 
-1. Open a terminal in the root of the cloned markdownlint repository, or navigate to the root in the terminal, and run
+1. Open a terminal in the root of the cloned Markdownlint repository, or navigate to the root in the terminal, and run
    the following:
     1. `gem install rake`
     1. `gem install bundler`
@@ -74,12 +74,12 @@ Second, install markdownlint by opening a terminal and running `gem install mdl`
     
 If either `gem` or `mdl` are not recognized, make sure that the `.\bin` of either is in the `PATH` environment variable. 
 
-Finally, markdownlint can be run locally by following these steps:
+Finally, Markdownlint can be run locally by following these steps:
 
 1. Open a terminal in the root of the wiki project, or navigate to the root in the terminal.
 1. Depending on OS, run either:
     - Windows: `run_mdl.bat`
     - Mac/Linux: `mdl docs/`
 
-After running it, markdownlint will report any Markdown issues, or it will report nothing indicating that all of the 
+After running it, Markdownlint will report any Markdown issues, or it will report nothing indicating that all of the 
 `.md` files follow the rules.

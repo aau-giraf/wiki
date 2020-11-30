@@ -1,4 +1,4 @@
-# Writing pages for the wiki
+# Writing Pages for the Wiki
 
 This page gives guidelines for how to write pages for the wiki.
 
@@ -21,7 +21,7 @@ This cannot be seen in the render.
 Additionally, lines should be kept limited to 120 characters each. 
 If a sentence exceeds this limit a linebreak should be added, so the sentence occupies two lines instead of one.
 
-### Common mistakes
+### Common Mistakes
 
 MkDocs can be a bit more strict in regard to its Markdown syntax, compared to
 GitHub.
@@ -32,13 +32,13 @@ any rules have been manually exempt.
 
 Here are some examples of common mistakes:
 
-### Only one level one header
+#### Only One Top Level Header
 
-MkDocs only supports one level one header (`# header`) per page.
+MkDocs supports only one top level header (`# header`) per page.
 If another level one header is present, the rest of the page won't be shown in
 the overview.
 
-#### Missing blank lines
+#### Missing Blank Lines
 
 MkDocs requires elements to be preceded by blank lines.
 This also means that headers should be proceded by blank lines before content.
@@ -60,7 +60,7 @@ Some text
 ...
 ```
 
-#### List indentation
+#### List Indentation
 
 MkDocs requires lists to use 4 spaces for indentation.
 
@@ -79,7 +79,7 @@ MkDocs requires lists to use 4 spaces for indentation.
     * List subitem
 ```
 
-### Custom title
+### Custom Title
 
 File metadata is written using yaml-frontmatter.
 As an example, a page's title can be specified.
@@ -96,7 +96,7 @@ If `title` is not specified, the page is given the header's content.
 In the above example that would be `Hello World` if the title was not specified
 in the metadata.
 
-### Arranging pages
+### Arranging Pages
 
 Using *awesome-pages*, a `.pages` file can be created in every folder.
 This can be used to arrange pages manually. As an example, the tabs are arranged
@@ -110,7 +110,7 @@ arrange:
     - releases
 ```
 
-## Building the pages
+## Building the Pages
 
 Everytime something is pushed to the ``master`` branch of the wiki, the GitHub
 Actions workflow is run.

@@ -4,8 +4,8 @@ This section gives an overview of the Wiki repository.
 The wiki is written in [Markdown](https://daringfireball.net/projects/markdown/), and rendered using
 [MkDocs](https://www.mkdocs.org/).
 
-- [Running the wiki locally](running_wiki.md)
-- [Writing pages for the wiki](writing_wiki.md)
+- [Running the Wiki locally](running_wiki.md)
+- [Writing Pages for the Wiki](writing_wiki.md)
 
 ## Important Files and Directories
 
