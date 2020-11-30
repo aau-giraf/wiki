@@ -10,7 +10,7 @@ We have chosen an offline first approach because if Giraf wants to be
 a widely used app on different app markets, it is expected to be highly functional
 without internet connection and offline first is generally the way to do this. 
 
-![image](../../resources/offline_overview.png)
+![image](../../../resources/offline_overview.png)
 
 This model describes the dataflow of an offline first database. The current offline database implementation is based on this model.
 

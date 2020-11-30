@@ -4,7 +4,7 @@ If a release is made a Release Preparation event should be held at the end of th
 
 ## Expected Duration
 
-1 day.
+1 day
 
 ## Purpose
 

@@ -30,7 +30,7 @@ Next, everyone is divided into Sprint Planning Cross-groups.
 After the Sprint Planning Cross-groups are made, the issues in the Sprint Backlog
 should be divided evenly between the groups.
 
-This process has been automated through the [Sprint Planning Tool](./index.md)
+This process has been automated through the [Sprint Planning Tool](../Tools/Process_Group/sprint_planning_tool.md).
 
 ## Agenda
 
