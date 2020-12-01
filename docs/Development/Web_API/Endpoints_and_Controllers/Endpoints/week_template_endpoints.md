@@ -1,6 +1,6 @@
 # WeekTemplate Endpoints
 
-## Get Week schedule templates for the authenticated user
+## Get Week Schedule Templates for the Authenticated User
 
 ````
 
@@ -11,7 +11,7 @@
 Gets all schedule templates for the currently authenticated user. Available to all users.
 Possible status code responses are 200 Success, 403 forbidden and 404 Not Found status codes.
 
-## Create week template
+## Create Week Template
 
 ````
 
@@ -70,7 +70,7 @@ An example of a successful week template POST request:
 
 Responses are 201 Success, 400 Bad Request, 403 Forbidden and 404 Not Found.
 
-## Get week template for a given user
+## Get Week Template for a Given User
 
 ````
 
@@ -84,7 +84,7 @@ Gets the week template with the specified id. Available to all users.
 
 Possible responses are 200 Success, 403 Forbidden and 404 Not Found.
 
-## Update week template for a given user
+## Update Week Template for a Given User
 
 ````
 
@@ -98,7 +98,7 @@ Overwrite the information of a week template. Available to all Supers, and to De
 
 Possible responses are 200 Success, 400 Bad Request, 401 Unauthorized, 403 Forbidden and 404 Not Found.
 
-## Delete week template for a given user
+## Delete Week Template for a Given User
 
 ````
 

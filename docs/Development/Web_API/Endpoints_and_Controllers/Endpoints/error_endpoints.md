@@ -1,6 +1,6 @@
 # Error Endpoints
 
-## Post status code
+## Post Status Code
 
 ````
 
@@ -11,7 +11,7 @@
 This endpoint is reached when an error happens in the routing.
 Possible query:
 
-* statusCode (int): The statuscode gotten when the error happened
+- statusCode (int): The statuscode gotten when the error happened
 
 Example request URL:
 
@@ -33,7 +33,7 @@ Example response body:
 
 ````
 
-## Get status code
+## Get Status Code
 
 ````
 
@@ -43,7 +43,7 @@ Example response body:
 
 This endpoint is reached when an error happens in the routing.
 
-## Update status code
+## Update Status Code
 
 ````
 
@@ -53,7 +53,7 @@ This endpoint is reached when an error happens in the routing.
 
 This endpoint is reached when an error happens in the routing.
 
-## Delete status code
+## Delete Status Code
 
 ````
 
@@ -63,7 +63,7 @@ This endpoint is reached when an error happens in the routing.
 
 This endpoint is reached when an error happens in the routing.
 
-## Patch status code
+## Patch Status Code
 
 ````
 
@@ -71,4 +71,4 @@ This endpoint is reached when an error happens in the routing.
 
 ````
 
- This endpoint is reached when an error happens in the routing.
+This endpoint is reached when an error happens in the routing.

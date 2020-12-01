@@ -1,6 +1,6 @@
 # User Endpoints
 
-## Get user
+## Get User
 
 ````
 
@@ -11,7 +11,7 @@
 Find information about the currently authenticated user.
 Possible status code responses are 200 Success and 404 Not Found.
 
-## Get given user
+## Get Given User
 
 ````
 
@@ -22,7 +22,7 @@ Possible status code responses are 200 Success and 404 Not Found.
 Find information on the user with the username supplied as a url query parameter or the current user.
 Status code responses are 200 Success, 400 Bad Request, 403 Forbidden and 404 Not Found.
 
-## Update given user
+## Update Given User
 
 ````
 
@@ -42,7 +42,7 @@ Example user PUT request body:
 
 Status code responses are 200 Success, 400 Bad Request, 403 Forbidden, 404 Not Found and 409 Conflict.
 
-## Get given user-settings
+## Get Given User-settings
 
 ````
 
@@ -53,7 +53,7 @@ Status code responses are 200 Success, 400 Bad Request, 403 Forbidden, 404 Not F
 Get user-settings for the user with the specified Id
 Status code responses are 200 Success, 400 Bad Request, 403 Forbidden and 404 Not Found.
 
-## Update given user-settings
+## Update Given User-settings
 
 ````
 
@@ -89,7 +89,7 @@ Example user-setting PUT request body:
 
 Status code responses are 200 Success, 400 Bad Request, 403 Forbidden and 404 Not Found.
 
-## Get given user icon
+## Get Given User Icon
 
 ```
 
@@ -100,7 +100,7 @@ Status code responses are 200 Success, 400 Bad Request, 403 Forbidden and 404 No
 Endpoint for getting the UserIcon for a specific User-
 Possible status code responses are 200 Success and 404 Not found.
 
-## Update given user icon
+## Update Given User Icon
 
 ````
 
@@ -111,7 +111,7 @@ Possible status code responses are 200 Success and 404 Not found.
 Sets the user icon of the given user.
 Status code responses are 200 Success, 400 Bad Request, 403 Forbidden and 404 Not Found.
 
-## Delete given user icon
+## Delete Given User Icon
 
 ````
 
@@ -122,7 +122,7 @@ Status code responses are 200 Success, 400 Bad Request, 403 Forbidden and 404 No
 Deletes the user icon for a given user.
 Status code responses are 200 Success, 400 Bad Request, 403 Forbidden and 404 Not Found.
 
-## Get given raw user icon
+## Get Given Raw User Icon
 
 ```
 
@@ -133,7 +133,7 @@ Status code responses are 200 Success, 400 Bad Request, 403 Forbidden and 404 No
 Gets the raw user icon for a given user.
 Status code responses are  200 Success and 404 Not Found.
 
-## Get given user's citizens
+## Get Given User's Citizens
 
 ````
 
@@ -144,7 +144,7 @@ Status code responses are  200 Success and 404 Not Found.
 Gets the citizens of the user with the provided id. The provided user must be a guardian.
 Status code responses are 200 Success, 400 Bad Request, 403 Forbidden and 404 Not Found.
 
-## Get given user's guardians
+## Get Given User's Guardians
 
 ````
 
@@ -155,7 +155,7 @@ Status code responses are 200 Success, 400 Bad Request, 403 Forbidden and 404 No
 Gets the guardians for the specific citizen corresponding to the provided id.
 Status code responses are 200 Success, 400 Bad Request, 403 Forbidden and 404 Not Found.
 
-## Create relation between guardian and citizen
+## Create Relation Between Guardian and Citizen
 
 ````
 

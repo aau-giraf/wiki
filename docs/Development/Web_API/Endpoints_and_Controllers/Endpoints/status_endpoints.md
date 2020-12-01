@@ -1,6 +1,6 @@
 # Status Endpoints
 
-## API ping
+## API Ping
 
 ````
 
@@ -21,7 +21,7 @@ Example response body:
 
 Possible status response code is 200 Success.
 
-## Database connection ping
+## Database Connection Ping
 
 ````
 
@@ -42,7 +42,7 @@ Example response body:
 
 Possible status responses code are 200 Success and 503 server error.
 
-## Get git version
+## Get Git Version
 
 ````
 

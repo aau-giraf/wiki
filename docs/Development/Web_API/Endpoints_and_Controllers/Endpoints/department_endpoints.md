@@ -1,6 +1,6 @@
 # Department Endpoints
 
-## Get department names
+## Get Department Names
 
 ````
 
@@ -30,7 +30,7 @@ Example response body:
 
 Possible status code responses are 200 Success and 404 Not Found.
 
-## Create a department
+## Create a Department
 
 ````
 
@@ -38,7 +38,7 @@ Possible status code responses are 200 Success and 404 Not Found.
 
 ```` 
 
-Create a new department. it's only necesary to supply the departments name.
+Create a new department. It is only necessary to supply the departments name.
 Request body required for this POST request:
 
 ````
@@ -60,7 +60,7 @@ Request body required for this POST request:
 
 Possible status code responses are 200 Success, 400 Bad Request, 403 Forbidden, 404 Not Found and 500 Server Error.
 
-## Get given department
+## Get Given Department
 
 ````
 
@@ -112,7 +112,7 @@ Example response body:
 
 Possible status code responses are 200 Success, 403 Forbidden and 404 Not Found.
 
-## Get ciziten names
+## Get Citizen Names
 
 ````
 
@@ -149,7 +149,7 @@ Example response body:
 
 Possible status code responses are 200 Success, 403 Forbidden and 404 Not Found.
 
-## Add user to a department
+## Add User to a Department
 
 ````
 
@@ -157,10 +157,11 @@ Possible status code responses are 200 Success, 403 Forbidden and 404 Not Found.
 
 ````
 
-Add an existing user, that does not have a department, to the given department. Requires role Department, Guardian or SuperUser.
+Add an existing user, that does not have a department, to the given department. 
+Requires role Department, Guardian or SuperUser.
 Possible status code responses are 200 Success, 400 Bad Request, 401 Unauthorized, 403 Forbidden and 409 Conflict.
 
-## Change department name
+## Change Department Name
 
 ````
 
@@ -182,7 +183,7 @@ Request body required for this PUT request:
 
 Possible status code responses are 200 Success, 400 Bad Request, 403 Forbidden and 404 Not Found.
 
-## Delete department
+## Delete Department
 
 ````
 

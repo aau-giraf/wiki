@@ -1,6 +1,6 @@
 # Activity Endpoints
 
-## Create activity
+## Create Activity
 
 ````
 
@@ -49,7 +49,7 @@ Example response body:
 
 Possible status code responses are 201 Success, 400 Bad Request, 403 Forbidden and 404 Not Found.
 
-## Delete activity
+## Delete Activity
 
 ````
 
@@ -107,7 +107,7 @@ Example response body:
 
 Possible status code response is 200 Success.
 
-## Update activity given user
+## Update Activity for Given User
 
 ```` 
 

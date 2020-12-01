@@ -1,6 +1,6 @@
 # Pictogram Endpoints
 
-## Get all public pictograms
+## Get All Public Pictograms
 
 ````
 
@@ -44,7 +44,7 @@ Response body:
 
 Possible status response codes are 200 Success, 400 Bad Request and 404 Not Found.
 
-## Create pictogram
+## Create Pictogram
 
 ````
 
@@ -67,7 +67,7 @@ Request body required for this POST request:
 
 Status response codes are 200 Success, 400 Bad Request and 404 Not Found.
 
-## Check given pictogram authorization 
+## Check Given Pictogram Authorization 
 
 ```
 
@@ -78,7 +78,7 @@ Status response codes are 200 Success, 400 Bad Request and 404 Not Found.
 Read the GirafRest.Models.Pictogram pictogram with the specified id and check if the user is authorized to see it.
 Status response codes are 200 Success, 401 Unauthorized, 403 Forbidden, 404 Not Found and 500 Server Error.
 
-## Update pictogram
+## Update Pictogram
 
 ````
 
@@ -101,7 +101,7 @@ Request body required for this PUT request:
 
 Status response codes are 200 Success, 400 Bad Request, 401 Unauthorized, 403 Forbidden and 404 Not Found.
 
-## Delete pictogram
+## Delete Pictogram
 
 ````
 
@@ -112,7 +112,7 @@ Status response codes are 200 Success, 400 Bad Request, 401 Unauthorized, 403 Fo
 Delete the GirafRest.Models.Pictogram pictogram with the specified id.
 Status response codes are 200 Success, 401 Unauthorized, 403 Forbidden and 404 Not Found.
 
-## Update pictogram image
+## Update Pictogram Image
 
 ````
 
@@ -140,7 +140,7 @@ Example response body:
 
 Status response codes are 200 Success, 401 Unauthorized, 403 Forbidden and 404 Not Found.
 
-## Get pictogram image
+## Get Pictogram Image
 
 ````
 
@@ -151,7 +151,7 @@ Status response codes are 200 Success, 401 Unauthorized, 403 Forbidden and 404 N
 Read the image of a given pictogram as a sequence of bytes.
 Status response codes are 200 Success, 401 Unauthorized, 403 Forbidden and 404 Not Found.
 
-## Get raw pictogram image
+## Get Raw Pictogram Image
 
 ````
 

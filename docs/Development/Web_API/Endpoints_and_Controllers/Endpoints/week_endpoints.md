@@ -1,6 +1,6 @@
 # Week Endpoints
 
-## Get list of week schedules given user id
+## Get List of Week Schedules Given User ID
 
 ```
 
@@ -23,7 +23,7 @@ Gets list of GirafRest.Models.DTOs.WeekDTO for all weeks belonging to the user w
 
 Possible status code responses are 200 Success, 403 Forbidden and 404 Not Found.
 
-## Get a list of week schedules given user id
+## Get a List of Week Schedules Given User ID
 
 ```
 
@@ -37,7 +37,7 @@ Gets list of GirafRest.WeekNameDTO for all schedules belonging to the user with 
 
 Possible status code responses are 200 Success, 403 Forbidden and 404 Not Found.
 
-## Get list of week schedule with specified user id and week and year
+## Get List of Week Schedules with Specified User ID and Week and Year
 
 ```
 
@@ -53,7 +53,7 @@ Gets the GirafRest.Models.DTOs.WeekDTO with the specified week number and year f
 
 Possible status code responses are 200 Success, 403, Forbidden and 404 Not Found.
 
-## Update week information
+## Update Week Information
 
 ````
 
@@ -115,7 +115,7 @@ An example of a successful week PUT request:
 
 Possible status code responses are 200 Success, 403, Forbidden and 404 Not Found.
 
-## Delete a week
+## Delete a Week
 
 ````
 
