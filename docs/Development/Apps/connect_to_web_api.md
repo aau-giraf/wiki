@@ -1,4 +1,4 @@
-# Connect to local Web API
+# Connect to Local Web API
 
 - In the app repository in the `…/<app_repository>/assets/environments.json`
   file line 2 change the `http://srv.giraf.cs.aau.dk/DEV/API` to:

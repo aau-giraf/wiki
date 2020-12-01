@@ -3,5 +3,6 @@ arrange:
     - ...
     - "guidelines.md"
     - "controller_descriptions.md"
+    - "Endpoints"
     - "Authorization"
     - "swagger.md"

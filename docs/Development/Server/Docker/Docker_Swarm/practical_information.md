@@ -54,7 +54,7 @@ On the first master server run the following command:
 docker swarm init
 ```
 
-### Adding a manager to the Swarm
+### Adding a Manager to the Swarm
 
 REMEMBER TO CREATE THE NETWORK FIRST
 Once the Docker Swarm is initialized used the following command on the first master
@@ -66,7 +66,7 @@ docker swarm join-token --manager
 
 The output is copied to the new master server.
 
-### Adding a worker to the Swarm
+### Adding a Worker to the Swarm
 
 REMEMBER TO CREATE THE NETWORK FIRST
 To add a worker to the Swarm first run the following command on one of the managers:
@@ -96,7 +96,7 @@ The output should look like this:
 | as7n375y2gwcj5vf4h73h9ron    | giraf-node02.srv.aau.dk    | Ready              | Active             |                    | 18.09.3        |
 | koclcs8nxt0y6qu4ho511la0m    | giraf-node03.srv.aau.dk    | Ready              | Active             |                    | 18.09.3        |
 
-## Examples of using a service
+## Examples of Using a Service
 
 Once the Docker Swarm has been set up, it can be used to serve the different parts
 of the project. In the following, we will give some examples of how to work with

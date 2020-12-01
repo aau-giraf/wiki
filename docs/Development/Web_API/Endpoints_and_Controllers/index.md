@@ -14,7 +14,11 @@ Guidelines to the endpoints and controllers can be found [here](guidelines.md).
 
 ## Controller Descriptions
 
-Descriptions of the controllers in the Web API can be found [here](controller_descriptions.md)
+Descriptions of the controllers in the Web API can be found [here](controller_descriptions.md).
+
+## Endpoint Descriptions
+
+Descriptions of the endpoints for each controller can be found [here](./Endpoints/index.md).
 
 ## Data Transfer Objects (DTO)
 

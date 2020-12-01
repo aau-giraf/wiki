@@ -1,4 +1,4 @@
-# WEB API
+# Web API
 
 The WEB API is a DotNet Core 2.2 application built as a REST API which serves all
 request to and from the Giraf Project. The WEB API has previously been served via

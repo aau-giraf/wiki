@@ -4,7 +4,7 @@ In order for the new Docker Swarm to serve the Giraf project, the database from
 the old servers had to be migrated on to the new ones. In the following the old
 setup will be elaborated and the new setup will be explained.
 
-## Old setup
+## Old Setup
 
 The old server was configured to use MySQL 5.7.11 as can be seen on the picture
 below.
@@ -23,7 +23,7 @@ mysqldump -u root -p giraf-dev > giraf-dev-dump.sql
 This command will dump the database `giraf-dev` to a local file giraf-dev-dump
 which can be exported to the new server and imported as to a new database.
 
-## New setup
+## New Setup
 
 The Docker Compose files was updated with the following:
 
