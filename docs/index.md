@@ -9,7 +9,9 @@ into 5 categories:
     - Documents how most of the GIRAF project is implemented and how to use it.
 - [Handover](./Handover/index.md)
     - Handover from previous GIRAF projects.
-- [GIRAF Releases](./Releases/index.md)
+- [Releases](./Releases/index.md)
     - A list of GIRAF releases from 2018-current.
+- [Security](./Security/index.md)
+    - Security information about the GIRAF project.
 - [About](./About/index.md)
-    - Info on the GIRAF project.
+    - General info about the GIRAF project.

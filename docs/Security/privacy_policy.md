@@ -1,7 +1,3 @@
----
-title: "Privacy Policy"
----
-
 # Privacy Policy
 
 Last updated: 08/03/2017

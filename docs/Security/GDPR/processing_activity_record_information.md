@@ -39,4 +39,4 @@ support tools.
 
 ## The processing activity record
 
-The record itself is provided in a separate [document](./processing_activity_record.md).
+The record itself is provided in a separate [document](processing_activity_record.md).

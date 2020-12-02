@@ -3,7 +3,7 @@
 ## Overview
 
 The purpose of this document, is to detail two subjects mentioned in the
-[GDPR Regulation](./gdpr_regulation.md) document, namely the Legal Processing and
+[GDPR Regulation](gdpr_regulation.md) document, namely the Legal Processing and
 the Legal Rights of the Data Subject. The essence of these two subject, are that
 in order to process personal information of the data subject, there has to be lawful
 basis for doing so, such as the establishment of a consent contract, and also that
@@ -32,8 +32,8 @@ The consent contract should be continuously maintained, which means updating it 
 any changes to the processing of personal information, which would also require
 a new acceptance of the consent contract from the data-subject. The changes that
 would trigger an update, are equivalent to those described in the document
-[Processing Activity Record Information](./processing_activity_record_information.md).
+[Processing Activity Record Information](processing_activity_record_information.md).
 
 ## The consent document
 
-The consent-contract is provided as a separate [document](./consent.md).
+The consent-contract is provided as a separate [document](consent.md).

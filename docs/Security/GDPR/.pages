@@ -1,0 +1,8 @@
+arrange:
+    - index.md
+    - ...
+    - gdpr_regulation.md
+    - consent_information.md
+    - consent.md
+    - processing_activity_record_information.md
+    - processing_activity_record.md
