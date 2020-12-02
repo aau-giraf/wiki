@@ -3,6 +3,7 @@ arrange:
     - ...
     - Getting_Started
     - Development
+    - UI_Design
     - Handover
     - Releases
     - Security
