@@ -13,7 +13,7 @@ develop environment can be found [here](development_environment_setup.md).
 
 ## Design Guidelines
 
-Guidelines for user interfaces in the GIRAF apps can be found [here](./Design_Guide/index.md).
+Guidelines for user interfaces in the GIRAF apps can be found [here](../../UI_Design/Design_Guide/index.md).
 
 ## Implementation Guidelines
 

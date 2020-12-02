@@ -3,6 +3,5 @@ arrange:
     - ...
     - "development_environment_setup.md"
     - "connect_to_web_api.md"
-    - "Design_Guide"
     - "Guidelines"
     - "Test"
