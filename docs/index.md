@@ -11,7 +11,7 @@ into 5 categories:
     - Handover from previous GIRAF projects.
 - [Releases](./Releases/index.md)
     - A list of GIRAF releases from 2018-current.
-- [Security](./Security/index.md)
+- [Security](Legal/index.md)
     - Security information about the GIRAF project.
 - [About](./About/index.md)
     - General info about the GIRAF project.
