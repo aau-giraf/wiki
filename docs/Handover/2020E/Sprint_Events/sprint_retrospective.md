@@ -15,8 +15,7 @@ review process of pull requests.
 
 ## Before Sprint Retrospective
 
-Process group prepares questions to ask the other groups in the GIRAF team. An
-example can be found [here](./index.md).
+Process group prepares questions to ask the other groups in the GIRAF team.
 
 ## Roles
 
@@ -32,4 +31,3 @@ example can be found [here](./index.md).
 
 The Process group goes through all the answers to the questions to see if there
 is something that can be improved with process e.g. structure of a sprint event.
-
