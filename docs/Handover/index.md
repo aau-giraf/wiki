@@ -11,6 +11,3 @@ semesters year.
 - [Review Checklists](./Review_Checklists/index.md)
     - The review checklists section contains all the
       checklists used for code review.
-- [Prototypes](./Prototypes/index.md)
-    - The prototypes section contains the prototypes made for
-      features and issues.

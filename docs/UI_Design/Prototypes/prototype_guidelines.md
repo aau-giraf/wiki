@@ -9,11 +9,11 @@ system was created to keep track of the prototypes' state and its context.
 The workspace in Adobe XD has been divided to categorize prototypes based on their
 state as shown by the image below:
 
-![AdobeXDWorkspace](./images/AdobeXDWorkspace.png)
+![AdobeXDWorkspace](images/AdobeXDWorkspace.png)
 
 The figure below describes how the prototype transistions between the states:
 
-![PrototypeStates](./images/PrototypeStates.png)
+![PrototypeStates](images/PrototypeStates.png)
 
 The table below gives a short description of each state:
 
@@ -44,7 +44,7 @@ The table below describes each part of the name:
 
 The naming convention is illustrated by the figure below:
 
-![PrototypeNamingIllustration](./images/PrototypeNamingIllustration.png)
+![PrototypeNamingIllustration](images/PrototypeNamingIllustration.png)
 
 *Press button* indicates that a button, text field or similar on one prototype leads
 to another. E.g. pressing one button on 2020f_12_GUA_1-1_WP273 leads to 2020f_12_GUA_2_WP273

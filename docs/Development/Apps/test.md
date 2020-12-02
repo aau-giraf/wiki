@@ -1,4 +1,4 @@
-# Unit Testing
+# Testing
 
 This guide describes how you test in Flutter, and what the test criteria 
 is in both blocs and screens/widgets.  

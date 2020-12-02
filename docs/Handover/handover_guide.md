@@ -46,7 +46,7 @@ Here is a description of the sections that needs to be updated.
 The PO group should add links for the new prototype files.
 
 ```bash
-Handover
+UI_Design
 └── Prototypes
     └── Overview    # File to update       
 ```
