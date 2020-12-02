@@ -1,5 +1,7 @@
 # Overview
 
+This section contains the prototypes used for GIRAF, and guidelines for how to make new ones.
+
 | **Semester** | **.xd**                                  | **.pdf**                                   |
 |--------------|------------------------------------------|--------------------------------------------|
 | 2020F        | [Prototypes2020F.xd](xd/Prototypes2020F.xd) | [Prototypes2020F.pdf](pdf/Prototypes2020F.pdf) |

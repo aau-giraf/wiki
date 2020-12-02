@@ -1,6 +1,6 @@
 # Development
 
-Here is overview of things to know when starting development on GIRAF. 
+This is an overview of sections to read before starting development on GIRAF. 
 
 - [GitHub](../Development/GitHub/index.md)
 - [Working on apps](../Development/Apps/index.md)

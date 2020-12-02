@@ -7,4 +7,3 @@ It includes things such as:
 - Information about the sprint events used in a semester.
 - Description of tools that has been used e.g. scripts, Slack etc.
 - Important issues and features that are unfinished.
-- Prototypes for the GIRAF apps.

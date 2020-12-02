@@ -1,7 +1,7 @@
 # Overview
 
 The following pages in this section describes the overall changes made for each
-release. Some of the links in the release from 2018 does not work, as GitLab in
+release. Some of the links in the releases from 2018 does not work, as GitLab is
 not in use as of 2019.
 
 | Releases | Released on  |

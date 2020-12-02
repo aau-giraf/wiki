@@ -1,6 +1,6 @@
 # Overview
 
-This section gives an overview of the Docker Swarm in the GIRAF project.
+This section gives an overview of the Docker swarm used in the GIRAF project.
 
 - [Practical information](./practical_information.md)
 - [Configuration](./configuration.md)
