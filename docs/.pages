@@ -1,7 +1,10 @@
 arrange:
     - index.md
     - ...
-    - getting_started
-    - development
-    - process_manual
-    - releases
+    - Getting_Started
+    - Development
+    - UI_Design
+    - Handover
+    - Releases
+    - Legal
+    - About

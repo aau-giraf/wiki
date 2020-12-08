@@ -1,0 +1,12 @@
+arrange:
+    - "index.md"
+    - ...
+    - "account_endpoints.md"
+    - "user_endpoints.md"
+    - "department_endpoints.md"
+    - "activity_endpoints.md"
+    - "pictogram_endpoints.md"
+    - "week_endpoints.md"
+    - "week_template_endpoints.md"
+    - "status_endpoints.md"
+    - "error_endpoints.md"

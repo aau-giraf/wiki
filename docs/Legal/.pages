@@ -1,0 +1,7 @@
+arrange:
+    - index.md
+    - ...
+    - privacy_policy.md
+    - GDPR
+    - risk_assessment.md
+    - licences.md

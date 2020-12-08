@@ -1,0 +1,8 @@
+arrange:
+    - "index.md"
+    - ...
+    - "GitHub"
+    - "Apps"
+    - "Web_API"
+    - "Wiki"
+    - "Server"

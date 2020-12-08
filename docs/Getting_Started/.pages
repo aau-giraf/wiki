@@ -1,0 +1,6 @@
+arrange:
+    - "index.md"
+    - ...
+    - "handover.md"
+    - "ownership_transfer.md"
+    - "development.md"

@@ -1,0 +1,6 @@
+arrange:
+    - "index.md"
+    - ...
+    - "architecture.md"
+    - "access.md"
+    - "Docker"
