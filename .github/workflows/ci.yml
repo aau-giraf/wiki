@@ -8,6 +8,6 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
       - name: Run mdl        
-        uses: actionshub/markdownlint@1.2.0   
+        uses: actionshub/markdownlint@1.2.2
         with:  
           path: './docs'          
