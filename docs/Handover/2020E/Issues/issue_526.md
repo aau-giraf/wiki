@@ -24,10 +24,11 @@ This is how it will look like.
 The other thing that has been added is a notifier that makes it possible to know when the user has scrolled to the top
 and bottom. 
 There are three if statements:
+
 1. The first if statement checks if the scoll is at the bottom
-2. The second if statement checks if the scroll is at the top
-3. The third if statement checks if the scroll is both on top and bottom
-(The third if statements has not been checked if it works, but the other two has been checked with prints)
+1. The second if statement checks if the scroll is at the top
+1. The third if statement checks if the scroll is both on top and bottom (The third if statements has not been checked
+   if it works, but the other two has been checked with prints)
 
 ```
 onNotification: (ScrollNotification scrollInfo) { 
