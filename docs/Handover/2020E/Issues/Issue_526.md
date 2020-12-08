@@ -56,6 +56,7 @@ onNotification: (ScrollNotification scrollInfo) {
 ```
 
 This is an example if the user scrolls to the bottom.
+
 ![image](https://user-images.githubusercontent.com/43955099/100992849-f5112a80-3554-11eb-8057-f088e99c6580.png)
 
 **What the next developer should do:**
