@@ -140,7 +140,7 @@ to make the synchronization have a unique id.
 ## What currently exists
 
 Currently an initial class for communication with an offline database exists in the 
-[api_client](https://github.com/aau-giraf/api_client) repository in branch [feature/72](https://github.com/aau-giraf/api_client/tree/feature/72).
+[api_client](https://github.com/aau-giraf/api_client) repository.
 
 The api_client maps JSON output from
 the [web-api](https://github.com/aau-giraf/web-api) into models which the
@@ -156,7 +156,7 @@ the database into a model.
 The solution chosen for the database design is a 1-1 relational database with
 the web-api. For this approach the online database scheme was cloned to a sqlite 
 scheme creation file. From this file, most of the sql was copied into the 
-[dbhandler](https://github.com/aau-giraf/api_client/blob/feature/72/lib/offline_database/offline_db_handler.dart) in the `createTables` method. Some of the tables and rows were not imported though, 
+[dbhandler](https://github.com/aau-giraf/api_client/tree/develop/lib/offline_database/offline_db_handler.dart) in the `createTables` method. Some of the tables and rows were not imported though, 
 as they were either not used, or unnecessary for the app to be able to run offline. 
 If more tables or columns are needed they can simply be added to the table creation function.
 If something is to be changed in the model layer, this will most likely be your workload:
@@ -176,7 +176,7 @@ Whenever a major change is made to the online database, it is important to also 
 
 ### The dbHandler
 
-In terms of implementation, there currently is a class called [dbhandler](https://github.com/aau-giraf/api_client/blob/feature/72/lib/offline_database/offline_db_handler.dart). This class is created as a static object within itself, such that there is only ever one instance of it, and it does not need to compete for access to the SQLite database. It contains a function for each of the calls in the different API's. What we envisioned is that when one of these are called, it should try and get the data from offline first, and then if they do not find a result in offline, the APIs should make an HTTP request instead. The methods which creates new objects, needs to always make the HTTP POST requests, as we need to get an ID from the online database as soon as possible. Until online responds with the object with an updated ID, we generate an UUID for all objects when they are created, in an attempt to ensure that all objects have a unique ID. If a mutating transaction to the online database fails, it should be saved in the database with the function `saveFailedTransactions()` in the dbHandler. It would also be necessary to find a good time to call  `retryFailedTransactions()`, which tries to send all the mutating transactions to the database again.
+In terms of implementation, there currently is a class called [dbhandler](https://github.com/aau-giraf/api_client/tree/develop/lib/offline_database/offline_db_handler.dart). This class is created as a static object within itself, such that there is only ever one instance of it, and it does not need to compete for access to the SQLite database. It contains a function for each of the calls in the different API's. What we envisioned is that when one of these are called, it should try and get the data from offline first, and then if they do not find a result in offline, the APIs should make an HTTP request instead. The methods which creates new objects, needs to always make the HTTP POST requests, as we need to get an ID from the online database as soon as possible. Until online responds with the object with an updated ID, we generate an UUID for all objects when they are created, in an attempt to ensure that all objects have a unique ID. If a mutating transaction to the online database fails, it should be saved in the database with the function `saveFailedTransactions()` in the dbHandler. It would also be necessary to find a good time to call  `retryFailedTransactions()`, which tries to send all the mutating transactions to the database again.
 
 ### The Api's
 
@@ -188,9 +188,9 @@ All of the Api's should first call the offline database. If nothing was found th
 
 ### Unit tests
 
-Most of the functions in the dbhandler has been tested in the [OfflineDatabase_test](https://github.com/aau-giraf/api_client/blob/feature/72/test/database/OfflineDatabase_test.dart) file. Some are still missing though, and they need to be created before the offline database can be merged with develop. The database tests relies on [SQFlite ffi](https://pub.dev/packages/sqflite_common_ffi) which is a library that overwrites the factory in sqflite, to allow the database to work on windows, linux and MacOs.
+Most of the functions in the dbhandler has been tested in the [OfflineDatabase_test](https://github.com/aau-giraf/api_client/tree/develop/test/database/OfflineDatabase_test.dart) file. Some are still missing though, and they need to be created before the offline database can be merged with develop. The database tests relies on [SQFlite ffi](https://pub.dev/packages/sqflite_common_ffi) which is a library that overwrites the factory in sqflite, to allow the database to work on windows, linux and MacOs.
 
-The unit tests which currently tests the APIs only works if the APIs are async. This can for the most part be fixed by delaying the expect. An example of this from [account_api_test.dart](https://github.com/aau-giraf/api_client/blob/feature/72/test/api/account_api_test.dart) is:
+The unit tests which currently tests the APIs only works if the APIs are async. This can for the most part be fixed by delaying the expect. An example of this from [account_api_test.dart](https://github.com/aau-giraf/api_client/tree/develop/test/api/account_api_test.dart) is:
 
 ```dart
 test('Should call login endpoint', () async {
