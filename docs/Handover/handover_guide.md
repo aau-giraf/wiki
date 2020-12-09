@@ -41,17 +41,21 @@ and Autumn (E) semester.
 
 ### Issues Handover
 
-Any fundamental issues that have had work done on them can also be handed over to next GIRAF team.
+Any fundamental issues that have had work done on them can also be handed over to
+the next GIRAF team.
 These issues can or cannot have an active pull request.
-In order to make it possible for future GIRAF teams to work on such issues, an adequate amount of documentation should
-be written about the issues in the `Issues` folder in the main handover.
+In order to make it possible for future GIRAF teams to work on such issues, an
+adequate amount of documentation should be written about the issues in the `Issues`
+folder in the main handover.
 
 For these kinds of issues there are two recommendations:
 
-- If an issue warrants continued work by a future GIRAF team, then the issue should have handover documentation on the
-  wiki. If there is handover material for the issue, then its branch should **NOT** be deleted.
+- If an issue warrants continued work by a future GIRAF team, then the issue
+  should have handover documentation on the wiki. If there is handover material
+  for the issue, then its branch should **NOT** be deleted.
 - If an issue does not warrant continued work, then its branch should be deleted.
-  Then, the assignee should document what they tried to do to solve the issue as a comment to the issue itself.
+  Then, the assignee should document what they tried to do to solve the issue as
+  a comment to the issue itself on GitHub.
 
 ## Updated Sections
 
