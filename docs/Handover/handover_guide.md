@@ -16,7 +16,7 @@ three main things to include are:
 - Description of sprint events
 - Description of the tools that has been used (Scripts, Google Sheets etc.)
 
-```bash
+```
 Handover
 ├── Handover Guide
 ├── Semester name                 # New section
