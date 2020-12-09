@@ -12,11 +12,12 @@ without internet connection and offline first is generally the way to do this.
 
 ![image](../../../resources/offline_overview.png)
 
-This model describes the dataflow of an offline first database. The current offline database implementation is based on this model.
+This model describes the dataflow of an offline first database. 
+The current offline database implementation is based on this model.
 
 Whenever the UI needs data, it first communicates with the BLoC. The BLoC then queries the API for the data.
-If the data is already in memory we can just return it. If it is not, we try to find it in our local database. If it is not in
-the local database either, we look in the online database where it should exist.
+If the data is already in memory we can just return it. If it is not, we try to find it in our local database. 
+If it is not in the local database either, we look in the online database where it should exist.
 When you get data from the online database, you also save it in the local database
 and in memory, such that you can have fast retrieval and also have data available 
 if you are offline. Currently, the in memory part has not been the focus of any 
@@ -32,7 +33,8 @@ to potential future apps, the offline database is implemented in the api_client.
 The offline database is an SQLite database. The reason for this is that mobile devices
 already have an SQLite database running in memory for apps to use, and since the online
 database uses a MySQL database, the mapping between them is relatively easy. Flutter also
-provides a package for using SQLite called [SQFlite](https://github.com/tekartik/sqflite/blob/master/sqflite/README.md), easing the process.
+provides a package for using SQLite called [SQFlite](https://github.com/tekartik/sqflite/blob/master/sqflite/README.md)
+, easing the process.
 
 Below is a prioritized list of the different features the customers would like to have available offline,
 along with what issues in the weekplanner deals with that piece of functionality. Obviously the first
@@ -84,10 +86,10 @@ One possible way of storing these pictograms is using the class [ImageCache](htt
 .dev/flutter/painting/ImageCache-class.html) from Flutter. Currently a self made cache is used in 
 the BLoC used for loading images for pictograms. The implementation of this cache can be found in the
 [pictogram_image_bloc](https://github.com/aau-giraf/weekplanner/blob/develop/lib/blocs/pictogram_image_bloc.dart). 
-Another way this could be handled, is using the functionality which is already implemented in the offline database, to save images in a folder on
-the device, keeping it available for use even after the app is shut down. This will
-require some kind of further management of the saved images, as this will result in a lot of images
-being saved on the device over time.
+Another way this could be handled, is using the functionality which is already implemented in 
+the offline database, to save images in a folder onthe device, keeping it available for use even 
+after the app is shut down. This will require some kind of further management of the saved 
+images, as this will result in a lot of images being saved on the device over time.
 
 #### Syncing the local database to match the online database
 
@@ -125,7 +127,8 @@ Synchronizing offline changes scenario:
 A possible solution would be to give a citizen permissions in the wep-api to make
 changes. This could be implemented with some kind of token or similar signifying if
 the changes is coming from the offline database, and then only allowing citizens to
-make changes if it comes from their offline database. The system should automatically perform the offline changes, and the citizens themselves should not be allowed to directly perform these changes.
+make changes if it comes from their offline database. The system should automatically perform the offline changes, 
+and the citizens themselves should not be allowed to directly perform these changes.
 
 A potentially very large issue is if offline changes for the same data, e.g an activity
 is made on two different devices - which of the changes should be saved in the online database,
@@ -176,11 +179,27 @@ Whenever a major change is made to the online database, it is important to also 
 
 ### The dbHandler
 
-In terms of implementation, there currently is a class called [dbhandler](https://github.com/aau-giraf/api_client/tree/develop/lib/offline_database/offline_db_handler.dart). This class is created as a static object within itself, such that there is only ever one instance of it, and it does not need to compete for access to the SQLite database. It contains a function for each of the calls in the different API's. What we envisioned is that when one of these are called, it should try and get the data from offline first, and then if they do not find a result in offline, the APIs should make an HTTP request instead. The methods which creates new objects, needs to always make the HTTP POST requests, as we need to get an ID from the online database as soon as possible. Until online responds with the object with an updated ID, we generate an UUID for all objects when they are created, in an attempt to ensure that all objects have a unique ID. If a mutating transaction to the online database fails, it should be saved in the database with the function `saveFailedTransactions()` in the dbHandler. It would also be necessary to find a good time to call  `retryFailedTransactions()`, which tries to send all the mutating transactions to the database again.
+In terms of implementation, there currently is a class called 
+[dbhandler](https://github.com/aau-giraf/api_client/tree/develop/lib/offline_database/offline_db_handler.dart). 
+This class is created as a static object within itself, such that there is only ever one instance 
+of it, and it does not need to compete for access to the SQLite database. It contains a function 
+for each of the calls in the different API's. What we envisioned is that when one of these are 
+called, it should try and get the data from offline first, and then if they do not find a result 
+in offline, the APIs should make an HTTP request instead. The methods which creates new objects, 
+needs to always make the HTTP POST requests, as we need to get an ID from the online database as 
+soon as possible. Until online responds with the object with an updated ID, we generate an UUID 
+for all objects when they are created, in an attempt to ensure that all objects have a unique ID. 
+If a mutating transaction to the online database fails, it should be saved in the database with 
+the function `saveFailedTransactions()` in the dbHandler. It would also be necessary to find a 
+good time to call  `retryFailedTransactions()`, which tries to send all the mutating transactions 
+to the database again.
 
 ### The Api's
 
-All of the Api's should first call the offline database. If nothing was found there, then call the online and use the what is returned from online to hydrate the offline database. For this to work, all methods in the api's need to be made `async*` which means that it is a stream. In order to use these there is a few important things to notice:
+All of the Api's should first call the offline database. If nothing was found there, then call 
+the online and use the what is returned from online to hydrate the offline database. For this to 
+work, all methods in the api's need to be made `async*` which means that it is a stream. In order 
+to use these there is a few important things to notice:
 
 * Streams use yield instead of return
 * When the function yields something, the it continues to run
@@ -188,9 +207,15 @@ All of the Api's should first call the offline database. If nothing was found th
 
 ### Unit tests
 
-Most of the functions in the dbhandler has been tested in the [OfflineDatabase_test](https://github.com/aau-giraf/api_client/tree/develop/test/database/OfflineDatabase_test.dart) file. Some are still missing though, and they need to be created before the offline database can be merged with develop. The database tests relies on [SQFlite ffi](https://pub.dev/packages/sqflite_common_ffi) which is a library that overwrites the factory in sqflite, to allow the database to work on windows, linux and MacOs.
+Most of the functions in the dbhandler has been tested in the 
+[OfflineDatabase_test](https://github.com/aau-giraf/api_client/tree/develop/test/database/OfflineDatabase_test.dart) 
+file. Some are still missing though, and they need to be created before the offline database can 
+be merged with develop. The database tests relies on [SQFlite ffi](https://pub.dev/packages/sqflite_common_ffi) 
+which is a library that overwrites the factory in sqflite, to allow the database to work on windows, linux and MacOs.
 
-The unit tests which currently tests the APIs only works if the APIs are async. This can for the most part be fixed by delaying the expect. An example of this from [account_api_test.dart](https://github.com/aau-giraf/api_client/tree/develop/test/api/account_api_test.dart) is:
+The unit tests which currently tests the APIs only works if the APIs are async. This can for the 
+most part be fixed by delaying the expect. An example of this from 
+[account_api_test.dart](https://github.com/aau-giraf/api_client/tree/develop/test/api/account_api_test.dart) is:
 
 ```dart
 test('Should call login endpoint', () async {
