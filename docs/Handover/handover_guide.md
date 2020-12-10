@@ -15,7 +15,7 @@ five main things to include are:
 - Description of role structure
 - Description of sprint events
 - Description of the tools that has been used (Scripts, Google Sheets etc.)
-- Description of the overarching features that have yet to be implemented and the issues related to these
+- Description of the overarching features that have yet to be implemented and list the issues related to these
 - Description of incomplete issues that should continue being worked on
 
 ```
@@ -89,4 +89,3 @@ UI_Design
 ```
 
 The newest entry should be the top most in the table shown in the overview. 
-
