@@ -29,7 +29,7 @@ The table below gives a short description of each state:
 
 The format of prototype names is defined as:
 
-<p><strong>yyyyx_ContextID_CompareID_ViewID_RelateID_GitID</strong></P>
+<p><strong>yyyyx_ContextID_CompareID_ViewID_RelateID_GitID: &ltShort description&gt</strong></P>
 
 The table below describes each part of the name:
 
