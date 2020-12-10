@@ -10,11 +10,12 @@ Here is a description of the new sections that has to be added to the Wiki.
 ### Main Handover
 
 The placement of the main handover from a GIRAF team is illustrated below. The
-four main things to include are:
+five main things to include are:
 
 - Description of role structure
 - Description of sprint events
 - Description of the tools that has been used (Scripts, Google Sheets etc.)
+- Description of the overarching features that have yet to be implemented and the issues related to these
 - Description of incomplete issues that should continue being worked on
 
 ```
