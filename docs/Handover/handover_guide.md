@@ -10,11 +10,12 @@ Here is a description of the new sections that has to be added to the Wiki.
 ### Main Handover
 
 The placement of the main handover from a GIRAF team is illustrated below. The
-four main things to include are:
+five main things to include are:
 
 - Description of role structure
 - Description of sprint events
 - Description of the tools that has been used (Scripts, Google Sheets etc.)
+- Description of the overarching features that have yet to be implemented and list the issues related to these
 - Description of incomplete issues that should continue being worked on
 
 ```
@@ -26,6 +27,7 @@ Handover
 │   ├── Tools                     #      
 │   │   ├── Process Group         #  
 │   │   └── Other Tools           #
+|   ├── Feature Overview 
 │   └── Issues
 ├── ...
 ├── 2020E
@@ -38,6 +40,20 @@ Handover
  
 2020 is followed by E or F because GIRAF was worked on in both the Spring (F)
 and Autumn (E) semester.
+
+### Feature Overview
+
+This document should describe overarching features that have multiple related issues.
+The purpose of this document is to make it easy for the next GIRAF teams to get 
+an overview of these larger features without having to go through all issues in 
+all the repositories.  
+
+For each feature there should be a headline in the feature_overview.md file. 
+Under this headline there should be a description of the feature, as well as 
+a table containing all the issues related to the feature.   
+The table should have a column containing links to the issues, and a column 
+containing their descriptions. This description can simply be the title 
+of the issue.
 
 ### Issues Handover
 
@@ -73,4 +89,3 @@ UI_Design
 ```
 
 The newest entry should be the top most in the table shown in the overview. 
-
