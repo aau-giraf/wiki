@@ -16,7 +16,7 @@ button should have an opacity of 40%.
 | *Default button* | *Pressed button* | *Disabled button* |
 
 A widget called GirafButton has been created in the weekplanner repo which should
-be used for buttons in the weekplanner app.
+be used for buttons in the weekplanner app. If the button is added within the citizen view no text should be added to buttons.
 
 ## Content
 
@@ -34,3 +34,8 @@ ordered by whether or not the button represents an action to confirm a change.
 The leftmost buttons should cause the action to not occur, such as cancelling the
 deletion, and the rightmost buttons should confirm the action, such as saying yes
 to a deletion.
+
+## Multiple state selection buttons
+If multiple states needs to be represented it should be done, by creating a multiple state button. On this button the current state should be darker than the other states. This should **only** be used when only one of the states can be selected at the time.
+
+![TripleStateButton](images/TrippleStateButton.png)
