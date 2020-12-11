@@ -36,6 +36,7 @@ deletion, and the rightmost buttons should confirm the action, such as saying ye
 to a deletion.
 
 ## Multiple state selection buttons
+
 If multiple states needs to be represented it should be done, by creating a multiple state button. On this button the current state should be darker than the other states. This should **only** be used when only one of the states can be selected at the time.
 
 ![TripleStateButton](images/TrippleStateButton.png)
