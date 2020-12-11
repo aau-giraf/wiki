@@ -1,7 +1,8 @@
-# Dialog
+# Dialogue
 
 When a user has to respond to an event, dialogs should be used. A dialog consists
 of a title, a description, some buttons and possibly some additional views.
+The usage of dialogues should be minimised as much as possible in citizen view. The dialogues should not contain any text if it is used.
 
 ## Confirm dialog
 
