@@ -1,0 +1,6 @@
+arrange:
+    - "index.md"
+    - ...
+    - "po.md"
+    - "process.md"
+    - "development_team.md"

@@ -1,0 +1,7 @@
+arrange:
+    - "index.md"
+    - ...
+    - "development_environment_setup.md"
+    - "connect_to_web_api.md"
+    - "Guidelines"
+    - "test.md"

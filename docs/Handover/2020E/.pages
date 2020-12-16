@@ -1,0 +1,7 @@
+arrange:
+    - "index.md"
+    - ...
+    - "Role_Structure"
+    - "Sprint_Events"
+    - "Tools"
+    - "Issues"

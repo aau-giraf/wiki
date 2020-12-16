@@ -1,0 +1,4 @@
+arrange:
+    - "index.md"
+    - ...
+    - "prototype_guidelines.md"

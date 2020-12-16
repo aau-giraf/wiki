@@ -1,0 +1,6 @@
+arrange:
+    - "index.md"
+    - ...
+    - "repository_description.md"
+    - "GitHub_Actions"
+    - "using_github.md"

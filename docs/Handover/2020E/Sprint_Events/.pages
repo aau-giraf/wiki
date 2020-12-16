@@ -1,0 +1,9 @@
+arrange:
+    - "index.md"
+    - ...
+    - "sprint_planning.md"
+    - "development_phase.md"
+    - "cross_stand_up_meetings.md"
+    - "sprint_review.md"
+    - "sprint_retrospective.md"
+    - "release_preparation.md"
