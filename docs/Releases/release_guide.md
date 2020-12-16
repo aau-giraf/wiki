@@ -47,8 +47,6 @@ A release description consists of these two things:
 - A brief summary of the things that has changed in the new release
 - A complete list of closed issues that is a part of the new release 
 
-An example can be seen in (MISSING Link to 2020E release).  
-
 ## Release Overview
 
 When a release description is done a link and date has to be added to the
