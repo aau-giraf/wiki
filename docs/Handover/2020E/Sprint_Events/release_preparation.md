@@ -4,7 +4,7 @@ If a release is made a Release Preparation event should be held at the end of th
 
 ## Expected Duration
 
-1 day
+2 days.
 
 ## Purpose
 
@@ -41,3 +41,21 @@ You get ReleaseFix issues from the Process group.
 Then you must make a new branch named releasefix/#IssueNumber, branched out from the release branch. 
 
 After fixing the issue in said branch, you should make a pull request for it. 
+
+## After Release Preparation
+
+If all the releases are ready at the end of the Release Preparation, then the
+publish state will begin. This is done by merging the release branches into the
+master branches. Afterwards, you need to do the following things in specific
+repositories:
+
+- **weekplanner**, the app is automatically published onto the Google Play Store,
+  but not onto the Apple App Store. Here, you need to log onto App Store Connect
+  and create a new publish where you select the new build that has been created.
+- **web-api**, a docker image is automatically created. However, the docker
+  containers are only restarted every second week. This means that the docker
+  container has to be restarted manually in order to get the server to use
+  the newly released **web-api** immediately. It is done by logging onto Portainer (Credentials
+  can be found [here](../../../Getting_Started/ownership_transfer.md#portainer-access)) 
+  where you need to restart all the containers that have a name that starts
+  with **Giraf_API_PROD**.
