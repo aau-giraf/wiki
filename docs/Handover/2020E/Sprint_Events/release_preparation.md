@@ -46,7 +46,7 @@ After fixing the issue in said branch, you should make a pull request for it.
 
 If all the releases are ready at the end of the Release Preparation, then the
 publish state will begin. This is done by merging the release branches into the
-master branches. Afterwards, you need to do the following things in specific
+master branches. Afterwards, you need to do the following things in these
 repositories:
 
 - **weekplanner**, the app is automatically published onto the Google Play Store,
