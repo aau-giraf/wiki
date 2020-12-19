@@ -14,3 +14,4 @@ conform to this guide when designing the visual elements in the GIRAF project.
 - [Pictogram representation](pictogram_representation.md)
 - [Loading indicators](loading_indicators.md)
 - [Typography](typography.md)
+- [Scroll](scroll.md)
