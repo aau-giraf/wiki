@@ -77,6 +77,7 @@ Example user-setting PUT request body:
   "greyScale": true,
   "lockTimerControl": true,
   "pictogramText": true,
+  "showPopup": true,
   "weekDayColors": [
     {
       "hexColor": "string",
