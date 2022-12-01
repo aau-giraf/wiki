@@ -2,6 +2,7 @@ arrange:
     - "index.md"
     - ...
     - "handover_guide.md"
+    - "2022"
     - "2020E"
     - "2020F"
     - "2019"
