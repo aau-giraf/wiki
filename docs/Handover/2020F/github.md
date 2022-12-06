@@ -166,5 +166,5 @@ Start at <https://github.com/aau-giraf/>
         **Request changes** before clicking **Submit review**. If changes are made,
         you have to re-review the pull request!
         ![Request changes!](./images/request-changes.png "Request changes. The author cannot merge yet!")
-    1. If the changes makes sense, click **Approve**.
+    2. If the changes makes sense, click **Approve**.
         ![Approve changes!](./images/approve-changes.png "Approve changes. The author can merge")

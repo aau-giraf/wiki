@@ -171,11 +171,3 @@ When you think your review is done select **Submit review**.
 
 If you have given a review and the author of the pull request makes a new commit,
 then you have to re-review the code.       
-    
-      
-        
-        
-        
-    
-    
-        

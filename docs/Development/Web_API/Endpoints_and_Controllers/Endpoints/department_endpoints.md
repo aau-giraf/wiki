@@ -193,6 +193,3 @@ Possible status code responses are 200 Success, 400 Bad Request, 403 Forbidden a
 
 Endpoint for deleting the GirafRest.Models.Department with the given id.
 Possible status code responses are 200 Success, 403 Forbidden and 404 Not Found.
-
-
-

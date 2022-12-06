@@ -107,9 +107,3 @@ assignment will use the following constraints:
 
 The issue assignments will be sent out at most 24 hours later along with
 a list of which types of issues to solve first e.g. bug fixes before features.
- 
-                               
-
-
-
-

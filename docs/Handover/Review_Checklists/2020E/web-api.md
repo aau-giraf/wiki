@@ -37,4 +37,3 @@ For this part, run the web-api locally as described in https://aau-giraf.github.
 - [ ] The web-api runs without issues
 - [ ] The functionality that the code claims to implement, are actually implemented
 - [ ] The integration tests runs successfully. Refer to https://github.com/aau-giraf/web-api/tree/master/GirafIntegrationTest for how to run the tests
-

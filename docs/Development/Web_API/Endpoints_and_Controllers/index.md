@@ -39,4 +39,3 @@ An overview of the endpoints and controllers used by the GIRAF project can be fo
 [here](https://srv.giraf.cs.aau.dk/PROD/API/swagger).
 
 More information on how Swagger is used in the Web API can be found [here](swagger.md). 
-
