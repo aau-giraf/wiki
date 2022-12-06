@@ -30,4 +30,3 @@ To combat this, the class ```GirafAuthenticationService```(derived ```IAuthentic
 has been created. In time, every endpoint should make a call to a relevant method
 in this class(e.g. ```HasDepartmentEditRights(user, department)``` ), but currently
 it is only used in ```UserController``` and ```WeekTemplateController```.
-.

@@ -132,5 +132,3 @@ Possible response codes are 200 success, 401 Unauthorized and 404 Not Found.
 
 Deletes the user with the given id.
 The DELETE request takes the user id as input and prompts a response body with either a 200 Success, 400 Bad Request, 403 Forbidden, 409 Conflict or 500 a server error.
-
-                                                                                                 

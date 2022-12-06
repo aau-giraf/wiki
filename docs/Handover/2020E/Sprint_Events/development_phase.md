@@ -38,4 +38,3 @@ process.
 
 The primary tool for the Development Phase is GitHub. The usage of GitHub in
 GIRAF is described [here](../../../Development/GitHub/using_github.md).
-

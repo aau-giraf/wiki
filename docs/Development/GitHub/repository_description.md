@@ -186,5 +186,3 @@ Image for compiling WeekPlanner Android project.
 A tool for creating, and viewing, sequences of pictograms. A sequence is a
 set of pictograms, defining a sequence of actions for citizens.
 (SW613F15_Pictosearch.pdf)
-
-

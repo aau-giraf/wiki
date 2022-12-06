@@ -130,4 +130,3 @@ Deletes all information for the entire week with the given year and week number.
 * {weekNumber} is the week number of the week schedule to fetch.
 
 Possible status code responses are 200 Success, 403, Forbidden and 404 Not Found.
-

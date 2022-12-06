@@ -11,3 +11,4 @@
 - If you are having problems in this step and are using either Android Studio or
   IntelliJ, delete the `build` folder created by the IDE and rebuild it. This should
   make sure that correct `environments.json` file is read.
+- 

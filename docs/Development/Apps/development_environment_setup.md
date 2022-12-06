@@ -160,3 +160,4 @@ There, you need to select and trust yourself as a developer.
    to apply the changes instantly.
     - Some changes requires using hot restart (<img src="https://i.imgur.com/X8NIyyF.png" alt="Hot restart" width="20px" align="top">).
       See [docs](https://flutter.dev/docs/development/tools/hot-reload) for more information.
+    - 

@@ -78,4 +78,3 @@ messages on them.
 
 Maybe try and create a new stateful class, where the columns can be created and update without disturbing the other
 widgets.
-
