@@ -8,4 +8,3 @@ This section contains information about and how to work with the servers in the 
     - Information about how to get access to the servers.
 - [Docker](./Docker/index.md)
     - Information about the Docker setup for the GIRAF project.
-    - 

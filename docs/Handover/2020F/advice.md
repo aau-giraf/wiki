@@ -60,4 +60,3 @@ Previous advice can be found [here](../2019/from_2019/process_advice.md).
   merging and make sure every branch has a purpose. 
 - Decide if you want META-groups, which are groups focused on different aspects
   of the project such as front-end, back-end, server, and security.
-- 

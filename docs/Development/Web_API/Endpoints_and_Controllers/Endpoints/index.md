@@ -11,4 +11,3 @@ This section gives a description for each of the endpoints in the Web API.
 - [Week template](./week_template_endpoints.md)
 - [Status](./status_endpoints.md)
 - [Error](./error_endpoints.md)
-- 
