@@ -18,7 +18,6 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install -r requirements.txt
-      - run: mkdocs gh-deploy --force
 
       - name: Deploy docs
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
