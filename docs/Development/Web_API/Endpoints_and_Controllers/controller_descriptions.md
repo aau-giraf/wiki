@@ -67,4 +67,3 @@ By convention the ErrorController is linked to whenever there is an illegal requ
 such as a 404 request. The controller will always send back an ``ErrorResponse``.
 
 Endpoints can be found [here](./Endpoints/error_endpoints.md)
-
