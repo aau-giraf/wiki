@@ -6,8 +6,7 @@ This section describes how the Web API is setup on a developer's local machine.
 
 ### .NET Core SDK
 
-- Download and install .NET Core 3.1 SDK or a version backwardly compatible with
-  it `(https://dotnet.microsoft.com/download/dotnet-core/3.1)`.
+- Download and install .NET Core 6.0 SDK`(https://dotnet.microsoft.com/download/dotnet-core/6.0)`.
 
 ### MySQL Database
 
