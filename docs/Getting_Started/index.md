@@ -10,4 +10,4 @@ This is an overview of things to know when starting with GIRAF.
 - [Development](./development.md)
     - An overview of what is necessary to begin developing on the GIRAF project.
 - [Setup](./setup.md)
-    - Setting up all the following repositories: Weekplanner, Web-API and API-Client.
+    - Setting up the following repositories: Weekplanner, Web-API and API-Client.
