@@ -1,6 +1,7 @@
 # How to setup a local development environment for GIRAF
 
 ## Installing MySQL
+
 ![mysql install 1](https://user-images.githubusercontent.com/9339576/205648638-5f536ca6-df97-405d-9d20-172bbda4649a.png)
 ![mysql install 2](https://user-images.githubusercontent.com/9339576/205648739-29ca9f66-3a6b-402e-8fa1-fd30c89e0505.png)
 ![mysql install 3](https://user-images.githubusercontent.com/9339576/205648754-ba42849c-adce-4afa-9a4b-eaa2df0595a6.png)
@@ -22,22 +23,26 @@ If any of the downloads fail, just click "Try Again"
 ![mysql install 18](https://user-images.githubusercontent.com/9339576/205651184-0f0ed707-ef80-4fc3-90d3-4d1ed6f3a88d.png)
 
 ## Starting the MySQL server
+
 ![tjenester1](https://user-images.githubusercontent.com/9339576/205654164-d6e0fe7a-e2f7-41e4-8248-3fed82e3b87b.png)
 ![tjenester2](https://user-images.githubusercontent.com/9339576/205654211-6cee68a5-2ac0-4a9c-854f-fc641f61f132.png)
 
 ## Configuring Weekplanner and Web-API repositories to work locally
+
 1. Go to weekplanner/lib/main.dart
 2. Change `'assets/environments.dev.json'` to `'assets/environments.local.json'` on line 29
 3. Go to web-api/GirafRest/appsettings.Development.json
 4. Change the server variable to `server=localhost` in the `DefaultConnection` key
 
 ## Building the database for the Web-API and running it with sample data
+
 1. Open command prompt in web-api/GirafRest
 ![Command Prompt](https://user-images.githubusercontent.com/9339576/206396781-67c4ec1b-8190-4eb5-afeb-98e3e741f295.png)
 2. Type `dotnet-ef database update`
 3. Type `dotnet run --sample-data`
 
 ## Making sure everything works
+
 1. Run the weekplanner application on your emulator
 2. Login using the default credentials
 * Username: `guardian-dev`
@@ -46,6 +51,7 @@ If any of the downloads fail, just click "Try Again"
 If you successfully log in and see output in the Web-API console window, then you are successfully running everything locally
 
 ## Updating the database when changes are made to the Web-API without migrations
+
 1. Drop the `giraf` database in the MySQL server
 ![updatedb1](https://user-images.githubusercontent.com/9339576/205662140-c550d8f7-1015-4e81-b27c-7e22e59677cb.png)
 ![updatedb2](https://user-images.githubusercontent.com/9339576/205662200-39e7f0a7-2ea3-40a1-b6b6-278060d812ea.png)
