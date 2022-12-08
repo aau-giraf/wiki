@@ -3,6 +3,7 @@
 ## Weekplanner
 
 ## Installing the flutter framework
+
 Download the flutter framework from [Flutter](https://flutter.dev/docs/get-started/install). The GIRAF 
 project is guaranteed to work with version 3.3.8.
 
@@ -12,12 +13,14 @@ If you are using Android Studio, IntelliJ or Visual Studio Code, be sure to inst
 dart plugins to get full flutter support.
 
 ## Adding flutter to your path
+
 Adding flutter to your path is highly recommended as it allows you to run flutter commands from 
 any terminal window. How to do this is very dependent on your OS so make sure to check the 
 flutter installation guide on how to do this on your setup if you did not do it already as part of 
 your installation or do the following:
 
-1. In Windows, editing environment variables is quite simple. Open the windows menu or the 
+1. 
+    In Windows, editing environment variables is quite simple. Open the windows menu or the 
 settings menu and search for environment variables.
 
 ![Environment Variables](./images/EnvironmentVariablesWindows.png)
@@ -46,12 +49,14 @@ variable and adding the next value separated by a semi colon.
 Finally, when you reach this point, you create a new path, which has the location of your 
 flutter/bin folder. This now allows you to run flutter commands from any location.
 
-1. On Linux (Ubuntu) there are many ways to edit environment variables. One of the simpler is to 
+1. 
+    On Linux (Ubuntu) there are many ways to edit environment variables. One of the simpler is to 
 open a terminal and edit the file etc→environment with your favorite editor e.g., emacs, nano, 
 vim, etc. e.g., `sudo nano /etc/environment`. Add or edit the variables that you need. There is one 
 variable per line of the form `NAME="value1:value2:value3"`. Save and exit, then reboot your 
 PC for it to work
-1. How to set environment variables on Mac depends on which shell your terminal is using. Open a 
+1. 
+    How to set environment variables on Mac depends on which shell your terminal is using. Open a 
 terminal and type `echo $SHELL` and it will tell you which you are using, typically Bash or Z Shell. 
 Use your favorite text editor to edit the file `$HOME/.bashrc` if you’re using Bash and 
 `$HOME/.zshrc` if you’re using Z shell, e.g. `sudo nano ${HOME}/.zshrc` This file might not 
@@ -62,13 +67,13 @@ Save and exit and reboot your PC.
 NB: If the file did not already exist or did not already contain the PATH environment variable, you 
 need to add it as `PATH="${PATH}:your-new-path”`, to add paths instead of replacing them.
 
-# Verify
+## Verify
 
 You can always verify that your changes work by opening a terminal and typing `echo $var_name`
 e.g., `echo $PATH` or `echo $JAVA_HOME` for Linux and Mac. For Windows using PowerShell, 
 type echo $Env:var_name e.g. `echo $Env:Path`
 
-# Installing a java SDK
+## Installing a java SDK
 
 Android needs a java JDK to compile and run. The weekplanner project currently does not work 
 with java newer than version 11, which can be downloaded [here](https://jdk.java.net/java-se-ri/11), for MacOS, download the Linux version. 
@@ -78,7 +83,7 @@ root directory, i.e. .../jdk-11, and put java in your PATH environment variable,
 
 You might have to restart your PC or IDE to make the new environment variables work.
 
-# Clone the weekplanner repository
+## Clone the weekplanner repository
 
 In Android Studio, choose project from version control and enter the GIRAF weekplanner url: `https://github.com/aau-giraf/weekplanner.git`
 
@@ -89,7 +94,7 @@ NB: Note that you will need to be added to aau-giraf GitHub organization to be a
 
 NB: Android Studio has built-in GitHub support if you link it to your GitHub account.
 
-# Download packages
+## Download packages
 
 Download all necessary packages for the project by running flutter command `flutter pub get` in 
 a terminal window at the project root i.e., `…/weekplanner`
@@ -98,12 +103,12 @@ a terminal window at the project root i.e., `…/weekplanner`
 
 Make sure you have a C# compatible IDE e.g., Microsoft Visual Studio or JetBrains Rider.
 
-# Installing dotnet core
+## Installing dotnet core
 
 The web-api is a dotnet core web app that runs on dotnet core 6.0.x so make sure that you have a 
 compatible version installed. It can be downloaded [here](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 
-# Installing MySQL 
+## Installing MySQL 
 
 The web api runs a local instance of a MySQL server.
 
@@ -120,16 +125,18 @@ NB: If you are not able to restart or turn the server on/off through the MySQL w
 
 ![MySQL 8.0](./images/ServicesMySQL80.png)
 
-- For Linux - Install additional libraries
+- 
+    For Linux - Install additional libraries
 Run the following commands to install additional libraries (might require sudo privileges): `apt install libc6-dev` and `apt install libgdiplus`.
-- For MacOS - Install additional libraries
+- 
+    For MacOS - Install additional libraries
 Run the following commands to install additional libraries (requires sudo privilegess): `/bin/bash -c "(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` and `brew install mono-libgdiplus`
 
-# Clone the web-api repository
+## Clone the web-api repository
 
 In your IDE, create a new repository, in Rider select Get from version control and enter the web-api url: `https://github.com/aau-giraf/web-api.git`
 
-# Establish a query interface to your database
+## Establish a query interface to your database
 
 Many IDE’s support a GUI connection to databases e.g., Visual Studio and Rider.
 
@@ -147,11 +154,15 @@ and schemas.
 
 ## API-Client
 
-1. Make sure you have the flutter framework installed
-1.  Clone the api client repository. In your IDE, create a new repository, in Android Studio choose project from version control and 
+1. 
+    Make sure you have the flutter framework installed
+1.  
+    Clone the api client repository. In your IDE, create a new repository, in Android Studio choose project from version control and 
 enter the api_client url: `https://github.com/aau-giraf/api_client.git`
-1. Run the flutter command `flutter pub get` in a terminal window at the project root.
-1. Set the weekplanner to point at your branch. If you want to test out your changes to the api_client, open weekplanner→pubspec.yaml in the 
+1. 
+    Run the flutter command `flutter pub get` in a terminal window at the project root.
+1. 
+    Set the weekplanner to point at your branch. If you want to test out your changes to the api_client, open weekplanner→pubspec.yaml in the 
 weekplanner, find the api_client entry and change ref from `develop` to your branch e.g. `feature/73`. 
 Then run flutter pub get again in the weekplanner project to update the package. 
 

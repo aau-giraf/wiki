@@ -80,7 +80,7 @@ environment is described below. It can be used by Windows, Mac and Linux users.
 1. [Setup the Android emulator](https://flutter.dev/docs/get-started/install/windows#install-android-studio)
    and run it.
 
-# Do a test run
+## Do a test run
 
 To make sure everything is as it should be, run the command `flutter doctor`in a terminal.
 
@@ -111,7 +111,7 @@ device sdk gphone x86 arm..”. in the Run console, and the app will be launched
 
 - For MacOS using iOS emulator: If you get an error related to pod install, try deleting the file weekplanner→ios→Podfile
 
-# Using the android emulator without Android Studio 
+## Using the android emulator without Android Studio 
 
 We found it especially useful to use other IDE’s than Android Studio while using the emulator 
 outside Android Studio, so here is a guide on how to run the emulator outside Android Studio.
@@ -156,7 +156,8 @@ should open a command prompt at this location.
 You are now ready to run the weekplanner. IDE´s such as Visual Studio Code should 
 automatically recognize that you have an AVD running.
 
-# Random issues we found
+## Random issues we found
+
 This section is for minor issues we found when setting up GIRAF. You might not encounter any 
 of these issues.
 
