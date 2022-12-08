@@ -37,7 +37,9 @@ If any of the downloads fail, just click "Try Again"
 ## Building the database for the Web-API and running it with sample data
 
 1. Open command prompt in web-api/GirafRest
+
 ![Command Prompt](https://user-images.githubusercontent.com/9339576/206396781-67c4ec1b-8190-4eb5-afeb-98e3e741f295.png)
+
 2. Type `dotnet-ef database update`
 3. Type `dotnet run --sample-data`
 
@@ -45,6 +47,7 @@ If any of the downloads fail, just click "Try Again"
 
 1. Run the weekplanner application on your emulator
 2. Login using the default credentials
+
 * Username: `guardian-dev`
 * Password: `password`
 
@@ -53,6 +56,8 @@ If you successfully log in and see output in the Web-API console window, then yo
 ## Updating the database when changes are made to the Web-API without migrations
 
 1. Drop the `giraf` database in the MySQL server
+
 ![updatedb1](https://user-images.githubusercontent.com/9339576/205662140-c550d8f7-1015-4e81-b27c-7e22e59677cb.png)
 ![updatedb2](https://user-images.githubusercontent.com/9339576/205662200-39e7f0a7-2ea3-40a1-b6b6-278060d812ea.png)
+
 2. [Rebuild the database](https://github.com/aau-giraf/.github/blob/main/wiki/setup-guide/local_setup.md#building-the-database-for-the-web-api-and-running-it-with-sample-data)
