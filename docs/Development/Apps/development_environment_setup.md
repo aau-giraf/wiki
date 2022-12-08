@@ -1,12 +1,12 @@
 # Development Environment Setup
 
 Apps in GIRAF are developed using Flutter. The setup of the development
-environment is described below. It can be used by both Mac and Windows users.
+environment is described below. It can be used by Windows, Mac and Linux users.
 
-## Downloading and Installing Flutter
+## Downloading and Installing Flutter 3.3.8
 
 1. Go to [flutter.dev](https://flutter.dev/docs/get-started/install) and select
-   your operating system.
+   your operating system and [3.3.8 version of flutter](https://flutter.dev/docs/development/tools/sdk/releases) which has been tested and is guaranteed to work with the GIRAF project.
     - Make sure you have Git installed.
     - For Mac: Make sure you have the listed command-line tools available.
     - For Linux: Make sure you have the listed command-line tools and shared libraries
@@ -17,15 +17,157 @@ environment is described below. It can be used by both Mac and Windows users.
 ## Android Setup
 
 1. [Download and install Android Studio](https://developer.android.com/studio).
+    - On Windows setting up a virtual device with Android Studio is quite simple: 
+    In Android Studio, click the “Device manager” button in the top right corner.
+
+    ![VirtualDeviceAndroidStudio1](./images/VirtualDeviceAs1.png)
+
+    Create a new device by clicking Add Virtual Device in the bottom right corner of the popup.
+
+    As the GIRAF weekplanner app is supposed to be used on a tablet, it makes the most sense for you to have a tablet virtual device.
+
+    Choose tablet in the category tab and choose any device, e.g., pixel C
+
+    ![VirtualDeviceAndroidStudio2](./images/VirtualDeviceAs2.png)
+
+    Choose an android version to run on your virtual device e.g., android R API level 30.
+
+    After finishing the installation, confirm that your virtual device works. Go to AVD-manager and 
+    click the green arrow in the row of the virtual device you want to start.
+    
+    ![VirtualDeviceAndroidStudio2](./images/VirtualDeviceAs3.png)
+
+    - On Mac Install android-sdk `brew install android-sdk`
+    To ease the use of Android please add the following to your environment variables: 
+    A new variable called ANDROID_HOME, which should point to your Android installation directory (It will probably be located at "~/Library/Android/sdk)
+    and a new path to your PATH variable, which should point to the sdk/platform-tools and sdk/cmdline-tools/latest/bin folder of your Android installation. 
+    Install [dotnet 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0), if not done automatically then add the .dotnet/tools to your PATH.
+    Install additional libraries. Use the following commands to install needed libraries for dotnet:
+    `/bin/bash -c "(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` and `brew install mono-libgdiplus`
+    Install [MySQL Server 8.0](https://dev.mysql.com/downloads/mysql/) or run this command: `brew install mysql`
+    When installing/setting up set the root user's password to password.
+    Install android system image and tools:
+
+    For x86-64 macs: `sdkmanager "platform-tools" "platforms;android-33" “emulator” “extras;google;auto” “system-images;android-33;google_apis;x86_64” “system-images;android-33;google_apis_playstore;x86_64”`
+
+    For ARM macs: `sdkmanager "platform-tools" "platforms;android-33" “emulator” “extras;google;auto” “system-images;android-33;google_apis;arm64-v8a” “system-images;android-33;google_apis_playstore;arm64-v8a”`
+
+    Create virtual device (Pixel C with device id 27, which is a tablet):
+
+    For x86-64 macs: `avdmanager create avd -n pixel_c -k “system-images;android-33;google_apis;x86_64” -d 27`
+
+    For ARM macs: `avdmanager create avd -n pixel_c -k “system-images;android-33;google_apis; arm64-v8a” -d 27`
+
+    Set the available RAM for the virtual device to 2GB `emulator -avd pixel_c -partition-size 2048 -wipe-data`
+
+    Use the keyboard to type instead of the emulated touchscreen
+
+    Navigate to /Users/you/.android/avd/pixel_c.avd
+
+    Use a text editor to edit “config.ini”
+
+    Find the line that says `hw.keyboard=no`
+    
+    Change it to `hw.keyboard=yes`
+
+    - On Ubuntu there was a problem with the newest version of Android Studio throwing weird Java 
+    errors when you would try to build. It worked with version 4.0.2. You can download any version 
+    from their [Android Studio Archive](https://developer.android.com/studio/archive).
+
 1. If you have an Android device, [enable USB debugging](https://developer.android.com/studio/debug/dev-options)
    and plug it in to your computer.
     - For Windows: You might need to install the [Google USB Driver](https://developer.android.com/studio/run/win-usb).
 1. [Setup the Android emulator](https://flutter.dev/docs/get-started/install/windows#install-android-studio)
    and run it.
-1. Run `flutter devices` and check that the emulator and, if applicable, the Android
-   device is listed.
-    - If not, try running `flutter doctor` to see if there are problems with the
-      Android toolchain.
+
+## Do a test run
+
+To make sure everything is as it should be, run the command `flutter doctor`in a terminal.
+
+The first time you do this, it should give a warning at the Android tool-chain step that you need 
+to accept android licenses. Do this by running the command `flutter doctor --android-licenses`.
+
+If you get any errors, go to File→Settings
+
+![TestRun1](./images/Testrun1.png)
+
+Now direct to Appearance & Behaviour→System Settings→Android SDK, then go to the SDK-tools 
+tab.
+
+![TestRun2](./images/Testrun2.png)
+
+Here make sure that you have the newest versions of at least Android SDK buildtools, Android 
+Emulator, Android SDK platform tools, Intel x86 emulator accelerator and Andorid SDK 
+Command-line Tools.
+
+When flutter doctor is happy, launch your android or iOS virtual device. It should now show up 
+in flutter devices. Select it and click Run (the green arrow right of flutter devices)
+
+![TestRun3](./images/Testrun3.png)
+
+The GIRAF weekplanner app should then start compiling, this may take several minutes, and even 
+longer the first time. When it is done, it should print something along the lines of “Syncing files to 
+device sdk gphone x86 arm..”. in the Run console, and the app will be launched in your emulator.
+
+- For MacOS using iOS emulator: If you get an error related to pod install, try deleting the file weekplanner→ios→Podfile
+
+## Using the android emulator without Android Studio 
+
+We found it especially useful to use other IDE’s than Android Studio while using the emulator 
+outside Android Studio, so here is a guide on how to run the emulator outside Android Studio.
+
+- Windows: First of all, search for `%appdata%` in the search bar and open the appdata folder.
+
+![EmulatorWithoutAndroidStudio1](./images/WithoutAndroidS1.png)
+
+Now exit the `“Roaming”` folder and enter the `“AppData”` folder
+
+![EmulatorWithoutAndroidStudio2](./images/WithoutAndroidS2.png)
+
+Once you are in this folder, locate to `“\Local\Android\Sdk\tools”`.
+
+![EmulatorWithoutAndroidStudio3](./images/WithoutAndroidS3.png)
+
+![EmulatorWithoutAndroidStudio4](./images/WithoutAndroidS4.png)
+
+![EmulatorWithoutAndroidStudio5](./images/WithoutAndroidS5.png)
+
+![EmulatorWithoutAndroidStudio6](./images/WithoutAndroidS6.png)
+
+Now once you have made your way to this folder, go into the directory and type `“cmd”`. This 
+should open a command prompt at this location.
+
+![EmulatorWithoutAndroidStudio7](./images/WithoutAndroidS7.png)
+
+![EmulatorWithoutAndroidStudio8](./images/WithoutAndroidS8.png)
+
+![EmulatorWithoutAndroidStudio9](./images/WithoutAndroidS9.png)
+
+ you have the command prompt open at the specified location, type in `“emulator -list-avds”`. This should return a list with the name of the AVD you have created.
+
+ After this, run the command `“emulator -avd <YOUR_AVD_NAME>”`.
+
+![EmulatorWithoutAndroidStudio10](./images/WithoutAndroidS10.png)
+
+ This should launch your virtual device.
+
+![EmulatorWithoutAndroidStudio11](./images/WithoutAndroidS11.png)
+
+You are now ready to run the weekplanner. IDE´s such as Visual Studio Code should 
+automatically recognize that you have an AVD running.
+
+## Random issues we found
+
+This section is for minor issues we found when setting up GIRAF. You might not encounter any 
+of these issues.
+
+- Using GitHub to open command prompt and run flutter: We found out that opening your command prompt via. the option on GitHub, causes your flutter commands to not be recognized. 
+
+![RandomIssues1](./images/RIssues1.png)
+
+However, this problem can be fixed by either restarting your computer to allow your user path 
+variables to take effect or simply locating the weekplanner folder manually and then typing 
+`“cmd”` in the directory.
 
 ## iOS and iPadOS Setup - MAC ONLY
 
