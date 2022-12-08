@@ -8,3 +8,8 @@
 - In the web-api repository locate: `…/<app_repository>/GirafRest/appsettings.Development.json` file line 3 change the `"DefaultConnection": "server=192.38.56.153;port=3306;userid=root;password=Giraf123;database=giraf;Allow User Variables=True"` which could look different, to: `"DefaultConnection": "server=localhost;port=3306;userid=root;password=<password to your local database>;database=giraf;Allow User Variables=True"`
 - Now: Simply run the app from your desired editor (Android Studio is recommended).
 - If you are having problems with connecting to the database while being certain that the database is online and you are using either Android Studio or IntelliJ, try deleting the `build` folder created by the IDE in the weekplanner and rebuild it. This should make sure that correct `environments.json` file is read.
+
+Then when you launch the weekplanner app it should connect to your local web-api. Thus, the 
+web-api needs to be running locally
+
+NB: This change should ALWAYS remain a local change and should NEVER be pushed to GitHub.

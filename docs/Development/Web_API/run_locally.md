@@ -41,7 +41,13 @@ This section describes how the Web API is setup on a developer's local machine.
        tool `dotnet-ef` installed 
     1. Run `dotnet restore`
     1. Run `dotnet ef database update`        
-    1. Run `dotnet run --sample-data`         
+    1. Run `dotnet run --sample-data`   
+
+If you get any errors when running these commands, verify that you have dotnet core 6.0.x SDK 
+installed and in your path, and that your MySQL server is running at localhost:3306
+
+NB: Note that in some cases, you might need to set the environment variable
+`”DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1”`
 
 `dotnet run` can be run with the following parameters in the Web API:
 
