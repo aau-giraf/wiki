@@ -41,7 +41,7 @@ List over all the different steps for creating a iOS release:
 The first thing that needs to be done is that in the weekplanner repository find the ios folder and open that in Xcode, 
 then select the Runner target then under the **Signing & Capabilities** tab add the Apple Developer Account 
 in the **Teams** section. Also under the **Signing & Capabilities** tab set the **Automatically manage signing** 
-to true, this makes it esiaer to create the IPA file. Lastly check/update what the minimum requirements are for running 
+to true, this makes it easier to create the IPA file. Lastly check/update what the minimum requirements are for running 
 the app, e.g., the iOS version.
 
 ### Run flutter build ipa
