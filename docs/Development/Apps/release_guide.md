@@ -1,4 +1,4 @@
-# Flutter Release of Giraf
+# Manual Release of Giraf
 
 When you have to make a release of Giraf then the `pubspec.yaml` file must be updated so when building it the bundle gets the correct version number. This means that you have to find the key-word version and update it e.g. `version: 1.2.2` to `version: 1.3.0`. It is also possible to add a suffix if it is a new build (`+1`, `+hotfix `) or a pre-release (`-beta.2`, `-rc.1`) if it should be necessary.
 
