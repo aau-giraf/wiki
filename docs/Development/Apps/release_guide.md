@@ -1,28 +1,30 @@
 # Flutter Release of Giraf
-
 When you have to make a release of Giraf then the `pubspec.yaml` file must be updated so when building it the bundle 
 gets the correct version number. This means that you have to find the key-word version and update it e.g. 
 `version: 1.2.2` to `version: 1.3.0`. It is also possible to add a suffix if it is a new build (`+1`, `+hotfix `) 
 or a pre-release (`-beta.2`, `-rc.1`) if it should be necessary.
 
+In the `main.dart` file the environment should be changed to `assets/environments.prod.json`, and the `giraf-prod` 
+database should be made up-to-date and have at least one working Guardian, Trustee, and Citizen login.
+
+
 If you are unsure what version number your release should have, you can take a look at this page:
-https://semver.org it is also available in danish https://semver.org/lang/da/
+[https://semver.org](https://semver.org) it is also available in danish [https://semver.org/lang/da/](https://semver.org/lang/da/)
 
 You need to get access to the Giraf project's keepass so that you can use the Apple Developer Account that is on there 
 and also the Android account. It is also possible to add your own personal Apple Developer Account to the Girafs Venner 
 Team.
 
 ## Android Release
+Here is the official flutter guide to release on Android: [https://docs.flutter.dev/deployment/android](https://docs.flutter.dev/deployment/android)
 
-Here is the official flutter guide to release on Android: https://docs.flutter.dev/deployment/android
+To build an Android App Bundle, the password for the Keystore has to be added to the `android/local.properties` file by adding `giraf.keystore_password=<password_here>` to the file.
+The command `flutter build appbundle` is run to generate the Android App Bundle file, which is then uploaded to Google Play Console [https://play.google.com/console/]((https://play.google.com/console/)).
 
 ## iOS Release
+Here is the official flutter guide to release on iOS: [https://docs.flutter.dev/deployment/ios](https://docs.flutter.dev/deployment/ios)
 
-Here is the official flutter guide to release on iOS: https://docs.flutter.dev/deployment/ios
-
-Preliminary requirements for creating a build and release a flutter app for iOS is that you need Xcode which means that 
-you must do it on a Mac computer. Remember to have an Apple Developer Account that is connected to the Girafs Venner 
-Team.
+Preliminary requirements for creating a build and release a flutter app for iOS is that you need Xcode which means that you must do it on a Mac computer. Remember to have an Apple Developer Account that is connected to the Girafs Venner Team.
 
 List over all the different steps for creating a iOS release:
 
@@ -55,9 +57,9 @@ If you have not done it already then go to App Store and download **Transporter*
 file from **weekplanner/build/ios/ipa** and drop it in to the transporter app and wait until it is ready and then click 
 deliver. Then the IPA file will be transferred to App Store Connect.
 
-### Update App Store Connect
+#### Update App Store Connect
+Go to [https://appstoreconnect.apple.com](https://appstoreconnect.apple.com) and log in with your Apple Developer Account.
 
-First of go to https://appstoreconnect.apple.com and log in with your Apple Developer Account.
 
 You might not need to update this, but we had to so check that the gdpr is up-to-date and the same for then it comes to 
 what types of encryption has been used. When making the build ready for review check that under the 
