@@ -15,6 +15,10 @@ develop environment can be found [here](development_environment_setup.md).
 
 Guidelines for different implementations in the GIRAF apps can be found [here](./Guidelines/index.md)   
 
+## Flutter Release of Giraf
+
+Guide for making a Release on both Apple App Store and Google Play Store [here](./release_guide.md)
+
 ## Testing
 
 A description on how to do unit testing in the apps can be found [here](test.md).
