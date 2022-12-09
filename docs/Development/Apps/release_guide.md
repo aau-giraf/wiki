@@ -46,7 +46,7 @@ Open a terminal under the weekplanner repository and run the command `flutter bu
 
 If you have not done it already then go to App Store and download **Transporter**. Open transporter and drag the ipa file from **weekplanner/build/ios/ipa** and drop it in to the transporter app and wait until it is ready and then click deliver. Then the IPA file will be transferred to App Store Connect.
 
-#### Update App Store Connect
+### Update App Store Connect
 
 Go to [https://appstoreconnect.apple.com](https://appstoreconnect.apple.com) and log in with your Apple Developer Account.
 
