@@ -5,3 +5,4 @@ arrange:
     - "ownership_transfer.md"
     - "development.md"
     - "setup.md"
+    - "local_setup.md"
