@@ -16,7 +16,7 @@ Here is the official flutter guide to release on Android: https://docs.flutter.d
 ## iOS Release
 Here is the official flutter guide to release on iOS: https://docs.flutter.dev/deployment/ios
 
-Priliminary requirements for creating a build and release a flutter app for iOS is that you need Xcode which means that 
+Preliminary requirements for creating a build and release a flutter app for iOS is that you need Xcode which means that 
 you must do it on a Mac computer. Remember to have an Apple Developer Account that is connected to the Girafs Venner 
 Team.
 
@@ -40,7 +40,7 @@ the app, e.g., the iOS version.
 
 #### Run flutter build ipa
 Open a terminal under the weekplanner repository and run the command `flutter build ipa` and then fix the possible 
-errors or warnings. The command will create an IPA file if it passes with no exceptions. Now proseed to the next step.
+errors or warnings. The command will create an IPA file if it passes with no exceptions. Now proceed to the next step.
 
 #### Drag and drop the ipa file in Transporter and click deliver
 If you have not done it already then go to App Store and download **Transporter**. Open transporter and drag the ipa 
@@ -50,5 +50,5 @@ deliver. Then the IPA file will be transferred to App Store Connect.
 #### Update App Store Connect
 First of go to https://appstoreconnect.apple.com and log in with your Apple Developer Account.
 
-You might not need to update this, but we had to so check that the gdpr is up to date and the same for then it comes to 
+You might not need to update this, but we had to so check that the gdpr is up-to-date and the same for then it comes to 
 what types of encryption has been used.
