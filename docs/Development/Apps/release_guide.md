@@ -1,4 +1,5 @@
 # Flutter Release of Giraf
+
 When you have to make a release of Giraf then the `pubspec.yaml` file must be updated so when building it the bundle 
 gets the correct version number. This means that you have to find the key-word version and update it e.g. 
 `version: 1.2.2` to `version: 1.3.0`. It is also possible to add a suffix if it is a new build (`+1`, `+hotfix `) 
@@ -16,12 +17,14 @@ and also the Android account. It is also possible to add your own personal Apple
 Team.
 
 ## Android Release
+
 Here is the official flutter guide to release on Android: [https://docs.flutter.dev/deployment/android](https://docs.flutter.dev/deployment/android)
 
 To build an Android App Bundle, the password for the Keystore has to be added to the `android/local.properties` file by adding `giraf.keystore_password=<password_here>` to the file.
 The command `flutter build appbundle` is run to generate the Android App Bundle file, which is then uploaded to Google Play Console [https://play.google.com/console/]((https://play.google.com/console/)).
 
 ## iOS Release
+
 Here is the official flutter guide to release on iOS: [https://docs.flutter.dev/deployment/ios](https://docs.flutter.dev/deployment/ios)
 
 Preliminary requirements for creating a build and release a flutter app for iOS is that you need Xcode which means that you must do it on a Mac computer. Remember to have an Apple Developer Account that is connected to the Girafs Venner Team.
@@ -58,6 +61,7 @@ file from **weekplanner/build/ios/ipa** and drop it in to the transporter app an
 deliver. Then the IPA file will be transferred to App Store Connect.
 
 #### Update App Store Connect
+
 Go to [https://appstoreconnect.apple.com](https://appstoreconnect.apple.com) and log in with your Apple Developer Account.
 
 
