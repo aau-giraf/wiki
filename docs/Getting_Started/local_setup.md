@@ -1,4 +1,4 @@
-# How to setup a local development environment for GIRAF
+# How to setup a local development environment for GIRAF (Windows 10)
 
 ## Installing MySQL
 
@@ -24,6 +24,9 @@ If any of the downloads fail, just click "Try Again"
 
 ## Starting the MySQL server
 
+1. Start the MySQL80 service
+
+"Tjenester" = "Services" in English
 ![tjenester1](https://user-images.githubusercontent.com/9339576/205654164-d6e0fe7a-e2f7-41e4-8248-3fed82e3b87b.png)
 ![tjenester2](https://user-images.githubusercontent.com/9339576/205654211-6cee68a5-2ac0-4a9c-854f-fc641f61f132.png)
 
@@ -54,6 +57,17 @@ If any of the downloads fail, just click "Try Again"
 If you successfully log in and see output in the Web-API console window, then you are successfully running everything locally
 
 ## Updating the database when changes are made to the Web-API without migrations
+
+### Method 1
+
+1. Open command prompt in web-api/GirafRest
+
+![Command Prompt](https://user-images.githubusercontent.com/9339576/206396781-67c4ec1b-8190-4eb5-afeb-98e3e741f295.png)
+
+2. Type `dotnet-ef database drop`
+3. [Rebuild the database](https://github.com/aau-giraf/.github/blob/main/wiki/setup-guide/local_setup.md#building-the-database-for-the-web-api-and-running-it-with-sample-data)
+
+### Method 2
 
 1. Drop the `giraf` database in the MySQL server
 
