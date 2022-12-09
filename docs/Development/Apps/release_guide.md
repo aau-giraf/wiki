@@ -65,4 +65,5 @@ You might not need to update this, but we had to so check that the gdpr is up-to
 what types of encryption has been used. When making the build ready for review check that under the 
 **Sign-In Information** that the user is still active in the online database. Because if this is not up-to-date then the
 review will not be approved by Apple. Lastly make sure to add some text under **What's New in This Version** so that it 
-is documented what has been added in this version, if it is like new features, bug-fixes, or something else.
+is documented what has been added in this version, if it is like new features, bug-fixes, or something else. Then the 
+Release should be ready for review and passable so that it can get on App Store.
