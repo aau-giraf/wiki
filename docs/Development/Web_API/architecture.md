@@ -12,7 +12,7 @@ the component that is pointed to. The dashed line from Entity Framework to the
 database indicates that Entity Framework is responsible for executing queries on
 the database.
 
-As illustrated in the figure, there are eight controllers in the web API which are
+As illustrated in the figure, there are 10 controllers in the web API which are
 responsible for handling all requests to the API. The controller uses the DTOs to
 define the JSON structure for the objects in the HTTP message body, which in turn
 are a subset of the ``Model`` classes. To extract information from the database
