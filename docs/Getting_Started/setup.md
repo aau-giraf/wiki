@@ -2,7 +2,7 @@
 
 ## Word or PDF Guide
 
-Here are to hyperlinks for the guide in either [Word](./guides/GIRAF_Getting_Started_2022.docx) or [PDF](./guides/GIRAF_Getting_Started_2022.pdf) format.
+Here are two hyperlinks leading to the same guide for setting up the following repositories: Weekplanner, API-Client and Web-API. [Word](./guides/GIRAF_Getting_Started_2022.docx) or [PDF](./guides/GIRAF_Getting_Started_2022.pdf) format.
 
 ## Weekplanner
 
