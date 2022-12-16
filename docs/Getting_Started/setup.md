@@ -1,5 +1,9 @@
 # Setup
 
+## Word or PDF Guide
+
+Here are to hyperlinks for the guide in either [Word](./guides/GIRAF_Getting_Started_2022.docx) or [PDF](./guides/GIRAF_Getting_Started_2022.pdf) format.
+
 ## Weekplanner
 
 ## Installing the flutter framework
