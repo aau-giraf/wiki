@@ -211,7 +211,7 @@ Ensure that you cloned the web-API repoitory from this section [Clone the web-AP
 
 In your terminal navigate to the cloned web-API folder on your local machine. 
 
-In the terminal you can not run one of 2 commands:
+In the terminal you can run one of 2 commands:
 
 1. `docker compose up`
 2. `docker compose up -d`
