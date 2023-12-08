@@ -7,7 +7,7 @@ the application. A list of these classes can be found below.
 |:----------|:-----|
 |```AccessLevel``` | Used to define access level for pictograms. It has three values, PUBLIC for pictograms that are accessible to all users, PROTECTED for pictograms that are only accessible to users in a given department and PRIVATE for pictograms that are accessible only for a given user. |
 | ```Department``` | Used to define a department containing users and additional resources the users can access.|
-|```GirafRole``` | Used to specify a role, contains role/policy string definitions for authorization. Currently (either) ```Citizen```, ```Guardian```, ```Department``` and ```SuperUser```.|
+|```GirafRole``` | Used to specify a role, contains role/policy string definitions for authorization. Currently (either) ```Citizen```, ```Guardian```, ```Trustee```, ```Department``` and ```SuperUser```.|
 | ```GirafUser``` | Used to define relevant data for a user.|
 |```Pictogram``` | Used for storing the image of a pictogram as well as meta-information such as its name.|
 | ```Setting``` | Used to specify the settings particular to a user. This includes number of days shown at a time, and the colour theme. |
