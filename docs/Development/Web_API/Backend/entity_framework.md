@@ -1,6 +1,6 @@
-# Entity Framework
+# Entity Framework Core
 
-The Entity Framework is a database framework for .NET.
+EF Core (Entity Framework Core) is a database framework for .NET.
 It allows using LINQ (Language Integrated Query) statements to query the database,
 adding a layer of abstraction from the SQL queries to the database.
 
@@ -24,9 +24,9 @@ LIMIT 1;
 
 ## Includes
 
-When EF fetches data for you in the database, it is always as lazy as possible and
+When EF Core fetches data for you in the database, it is always as lazy as possible and
 will not include related data per default. If we consider the same ```User```-class
-example as presented before, EF will not load the user's department when only queried
+example as presented before, EF Core will not load the user's department when only queried
 for a user, and the field will thus be null. In order to cause EF to load the data,
 you must use an ```Include``` on the LINQ. In this case we would have to write:
 
@@ -38,12 +38,12 @@ In order to find the user with id 1 and his department.
 
 ## Object Relational Mapping
 
-In order to define model-classes EF uses Object Relational Mapping (ORM). Entity
+In order to define model-classes EF Core uses Object Relational Mapping (ORM). Entity
 has a set of data annotations, that allows you to define constraints and database
 relevant information about each property on the model-classes. The model-classes
 of the current system only uses this sparsely and thus the guide will not be as
 in-depth as you might have desired. In order to find more information on ORM, please
-visit MSDN's [Entity Framework Code First Data Annotations](https://docs.microsoft.com/en-us/ef/ef6/modeling/code-first/data-annotations))
+visit the subsections of MSDN's ([Creating a Model Overview](https://learn.microsoft.com/en-us/ef/core/modeling/))
 
 In order to create a simple, but sufficient model-class, you may use the ```[Key]```
 and ```[ForeignKey]``` annotations along with the ```[DatabaseGenerated]```-attribute
