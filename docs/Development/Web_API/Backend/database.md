@@ -13,7 +13,7 @@ If changes has been made to the model classes of the web-api then a new migratio
 should be added to be able to update the database with new entities without losing
 data:
 
-- In a shell, navigate to: `.../web-api/GirafRest`
+- In a shell, navigate to: `.../web-api/GirafAPI`
 - `dotnet ef migrations add NameOfMigrationDescribingTheChange`
 - `dotnet ef database update`
 - If an exception is thrown then adjust the migration Up method in the file
@@ -43,9 +43,9 @@ ASP.NET Core does not support many-to-many relations at the current release (v. 
 however a workaround was developed to obtain the same results. The workaround is
 inspired by a similar approach shown in the DBS course.
 
-The relations created can be found in the folder ```Many-to-Many Relationships```,
-where each relation has a name showing what the relation maps. An example is the
-relation called ```DepartmentResource``` that maps between departments and resources.
+The relations created can be found in the GirafEntities project. An example is the
+relation called ```DepartmentResource``` in the user folder, that maps between departments and resources.
+Many-to-Many relations in the Entity project have a suffix with either Resource or Relation.
 The relations are built in the ```GirafDbContext```, but an example of creating
 such a relation is shown below:
 
