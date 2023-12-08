@@ -79,7 +79,7 @@ being used in a request" src="../../images/jwt_api.png">
 </div>
 
 | API Key Flow | JWT Flow |
-|-|-|
+|---|---|
 | **Login Request** | |
 | (not necessary for a classic API key) | 1. Login request is made by the client |
 | | 2. The Server retrieves the users permissions from the database|
