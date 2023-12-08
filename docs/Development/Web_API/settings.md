@@ -3,15 +3,10 @@
 The backend must have a [configuration enviroment](https://docs.microsoft.com/da-dk/aspnet/core/fundamentals/configuration/index?view=aspnetcore-2.2)
 set up in order to be able to run.
 
-Before building, you must copy ```⋯/GirafRest/appsettings.template.json```
-to ```⋯/GirafRest/appsettings.Development.json``` and fill in the ```<>```s.
-
 ## Connection String
 
 A [ConnectionString](https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-strings)
 is needed, which tells Entity Core Framework how to connect to a database.
-In this example the ConnectionString connects to a the giraf-dev database, which
-is the development database. In contrast, giraf-prod should be used for production.
 
 It must be on the form:
 
@@ -25,8 +20,8 @@ Fill in the following:
 
 | Field | Description | Default |
 |:---|:---|:---|
-| ```<db-host>``` | DB server's address. Set this to localhost | |
-| ```<db-port>``` | The port to use for communication with the server. | 3306, unless you specified otherwise during installation. |
+| ```<db-host>``` | DB server's address. Set this to localhost for local development | |
+| ```<db-port>``` | The port to use for communication with the server. | 3306, unless you specified otherwise during installation or in your Docker container. |
 | ```<db-user>``` | Name of the DB server's root user, or another user with the right privileges. | |
 | ```<db-password>``` | Password of same. | |
 | ```<db-db>``` | Name of the schema that will be created. Set this to giraf if you have no reason to do otherwise.| |
