@@ -79,13 +79,13 @@ being used in a request" src="../../images/jwt_api.png">
 </div>
 
 | API Key Flow | JWT Flow |
-|-|-|
-| **Login Request** |
+|---|---|
+| **Login Request** | |
 | (not necessary for a classic API key) | 1. Login request is made by the client |
 | | 2. The Server retrieves the users permissions from the database|
 | | 3. The Server generates a JSON object containing the users permissions signs it and serializes it|
-| | 4. The client receives the token
-| **General Requests** |
+| | 4. The client receives the token |
+| **General Requests** | |
 | 1. The client makes a request, supplying the key in its header | 1. The client makes a request, supplying the JWT in the header |
 | 2. The server looks up the key in the database and checks the permissions| 2. The server performs the request |
 | 3. The server performs the requested action | 3. The client receives the response |
