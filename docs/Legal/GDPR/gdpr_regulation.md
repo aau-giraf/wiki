@@ -39,25 +39,25 @@ is categorised as personal information.
 GDPR deals with two types of personal information, ordinary and sensitive.
 Treatment of sensitive data is more limited in terms of the law.
 
-Ordinary personal information | Sensitive personal information
---- | ---
-Name | Race and ethnicity
-Address | Political  beliefs
-Identification number | Religious or philosophical beliefs
-Location data | Union membership
-Online identification | Genetic data
-Economic | Biometric data for identification of a person
-Taxes | Health information
-Debt | Sexual relationship and sexual orientation
-Social issues |
-Sick days |
-Family |
-Home |
-Car |
-Exam |
-Application |
-CV |
-Work |
+|Ordinary personal information | Sensitive personal information |
+|--- | --- |
+|Name | Race and ethnicity|
+|Address | Political  beliefs|
+|Identification number | Religious or philosophical beliefs|
+|Location data | Union membership|
+|Online identification | Genetic data|
+|Economic | Biometric data for identification of a person|
+|Taxes | Health information|
+|Debt | Sexual relationship and sexual orientation|
+|Social issues | |
+|Sick days | |
+|Family | |
+|Home | |
+|Car | |
+|Exam | |
+|Application | |
+|CV | |
+|Work | |
 
 ### The essential principles 
 
