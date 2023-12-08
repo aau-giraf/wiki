@@ -126,13 +126,13 @@ NB: Do not push this change to pubspec unless you know what you are doing, and m
 change it back to develop before merging.
 
 
-# Web-API Setup
+## Web-API Setup
 
 Make sure you have a C# compatible IDE e.g., Microsoft Visual Studio or JetBrains Rider. However, if you do not need to develop on the web-API, and are only interested in running the web-API this can be done following this Section [Running the web-Api](#running-the-web-api-with-docker).
 Otherwise, follow the guide.
 
 
-## Local Development
+### Local Development
 
 For local development of the web-API there exists two solutions using a local instance of MySQL, or using the Docker application. 
 
@@ -140,17 +140,17 @@ The first solution is following the guide installing .NET Core and installing My
 
 The other solution is installing .NET Core, and then use the Docker applications mysql container as the database, in this way you **do not** have to install MySQL, only Docker.
 
-### Clone the web-api repository
+#### Clone the web-api repository
 
 In your IDE, create a new repository, in Rider select Get from version control and enter the web-api url: `https://github.com/aau-giraf/web-api.git`
 
-### Installing dotnet core
+#### Installing dotnet core
 
 The web-api is a dotnet core web app that runs on dotnet core 8.0.x so make sure that you have a 
 compatible version installed. It can be downloaded [here](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 
 
-### Installing MySQL (Optional) 
+#### Installing MySQL (Optional) 
 
 The web api runs a local instance of a MySQL server.
 
@@ -168,7 +168,7 @@ NB: If you are not able to restart or turn the server on/off through the MySQL w
 ![MySQL 8.0](./images/ServicesMySQL80.png)
 
 
-#### Establish a query interface to your database
+##### Establish a query interface to your database
 
 Many IDE’s support a GUI connection to databases e.g., Visual Studio and Rider.
 
@@ -184,7 +184,7 @@ Select the database tab, add an instance, and select MySQL. Use the connection s
 This should establish a connection to your database that allows you to manually edit the tables 
 and schemas.
 
-### Local Development with Docker(Optional)
+#### Local Development with Docker(Optional)
 
 First follow the steps in [Running the web-API with Docker](#running-the-web-api-with-docker).
 
@@ -203,7 +203,7 @@ Another approach would be to change the launchsettings, specifically the ASPNETC
 
 Now you should be able to develop in your IDE, run the API directly in the IDE, and utilize the Docker MySQL container. 
 
-## Running the web-API with Docker
+### Running the web-API with Docker
 
 Start by downloading the Docker, this can be either the Docker Engine itself (this requires more knowledge of Docker), or the easier alternative Docker Desktop (Linux, MacOS and Windows) [Download Docker Desktop](https://www.docker.com/get-started/).
 
@@ -223,9 +223,9 @@ Open Docker Desktop and confirm the application is running:
 
 You are now able to use the API, which is located on http://localhost:5000.
 
-## Trouble shooting
+### Trouble shooting
 
-### Database migration
+#### Database migration
 
 A common issue could be the database schema not migrating, if this is an issue you can do it manually like this:
 
@@ -235,7 +235,7 @@ A common issue could be the database schema not migrating, if this is an issue y
 - Run dotnet ef database update
 - Run dotnet run --sample-data
 
-### Using Swagger
+#### Using Swagger
 
 Using Swagger to test endpoints
 
