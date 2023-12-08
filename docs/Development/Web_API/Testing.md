@@ -1,4 +1,4 @@
-# Unit Testing
+# Testing
 
 Unit testing gives a higher chance for the code to behave as intended along with
 ensuring that no regressions occur when further developing the code.
