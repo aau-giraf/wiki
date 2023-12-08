@@ -133,6 +133,7 @@ Otherwise, follow the guide.
 
 
 ## Local Development
+
 For local development of the web-API there exists two solutions using a local instance of MySQL, or using the Docker application. 
 
 The first solution is following the guide installing .NET Core and installing MySQL
@@ -225,6 +226,7 @@ You are now able to use the API, which is located on http://localhost:5000.
 ## Trouble shooting
 
 ### Database migration
+
 A common issue could be the database schema not migrating, if this is an issue you can do it manually like this:
 
 - Open a terminal and navigate to the … `web-api\GirafAPI` folder.
@@ -234,7 +236,9 @@ A common issue could be the database schema not migrating, if this is an issue y
 - Run dotnet run --sample-data
 
 ### Using Swagger
+
 Using Swagger to test endpoints
+
 - Make an Account/Login request with valid login-info (username: Tobias, password: password)
 - Copy the data field containing the token.
 - Click on the green Authorize button (Or the padlocks).
