@@ -12,7 +12,7 @@ should be identical to the default button when a button is disabled, however thi
 button should have an opacity of 40%.
 
 | ![ButtonDefault](images/ButtonDefault.png) | ![ButtonPressed](images/ButtonPressed.png "ButtonPressed") | ![ButtonDisabled](images/ButtonDisabled.png "ButtonDisabled") |
-|:--:| :--: | :--: |
+| :-- | :-- | :-- |
 | *Default button* | *Pressed button* | *Disabled button* |
 
 A widget called GirafButton has been created in the weekplanner repo which should
