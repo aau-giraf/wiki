@@ -193,7 +193,7 @@ Next shutdown the web-api container within the application, in docker desktop th
 Shown here:
 ![stop container](./images/stopAPI.png)
 
-After doing that they api show have stopped and you should have the following:
+After doing that they api should have stopped and you should see the following:
 
 ![docker ready](./images/readyAPI.png)
 
@@ -207,7 +207,7 @@ Now you should be able to develop in your IDE, run the API directly in the IDE, 
 
 Start by downloading the Docker, this can be either the Docker Engine itself (this requires more knowledge of Docker), or the easier alternative Docker Desktop (Linux, MacOS and Windows) [Download Docker Desktop](https://www.docker.com/get-started/).
 
-Ensure that you cloned the web-API repoitory from this section [Clone the web-API](#clone-the-web-api-repository).
+Ensure that you cloned the web-API repository from this section [Clone the web-API](#clone-the-web-api-repository).
 
 In your terminal navigate to the cloned web-API folder on your local machine. 
 
