@@ -197,7 +197,7 @@ After doing that they api should have stopped and you should see the following:
 
 ![docker ready](./images/readyAPI.png)
 
-Last step is to open your IDE, locate the `LocalDocker.AppSettings.json` file in the GirafAPI project. Copy the connection string and paste it into the `Development.AppSettings.json` connection string. 
+Last step is to open your IDE, locate the `LocalDocker.AppSettings.json` file in the GirafAPI project. Copy the connection string and paste it into the `Development.AppSettings.json` connection string, **if you copy the connection string** make sure to change the server to localhost, and change the port to 5100. 
 
 Another approach would be to change the launchsettings, specifically the ASPNETCORE_ENVIRONMENT to `LocalDocker`
 
