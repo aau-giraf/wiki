@@ -4,7 +4,7 @@ This section explains the architecture of the Web API.
 
 ## Code Base
 
-![APIStructure](images/api_structure.png "API Structure")
+![APIStructure](images/GirafEntities.svg "API Structure")
 
 This figure gives a general overview of the API structure.
 In the illustration an arrow indicate that a component pointed by is dependent of
