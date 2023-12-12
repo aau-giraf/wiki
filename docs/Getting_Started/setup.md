@@ -103,59 +103,6 @@ NB: Android Studio has built-in GitHub support if you link it to your GitHub acc
 Download all necessary packages for the project by running flutter command `flutter pub get` in 
 a terminal window at the project root i.e., `…/weekplanner`
 
-## Web-API
-
-Make sure you have a C# compatible IDE e.g., Microsoft Visual Studio or JetBrains Rider.
-
-## Installing dotnet core
-
-The web-api is a dotnet core web app that runs on dotnet core 6.0.x so make sure that you have a 
-compatible version installed. It can be downloaded [here](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
-
-## Installing MySQL 
-
-The web api runs a local instance of a MySQL server.
-
-Install [MySQL server 8.0](https://dev.mysql.com/downloads/mysql/). MySQL workbench 
-and MySQL shell are useful but optional. 
-
-During the setup, make sure to give the root user a password you can remember e.g., ”password” 
-as this is only a development instance. Additionally, create a user with username “user” and 
-password ”password” that have administrative rights.
-
-NB: Make sure that your MySQL server is running (this is where MySQL workbench is useful)
-
-NB: If you are not able to restart or turn the server on/off through the MySQL workbench then the way you do it is through locating the windows search bar and writing `services` where you will need to locate `MySQL80` as seen below and restart it by right clicking it and pressing stop or going to properties and selecting `Manual` if it is set to `Automatic` and pressing on the button that says `Stop`.
-
-![MySQL 8.0](./images/ServicesMySQL80.png)
-
-- 
-    For Linux - Install additional libraries
-Run the following commands to install additional libraries (might require sudo privileges): `apt install libc6-dev` and `apt install libgdiplus`.
-- 
-    For MacOS - Install additional libraries
-Run the following commands to install additional libraries (requires sudo privilegess): `/bin/bash -c "(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` and `brew install mono-libgdiplus`
-
-## Clone the web-api repository
-
-In your IDE, create a new repository, in Rider select Get from version control and enter the web-api url: `https://github.com/aau-giraf/web-api.git`
-
-## Establish a query interface to your database
-
-Many IDE’s support a GUI connection to databases e.g., Visual Studio and Rider.
-
-What worked and was used by a lot of groups was [Visual Studio Code's MySQL extension](https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-mysql-client2)
-
-Select the database tab, add an instance, and select MySQL. Use the connection settings:
-`Host: localhost`
-`Port: 3306`
-`Username: root`
-`Password: password`
-`Database: giraf`
-
-This should establish a connection to your database that allows you to manually edit the tables 
-and schemas.
-
 ## API-Client
 
 1. 
@@ -179,4 +126,123 @@ NB: Do not push this change to pubspec unless you know what you are doing, and m
 change it back to develop before merging.
 
 
+## Web-API Setup
+
+Make sure you have a C# compatible IDE e.g., Microsoft Visual Studio or JetBrains Rider. However, if you do not need to develop on the web-API, and are only interested in running the web-API this can be done following this Section [Running the web-Api](#running-the-web-api-with-docker).
+Otherwise, follow the guide.
+
+
+### Local Development
+
+For local development of the web-API there exists two solutions using a local instance of MySQL, or using the Docker application. 
+
+The first solution is following the guide installing .NET Core and installing MySQL
+
+The other solution is installing .NET Core, and then use the Docker applications mysql container as the database, in this way you **do not** have to install MySQL, only Docker.
+
+#### Clone the web-api repository
+
+In your IDE, create a new repository, in Rider select Get from version control and enter the web-api url: `https://github.com/aau-giraf/web-api.git`
+
+#### Installing dotnet core
+
+The web-api is a dotnet core web app that runs on dotnet core 8.0.x so make sure that you have a 
+compatible version installed. It can be downloaded [here](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
+
+
+#### Installing MySQL (Optional) 
+
+The web api runs a local instance of a MySQL server.
+
+Install [MySQL server 8.0](https://dev.mysql.com/downloads/mysql/). MySQL workbench 
+and MySQL shell are useful but optional. 
+
+During the setup, make sure to give the root user a password you can remember e.g., ”password” 
+as this is only a development instance. Additionally, create a user with username “user” and 
+password ”password” that have administrative rights.
+
+NB: Make sure that your MySQL server is running (this is where MySQL workbench is useful)
+
+NB: If you are not able to restart or turn the server on/off through the MySQL workbench then the way you do it is through locating the windows search bar and writing `services` where you will need to locate `MySQL80` as seen below and restart it by right clicking it and pressing stop or going to properties and selecting `Manual` if it is set to `Automatic` and pressing on the button that says `Stop`.
+
+![MySQL 8.0](./images/ServicesMySQL80.png)
+
+
+##### Establish a query interface to your database
+
+Many IDE’s support a GUI connection to databases e.g., Visual Studio and Rider.
+
+What worked and was used by a lot of groups was [Visual Studio Code's MySQL extension](https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-mysql-client2)
+
+Select the database tab, add an instance, and select MySQL. Use the connection settings:
+`Host: localhost`
+`Port: 3306`
+`Username: root`
+`Password: password`
+`Database: giraf`
+
+This should establish a connection to your database that allows you to manually edit the tables 
+and schemas.
+
+#### Local Development with Docker(Optional)
+
+First follow the steps in [Running the web-API with Docker](#running-the-web-api-with-docker).
+
+Next shutdown the web-api container within the application, in docker desktop this can be done, by clicking the stop icon. 
+
+Shown here:
+![stop container](./images/stopAPI.png)
+
+After doing that they api should have stopped and you should see the following:
+
+![docker ready](./images/readyAPI.png)
+
+Last step is to open your IDE, locate the `LocalDocker.AppSettings.json` file in the GirafAPI project. Copy the connection string and paste it into the `Development.AppSettings.json` connection string, **if you copy the connection string** make sure to change the server to localhost, and change the port to 5100. 
+
+Another approach would be to change the launchsettings, specifically the ASPNETCORE_ENVIRONMENT to `LocalDocker`
+
+Now you should be able to develop in your IDE, run the API directly in the IDE, and utilize the Docker MySQL container. 
+
+### Running the web-API with Docker
+
+Start by downloading the Docker, this can be either the Docker Engine itself (this requires more knowledge of Docker), or the easier alternative Docker Desktop (Linux, MacOS and Windows) [Download Docker Desktop](https://www.docker.com/get-started/).
+
+Ensure that you cloned the web-API repository from this section [Clone the web-API](#clone-the-web-api-repository).
+
+In your terminal navigate to the cloned web-API folder on your local machine. 
+
+In the terminal you can run one of 2 commands:
+
+1. `docker compose up`
+2. `docker compose up -d`
+
+The first command runs the docker compose from the terminal and effectively occupying the terminal. This can be avoided using the second command as this runs the docker compose in detached mode, such that the terminal can still be used for other things. 
+
+Open Docker Desktop and confirm the application is running:
+![Docker](./images/dockerSetup.png)
+
+You are now able to use the API, which is located on http://localhost:5000.
+
+### Trouble shooting
+
+#### Database migration
+
+A common issue could be the database schema not migrating, if this is an issue you can do it manually like this:
+
+- Open a terminal and navigate to the … `web-api\GirafAPI` folder.
+- Run `dotnet tool install --global dotnet-ef`, if you do not have the tool dotnet-ef installed
+- Run dotnet restore
+- Run dotnet ef database update
+- Run dotnet run --sample-data
+
+#### Using Swagger
+
+Using Swagger to test endpoints
+
+- Make an Account/Login request with valid login-info (username: Tobias, password: password)
+- Copy the data field containing the token.
+- Click on the green Authorize button (Or the padlocks).
+- Write bearer [your-token] (note the space) in the input-field.
+- Click Authorize and close the pop-up.
+- You are now authorized and can make authorized requests.
 
