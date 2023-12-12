@@ -1,6 +1,7 @@
 # Architecture
 
 The layered structure presented is implemented with four different projects.
+
   - GirafAPI
   - GirafServices
   - GirafRepositories
