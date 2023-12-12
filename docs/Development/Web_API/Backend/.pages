@@ -1,6 +1,4 @@
 arrange:
-    - "index.md"
-    - ...
     - "database.md"
     - "entity_framework.md"
     - "models.md"
