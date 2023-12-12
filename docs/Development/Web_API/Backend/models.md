@@ -22,7 +22,7 @@ the application. A list of these classes can be found below.
 | ```UserResource``` | Defines a relationship between Users and Pictograms.|
 | ```AlternateName``` | Represents an alternate name for a Pictogram.|
 | ```PictogramRelation``` | Defines a relationship between Activities and Pictograms.|
-| ```Timer``` | Represents a timer, with start time progress and length.|
+| ```Timer``` | Represents a timer, with start time, progress and length.|
 
 
 
