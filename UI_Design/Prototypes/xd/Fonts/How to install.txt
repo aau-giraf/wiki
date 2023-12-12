@@ -1,0 +1,7 @@
+Windows:
+- Right click
+- Press "Install"
+
+Mac OS X
+ - You must be logged in as administrator
+ - Copy fonts to <Volume>/Users/<username>/Library/Fonts/ or <Volume>/Brugere/<brugernavn>/Bibliotek/Fonts/
