@@ -4,6 +4,5 @@ arrange:
     - "architecture.md"
     - "Backend"
     - "Endpoints_and_Controllers"
-    - "run_locally.md"
     - "settings.md"
     - "Test"
