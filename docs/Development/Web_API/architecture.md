@@ -4,23 +4,24 @@ This section explains the architecture of the Web API.
 
 ## Code Base
 
+The layered structure presented is implemented with four different projects.
+  - GirafAPI
+  - GirafServices
+  - GirafRepositories
+  - GirafEntities
+
+Each of these projects are created to ensure separation of concerns, allowing easier identification of where to add future functionalities. The GirafAPI project handles all aspects of setting up a server for the API to receive and handle requests; this consists mainly of controllers and different settings for running and building the server. The GirafServices contains the business logic and any functionality a controller would need to handle a request, such as hashing. The GirafRepositories project is split into two concerns: one handles communication and setup of the database, and the other access and manipulation of the tables in the database. The last project, GirafEntities, is created to contain all entities and other objects of the API.
+
 ![APIStructure](images/GirafEntities.svg "API Structure")
 
-This figure gives a general overview of the API structure.
-In the illustration an arrow indicate that a component pointed by is dependent of
-the component that is pointed to. The dashed line from Entity Framework to the
-database indicates that Entity Framework is responsible for executing queries on
-the database.
+The GirafRest solution setup is illustrated the figure above. The projects are set up such that a layer references all inner layers, meaning the GirafAPI references all other projects, while GirafEntities references none. Using this reference structure enforces the communication of each layer only to go inward. This setup indicates that GirafEntities is the lowest layer and GirafAPI is the highest layer.
 
-As illustrated in the figure, there are 10 controllers in the web API which are
-responsible for handling all requests to the API. The controller uses the DTOs to
+There are 11 controllers in the web API which are responsible for handling all requests to the API. The controller uses the DTOs to
 define the JSON structure for the objects in the HTTP message body, which in turn
 are a subset of the ``Model`` classes. To extract information from the database
-the controllers uses Entity Framework which executes queries to the database.
-
-To extract and store data through Entity Framework the ``Controllers`` use the
-``Model`` classes. The controllers also use services to make authentication checks
-and other common functionality like retrieving user data from the database.
+the controllers uses functionality from services, which use repositories that utilize Entity Framework Core to execute queries to the database.
+The controllers also use services to make authentication checks
+and other common functionality.
 
 ## Making a Request
 
