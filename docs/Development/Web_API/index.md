@@ -38,7 +38,7 @@ The architecture of the Web API is explained [here](architecture.md).
 ## Backend
 
 The backend of the Web API consists of a database and the Entity Framework.
-A description of these can be found [here](./Backend/index.md).
+A description of the database can be found [here](./Backend/database.md).
 
 ## Endpoints and Controllers
 
@@ -47,7 +47,7 @@ Information about the endpoints and controllers in the Web API can be found
 
 ## Run the Web API Locally
 
-A guide on how to build and run the Web API locally can be found [here](run_locally.md).
+A guide on how to build and run the Web API locally can be found in the [Setup Guide](../../Getting_Started/setup.md).
 
 ## Settings
 
@@ -55,4 +55,4 @@ Information on the settings that can be set in the Web API can be found [here](s
 
 ## Testing the Web API
 
-An overview of the Web API testing projects can be found [here](./Test/index.md):
+An overview of the Web API testing projects can be found [here](Testing.md).

@@ -1,12 +1,11 @@
-# Unit Testing
+# Testing
 
-Unit testing gives a higher chance for the code to behave as intended along with
+Testing gives a higher chance for the code to behave as intended along with
 ensuring that no regressions occur when further developing the code.
 
-Therefore each controller has been tested to see if the methods work as they should.
+Therefore each controller and repository has been tested to see if the methods work as they should.
 However, we cannot test the effect of attributes for methods, such as ```[Authorize]```.
-We therefore restrict to test the functionality of the methods. Let's say we want
-to test the following method in the Department Controller:
+We therefore restrict to test the functionality of the methods. 
 
 ## Libraries Used
 
@@ -21,7 +20,7 @@ In order to run the tests you may run either of the two following CLI commands;
 
 ``dotnet test`` to run all tests ``dotnet test --filter DisplayName~department``
 
-to run tests with the name department in it.
+to for instance run tests with the name department in it.
 
 ### Moq
 
@@ -33,7 +32,7 @@ and if a class needs mocking it is often easier to create a new class that inher
 from the given class and override its methods - luckily most of the built in ASP.NET
 classes contain only virtual methods.
 
-The mock data used for the unit tests is found in the large file ```⋯/GirafRest.Test/UnitTestExtensions.cs```,
+The mock data used for the unit tests is found in the large file ```⋯/Giraf.UnitTest/UnitTestExtensions.cs```,
 and must be initialised in the start of every test.
 
 ### Example
