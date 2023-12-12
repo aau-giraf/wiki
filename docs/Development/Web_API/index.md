@@ -55,4 +55,4 @@ Information on the settings that can be set in the Web API can be found [here](s
 
 ## Testing the Web API
 
-An overview of the Web API testing projects can be found [here](/Testing.md).
+An overview of the Web API testing projects can be found [here](Testing.md).
