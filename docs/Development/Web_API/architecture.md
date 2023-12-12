@@ -1,9 +1,5 @@
 # Architecture
 
-This section explains the architecture of the Web API.
-
-## Code Base
-
 The layered structure presented is implemented with four different projects.
   - GirafAPI
   - GirafServices
