@@ -10,7 +10,7 @@ Each of these projects are created to ensure separation of concerns, allowing ea
 
 ![APIStructure](images/GirafEntities.svg "API Structure")
 
-The GirafRest solution setup is illustrated the figure above. The projects are set up such that a layer references all inner layers, meaning the GirafAPI references all other projects, while GirafEntities references none. Using this reference structure enforces the communication of each layer only to go inward. This setup indicates that GirafEntities is the lowest layer and GirafAPI is the highest layer.
+The GirafRest solution setup is illustrated in the figure above. <ins>The projects are set up such that a layer references all inner layers</ins>, meaning the GirafAPI references all other projects, while GirafEntities references none. Using this reference structure enforces the communication of each layer only to go inward. This setup indicates that GirafEntities is the lowest layer and GirafAPI is the highest layer.
 
 There are 11 controllers in the web API which are responsible for handling all requests to the API. The controller uses the DTOs to
 define the JSON structure for the objects in the HTTP message body, which in turn
