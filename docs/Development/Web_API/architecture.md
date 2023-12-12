@@ -9,7 +9,7 @@ The layered structure presented is implemented with four different projects.
 
 Each of these projects are created to ensure separation of concerns, allowing easier identification of where to add future functionalities. The GirafAPI project handles all aspects of setting up a server for the API to receive and handle requests; this consists mainly of controllers and different settings for running and building the server. The GirafServices contains the business logic and any functionality a controller would need to handle a request, such as hashing. The GirafRepositories project is split into two concerns: one handles communication and setup of the database, and the other access and manipulation of the tables in the database. The last project, GirafEntities, is created to contain all entities and other objects of the API.
 
-<img src="./images/GirafEntities.svg" width="700" hieght="700"/>
+<img src="./images/architecture.png" width="700" hieght="700"/>
 
 The GirafRest solution setup is illustrated in the figure above. <ins>The projects are set up such that a layer references all inner layers</ins>, meaning the GirafAPI references all other projects, while GirafEntities references none. Using this reference structure enforces the communication of each layer only to go inward. This setup indicates that GirafEntities is the lowest layer and GirafAPI is the highest layer.
 
