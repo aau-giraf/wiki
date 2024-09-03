@@ -4,8 +4,8 @@ The currently used Continuous Integration Pipeline is GitHub Actions, which prov
 2.000 minutes free per month. It can run on either Ubuntu, MacOS, or Windows, allowing
 us to test multiple platforms from our CI-Platform without cost.
 
+<!--
 ## weekplanner
-
 The weekplanner is built in 4 jobs from the same workflow: [main.yml](https://github.com/aau-giraf/weekplanner/blob/develop/.github/workflows/main.yml)
 
    - `build-and-test-android`
@@ -30,12 +30,7 @@ This file is then prepared for `deploy-to-appstore`, which uploads the build to
 our App Store Connect-account, which can be pushed to internal test, or into release
 state. This task also runs only on `master`-branch.
 
-## api_client
-
-This job is built in one task: [lint-and-test.yml](https://github.com/aau-giraf/api_client/blob/develop/.github/workflows/lint-and-test.yml)
-
-The testing-suite for the api_client is a bit more simple, it runs `flutter analyze`,
-and `flutter test`, to ensure tests and linting is passing.
+ -->
 
 ## web-api
 
@@ -52,9 +47,9 @@ In addition to running unit tests, when pushed to any branch GitHub Actions star
 another job, starts a build of the embedded Dockerfile, and tags this accordingly
 as either:
 
-   - **master**: aau-giraf/web-api/web-api:latest
-   - **develop**: aau-giraf/web-api/web-api:develop
-   - **issue/123**: aau-giraf/web-api/web-api:issue-123
+- **master**: aau-giraf/web-api/web-api:latest
+- **develop**: aau-giraf/web-api/web-api:develop
+- **issue/123**: aau-giraf/web-api/web-api:issue-123
 
 When deploying into the [production swarm](../../server_administration/PracticalDocker),
 these images are pulled into DEV and PROD environments accordingly.

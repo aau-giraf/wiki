@@ -2,33 +2,32 @@
 
 # Site settings
 site_name: GIRAF Wiki
-site_author: '@aau-giraf'
-repo_name: 'aau-giraf'
-repo_url: 'https://github.com/aau-giraf'
+site_author: "@aau-giraf"
+repo_name: "aau-giraf"
+repo_url: "https://github.com/aau-giraf"
 edit_uri: "" # Is empty to remove 'edit' buttons on pages
 
 extra_css:
-  - 'extra/extra.css'
-
+  - "extra/extra.css"
 
 # Theme settings
 theme:
-  name: 'material'
+  name: "material"
   font:
-    text: 'Open Sans'
-    code: 'Roboto Mono'
+    text: "Open Sans"
+    code: "Roboto Mono"
   palette:
-    primary: 'yellow'
-    accent: 'deep orange'
-  logo: 'extra/giraf.png'
+    primary: "yellow"
+    accent: "deep orange"
+  logo: "extra/giraf.png"
   feature:
-      tabs: true
+    tabs: true
 
 # Plugins
 plugins:
-  - search                        # Adds search functionality
-  - awesome-pages                 # Used to arrange tabs and pages manually
-  - git-revision-date-localized   # Adds the "Last update: x" on the bottom of pages
+  - search # Adds search functionality
+  - awesome-pages # Used to arrange tabs and pages manually
+  - git-revision-date-localized # Adds the "Last update: x" on the bottom of pages
 
 # Markdown extensions
 # See list of extensions at https://squidfunk.github.io/mkdocs-material/extensions/admonition/

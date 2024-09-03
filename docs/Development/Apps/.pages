@@ -1,8 +1,6 @@
 arrange:
-    - "index.md"
-    - ...
-    - "development_environment_setup.md"
-    - "connect_to_web_api.md"
-    - "Guidelines"
-    - "release_guide.md"
-    - "test.md"
+  - "index.md"
+  - ...
+  - "Guidelines"
+  - "release_guide.md"
+  - "test.md"

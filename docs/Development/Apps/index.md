@@ -6,14 +6,9 @@ This section contains information for the Android/iOS apps developed in GIRAF.
 
 - Weekplanner (Ugeplan)
 
-## Develop Environment Setup
-
-Apps in GIRAF are developed using Flutter, a description on how to setup the
-develop environment can be found [here](development_environment_setup.md). 
-
 ## Implementation Guidelines
 
-Guidelines for different implementations in the GIRAF apps can be found [here](./Guidelines/index.md)   
+Guidelines for different implementations in the GIRAF apps can be found [here](./Guidelines/index.md)
 
 ## Manual Release of Giraf
 
