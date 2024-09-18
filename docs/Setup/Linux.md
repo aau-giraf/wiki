@@ -108,7 +108,7 @@ Follow the prompts to set a root password and secure your installation.
 
 ## Running GIRAF
 
-Refer to [this guide](/Setup/Running_GIRAF)
+Refer to [this guide](./Running_GIRAF)
 
 ## Troubleshooting
 

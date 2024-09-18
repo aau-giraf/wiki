@@ -61,7 +61,7 @@ You can then run `dotnet ef` to verify the installation.
 
 ## Running GIRAF
 
-Refer to [this guide](/Setup/Running_GIRAF)
+Refer to [this guide](./Running_GIRAF)
 
 ## Troubleshooting
 

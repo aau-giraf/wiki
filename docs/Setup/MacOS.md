@@ -93,7 +93,7 @@ flutter doctor
 
 ## Running GIRAF
 
-Refer to [this guide](/Setup/Running_GIRAF)
+Refer to [this guide](./Running_GIRAF)
 
 ## Troubleshooting
 
