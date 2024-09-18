@@ -28,6 +28,8 @@ brew install openjdk
 
 ## Step 3: Installing Xcode
 
+_If the available version in the App Store isn't available for your device, please update macOS to the latest version_
+
 Xcode is necessary for iOS development and running the iOS simulator:
 
 - Install Xcode
@@ -85,15 +87,29 @@ flutter doctor
 
 ## Step 5. Install .NET
 
-- Open your Terminal and run `brew install dotnet`
+Open your Terminal and run:
+
+```bash
+brew install dotnet
+```
 
 ## Step 6. Install MariaDB
 
-- Open your Terminal and run `brew install mariadb`
+Open your Terminal and run:
+
+```bash
+brew install mariadb
+```
+
+Then start MariaDB as a service:
+
+```bash
+brew services start mariadb
+```
 
 ## Running GIRAF
 
-Refer to [this guide](./Running_GIRAF)
+Refer to [this guide](../Running_GIRAF)
 
 ## Troubleshooting
 

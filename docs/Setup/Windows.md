@@ -41,6 +41,8 @@ flutter --version
 
 ## Step 4. Installing MariaDB
 
+_If you have MySQL or similar installed, you don't need to follow this step. Postgres doesn't count._
+
 1. [Download MariaDB](https://mariadb.org/download/)
 2. Select the latest stable version for Windows and choose the appropriate package (MSI) for your system architecture (32-bit or 64-bit)
 3. Run the wizard and set a root password you'll be able to remember later.
@@ -61,7 +63,7 @@ You can then run `dotnet ef` to verify the installation.
 
 ## Running GIRAF
 
-Refer to [this guide](./Running_GIRAF)
+Refer to [this guide](../Running_GIRAF)
 
 ## Troubleshooting
 
