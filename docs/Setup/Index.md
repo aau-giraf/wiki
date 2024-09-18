@@ -34,21 +34,21 @@ _Note: If you're using Windows and haven't installed Git Bash, download and inst
 
 ## 2. Copy the SSH key
 
-### For Mac:
+### For Mac
 
-```
+```bash
 pbcopy < ~/.ssh/id_ed25519.pub
 ```
 
-### For Windows (Git Bash):
+### For Windows (Git Bash)
 
-```
+```bash
 cat ~/.ssh/id_ed25519.pub | clip
 ```
 
 Alternatively, you can manually copy the output of:
 
-```
+```bash
 cat ~/.ssh/id_ed25519.pub
 ```
 
@@ -64,9 +64,9 @@ cat ~/.ssh/id_ed25519.pub
 
 ## 4. Test the connection
 
-### For Mac (Terminal) and Windows (Git Bash):
+### For Mac (Terminal) and Windows (Git Bash)
 
-```
+```bash
 ssh -T git@github.com
 ```
 
@@ -76,8 +76,10 @@ You should see a message like: "Hi username! You've successfully authenticated, 
 
 - If you're on Windows and Git Bash isn't working, you can use the Command Prompt or PowerShell, but some commands may differ.
 - Ensure your SSH agent is running. On Mac or Git Bash, use:
-  ```
+
+  ```bash
   eval "$(ssh-agent -s)"
   ssh-add ~/.ssh/id_ed25519
   ```
+
 - If you're still having issues, check GitHub's official documentation or support resources.
