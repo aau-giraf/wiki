@@ -1,15 +1,5 @@
 # Overview
 
-This section contains information about what is necessary to know before developing on the GIRAF project.
+This section historically contained necessary information necessary to know before developing on the GIRAF projects. That information can now be found in the [Legacy](../Legacy/index.md) section for the curious. The exception is generally useful knowledge such as information regarding the Wiki and its upkeep.
 
-- [GitHub](./GitHub/index.md)
-    - Contains information about the various GitHub repositories used for the GIRAF project.
-      Information about how to use GitFlow and CI is also found here.
-- [Apps](./Apps/index.md)
-    - Information necessary for developing on the apps in the GIRAF project.
-- [Web API](./Web_API/index.md)
-    - Information about how the Web API is configured, e.g. what endpoints can be reach in it.
-- [Wiki](./Wiki/index.md)
-    - Information about how to run the wiki locally, and how to write new pages for it.
-- [Server](./Server/index.md)
-    - Information about the servers used by the GIRAF project. 
+We advise you check out the [GIRAF](https://github.com/aau-giraf) GitHub for the most recent development information. 

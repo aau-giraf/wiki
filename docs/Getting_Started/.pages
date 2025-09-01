@@ -3,3 +3,4 @@ arrange:
   - ...
   - "handover.md"
   - "ownership_transfer.md"
+  - "process.md"
