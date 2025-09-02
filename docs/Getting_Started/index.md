@@ -9,3 +9,4 @@ This is an overview of things to know when starting with GIRAF.
   Information regarding what a new GIRAF teams needs in order to assume ownership of the GIRAF project.
 - [Process Guide](./process.md)
   A short guide with useful tips from previous GIRAF teams as to how the mega project should be done. 
+- [Tools](./tools.md)

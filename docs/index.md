@@ -1,7 +1,7 @@
 # Home
 
 This wiki includes all information about the GIRAF project! The information is split
-into 5 categories:
+into 6 categories:
    
 - [Getting Started](./Getting_Started/index.md)
     - Gives an introduction to GIRAF for students on a new semester.
