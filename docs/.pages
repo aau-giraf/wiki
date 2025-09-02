@@ -3,8 +3,6 @@ arrange:
     - ...
     - Getting_Started
     - Development
-    - UI_Design
-    - Handover
-    - Releases
     - Legal
     - About
+    - Legacy

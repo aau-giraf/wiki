@@ -1,5 +1,8 @@
 # Overview
 
+This section covers all legacy GIRAF files dating from 2018-2020 related to the weekplanner application. As of 2025 the weekplanner is retired and no longer a part of the active GIRAF projects. It therefore serves as inspiration for development of the current (2025) applications.   
+
+
 The following pages in this section describes the overall changes made for each
 release. Some of the links in the releases from 2018 does not work, as GitLab is
 not in use as of 2019.
