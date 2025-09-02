@@ -1,0 +1,35 @@
+html {
+    overflow-y: scroll;
+}
+
+.md-tabs__item {
+    text-transform: capitalize;
+    padding: 0 0.2rem;
+}
+
+.md-tabs__link {
+    display: block;
+    height: 2.4rem;
+    margin-top: 0;
+    padding: 0.8rem 1rem;
+    padding-top: .8rem;
+    opacity: 1;
+    transition-property: all;
+    color: white;
+    font-weight: bold;
+}
+
+.md-tabs__item>.md-tabs__link--active,
+.md-tabs__item:hover>.md-tabs__link {
+    color: white;
+    background-color: rgba(0, 0, 0, .26);
+    border-radius: .1rem .1rem 0 0;
+}
+
+.md-tabs__item:hover>.md-tabs__link {
+    color: white;
+}
+
+.md-nav__title {
+    text-transform: capitalize;
+}
