@@ -1,9 +1,11 @@
 # Process
+
 It is recommended that the groups work agile in this project. This section will provide an insight in the process of the former groups of GIRAF. If this guide is insufficient or you have further questions it is suggested that you contact the Agile Software Engineering (ASE) lecturer. 
 
 The Legacy tab provides former students experiences, primarily regarding the weekplanner project, which although not relevant can provide useful insight. This includes meeting notes with Carsten, the previous ASE lecturer, and many other resources. 
 
 ## Role Overview
+
 Roles can either be set for the semester, or alternate such that every student tries every role. (Swapping roles proved difficult and required good communication and notes)
 
 ![Scrum of Scrums](../resources/scrum_of_scrums.png)
@@ -11,6 +13,7 @@ Roles can either be set for the semester, or alternate such that every student t
 The imagine above shows the general structure in the GIRAF Projects. Each project group has a PO and SM, and these are sent to scrum of scrum meetings forming a PO and SM group which governs the project. The matters discussed in the PO and SM group are then brought back to the project groups and summarized, such that every member of the GIRAF project is up to date. (Groups are encouraged to speak together and knowledge share, however the responsibility lies with the PO and SM to ensure the developers are up to date)
 
 ### PO
+
 The PO group consists of a **single** group, which has contact to the stakeholders.
 
 The following things are the responsibility of the members within the PO group:
@@ -27,6 +30,7 @@ The following things are the responsibility of the members within the PO group:
 
 
 ### SM 
+
 The SM group consists of a **single** group, which administers the process of the GIRAF team(s). They enforce the SCRUM rules. 
 
 The following things are the responsibility of the members in the Process group.
@@ -41,6 +45,7 @@ The following things are the responsibility of the members in the Process group.
 - Can work on issues if necessary
 
 ### DEV
+
 Remainder of the students are developers. 
 
 - The following things are the responsibility of the members within a Development team.
@@ -51,9 +56,11 @@ Remainder of the students are developers.
 
 
 ## Sprint Overview
+
 ![Sprint Overview](../resources/sprint_overview.png)
 
 ## Before the Sprint Planning
+
 Prior to Sprint Planning the Process group and the PO group have decided which issues to include in the Sprint Backlog. Only those issues will be time estimated and prioritized during Sprint Planning. Minor adjustments may be made afterwards based on the outcome of the Sprint Planning.
 
 Next, everyone is divided into Sprint Planning Cross-groups.
@@ -67,16 +74,20 @@ After the Sprint Planning Cross-groups are made, the issues in the Sprint Backlo
 This process has been automated through the [Sprint Planning Tool](../Legacy/Handover/2020E/Tools/Process_Group/sprint_planning_tool.md).
 
 ### Sprint Planning
+
 Everyone on the GIRAF Scrum team (PO, SM and Development teams) attend this event that marks the start of a sprint.
 
 #### Expected Duration
+
 Max 4 hours (Adjusted for 2 week sprint).
 #### Result
+
 A prioritized list of issues for each Development team to work on during the sprint.
 
 
 
 ## Agenda
+
 1. Process group member presents the following:
     - Changes made to the process, since the previous sprint, based on the information from Sprint Retrospective.
 2. PO group member presents the following:
@@ -90,6 +101,7 @@ A prioritized list of issues for each Development team to work on during the spr
 
 
 ## Time Estimation
+
 Time estimation is done through **Planning Poker**
 
 **Remember to include testing, review, documentation and usability test design in your estimations.**
@@ -139,12 +151,15 @@ The Process group will then assign the Development teams to certain issues. The 
 The issue assignments will be sent out at most 24 hours later along with a list of which types of issues to solve first e.g. bug fixes before features.
 
 ## Development Phase
+
 The Development Phase starts after the Sprint Planning and ends on the day of the Sprint Review.
 
 ### Work with Issues
+
 In the Development Phase, the Development teams work with the issues they have been given by the Process group after the Sprint Planning.
 
 #### Need More Issues to Work On
+
 If you have time to work on a additional issues, than the ones that were distributed after Sprint Planning, you can get a new one by following these steps:
 
 1. Find an issue you want to work on in the Sprint Backlog 
