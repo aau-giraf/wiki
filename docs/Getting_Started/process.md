@@ -80,6 +80,7 @@ Everyone on the GIRAF Scrum team (PO, SM and Development teams) attend this even
 #### Expected Duration
 
 Max 4 hours (Adjusted for 2 week sprint).
+
 #### Result
 
 A prioritized list of issues for each Development team to work on during the sprint.
