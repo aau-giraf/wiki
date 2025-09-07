@@ -10,3 +10,4 @@ This is an overview of things to know when starting with GIRAF.
 - [Process Guide](./process.md)
   A short guide with useful tips from previous GIRAF teams as to how the mega project should be done. 
 - [Tools](./tools.md)
+  Short descriptions of tools used during development. 

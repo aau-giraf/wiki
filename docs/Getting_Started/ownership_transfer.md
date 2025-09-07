@@ -42,7 +42,7 @@ Email: `giraf@lists.aau.dk`
 
 Password: see [KeePass](#giraf-passwords)
 
-## Google Drive
+## Google Drive (OUTDATED - left for inspiration)
 
 To access the Google Drive use the same credentials as for the [Google Play Store](#google-play-store).
 
@@ -55,15 +55,9 @@ Among these assets are the tools and code review checklists used during the seme
 
 ## Server Access
 
-The server-meta group must compile a list of student emails who needs sudo access
-to the server. 
-The list should be sent to [support@its.aau.dk](mailto:support.its.aau.dk) after
-Semester Coordinator Ulrik Nyman ([ulrik@cs.aau.dk](mailto:ulrik@cs.aau.dk)) has
-**approved** the list. 
+As of today (02/09/2025) there is no GIRAF Server running. Previous semesters have run their own servers using [AAU Strato](https://hpc.aau.dk/strato/) 
 
-More information can be found [here](../Development/Server/access.md#ownership-transfer)
-
-### Portainer Access
+### Portainer Access (OUTDATED - left for inspiration)
 
 Portainer allows the visualization of the structure for the docker images. 
 It can be helpful to have an UI instead of working in a terminal. 
