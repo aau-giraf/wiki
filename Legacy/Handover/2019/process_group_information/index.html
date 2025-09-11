@@ -1,0 +1,3969 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+        <meta name="author" content="@aau-giraf">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.0, mkdocs-material-4.6.3">
+    
+    
+      
+        <title>Process group information - GIRAF Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/application.adb8469c.css">
+      
+        <link rel="stylesheet" href="../../../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#f9a825">
+      
+    
+    
+      <script src="../../../../assets/javascripts/modernizr.86422ebf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../../../extra/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="yellow" data-md-color-accent="deep-orange">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#process-group-information" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../../.." title="GIRAF Wiki" aria-label="GIRAF Wiki" class="md-header-nav__button md-logo">
+          
+            <img alt="logo" src="../../../../extra/giraf.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              GIRAF Wiki
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Process group information
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/aau-giraf" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    aau-giraf
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../../.." class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../../Getting_Started/" class="md-tabs__link">
+          Getting Started
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../../Development/" class="md-tabs__link">
+          Development
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../../Legal/" class="md-tabs__link">
+          Legal
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../../About/" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../" class="md-tabs__link md-tabs__link--active">
+          Legacy
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../../.." title="GIRAF Wiki" class="md-nav__button md-logo">
+      
+        <img alt="logo" src="../../../../extra/giraf.png" width="48" height="48">
+      
+    </a>
+    GIRAF Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/aau-giraf" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    aau-giraf
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Getting Started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Getting_Started/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Getting_Started/handover/" title="Handover" class="md-nav__link">
+      Handover
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Getting_Started/ownership_transfer/" title="Ownership Transfer" class="md-nav__link">
+      Ownership Transfer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Getting_Started/process/" title="Process" class="md-nav__link">
+      Process
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Getting_Started/tools/" title="Tools" class="md-nav__link">
+      Tools
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Development
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Development
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Development/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Wiki
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Wiki
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Development/Wiki/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Development/Wiki/running_wiki/" title="Running the Wiki Locally" class="md-nav__link">
+      Running the Wiki Locally
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Development/Wiki/writing_wiki/" title="Writing Pages for the Wiki" class="md-nav__link">
+      Writing Pages for the Wiki
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Development/github/" title="Use of GitHub in GIRAF" class="md-nav__link">
+      Use of GitHub in GIRAF
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Legal
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Legal
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Legal/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Legal/privacy_policy/" title="Privacy Policy" class="md-nav__link">
+      Privacy Policy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      GDPR
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        GDPR
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Legal/GDPR/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Legal/GDPR/gdpr_regulation/" title="GDPR Regulation" class="md-nav__link">
+      GDPR Regulation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Legal/GDPR/consent_information/" title="Consent Information" class="md-nav__link">
+      Consent Information
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Legal/GDPR/consent/" title="Samtykkeerklæring" class="md-nav__link">
+      Samtykkeerklæring
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Legal/GDPR/processing_activity_record_information/" title="Processing Activity Record Information" class="md-nav__link">
+      Processing Activity Record Information
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Legal/GDPR/processing_activity_record/" title="Processing Activity Record" class="md-nav__link">
+      Processing Activity Record
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Legal/risk_assessment/" title="Risk assessment" class="md-nav__link">
+      Risk assessment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Legal/licences/" title="Licenses" class="md-nav__link">
+      Licenses
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../About/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+    
+    <label class="md-nav__link" for="nav-6">
+      Legacy
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Legacy
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2" type="checkbox" id="nav-6-2">
+    
+    <label class="md-nav__link" for="nav-6-2">
+      Weekplanner
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-2">
+        Weekplanner
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-2" type="checkbox" id="nav-6-2-2">
+    
+    <label class="md-nav__link" for="nav-6-2-2">
+      Apps
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-2-2">
+        Apps
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Apps/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-2-2" type="checkbox" id="nav-6-2-2-2">
+    
+    <label class="md-nav__link" for="nav-6-2-2-2">
+      Guidelines
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-2-2-2">
+        Guidelines
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Apps/Guidelines/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Apps/Guidelines/web_api_error_handling/" title="Handle Exceptions from the Web API" class="md-nav__link">
+      Handle Exceptions from the Web API
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Apps/release_guide/" title="Manual Release of Giraf" class="md-nav__link">
+      Manual Release of Giraf
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Apps/test/" title="Testing" class="md-nav__link">
+      Testing
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-3" type="checkbox" id="nav-6-2-3">
+    
+    <label class="md-nav__link" for="nav-6-2-3">
+      GitHub
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-2-3">
+        GitHub
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/GitHub/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/GitHub/repository_description/" title="Repositories" class="md-nav__link">
+      Repositories
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-3-3" type="checkbox" id="nav-6-2-3-3">
+    
+    <label class="md-nav__link" for="nav-6-2-3-3">
+      GitHub Actions
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-2-3-3">
+        GitHub Actions
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/GitHub/GitHub_Actions/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/GitHub/GitHub_Actions/workflows_in_repositories/" title="Workflows in the Repositories" class="md-nav__link">
+      Workflows in the Repositories
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/GitHub/GitHub_Actions/code_coverage/" title="Code Coverage" class="md-nav__link">
+      Code Coverage
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/GitHub/using_github/" title="Using GitHub in GIRAF" class="md-nav__link">
+      Using GitHub in GIRAF
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-4" type="checkbox" id="nav-6-2-4">
+    
+    <label class="md-nav__link" for="nav-6-2-4">
+      Server
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-2-4">
+        Server
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Server/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Server/architecture/" title="Architecture" class="md-nav__link">
+      Architecture
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Server/access/" title="Access" class="md-nav__link">
+      Access
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-4-4" type="checkbox" id="nav-6-2-4-4">
+    
+    <label class="md-nav__link" for="nav-6-2-4-4">
+      Docker
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-2-4-4">
+        Docker
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Server/Docker/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Server/Docker/general_information/" title="General Information" class="md-nav__link">
+      General Information
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-4-4-3" type="checkbox" id="nav-6-2-4-4-3">
+    
+    <label class="md-nav__link" for="nav-6-2-4-4-3">
+      Docker Swarm
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-6-2-4-4-3">
+        Docker Swarm
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Server/Docker/Docker_Swarm/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Server/Docker/Docker_Swarm/practical_information/" title="Practical Information" class="md-nav__link">
+      Practical Information
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Server/Docker/Docker_Swarm/configuration/" title="Configuration" class="md-nav__link">
+      Configuration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Server/Docker/Docker_Swarm/network/" title="Networking Docker Swarm" class="md-nav__link">
+      Networking Docker Swarm
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Server/Docker/Docker_Swarm/proxy/" title="Proxy" class="md-nav__link">
+      Proxy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Server/Docker/Docker_Swarm/web_api/" title="Web API" class="md-nav__link">
+      Web API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Server/Docker/Docker_Swarm/database/" title="Database" class="md-nav__link">
+      Database
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-5" type="checkbox" id="nav-6-2-5">
+    
+    <label class="md-nav__link" for="nav-6-2-5">
+      Web API
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-2-5">
+        Web API
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/architecture/" title="Architecture" class="md-nav__link">
+      Architecture
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-5-3" type="checkbox" id="nav-6-2-5-3">
+    
+    <label class="md-nav__link" for="nav-6-2-5-3">
+      Backend
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-2-5-3">
+        Backend
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Backend/database/" title="Database" class="md-nav__link">
+      Database
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Backend/entity_framework/" title="Entity Framework Core" class="md-nav__link">
+      Entity Framework Core
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Backend/models/" title="Models" class="md-nav__link">
+      Models
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-5-4" type="checkbox" id="nav-6-2-5-4">
+    
+    <label class="md-nav__link" for="nav-6-2-5-4">
+      Endpoints and Controllers
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-2-5-4">
+        Endpoints and Controllers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/guidelines/" title="Guidelines" class="md-nav__link">
+      Guidelines
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/controller_descriptions/" title="Description of Controllers" class="md-nav__link">
+      Description of Controllers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-5-4-4" type="checkbox" id="nav-6-2-5-4-4">
+    
+    <label class="md-nav__link" for="nav-6-2-5-4-4">
+      Endpoints
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-6-2-5-4-4">
+        Endpoints
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/account_endpoints/" title="Account Endpoints" class="md-nav__link">
+      Account Endpoints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/user_endpoints/" title="User Endpoints" class="md-nav__link">
+      User Endpoints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/department_endpoints/" title="Department Endpoints" class="md-nav__link">
+      Department Endpoints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/activity_endpoints/" title="Activity Endpoints" class="md-nav__link">
+      Activity Endpoints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/pictogram_endpoints/" title="Pictogram Endpoints" class="md-nav__link">
+      Pictogram Endpoints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/week_endpoints/" title="Week Endpoints" class="md-nav__link">
+      Week Endpoints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/week_template_endpoints/" title="WeekTemplate Endpoints" class="md-nav__link">
+      WeekTemplate Endpoints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/status_endpoints/" title="Status Endpoints" class="md-nav__link">
+      Status Endpoints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/error_endpoints/" title="Error Endpoints" class="md-nav__link">
+      Error Endpoints
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-5-4-5" type="checkbox" id="nav-6-2-5-4-5">
+    
+    <label class="md-nav__link" for="nav-6-2-5-4-5">
+      Authorization
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-6-2-5-4-5">
+        Authorization
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/Authorization/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/Authorization/token_authentication/" title="Token Authentication" class="md-nav__link">
+      Token Authentication
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/swagger/" title="Swagger" class="md-nav__link">
+      Swagger
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/settings/" title="Settings" class="md-nav__link">
+      Settings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Testing/" title="Testing" class="md-nav__link">
+      Testing
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-6" type="checkbox" id="nav-6-2-6">
+    
+    <label class="md-nav__link" for="nav-6-2-6">
+      UI Design
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-2-6">
+        UI Design
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/UI_Design/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-6-2" type="checkbox" id="nav-6-2-6-2">
+    
+    <label class="md-nav__link" for="nav-6-2-6-2">
+      Design Guide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-2-6-2">
+        Design Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/UI_Design/Design_Guide/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/UI_Design/Design_Guide/application_structure/" title="Application structure" class="md-nav__link">
+      Application structure
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/UI_Design/Design_Guide/buttons/" title="Buttons" class="md-nav__link">
+      Buttons
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/UI_Design/Design_Guide/colors/" title="Colors" class="md-nav__link">
+      Colors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/UI_Design/Design_Guide/dialog/" title="Dialogue" class="md-nav__link">
+      Dialogue
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/UI_Design/Design_Guide/greyscale/" title="Greyscale" class="md-nav__link">
+      Greyscale
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/UI_Design/Design_Guide/icons/" title="Icon guide" class="md-nav__link">
+      Icon guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/UI_Design/Design_Guide/loading_indicators/" title="Loading indicators" class="md-nav__link">
+      Loading indicators
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/UI_Design/Design_Guide/pictogram_representation/" title="Pictogram representation" class="md-nav__link">
+      Pictogram representation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/UI_Design/Design_Guide/scroll/" title="Indication of scroll" class="md-nav__link">
+      Indication of scroll
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/UI_Design/Design_Guide/typography/" title="Typography" class="md-nav__link">
+      Typography
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-6-3" type="checkbox" id="nav-6-2-6-3">
+    
+    <label class="md-nav__link" for="nav-6-2-6-3">
+      Prototypes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-2-6-3">
+        Prototypes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/UI_Design/Prototypes/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/UI_Design/Prototypes/prototype_guidelines/" title="Guidelines" class="md-nav__link">
+      Guidelines
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-7" type="checkbox" id="nav-6-2-7">
+    
+    <label class="md-nav__link" for="nav-6-2-7">
+      Setup
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-2-7">
+        Setup
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Setup/Index/" title="Environment Setup" class="md-nav__link">
+      Environment Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Setup/MacOS/" title="MacOS Setup Guide" class="md-nav__link">
+      MacOS Setup Guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Setup/Linux/" title="Linux Setup Guide" class="md-nav__link">
+      Linux Setup Guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Setup/Windows/" title="Windows Setup Guide" class="md-nav__link">
+      Windows Setup Guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Setup/Running_GIRAF/" title="Running GIRAF" class="md-nav__link">
+      Running GIRAF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Setup/Docker/" title="Optional: Dockerisation" class="md-nav__link">
+      Optional: Dockerisation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3" type="checkbox" id="nav-6-3" checked>
+    
+    <label class="md-nav__link" for="nav-6-3">
+      Handover
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-3">
+        Handover
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../handover_guide/" title="Handover Guide" class="md-nav__link">
+      Handover Guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-3" type="checkbox" id="nav-6-3-3">
+    
+    <label class="md-nav__link" for="nav-6-3-3">
+      2020E
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-3-3">
+        2020E
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/feature_overview/" title="Feature Overview" class="md-nav__link">
+      Feature Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-3-3" type="checkbox" id="nav-6-3-3-3">
+    
+    <label class="md-nav__link" for="nav-6-3-3-3">
+      Role Structure
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-3-3-3">
+        Role Structure
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Role_Structure/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Role_Structure/po/" title="PO" class="md-nav__link">
+      PO
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Role_Structure/process/" title="Process" class="md-nav__link">
+      Process
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Role_Structure/development_team/" title="Development Team" class="md-nav__link">
+      Development Team
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-3-4" type="checkbox" id="nav-6-3-3-4">
+    
+    <label class="md-nav__link" for="nav-6-3-3-4">
+      Sprint Events
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-3-3-4">
+        Sprint Events
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Sprint_Events/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Sprint_Events/sprint_planning/" title="Sprint Planning" class="md-nav__link">
+      Sprint Planning
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Sprint_Events/development_phase/" title="Development Phase" class="md-nav__link">
+      Development Phase
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Sprint_Events/cross_stand_up_meetings/" title="Cross Stand-up Meetings" class="md-nav__link">
+      Cross Stand-up Meetings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Sprint_Events/sprint_review/" title="Sprint Review" class="md-nav__link">
+      Sprint Review
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Sprint_Events/sprint_retrospective/" title="Sprint Retrospective" class="md-nav__link">
+      Sprint Retrospective
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Sprint_Events/release_preparation/" title="Release Preparation" class="md-nav__link">
+      Release Preparation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-3-5" type="checkbox" id="nav-6-3-3-5">
+    
+    <label class="md-nav__link" for="nav-6-3-3-5">
+      Tools
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-3-3-5">
+        Tools
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Tools/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-3-5-2" type="checkbox" id="nav-6-3-3-5-2">
+    
+    <label class="md-nav__link" for="nav-6-3-3-5-2">
+      PO Group
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-6-3-3-5-2">
+        PO Group
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Tools/PO_Group/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Tools/PO_Group/release_designer/" title="Release designer" class="md-nav__link">
+      Release designer
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-3-5-3" type="checkbox" id="nav-6-3-3-5-3">
+    
+    <label class="md-nav__link" for="nav-6-3-3-5-3">
+      Process Group
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-6-3-3-5-3">
+        Process Group
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Tools/Process_Group/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Tools/Process_Group/sprint_planning_tool/" title="Sprint Planning Tool" class="md-nav__link">
+      Sprint Planning Tool
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Tools/Process_Group/pull_requests_overview_tool/" title="Pull Requests Overview Tool" class="md-nav__link">
+      Pull Requests Overview Tool
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Tools/Process_Group/individual_pull_request_tool/" title="Individual Pull Request Tool" class="md-nav__link">
+      Individual Pull Request Tool
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Tools/Process_Group/issues_overview_tool/" title="Issues Overview Tool" class="md-nav__link">
+      Issues Overview Tool
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Tools/Process_Group/sprint_points_overview_tool/" title="Sprint Points Tool" class="md-nav__link">
+      Sprint Points Tool
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Tools/Process_Group/sprint_retrospective_tool/" title="Sprint Retrospective Tool" class="md-nav__link">
+      Sprint Retrospective Tool
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Tools/google_calendar/" title="Google Calendar" class="md-nav__link">
+      Google Calendar
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Tools/slack/" title="Slack" class="md-nav__link">
+      Slack
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-3-6" type="checkbox" id="nav-6-3-3-6">
+    
+    <label class="md-nav__link" for="nav-6-3-3-6">
+      Issues
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-3-3-6">
+        Issues
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Issues/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Issues/offline_mode/" title="GIRAF Offline database" class="md-nav__link">
+      GIRAF Offline database
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Issues/issue_418/" title="Issue 418" class="md-nav__link">
+      Issue 418
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Issues/issue_526/" title="Issue 526" class="md-nav__link">
+      Issue 526
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-4" type="checkbox" id="nav-6-3-4">
+    
+    <label class="md-nav__link" for="nav-6-3-4">
+      2020F
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-3-4">
+        2020F
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020F/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020F/advice/" title="Advice for Future Process Groups" class="md-nav__link">
+      Advice for Future Process Groups
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020F/giraf_events/" title="GIRAF Events" class="md-nav__link">
+      GIRAF Events
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020F/github/" title="Use of GitHub in GIRAF" class="md-nav__link">
+      Use of GitHub in GIRAF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020F/kubernetes/" title="Kubernetes" class="md-nav__link">
+      Kubernetes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020F/ownership_transfer/" title="Ownership Transfer" class="md-nav__link">
+      Ownership Transfer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020F/tools/" title="Process Group Tools" class="md-nav__link">
+      Process Group Tools
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-5" type="checkbox" id="nav-6-3-5" checked>
+    
+    <label class="md-nav__link" for="nav-6-3-5">
+      2019
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-3-5">
+        2019
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../changing_the_process/" title="Changing the process" class="md-nav__link">
+      Changing the process
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../how_to/" title="How to's for developers" class="md-nav__link">
+      How to's for developers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Process group information
+      </label>
+    
+    <a href="./" title="Process group information" class="md-nav__link md-nav__link--active">
+      Process group information
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-development" class="md-nav__link">
+    General development
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fullstack-teams" class="md-nav__link">
+    Fullstack teams
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-handle-roles" class="md-nav__link">
+    How to handle roles
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#development-groups" class="md-nav__link">
+    Development groups
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skill-groups" class="md-nav__link">
+    Skill groups
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#product-owner-group" class="md-nav__link">
+    Product owner group
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-role-and-relevant-information-for-you" class="md-nav__link">
+    Your role and relevant information for you
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#communication" class="md-nav__link">
+    Communication
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-about-meetings" class="md-nav__link">
+    General about meetings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#our-adaptation-of-gitflow" class="md-nav__link">
+    Our adaptation of GitFlow
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assigning-reviewers" class="md-nav__link">
+    Assigning reviewers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gatekeepers-of-good-code-practice" class="md-nav__link">
+    Gatekeepers of good code practice
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition-of-done" class="md-nav__link">
+    Definition of done
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#issue-reporting" class="md-nav__link">
+    Issue reporting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reviews" class="md-nav__link">
+    Reviews
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../project_meetings/" title="Project meetings" class="md-nav__link">
+      Project meetings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-5-6" type="checkbox" id="nav-6-3-5-6">
+    
+    <label class="md-nav__link" for="nav-6-3-5-6">
+      From 2019
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-3-5-6">
+        From 2019
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../from_2019/PO_advice/" title="PO advice for next year's PO group" class="md-nav__link">
+      PO advice for next year's PO group
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../from_2019/general_advice/" title="General Advice for the Future Giraf Projects" class="md-nav__link">
+      General Advice for the Future Giraf Projects
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../from_2019/process_advice/" title="Advice for the Process of Future Giraf Projects" class="md-nav__link">
+      Advice for the Process of Future Giraf Projects
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-6" type="checkbox" id="nav-6-3-6">
+    
+    <label class="md-nav__link" for="nav-6-3-6">
+      2018
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-3-6">
+        2018
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2018/FutureWork/" title="Future Work" class="md-nav__link">
+      Future Work
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-7" type="checkbox" id="nav-6-3-7">
+    
+    <label class="md-nav__link" for="nav-6-3-7">
+      Review Checklists
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-3-7">
+        Review Checklists
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Review_Checklists/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-7-2" type="checkbox" id="nav-6-3-7-2">
+    
+    <label class="md-nav__link" for="nav-6-3-7-2">
+      2020E
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-3-7-2">
+        2020E
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Review_Checklists/2020E/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Review_Checklists/2020E/weekplanner/" title="weekplanner" class="md-nav__link">
+      weekplanner
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Review_Checklists/2020E/web-api/" title="web-api" class="md-nav__link">
+      web-api
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Review_Checklists/2020E/api_client/" title="api_client" class="md-nav__link">
+      api_client
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Review_Checklists/2020E/wiki/" title="wiki" class="md-nav__link">
+      wiki
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-7-3" type="checkbox" id="nav-6-3-7-3">
+    
+    <label class="md-nav__link" for="nav-6-3-7-3">
+      2020F
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-3-7-3">
+        2020F
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Review_Checklists/2020F/review_checklist_code/" title="Review Checklist for Code" class="md-nav__link">
+      Review Checklist for Code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Review_Checklists/2020F/review_checklist_wiki/" title="Review Checklist" class="md-nav__link">
+      Review Checklist
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-4" type="checkbox" id="nav-6-4">
+    
+    <label class="md-nav__link" for="nav-6-4">
+      Releases
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-4">
+        Releases
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Releases/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Releases/release_guide/" title="Release Guide" class="md-nav__link">
+      Release Guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-4-3" type="checkbox" id="nav-6-4-3">
+    
+    <label class="md-nav__link" for="nav-6-4-3">
+      2018
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-4-3">
+        2018
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Releases/2018/2018s4r1/" title="2018s4r1" class="md-nav__link">
+      2018s4r1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Releases/2018/2018s3r2/" title="2018s3r2" class="md-nav__link">
+      2018s3r2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Releases/2018/2018s3r1/" title="2018s3r1" class="md-nav__link">
+      2018s3r1
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-4-4" type="checkbox" id="nav-6-4-4">
+    
+    <label class="md-nav__link" for="nav-6-4-4">
+      2019
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-4-4">
+        2019
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Releases/2019/2019s3r1/" title="2019s3r1" class="md-nav__link">
+      2019s3r1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Releases/2019/2019s2r1/" title="2019s2r1" class="md-nav__link">
+      2019s2r1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Releases/2019/2019s1r1/" title="2019s1r1" class="md-nav__link">
+      2019s1r1
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-4-5" type="checkbox" id="nav-6-4-5">
+    
+    <label class="md-nav__link" for="nav-6-4-5">
+      2020E
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-4-5">
+        2020E
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Releases/2020E/2020es3r1/" title="2020Es3r1" class="md-nav__link">
+      2020Es3r1
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-4-6" type="checkbox" id="nav-6-4-6">
+    
+    <label class="md-nav__link" for="nav-6-4-6">
+      2020F
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-4-6">
+        2020F
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Releases/2020F/2020Fs3r1/" title="2020Fs3r1" class="md-nav__link">
+      2020Fs3r1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Releases/2020F/2020Fs2r1/" title="2020Fs2r1" class="md-nav__link">
+      2020Fs2r1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Releases/2020F/2020Fs1r1/" title="2020Fs1r1" class="md-nav__link">
+      2020Fs1r1
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-development" class="md-nav__link">
+    General development
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fullstack-teams" class="md-nav__link">
+    Fullstack teams
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-handle-roles" class="md-nav__link">
+    How to handle roles
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#development-groups" class="md-nav__link">
+    Development groups
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skill-groups" class="md-nav__link">
+    Skill groups
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#product-owner-group" class="md-nav__link">
+    Product owner group
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-role-and-relevant-information-for-you" class="md-nav__link">
+    Your role and relevant information for you
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#communication" class="md-nav__link">
+    Communication
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-about-meetings" class="md-nav__link">
+    General about meetings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#our-adaptation-of-gitflow" class="md-nav__link">
+    Our adaptation of GitFlow
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assigning-reviewers" class="md-nav__link">
+    Assigning reviewers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gatekeepers-of-good-code-practice" class="md-nav__link">
+    Gatekeepers of good code practice
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition-of-done" class="md-nav__link">
+    Definition of done
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#issue-reporting" class="md-nav__link">
+    Issue reporting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reviews" class="md-nav__link">
+    Reviews
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="process-group-information">Process group information<a class="headerlink" href="#process-group-information" title="Permanent link">&para;</a></h1>
+<p>This section mostly contains information that is relevant for the process group,
+and as such it is written to the process group.
+It might be used for development groups for the sake of documenting the process
+in the reports.</p>
+<h2 id="general-development">General development<a class="headerlink" href="#general-development" title="Permanent link">&para;</a></h2>
+<p>This is a short section that outlines how a single sprint went.
+If you want more in-depth information, you should check the
+<a href="../project_meetings/">Project Meetings section</a>.
+We started by using the Scrum of Scrums framework, where each group would send a
+representative to attend one or two standup meetings per week.<br />
+We would also do both poker planning where each group did poker planning until
+they had filled out their points, and we would be doing review and retrospective.</p>
+<p>After talking to Carsten Ruseng, our lecturer in software engineering, as well
+as realizing how inefficient poker planning is when you start out, we would skip
+poker planning.
+We did this because we experienced that most estimates were off by quite a
+margin, and this meant that if groups took two high-priority tasks and were
+delayed on their first, the second would be blocked while other groups worked on
+different things.</p>
+<p>Instead, a sprint went something like this:
+At the very first day of the sprint a <a href="../project_meetings/#sprint-intro">sprint intro</a>
+is held.
+At this event the PO group will present the product vision and the sprint goal
+for all developers.<br />
+The process group will present any changes that they have come up with during
+the previous retrospective.<br />
+At the end of the meeting each group will be assigned their first issue to work
+with.<br />
+This is done by the PO group who have ranked the issues as lowest, low, medium,
+high, or highest priority.</p>
+<p>Then ordinary development ensues.
+When a development group feels that they are done with a user story, a PR will
+be created, and the process group will be responsible for <a href="#assigning-reviewers">finding reviewers</a>.</p>
+<p>During the week you should have some <a href="../project_meetings/#cross-group-standups">cross-group standups</a>.
+In the beginning when you still follow lectures we recommend a single standup a
+week.
+It's also a good idea to organize the standup between the two days with the most
+time for your project.<br />
+For example, if you have no lectures Monday and Tuesday, but full schemes the
+rest of the week, then place the standup somewhere at the end of Monday or start
+of Tuesday.</p>
+<p>When you no longer have any lectures we found 2 standups to be beneficial.</p>
+<p>At the end of the sprint the process group should host a
+<a href="../project_meetings/#release-preparation">release preparation</a>, where you take
+everything that was developed during the sprint and test it thoroughly to polish
+the little details.</p>
+<p>The release preparation ends with a <a href="../project_meetings/#release-party">release party</a>
+where each group is given the opportunity to showcase the work they did during
+the sprint.
+This aims to help other developers gain an overview of the project, as well as
+instill a feeling of teamwork.</p>
+<h2 id="fullstack-teams">Fullstack teams<a class="headerlink" href="#fullstack-teams" title="Permanent link">&para;</a></h2>
+<p>In the previous years, groups worked with a horizontal slice of the
+architecture, i.e. some groups only worked on the database, some groups only
+worked on frontend, etc.<br />
+This meant that features were developed like on an assembly line.
+Instead, we were suggested to create fullstack groups, where groups
+independently implement an issue from server, through backend, to frontend.</p>
+<p>We were recommended to drop the horizontal slice approach for several reasons:</p>
+<ol>
+<li>Groups will only know what the state of the app is for the particular area
+   that they work with. Frontend won't know how the backend works, and the
+   server group will most likely never compile the frontend.</li>
+<li>Groups will be more isolated and not have as many developers to ask for help.</li>
+<li>You have been working as a fullstack team in previous years anyway.</li>
+<li>It is harder to assign reviewers, as there are fewer people who understand
+   the area in which you work.</li>
+<li>If you choose fullstack teams, all development of a single feature happens in
+   a single group, instead of having to hand over a feature.</li>
+</ol>
+<h2 id="how-to-handle-roles">How to handle roles<a class="headerlink" href="#how-to-handle-roles" title="Permanent link">&para;</a></h2>
+<p>You will be interacting with most of the other GIRAF students during the
+semester, and will be interacting with the students as they take on different
+roles.
+This section will try to describe and prepare you for handling the different
+roles that exist in the project.</p>
+<h3 id="development-groups">Development groups<a class="headerlink" href="#development-groups" title="Permanent link">&para;</a></h3>
+<p>The development groups are simply the groups in which you write the report.
+Every single group of students are a development group - even the process group,
+and the PO group.</p>
+<p>The process group's role will mostly be to listen to these groups' concerns
+during the semester.
+They usually bring questions about the process,
+<a href="../how_to/#how-to-create-a-pull-request">how to create pull requests</a>, who to
+ask for issues and such.
+We recommend that for issue related questions you refer to the PO group, and let
+them handle that, to ensure that they can keep an overview of what is happening
+in the project.
+You should of course help by remembering and recommending good practices, e.g.
+creating one issue per bug/feature, creating one pull request per issue.</p>
+<p>If the questions are related to pull requests, collaboration, testing, or
+anything else, we recommend that you, if you haven't already, discuss the issue
+in your group and try to reach the agreement that benefits the project the most.
+Remember that even though it is always recommended to follow all best
+code-practices, this is sometimes impossible as you have a limited amount of
+time available.
+Try to get an overview of the kind of best practices we followed as we recommend
+that you follow them.<br />
+For anything else, see the developers' time as a scarce resource.
+What will the project and next year's students benefit from the most?
+Following the practice, or simply developing new features / document the
+existing ones?</p>
+<h3 id="skill-groups">Skill groups<a class="headerlink" href="#skill-groups" title="Permanent link">&para;</a></h3>
+<p>These groups have a representative from each development group, and have a
+single responsibility area, i.e. the frontend, backend, or server.<br />
+They will do work that is not directly related to an issue, but is more related
+to general maintenance and management of the three areas.
+We recommend that major changes or decisions related to one of the areas are
+discussed in these groups, as they will be the most qualified at making these
+decisions.
+The development groups should also be able to consult their representative when
+they have specific questions to one of the areas.</p>
+<p>We did not have a lot to do with these groups, other than setting the time and
+place for the first meeting, and introducing the idea to them.
+From this point they figured out how they could gain an overview of the area,
+and continue work.
+They also organized their own meetings after the first meeting.</p>
+<h3 id="product-owner-group">Product owner group<a class="headerlink" href="#product-owner-group" title="Permanent link">&para;</a></h3>
+<p>The product owner group, also called the PO group, is the group responsible for
+the issues in the project.
+According to regular Scrum, that we started with an intention to follow, product
+owner is a bit of a misleading name.
+But the responsible that they were assigned by us, was to handle the issues.
+When a feature suggestion was provided, the PO group would make it an issue,
+prioritize it, create and add prototypes to it, and assign it when development
+groups came and asked for new issues.
+They would also prune overlapping issues, and approve the design of all pull
+requests, to ensure that they are consistent with the prototypes and the design
+guide.</p>
+<p>We were assigned the same room as the PO group in 2019.
+This was very beneficial for the cooperation, as we could quickly take a short
+discussion with them about the different aspects of the project.<br />
+In certain areas your work will be overlapping, and other students coming into
+your group rooms to discuss something, will not always know which one of you to
+address.
+If you are seated in the same room, you will be able to eavesdrop on the
+requests to the PO group, and vice versa.</p>
+<p>This will both give you an overview of the project, as well as provide the PO
+group with an overview of the process changes that you discuss.
+Embrace their feedback and input, as they will have the overview of the issues
+in the project and the progress of these.</p>
+<p>You should remind the PO group of the different meetings, and what they should
+do to prepare.
+For the sprint intro, the PO group should bring the product vision and the
+sprint vision.
+For the release preparation, please refer to the <a href="../project_meetings/#release-preparation">release preparation section</a>
+as this requires some work from both of you.</p>
+<h2 id="your-role-and-relevant-information-for-you">Your role and relevant information for you<a class="headerlink" href="#your-role-and-relevant-information-for-you" title="Permanent link">&para;</a></h2>
+<p>This section includes information directly related to your role as the process
+group.
+It is meant as a work of reference that you can consult when in doubt about the
+different tasks that you should perform during the semester.</p>
+<h3 id="communication">Communication<a class="headerlink" href="#communication" title="Permanent link">&para;</a></h3>
+<p>We created a Slack channel that we used for communication in the project.
+All groups had their own channel that could be used for getting a hold of the
+group.
+Each skill group also had their own channel.
+Other than that, he had the following channels:</p>
+<ul>
+<li>Announcements <ul>
+<li>Only used for very important information that all should receive.</li>
+</ul>
+</li>
+<li>General<ul>
+<li>Mostly used for relevant discussions and talks about the project, or for
+  asking everyone for help.</li>
+</ul>
+</li>
+<li>github_watch<ul>
+<li>GitHub bot so you can follow all the sweet progress.</li>
+</ul>
+</li>
+<li>Flutter<ul>
+<li>General resources and questions about Flutter.</li>
+</ul>
+</li>
+<li>Random<ul>
+<li>To keep everything meme-related away from the other channels</li>
+</ul>
+</li>
+</ul>
+<p>We very strongly recommend that you add the setting that
+<a href="https://get.slack.help/hc/en-us/articles/115004686586-Show-members-full-names-in-your-workspace#show-full-names-1">displays people's full name instead of their obscure username</a>.
+Likewise, it is beneficial if people put their group in the <em>What I do</em> field,
+so that it is easy for everyone to identify where the person they're talking to
+belongs.</p>
+<p>We also recommended that you ask people to add their real name to GitHub, so you
+can search for that when assigning them, instead of having to deal with their
+GitHub usernames.
+They change that by going to <a href="https://github.com/settings/profile">https://github.com/settings/profile</a> and changing
+their name to their real name.</p>
+<h3 id="general-about-meetings">General about meetings<a class="headerlink" href="#general-about-meetings" title="Permanent link">&para;</a></h3>
+<p>You will be responsible for planning most meetings.
+We created a GIRAF Google Calendar that we shared with people, where we asked
+them to add all meetings all groups are welcome - that included skill group
+meetings and the general process meetings.
+When people add this calendar to theirs, it wasn't necessary for us to promote
+the meeting on Slack, saving a lot of messages.
+If you choose to do the same, remember to add location to the meetings.</p>
+<p>We generally planned a retrospective on Monday morning and sprint intro on
+Tuesday morning, so you have time to review any changes to the process.
+This also gives the PO group time to organize their issues, and the development
+groups a bit of short time to catch up on their reports.</p>
+<p>Release preparation would usually be two full days.
+If the sprint ends on a Friday, we would hold a release preparation from
+Thursday morning until Friday at 13 o'clock. From 13 to 14 we would hold the
+release party.
+We had the release party early in the day, so as many as possible would attend
+it.</p>
+<h3 id="our-adaptation-of-gitflow">Our adaptation of GitFlow<a class="headerlink" href="#our-adaptation-of-gitflow" title="Permanent link">&para;</a></h3>
+<p>We used the <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">GitFlow Workflow</a>
+as the branching strategy in the GIRAF project.
+We also enforce squash merges from feature branches into the develop branch, so
+each feature will be in a single commit.</p>
+<p>This is our adaptation, but please read the entire section, as there might be
+better ways to do it.</p>
+<p>For the <a href="../project_meetings/#release-preparation">release preparation</a>, the
+process group creates a release branch, which is merged out from the master
+branch.
+Then commits are chosen from the develop branch by the PO-group.
+Only commits that are actually relevant for the upcoming release are added.
+This is called cherry picking commits.
+In the release preparation, developers will add bug-fixes to the release branch.
+When the release preparation ends, the release branch is merged into the master
+branch, which is then merged into the develop branch.
+This ensures that bug-fixes are also added to the develop branch.</p>
+<p>One problem with this approach is the manual part with the creation of the
+feature branch.
+If you forget a commit, or miss it, you risk having critical functionality that
+was never added to the master branch, but will be present on the develop branch.
+You will never get a complete and automatic addition of the changes from the
+develop branch, and as such you cannot guarantee that everything was added to
+the master branch.</p>
+<p>To accommodate this problem, one solution would be to make even stricter rules
+for the develop branch.
+As it is currently, the develop branch allows sub-features to be pushed, which
+are parts of bigger features.
+As such you might have a "login" button, but not the "create user" button.
+This renders the login button useless, but it can still be included in the
+develop branch right now.</p>
+<p>An example of how to properly handle this, could be to create a feature branch
+where all login related functionality could be added.
+Different issues could be merged into this feature branch.
+When everything login related has been fixed and merged to the feature branch,
+this feature branch can be merged into the develop branch.</p>
+<h3 id="assigning-reviewers">Assigning reviewers<a class="headerlink" href="#assigning-reviewers" title="Permanent link">&para;</a></h3>
+<p>Assigning reviewers is done in an excel document.</p>
+<p><img alt="Google Sheets Review Assignment" src="https://i.imgur.com/WBkdycF.png" /></p>
+<p>This sheet will keep track of the number of PRs a group reviewed and the size of
+these.
+We reset it once in a while, when the numbers become too big.</p>
+<p>It helps to gain an overview of which group to assign for review.
+Every PR needs two groups, who are not the author, as reviewers, as well as an
+approving review from a PO group member if it contains anything GUI related.
+When groups have been chosen, you should assign a representative from the group
+as a reviewer on the PR.</p>
+<p>We provide a checklist to the reviewers, depending on if the PR is made to a
+<a href="../../Review_Checklists/2020F/review_checklist_code/">code repository</a> or the
+<a href="../../Review_Checklists/2020F/review_checklist_wiki/">wiki repository</a>.
+This is provided as a comment on the PR on GitHub.</p>
+<h3 id="gatekeepers-of-good-code-practice">Gatekeepers of good code practice<a class="headerlink" href="#gatekeepers-of-good-code-practice" title="Permanent link">&para;</a></h3>
+<p>You, the process group, will be mostly responsible for maintaining a good code
+practice.
+Some developers will not be informed about the best practices, others will not
+care, and others yet again will fail to see the reasons for good code practice.</p>
+<p>As such you will be responsible for sustaining a good code practice.
+You should actively seek out more information, and ensure that you thoroughly
+research pros and cons of both existing practices and new practices.</p>
+<h4 id="definition-of-done">Definition of done<a class="headerlink" href="#definition-of-done" title="Permanent link">&para;</a></h4>
+<p>For an issue, we have defined the following definition of done:</p>
+<blockquote>
+<p>An issue and its associated tasks are considered done when the feature branch
+has been successfully merged into the development branch by a single pull
+request and the feature documentation has been updated in the GIRAF wiki.</p>
+</blockquote>
+<p>This means that all functionality should have been designed and implemented, so
+you have fully working functionality merged.
+Essentially things should be included in the develop branch when you would
+publish it to the user (after a bug test).</p>
+<p>You should check that people practice this mentality.
+You will be able to spot this if you keep an eye on the incoming pull requests.
+Some groups will add several pieces of functionality in a single PR, and others
+will add incomplete functionality, stating that "it wasn't specified in the
+issue that we should do it."</p>
+<p>For the second case, tell them that it is a shortcoming of the issue, and when
+they discovered this they should have taken immediate contact to the PO group
+and asked for it to be included in the issue.
+Functionality isn't worth much, if it isn't finished, and as such shouldn't be
+included in the develop branch.</p>
+<h4 id="issue-reporting">Issue reporting<a class="headerlink" href="#issue-reporting" title="Permanent link">&para;</a></h4>
+<p>Once in a while, someone will approach you and tell you about something that the
+program should have, or something that doesn't work.
+You should be responsible for one of the two things:</p>
+<ol>
+<li>Creating an issue describing it.</li>
+<li>Making sure the developer creates an issue describing it.</li>
+</ol>
+<p>If you don't do it, you probably won't remember it.</p>
+<h4 id="reviews">Reviews<a class="headerlink" href="#reviews" title="Permanent link">&para;</a></h4>
+<p>It will be so easy to cut corners with this.
+A lot of your time will be spent doing reviews, and you will probably be tempted
+to cut down on the time spent on reviews.
+Know for sure that other students will, at least.</p>
+<p>We really hope that you encourage people to spend the time on the reviews.
+It will save you so much time in the long run, as you will catch a lot of errors
+and bad practices before they even emerge.</p>
+<p>The students will also get a lot of insight into other people's way of writing
+code, as well as the insight of learning how other parts of the codebase were
+developed.</p>
+<p>The time spent is well invested and will benefit you and the coming years in the
+long run, as the code will be much more aligned, and developers will increase
+their knowledge a lot.</p>
+                
+                  
+                
+                
+                  
+                  <hr>
+                  <div class="md-source-date">
+                    <small>
+                      
+                        Last update: September 11, 2025
+                      
+                    </small>
+                  </div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../how_to/" title="How to's for developers" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                How to's for developers
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../project_meetings/" title="Project meetings" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Project meetings
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../../assets/javascripts/application.c33a9706.js"></script>
+      
+      <script>app.initialize({version:"1.5.0",url:{base:"../../../.."}})</script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <defs>
+   <clipPath id="cut-off-1">
+    <rect id="svg_1" height="300" width="300" y="150" x="0"/>
+   </clipPath>
+   <clipPath id="cut-off-2">
+    <rect id="svg_2" height="150" width="300" y="0" x="0"/>
+   </clipPath>
+   <linearGradient id="gradient-1">
+    <stop stop-color="#FDBB55" offset="0"/>
+    <stop stop-opacity="0.5" stop-color="#FDBB55" offset="300"/>
+   </linearGradient>
+   <linearGradient id="gradient-2">
+    <stop stop-opacity="0" stop-color="#FDBB55" offset="0"/>
+    <stop stop-opacity="0.5" stop-color="#FDBB55" offset="300"/>
+   </linearGradient>
+  </defs>
+  <circle id="svg_3" clip-path="url(#cut-off-1)" fill="none" stroke-width="45" stroke="url(#gradient-1)" r="120" cy="150" cx="150"/>
+  <circle id="svg_4" clip-path="url(#cut-off-2)" fill="none" stroke-width="45" stroke="url(#gradient-2)" r="120" cy="150" cx="150"/>
+  <!-- Hej Michelle! -->
+ </g>
+ <g>
+  <title>Layer 1</title>
+ </g>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="302" width="302" y="-1" x="-1"/>
+ </g>
+</svg>

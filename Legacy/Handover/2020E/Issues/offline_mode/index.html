@@ -1,0 +1,3831 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+        <meta name="author" content="@aau-giraf">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.0, mkdocs-material-4.6.3">
+    
+    
+      
+        <title>GIRAF Offline database - GIRAF Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/application.adb8469c.css">
+      
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#f9a825">
+      
+    
+    
+      <script src="../../../../../assets/javascripts/modernizr.86422ebf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../../../../extra/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="yellow" data-md-color-accent="deep-orange">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#giraf-offline-database" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../../../.." title="GIRAF Wiki" aria-label="GIRAF Wiki" class="md-header-nav__button md-logo">
+          
+            <img alt="logo" src="../../../../../extra/giraf.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              GIRAF Wiki
+            </span>
+            <span class="md-header-nav__topic">
+              
+                GIRAF Offline database
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/aau-giraf" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    aau-giraf
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../../../.." class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../../../Getting_Started/" class="md-tabs__link">
+          Getting Started
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../../../Development/" class="md-tabs__link">
+          Development
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../../../Legal/" class="md-tabs__link">
+          Legal
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../../../About/" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../../" class="md-tabs__link md-tabs__link--active">
+          Legacy
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../../../.." title="GIRAF Wiki" class="md-nav__button md-logo">
+      
+        <img alt="logo" src="../../../../../extra/giraf.png" width="48" height="48">
+      
+    </a>
+    GIRAF Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/aau-giraf" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    aau-giraf
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Getting Started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../../Getting_Started/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../../Getting_Started/handover/" title="Handover" class="md-nav__link">
+      Handover
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../../Getting_Started/ownership_transfer/" title="Ownership Transfer" class="md-nav__link">
+      Ownership Transfer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../../Getting_Started/process/" title="Process" class="md-nav__link">
+      Process
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../../Getting_Started/tools/" title="Tools" class="md-nav__link">
+      Tools
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Development
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Development
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../../Development/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Wiki
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Wiki
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../../Development/Wiki/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../../Development/Wiki/running_wiki/" title="Running the Wiki Locally" class="md-nav__link">
+      Running the Wiki Locally
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../../Development/Wiki/writing_wiki/" title="Writing Pages for the Wiki" class="md-nav__link">
+      Writing Pages for the Wiki
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../../Development/github/" title="Use of GitHub in GIRAF" class="md-nav__link">
+      Use of GitHub in GIRAF
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Legal
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Legal
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../../Legal/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../../Legal/privacy_policy/" title="Privacy Policy" class="md-nav__link">
+      Privacy Policy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      GDPR
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        GDPR
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../../Legal/GDPR/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../../Legal/GDPR/gdpr_regulation/" title="GDPR Regulation" class="md-nav__link">
+      GDPR Regulation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../../Legal/GDPR/consent_information/" title="Consent Information" class="md-nav__link">
+      Consent Information
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../../Legal/GDPR/consent/" title="Samtykkeerklæring" class="md-nav__link">
+      Samtykkeerklæring
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../../Legal/GDPR/processing_activity_record_information/" title="Processing Activity Record Information" class="md-nav__link">
+      Processing Activity Record Information
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../../Legal/GDPR/processing_activity_record/" title="Processing Activity Record" class="md-nav__link">
+      Processing Activity Record
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../../Legal/risk_assessment/" title="Risk assessment" class="md-nav__link">
+      Risk assessment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../../Legal/licences/" title="Licenses" class="md-nav__link">
+      Licenses
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../../About/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+    
+    <label class="md-nav__link" for="nav-6">
+      Legacy
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Legacy
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2" type="checkbox" id="nav-6-2">
+    
+    <label class="md-nav__link" for="nav-6-2">
+      Weekplanner
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-2">
+        Weekplanner
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-2" type="checkbox" id="nav-6-2-2">
+    
+    <label class="md-nav__link" for="nav-6-2-2">
+      Apps
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-2-2">
+        Apps
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Apps/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-2-2" type="checkbox" id="nav-6-2-2-2">
+    
+    <label class="md-nav__link" for="nav-6-2-2-2">
+      Guidelines
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-2-2-2">
+        Guidelines
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Apps/Guidelines/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Apps/Guidelines/web_api_error_handling/" title="Handle Exceptions from the Web API" class="md-nav__link">
+      Handle Exceptions from the Web API
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Apps/release_guide/" title="Manual Release of Giraf" class="md-nav__link">
+      Manual Release of Giraf
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Apps/test/" title="Testing" class="md-nav__link">
+      Testing
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-3" type="checkbox" id="nav-6-2-3">
+    
+    <label class="md-nav__link" for="nav-6-2-3">
+      GitHub
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-2-3">
+        GitHub
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/GitHub/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/GitHub/repository_description/" title="Repositories" class="md-nav__link">
+      Repositories
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-3-3" type="checkbox" id="nav-6-2-3-3">
+    
+    <label class="md-nav__link" for="nav-6-2-3-3">
+      GitHub Actions
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-2-3-3">
+        GitHub Actions
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/GitHub/GitHub_Actions/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/GitHub/GitHub_Actions/workflows_in_repositories/" title="Workflows in the Repositories" class="md-nav__link">
+      Workflows in the Repositories
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/GitHub/GitHub_Actions/code_coverage/" title="Code Coverage" class="md-nav__link">
+      Code Coverage
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/GitHub/using_github/" title="Using GitHub in GIRAF" class="md-nav__link">
+      Using GitHub in GIRAF
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-4" type="checkbox" id="nav-6-2-4">
+    
+    <label class="md-nav__link" for="nav-6-2-4">
+      Server
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-2-4">
+        Server
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Server/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Server/architecture/" title="Architecture" class="md-nav__link">
+      Architecture
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Server/access/" title="Access" class="md-nav__link">
+      Access
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-4-4" type="checkbox" id="nav-6-2-4-4">
+    
+    <label class="md-nav__link" for="nav-6-2-4-4">
+      Docker
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-2-4-4">
+        Docker
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Server/Docker/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Server/Docker/general_information/" title="General Information" class="md-nav__link">
+      General Information
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-4-4-3" type="checkbox" id="nav-6-2-4-4-3">
+    
+    <label class="md-nav__link" for="nav-6-2-4-4-3">
+      Docker Swarm
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-6-2-4-4-3">
+        Docker Swarm
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Server/Docker/Docker_Swarm/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Server/Docker/Docker_Swarm/practical_information/" title="Practical Information" class="md-nav__link">
+      Practical Information
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Server/Docker/Docker_Swarm/configuration/" title="Configuration" class="md-nav__link">
+      Configuration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Server/Docker/Docker_Swarm/network/" title="Networking Docker Swarm" class="md-nav__link">
+      Networking Docker Swarm
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Server/Docker/Docker_Swarm/proxy/" title="Proxy" class="md-nav__link">
+      Proxy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Server/Docker/Docker_Swarm/web_api/" title="Web API" class="md-nav__link">
+      Web API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Server/Docker/Docker_Swarm/database/" title="Database" class="md-nav__link">
+      Database
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-5" type="checkbox" id="nav-6-2-5">
+    
+    <label class="md-nav__link" for="nav-6-2-5">
+      Web API
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-2-5">
+        Web API
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Web_API/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Web_API/architecture/" title="Architecture" class="md-nav__link">
+      Architecture
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-5-3" type="checkbox" id="nav-6-2-5-3">
+    
+    <label class="md-nav__link" for="nav-6-2-5-3">
+      Backend
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-2-5-3">
+        Backend
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Web_API/Backend/database/" title="Database" class="md-nav__link">
+      Database
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Web_API/Backend/entity_framework/" title="Entity Framework Core" class="md-nav__link">
+      Entity Framework Core
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Web_API/Backend/models/" title="Models" class="md-nav__link">
+      Models
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-5-4" type="checkbox" id="nav-6-2-5-4">
+    
+    <label class="md-nav__link" for="nav-6-2-5-4">
+      Endpoints and Controllers
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-2-5-4">
+        Endpoints and Controllers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Web_API/Endpoints_and_Controllers/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Web_API/Endpoints_and_Controllers/guidelines/" title="Guidelines" class="md-nav__link">
+      Guidelines
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Web_API/Endpoints_and_Controllers/controller_descriptions/" title="Description of Controllers" class="md-nav__link">
+      Description of Controllers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-5-4-4" type="checkbox" id="nav-6-2-5-4-4">
+    
+    <label class="md-nav__link" for="nav-6-2-5-4-4">
+      Endpoints
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-6-2-5-4-4">
+        Endpoints
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/account_endpoints/" title="Account Endpoints" class="md-nav__link">
+      Account Endpoints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/user_endpoints/" title="User Endpoints" class="md-nav__link">
+      User Endpoints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/department_endpoints/" title="Department Endpoints" class="md-nav__link">
+      Department Endpoints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/activity_endpoints/" title="Activity Endpoints" class="md-nav__link">
+      Activity Endpoints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/pictogram_endpoints/" title="Pictogram Endpoints" class="md-nav__link">
+      Pictogram Endpoints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/week_endpoints/" title="Week Endpoints" class="md-nav__link">
+      Week Endpoints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/week_template_endpoints/" title="WeekTemplate Endpoints" class="md-nav__link">
+      WeekTemplate Endpoints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/status_endpoints/" title="Status Endpoints" class="md-nav__link">
+      Status Endpoints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/error_endpoints/" title="Error Endpoints" class="md-nav__link">
+      Error Endpoints
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-5-4-5" type="checkbox" id="nav-6-2-5-4-5">
+    
+    <label class="md-nav__link" for="nav-6-2-5-4-5">
+      Authorization
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-6-2-5-4-5">
+        Authorization
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Web_API/Endpoints_and_Controllers/Authorization/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Web_API/Endpoints_and_Controllers/Authorization/token_authentication/" title="Token Authentication" class="md-nav__link">
+      Token Authentication
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Web_API/Endpoints_and_Controllers/swagger/" title="Swagger" class="md-nav__link">
+      Swagger
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Web_API/settings/" title="Settings" class="md-nav__link">
+      Settings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Web_API/Testing/" title="Testing" class="md-nav__link">
+      Testing
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-6" type="checkbox" id="nav-6-2-6">
+    
+    <label class="md-nav__link" for="nav-6-2-6">
+      UI Design
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-2-6">
+        UI Design
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/UI_Design/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-6-2" type="checkbox" id="nav-6-2-6-2">
+    
+    <label class="md-nav__link" for="nav-6-2-6-2">
+      Design Guide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-2-6-2">
+        Design Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/UI_Design/Design_Guide/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/UI_Design/Design_Guide/application_structure/" title="Application structure" class="md-nav__link">
+      Application structure
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/UI_Design/Design_Guide/buttons/" title="Buttons" class="md-nav__link">
+      Buttons
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/UI_Design/Design_Guide/colors/" title="Colors" class="md-nav__link">
+      Colors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/UI_Design/Design_Guide/dialog/" title="Dialogue" class="md-nav__link">
+      Dialogue
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/UI_Design/Design_Guide/greyscale/" title="Greyscale" class="md-nav__link">
+      Greyscale
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/UI_Design/Design_Guide/icons/" title="Icon guide" class="md-nav__link">
+      Icon guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/UI_Design/Design_Guide/loading_indicators/" title="Loading indicators" class="md-nav__link">
+      Loading indicators
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/UI_Design/Design_Guide/pictogram_representation/" title="Pictogram representation" class="md-nav__link">
+      Pictogram representation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/UI_Design/Design_Guide/scroll/" title="Indication of scroll" class="md-nav__link">
+      Indication of scroll
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/UI_Design/Design_Guide/typography/" title="Typography" class="md-nav__link">
+      Typography
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-6-3" type="checkbox" id="nav-6-2-6-3">
+    
+    <label class="md-nav__link" for="nav-6-2-6-3">
+      Prototypes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-2-6-3">
+        Prototypes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/UI_Design/Prototypes/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/UI_Design/Prototypes/prototype_guidelines/" title="Guidelines" class="md-nav__link">
+      Guidelines
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-7" type="checkbox" id="nav-6-2-7">
+    
+    <label class="md-nav__link" for="nav-6-2-7">
+      Setup
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-2-7">
+        Setup
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Setup/Index/" title="Environment Setup" class="md-nav__link">
+      Environment Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Setup/MacOS/" title="MacOS Setup Guide" class="md-nav__link">
+      MacOS Setup Guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Setup/Linux/" title="Linux Setup Guide" class="md-nav__link">
+      Linux Setup Guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Setup/Windows/" title="Windows Setup Guide" class="md-nav__link">
+      Windows Setup Guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Setup/Running_GIRAF/" title="Running GIRAF" class="md-nav__link">
+      Running GIRAF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../weekplanner/Setup/Docker/" title="Optional: Dockerisation" class="md-nav__link">
+      Optional: Dockerisation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3" type="checkbox" id="nav-6-3" checked>
+    
+    <label class="md-nav__link" for="nav-6-3">
+      Handover
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-3">
+        Handover
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../handover_guide/" title="Handover Guide" class="md-nav__link">
+      Handover Guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-3" type="checkbox" id="nav-6-3-3" checked>
+    
+    <label class="md-nav__link" for="nav-6-3-3">
+      2020E
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-3-3">
+        2020E
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../feature_overview/" title="Feature Overview" class="md-nav__link">
+      Feature Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-3-3" type="checkbox" id="nav-6-3-3-3">
+    
+    <label class="md-nav__link" for="nav-6-3-3-3">
+      Role Structure
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-3-3-3">
+        Role Structure
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Role_Structure/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Role_Structure/po/" title="PO" class="md-nav__link">
+      PO
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Role_Structure/process/" title="Process" class="md-nav__link">
+      Process
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Role_Structure/development_team/" title="Development Team" class="md-nav__link">
+      Development Team
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-3-4" type="checkbox" id="nav-6-3-3-4">
+    
+    <label class="md-nav__link" for="nav-6-3-3-4">
+      Sprint Events
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-3-3-4">
+        Sprint Events
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sprint_Events/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sprint_Events/sprint_planning/" title="Sprint Planning" class="md-nav__link">
+      Sprint Planning
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sprint_Events/development_phase/" title="Development Phase" class="md-nav__link">
+      Development Phase
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sprint_Events/cross_stand_up_meetings/" title="Cross Stand-up Meetings" class="md-nav__link">
+      Cross Stand-up Meetings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sprint_Events/sprint_review/" title="Sprint Review" class="md-nav__link">
+      Sprint Review
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sprint_Events/sprint_retrospective/" title="Sprint Retrospective" class="md-nav__link">
+      Sprint Retrospective
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sprint_Events/release_preparation/" title="Release Preparation" class="md-nav__link">
+      Release Preparation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-3-5" type="checkbox" id="nav-6-3-3-5">
+    
+    <label class="md-nav__link" for="nav-6-3-3-5">
+      Tools
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-3-3-5">
+        Tools
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Tools/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-3-5-2" type="checkbox" id="nav-6-3-3-5-2">
+    
+    <label class="md-nav__link" for="nav-6-3-3-5-2">
+      PO Group
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-6-3-3-5-2">
+        PO Group
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Tools/PO_Group/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Tools/PO_Group/release_designer/" title="Release designer" class="md-nav__link">
+      Release designer
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-3-5-3" type="checkbox" id="nav-6-3-3-5-3">
+    
+    <label class="md-nav__link" for="nav-6-3-3-5-3">
+      Process Group
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-6-3-3-5-3">
+        Process Group
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Tools/Process_Group/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Tools/Process_Group/sprint_planning_tool/" title="Sprint Planning Tool" class="md-nav__link">
+      Sprint Planning Tool
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Tools/Process_Group/pull_requests_overview_tool/" title="Pull Requests Overview Tool" class="md-nav__link">
+      Pull Requests Overview Tool
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Tools/Process_Group/individual_pull_request_tool/" title="Individual Pull Request Tool" class="md-nav__link">
+      Individual Pull Request Tool
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Tools/Process_Group/issues_overview_tool/" title="Issues Overview Tool" class="md-nav__link">
+      Issues Overview Tool
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Tools/Process_Group/sprint_points_overview_tool/" title="Sprint Points Tool" class="md-nav__link">
+      Sprint Points Tool
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Tools/Process_Group/sprint_retrospective_tool/" title="Sprint Retrospective Tool" class="md-nav__link">
+      Sprint Retrospective Tool
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Tools/google_calendar/" title="Google Calendar" class="md-nav__link">
+      Google Calendar
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Tools/slack/" title="Slack" class="md-nav__link">
+      Slack
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-3-6" type="checkbox" id="nav-6-3-3-6" checked>
+    
+    <label class="md-nav__link" for="nav-6-3-3-6">
+      Issues
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-3-3-6">
+        Issues
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        GIRAF Offline database
+      </label>
+    
+    <a href="./" title="GIRAF Offline database" class="md-nav__link md-nav__link--active">
+      GIRAF Offline database
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#current-solution" class="md-nav__link">
+    Current solution
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#here-is-the-prioritized-list-for-the-offline-features" class="md-nav__link">
+    Here is the prioritized list for the offline features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#issues-considerations" class="md-nav__link">
+    Issues / considerations
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syncing-the-local-database-to-match-the-online-database" class="md-nav__link">
+    Syncing the local database to match the online database
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-currently-exists" class="md-nav__link">
+    What currently exists
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-1-1-approach" class="md-nav__link">
+    The 1-1 approach
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-dbhandler" class="md-nav__link">
+    The dbHandler
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-apis" class="md-nav__link">
+    The Api's
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unit-tests" class="md-nav__link">
+    Unit tests
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../issue_418/" title="Issue 418" class="md-nav__link">
+      Issue 418
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../issue_526/" title="Issue 526" class="md-nav__link">
+      Issue 526
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-4" type="checkbox" id="nav-6-3-4">
+    
+    <label class="md-nav__link" for="nav-6-3-4">
+      2020F
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-3-4">
+        2020F
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../2020F/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../2020F/advice/" title="Advice for Future Process Groups" class="md-nav__link">
+      Advice for Future Process Groups
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../2020F/giraf_events/" title="GIRAF Events" class="md-nav__link">
+      GIRAF Events
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../2020F/github/" title="Use of GitHub in GIRAF" class="md-nav__link">
+      Use of GitHub in GIRAF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../2020F/kubernetes/" title="Kubernetes" class="md-nav__link">
+      Kubernetes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../2020F/ownership_transfer/" title="Ownership Transfer" class="md-nav__link">
+      Ownership Transfer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../2020F/tools/" title="Process Group Tools" class="md-nav__link">
+      Process Group Tools
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-5" type="checkbox" id="nav-6-3-5">
+    
+    <label class="md-nav__link" for="nav-6-3-5">
+      2019
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-3-5">
+        2019
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../2019/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../2019/changing_the_process/" title="Changing the process" class="md-nav__link">
+      Changing the process
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../2019/how_to/" title="How to's for developers" class="md-nav__link">
+      How to's for developers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../2019/process_group_information/" title="Process group information" class="md-nav__link">
+      Process group information
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../2019/project_meetings/" title="Project meetings" class="md-nav__link">
+      Project meetings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-5-6" type="checkbox" id="nav-6-3-5-6">
+    
+    <label class="md-nav__link" for="nav-6-3-5-6">
+      From 2019
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-3-5-6">
+        From 2019
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../2019/from_2019/PO_advice/" title="PO advice for next year's PO group" class="md-nav__link">
+      PO advice for next year's PO group
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../2019/from_2019/general_advice/" title="General Advice for the Future Giraf Projects" class="md-nav__link">
+      General Advice for the Future Giraf Projects
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../2019/from_2019/process_advice/" title="Advice for the Process of Future Giraf Projects" class="md-nav__link">
+      Advice for the Process of Future Giraf Projects
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-6" type="checkbox" id="nav-6-3-6">
+    
+    <label class="md-nav__link" for="nav-6-3-6">
+      2018
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-3-6">
+        2018
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../2018/FutureWork/" title="Future Work" class="md-nav__link">
+      Future Work
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-7" type="checkbox" id="nav-6-3-7">
+    
+    <label class="md-nav__link" for="nav-6-3-7">
+      Review Checklists
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-3-7">
+        Review Checklists
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Review_Checklists/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-7-2" type="checkbox" id="nav-6-3-7-2">
+    
+    <label class="md-nav__link" for="nav-6-3-7-2">
+      2020E
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-3-7-2">
+        2020E
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Review_Checklists/2020E/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Review_Checklists/2020E/weekplanner/" title="weekplanner" class="md-nav__link">
+      weekplanner
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Review_Checklists/2020E/web-api/" title="web-api" class="md-nav__link">
+      web-api
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Review_Checklists/2020E/api_client/" title="api_client" class="md-nav__link">
+      api_client
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Review_Checklists/2020E/wiki/" title="wiki" class="md-nav__link">
+      wiki
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-7-3" type="checkbox" id="nav-6-3-7-3">
+    
+    <label class="md-nav__link" for="nav-6-3-7-3">
+      2020F
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-3-7-3">
+        2020F
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Review_Checklists/2020F/review_checklist_code/" title="Review Checklist for Code" class="md-nav__link">
+      Review Checklist for Code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Review_Checklists/2020F/review_checklist_wiki/" title="Review Checklist" class="md-nav__link">
+      Review Checklist
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-4" type="checkbox" id="nav-6-4">
+    
+    <label class="md-nav__link" for="nav-6-4">
+      Releases
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-4">
+        Releases
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Releases/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Releases/release_guide/" title="Release Guide" class="md-nav__link">
+      Release Guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-4-3" type="checkbox" id="nav-6-4-3">
+    
+    <label class="md-nav__link" for="nav-6-4-3">
+      2018
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-4-3">
+        2018
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Releases/2018/2018s4r1/" title="2018s4r1" class="md-nav__link">
+      2018s4r1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Releases/2018/2018s3r2/" title="2018s3r2" class="md-nav__link">
+      2018s3r2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Releases/2018/2018s3r1/" title="2018s3r1" class="md-nav__link">
+      2018s3r1
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-4-4" type="checkbox" id="nav-6-4-4">
+    
+    <label class="md-nav__link" for="nav-6-4-4">
+      2019
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-4-4">
+        2019
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Releases/2019/2019s3r1/" title="2019s3r1" class="md-nav__link">
+      2019s3r1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Releases/2019/2019s2r1/" title="2019s2r1" class="md-nav__link">
+      2019s2r1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Releases/2019/2019s1r1/" title="2019s1r1" class="md-nav__link">
+      2019s1r1
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-4-5" type="checkbox" id="nav-6-4-5">
+    
+    <label class="md-nav__link" for="nav-6-4-5">
+      2020E
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-4-5">
+        2020E
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Releases/2020E/2020es3r1/" title="2020Es3r1" class="md-nav__link">
+      2020Es3r1
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-4-6" type="checkbox" id="nav-6-4-6">
+    
+    <label class="md-nav__link" for="nav-6-4-6">
+      2020F
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-4-6">
+        2020F
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Releases/2020F/2020Fs3r1/" title="2020Fs3r1" class="md-nav__link">
+      2020Fs3r1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Releases/2020F/2020Fs2r1/" title="2020Fs2r1" class="md-nav__link">
+      2020Fs2r1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Releases/2020F/2020Fs1r1/" title="2020Fs1r1" class="md-nav__link">
+      2020Fs1r1
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#current-solution" class="md-nav__link">
+    Current solution
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#here-is-the-prioritized-list-for-the-offline-features" class="md-nav__link">
+    Here is the prioritized list for the offline features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#issues-considerations" class="md-nav__link">
+    Issues / considerations
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syncing-the-local-database-to-match-the-online-database" class="md-nav__link">
+    Syncing the local database to match the online database
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-currently-exists" class="md-nav__link">
+    What currently exists
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-1-1-approach" class="md-nav__link">
+    The 1-1 approach
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-dbhandler" class="md-nav__link">
+    The dbHandler
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-apis" class="md-nav__link">
+    The Api's
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unit-tests" class="md-nav__link">
+    Unit tests
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="giraf-offline-database">GIRAF Offline database<a class="headerlink" href="#giraf-offline-database" title="Permanent link">&para;</a></h1>
+<p>The customers wish to use the application when offline. This could for example
+be when they are on a trip in the forest, where Wi-Fi is not an option and cell service
+might be unavailable. </p>
+<h2 id="current-solution">Current solution<a class="headerlink" href="#current-solution" title="Permanent link">&para;</a></h2>
+<p>We have chosen an offline first approach because if Giraf wants to be
+a widely used app on different app markets, it is expected to be highly functional
+without internet connection and offline first is generally the way to do this. </p>
+<p><img alt="image" src="../../../resources/offline_overview.png" /></p>
+<p>This model describes the dataflow of an offline first database. 
+The current offline database implementation is based on this model.</p>
+<p>Whenever the UI needs data, it first communicates with the BLoC. The BLoC then queries the API for the data.
+If the data is already in memory we can just return it. If it is not, we try to find it in our local database. 
+If it is not in the local database either, we look in the online database where it should exist.
+When you get data from the online database, you also save it in the local database
+and in memory, such that you can have fast retrieval and also have data available 
+if you are offline. Currently, the in memory part has not been the focus of any 
+kind of development, and the plan is to simply get the offline mode to work with
+an offline database.</p>
+<p>This setup allows reading from the local database when offline. However, in order to
+edit, delete or insert data, without synchronization issues a record of which of these actions
+were performed offline will need to be kept such that they can be completed when you are online again.
+This will also require regular checks of whether a connection to the database is available.
+To best retain the BLoC pattern, and make the offline database and its functionality available
+to potential future apps, the offline database is implemented in the api_client.
+The offline database is an SQLite database. The reason for this is that mobile devices
+already have an SQLite database running in memory for apps to use, and since the online
+database uses a MySQL database, the mapping between them is relatively easy. Flutter also
+provides a package for using SQLite called <a href="https://github.com/tekartik/sqflite/blob/master/sqflite/README.md">SQFlite</a>
+, easing the process.</p>
+<p>Below is a prioritized list of the different features the customers would like to have available offline,
+along with what issues in the weekplanner deals with that piece of functionality. Obviously the first
+thing which needs to be implemented is the ability to log in offline.</p>
+<h3 id="here-is-the-prioritized-list-for-the-offline-features">Here is the prioritized list for the offline features<a class="headerlink" href="#here-is-the-prioritized-list-for-the-offline-features" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Citizen features: <ol>
+<li>View weekplan. (<a href="https://github.com/aau-giraf/weekplanner/issues/414">Issue 414</a>)</li>
+<li>View activity. (<a href="https://github.com/aau-giraf/weekplanner/issues/414">Issue 414</a>)</li>
+<li>Mark activity as completed. (<a href="https://github.com/aau-giraf/weekplanner/issues/400">Issue 400</a>)</li>
+<li>Timer functionality. (<a href="https://github.com/aau-giraf/weekplanner/issues/402">Issue 402</a>)</li>
+</ol>
+</li>
+<li>Guardian features: <ol>
+<li>View weekplan. (<a href="https://github.com/aau-giraf/weekplanner/issues/415">Issue 415</a>)</li>
+<li>View activity. (<a href="https://github.com/aau-giraf/weekplanner/issues/415">Issue 415</a>)</li>
+<li>Cancel activity. (<a href="https://github.com/aau-giraf/weekplanner/issues/407">Issue 407</a>)</li>
+<li>Timer functionality.  (<a href="https://github.com/aau-giraf/weekplanner/issues/406">Issue 406</a>)</li>
+<li>Edit weekplan. (<a href="https://github.com/aau-giraf/weekplanner/issues/407">Issue 407</a>)</li>
+<li>Take picture as pictogram. (<a href="https://github.com/aau-giraf/weekplanner/issues/632">Issue 632</a>)</li>
+<li>Create/delete weekplans. (<a href="https://github.com/aau-giraf/weekplanner/issues/410">Issue 410</a>)</li>
+</ol>
+</li>
+</ol>
+<p>It is to be noted, that most of these issues specify that they would like the functionality
+to be available for the current week. With the current implementation of the SQLite database,
+showing more than one week should not be a problem however. Likewise, adding,
+editing and deleting weekplans are implemented in the offline database, complete with keeping
+track of what methods needs to be called again when online. What is lacking in the implementation
+is simply <strong>when</strong> this functionality needs to be used.</p>
+<h3 id="issues-considerations">Issues / considerations<a class="headerlink" href="#issues-considerations" title="Permanent link">&para;</a></h3>
+<p>As part of the design, it is necessary to find a way to handle how and which users are able to login to the 
+offline database. This could possibly be achieved by making it so that only
+the most recently logged in user is able to use the device online.</p>
+<p>For the pictograms you would also have to figure out some system for determining which
+pictograms should be saved locally, and how to save them. They are currently saved to a 
+folder called "pictograms" on the device's local storage. Saving every single pictogram
+might become problematic.</p>
+<p>Multiple strategies for which pictograms should be saved can be implemented. It is possible
+to simply only save pictograms which have been used on any screen since the last time a user
+logged in. This might however result in some images not being available if they are suddenly
+needed after going offline, even though they are connected to the user. A possibility could also
+be allowing a guardian to choose which pictograms should be saved for the specific citizen. 
+Another option would be to simply save x amount of most used pictograms to make it as likely
+as possible that what you would need is available.</p>
+<p>One possible way of storing these pictograms is using the class <a href="https://api.flutter
+.dev/flutter/painting/ImageCache-class.html">ImageCache</a> from Flutter. Currently a self made cache is used in 
+the BLoC used for loading images for pictograms. The implementation of this cache can be found in the
+<a href="https://github.com/aau-giraf/weekplanner/blob/develop/lib/blocs/pictogram_image_bloc.dart">pictogram_image_bloc</a>. 
+Another way this could be handled, is using the functionality which is already implemented in 
+the offline database, to save images in a folder onthe device, keeping it available for use even 
+after the app is shut down. This will require some kind of further management of the saved 
+images, as this will result in a lot of images being saved on the device over time.</p>
+<h4 id="syncing-the-local-database-to-match-the-online-database">Syncing the local database to match the online database<a class="headerlink" href="#syncing-the-local-database-to-match-the-online-database" title="Permanent link">&para;</a></h4>
+<p>A number of different issues could also appear in relation to synchronization
+of different instances of data. </p>
+<p>Cache invalidation scenario:</p>
+<ol>
+<li>Citizen 1 logs in on their device and downloads their weekplans from the server.</li>
+<li>Guardian logs in on another device and changes Citizen 1's weekplan for a week.</li>
+<li>Citizen 1 looks at this weekplan on their device, but this is not the updated
+   version since there is a version in the cache/offline database.</li>
+</ol>
+<p>One possible solution is to use a timestamp to check if there is changes in the
+online version. This timestamp would be downloaded and checked whenever a weekplan
+is opened on a device with an internet connection. This timestamp is then compared
+with the local version. <br />
+Another solution would be to automatically check for changes every 30 seconds or
+something similar to avoid having to reopen weekplans to update them. A guardian could
+also have a "Refresh" button for the citizens, that would download the new changes.  <br />
+Time stamps could also solve the update conflicts since it is possible to compare
+two versions and save the newest. Currently with the offline database, the idea is to
+simply update the offline database, each time a call to the offline database. It might
+be a good idea to check at other times too however.</p>
+<p>Synchronizing offline changes scenario:</p>
+<ol>
+<li>Citizen's tablet is offline.   </li>
+<li>A guardian logs in on the same (offline) tablet and changes the citizen's settings.</li>
+<li>The citizen logs in and can see the local updates.</li>
+<li>The citizen's device gets internet connection and now the changes has to be synced
+   with the database. But the guardian is not logged in anymore and the citizen does
+   not have permission to update their changes through the web-api.</li>
+</ol>
+<p>A possible solution would be to give a citizen permissions in the wep-api to make
+changes. This could be implemented with some kind of token or similar signifying if
+the changes is coming from the offline database, and then only allowing citizens to
+make changes if it comes from their offline database. The system should automatically perform the offline changes, 
+and the citizens themselves should not be allowed to directly perform these changes.</p>
+<p>A potentially very large issue is if offline changes for the same data, e.g an activity
+is made on two different devices - which of the changes should be saved in the online database,
+when they both come online. The PO-group has talked to the customers and they want "last write wins".</p>
+<p>To accommodate this, it might be necessary to add more attributes in the offline and
+online databases in order to deal with of the synchronization. Examples could be “last_updated_on”,
+“created_on”, “deleted_on”, “edited_offline” which are timestamps used to see if data should be synched
+ or not and the “edited_offline” could be a boolean. It is also an option to use UUID with/instead of timestamps
+to make the synchronization have a unique id. </p>
+<h2 id="what-currently-exists">What currently exists<a class="headerlink" href="#what-currently-exists" title="Permanent link">&para;</a></h2>
+<p>Currently an initial class for communication with an offline database exists in the 
+<a href="https://github.com/aau-giraf/api_client">api_client</a> repository.</p>
+<p>The api_client maps JSON output from
+the <a href="https://github.com/aau-giraf/web-api">web-api</a> into models which the
+<a href="https://github.com/aau-giraf/weekplanner">weekplanner</a> uses for displaying data
+models. Thus, it would be essential to implement the offline repository feature
+in the api_client. Every model in the api_client implements an abstract class called
+<code>Model</code> which provides a <code>from_json()</code> and <code>to_json()</code> method for the models to
+interact with the web-api, as well as a <code>from_database()</code> to convert data from 
+the database into a model. </p>
+<h3 id="the-1-1-approach">The 1-1 approach<a class="headerlink" href="#the-1-1-approach" title="Permanent link">&para;</a></h3>
+<p>The solution chosen for the database design is a 1-1 relational database with
+the web-api. For this approach the online database scheme was cloned to a sqlite 
+scheme creation file. From this file, most of the sql was copied into the 
+<a href="https://github.com/aau-giraf/api_client/tree/develop/lib/offline_database/offline_db_handler.dart">dbhandler</a> in the <code>createTables</code> method. Some of the tables and rows were not imported though, 
+as they were either not used, or unnecessary for the app to be able to run offline. 
+If more tables or columns are needed they can simply be added to the table creation function.
+If something is to be changed in the model layer, this will most likely be your workload:</p>
+<ol>
+<li>Alter the modellayer in the web-api</li>
+<li>Migrate the database </li>
+<li>Customize the unittests</li>
+<li>Customize the integration tests</li>
+<li>Alter the models in the api_client</li>
+<li>Customize the unittests</li>
+<li>Integration test between web_api and api_client</li>
+<li>Alter the unittests</li>
+<li>Alter the weekplanner to use the new feature</li>
+<li>Integration test between weekplanner and the offline repository</li>
+</ol>
+<p>Whenever a major change is made to the online database, it is important to also remember to change the offline database to match it, such that everything is saved correctly.</p>
+<h3 id="the-dbhandler">The dbHandler<a class="headerlink" href="#the-dbhandler" title="Permanent link">&para;</a></h3>
+<p>In terms of implementation, there currently is a class called 
+<a href="https://github.com/aau-giraf/api_client/tree/develop/lib/offline_database/offline_db_handler.dart">dbhandler</a>. 
+This class is created as a static object within itself, such that there is only ever one instance 
+of it, and it does not need to compete for access to the SQLite database. It contains a function 
+for each of the calls in the different API's. What we envisioned is that when one of these are 
+called, it should try and get the data from offline first, and then if they do not find a result 
+in offline, the APIs should make an HTTP request instead. The methods which creates new objects, 
+needs to always make the HTTP POST requests, as we need to get an ID from the online database as 
+soon as possible. Until online responds with the object with an updated ID, we generate an UUID 
+for all objects when they are created, in an attempt to ensure that all objects have a unique ID. 
+If a mutating transaction to the online database fails, it should be saved in the database with 
+the function <code>saveFailedTransactions()</code> in the dbHandler. It would also be necessary to find a 
+good time to call  <code>retryFailedTransactions()</code>, which tries to send all the mutating transactions 
+to the database again.</p>
+<h3 id="the-apis">The Api's<a class="headerlink" href="#the-apis" title="Permanent link">&para;</a></h3>
+<p>All of the Api's should first call the offline database. If nothing was found there, then call 
+the online and use the what is returned from online to hydrate the offline database. For this to 
+work, all methods in the api's need to be made <code>async*</code> which means that it is a stream. In order 
+to use these there is a few important things to notice:</p>
+<ul>
+<li>Streams use yield instead of return</li>
+<li>When the function yields something, the it continues to run</li>
+<li>The unittests for the functions are not created with async in mind, so they need to be changed</li>
+</ul>
+<h3 id="unit-tests">Unit tests<a class="headerlink" href="#unit-tests" title="Permanent link">&para;</a></h3>
+<p>Most of the functions in the dbhandler has been tested in the 
+<a href="https://github.com/aau-giraf/api_client/tree/develop/test/database/OfflineDatabase_test.dart">OfflineDatabase_test</a> 
+file. Some are still missing though, and they need to be created before the offline database can 
+be merged with develop. The database tests relies on <a href="https://pub.dev/packages/sqflite_common_ffi">SQFlite ffi</a> 
+which is a library that overwrites the factory in sqflite, to allow the database to work on windows, linux and MacOs.</p>
+<p>The unit tests which currently tests the APIs only works if the APIs are async. This can for the 
+most part be fixed by delaying the expect. An example of this from 
+<a href="https://github.com/aau-giraf/api_client/tree/develop/test/api/account_api_test.dart">account_api_test.dart</a> is:</p>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">test</span><span class="p">(</span><span class="s1">&#39;Should call login endpoint&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="kd">async</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">accountApi</span>
+<span class="w">        </span><span class="p">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;username&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;password&#39;</span><span class="p">)</span>
+<span class="w">        </span><span class="p">.</span><span class="n">listen</span><span class="p">(</span><span class="n">expectAsync1</span><span class="p">((</span><span class="kt">bool</span><span class="w"> </span><span class="n">success</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">expect</span><span class="p">(</span><span class="n">success</span><span class="p">,</span><span class="w"> </span><span class="n">isTrue</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}));</span>
+
+<span class="w">    </span><span class="n">httpMock</span><span class="p">.</span><span class="n">expectOne</span><span class="p">(</span><span class="nl">url:</span><span class="w"> </span><span class="s1">&#39;/login&#39;</span><span class="p">,</span><span class="w"> </span><span class="nl">method:</span><span class="w"> </span><span class="n">Method</span><span class="p">.</span><span class="n">post</span><span class="p">)</span>
+<span class="w">        </span><span class="p">.</span><span class="n">flush</span><span class="p">(</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span><span class="w"> </span><span class="kt">dynamic</span><span class="o">&gt;</span><span class="p">{</span>
+<span class="w">        </span><span class="s1">&#39;data&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;TestToken&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="s1">&#39;message&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="s1">&#39;errorKey&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;NoError&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div></td></tr></table></div>
+
+<p>In this example a login request is made in the account API. The mocked httpclient inside the <code>accountApi</code> 
+then stores that request in a list in the httpclient. Then the <code>expectone</code> on the httpMock checks if there 
+is exactly one post method to login inside it. This was fine when the API was not async, but even 
+though it is made async, we still cant use await to ensure that the values are in the httpMock before we 
+expect. The solution we came up with seems a bit hacky, but it was the best solution we could come up 
+with. Because of the way Flutter does async, we created a very short delay, to allow the http request 
+to be set into the httpMock before checking it. </p>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="w">    </span><span class="n">test</span><span class="p">(</span><span class="s1">&#39;Should call login endpoint&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="kd">async</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">accountApi</span>
+<span class="w">            </span><span class="p">.</span><span class="n">login</span><span class="p">(</span><span class="s1">&#39;username&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;password&#39;</span><span class="p">)</span>
+<span class="w">            </span><span class="p">.</span><span class="n">listen</span><span class="p">(</span><span class="n">expectAsync1</span><span class="p">((</span><span class="kt">bool</span><span class="w"> </span><span class="n">success</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">expect</span><span class="p">(</span><span class="n">success</span><span class="p">,</span><span class="w"> </span><span class="n">isTrue</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}));</span>
+
+<span class="w">        </span><span class="n">Future</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;</span><span class="p">.</span><span class="n">delayed</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Duration</span><span class="p">(</span><span class="nl">milliseconds:</span><span class="w"> </span><span class="m">10</span><span class="p">)).</span><span class="n">then</span><span class="p">((</span><span class="n">_</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">httpMock</span>
+<span class="w">                </span><span class="p">.</span><span class="n">expectOne</span><span class="p">(</span><span class="nl">url:</span><span class="w"> </span><span class="s1">&#39;/login&#39;</span><span class="p">,</span><span class="w"> </span><span class="nl">method:</span><span class="w"> </span><span class="n">Method</span><span class="p">.</span><span class="n">post</span><span class="p">)</span>
+<span class="w">                </span><span class="p">.</span><span class="n">flush</span><span class="p">(</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span><span class="w"> </span><span class="kt">dynamic</span><span class="o">&gt;</span><span class="p">{</span>
+<span class="w">            </span><span class="s1">&#39;data&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;TestToken&#39;</span><span class="p">,</span>
+<span class="w">            </span><span class="s1">&#39;message&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">,</span>
+<span class="w">            </span><span class="s1">&#39;errorKey&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;NoError&#39;</span><span class="p">,</span>
+<span class="w">            </span><span class="p">}));</span>
+<span class="w">    </span><span class="p">});</span>
+</code></pre></div></td></tr></table></div>
+                
+                  
+                
+                
+                  
+                  <hr>
+                  <div class="md-source-date">
+                    <small>
+                      
+                        Last update: September 11, 2025
+                      
+                    </small>
+                  </div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../" title="Overview" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Overview
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../issue_418/" title="Issue 418" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Issue 418
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../../../assets/javascripts/application.c33a9706.js"></script>
+      
+      <script>app.initialize({version:"1.5.0",url:{base:"../../../../.."}})</script>
+      
+    
+  </body>
+</html>

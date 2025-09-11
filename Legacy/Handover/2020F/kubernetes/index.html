@@ -1,0 +1,4056 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+        <meta name="author" content="@aau-giraf">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.0, mkdocs-material-4.6.3">
+    
+    
+      
+        <title>Kubernetes - GIRAF Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/application.adb8469c.css">
+      
+        <link rel="stylesheet" href="../../../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#f9a825">
+      
+    
+    
+      <script src="../../../../assets/javascripts/modernizr.86422ebf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../../../extra/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="yellow" data-md-color-accent="deep-orange">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#kubernetes" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../../.." title="GIRAF Wiki" aria-label="GIRAF Wiki" class="md-header-nav__button md-logo">
+          
+            <img alt="logo" src="../../../../extra/giraf.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              GIRAF Wiki
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Kubernetes
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/aau-giraf" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    aau-giraf
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../../.." class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../../Getting_Started/" class="md-tabs__link">
+          Getting Started
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../../Development/" class="md-tabs__link">
+          Development
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../../Legal/" class="md-tabs__link">
+          Legal
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../../About/" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../" class="md-tabs__link md-tabs__link--active">
+          Legacy
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../../.." title="GIRAF Wiki" class="md-nav__button md-logo">
+      
+        <img alt="logo" src="../../../../extra/giraf.png" width="48" height="48">
+      
+    </a>
+    GIRAF Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/aau-giraf" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    aau-giraf
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Getting Started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Getting_Started/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Getting_Started/handover/" title="Handover" class="md-nav__link">
+      Handover
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Getting_Started/ownership_transfer/" title="Ownership Transfer" class="md-nav__link">
+      Ownership Transfer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Getting_Started/process/" title="Process" class="md-nav__link">
+      Process
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Getting_Started/tools/" title="Tools" class="md-nav__link">
+      Tools
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Development
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Development
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Development/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Wiki
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Wiki
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Development/Wiki/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Development/Wiki/running_wiki/" title="Running the Wiki Locally" class="md-nav__link">
+      Running the Wiki Locally
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Development/Wiki/writing_wiki/" title="Writing Pages for the Wiki" class="md-nav__link">
+      Writing Pages for the Wiki
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Development/github/" title="Use of GitHub in GIRAF" class="md-nav__link">
+      Use of GitHub in GIRAF
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Legal
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Legal
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Legal/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Legal/privacy_policy/" title="Privacy Policy" class="md-nav__link">
+      Privacy Policy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      GDPR
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        GDPR
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Legal/GDPR/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Legal/GDPR/gdpr_regulation/" title="GDPR Regulation" class="md-nav__link">
+      GDPR Regulation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Legal/GDPR/consent_information/" title="Consent Information" class="md-nav__link">
+      Consent Information
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Legal/GDPR/consent/" title="Samtykkeerklæring" class="md-nav__link">
+      Samtykkeerklæring
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Legal/GDPR/processing_activity_record_information/" title="Processing Activity Record Information" class="md-nav__link">
+      Processing Activity Record Information
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Legal/GDPR/processing_activity_record/" title="Processing Activity Record" class="md-nav__link">
+      Processing Activity Record
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Legal/risk_assessment/" title="Risk assessment" class="md-nav__link">
+      Risk assessment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Legal/licences/" title="Licenses" class="md-nav__link">
+      Licenses
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../About/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+    
+    <label class="md-nav__link" for="nav-6">
+      Legacy
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Legacy
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2" type="checkbox" id="nav-6-2">
+    
+    <label class="md-nav__link" for="nav-6-2">
+      Weekplanner
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-2">
+        Weekplanner
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-2" type="checkbox" id="nav-6-2-2">
+    
+    <label class="md-nav__link" for="nav-6-2-2">
+      Apps
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-2-2">
+        Apps
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Apps/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-2-2" type="checkbox" id="nav-6-2-2-2">
+    
+    <label class="md-nav__link" for="nav-6-2-2-2">
+      Guidelines
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-2-2-2">
+        Guidelines
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Apps/Guidelines/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Apps/Guidelines/web_api_error_handling/" title="Handle Exceptions from the Web API" class="md-nav__link">
+      Handle Exceptions from the Web API
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Apps/release_guide/" title="Manual Release of Giraf" class="md-nav__link">
+      Manual Release of Giraf
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Apps/test/" title="Testing" class="md-nav__link">
+      Testing
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-3" type="checkbox" id="nav-6-2-3">
+    
+    <label class="md-nav__link" for="nav-6-2-3">
+      GitHub
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-2-3">
+        GitHub
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/GitHub/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/GitHub/repository_description/" title="Repositories" class="md-nav__link">
+      Repositories
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-3-3" type="checkbox" id="nav-6-2-3-3">
+    
+    <label class="md-nav__link" for="nav-6-2-3-3">
+      GitHub Actions
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-2-3-3">
+        GitHub Actions
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/GitHub/GitHub_Actions/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/GitHub/GitHub_Actions/workflows_in_repositories/" title="Workflows in the Repositories" class="md-nav__link">
+      Workflows in the Repositories
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/GitHub/GitHub_Actions/code_coverage/" title="Code Coverage" class="md-nav__link">
+      Code Coverage
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/GitHub/using_github/" title="Using GitHub in GIRAF" class="md-nav__link">
+      Using GitHub in GIRAF
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-4" type="checkbox" id="nav-6-2-4">
+    
+    <label class="md-nav__link" for="nav-6-2-4">
+      Server
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-2-4">
+        Server
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Server/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Server/architecture/" title="Architecture" class="md-nav__link">
+      Architecture
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Server/access/" title="Access" class="md-nav__link">
+      Access
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-4-4" type="checkbox" id="nav-6-2-4-4">
+    
+    <label class="md-nav__link" for="nav-6-2-4-4">
+      Docker
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-2-4-4">
+        Docker
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Server/Docker/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Server/Docker/general_information/" title="General Information" class="md-nav__link">
+      General Information
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-4-4-3" type="checkbox" id="nav-6-2-4-4-3">
+    
+    <label class="md-nav__link" for="nav-6-2-4-4-3">
+      Docker Swarm
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-6-2-4-4-3">
+        Docker Swarm
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Server/Docker/Docker_Swarm/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Server/Docker/Docker_Swarm/practical_information/" title="Practical Information" class="md-nav__link">
+      Practical Information
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Server/Docker/Docker_Swarm/configuration/" title="Configuration" class="md-nav__link">
+      Configuration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Server/Docker/Docker_Swarm/network/" title="Networking Docker Swarm" class="md-nav__link">
+      Networking Docker Swarm
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Server/Docker/Docker_Swarm/proxy/" title="Proxy" class="md-nav__link">
+      Proxy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Server/Docker/Docker_Swarm/web_api/" title="Web API" class="md-nav__link">
+      Web API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Server/Docker/Docker_Swarm/database/" title="Database" class="md-nav__link">
+      Database
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-5" type="checkbox" id="nav-6-2-5">
+    
+    <label class="md-nav__link" for="nav-6-2-5">
+      Web API
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-2-5">
+        Web API
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/architecture/" title="Architecture" class="md-nav__link">
+      Architecture
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-5-3" type="checkbox" id="nav-6-2-5-3">
+    
+    <label class="md-nav__link" for="nav-6-2-5-3">
+      Backend
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-2-5-3">
+        Backend
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Backend/database/" title="Database" class="md-nav__link">
+      Database
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Backend/entity_framework/" title="Entity Framework Core" class="md-nav__link">
+      Entity Framework Core
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Backend/models/" title="Models" class="md-nav__link">
+      Models
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-5-4" type="checkbox" id="nav-6-2-5-4">
+    
+    <label class="md-nav__link" for="nav-6-2-5-4">
+      Endpoints and Controllers
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-2-5-4">
+        Endpoints and Controllers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/guidelines/" title="Guidelines" class="md-nav__link">
+      Guidelines
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/controller_descriptions/" title="Description of Controllers" class="md-nav__link">
+      Description of Controllers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-5-4-4" type="checkbox" id="nav-6-2-5-4-4">
+    
+    <label class="md-nav__link" for="nav-6-2-5-4-4">
+      Endpoints
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-6-2-5-4-4">
+        Endpoints
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/account_endpoints/" title="Account Endpoints" class="md-nav__link">
+      Account Endpoints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/user_endpoints/" title="User Endpoints" class="md-nav__link">
+      User Endpoints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/department_endpoints/" title="Department Endpoints" class="md-nav__link">
+      Department Endpoints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/activity_endpoints/" title="Activity Endpoints" class="md-nav__link">
+      Activity Endpoints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/pictogram_endpoints/" title="Pictogram Endpoints" class="md-nav__link">
+      Pictogram Endpoints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/week_endpoints/" title="Week Endpoints" class="md-nav__link">
+      Week Endpoints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/week_template_endpoints/" title="WeekTemplate Endpoints" class="md-nav__link">
+      WeekTemplate Endpoints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/status_endpoints/" title="Status Endpoints" class="md-nav__link">
+      Status Endpoints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/Endpoints/error_endpoints/" title="Error Endpoints" class="md-nav__link">
+      Error Endpoints
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-5-4-5" type="checkbox" id="nav-6-2-5-4-5">
+    
+    <label class="md-nav__link" for="nav-6-2-5-4-5">
+      Authorization
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-6-2-5-4-5">
+        Authorization
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/Authorization/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/Authorization/token_authentication/" title="Token Authentication" class="md-nav__link">
+      Token Authentication
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Endpoints_and_Controllers/swagger/" title="Swagger" class="md-nav__link">
+      Swagger
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/settings/" title="Settings" class="md-nav__link">
+      Settings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Web_API/Testing/" title="Testing" class="md-nav__link">
+      Testing
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-6" type="checkbox" id="nav-6-2-6">
+    
+    <label class="md-nav__link" for="nav-6-2-6">
+      UI Design
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-2-6">
+        UI Design
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/UI_Design/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-6-2" type="checkbox" id="nav-6-2-6-2">
+    
+    <label class="md-nav__link" for="nav-6-2-6-2">
+      Design Guide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-2-6-2">
+        Design Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/UI_Design/Design_Guide/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/UI_Design/Design_Guide/application_structure/" title="Application structure" class="md-nav__link">
+      Application structure
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/UI_Design/Design_Guide/buttons/" title="Buttons" class="md-nav__link">
+      Buttons
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/UI_Design/Design_Guide/colors/" title="Colors" class="md-nav__link">
+      Colors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/UI_Design/Design_Guide/dialog/" title="Dialogue" class="md-nav__link">
+      Dialogue
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/UI_Design/Design_Guide/greyscale/" title="Greyscale" class="md-nav__link">
+      Greyscale
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/UI_Design/Design_Guide/icons/" title="Icon guide" class="md-nav__link">
+      Icon guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/UI_Design/Design_Guide/loading_indicators/" title="Loading indicators" class="md-nav__link">
+      Loading indicators
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/UI_Design/Design_Guide/pictogram_representation/" title="Pictogram representation" class="md-nav__link">
+      Pictogram representation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/UI_Design/Design_Guide/scroll/" title="Indication of scroll" class="md-nav__link">
+      Indication of scroll
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/UI_Design/Design_Guide/typography/" title="Typography" class="md-nav__link">
+      Typography
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-6-3" type="checkbox" id="nav-6-2-6-3">
+    
+    <label class="md-nav__link" for="nav-6-2-6-3">
+      Prototypes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-2-6-3">
+        Prototypes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/UI_Design/Prototypes/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/UI_Design/Prototypes/prototype_guidelines/" title="Guidelines" class="md-nav__link">
+      Guidelines
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2-7" type="checkbox" id="nav-6-2-7">
+    
+    <label class="md-nav__link" for="nav-6-2-7">
+      Setup
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-2-7">
+        Setup
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Setup/Index/" title="Environment Setup" class="md-nav__link">
+      Environment Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Setup/MacOS/" title="MacOS Setup Guide" class="md-nav__link">
+      MacOS Setup Guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Setup/Linux/" title="Linux Setup Guide" class="md-nav__link">
+      Linux Setup Guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Setup/Windows/" title="Windows Setup Guide" class="md-nav__link">
+      Windows Setup Guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Setup/Running_GIRAF/" title="Running GIRAF" class="md-nav__link">
+      Running GIRAF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../weekplanner/Setup/Docker/" title="Optional: Dockerisation" class="md-nav__link">
+      Optional: Dockerisation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3" type="checkbox" id="nav-6-3" checked>
+    
+    <label class="md-nav__link" for="nav-6-3">
+      Handover
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-3">
+        Handover
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../handover_guide/" title="Handover Guide" class="md-nav__link">
+      Handover Guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-3" type="checkbox" id="nav-6-3-3">
+    
+    <label class="md-nav__link" for="nav-6-3-3">
+      2020E
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-3-3">
+        2020E
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/feature_overview/" title="Feature Overview" class="md-nav__link">
+      Feature Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-3-3" type="checkbox" id="nav-6-3-3-3">
+    
+    <label class="md-nav__link" for="nav-6-3-3-3">
+      Role Structure
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-3-3-3">
+        Role Structure
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Role_Structure/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Role_Structure/po/" title="PO" class="md-nav__link">
+      PO
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Role_Structure/process/" title="Process" class="md-nav__link">
+      Process
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Role_Structure/development_team/" title="Development Team" class="md-nav__link">
+      Development Team
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-3-4" type="checkbox" id="nav-6-3-3-4">
+    
+    <label class="md-nav__link" for="nav-6-3-3-4">
+      Sprint Events
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-3-3-4">
+        Sprint Events
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Sprint_Events/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Sprint_Events/sprint_planning/" title="Sprint Planning" class="md-nav__link">
+      Sprint Planning
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Sprint_Events/development_phase/" title="Development Phase" class="md-nav__link">
+      Development Phase
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Sprint_Events/cross_stand_up_meetings/" title="Cross Stand-up Meetings" class="md-nav__link">
+      Cross Stand-up Meetings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Sprint_Events/sprint_review/" title="Sprint Review" class="md-nav__link">
+      Sprint Review
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Sprint_Events/sprint_retrospective/" title="Sprint Retrospective" class="md-nav__link">
+      Sprint Retrospective
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Sprint_Events/release_preparation/" title="Release Preparation" class="md-nav__link">
+      Release Preparation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-3-5" type="checkbox" id="nav-6-3-3-5">
+    
+    <label class="md-nav__link" for="nav-6-3-3-5">
+      Tools
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-3-3-5">
+        Tools
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Tools/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-3-5-2" type="checkbox" id="nav-6-3-3-5-2">
+    
+    <label class="md-nav__link" for="nav-6-3-3-5-2">
+      PO Group
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-6-3-3-5-2">
+        PO Group
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Tools/PO_Group/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Tools/PO_Group/release_designer/" title="Release designer" class="md-nav__link">
+      Release designer
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-3-5-3" type="checkbox" id="nav-6-3-3-5-3">
+    
+    <label class="md-nav__link" for="nav-6-3-3-5-3">
+      Process Group
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-6-3-3-5-3">
+        Process Group
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Tools/Process_Group/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Tools/Process_Group/sprint_planning_tool/" title="Sprint Planning Tool" class="md-nav__link">
+      Sprint Planning Tool
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Tools/Process_Group/pull_requests_overview_tool/" title="Pull Requests Overview Tool" class="md-nav__link">
+      Pull Requests Overview Tool
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Tools/Process_Group/individual_pull_request_tool/" title="Individual Pull Request Tool" class="md-nav__link">
+      Individual Pull Request Tool
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Tools/Process_Group/issues_overview_tool/" title="Issues Overview Tool" class="md-nav__link">
+      Issues Overview Tool
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Tools/Process_Group/sprint_points_overview_tool/" title="Sprint Points Tool" class="md-nav__link">
+      Sprint Points Tool
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Tools/Process_Group/sprint_retrospective_tool/" title="Sprint Retrospective Tool" class="md-nav__link">
+      Sprint Retrospective Tool
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Tools/google_calendar/" title="Google Calendar" class="md-nav__link">
+      Google Calendar
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Tools/slack/" title="Slack" class="md-nav__link">
+      Slack
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-3-6" type="checkbox" id="nav-6-3-3-6">
+    
+    <label class="md-nav__link" for="nav-6-3-3-6">
+      Issues
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-3-3-6">
+        Issues
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Issues/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Issues/offline_mode/" title="GIRAF Offline database" class="md-nav__link">
+      GIRAF Offline database
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Issues/issue_418/" title="Issue 418" class="md-nav__link">
+      Issue 418
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2020E/Issues/issue_526/" title="Issue 526" class="md-nav__link">
+      Issue 526
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-4" type="checkbox" id="nav-6-3-4" checked>
+    
+    <label class="md-nav__link" for="nav-6-3-4">
+      2020F
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-3-4">
+        2020F
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../advice/" title="Advice for Future Process Groups" class="md-nav__link">
+      Advice for Future Process Groups
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../giraf_events/" title="GIRAF Events" class="md-nav__link">
+      GIRAF Events
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../github/" title="Use of GitHub in GIRAF" class="md-nav__link">
+      Use of GitHub in GIRAF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Kubernetes
+      </label>
+    
+    <a href="./" title="Kubernetes" class="md-nav__link md-nav__link--active">
+      Kubernetes
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-principles" class="md-nav__link">
+    Basic Principles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kubernetes-manifest-files" class="md-nav__link">
+    Kubernetes Manifest Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-deployment" class="md-nav__link">
+    Code: Deployment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-service" class="md-nav__link">
+    Code: Service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-principles" class="md-nav__link">
+    Advanced Principles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#control-access-to-api-server" class="md-nav__link">
+    Control access to API server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#external-access" class="md-nav__link">
+    External Access
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persistent-storage" class="md-nav__link">
+    Persistent Storage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-persistentvolume-example" class="md-nav__link">
+    Code: PersistentVolume example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-persistentvolumeclaim-example" class="md-nav__link">
+    Code: PersistentVolumeClaim example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-deployment-example" class="md-nav__link">
+    Code: Deployment example
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ownership_transfer/" title="Ownership Transfer" class="md-nav__link">
+      Ownership Transfer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tools/" title="Process Group Tools" class="md-nav__link">
+      Process Group Tools
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-5" type="checkbox" id="nav-6-3-5">
+    
+    <label class="md-nav__link" for="nav-6-3-5">
+      2019
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-3-5">
+        2019
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2019/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2019/changing_the_process/" title="Changing the process" class="md-nav__link">
+      Changing the process
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2019/how_to/" title="How to's for developers" class="md-nav__link">
+      How to's for developers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2019/process_group_information/" title="Process group information" class="md-nav__link">
+      Process group information
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2019/project_meetings/" title="Project meetings" class="md-nav__link">
+      Project meetings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-5-6" type="checkbox" id="nav-6-3-5-6">
+    
+    <label class="md-nav__link" for="nav-6-3-5-6">
+      From 2019
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-3-5-6">
+        From 2019
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2019/from_2019/PO_advice/" title="PO advice for next year's PO group" class="md-nav__link">
+      PO advice for next year's PO group
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2019/from_2019/general_advice/" title="General Advice for the Future Giraf Projects" class="md-nav__link">
+      General Advice for the Future Giraf Projects
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2019/from_2019/process_advice/" title="Advice for the Process of Future Giraf Projects" class="md-nav__link">
+      Advice for the Process of Future Giraf Projects
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-6" type="checkbox" id="nav-6-3-6">
+    
+    <label class="md-nav__link" for="nav-6-3-6">
+      2018
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-3-6">
+        2018
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../2018/FutureWork/" title="Future Work" class="md-nav__link">
+      Future Work
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-7" type="checkbox" id="nav-6-3-7">
+    
+    <label class="md-nav__link" for="nav-6-3-7">
+      Review Checklists
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-3-7">
+        Review Checklists
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Review_Checklists/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-7-2" type="checkbox" id="nav-6-3-7-2">
+    
+    <label class="md-nav__link" for="nav-6-3-7-2">
+      2020E
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-3-7-2">
+        2020E
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Review_Checklists/2020E/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Review_Checklists/2020E/weekplanner/" title="weekplanner" class="md-nav__link">
+      weekplanner
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Review_Checklists/2020E/web-api/" title="web-api" class="md-nav__link">
+      web-api
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Review_Checklists/2020E/api_client/" title="api_client" class="md-nav__link">
+      api_client
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Review_Checklists/2020E/wiki/" title="wiki" class="md-nav__link">
+      wiki
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3-7-3" type="checkbox" id="nav-6-3-7-3">
+    
+    <label class="md-nav__link" for="nav-6-3-7-3">
+      2020F
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-6-3-7-3">
+        2020F
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Review_Checklists/2020F/review_checklist_code/" title="Review Checklist for Code" class="md-nav__link">
+      Review Checklist for Code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Review_Checklists/2020F/review_checklist_wiki/" title="Review Checklist" class="md-nav__link">
+      Review Checklist
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-4" type="checkbox" id="nav-6-4">
+    
+    <label class="md-nav__link" for="nav-6-4">
+      Releases
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-4">
+        Releases
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Releases/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Releases/release_guide/" title="Release Guide" class="md-nav__link">
+      Release Guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-4-3" type="checkbox" id="nav-6-4-3">
+    
+    <label class="md-nav__link" for="nav-6-4-3">
+      2018
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-4-3">
+        2018
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Releases/2018/2018s4r1/" title="2018s4r1" class="md-nav__link">
+      2018s4r1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Releases/2018/2018s3r2/" title="2018s3r2" class="md-nav__link">
+      2018s3r2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Releases/2018/2018s3r1/" title="2018s3r1" class="md-nav__link">
+      2018s3r1
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-4-4" type="checkbox" id="nav-6-4-4">
+    
+    <label class="md-nav__link" for="nav-6-4-4">
+      2019
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-4-4">
+        2019
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Releases/2019/2019s3r1/" title="2019s3r1" class="md-nav__link">
+      2019s3r1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Releases/2019/2019s2r1/" title="2019s2r1" class="md-nav__link">
+      2019s2r1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Releases/2019/2019s1r1/" title="2019s1r1" class="md-nav__link">
+      2019s1r1
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-4-5" type="checkbox" id="nav-6-4-5">
+    
+    <label class="md-nav__link" for="nav-6-4-5">
+      2020E
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-4-5">
+        2020E
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Releases/2020E/2020es3r1/" title="2020Es3r1" class="md-nav__link">
+      2020Es3r1
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-4-6" type="checkbox" id="nav-6-4-6">
+    
+    <label class="md-nav__link" for="nav-6-4-6">
+      2020F
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-6-4-6">
+        2020F
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Releases/2020F/2020Fs3r1/" title="2020Fs3r1" class="md-nav__link">
+      2020Fs3r1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Releases/2020F/2020Fs2r1/" title="2020Fs2r1" class="md-nav__link">
+      2020Fs2r1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Releases/2020F/2020Fs1r1/" title="2020Fs1r1" class="md-nav__link">
+      2020Fs1r1
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-principles" class="md-nav__link">
+    Basic Principles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kubernetes-manifest-files" class="md-nav__link">
+    Kubernetes Manifest Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-deployment" class="md-nav__link">
+    Code: Deployment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-service" class="md-nav__link">
+    Code: Service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-principles" class="md-nav__link">
+    Advanced Principles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#control-access-to-api-server" class="md-nav__link">
+    Control access to API server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#external-access" class="md-nav__link">
+    External Access
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persistent-storage" class="md-nav__link">
+    Persistent Storage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-persistentvolume-example" class="md-nav__link">
+    Code: PersistentVolume example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-persistentvolumeclaim-example" class="md-nav__link">
+    Code: PersistentVolumeClaim example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-deployment-example" class="md-nav__link">
+    Code: Deployment example
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="kubernetes">Kubernetes<a class="headerlink" href="#kubernetes" title="Permanent link">&para;</a></h1>
+<p>This is outdated, but is kept to give a view of the former GIRAF project (3/11-2020) </p>
+<p>In this article we describe what Kubernetes is, how it works and how to
+use it. First we describe the basic principles of getting a minimum
+usable Kubernetes infrastructure, with services, up and running.
+Afterwards we describe the advanced principles of accessing Kubernetes
+externally, setting up persistent storage, storing secrets securely and
+setting up certificates.</p>
+<p>The official Kubernetes documentation defines Kubernetes in the
+following way: "Kubernetes is an open-source platform for automating
+deployment, scaling, and operations of application containers across
+clusters of hosts, providing container-centric infrastructure"</p>
+<h2 id="basic-principles">Basic Principles<a class="headerlink" href="#basic-principles" title="Permanent link">&para;</a></h2>
+<p>In this section we describe how to set up a minimum usable Kubernetes
+infrastructure. In this context a minimum usable Kubernetes
+infrastructure means that it can run our applications, but doesn't
+necessarily support making the applications available externally.</p>
+<p>To give a better understanding of Kubernetes we have an explanation of
+some of its basic concepts. We start by introducing the concepts from
+top to bottom, which means explaining what a Kubernetes cluster is, then
+explain what a cluster depends on and what the cluster's dependencies
+depend on. Physical (hardware) manifestation of Kubernetes setup will be
+explained from the three following
+concepts.</p>
+<ul>
+<li>Cluster: A group of physical and/or virtual machines. A cluster contains at least
+  one master and zero or more node servers. In the picture, an example of a cluster
+  with a single master and three nodes is shown.</li>
+<li>Master: A server which manages the nodes running in the cluster. There can be
+  multiple master servers in a cluster, which can give better performance for huge
+  clusters and better uptime. The reason this gives better performance is that each
+  master server can concentrate on managing one part of a larger system. The reason
+  it gives better uptime is because configuration files are also distributed between
+  all master servers, so if one master server goes down, all the other master servers
+  can take over for it.</li>
+<li>Node: A server which runs and manages the actual applications. It can be controlled
+  by a master server through the kubelet service.</li>
+</ul>
+<p><img alt="Billede mangler" src="../images/preview-KubernetesBasicCluster.png" title="Kubernetes Basic Cluster" /></p>
+<p>Now we need to understand the system services that run on master and
+node servers. While some of these are part of Kubernetes, they are not
+Kubernetes services, which is a separate type of abstraction over pods
+to make them accessible.</p>
+<p>The following system services run on
+master:</p>
+<ul>
+<li>API-server: System service that validates and configures request to alter the
+  state of the cluster. It provides a web API server to perform the requests.
+  Part of Kubernetes.</li>
+<li>Scheduler: System service that schedules how workloads should be distributed
+  between nodes. Part of Kubernetes.</li>
+<li>Controller Manager: System service that attempts to change the current cluster
+  state towards the desired state. It runs the loop for various controllers, that
+  control various areas of the cluster. Part of Kubernetes.</li>
+<li>Etcd: System service that provides a configuration store that can be distributed
+  between multiple servers. Kubernetes stores its configuration in etcd. Third party
+  program.</li>
+<li>Flannel: System service that provides a overlay network for communication between
+  containers on different nodes. Flannel also uses etcd to store its configuration.
+  Third party program.</li>
+</ul>
+<p>The following system services run on
+node:</p>
+<ul>
+<li>Flannel: System service that is setup to connect to a Flannel network. It fetches
+  its network configuration from etcd. Third party program.</li>
+<li>Kubelet: System service that is responsible for the communication between masters
+  and nodes. It ensures the appropriate containers are started and remain healthy.
+  Part of Kubernetes.</li>
+<li>Proxy: System service that provides a network proxy and load balancer for services
+  on a node. Part of Kubernetes.</li>
+</ul>
+<p>As the Kubernetes cluster is a network of servers, it's important to
+understand the usage of different IP-addresses and subnets. Subnets are
+to divide IP-addresses into networks, so that a specific range of
+IP-addresses are allocated within the network. A subnet can be formally
+defined using the cidr notation. An example of cidr notation is
+192.168.0.0/16, which refers to the subnet with IP-addresses that range
+from 192.168.0.0 to 192.168.255.255. The "/16" suffix implies that the
+first 16 bits of the total 32 bits of the IP-addresses are shared in the
+subnet. The shared part of an IP-address is also called the network
+prefix.</p>
+<ul>
+<li>Cluster Subnet: The subnet for the local network.</li>
+<li>Flannel Subnet: The subnet for the Flannel overlay network, which allows
+  communication between containers on different nodes, without using the node's
+  IP-address. This is useful, since the containers don't have to negotiate usage
+  of ports on the nodes, as they can get their own IP-address.</li>
+<li>Service Subnet: The subnet where Kubernetes services get an dedicated IP-address.</li>
+<li>Kubernetes Service IP: The IP-address on the service subnet, that can be used
+  to read and write Kubernetes configuration over the network.</li>
+<li>DNS Service IP: The IP-address on the service subnet, that points to Kubernetes
+  DNS server, that creates network hostnames for Kubernetes services.</li>
+</ul>
+<h2 id="kubernetes-manifest-files">Kubernetes Manifest Files<a class="headerlink" href="#kubernetes-manifest-files" title="Permanent link">&para;</a></h2>
+<p>In this section we explain what manifest files are and how they are used
+to deploy cluster objects. A manifest file is a recipe describing what
+an arbitrary cluster object is and the data required to deploy it. There
+are three important manifest files in a minimal usable Kubernetes set
+up, which are the
+following.</p>
+<ul>
+<li>Pod: A group of one or more containers. Kubernetes abstracts away the container
+  format. The Docker container format is currently the de facto standard, but this
+  could change since many new container formats are emerging. Containers running
+  in the same pod share IP-address space, so they can address each other through
+  localhost. But running multiple containers in a single pod should only be done
+  if the applications in the containers are tightly coupled. Pods do not have any
+  persistent storage, so when a pod is killed all the data will be removed, for
+  this reason persistent volumes are used. This is shown partly in the Deployment
+  code.</li>
+<li>Deployment: A template for defining the deployment of multiple instances of the
+  same type of pod. It makes it easier to deploy and manage a lot of the same pods
+  as it makes it possible to attach a common name to the collection of pods. This
+  is shown fully in the Deployment code.</li>
+<li>Service: An abstraction over a collection of the same pod. It's possible to access
+  the pods through a service by binding a service to the pods' deployment. The service
+  abstracts over the pods, making it look like, to an external observer, that there
+  is only a single pod running. Services can also implement load balancing. This
+  is shown in the Service code.</li>
+</ul>
+<p>In the Deployment code section below we show part of our deployment for
+Artifactory. It's split into four parts: apiVersion, kind, metadata and
+spec. The apiVersion (line 1) indicates which version of the Kubernetes
+API is used, in this case it's the extensions/v1beta1 as the deployment
+uses some experimental features. Then the kind (line 2) indicates which
+class of cluster object it falls into, which is a Deployment in this
+case. Then metadata (lines 3-4) is defined which is used to give a
+unique name for the deployment. And finally the most important part is
+the outermost spec (lines 5-10) which is a template for generating an
+arbitrary amount of pods, defined by the variable "replicas", in this
+case one pod would be generated. The template -&gt; metadata -&gt; labels
+-&gt; app tree is simply to apply a label stating which app runs in the
+pods. These pods are based on the innermost spec (lines 11-16) which is
+a definition of a pod.</p>
+<h2 id="code-deployment">Code: Deployment<a class="headerlink" href="#code-deployment" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">extensions/v1beta1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Deployment</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">artifactory</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">replicas</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">  </span><span class="nt">template</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">metadata</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">labels</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">artifactory</span>
+<span class="w">    </span><span class="nt">spec</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">containers</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">artifactory</span>
+<span class="w">        </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docker.bintray.io/jfrog/artifactory-oss:latest</span>
+<span class="w">        </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">          </span><span class="nt">containerPort</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8081</span>
+</code></pre></div></td></tr></table></div>
+
+<p>In the Service code we show an example of our service for Artifactory.
+Like the deployment it's split into four parts: apiVersion, kind,
+metadata and spec. The first three parts work like they did in the
+Deployment code. The new things are specified inside the spec. Notice
+the definition of ports, which is used to expose the deployment to other
+pods in a cluster. The targetPort is the port which the container
+exposes internally, such the Artifactory (which runs in the container)
+can see it. It is connected to the Port port, which can be used to
+access the pod internally in a cluster, and thus Artifactory.</p>
+<h2 id="code-service">Code: Service<a class="headerlink" href="#code-service" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Service</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">artifactory</span>
+<span class="w">  </span><span class="nt">labels</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">artifactory</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">selector</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">artifactory</span>
+<span class="w">  </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8080</span>
+<span class="w">    </span><span class="nt">targetPort</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8081</span>
+</code></pre></div></td></tr></table></div>
+
+<h2 id="advanced-principles">Advanced Principles<a class="headerlink" href="#advanced-principles" title="Permanent link">&para;</a></h2>
+<p>In this section we describe how to set up a more advanced Kubernetes
+infrastructure, as the Kubernetes infrastructure described above does
+not restrict access to the API server, cannot be accessed easily from
+outside of the cluster and does not have persistent data storage.</p>
+<h2 id="control-access-to-api-server">Control access to API server<a class="headerlink" href="#control-access-to-api-server" title="Permanent link">&para;</a></h2>
+<p>The default access control in Kubernetes allows anyone to perform any
+request on the API server. This is problematic if anyone untrusted is on
+the same network as the API server. Fortunately Kubernetes has a rich
+framework for controlling access to the API server. When making a
+request to the API server, the request runs through several stages that
+control
+access:</p>
+<ul>
+<li>Authentication: Decides the identity of the requester.</li>
+<li>Authorization: Decides whether the identity has permissions to make the request.</li>
+<li>Admission control: Decides if the request complies with various rules.</li>
+</ul>
+<p>Authentication of API requests is divided into two categories by the
+type of the requester, Service Accounts and normal users. Service
+Accounts allow pods to communicate with the API server. Kubernetes
+automatically creates Service Accounts and mounts Service Account
+credential files into the pods. With the credential files requests can
+be performed.</p>
+<p>Normal users on the other hand are not managed by Kubernetes. They are
+used to access the API from frontend tools such as the Kubernetes
+command line tool kubectl or a Web UI. There are several ways to
+authenticate normal users. Using certificates, bearer tokens, an
+authenticating proxy, or HTTP basic authentication. Authorization of API
+requests can happen in four different
+modes:</p>
+<ul>
+<li>ABAC: Attribute-based access control authorizes using policies that combine
+  attributes of users and cluster objects into boolean expressions. As of
+  Kubernetes 1.6 this mode is considered deprecated as it is difficult to manage
+  and understand.</li>
+<li>RBAC: Role-based access control authorizes using role groups that expand its
+  members permissions.</li>
+<li>Webhook: Authorize with HTTP callbacks. This mode is probably deprecated since
+  its documentation page is deleted.</li>
+<li>Custom: Authorize with a custom mode.</li>
+</ul>
+<p>Admission control restricts API requests by intercepting the requests in
+various plug-ins. Access for a request is only allowed if all plug-ins
+accept it. Here is a list of commonly used
+plug-ins:</p>
+<ul>
+<li>NamespaceLifecycle: Rejects a request, if it tries to create objects in a terminating
+  Kubernetes namespace. (Kubernetes divides cluster objects into namespaces)</li>
+<li>NamespaceExists: Rejects a request, if it tries to create cluster objects in
+  nonexistent namespaces.*</li>
+<li>LimitRanger: Rejects a request, if it demands CPU and memory resources for a pod,
+  that is beyond CPU and memory limit policies on a namespace.</li>
+<li>ResourceQuota: Rejects a request, if it demands CPU and memory resources for a
+  namespace, that is beyond demand resource quotas for a namespace.</li>
+<li>SecurityContextDeny: Reject a request, if it attempts to change SecurityContext
+  fields, that allows privilege escalation.</li>
+<li>ServiceAccount: Accepts all requests. The plug-in makes sure that a Service Account
+  is always available on pods.</li>
+</ul>
+<p>Setting up these controls is done when configuring the API server. The
+following arguments should be included in the configuration file, under
+KUBE\_API\_ARGS:</p>
+<ul>
+<li>client-ca: This argument ensures that any client presenting a signed certificate
+  is authenticated as per the CommonName attribute in that certificate. The client-ca-file
+  contains a list of authorities that can sign certificates.</li>
+<li>tls-cert: Points to the certificates used to provide HTTPS serving. If no certificates
+  are specified (using --tls-private-key), it generates and uses self-signed ones
+  automatically.</li>
+<li>tls-private-key Specifies the private key used for HTTPS serving, which should
+  match the certificate file (specified using --tls-cert-file).</li>
+<li>tls-cert-file Specifies the x509 certificate used for HTTPS, which should match
+  the private key for the same (specified using --tls-private-key).</li>
+<li>service-account-key Specifies the PEM-encoded x509 RSA or ECDSA private or public
+  key file, for verifying ServiceAccount tokens.</li>
+</ul>
+<h2 id="external-access">External Access<a class="headerlink" href="#external-access" title="Permanent link">&para;</a></h2>
+<p>In this section we explain how it's possible to externally access a
+cluster and routing domains to applications in a cluster. To make a
+cluster and routing domains to applications at the same time, we needed
+to use what's called an Ingress controller. An Ingress controller
+exposes a Kubernetes service so it is accessible outside the cluster
+network. An Ingress controller created with a manifest file, by
+specifying the kind attribute as Ingress. Kubernetes doesn't provide a
+default Ingress implementation, it only defines an interface where other
+people can then write their own implementation.</p>
+<p>The following Ingress controller implementations were
+investigated:</p>
+<ul>
+<li>Cloud implementation: Large cloud providers such as Microsoft, Amazon and Google
+  provide Ingress controllers specific to their clouds. These Ingress controllers
+  are not usable in self-hosted Kubernetes clusters.</li>
+<li>Nginx implementation: This Ingress controller implementation is part of the official
+  Kubernetes git repositories. It uses the Nginx reverse proxy capabilities to direct
+  incoming traffic. Nginx is lightweight and has  a rich dsl, but it requires additional
+  configuration to work with Kubernetes. When using ssl encryption service kube-lego
+  can be used to automatically update ssl certificates.</li>
+<li>Trafik implementation: Trafik is a reverse proxy that integrates with several
+  different container orchestration technology such as Swarm, Mesos and Kubernetes.
+  It provides a web interface to display and configure its configuration. It is
+  well integrated into Kubernetes, so Ingress rules works without additional
+  configuration. Trafik also provides fully automated administration of ssl encryption.
+  In the picture below it is illustrated how Trafik works. The blue arrows represent
+  HTTP request to various domains, the green arrows represent how Trafik redirects
+  the request to services and the red arrow shows that Trafik is controlled the
+  cloud orchestration technology.</li>
+</ul>
+<p><img alt="Billede mangler" src="../images/preview-TraefikArchitecture.png" title="Tr�fik Architecture" /></p>
+<h2 id="persistent-storage">Persistent Storage<a class="headerlink" href="#persistent-storage" title="Permanent link">&para;</a></h2>
+<p>In this section we explain how persistent storage is achieved with
+Kubernetes. In Kubernetes there are two concepts when dealing with
+storage, which are described as the following. We have our information
+about storage in Kubernetes from the official
+documentation.</p>
+<ul>
+<li>PersistentVolume: A volume that is persisted throughout a pod's lifespan. It is
+  an abstraction over different storage types like nfs, GlusterFS and local hosted
+  storage. It is recommended to use network storage with a persistent volume and
+  not local hosted storage, as local hosted storage option was only introduced for
+  testing a Kubernetes set up. On its own a persistent volume cannot be used by
+  a pod, a pod must have a claim for a persistent volume before it can be used.</li>
+<li>PersistentVolumeClaim: A claim for a persistent volume. If a pod needs to use
+  storage, then it has to use a claim.</li>
+</ul>
+<p><img alt="Billede mangler" src="../images/preview-KubernetesPV.png" title="Kubernetes PV" /></p>
+<p>In the picture above we show a 100 GB PersistentVolume (PV) for a 200 GB
+nfs storage, where two 20 GB PersistentVolumeClaims are claiming 20 GB
+storage each. This illustrates a PersistentVolume as a finite resource,
+which can be used to set a limit on how much storage there can be used
+from an external storage. A PersistentVolumeClaim has to be used if a
+pod needs to use a part of the PersistentVolume's storage. This model
+means an external physical storage can be partitioned into multiple
+PersistentVolumes, which then can also be partitioned into multiple
+PersistentVolumeClaim.</p>
+<p>In the PersistentVolume code we show an example of a PersistentVolume
+manifest file. This manifest file specifically describes a
+PersistentVolume for nfs. The essential parts of the manifest files are
+the capacity, accessModes and nfs labels. The capacity contains the
+definition of how much storage our PersistentVolume can use. The
+accessModes label contains the definition of the cardinality between the
+storage and nodes, which can be the
+following.</p>
+<ul>
+<li>ReadWriteOnce: The volume can be mounted as read-write by a single node.</li>
+<li>ReadOnlyMany: The volume can be mounted read-only by many nodes.</li>
+<li>ReadWriteMany: The volume can be mounted as read-write by many nodes.</li>
+</ul>
+<p>The last attribute is the nfs attribute. This defines the address of the
+server hosting the nfs storage, the path to the nfs folder on the server
+and whether or not the folder is readonly.</p>
+<h2 id="code-persistentvolume-example">Code: PersistentVolume example<a class="headerlink" href="#code-persistentvolume-example" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PersistentVolume</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ci</span>
+<span class="w">  </span><span class="nt">labels</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">volume</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ci</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">capacity</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">storage</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10Gi</span>
+<span class="w">  </span><span class="nt">accessModes</span><span class="p">:</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">ReadWriteMany</span>
+<span class="w">  </span><span class="nt">nfs</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">server</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">master.giraf.cs.aau.dk</span>
+<span class="w">    </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/nfsshare</span>
+<span class="w">    </span><span class="nt">readOnly</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+</code></pre></div></td></tr></table></div>
+
+<p>In the PersistentVolumeClaim code we show an example of a
+PersistentVolumeClaim, which can claim a part of the PersistentVolume
+shown in the PersistentVolume code. To ensure a PersistentVolumeClaim is
+a claim for a specific PersistentVolume, a selector has to be used. A
+selector can filter what PersistentVolume a PersistentVolumeClaim can be
+matched with, by using the label defined in one or more
+PersistentVolumes. In this example we have a label called volume: ci in
+the PersistentVolume, which the selector in the PersistentVolumeClaim
+then match on, such that the PersistentVolumeClaim will be assigned only
+to a PersistentVolume with the same label and sufficient space. If a
+selector is not specified, the PersistentVolumeClaim will be matched
+based on its access mode to any PersistentVolume with sufficient space
+to host the PersistentVolumeClaim.</p>
+<h2 id="code-persistentvolumeclaim-example">Code: PersistentVolumeClaim example<a class="headerlink" href="#code-persistentvolumeclaim-example" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PersistentVolumeClaim</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">artifactory-pvc</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">selector</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">volume</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ci</span>
+<span class="w">  </span><span class="nt">accessModes</span><span class="p">:</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">ReadWriteMany</span>
+<span class="w">  </span><span class="nt">resources</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">requests</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">storage</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5Gi</span>
+</code></pre></div></td></tr></table></div>
+
+<p>After defining a PersistentVolumeClaim it is then possible to use it
+from a deployment manifest file. In the Deployment code we show an
+example of how volumes are used in a deployment. In this example we have
+added two new specs which are volumeMounts (lines 19-22) and volumes
+(lines 23-26). The attribute volumes describes that we want to make a
+volume named artifactory-vol which uses the PersistentVolumeClaim
+artifactory-pvc (the PersistentVolumeClaim shown in the
+PersistentVulmeClaim code). Then we use the volumeMounts to specify
+where we want to mount artifactory-vol, the mountPath is where we mount
+our volume inside the container and subPath is the name of the folder,
+in our nfs storage, we want to mount at the mountPath.</p>
+<h2 id="code-deployment-example">Code: Deployment example<a class="headerlink" href="#code-deployment-example" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">extensions/v1beta1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Deployment</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">artifactory</span>
+<span class="w">  </span><span class="nt">labels</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">artifactory</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">replicas</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">  </span><span class="nt">template</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">metadata</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">labels</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">artifactory</span>
+<span class="w">    </span><span class="nt">spec</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">containers</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">artifactory</span>
+<span class="w">        </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docker.bintray.io/jfrog/artifactory-oss:latest</span>
+<span class="w">        </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">          </span><span class="nt">containerPort</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8081</span>
+<span class="w">        </span><span class="nt">volumeMounts</span><span class="p">:</span>
+<span class="w">          </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">artifactory-vol</span>
+<span class="w">          </span><span class="nt">mountPath</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/opt/jfrog/artifactory</span>
+<span class="w">          </span><span class="nt">subPath</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">artifactory</span>
+<span class="w">      </span><span class="nt">volumes</span><span class="p">:</span>
+<span class="w">          </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">artifactory-vol</span>
+<span class="w">          </span><span class="nt">persistentVolumeClaim</span><span class="p">:</span>
+<span class="w">            </span><span class="nt">claimName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">artifactory-pvc</span>
+</code></pre></div></td></tr></table></div>
+                
+                  
+                
+                
+                  
+                  <hr>
+                  <div class="md-source-date">
+                    <small>
+                      
+                        Last update: September 11, 2025
+                      
+                    </small>
+                  </div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../github/" title="Use of GitHub in GIRAF" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Use of GitHub in GIRAF
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../ownership_transfer/" title="Ownership Transfer" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Ownership Transfer
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../../assets/javascripts/application.c33a9706.js"></script>
+      
+      <script>app.initialize({version:"1.5.0",url:{base:"../../../.."}})</script>
+      
+    
+  </body>
+</html>
