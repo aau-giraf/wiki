@@ -1,0 +1,7 @@
+arrange:
+
+    - "MacOS.md"
+    - "Linux.md"
+    - "Windows.md"
+    - "Running_GIRAF.md"
+    - "Docker.md"
