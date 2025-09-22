@@ -1,76 +1,101 @@
 # Windows Setup Guide
+This guide explains how to set up development of the **Visual Tangible Artifacts Giraf app** on a Windows PC using an **Android emulator**.
 
-**Be mindful that your computer needs to support virtualisation in order to run the Android Simulator!**
+---
 
-## Step 1. Install OpenJDK (or similar)
+## Prerequisites
+Make sure your system meets the following requirements:
 
-1. [Download OpenJDK](https://learn.microsoft.com/en-us/java/openjdk/download)
-2. Run through the installer
+- **Operating System**: 64-bit Windows 10 or Windows 11  
+  > ⚠️ 32-bit (x86) Windows is **not supported** — Android Studio, Flutter, and the emulator all require 64-bit Windows.  
+- **Free Disk Space**: Up to ~35 GB may be needed if you start with nothing installed (real usage is usually lower).  
+- **CPU Virtualization Enabled**: Enabled in BIOS/UEFI (Intel VT-x or AMD-V).  
+  > [Enable virtualization (Microsoft Guide)](https://support.microsoft.com/en-us/windows/enable-virtualization-on-windows-c5578302-6e43-4b4b-a449-8ced115f58e1)  
+- **Git for Windows Installed**: [Download & Install](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)  
+- **Windows Developer Mode Enabled**: [Enable Developer Mode](https://learn.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development)  
+- **Android Studio Installed** (full install, includes SDK and Emulator): [Download](https://developer.android.com/studio/install)  
+- **Flutter SDK Installed** (with `flutter\bin` added to your PATH): [Install Guide](https://docs.flutter.dev/get-started/install/windows/mobile#install-the-flutter-sdk)  
 
-## Step 2: Install Flutter
+---
 
-1. Create a folder where you want to install Flutter (e.g., `C:\dev`).
-2. [Download the Flutter SDK](https://docs.flutter.dev/get-started/install/windows)
-3. Extract the downloaded zip file into the folder you created (e.g., `C:\dev\flutter`).
+## Setup Steps
 
-4. Add Flutter to your PATH:
+## Step 1: Clone the repository
+Open a terminal of your choice (e.g. Command Prompt, PowerShell, VSCode Terminal etc.), and clone the repository into your choosen directory by running:
 
-   - Open the Start menu and search for "Environment Variables"
-   - Click on "Edit the system environment variables"
-   - Click the "Environment Variables" button
-   - Under "System variables", find the "Path" variable and click "Edit"
-   - Click "New" and add the full path to the `flutter\bin` directory (e.g., `C:\dev\flutter\bin`)
-   - Click "OK" to save the changes
-
-5. Open a new PowerShell window and verify the installation:
-
-```powershell
-flutter --version
+```bash
+git clone https://github.com/aau-giraf/visual-tangible-artefacts.git
 ```
 
-## Step 3: Set up Android Studio
+## Step 2: Navigate to the project frontend
+```bash
+cd vta-giraf/Frontend/vta_app
+```
 
-1. [Download Android Studio](https://developer.android.com/studio)
-2. Run the installer and follow the installation wizard.
-3. During installation, ensure that the "Android Virtual Device" option is selected.
-4. Once installed, open Android Studio.
-5. Go to File > Settings > Plugins (on Windows)
-6. Search for and **install the Flutter and Dart plugins**
-7. Restart Android Studio to activate the plugins
-8. Go into _Settings > Languages & Frameworks > Dart_ and set the relevant path to the Dart SDK, e.g. `C:\dev\flutter\bin\cache\dart-sdk`, and enable the `weekplanner` module
+---
 
-## Step 4. Installing MariaDB
+## Step 3: Configure Android Studio SDK
+1. Open **Android Studio**.  
+2. Go to **File > Settings > Languages & Frameworks > Android SDK**.  
+3. In the **SDK Tools** tab, make sure the following are checked:  
+   ✅ Android SDK Command-line Tools  
+   ✅ Android Emulator  
+   ✅ Android SDK Platform-Tools  
 
-_If you have MySQL or similar installed, you don't need to follow this step. Postgres doesn't count._
+> ℹ️ By default, Android Studio already installs at least one Android SDK platform and sets up sample virtual devices in the **Virtual Device Manager**, but **Android SDK Command-line Tools** usually isn't installed by default.
 
-1. [Download MariaDB](https://mariadb.org/download/)
-2. Select the latest stable version for Windows and choose the appropriate package (MSI) for your system architecture (32-bit or 64-bit)
-3. Run the wizard and set a root password you'll be able to remember later.
-4. Select HeidiSQL and configure other options as needed (default settings are usually fine).
-5. Open HeidiSQL and log in with the password you chose earlier
-6. Right-click in the left panel, and choose _New > Database_ and make a database called `giraf`
+---
 
-## Step 5. Installing .NET with Entity Framework
+## Step 4: Accept Android Licenses
+In the terminal run:
+```bash
+flutter doctor --android-licenses
+```
+Press **`y`** to accept each license.
 
-1. [Download the .NET 8 SDK installer for Windows](https://dotnet.microsoft.com/download/dotnet/8.0)
-2. Run the installer and follow the prompts
-3. Run the following command: `dotnet --version` – you should see the installed .NET version (8.x.x)
-4. Run the following command:
+---
 
-`dotnet tool install --global dotnet-ef`
+## Step 5: Verify Flutter Installation
+In the terminal run:
+```bash
+flutter doctor
+```
+Confirm that **Android toolchain** and **Android Studio** show no issues.
 
-You can then run `dotnet ef` to verify the installation.
+---
 
-## Running GIRAF
+## Step 6: Start the Android Emulator
+- In Android Studio, go to **Tools > Virtual Device Manager**.  
+- You should already see a default virtual device (e.g. Medium Phone).  
+- Select it and click **▶ Start**.  
 
-Refer to [this guide](../Running_GIRAF)
+> Tip: You can also launch from the terminal:  
+```bash
+flutter emulators
+flutter emulators --launch <emulator_id>
+```
 
-## Troubleshooting
+---
 
-If you encounter any issues:
+## Step 7: Run the App
+From the project frontend folder (`Frontend/vta_app`):
+```bash
+flutter run
+```
+Select your emulator if prompted.
 
-- Ensure your Windows installation is up to date
-- Run `flutter doctor` for diagnostics and follow its recommendations
-- Check the official Flutter documentation for known issues
-- For permission issues, try running PowerShell as Administrator
-- Ensure Java is in your PATH environment variable
+---
+
+## Bonus: Running as a Windows App
+If you also want to build and run the app as a native Windows desktop application:
+
+1. Install **Visual Studio** (full IDE, not VS Code).  
+2. Select the **“Desktop development with C++”** workload, including all default components.  
+  > [Visual Studio Download](https://visualstudio.microsoft.com/downloads/)  
+3. Run:
+```bash
+flutter doctor
+```
+You should now see **Windows desktop** listed as a supported platform, and can now choose it as an option when running the app.
+
+---
