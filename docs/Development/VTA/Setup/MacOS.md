@@ -73,10 +73,13 @@ brew install flutter
 1. Download Flutter from: https://docs.flutter.dev/get-started/install/macos/mobile-ios
 2. Extract to desired location (e.g., `~/development/flutter`)
 3. Add Flutter to your PATH in `~/.zshrc` or `~/.bash_profile`:
+
    ```bash
    export PATH="$PATH:$HOME/development/flutter/bin"
    ```
+
 4. Reload your terminal or run:
+
    ```bash
    source ~/.zshrc
    ```
@@ -185,6 +188,7 @@ cd ..
    ```
 
 3. From `Frontend/vta_app`, run the Flutter app:
+
    ```bash
    flutter run
    ```
