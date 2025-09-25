@@ -130,7 +130,7 @@ xcrun simctl list runtimes | grep iOS
 
 This will show available iOS versions, e.g.:
 
-```
+```bash
 iOS 17.5 (17.5 - 21F79) - com.apple.CoreSimulator.SimRuntime.iOS-17-5
 iOS 18.1 (18.1 - 22B83) - com.apple.CoreSimulator.SimRuntime.iOS-18-1
 ```
@@ -190,7 +190,6 @@ brew install dotnet@8
 
 1. Start the iPad simulator:
 
-```bash
    ```bash
    xcrun simctl boot "VTA iPad Pro"
    ```
