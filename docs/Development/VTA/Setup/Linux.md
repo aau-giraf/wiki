@@ -68,7 +68,7 @@ source ~/.bashrc  # or source ~/.zshrc if you're using Zsh
 flutter --version
 ```
 
-## Step 4: Install .NET 8.0
+## Step 4: Install .NET 8.0 SDK
 
 1. Add the Microsoft package signing key and repository:
 

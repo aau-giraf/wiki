@@ -173,10 +173,24 @@ pod install
 cd ..
 ```
 
+### Step 5: Install .NET 8.0 SDK
+
+#### Option A: Install using Homebrew
+
+```bash
+brew install dotnet@8
+```
+
+#### Option B: Manual Installation
+
+1. Download the .NET 8.0 SDK installer from https://dotnet.microsoft.com/en-us/download/dotnet/8.0
+2. Run the installer and follow the prompts to complete the installation.
+
 ## Running the Flutter App
 
 1. Start the iPad simulator:
 
+```bash
    ```bash
    xcrun simctl boot "VTA iPad Pro"
    ```
