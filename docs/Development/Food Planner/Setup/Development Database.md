@@ -6,6 +6,8 @@ The development database should be used as a source of realistic, read-only data
 
 When connecting to the database, it is recommended in most cases to connect using the `readonly` role. To do so you must first be connected to the AAU network or the [AAU VPN](https://www.en.its.aau.dk/instructions/vpn#set-up-vpn-on-windows-and-mac-) ([Cisco Secure Client download](https://kb.itd.commonwealthu.edu/books/network/page/download-cisco-secure-client)). After connecting to the network or VPN, use the following credentials:
 
+- Host: `130.225.39.155`
+- Port: `5432`
 - Username: `readonly`
 - Password: `postgres`
 
@@ -15,6 +17,8 @@ After connecting to the database you can migrate the data to a local database in
 
 If it is necessary to update the development database, log in as the `postgres` superuser with the following credentials:
 
+- Host: `130.225.39.155`
+- Port: `5432`
 - Username: `postgres`
 - Password: `postgres`
 
