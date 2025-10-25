@@ -11,7 +11,7 @@ When connecting to the database, it is recommended in most cases to connect usin
 - Username: `readonly`
 - Password: `postgres`
 
-After connecting to the database you can migrate the data to a local database in different ways, for example using `pg_dump` and `pg_restore`, or with database management tools such as pgAdmin, DBeaver, or Microsoft SQL Server Management Studio.
+After connecting to the database you can migrate the data to a local database in different ways, for example using `pg_dump` and `pg_restore`, or with database management tools such as pgAdmin or DBeaver.
 
 ## Updating the Development Database
 
