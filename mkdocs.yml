@@ -8,37 +8,44 @@ repo_url: "https://github.com/aau-giraf"
 edit_uri: "" # Is empty to remove 'edit' buttons on pages
 
 extra_css:
-  - "extra/extra.css"
+   - "extra/extra.css"
 
 # Theme settings
 theme:
-  name: "material"
-  font:
-    text: "Open Sans"
-    code: "Roboto Mono"
-  palette:
-    primary: "yellow"
-    accent: "deep orange"
-  logo: "extra/giraf.png"
-  feature:
-    tabs: true
+   name: "material"
+   font:
+      text: "Open Sans"
+      code: "Roboto Mono"
+   palette:
+      primary: "yellow"
+      accent: "deep orange"
+   logo: "extra/giraf.png"
+   feature:
+      tabs: true
 
 # Plugins
 plugins:
-  - search # Adds search functionality
-  - awesome-pages # Used to arrange tabs and pages manually
-  - git-revision-date-localized # Adds the "Last update: x" on the bottom of pages
+   - search # Adds search functionality
+   - awesome-pages # Used to arrange tabs and pages manually
+   - git-revision-date-localized # Adds the "Last update: x" on the bottom of pages
+   - mermaid2 # Adds support for mermaid diagrams
 
 # Markdown extensions
 # See list of extensions at https://squidfunk.github.io/mkdocs-material/extensions/admonition/
 markdown_extensions:
-  - admonition
-  - codehilite:
-      guess_lang: false
-      linenums: true
-  - toc:
-      permalink: true
-  - pymdownx.arithmatex
-  - pymdownx.emoji
-  - pymdownx.tilde
-  - pymdownx.tasklist
+   - admonition
+   - codehilite:
+        guess_lang: false
+        linenums: true
+   - toc:
+        permalink: true
+   - pymdownx.arithmatex
+   - pymdownx.superfences:
+        custom_fences:
+           - name: mermaid
+             class: mermaid
+             format: !!python/name:pymdownx.superfences.fence_div_format
+   - pymdownx.highlight
+   - pymdownx.emoji
+   - pymdownx.tilde
+   - pymdownx.tasklist
