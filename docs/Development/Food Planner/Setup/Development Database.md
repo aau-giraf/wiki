@@ -15,11 +15,6 @@ After connecting to the database you can migrate the data to a local database in
 
 ## Updating the Development Database
 
-If it is necessary to update the development database, log in as the `postgres` superuser with the following credentials:
-
-- Host: `130.225.39.155`
-- Port: `5432`
-- Username: `postgres`
-- Password: `postgres`
+If it is necessary to update the development database, log in as the `postgres` superuser. The credentials for the `postgres` role can be requested.
 
 Note that the `postgres` role has full privileges. Make a backup before making any changes to ensure data can be recovered if something goes wrong.
