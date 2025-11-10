@@ -2,25 +2,11 @@
 
 ```mermaid
 classDiagram
-    direction LR
-    class Users {
+    %% --- Classes --
+    class Organization {
+        <<Concept>>
         +int Id
-        +string FirstName
-        +string LastName
-        +string Email
-        +string Password
-        +string Role
-        +string Pincode
-        +bool RoleApproved
-        +bool Archived
-    }
-
-    class Children {
-        +int ChildId
-        +string FirstName
-        +string LastName
-        +int ParentId
-        +int ClassId
+        +string Name
     }
 
     class Classroom {
@@ -28,68 +14,70 @@ classDiagram
         +string ClassName
     }
 
-    class ChatThread {
-        +int ChatThreadId
+    class User {
+        +int Id
+        +string FirstName
+        +string LastName
+        +string Email
+        +string Role
+    }
+
+    class Children {
         +int ChildId
+        +string FirstName
+        +string LastName
+        +int classId
     }
 
-    class Message {
-        +int MessageId
-        +int ChatThreadId
-        +string Content
-        +datetime Date
-        +int UserId
-        +bool Archived
-        +bool IsEdited
+    class Meal {
+        +int Id
+        +string Title
     }
 
-    class Ingredients {
+    class Ingredient {
         +int Id
         +string Name
-        +int FoodImageId
-        +int UserId
     }
 
-    class Meals {
+    class PackedIngredient {
         +int Id
-        +string Name
-        +datetime Date
-        +int UserId
-    }
-
-    class PackedIngredients {
-        +int Id
-        +int MealId
-        +int IngredientId
-        +int OrderNumber
+        +int Quantity
     }
 
     class FoodImage {
         +int Id
-        +int ImageId
-        +int UserId
-        +string ImageName
-        +string ImageFileType
-        +int Size
+        +string Url
     }
 
-    class Organization {
+    class ChatThread {
         +int Id
-        +string Name
+        +string Title
     }
 
-    %% Relationships
-    Users "1" o-- "*" Organization : belongs to
-    Classroom "1" o-- "*" Organization : belongs to
-    Users "1" --> "*" Message : sends
-    Users "1" --> "*" Ingredients : owns
-    Users "1" --> "*" Meals : creates
-    Users "1" --> "*" FoodImage : uploads
+    class Message {
+        +int Id
+        +string Text
+        +DateTime SentAt
+    }
 
-    Children "1" --> "1" Classroom : attends
-    Children "1" --> "*" ChatThread : has
-    ChatThread "1" --> "*" Message : contains
-    Meals "1" --> "*" PackedIngredients : includes
-    PackedIngredients "*" --> "1" Ingredients : uses
-    Ingredients "1" --> "1" FoodImage : references
+    %% --- Relationships ---
+
+    Organization "0..*" o-- "1" Classroom
+    Organization "0..*" o-- "0..1" User
+
+    Classroom "0..*" o-- "1" Children
+
+    User "0..1" --> "1" Children
+
+    Meal "0..*" o-- "0..*" Ingredient
+
+    PackedIngredient "0..1" o-- "1" Ingredient
+    PackedIngredient "1" --> "1" Children
+
+    Meal "0..*" o-- "1" PackedIngredient
+    Meal "1" o-- "1" FoodImage
+
+    ChatThread "0..*" *-- "1" Message
+
+    Message "1" --> "0..1" User
 ```
