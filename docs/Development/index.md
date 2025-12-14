@@ -1,5 +1,10 @@
 # Overview
 
-This section historically contained necessary information necessary to know before developing on the GIRAF projects. That information can now be found in the [Legacy](../Legacy/index.md) section for the curious. The exception is generally useful knowledge such as information regarding the Wiki and its upkeep.
+This section contains information for developing on GIRAF projects.
 
-We advise you check out the [GIRAF](https://github.com/aau-giraf) GitHub for the most recent development information. 
+- [Architecture Overview](./architecture.md)
+  How the GIRAF ecosystem fits together - repositories, tech stack, and data flow.
+- [GitHub Guide](./github.md)
+  Git workflow, branching strategy, and PR process.
+
+For historical information from prior semesters, see [Legacy](../Legacy/index.md). 
