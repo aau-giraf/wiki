@@ -20,8 +20,10 @@ theme:
       primary: "yellow"
       accent: "deep orange"
    logo: "extra/giraf.png"
-   feature:
-      tabs: true
+   features:
+      - navigation.tabs
+      - navigation.sections
+      - search.highlight
 
 # Plugins
 plugins:
@@ -34,9 +36,6 @@ plugins:
 # See list of extensions at https://squidfunk.github.io/mkdocs-material/extensions/admonition/
 markdown_extensions:
    - admonition
-   - codehilite:
-        guess_lang: false
-        linenums: true
    - toc:
         permalink: true
    - pymdownx.arithmatex
@@ -45,7 +44,11 @@ markdown_extensions:
            - name: mermaid
              class: mermaid
              format: !!python/name:pymdownx.superfences.fence_div_format
-   - pymdownx.highlight
+   - pymdownx.highlight:
+        anchor_linenums: true
+        line_spans: __span
+        pygments_lang_class: true
+   - pymdownx.inlinehilite
    - pymdownx.emoji
    - pymdownx.tilde
    - pymdownx.tasklist
