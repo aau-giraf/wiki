@@ -36,7 +36,7 @@ graph TB
 
 ---
 
-# Foodplanner
+## Foodplanner
 
 Meal planning app for institutions. Uses **separate repositories** for frontend and backend.
 
@@ -92,7 +92,7 @@ sequenceDiagram
     Flutter-->>User: Shows success
 ```
 
-## Where Do I Look?
+## Where Do I Look
 
 | I want to... | Look in... |
 |--------------|------------|
@@ -104,12 +104,14 @@ sequenceDiagram
 
 ## Tech Stack
 
-**Frontend**
+**Frontend:**
+
 - Flutter / Dart
 - GoRouter (navigation)
 - OpenAPI Generator (auto-generates API client)
 
-**Backend**
+**Backend:**
+
 - .NET / ASP.NET Core / C#
 - Entity Framework Core (code-first migrations)
 - PostgreSQL
@@ -133,7 +135,7 @@ The Flutter app doesn't manually write API calls:
 
 ---
 
-# VTA (Visual Tangible Artefacts)
+## VTA (Visual Tangible Artefacts)
 
 Visual/physical schedule tools. Uses a **monorepo** with frontend and backend in the same repository.
 
@@ -182,7 +184,7 @@ sequenceDiagram
     Flutter-->>User: Shows confirmation
 ```
 
-## Where Do I Look?
+## Where Do I Look
 
 | I want to... | Look in... |
 |--------------|------------|
@@ -193,10 +195,12 @@ sequenceDiagram
 
 ## Tech Stack
 
-**Frontend**
+**Frontend:**
+
 - Flutter / Dart
 
-**Backend**
+**Backend:**
+
 - .NET / ASP.NET Core / C#
 - Entity Framework Core (DB-first with scaffold)
 - MySQL
@@ -210,10 +214,12 @@ VTA uses **DB-first** - the database schema is the source of truth:
 
 1. Design/modify tables directly in MySQL
 2. Scaffold models from the database:
+
    ```bash
    dotnet ef dbcontext scaffold "server=...;database=VTA" \
      Pomelo.EntityFrameworkCore.MySql -o scaffold -f
    ```
+
 3. This regenerates C# model classes to match the schema
 
 ### CI/CD Pipeline
@@ -231,7 +237,7 @@ VTA has automated CI/CD via GitHub Actions:
 
 ---
 
-# Shared Resources
+## Shared Resources
 
 | Repository | Description | Default Branch |
 |------------|-------------|----------------|
