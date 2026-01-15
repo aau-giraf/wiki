@@ -39,38 +39,8 @@ When inspection reveals issues, the process or product must be adjusted promptly
 - Sprint Backlog can be adjusted based on Planning Poker outcomes
 - Teams can request additional issues if capacity allows
 
-## Sprint Events
+## Learn More
 
-GIRAF uses a 2-week sprint cycle. The following events occur each sprint:
-
-### Sprint Planning
-
-See the [Process](process.md) page for detailed Sprint Planning procedures including Planning Poker estimation.
-
-### Sprint Review
-
-The Sprint Review occurs at the end of each sprint to inspect the increment and adapt the Product Backlog. See the [Scrum Guide](https://scrumguides.org/scrum-guide.html#sprint-review) for the official definition.
-
-**Expected Duration:** Max 2 hours (adjusted for 2-week sprint).
-
-**Purpose:**
-
-- Development teams demonstrate completed work
-- PO group and stakeholders provide feedback
-- Product Backlog is updated based on learnings
-
-**Participants:** All GIRAF team members and available stakeholders.
-
-### Sprint Retrospective
-
-The Sprint Retrospective occurs after the Sprint Review to inspect the team's process and create a plan for improvements. See the [Scrum Guide](https://scrumguides.org/scrum-guide.html#sprint-retrospective) for the official definition.
-
-**Expected Duration:** Max 1.5 hours (adjusted for 2-week sprint).
-
-**Purpose:**
-
-- Identify what went well during the sprint
-- Identify what could be improved
-- Create actionable improvements for the next sprint
-
-**Format:** Each team conducts their own retrospective. The SM group then aggregates insights and communicates process changes at the next Sprint Planning.
+- [Sprint Events](sprint_events.md) — Detailed guide to Sprint Planning, Review, and Retrospective
+- [Roles](roles.md) — PO, SM, and Developer responsibilities
+- [Code Workflow](code_workflow.md) — From issue to merged PR
