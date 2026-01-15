@@ -7,6 +7,7 @@ This page describes how to get access to GIRAF services and accounts.
 All relevant passwords are stored in [KeePass](https://keepass.info/). Contact Ulrik Nyman ([ulrik@cs.aau.dk](mailto:ulrik@cs.aau.dk)) to get the `.kbdx` file.
 
 **Best practices:**
+
 - Store the file on Google Drive so all team members can access it
 - The SM group should manage the password file
 - Re-upload after any changes
@@ -16,6 +17,7 @@ All relevant passwords are stored in [KeePass](https://keepass.info/). Contact U
 The [GIRAF GitHub organization](https://github.com/aau-giraf) contains all repositories.
 
 **To get access:**
+
 1. Contact an existing owner to be added
 2. Or use the shared account (requires 2FA code from Ulrik):
    - Username: `giraf@lists.aau.dk`

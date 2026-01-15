@@ -35,6 +35,7 @@ Time estimation uses Planning Poker with Fibonacci cards: 1, 2, 3, 5, 8, 13, 21,
 **Include in estimates:** Testing, code review, documentation, usability test design.
 
 **Process:**
+
 1. Everyone reads and discusses the issue
 2. Everyone picks a card secretly, then reveals simultaneously
 3. If estimates differ by more than two steps (e.g., 3 vs 8), discuss and re-estimate
@@ -57,9 +58,10 @@ Time estimation uses Planning Poker with Fibonacci cards: 1, 2, 3, 5, 8, 13, 21,
 
 Teams work on their assigned issues. See [Code Workflow](code_workflow.md) for the issue-to-merge process.
 
-### Need More Work?
+### Need More Work
 
 If your team finishes early:
+
 1. Find an issue in the Sprint Backlog
 2. Ask the SM group for approval (they may redirect you to higher priorities)
 

@@ -68,6 +68,7 @@ When your work is complete, create a pull request.
 ### Before Creating a PR
 
 Ensure your code:
+
 - Addresses only one issue (one PR per user story)
 - Is fully tested (removing any functionality should break a test)
 - Is reachable in the application
@@ -113,6 +114,7 @@ Ensure your code:
 ## 5. Merging
 
 Once approved:
+
 1. Ensure CI checks pass
 2. Merge the PR (squash or regular merge per repo conventions)
 3. Delete the feature branch

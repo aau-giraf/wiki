@@ -2,7 +2,7 @@
 
 Welcome to the GIRAF project! This section will help you get set up in your first week.
 
-## What is GIRAF?
+## About GIRAF
 
 GIRAF is an umbrella term for digital tools developed for autistic children with little or no verbal communication. The applications have been developed by students at Aalborg University since 2011, in close cooperation with:
 
@@ -26,7 +26,7 @@ GIRAF is an umbrella term for digital tools developed for autistic children with
 | Know what my role involves | [Process → Roles](../Process/roles.md) |
 | See how previous teams worked | [Archive](../Archive/index.md) |
 
-## Questions?
+## Need Help
 
 - **Discord** — Day-to-day questions ([Invite Link](https://discord.gg/dNCkbsezKb))
 - **Your supervisor** — Project-level guidance
