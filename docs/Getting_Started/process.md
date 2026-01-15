@@ -1,6 +1,6 @@
 # Process
 
-It is recommended that the groups work agile in this project. This section will provide an insight in the process of the former groups of GIRAF. If this guide is insufficient or you have further questions it is suggested that you contact the Agile Software Engineering (ASE) lecturer. 
+It is recommended that the groups work agile in this project. For an overview of how GIRAF implements Scrum and its underlying principles, see [Scrum in GIRAF](scrum.md). This section will provide an insight in the process of the former groups of GIRAF. If this guide is insufficient or you have further questions it is suggested that you contact the Agile Software Engineering (ASE) lecturer. 
 
 The Legacy tab provides former students experiences, primarily regarding the weekplanner project, which although not relevant can provide useful insight. This includes meeting notes with Carsten, the previous ASE lecturer, and many other resources. 
 
