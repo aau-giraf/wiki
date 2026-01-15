@@ -1,4 +1,7 @@
-# Environment Setup
+# Environment Setup (Weekplanner - Archived)
+
+!!! warning "Historical Content"
+    This setup guide is for the **retired weekplanner project**. For current development setup, see [VTA Setup](../../../Development/VTA/index.md).
 
 ## Cloning the Repositories
 

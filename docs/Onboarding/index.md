@@ -17,15 +17,6 @@ GIRAF is an umbrella term for digital tools developed for autistic children with
 3. **Understand the ecosystem** — See [Architecture Overview](../Development/architecture.md)
 4. **Learn how we work** — See [Process](../Process/index.md)
 
-## Quick Links
-
-| I need to... | Go to... |
-|--------------|----------|
-| Set up my development environment | [Development](../Development/index.md) |
-| Understand Scrum in GIRAF | [Process → Scrum](../Process/scrum.md) |
-| Know what my role involves | [Process → Roles](../Process/roles.md) |
-| See how previous teams worked | [Archive](../Archive/index.md) |
-
 ## Need Help
 
 - **Discord** — Day-to-day questions ([Invite Link](https://discord.gg/dNCkbsezKb))

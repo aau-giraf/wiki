@@ -1,7 +1,9 @@
-# Overview
+# Sprint Events (2020E)
 
-This section gives an explanation of the sprint events that has been used
-in the 2020E semester.
+!!! warning "Historical Content"
+    This page is from the 2020E semester. For current sprint event documentation, see [Process → Sprint Events](../../../../Process/sprint_events.md).
+
+This section gives an explanation of the sprint events that were used in the 2020E semester.
 
 ## Timeline
 

@@ -1,11 +1,8 @@
 # Archive
 
-> **Note:** This section contains historical content from GIRAF development between 2018 and 2020. While the weekplanner project has been retired, these materials may provide useful context and inspiration.
+!!! warning "Historical Content"
+    This section contains historical content from GIRAF development between 2018 and 2020. The weekplanner project has been retired. These materials may provide useful context but are not current documentation.
 
-For current process documentation, see [Process](../Process/index.md).
+For current documentation, see [Process](../Process/index.md) and [Development](../Development/index.md).
 
-## Contents
-
-- [Handover](./Handover/index.md) — Semester handover documents and guides
-- [Releases](./Releases/index.md) — Historical release notes
-- [Weekplanner](./weekplanner/Apps/index.md) — Archived weekplanner documentation
+Use the sidebar to browse handover documents, release notes, and archived weekplanner documentation.

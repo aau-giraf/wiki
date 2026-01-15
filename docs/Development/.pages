@@ -1,8 +1,7 @@
 arrange:
     - "index.md"
     - "architecture.md"
-    - ...
+    - "Food Planner"
     - "VTA"
     - "Wiki"
-    - "github.md"
    

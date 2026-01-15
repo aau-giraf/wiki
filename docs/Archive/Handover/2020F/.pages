@@ -1,0 +1,8 @@
+arrange:
+    - index.md
+    - advice.md
+    - giraf_events.md
+    - github.md
+    - kubernetes.md
+    - ownership_transfer.md
+    - tools.md
