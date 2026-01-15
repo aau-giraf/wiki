@@ -17,8 +17,8 @@ theme:
       text: "Open Sans"
       code: "Roboto Mono"
    palette:
-      primary: "yellow"
-      accent: "deep orange"
+      primary: "amber"
+      accent: "orange"
    logo: "extra/giraf.png"
    features:
       - navigation.tabs
