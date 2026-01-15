@@ -1,15 +1,22 @@
 # Home
 
-This wiki includes all information about the GIRAF project! The information is split
-into 6 categories:
-   
-- [Getting Started](./Getting_Started/index.md)
-    - Gives an introduction to GIRAF for students on a new semester.
-- [Development](./Development/index.md)
-    - Documents how most of the GIRAF project is implemented and how to use it.
-- [Legal](Legal/index.md)
-    - Legal, privacy, and security information about the GIRAF project.
-- [About](./About/index.md)
-    - General info about the GIRAF project.
-- [Legacy](./Legacy/)
-    - Archived files from pre 2024 GIRAF
+Welcome to the GIRAF wiki! This is your reference for **how to work** in the GIRAF project.
+
+## Getting Started
+
+New to GIRAF? Start here:
+
+1. [Onboarding](./Onboarding/index.md) — First-week setup, accounts, and tools
+2. [Process](./Process/index.md) — How we work (Scrum, roles, sprints)
+3. [Development](./Development/index.md) — Technical setup and architecture
+
+## All Sections
+
+| Section | Description |
+|---------|-------------|
+| [Onboarding](./Onboarding/index.md) | First-week essentials: accounts, tools, getting started |
+| [Process](./Process/index.md) | How we work: Scrum, roles, sprint events, code workflow |
+| [Development](./Development/index.md) | Technical setup: architecture, Foodplanner, VTA |
+| [Legal](./Legal/index.md) | GDPR, privacy, licenses |
+| [About](./About/index.md) | What is GIRAF |
+| [Archive](./Archive/index.md) | Historical content from 2018-2020 |

@@ -56,6 +56,6 @@ repositories:
   containers are only restarted every second week. This means that the docker
   container has to be restarted manually in order to get the server to use
   the newly released **web-api** immediately. It is done by logging onto Portainer (Credentials
-  can be found [here](../../../Getting_Started/ownership_transfer.md#portainer-access)) 
+  can be found in [Accounts & Access](../../../../Onboarding/accounts_and_access.md)) 
   where you need to restart all the containers that have a name that starts
   with **Giraf_API_PROD**.

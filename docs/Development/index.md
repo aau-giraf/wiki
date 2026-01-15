@@ -1,10 +1,14 @@
-# Overview
+# Development
 
-This section contains information for developing on GIRAF projects.
+This section contains technical information for developing GIRAF applications.
 
-- [Architecture Overview](./architecture.md)
-  How the GIRAF ecosystem fits together - repositories, tech stack, and data flow.
-- [GitHub Guide](./github.md)
-  Git workflow, branching strategy, and PR process.
+## Contents
 
-For historical information from prior semesters, see [Legacy](../Legacy/index.md). 
+- [Architecture Overview](./architecture.md) — How the GIRAF ecosystem fits together
+- [Foodplanner Setup](./Food%20Planner/Setup/Development%20Database.md) — Database and environment setup
+- [VTA Setup](./VTA/index.md) — Visual Tangible Artefacts development
+
+## Related
+
+- [Code Workflow](../Process/code_workflow.md) — Git workflow, branching, and PR process
+- [Archive](../Archive/index.md) — Historical technical documentation from 2018-2020

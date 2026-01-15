@@ -1,8 +1,9 @@
 arrange:
     - index.md
     - ...
-    - Getting_Started
+    - Onboarding
+    - Process
     - Development
     - Legal
     - About
-    - Legacy
+    - Archive

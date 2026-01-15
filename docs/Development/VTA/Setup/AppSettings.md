@@ -10,7 +10,7 @@ The files created in this guide, has been added to `.gitignore` to avoid committ
 
 ## Prerequisites
 
-All nessecary secrets and connection strings can be found in the project's KeePass. See the [GIRAF Passwords](../../../Getting_Started/ownership_transfer.md#giraf-passwords) for more information.
+All necessary secrets and connection strings can be found in the project's KeePass. See [Accounts & Access](../../../Onboarding/accounts_and_access.md) for more information.
 
 ## Backend Configuration
 

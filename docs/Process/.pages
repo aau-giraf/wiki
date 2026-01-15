@@ -1,0 +1,6 @@
+arrange:
+    - index.md
+    - scrum.md
+    - roles.md
+    - sprint_events.md
+    - code_workflow.md

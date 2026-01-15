@@ -47,7 +47,7 @@ Information about the endpoints and controllers in the Web API can be found
 
 ## Run the Web API Locally
 
-A guide on how to build and run the Web API locally can be found in the [Setup Guide](../../Getting_Started/setup.md).
+*Note: The weekplanner project has been retired. Setup guides for current projects can be found in [Development](../../../Development/index.md).*
 
 ## Settings
 
