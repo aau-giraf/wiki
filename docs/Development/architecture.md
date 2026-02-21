@@ -4,243 +4,101 @@ A guide for new students to understand how the GIRAF ecosystem fits together.
 
 ## The Big Picture
 
-GIRAF consists of two active projects, each serving different needs for autistic children:
+GIRAF apps share a common platform so they don't each reinvent users, authentication, or pictograms. The architecture has three layers:
 
-```mermaid
-graph TB
-    subgraph "Foodplanner"
-        FP["Flutter App"]
-        FP_API[".NET API"]
-        FP_DB[(PostgreSQL)]
-        FP --> FP_API --> FP_DB
-    end
-
-    subgraph "VTA"
-        VTA_APP["Flutter App"]
-        VTA_API[".NET API"]
-        VTA_DB[(MySQL)]
-        VTA_APP --> VTA_API --> VTA_DB
-    end
-
-    subgraph "Shared"
-        WIKI["wiki"]
-    end
 ```
-
-| Project | Purpose | Structure |
-|---------|---------|-----------|
-| **Foodplanner** | Meal planning for institutions | Separate repos for frontend + backend |
-| **VTA** | Visual/physical schedule tools | Monorepo (frontend + backend together) |
-
-> **Note:** The `weekplan` repository is archived and no longer maintained.
+┌─────────────────────────────────────────────────────────────────┐
+│                         Mobile Apps                             │
+│   Weekplanner              VTA                Foodplanner       │
+│   (Expo/React Native)      (Flutter)          (Flutter)         │
+└──────┬──────────────────────┬───────────────────┬──────────────┘
+       │                      │                   │
+       ▼                      ▼                   ▼
+┌──────────────┐   ┌──────────────────┐   ┌──────────────┐
+│ Weekplanner  │   │ VTA Backend      │   │ Foodplanner  │
+│ Backend      │   │ (.NET + SignalR) │   │ Backend      │
+│ (.NET 8)     │   │                  │   │ (.NET)       │
+│              │   │                  │   │              │
+│ Activities,  │   │ Boards,          │   │ Meals,       │
+│ Schedules    │   │ Artefacts        │   │ Food items   │
+└──────┬───────┘   └──────┬───────────┘   └──────┬───────┘
+       │                  │                      │
+       │    users, orgs, citizens, pictograms    │
+       ▼                  ▼                      ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                       Shared Services                           │
+│                                                                 │
+│  ┌───────────────────────────────────┐  ┌────────────────────┐  │
+│  │ GIRAF Core (Django + PostgreSQL)  │  │ GIRAF AI (FastAPI) │  │
+│  │                                   │  │                    │  │
+│  │ Auth/JWT, Users, Orgs, Citizens,  │  │ Image generation,  │  │
+│  │ Grades, Pictograms, Invitations   │  │ Text-to-speech     │  │
+│  └───────────────────────────────────┘  └────────────────────┘  │
+└─────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
-## Foodplanner
+## Shared Services
 
-Meal planning app for institutions. Uses **separate repositories** for frontend and backend.
+### GIRAF Core
 
-## Repositories
+The single source of truth for everything shared across apps:
 
-| Repository | Description | Default Branch |
-|------------|-------------|----------------|
-| [foodplanner](https://github.com/aau-giraf/foodplanner) | Flutter mobile/web app | `staging` |
-| [foodplanner-api](https://github.com/aau-giraf/foodplanner-api) | .NET backend API | `staging` |
+- **Users and authentication** — one account works across all GIRAF apps
+- **Organizations** — schools and institutions that group users together
+- **Citizens** — the children who use GIRAF
+- **Pictograms** — the visual symbols used throughout the platform
+- **Invitations** — how new users join an organization
 
-## Architecture
+When a user logs in, Core issues a JWT that all app backends trust. Apps never need their own user databases.
 
-```mermaid
-graph LR
-    subgraph "foodplanner repo"
-        APP["Flutter App"]
-    end
+**Repository:** [giraf-core](https://github.com/aau-giraf/giraf-core)
 
-    subgraph "foodplanner-api repo"
-        API[".NET Web API"]
-    end
+### GIRAF AI
 
-    subgraph "Infrastructure"
-        DB[(PostgreSQL)]
-        MINIO[(Minio<br/>Images)]
-    end
+A shared microservice for AI capabilities that any app can use:
 
-    APP -->|"REST API"| API
-    API --> DB
-    API --> MINIO
-```
+- **Image generation** — creating pictograms from text descriptions
+- **Text-to-speech** — reading pictogram labels aloud
 
-## Data Flow Example
+Swapping AI providers happens in one place rather than across every app.
 
-When a user creates a new meal:
-
-```mermaid
-sequenceDiagram
-    participant User
-    participant Flutter as Flutter App
-    participant API as .NET API
-    participant DB as PostgreSQL
-    participant Minio as Minio
-
-    User->>Flutter: Taps "Add Meal"
-    User->>Flutter: Fills in details + photo
-    Flutter->>API: POST /api/meals
-    API->>Minio: Store image
-    Minio-->>API: Image URL
-    API->>DB: INSERT meal
-    DB-->>API: Success
-    API-->>Flutter: 201 Created
-    Flutter-->>User: Shows success
-```
-
-## Where Do I Look
-
-| I want to... | Look in... |
-|--------------|------------|
-| Change UI/screens | `foodplanner/lib/pages/` |
-| Modify reusable widgets | `foodplanner/lib/components/` |
-| Change data fetching | `foodplanner/lib/services/` |
-| Add/modify API endpoints | `foodplanner-api/` |
-| Change database schema | `foodplanner-api/` (EF migrations) |
-
-## Tech Stack
-
-**Frontend:**
-
-- Flutter / Dart
-- GoRouter (navigation)
-- OpenAPI Generator (auto-generates API client)
-
-**Backend:**
-
-- .NET / ASP.NET Core / C#
-- Entity Framework Core (code-first migrations)
-- PostgreSQL
-- Minio (S3-compatible image storage)
-
-## Key Concepts
-
-### API Code Generation
-
-The Flutter app doesn't manually write API calls:
-
-1. Backend exposes an OpenAPI spec
-2. Run `dart run build_runner build` to generate Dart client
-3. **Backend must be running locally** to regenerate the API client
-
-### Branch Strategy
-
-- `staging` → `main`
-- Feature branches: `feat/group-name/feature-name`
-- Bugfix branches: `bugfix/group-name/bug-name`
+**Repository:** [giraf-ai](https://github.com/aau-giraf/giraf-ai)
 
 ---
 
-## VTA (Visual Tangible Artefacts)
+## App Backends
 
-Visual/physical schedule tools. Uses a **monorepo** with frontend and backend in the same repository.
+Each app has its own backend that stores **only its own domain data**. When it needs shared data (like checking whether a citizen exists), it asks Core.
 
-## Repository
-
-| Repository | Description | Default Branch |
-|------------|-------------|----------------|
-| [visual-tangible-artefacts](https://github.com/aau-giraf/visual-tangible-artefacts) | Flutter app + .NET API | `dev-main` |
-
-## Architecture
-
-```mermaid
-graph LR
-    subgraph "visual-tangible-artefacts repo"
-        subgraph "Frontend/vta_app"
-            APP["Flutter App"]
-        end
-        subgraph "Backend/VTA.API"
-            API[".NET Web API"]
-        end
-    end
-
-    DB[(MySQL)]
-
-    APP -->|"REST API"| API
-    API --> DB
-```
-
-## Data Flow Example
-
-When a user creates a new artefact:
-
-```mermaid
-sequenceDiagram
-    participant User
-    participant Flutter as Flutter App
-    participant API as .NET API
-    participant DB as MySQL
-
-    User->>Flutter: Creates artefact
-    User->>Flutter: Configures settings
-    Flutter->>API: POST /api/artefacts
-    API->>DB: INSERT artefact
-    DB-->>API: Success
-    API-->>Flutter: 201 Created
-    Flutter-->>User: Shows confirmation
-```
-
-## Where Do I Look
-
-| I want to... | Look in... |
-|--------------|------------|
-| Change UI/screens | `Frontend/vta_app/lib/` |
-| Add/modify API endpoints | `Backend/VTA.API/` |
-| Change database schema | Database directly, then scaffold |
-| Run/write tests | `Backend/VTA.Tests/` |
-
-## Tech Stack
-
-**Frontend:**
-
-- Flutter / Dart
-
-**Backend:**
-
-- .NET / ASP.NET Core / C#
-- Entity Framework Core (DB-first with scaffold)
-- MySQL
-- Testcontainers (integration testing)
-
-## Key Concepts
-
-### Database-First Workflow
-
-VTA uses **DB-first** - the database schema is the source of truth:
-
-1. Design/modify tables directly in MySQL
-2. Scaffold models from the database:
-
-   ```bash
-   dotnet ef dbcontext scaffold "server=...;database=VTA" \
-     Pomelo.EntityFrameworkCore.MySql -o scaffold -f
-   ```
-
-3. This regenerates C# model classes to match the schema
-
-### CI/CD Pipeline
-
-VTA has automated CI/CD via GitHub Actions:
-
-- **CI** runs on all pushes/PRs to `dev-main` or `main`
-- **CD** deploys to VPS when merged to `main`
-- Tests use Testcontainers to spin up temporary MySQL instances
-
-### Branch Strategy
-
-- `dev-main` → `main`
-- Feature branches: `feature/issue-123-description`
+| App | What its backend stores | Repository |
+|-----|------------------------|------------|
+| **Weekplanner** | Activities and schedules | [weekplanner](https://github.com/aau-giraf/weekplanner) |
+| **VTA** | Communication boards and artefact configs | [visual-tangible-artefacts](https://github.com/aau-giraf/visual-tangible-artefacts) |
+| **Foodplanner** | Meal plans and food items | [foodplanner](https://github.com/aau-giraf/foodplanner) / [foodplanner-api](https://github.com/aau-giraf/foodplanner-api) |
 
 ---
 
-## Shared Resources
+## How Authentication Works
 
-| Repository | Description | Default Branch |
-|------------|-------------|----------------|
-| [wiki](https://github.com/aau-giraf/wiki) | This documentation | `master` |
+All backends share a `JWT_SECRET` with Core. When a user logs in through Core, the JWT they receive contains an `org_roles` claim that tells backends what role the user has in each organization — no extra API calls needed for authorization.
 
-Update documentation in `wiki/docs/`.
+```
+1. User logs in via any app
+2. App calls Core → gets JWT with org_roles: {"1": "owner", "5": "member"}
+3. App sends JWT to its own backend
+4. Backend validates JWT locally using shared secret
+5. Backend reads org_roles from the token to authorize the request
+```
+
+---
+
+## What This Means for New Teams
+
+1. **You'll work on one app** — each team typically owns one app and its backend
+2. **Core is shared infrastructure** — you'll use it, but probably won't change it
+3. **Authentication is handled for you** — your backend validates tokens from Core
+4. **Pictograms and users already exist** — you query Core for them
+
+For setup instructions and technical details, see the README in each repository at [github.com/aau-giraf](https://github.com/aau-giraf).
