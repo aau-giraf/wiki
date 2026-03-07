@@ -1,3 +1,8 @@
+---
+search:
+  exclude: true
+---
+
 # Archive
 
 !!! warning "Historical Content"

@@ -4,3 +4,4 @@ arrange:
     - roles.md
     - sprint_events.md
     - code_workflow.md
+    - branch-strategy.md

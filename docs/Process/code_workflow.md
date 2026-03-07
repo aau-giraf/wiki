@@ -37,27 +37,16 @@ If you find a bug or have a feature idea:
 
 ## 2. Branching
 
-GIRAF follows [GitFlow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).
+GIRAF uses [trunk-based development](../Process/branch-strategy.md). Each repo has a single default branch — branch from it, PR back to it.
 
-### During Sprints
-
-Create feature branches from `develop` (or `staging` for some repos):
+Create feature branches from the repo's default branch:
 
 ```bash
-git checkout develop
-git checkout -b feature/123
+git checkout main
+git checkout -b feat/123-short-description
 ```
 
-**Naming:** `feature/XX` where XX is the issue number.
-
-### During Release Preparation
-
-Create fix branches from the release branch:
-
-```bash
-git checkout release/2024s1r1
-git checkout -b releasefix/456
-```
+**Naming:** `feat/123-description`, `fix/123-description`, `docs/description`, or `chore/description`. See [Branch Strategy](../Process/branch-strategy.md) for details.
 
 ---
 
@@ -77,9 +66,7 @@ Ensure your code:
 
 1. Go to the repository's Pull Requests tab
 2. Click "New pull request"
-3. Select base branch:
-   - `develop` or `staging` during sprints
-   - `release/*` during release preparation
+3. Select base branch: the repo's default branch
 4. Select your feature branch
 5. Title: `Feature 123` or `Feature 123: Short description`
 6. Description: Use `closes #123` or `fixes #123` to auto-link and close the issue
@@ -126,7 +113,7 @@ Once approved:
 
 | I want to... | Command/Action |
 |--------------|----------------|
-| Start work on issue #42 | `git checkout -b feature/42` |
+| Start work on issue #42 | `git checkout -b feat/42-short-description` |
 | Link PR to issue | Write `closes #42` in PR description |
 | Request review | Assign reviewers in PR sidebar |
 | See all open PRs | Go to repository → Pull Requests tab |
