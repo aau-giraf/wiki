@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="380" viewBox="0 0 500 380">
+  <defs>
+    <clipPath id="clip-Folder">
+      <rect width="500" height="380"/>
+    </clipPath>
+  </defs>
+  <g id="Folder" clip-path="url(#clip-Folder)">
+    <path id="Path_470" data-name="Path 470" d="M60,0c40,0,150,0,150,0l60,50.85S400,50,440,50s60,20,60,60V320q0,60-60,60H60Q0,380,0,320V61.021C0,20,20,0,60,0Z" fill="#ff9d00"/>
+  </g>
+</svg>
