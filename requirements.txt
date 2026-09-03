@@ -1,6 +1,6 @@
 mkdocs==1.6.1
 mkdocs-awesome-pages-plugin==2.10.1
 mkdocs-git-revision-date-localized-plugin==1.5.0
-mkdocs-material==9.7.1
+mkdocs-material==9.7.7
 jinja2==3.1.6
 mkdocs-mermaid2-plugin==1.2.3
